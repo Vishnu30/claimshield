@@ -439,19 +439,26 @@
    "subject": "Appeal against repudiation / short-settlement of claim [CLAIM_NO] under policy [POLICY_NO]",
    "salutation": "To the Grievance Redressal Officer, [INSURER]",
    "paragraphs": [
-    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: the deductions made.",
+    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: Claim repudiated due to delay in intimation beyond 24 hours.",
     "I respectfully submit that the decision is contrary to the policy terms and the applicable regulations, on the following grounds."
    ],
    "grounds": [
     {
      "title": "Late intimation to insurer",
-     "text": "Policy clause 5.1 requires 24h intimation, but 60h delay was due to emergency surgery which is beyond insured's control. Regulator rule IN-CONDONE-DELAY overrides policy and bars rejection solely for delayed intimation in such cases. Reimbursement claim with genuine emergency is condonable.",
+     "text": "Intimated 60h after admission vs 24h in policy. Delay alone should not defeat a genuine claim.",
+     "cites": [
+      "IRDAI standard terms and conditions (Standardization Guidelines 2020) [IN-CONDONE-DELAY]: Claims should not be rejected solely for delayed intimation or document submission where the delay is for reasons beyond the insured's control."
+     ]
+    },
+    {
+     "title": "Insurer reason: Claim repudiated due to delay in intimation beyond 24 hours",
+     "text": "Insurer: “Claim repudiated due to delay in intimation beyond 24 hours”. Delay in intimation alone should not defeat a genuine, documented hospitalisation.",
      "cites": [
       "IRDAI standard terms and conditions (Standardization Guidelines 2020) [IN-CONDONE-DELAY]: Claims should not be rejected solely for delayed intimation or document submission where the delay is for reasons beyond the insured's control."
      ]
     }
    ],
-   "relief": "I request you to review the decision and settle ₹0 with applicable interest, within the regulatory timeline.",
+   "relief": "I request you to review the decision and settle ₹71,000 with applicable interest, within the regulatory timeline.",
    "enclosures": [
     "Policy copy",
     "Rejection / settlement letter",

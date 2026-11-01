@@ -521,24 +521,23 @@
    "subject": "Appeal against repudiation / short-settlement of claim [CLAIM_NO] under policy [POLICY_NO]",
    "salutation": "To the Grievance Redressal Officer, [INSURER]",
    "paragraphs": [
-    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] for ₹95000 was rejected vide letter dated 2026-10-06 with ₹0 paid.",
+    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: Claim rejected as the 24-month waiting period for hernia is not completed.",
     "I respectfully submit that the decision is contrary to the policy terms and the applicable regulations, on the following grounds."
    ],
    "grounds": [
     {
      "title": "Specific waiting period: hernia",
-     "text": "The hernia claim is excluded only until expiry of 24 months of continuous coverage after the date of inception of the first policy under Clause 4.2. Continuous coverage from 2021-03-01 to admission on 2026-09-20 totals 66 months, including 14 months under the current policy commencing 2025-07-01, which exceeds the 24-month requirement. Counting only the current policy period ignores portability credit, while the IRDAI Master Circular on Health Insurance Business 2024 requires credit for waiting periods already served under previous continuous policies on portability or migration.",
+     "text": "The policy requires 24 months for hernia. Covered 14 months with this insurer, 66 months continuously including earlier policies.",
      "cites": [
-      "Policy clause (p.2): \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\"",
-      "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]: \"On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).\""
+      "Policy clause (p.2): “Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall”",
+      "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]: On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured)."
      ]
     }
    ],
-   "relief": "I request you to review the decision and settle ₹95000 with applicable interest, within the regulatory timeline.",
+   "relief": "I request you to review the decision and settle ₹95,000 with applicable interest, within the regulatory timeline.",
    "enclosures": [
-    "Current policy copy (start 2025-07-01)",
-    "Previous policy copies and renewal receipts from 2021-03-01 to 2026-09-20 showing continuous coverage",
-    "Rejection letter dated 2026-10-06",
+    "Policy copy",
+    "Rejection / settlement letter",
     "Final itemized bill",
     "Discharge summary"
    ],

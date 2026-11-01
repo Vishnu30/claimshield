@@ -717,27 +717,21 @@
    "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
    "salutation": "Dear Billing / TPA Desk,",
    "paragraphs": [
-    "I am writing on behalf of [PATIENT_NAME] regarding the in-patient bill at [HOSPITAL] (admitted [ADMISSION_DATE]) under Policy No. [POLICY_NO] / Claim No. [CLAIM_NO] to be submitted to [INSURER].",
-    "Before filing, an audit against the policy shows an item totalling ₹900 that the insurer is likely to deduct and that the hospital can correct before submission."
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]). Before we submit the claim to [INSURER], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
    ],
    "grounds": [
     {
      "title": "'Kit' charges without itemization",
-     "text": "The bill shows Dressing kit billed as a single line of ₹900 with no contents, which is liable to be disallowed as 'any kit with no details mentioned' under List-IV. Lists II-IV are only subsumed into room, procedure or treatment charges rather than excluded from the claim, and once itemized, payable consumables forming part of procedure become payable. Please provide an itemized breakup of Dressing kit Rs.900 on hospital letterhead with stamp and signature, showing each item name, quantity and rate with gauze, bandage, antiseptic etc. listed separately, and attach this breakup to the final bill.",
-     "cites": [
-      "policy p.3: \"Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.\"",
-      "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-NONPAY-LISTS]: \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\""
-     ]
+     "text": "Ask for an itemized breakup of the kit (each consumable with quantity and price). (Impact: ₹900)",
+     "cites": []
     },
     {
      "title": "1 document(s) missing",
-     "text": "The assessment is missing the itemized breakup of 'kit' charges, which is the trigger for disallowance of the Dressing kit Rs.900. Providing it converts the unitemized kit into assessable consumables, most of which are payable when part of treatment. Please issue the 'Itemized breakup of kit charges' on letterhead with seal and signature, breaking up Dressing kit Rs.900 item-wise, for uploading with the final itemized bill for TPA assessment.",
-     "cites": [
-      "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-NONPAY-LISTS]: \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\""
-     ]
+     "text": "Collect these before discharge/submission; the hospital must provide medical records on request. (Impact: ₹0)",
+     "cites": []
     }
    ],
-   "relief": "Kindly issue the corrected/itemized documents described above so the claim is not short-paid on submission to [INSURER].",
+   "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",
    "enclosures": [
     "Copy of current bill"
    ],

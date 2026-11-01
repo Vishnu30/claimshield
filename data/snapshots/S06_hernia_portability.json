@@ -559,27 +559,21 @@
    "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
    "salutation": "Dear Billing / TPA Desk,",
    "paragraphs": [
-    "I am writing on behalf of [PATIENT_NAME] regarding the in-patient bill for admission on [ADMISSION_DATE] at [HOSPITAL] for submission to [INSURER] under [POLICY_NO] / [CLAIM_NO]. Before submission, an audit against the policy shows items the insurer is likely to pend/deduct that the hospital can help correct.",
-    "As per the papers provided, the diagnosis is Left inguinal hernia treated by Lichtenstein open hernioplasty with mesh. The patient asserts continuous cover since 2022-05-01 with porting in Aug 2025, but admission date and condition duration are currently null and previous/ported policy copies are missing."
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]). Before we submit the claim to [INSURER], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
    ],
    "grounds": [
     {
-     "title": "1 document(s) missing",
-     "text": "Continuity proof is missing from the file: all policy schedules and renewal receipts from 2022-05-01 to 2025-07-31 showing zero break, and the portability acceptance letter / continuity certificate showing prior inception date 2022-05-01. Continuity proof is the legal trigger for portability credit, without which the TPA will pend/reject. Kindly confirm admission/discharge dates on the discharge summary with seal and withhold final submission until the continuity set is attached to the reimbursement file.",
-     "cites": [
-      "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]"
-     ]
+     "title": "Specific waiting period: hernia",
+     "text": "Submit previous policy copies proving continuous cover; waiting periods already served must be credited. (Impact: ₹70,500)",
+     "cites": []
     },
     {
-     "title": "Specific waiting period for hernia – portability continuity to be proved",
-     "text": "The insurer will examine the hernia claim under the specific waiting period exclusion for hernia until expiry of 24 months of continuous coverage, namely: \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\" The asserted cover from 2022-05-01 with porting in Aug 2025 would exceed 24 months if proved, and on portability waiting periods already served must be credited up to the earlier sum insured. Kindly issue a corrected itemized final bill and a sealed discharge summary confirming admission/discharge dates, to be filed together with the continuity set, failing which the insurer will pend for continuity proof and reject under the 24-month exclusion.",
-     "cites": [
-      "policy page 2",
-      "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]"
-     ]
+     "title": "1 document(s) missing",
+     "text": "Collect these before discharge/submission; the hospital must provide medical records on request. (Impact: ₹0)",
+     "cites": []
     }
    ],
-   "relief": "Kindly issue the corrected/itemized discharge summary with seal confirming admission/discharge dates and the corrected itemized final bill for [PATIENT_NAME] at [HOSPITAL], and withhold submission to [INSURER] under [POLICY_NO] / [CLAIM_NO] until the continuity set is attached, so the claim is not short-paid or rejected.",
+   "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",
    "enclosures": [
     "Copy of current bill"
    ],

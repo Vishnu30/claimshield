@@ -958,6 +958,32 @@
     "Copy of current bill"
    ],
    "closing": "Thank you,\n[PATIENT_NAME]\n[CONTACT]"
+  },
+  "appeal": {
+   "subject": "Appeal against repudiation / short-settlement of claim [CLAIM_NO] under policy [POLICY_NO]",
+   "salutation": "To the Grievance Redressal Officer, [INSURER]",
+   "paragraphs": [
+    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: the deductions made.",
+    "I respectfully submit that the decision is contrary to the policy terms and the applicable regulations, on the following grounds."
+   ],
+   "grounds": [
+    {
+     "title": "Proportionate deduction on doctor/OT/nursing fees",
+     "text": "Because the room exceeded the limit, the insurer scales associated charges (₹78,000) by 71%, cutting ₹22,286. Pharmacy, consumables, implants and diagnostics (₹45,000) are protected from this cut.",
+     "cites": [
+      "Policy clause (p.2): “If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, im”",
+      "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-PD-NODIFF]: Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially."
+     ]
+    }
+   ],
+   "relief": "I request you to review the decision and settle ₹22,286 with applicable interest, within the regulatory timeline.",
+   "enclosures": [
+    "Policy copy",
+    "Rejection / settlement letter",
+    "Final itemized bill",
+    "Discharge summary"
+   ],
+   "closing": "Yours faithfully,\n[PATIENT_NAME]\n[CONTACT]"
   }
  },
  "bundle": {

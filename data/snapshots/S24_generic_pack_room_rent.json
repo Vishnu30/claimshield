@@ -665,24 +665,21 @@
    "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
    "salutation": "Dear Billing / TPA Desk,",
    "paragraphs": [
-    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]) at [HOSPITAL] in connection with [POLICY_NO] / [CLAIM_NO], before submission to [INSURER].",
-    "An audit against the policy shows an item the insurer is likely to deduct that the hospital can correct before submission, involving Rs 10,900."
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]). Before we submit the claim to [INSURER], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
    ],
    "grounds": [
     {
      "title": "Proportionate deduction on doctor/OT/nursing fees",
-     "text": "The audit notes that because the room exceeded the limit, the insurer may scale associated charges of Rs 32,700 by 67%, cutting Rs 10,900, while pharmacy, consumables, implants and diagnostics of Rs 22,500 are protected from this cut. We respectfully request a certificate on letterhead with seal, signature, IP number and dates stating: 'Certified that doctor, OT, nursing charges for items L02-L05 are uniform and we do not do differential billing by room category for this admission.' If confirmed, the Rs 10,900 cut can be removed pre-submission; if the hospital charges higher for Deluxe, the cut will apply.",
-     "cites": [
-      "policy p.2: \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\""
-     ]
+     "text": "Get a hospital certificate that surgeon, OT and nursing fees are the same in every room category (no differential billing). (Impact: 10,900)",
+     "cites": []
     },
     {
      "title": "1 document(s) missing",
-     "text": "The audit identifies as missing: Hospital certificate: no differential billing by room category. We respectfully request issuance of the Non-Differential Billing Certificate on letterhead with name, designation, seal, signature, IP/UHID and admission dates for [PATIENT_NAME] admitted [ADMISSION_DATE], for attachment with claim form Part B and the final itemized bill before submission to [INSURER].",
+     "text": "Collect these before discharge/submission; the hospital must provide medical records on request. (Impact: 0)",
      "cites": []
     }
    ],
-   "relief": "Kindly issue the corrected/itemized documents and the requested certificate so the claim for [PATIENT_NAME] is not short-paid by Rs 10,900.",
+   "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",
    "enclosures": [
     "Copy of current bill"
    ],

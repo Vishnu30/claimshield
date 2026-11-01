@@ -748,19 +748,27 @@
    "subject": "Appeal against repudiation / short-settlement of claim [CLAIM_NO] under policy [POLICY_NO]",
    "salutation": "To the Grievance Redressal Officer, [INSURER]",
    "paragraphs": [
-    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: the deductions made.",
+    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: Proportionate deduction applied on all expenses as room category exceeded eligibility.",
     "I respectfully submit that the decision is contrary to the policy terms and the applicable regulations, on the following grounds."
    ],
    "grounds": [
     {
-     "title": "Insurer paid less than its own policy terms allow",
-     "text": "Even after allowing valid room-rent excess Rs.4500 and proportionate Rs.16153.85, correct payout is Rs.114846.15 vs paid Rs.104231. Unexplained shortfall Rs.10615.15 has no clause support and violates IN-CRC requirement to give specific clause-wise reasons approved by Claims Review Committee.",
+     "title": "Proportionate deduction on doctor/OT/nursing fees",
+     "text": "Because the room exceeded the limit, the insurer scales associated charges (₹70,000) by 77%, cutting ₹16,154. Pharmacy, consumables, implants and diagnostics (₹46,000) are protected from this cut.",
      "cites": [
-      "IRDAI Master Circular on Health Insurance Business 2024 [IN-CRC]: No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause."
+      "Policy clause (p.2): “If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, im”",
+      "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-PD-NODIFF]: Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially."
+     ]
+    },
+    {
+     "title": "Insurer paid less than its own policy terms allow",
+     "text": "Even applying every valid deduction in the policy, the correct settlement is ₹1,14,846; the insurer paid ₹1,04,231. The extra ₹10,615 cut is not supported — proportionate deduction was applied to pharmacy, consumables, implants or diagnostics, which is not allowed.",
+     "cites": [
+      "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-PD-EXEMPT]: Proportionate deduction cannot be applied to pharmacy, consumables, implants, medical devices and diagnostics."
      ]
     }
    ],
-   "relief": "I request you to review the decision and settle ₹10,615 with applicable interest, within the regulatory timeline.",
+   "relief": "I request you to review the decision and settle ₹26,769 with applicable interest, within the regulatory timeline.",
    "enclosures": [
     "Policy copy",
     "Rejection / settlement letter",

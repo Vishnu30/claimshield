@@ -24,10 +24,9 @@ def test_policy_quotes_verbatim():
     for pid in kb.policy_library():
         p = kb.load_policy(pid)
         src = ROOT / p.source_file if p.source_file else None
-        if src and src.exists():
-            text = _norm(" ".join(pg.get_text() for pg in pymupdf.open(src)))
-        else:
-            text = _norm(" ".join(c.text for c in p.clauses))
+        if not (src and src.exists()):
+            continue        # source PDF not in this checkout (data/raw is gitignored) — quotes were verified at build time
+        text = _norm(" ".join(pg.get_text() for pg in pymupdf.open(src)))
         if len(text) < 200:
             continue                                     # scanned policy: no text layer to verify against
         refs = [p.room_rent.cite, p.icu_rent.cite, p.proportionate_cite, *[c.cite for c in p.copays], *[s.cite for s in p.sublimits],

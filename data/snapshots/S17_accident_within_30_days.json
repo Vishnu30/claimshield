@@ -587,25 +587,16 @@
    "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
    "salutation": "Dear Billing / TPA Desk,",
    "paragraphs": [
-    "I am writing regarding the in-patient treatment of [PATIENT_NAME] at [HOSPITAL] admitted on [ADMISSION_DATE] under Policy No. [POLICY_NO] / Claim No. [CLAIM_NO] to be submitted to [INSURER]. Before submission, audit shows a query-risk that the hospital can help correct.",
-    "As per records provided, diagnosis is fracture distal radius following Road Traffic Accident on 05-10-2026 treated by emergency ORIF with plate/screws, with intimation done within 6 hours of admission and implant invoice/sticker available. Admission 05-10-2026 is 10 days after policy start 2026-09-25. FIR / MLC is noted as missing."
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]). Before we submit the claim to [INSURER], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
    ],
    "grounds": [
     {
      "title": "1 document(s) missing",
-     "text": "You are requested to provide attested copy of MLC with MLC number with Emergency casualty papers / ER notes showing RTA history, date-time 05-10-2026, fracture distal radius. If police was involved, kindly advise on obtaining copy of FIR / CSR / community service register extract for RTA on 05-10-2026 from the concerned station with ID and hospital papers. If no FIR was ever filed, please do not create a late FIR and instead provide MLC with ER notes with discharge summary showing RTA with X-ray/OT notes with implant records already available. This is trigger-based extra proof for accident and will prevent query/delay at submission (Impact: ₹0).",
+     "text": "Collect these before discharge/submission; the hospital must provide medical records on request. (Impact: ₹0)",
      "cites": []
-    },
-    {
-     "title": "FIR / MLC missing - required to prove accident exemption from 30-day initial waiting",
-     "text": "You are requested to ensure the final discharge summary diagnosis line records 'Fracture distal radius following Road Traffic Accident on 05-10-2026 - Emergency ORIF with plate/screws' with date-time and mode of injury, and to arrange the submission set in order: 1) MLC with casualty papers, 2) discharge summary highlighting RTA and emergency, 3) X-ray with OT notes, 4) implant invoice/sticker already available, 5) proof intimation was done within 6 hours of admission, with cover note that admission 05-10-2026 is Day-10 from policy start 2026-09-25 and falls under the accident exception to the 30-day exclusion. Admission within 30 days would otherwise be excluded as illness, but fracture distal radius following RTA with emergency ORIF falls in the 'except accident' exception (Impact: ₹0).",
-     "cites": [
-      "Policy p.2: \"Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident.\"",
-      "IRDAI Master Circular on Health Insurance Business 2024 [IN-CRC]: \"No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause.\""
-     ]
     }
    ],
-   "relief": "Kindly issue attested MLC with MLC number with Emergency casualty papers / ER notes and corrected discharge summary recording RTA on 05-10-2026 with emergency ORIF, with itemized documents, so the claim for [PATIENT_NAME] under [POLICY_NO] / [CLAIM_NO] to [INSURER] is not delayed or short-paid.",
+   "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",
    "enclosures": [
     "Copy of current bill"
    ],

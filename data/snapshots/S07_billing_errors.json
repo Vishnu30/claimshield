@@ -683,25 +683,21 @@
    "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
    "salutation": "Dear Billing / TPA Desk,",
    "paragraphs": [
-    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]) at [HOSPITAL]. Before we submit the claim to [INSURER] under [POLICY_NO], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]). Before we submit the claim to [INSURER], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
    ],
    "grounds": [
     {
      "title": "Duplicate charges on the bill",
-     "text": "We respectfully request correction for lines L03 and L04, two Rs.9600 antibiotics lines flagged as duplicate pending proof. We request day-wise / date-wise detailed pharmacy bills for L03 and L04 showing date, drug name, qty, batch, amount with matching doctor prescriptions for each date to prove two separate dispensings. If L04 was a system double-entry, we request a revised final itemized bill removing L04 with seal/sign and a correction letter. The insurer pays only once for identical lines unless separate dispensing is proved with itemized bills and prescriptions. (Impact: ₹9,600)",
-     "cites": [
-      "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions."
-     ]
+     "text": "Ask the hospital to correct these lines before you pay or submit. (Impact: ₹9,600)",
+     "cites": []
     },
     {
      "title": "Quantity × rate errors",
-     "text": "We respectfully request correction for line L05 where the bill shows 5 x Rs.300 = Rs.2000, whereas the correct arithmetic is Rs.1500. We request a corrected final itemized bill for L05 correcting to Rs.1500 with seal/sign, or written rate justification if the rate is different, and we will file only the corrected bill with receipt. The excess Rs.500 is arithmetic overcharge and not payable as verified expense. (Impact: ₹500)",
-     "cites": [
-      "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions."
-     ]
+     "text": "Ask the hospital to correct these lines before you pay or submit. (Impact: ₹500)",
+     "cites": []
     }
    ],
-   "relief": "Kindly issue the corrected/itemized documents with seal/sign and correction letter so the claim for [PATIENT_NAME] is not short-paid.",
+   "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",
    "enclosures": [
     "Copy of current bill"
    ],

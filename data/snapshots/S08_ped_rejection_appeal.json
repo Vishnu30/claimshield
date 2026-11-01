@@ -584,19 +584,19 @@
    "subject": "Appeal against repudiation / short-settlement of claim [CLAIM_NO] under policy [POLICY_NO]",
    "salutation": "To the Grievance Redressal Officer, [INSURER]",
    "paragraphs": [
-    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: the deductions made.",
+    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: Claim repudiated due to non-disclosure of pre-existing hypertension at the time of proposal.",
     "I respectfully submit that the decision is contrary to the policy terms and the applicable regulations, on the following grounds."
    ],
    "grounds": [
     {
-     "title": "Insurer may allege MI is complication of undeclared hypertension",
-     "text": "Hypertension for 3 years (~2023) post-dates 2020-04-01 inception so condition_predates_policy false - not a PED at inception. Even if treated as PED/direct complication under clause 4.3, 36M PED wait is served with 77M continuous and 60M moratorium bars contest for non-disclosure absent established fraud. Repudiation for undeclared hypertension/MI complication violates IRDAI Master Circular which overrides policy wording.",
+     "title": "Rejection for pre-existing disease / non-disclosure",
+     "text": "Insurer: “Claim repudiated due to non-disclosure of pre-existing hypertension at the time of proposal”. Cover has been continuous for 77 months, beyond the 60-month moratorium. Non-disclosure cannot be raised without proof of fraud.",
      "cites": [
       "IRDAI Master Circular on Health Insurance Business 2024 [IN-MORATORIUM]: After 60 continuous months of coverage (incl. portability/renewals) no claim can be contested for non-disclosure or misrepresentation, except established fraud."
      ]
     }
    ],
-   "relief": "I request you to review the decision and settle ₹0 with applicable interest, within the regulatory timeline.",
+   "relief": "I request you to review the decision and settle ₹2,56,000 with applicable interest, within the regulatory timeline.",
    "enclosures": [
     "Policy copy",
     "Rejection / settlement letter",

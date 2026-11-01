@@ -668,7 +668,27 @@
    "rejected": false
   }
  },
- "letters": {},
+ "letters": {
+  "hospital": {
+   "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
+   "salutation": "Dear Billing / TPA Desk,",
+   "paragraphs": [
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]). Before we submit the claim to [INSURER], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
+   ],
+   "grounds": [
+    {
+     "title": "Duplicate charges on the bill",
+     "text": "Ask the hospital to correct these lines before you pay or submit. (Impact: ₹7,400)",
+     "cites": []
+    }
+   ],
+   "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",
+   "enclosures": [
+    "Copy of current bill"
+   ],
+   "closing": "Thank you,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
  "bundle": {
   "policy_id": "demo_shield",
   "bill": {

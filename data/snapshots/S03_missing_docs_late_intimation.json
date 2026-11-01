@@ -683,7 +683,7 @@
    "grounds": [
     {
      "title": "Late intimation to insurer",
-     "text": "40h vs 24h intimation delay alone cannot defeat a genuine claim. IRDAI Standardization Guidelines 2020 provides claims should not be rejected solely for delayed intimation or document submission where delay is for reasons beyond insured's control, and this overrides policy 24h wording.",
+     "text": "Intimated 40h after admission vs 24h in policy. Delay alone should not defeat a genuine claim.",
      "cites": [
       "IRDAI standard terms and conditions (Standardization Guidelines 2020) [IN-CONDONE-DELAY]: Claims should not be rejected solely for delayed intimation or document submission where the delay is for reasons beyond the insured's control."
      ]

@@ -1439,19 +1439,28 @@
    "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
    "salutation": "Dear Billing / TPA Desk,",
    "paragraphs": [
-    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]) at [HOSPITAL] under Policy No. [POLICY_NO] / Claim No. [CLAIM_NO] to be submitted to [INSURER].",
-    "Before discharge, an audit against the policy shows items the insurer is likely to deduct that the hospital can correct. I request the corrections detailed below to avoid short-payment."
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]). Before we submit the claim to [INSURER], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
    ],
    "grounds": [
     {
      "title": "Bill total does not match itemized charges",
-     "text": "The bill total is ₹61,200 while the sum of itemized lines is ₹60,000, leaving an unitemized difference of ₹1,200 which the insurer will deduct as only itemized charges are payable. Please correct the total to ₹60,000 or provide an itemized bill for the ₹1,200 difference and issue a corrected signed and stamped bill before submission. (Impact: ₹1,200)",
-     "cites": [
-      "policy p.3: \"Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.\""
-     ]
+     "text": "Ask the billing desk for a fully itemized final bill that explains the ₹1,200 difference. (Impact: ₹1,200)",
+     "cites": []
     },
     {
-     "title": "'Kit' charges without itemization"
+     "title": "'Kit' charges without itemization",
+     "text": "Ask for an itemized breakup of the kit (each consumable with quantity and price). (Impact: ₹3,000)",
+     "cites": []
+    },
+    {
+     "title": "Proportionate deduction on doctor/OT/nursing fees",
+     "text": "Get a hospital certificate that surgeon, OT and nursing fees are the same in every room category (no differential billing). (Impact: ₹10,875)",
+     "cites": []
+    },
+    {
+     "title": "5 document(s) missing",
+     "text": "Collect these before discharge/submission; the hospital must provide medical records on request. (Impact: ₹0)",
+     "cites": []
     }
    ],
    "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",

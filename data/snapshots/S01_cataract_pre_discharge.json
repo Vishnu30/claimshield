@@ -5,7 +5,7 @@
  "report": {
   "mode": "pre_discharge",
   "jurisdiction": "IN",
-  "user_lang": "en",
+  "user_lang": "kn",
   "currency": "₹",
   "claimed": 71350.0,
   "payout_before": 44370.0,
@@ -647,7 +647,11 @@
     "action": "Before discharge go to Medical Superintendent / Hospital Admin. Ask for certificate on letterhead with seal-sign: 'Certified that this hospital does not follow differential billing by room category - surgeon, anaesthesia, OT and nursing charges are same for all room categories for cataract.' Upload this with claim. Also ask TPA to remove L10/L11 from associated total.",
     "status": "fixable",
     "impact": 10900.0,
-    "when": "before discharge"
+    "when": "before discharge",
+    "action_localized": {
+     "ta": "Before discharge go to Medical Superintendent / Hospital Admin. Ask for certificate on letterhead with seal-sign: 'Certified that this hospital does not follow differential billing by room category - surgeon, anaesthesia, OT and nursing charges are same for all room categories for cataract.' Upload this with claim. Also ask TPA to remove L10/L11 from associated total.",
+     "kn": "Before discharge go to Medical Superintendent / Hospital Admin. Ask for certificate on letterhead with seal-sign: 'Certified that this hospital does not follow differential billing by room category - surgeon, anaesthesia, OT and nursing charges are same for all room categories for cataract.' Upload this with claim. Also ask TPA to remove L10/L11 from associated total."
+    }
    },
    {
     "step": 2,
@@ -656,7 +660,11 @@
     "action": "Go to OT/Pharmacy + Billing before discharge. Say: 'Please give itemized breakup of Phaco kit Rs 3,800 on letterhead - list each suture, blade, viscoelastic, tubing with amount.' Submit that breakup; payable consumables inside become payable.",
     "status": "fixable",
     "impact": 3800.0,
-    "when": "before discharge"
+    "when": "before discharge",
+    "action_localized": {
+     "ta": "Go to OT/Pharmacy + Billing before discharge. Say: 'Please give itemized breakup of Phaco kit Rs 3,800 on letterhead - list each suture, blade, viscoelastic, tubing with amount.' Submit that breakup; payable consumables inside become payable.",
+     "kn": "Go to OT/Pharmacy + Billing before discharge. Say: 'Please give itemized breakup of Phaco kit Rs 3,800 on letterhead - list each suture, blade, viscoelastic, tubing with amount.' Submit that breakup; payable consumables inside become payable."
+    }
    },
    {
     "step": 3,
@@ -665,7 +673,11 @@
     "action": "Before discharge go to hospital Billing Desk with the final bill. Say: 'Total Rs 71,350 and item lines total Rs 69,650 differ by Rs 1,700 - please give corrected final itemized bill where total equals sum of lines, with seal-sign.' Do not submit till totals tally.",
     "status": "fixable",
     "impact": 1700.0,
-    "when": "before discharge"
+    "when": "before discharge",
+    "action_localized": {
+     "ta": "Before discharge go to hospital Billing Desk with the final bill. Say: 'Total Rs 71,350 and item lines total Rs 69,650 differ by Rs 1,700 - please give corrected final itemized bill where total equals sum of lines, with seal-sign.' Do not submit till totals tally.",
+     "kn": "Before discharge go to hospital Billing Desk with the final bill. Say: 'Total Rs 71,350 and item lines total Rs 69,650 differ by Rs 1,700 - please give corrected final itemized bill where total equals sum of lines, with seal-sign.' Do not submit till totals tally."
+    }
    },
    {
     "step": 4,
@@ -674,7 +686,11 @@
     "action": "Before discharge collect 3 papers: 1) From OT nurse: IOL implant invoice + sticker with batch no. 2) From Admin/MS: no-differential-billing certificate as in F05. 3) From Billing/Pharmacy: itemized kit breakup as in F03. Say: 'Insurance needs these for reimbursement, please give with seal-sign today.'",
     "status": "fixable",
     "impact": 0.0,
-    "when": "before discharge"
+    "when": "before discharge",
+    "action_localized": {
+     "ta": "Before discharge collect 3 papers: 1) From OT nurse: IOL implant invoice + sticker with batch no. 2) From Admin/MS: no-differential-billing certificate as in F05. 3) From Billing/Pharmacy: itemized kit breakup as in F03. Say: 'Insurance needs these for reimbursement, please give with seal-sign today.'",
+     "kn": "Before discharge collect 3 papers: 1) From OT nurse: IOL implant invoice + sticker with batch no. 2) From Admin/MS: no-differential-billing certificate as in F05. 3) From Billing/Pharmacy: itemized kit breakup as in F03. Say: 'Insurance needs these for reimbursement, please give with seal-sign today.'"
+    }
    },
    {
     "step": 5,
@@ -683,7 +699,11 @@
     "action": "Intimate NOW before discharge - call insurer/TPA helpline + send email/app intimation with policy no, patient name, admission date, hospital, cataract surgery. Say: 'Planned cataract admission intimating before discharge, please register and condone delay, share reference no.' Save reference/screenshot and submit with claim.",
     "status": "fixable",
     "impact": 0.0,
-    "when": "before discharge"
+    "when": "before discharge",
+    "action_localized": {
+     "ta": "Intimate NOW before discharge - call insurer/TPA helpline + send email/app intimation with policy no, patient name, admission date, hospital, cataract surgery. Say: 'Planned cataract admission intimating before discharge, please register and condone delay, share reference no.' Save reference/screenshot and submit with claim.",
+     "kn": "Intimate NOW before discharge - call insurer/TPA helpline + send email/app intimation with policy no, patient name, admission date, hospital, cataract surgery. Say: 'Planned cataract admission intimating before discharge, please register and condone delay, share reference no.' Save reference/screenshot and submit with claim."
+    }
    },
    {
     "step": 6,
@@ -692,7 +712,11 @@
     "action": "No separate action. This is same 10% senior-citizen co-pay already counted in F06. Budget once for 10% of admissible.",
     "status": "needs_review",
     "impact": 0.0,
-    "when": "check"
+    "when": "check",
+    "action_localized": {
+     "ta": "No separate action. This is same 10% senior-citizen co-pay already counted in F06. Budget once for 10% of admissible.",
+     "kn": "No separate action. This is same 10% senior-citizen co-pay already counted in F06. Budget once for 10% of admissible."
+    }
    }
   ],
   "trace": [
@@ -1308,42 +1332,31 @@
    "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
    "salutation": "Dear Billing / TPA Desk,",
    "paragraphs": [
-    "I am writing on behalf of [PATIENT_NAME] (Policy No. [POLICY_NO], Claim No. [CLAIM_NO]) admitted at [HOSPITAL] on [ADMISSION_DATE] for planned cataract surgery, before discharge and before submission of the reimbursement claim to [INSURER].",
-    "Audit of the current final bill against the policy shows correctable billing issues that the insurer is likely to deduct, including a ₹1,700 total mismatch, ₹3,800 un-itemized kit, and ₹10,900 proportionate deduction risk. We request the hospital's help to correct and itemize these before discharge."
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]). Before we submit the claim to [INSURER], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
    ],
    "grounds": [
     {
      "title": "Bill total does not match itemized charges",
-     "text": "The current final bill shows total ₹71,350 while the sum of itemized lines is ₹69,650, leaving an un-itemized gap of ₹1,700 which the insurer will hold back as only itemized lines are paid. Please issue a corrected final itemized bill where the total equals the sum of lines, with seal and sign, before discharge, and please do not finalize submission till totals tally.",
-     "cites": [
-      "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions."
-     ]
+     "text": "Ask the billing desk for a fully itemized final bill that explains the ₹1,700 difference. (Impact: ₹1,700)",
+     "cites": []
     },
     {
      "title": "'Kit' charges without itemization",
-     "text": "The bill includes Phaco kit of ₹3,800 billed as a single line with no contents, which is treated as any kit with no details mentioned. Please provide an itemized breakup of the kit on letterhead with seal-sign listing each suture, blade, viscoelastic and tubing with amount, so that separately payable consumables forming part of the procedure can be paid.",
-     "cites": [
-      "Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.",
-      "Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim."
-     ]
+     "text": "Ask for an itemized breakup of the kit (each consumable with quantity and price). (Impact: ₹3,800)",
+     "cites": []
     },
     {
      "title": "Proportionate deduction on doctor/OT/nursing fees",
-     "text": "Associated charges of ₹34,100 are at risk of proportionate scaling of ₹10,900 due to room category, while pharmacy, consumables, implants and diagnostics of ₹28,050 are protected from this cut. Please issue a certificate on letterhead with seal-sign from the Medical Superintendent / Hospital Admin certifying that this hospital does not follow differential billing by room category and that surgeon, anaesthesia, OT and nursing charges are same for all room categories for cataract, and please ensure List-I non-payables are not included in the associated total.",
-     "cites": [
-      "If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.",
-      "Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially."
-     ]
+     "text": "Get a hospital certificate that surgeon, OT and nursing fees are the same in every room category (no differential billing). (Impact: ₹10,900)",
+     "cites": []
     },
     {
      "title": "3 document(s) missing",
-     "text": "To prevent the above deductions and implant queries, please provide before discharge: 1) IOL implant invoice with sticker and batch number from OT, 2) no-differential-billing certificate as above from Admin / Medical Superintendent, and 3) itemized kit breakup from Billing / Pharmacy, all with seal-sign for submission with the claim.",
-     "cites": [
-      "Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially."
-     ]
+     "text": "Collect these before discharge/submission; the hospital must provide medical records on request. (Impact: ₹0)",
+     "cites": []
     }
    ],
-   "relief": "Kindly issue the corrected final itemized bill tallying to the line totals, the itemized kit breakup, the no-differential-billing certificate, and the implant invoice with sticker, all with seal-sign before discharge, so the claim for [PATIENT_NAME] under [POLICY_NO] to [INSURER] is not short-paid.",
+   "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",
    "enclosures": [
     "Copy of current bill"
    ],

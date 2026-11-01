@@ -668,7 +668,34 @@
    "rejected": true
   }
  },
- "letters": {},
+ "letters": {
+  "appeal": {
+   "subject": "Appeal against repudiation / short-settlement of claim [CLAIM_NO] under policy [POLICY_NO]",
+   "salutation": "To the Grievance Redressal Officer, [INSURER]",
+   "paragraphs": [
+    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: the deductions made.",
+    "I respectfully submit that the decision is contrary to the policy terms and the applicable regulations, on the following grounds."
+   ],
+   "grounds": [
+    {
+     "title": "Specific waiting period: knee replacement",
+     "text": "The policy requires 48 months for knee replacement. Covered 40 months with this insurer.",
+     "cites": [
+      "Policy clause (p.2): “The following are excluded for the first 48 months of continuous coverage: cataract, hernia, joint replacement, knee replacement, hysterectomy, gall bladder stones, kidney stones and varicose veins.”",
+      "IRDAI Master Circular on Health Insurance Business 2024 [IN-SPECIFIC-MAX]: Specific disease/procedure waiting periods cannot exceed 36 months."
+     ]
+    }
+   ],
+   "relief": "I request you to review the decision and settle ₹1,92,000 with applicable interest, within the regulatory timeline.",
+   "enclosures": [
+    "Policy copy",
+    "Rejection / settlement letter",
+    "Final itemized bill",
+    "Discharge summary"
+   ],
+   "closing": "Yours faithfully,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
  "bundle": {
   "policy_id": "demo_classic",
   "bill": {
