@@ -203,9 +203,11 @@ def ped_check(b: Bundle) -> dict:
 
 # ---------------------------------------------------------------- non-payables
 def _np_index(code: str) -> list[tuple[str, dict]]:
+    from core import learned
+    extra = learned.np_aliases()
     idx = []
     for n in kb.non_payables(code):
-        for term in [n["item"], *n.get("aliases", [])]:
+        for term in [n["item"], *n.get("aliases", []), *extra.get(n["item"], [])]:
             idx.append((norm(term), n))
     idx.sort(key=lambda x: -len(x[0]))
     return idx
@@ -362,7 +364,8 @@ def rejection_reasons(b: Bundle) -> list[dict]:
     out = []
     for r in b.rejection.reasons:
         t = r.text.lower()
-        it = ("ped" if re.search(r"pre.?existing|non.?disclos|misrepresent|ped\b", t) else
+        from core import learned
+        it = learned.reason_type(t) or ("ped" if re.search(r"pre.?existing|non.?disclos|misrepresent|ped\b", t) else
               "waiting_period" if "waiting" in t else
               "non_payable" if re.search(r"non.?payable|consumable", t) else
               "proportionate" if re.search(r"proportion|room rent|room category", t) else

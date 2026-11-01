@@ -1,0 +1,27 @@
+{
+ "hosts": {
+  "muse": {
+   "precision": 0.9125,
+   "recall": 1.0,
+   "status_acc": 0.8767123287671232,
+   "money_error": 0.0,
+   "claims": 36,
+   "usd": 2.6707,
+   "seconds_per_claim": 51.59444444444444,
+   "usd_per_claim": 0.07418611111111112
+  },
+  "baseten": {
+   "precision": 0.8902439024390244,
+   "recall": 1.0,
+   "status_acc": 0.7945205479452054,
+   "money_error": 0.0,
+   "claims": 36,
+   "usd": 1.2777,
+   "seconds_per_claim": 48.041666666666664,
+   "usd_per_claim": 0.03549166666666667
+  }
+ },
+ "files": false,
+ "muse_usd": 2.4244310000000002,
+ "claims": 36
+}

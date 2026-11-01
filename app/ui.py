@@ -524,7 +524,7 @@ def results(res):
             x=alt.X("step:N", sort=alt.SortField("order"), title=None, axis=alt.Axis(labelAngle=-30, labelLimit=160)),
             y=alt.Y("start:Q", title="₹"), y2="end:Q",
             color=alt.Color("kind:N", scale=alt.Scale(domain=["total", "cut"], range=["#0F6B5F", "#B8442F"]), legend=None),
-            tooltip=["step", alt.Tooltip("end:Q", title="₹")]).properties(height=320), use_container_width=True)
+            tooltip=["step", alt.Tooltip("end:Q", title="₹")]).properties(height=320), width="stretch")
     with tabs[4]:
         letters_tab(rep, b, L)
     with tabs[5]:
@@ -721,6 +721,10 @@ def page_eval():
         st.bar_chart(pd.DataFrame({e: {"precision": r["precision"], "recall": r["recall"], "status accuracy": r["status_acc"]} for e, r in data.items()}))
         eng = st.selectbox("Per-claim detail", list(data), format_func=lambda e: names.get(e, e))
         st.dataframe(pd.DataFrame(data[eng]["per_scenario"]), hide_index=True, width="stretch")
+    sp = PATHS["eval"] / "studies" / "STUDIES.md"
+    if sp.exists():
+        with st.container(border=True):
+            st.markdown(sp.read_text(encoding="utf-8").replace("# Muse studies", "### 🔬 Muse studies", 1))
     with st.expander("What the metrics mean"):
         st.markdown("- **Precision / recall** — issues found vs. issues in the ground truth, per issue type.\n"
                     "- **Status accuracy** — of the issues found, how often valid / fixable / contestable matches the truth.\n"

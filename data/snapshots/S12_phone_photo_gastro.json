@@ -1,0 +1,882 @@
+{
+ "scenario": "S12_phone_photo_gastro",
+ "recorded_at": "2026-11-01T15:19:33+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 21450.0,
+  "payout_before": 20000.0,
+  "payout_after_fixes": 20900.0,
+  "payout_after_appeal": 20900.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 1450.0,
+  "patient_pays_after": 550.0,
+  "insurer_paid": null,
+  "risk_score": 7,
+  "risk_band": "low",
+  "summary_en": "Claimed ₹21,450. As it stands the insurer is likely to pay ₹20,000 (cut ₹1,450). Fixing 2 issue(s) before submission raises this to ₹20,900.",
+  "summary_localized": "Claimed ₹21,450. As it stands the insurer is likely to pay ₹20,000 (cut ₹1,450). Fixing 2 issue(s) before submission raises this to ₹20,900.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "non_payable",
+    "title": "2 non-payable item(s) on the bill",
+    "raised_by": "tpa",
+    "status": "valid",
+    "inr_impact": 550.0,
+    "deduction_ids": [
+     "D-NP"
+    ],
+    "confidence": 0.98,
+    "explanation_en": "These items are on the regulator's standard non-payable lists: Gloves (₹300, List IV), Thermometer (₹250, List I).",
+    "explanations": {
+     "en": "These items are on the regulator's standard non-payable lists: Gloves (₹300, List IV), Thermometer (₹250, List I)."
+    },
+    "fix": "No action needed before submission. Keep Gloves Rs.300 and Thermometer Rs.250 in the bill as-is. Do not pay anyone to get them removed - they will remain deducted.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.",
+     "bbox": [
+      78.0,
+      697.2874755859375,
+      509.9176940917969,
+      723.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": {
+     "doc": "bill.jpg",
+     "page": 1,
+     "quote": "Gloves",
+     "bbox": null,
+     "verified": false
+    },
+    "irdai_cite": {
+     "doc": "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-NONPAY-LISTS]",
+     "page": null,
+     "quote": "Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [],
+    "tool_evidence": {
+     "non_payable_check": [
+      {
+       "item_id": "L06",
+       "description": "Gloves",
+       "amount": 300.0,
+       "list": "IV",
+       "matched": "gloves",
+       "treatment": "subsumed into treatment costs",
+       "unitemized_kit": false,
+       "page": 1
+      },
+      {
+       "item_id": "L07",
+       "description": "Thermometer",
+       "amount": 250.0,
+       "list": "I",
+       "matched": "thermometer",
+       "treatment": "not payable",
+       "unitemized_kit": false,
+       "page": 1
+      }
+     ],
+     "tpa_reasoning": "L06 Gloves is List IV subsumed into treatment costs and L07 Thermometer is List I not payable - both verified via non_payable_lookup and regulator standardization. Not separately payable.",
+     "advocate_argument": "Both items match IRDAI standardized non-payable lists: Gloves List-IV is subsumed into treatment costs and not separately payable, Thermometer List-I is never payable. Verified via non-payable lookup. Per IRDAI standardization, Lists I-IV deductions are correct and regulator overrides policy wording."
+    },
+    "verified": true,
+    "verifier_notes": [
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   },
+   {
+    "id": "F02",
+    "issue_type": "non_payable",
+    "title": "'Kit' charges without itemization",
+    "raised_by": "tpa",
+    "status": "fixable",
+    "inr_impact": 900.0,
+    "deduction_ids": [
+     "D-NP-KIT"
+    ],
+    "confidence": 0.9,
+    "explanation_en": "A kit billed as one line (₹900) with no contents is disallowed as 'any kit with no details mentioned'. Most of its contents are usually payable consumables.",
+    "explanations": {
+     "en": "A kit billed as one line (₹900) with no contents is disallowed as 'any kit with no details mentioned'. Most of its contents are usually payable consumables."
+    },
+    "fix": "Before filing, go to hospital billing desk and say: 'Please give me itemized breakup of Dressing kit Rs.900 on hospital letterhead with stamp and signature, showing each item name, quantity and rate.' Ensure gauze, bandage, antiseptic etc are listed separately. Attach this breakup to the final bill.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.",
+     "bbox": [
+      78.0,
+      697.2874755859375,
+      509.9176940917969,
+      723.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": {
+     "doc": "bill.jpg",
+     "page": 1,
+     "quote": "Dressing kit",
+     "bbox": null,
+     "verified": false
+    },
+    "irdai_cite": {
+     "doc": "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-NONPAY-LISTS]",
+     "page": null,
+     "quote": "Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-NP-01"
+    ],
+    "tool_evidence": {
+     "tpa_reasoning": "L05 Dressing kit billed without itemized breakup matches 'any kit with no details mentioned' List IV, treatment is subsumed into treatment costs. Insurer will disallow as separate charge absent breakup.",
+     "advocate_argument": "Single-line kit with no details is correctly flagged as 'any kit with no details mentioned' List-IV and will be disallowed as separate charge. But Lists II-IV are only subsumed, and once itemized, payable consumables forming part of procedure become payable."
+    },
+    "verified": true,
+    "verifier_notes": [
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   },
+   {
+    "id": "F03",
+    "issue_type": "missing_doc",
+    "title": "1 document(s) missing",
+    "raised_by": "advocate",
+    "status": "fixable",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.9,
+    "explanation_en": "Missing: Itemized breakup of 'kit' charges.",
+    "explanations": {
+     "en": "Missing: Itemized breakup of 'kit' charges."
+    },
+    "fix": "Before filing, collect from hospital billing/MRD: 'Itemized breakup of kit charges' on letterhead with seal and signature. Tell them: 'TPA needs kit contents for claim - please break up Dressing kit Rs.900 item-wise.' Upload with final itemized bill.",
+    "fix_localized": {},
+    "policy_cite": null,
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-NONPAY-LISTS]",
+     "page": null,
+     "quote": "Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-NP-01"
+    ],
+    "tool_evidence": {
+     "required_docs": {
+      "required": [
+       "claim_form_part_a",
+       "claim_form_part_b",
+       "final_itemized_bill",
+       "payment_receipts",
+       "discharge_summary",
+       "investigation_reports",
+       "prescriptions",
+       "pharmacy_bills",
+       "id_proof",
+       "policy_copy",
+       "cancelled_cheque",
+       "kit_itemized_breakup"
+      ],
+      "missing": [
+       {
+        "id": "kit_itemized_breakup",
+        "label": "Itemized breakup of 'kit' charges",
+        "critical": false,
+        "trigger": "kit"
+       }
+      ],
+      "triggers": [
+       "kit"
+      ],
+      "cashless_rule": null
+     },
+     "advocate_argument": "Missing kit breakup is the trigger for F02 disallowance. Providing it converts unitemized kit into assessable consumables, most of which are payable when part of treatment."
+    },
+    "verified": true,
+    "verifier_notes": [
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   }
+  ],
+  "missing_docs": [
+   {
+    "id": "kit_itemized_breakup",
+    "label": "Itemized breakup of 'kit' charges",
+    "critical": false,
+    "trigger": "kit"
+   }
+  ],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F02",
+    "who": "Hospital billing desk",
+    "action": "Before filing, go to hospital billing desk and say: 'Please give me itemized breakup of Dressing kit Rs.900 on hospital letterhead with stamp and signature, showing each item name, quantity and rate.' Ensure gauze, bandage, antiseptic etc are listed separately. Attach this breakup to the final bill.",
+    "status": "fixable",
+    "impact": 900.0,
+    "when": "before submission"
+   },
+   {
+    "step": 2,
+    "finding": "F03",
+    "who": "Hospital / You",
+    "action": "Before filing, collect from hospital billing/MRD: 'Itemized breakup of kit charges' on letterhead with seal and signature. Tell them: 'TPA needs kit contents for claim - please break up Dressing kit Rs.900 item-wise.' Upload with final itemized bill.",
+    "status": "fixable",
+    "impact": 0.0,
+    "when": "before submission"
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p scan, discharge:1p",
+    "t": "20:47:32"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:47:32"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 5680,
+    "usd": 0.006374,
+    "t": "20:48:14"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 7 lines via baseten",
+    "t": "20:48:14"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1175,
+    "usd": 0.0014025,
+    "t": "20:48:16"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Acute gastroenteritis with dehydration via baseten",
+    "t": "20:48:16"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:48:16"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:48:16"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 3 candidate finding(s)",
+    "t": "20:48:16"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:48:16"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5044,
+    "usd": 0.008521,
+    "t": "20:48:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"acute gastroenteritis\"}",
+    "result": "{\"admission\": \"2026-09-08\", \"policy_start\": \"2022-02-01\", \"continuous_since\": \"2022-02-01\", \"months_insurer_view\": 55, \"months_continuous\": 55, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 55, \"months_elapsed_continuous\": 55, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "20:48:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"acute gastroenteritis\"}",
+    "result": "{\"matched\": false}",
+    "t": "20:48:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "non_payable_lookup",
+    "args": "{\"description\":\"Dressing kit\"}",
+    "result": "{\"matches\": []}",
+    "t": "20:48:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "non_payable_lookup",
+    "args": "{\"description\":\"Gloves\"}",
+    "result": "{\"matches\": [{\"item\": \"gloves\", \"list\": \"IV\", \"treatment\": \"subsumed into treatment costs\"}]}",
+    "t": "20:48:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "non_payable_lookup",
+    "args": "{\"description\":\"Thermometer\"}",
+    "result": "{\"matches\": [{\"item\": \"thermometer\", \"list\": \"I\", \"treatment\": \"not payable\"}]}",
+    "t": "20:48:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5139,
+    "usd": 0.006954,
+    "t": "20:48:26"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"query\":\"non-payable consumables gloves thermometer kit\"}",
+    "result": "{\"matches\": [{\"clause_id\": \"5.3\", \"page\": 3, \"title\": \"Non-payable items\", \"quote\": \"Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.\"}, {\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expen…",
+    "t": "20:48:26"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"non-payable consumables List I List IV\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portab…",
+    "t": "20:48:26"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 6913,
+    "usd": 0.012292,
+    "t": "20:48:34"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "3 predicted issues; 7 tool calls",
+    "notes": "Acute gastroenteritis with dehydration, emergency admission, 55 months continuous cover since 2022-02-01 so initial 1M and specific 24M waits served; verified no sublimit for gastroenteritis. Room Twin sharing 3000/day within 1% SI limit (5000/day) so no proportionate deduction. No copay at age 29, intimation 4h within 24h, no exclusion hit. Only List I/IV consumables disallowed. Missing kit_itemized_breakup is non-critical.",
+    "t": "20:48:34"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:48:34"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2511,
+    "usd": 0.0045780000000000005,
+    "t": "20:48:37"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"non-payable List I List IV gloves thermometer standardization\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portab…",
+    "t": "20:48:37"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"kit charges itemized breakup any kit with no details\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}]}",
+    "t": "20:48:37"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"non-payable consumables gloves thermometer deduction upheld\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-NP-01\", \"illustrative\": true, \"issue_type\": \"non_payable\", \"complaint\": \"Consumables bundled as 'kit' disallowed entirely.\", \"decision\": \"partly allowed\", \"reasoning\": \"Itemized consumables forming part of procedure held payable.\", \"office\": null, \"year\": null}, {\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deductio…",
+    "t": "20:48:37"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"kit charges itemized breakup allowed payable\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-NP-01\", \"illustrative\": true, \"issue_type\": \"non_payable\", \"complaint\": \"Consumables bundled as 'kit' disallowed entirely.\", \"decision\": \"partly allowed\", \"reasoning\": \"Itemized consumables forming part of procedure held payable.\", \"office\": null, \"year\": null}]}",
+    "t": "20:48:37"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4407,
+    "usd": 0.009501,
+    "t": "20:48:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 3 findings; 4 tool calls",
+    "t": "20:48:44"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:48:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "2-host jury on 1 judgement(s), in parallel: muse, baseten",
+    "t": "20:48:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": true,
+    "tokens": 1607,
+    "usd": 0.0020035,
+    "t": "20:48:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "20:48:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 1549,
+    "usd": 0.005149,
+    "t": "20:48:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:48:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:48:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 2590,
+    "usd": 0.006189999999999999,
+    "t": "20:48:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "fallback",
+    "text": "baseten abstained (empty)",
+    "t": "20:48:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "fewer than 2 votes (none) — statuses unchanged",
+    "t": "20:48:44"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=2400",
+    "t": "20:48:48"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3138,
+    "usd": 0.003969,
+    "t": "20:48:57"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "20:48:57"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=2400",
+    "t": "20:49:00"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3975,
+    "usd": 0.0043875,
+    "t": "20:49:06"
+   },
+   {
+    "stage": "critic",
+    "kind": "fallback",
+    "text": "skipped (no JSON found)",
+    "t": "20:49:06"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "3 verified finding(s); 3 fully cited",
+    "t": "20:49:06"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": true,
+    "tokens": 2110,
+    "usd": 0.0014550000000000001,
+    "t": "20:49:06"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "20:49:06"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": true,
+    "tokens": 1020,
+    "usd": 0.00091,
+    "t": "20:49:06"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": true,
+    "tokens": 2109,
+    "usd": 0.0014545,
+    "t": "20:49:06"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "20:49:06"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": true,
+    "tokens": 820,
+    "usd": 0.0006100000000000001,
+    "t": "20:49:06"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 94.5s · 19 model call(s) (8 cached) · $0.0627",
+    "t": "20:49:06"
+   }
+  ],
+  "cost_usd": 0.09328800000000001,
+  "llm_calls": 19,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 9,
+    "cached": 5,
+    "usd": 0.016133,
+    "tokens": 21634,
+    "roles": [
+     "extract",
+     "jury",
+     "critic",
+     "evidence"
+    ]
+   },
+   "muse": {
+    "calls": 8,
+    "cached": 3,
+    "usd": 0.041846,
+    "tokens": 28707,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:49:06",
+  "payout_detail_before": {
+   "claimed": 21450.0,
+   "admissible_before_copay": 20000.0,
+   "copay": 0.0,
+   "payout": 20000.0,
+   "patient_pays": 1450.0,
+   "deductions": [
+    {
+     "id": "D-NP",
+     "issue_type": "non_payable",
+     "label": "Non-payable items (regulator list)",
+     "amount": 550.0,
+     "item_ids": [
+      "L06",
+      "L07"
+     ]
+    },
+    {
+     "id": "D-NP-KIT",
+     "issue_type": "non_payable",
+     "label": "Un-itemized kit charges",
+     "amount": 900.0,
+     "item_ids": [
+      "L05"
+     ]
+    }
+   ],
+   "rejected": false
+  }
+ },
+ "letters": {
+  "hospital": {
+   "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
+   "salutation": "Dear Billing / TPA Desk,",
+   "paragraphs": [
+    "I am writing on behalf of [PATIENT_NAME] regarding the in-patient bill at [HOSPITAL] (admitted [ADMISSION_DATE]) under Policy No. [POLICY_NO] / Claim No. [CLAIM_NO] to be submitted to [INSURER].",
+    "Before filing, an audit against the policy shows an item totalling ₹900 that the insurer is likely to deduct and that the hospital can correct before submission."
+   ],
+   "grounds": [
+    {
+     "title": "'Kit' charges without itemization",
+     "text": "The bill shows Dressing kit billed as a single line of ₹900 with no contents, which is liable to be disallowed as 'any kit with no details mentioned' under List-IV. Lists II-IV are only subsumed into room, procedure or treatment charges rather than excluded from the claim, and once itemized, payable consumables forming part of procedure become payable. Please provide an itemized breakup of Dressing kit Rs.900 on hospital letterhead with stamp and signature, showing each item name, quantity and rate with gauze, bandage, antiseptic etc. listed separately, and attach this breakup to the final bill.",
+     "cites": [
+      "policy p.3: \"Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.\"",
+      "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-NONPAY-LISTS]: \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\""
+     ]
+    },
+    {
+     "title": "1 document(s) missing",
+     "text": "The assessment is missing the itemized breakup of 'kit' charges, which is the trigger for disallowance of the Dressing kit Rs.900. Providing it converts the unitemized kit into assessable consumables, most of which are payable when part of treatment. Please issue the 'Itemized breakup of kit charges' on letterhead with seal and signature, breaking up Dressing kit Rs.900 item-wise, for uploading with the final itemized bill for TPA assessment.",
+     "cites": [
+      "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-NONPAY-LISTS]: \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\""
+     ]
+    }
+   ],
+   "relief": "Kindly issue the corrected/itemized documents described above so the claim is not short-paid on submission to [INSURER].",
+   "enclosures": [
+    "Copy of current bill"
+   ],
+   "closing": "Thank you,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": "Care Point Hospital, Nagpur",
+   "bill_no": "CPH-118",
+   "admission_date": "2026-09-08",
+   "discharge_date": "2026-09-10",
+   "room_category": "Twin sharing",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 2.0,
+     "rate": 3000.0,
+     "amount": 6000.0,
+     "date": "2026-09-08",
+     "page": 1,
+     "doc": "bill.jpg"
+    },
+    {
+     "id": "L02",
+     "description": "Physician visits",
+     "category": "consultation",
+     "qty": 1.0,
+     "rate": 3000.0,
+     "amount": 3000.0,
+     "date": "2026-09-08",
+     "page": 1,
+     "doc": "bill.jpg"
+    },
+    {
+     "id": "L03",
+     "description": "Pharmacy & IV fluids",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 7500.0,
+     "amount": 7500.0,
+     "date": "2026-09-08",
+     "page": 1,
+     "doc": "bill.jpg"
+    },
+    {
+     "id": "L04",
+     "description": "Stool & blood tests",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 3500.0,
+     "amount": 3500.0,
+     "date": "2026-09-08",
+     "page": 1,
+     "doc": "bill.jpg"
+    },
+    {
+     "id": "L05",
+     "description": "Dressing kit",
+     "category": "consumable",
+     "qty": 1.0,
+     "rate": 900.0,
+     "amount": 900.0,
+     "date": "2026-09-09",
+     "page": 1,
+     "doc": "bill.jpg"
+    },
+    {
+     "id": "L06",
+     "description": "Gloves",
+     "category": "consumable",
+     "qty": 1.0,
+     "rate": 300.0,
+     "amount": 300.0,
+     "date": "2026-09-09",
+     "page": 1,
+     "doc": "bill.jpg"
+    },
+    {
+     "id": "L07",
+     "description": "Thermometer",
+     "category": "consumable",
+     "qty": 1.0,
+     "rate": 250.0,
+     "amount": 250.0,
+     "date": "2026-09-09",
+     "page": 1,
+     "doc": "bill.jpg"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 21450.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.jpg"
+  },
+  "discharge": {
+   "diagnosis": "Acute gastroenteritis with dehydration",
+   "procedure": "IV fluids",
+   "icd10": null,
+   "admission_type": "emergency",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 29,
+   "sum_insured": null,
+   "policy_start": "2022-02-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque"
+   ],
+   "narrative": null,
+   "narrative_lang": null,
+   "intimation_hours_after_admission": 4.0
+  }
+ }
+}

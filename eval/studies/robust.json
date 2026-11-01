@@ -1,0 +1,40 @@
+{
+ "runs": [
+  {
+   "precision": 0.8390804597701149,
+   "recall": 1.0,
+   "status_acc": 0.8767123287671232,
+   "money_error": 0.0,
+   "claims": 36,
+   "run": 1,
+   "muse_usd": 1.992373,
+   "seconds_per_claim": 73.49444444444444,
+   "calls_per_claim": 13.13888888888889
+  },
+  {
+   "precision": 0.8488372093023255,
+   "recall": 1.0,
+   "status_acc": 0.8767123287671232,
+   "money_error": 0.0,
+   "claims": 36,
+   "run": 2,
+   "muse_usd": 2.013693,
+   "seconds_per_claim": 56.71666666666667,
+   "calls_per_claim": 12.36111111111111
+  },
+  {
+   "precision": 0.8295454545454546,
+   "recall": 1.0,
+   "status_acc": 0.8356164383561644,
+   "money_error": 0.0,
+   "claims": 36,
+   "run": 3,
+   "muse_usd": 1.999762,
+   "seconds_per_claim": 57.15555555555556,
+   "calls_per_claim": 12.88888888888889
+  }
+ ],
+ "muse_usd": 6.0207880000000005,
+ "total_usd": 7.478455,
+ "claims": 36
+}

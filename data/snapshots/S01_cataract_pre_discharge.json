@@ -1,6 +1,6 @@
 {
  "scenario": "S01_cataract_pre_discharge",
- "recorded_at": "2026-10-31T16:34:13+00:00",
+ "recorded_at": "2026-11-01T14:58:19+00:00",
  "profile": "prod",
  "report": {
   "mode": "pre_discharge",
@@ -700,79 +700,79 @@
     "stage": "ingest",
     "kind": "info",
     "text": "2 document(s): bill:1p, discharge:1p",
-    "t": "22:00:35"
+    "t": "20:28:18"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
-    "t": "22:00:35"
+    "t": "20:28:18"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
-    "tokens": 5582,
-    "usd": 0.007550000000000001,
-    "t": "22:00:49"
+    "cached": true,
+    "tokens": 5786,
+    "usd": 0.007856,
+    "t": "20:28:18"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "bill: 15 lines via baseten",
-    "t": "22:00:49"
+    "t": "20:28:18"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1251,
     "usd": 0.0014805,
-    "t": "22:00:52"
+    "t": "20:28:18"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "discharge: Senile mature cataract, right eye via baseten",
-    "t": "22:00:52"
+    "t": "20:28:18"
    },
    {
     "stage": "privacy",
     "kind": "info",
     "text": "2 personal identifier(s) masked before any model call",
-    "t": "22:00:52"
+    "t": "20:28:18"
    },
    {
     "stage": "tools",
     "kind": "info",
     "text": "deterministic checks run: 14 tools",
-    "t": "22:00:52"
+    "t": "20:28:18"
    },
    {
     "stage": "rules",
     "kind": "info",
     "text": "rules engine: 7 candidate finding(s)",
-    "t": "22:00:52"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
     "kind": "start",
     "text": "TPA Adjudicator reviewing claim like the insurer would",
-    "t": "22:00:52"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 7207,
     "usd": 0.013678,
-    "t": "22:01:04"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -780,7 +780,7 @@
     "tool": "waiting_period_check",
     "args": "{}",
     "result": "{\"admission\": \"2026-10-20\", \"policy_start\": \"2023-04-01\", \"continuous_since\": \"2023-04-01\", \"months_insurer_view\": 42, \"months_continuous\": 42, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 42, \"months_elapsed_continuous\": 42, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
-    "t": "22:01:04"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -788,7 +788,7 @@
     "tool": "sublimit_check",
     "args": "{\"procedure\":\"phacoemulsification with IOL implantation\"}",
     "result": "{\"matched\": true, \"procedure\": \"cataract\", \"matched_on\": \"cataract\", \"limit\": 70000.0, \"basis\": \"per_eye\", \"cite\": {\"clause_id\": \"3.4\", \"page\": 2, \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}}",
-    "t": "22:01:04"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -796,7 +796,7 @@
     "tool": "ped_check",
     "args": "{}",
     "result": "{\"conditions_in_records\": [\"hypertension\"], \"undeclared\": [], \"condition_predates_policy\": true, \"months_continuous\": 42, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall b…",
-    "t": "22:01:04"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -804,7 +804,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.3\"}",
     "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
-    "t": "22:01:04"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -812,7 +812,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.5\"}",
     "result": "{\"clause_id\": \"3.5\", \"page\": 2, \"title\": \"Co-payment\", \"quote\": \"A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission.\"}",
-    "t": "22:01:04"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -820,17 +820,17 @@
     "tool": "search_rules",
     "args": "{\"query\":\"proportionate deduction room rent differential billing\"}",
     "result": "{\"rules\": [{\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy, …",
-    "t": "22:01:04"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 8877,
     "usd": 0.016356,
-    "t": "22:01:17"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -838,7 +838,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.1\"}",
     "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
-    "t": "22:01:17"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -846,7 +846,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.4\"}",
     "result": "{\"clause_id\": \"3.4\", \"page\": 2, \"title\": \"Sub-limits\", \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}",
-    "t": "22:01:17"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -854,7 +854,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"5.1\"}",
     "result": "{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}",
-    "t": "22:01:17"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -862,7 +862,7 @@
     "tool": "non_payable_lookup",
     "args": "{\"description\":\"Phaco kit\"}",
     "result": "{\"matches\": []}",
-    "t": "22:01:17"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -870,17 +870,17 @@
     "tool": "non_payable_lookup",
     "args": "{\"description\":\"Attendant food\"}",
     "result": "{\"matches\": [{\"item\": \"food charges\", \"list\": \"I\", \"treatment\": \"not payable\"}, {\"item\": \"attendant food\", \"list\": \"I\", \"treatment\": \"not payable\"}, {\"item\": \"attendant charges\", \"list\": \"I\", \"treatment\": \"not payable\"}]}",
-    "t": "22:01:17"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 8322,
     "usd": 0.012279,
-    "t": "22:01:24"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -888,7 +888,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"1.1\"}",
     "result": "{\"clause_id\": \"1.1\", \"page\": 1, \"title\": \"Hospital\", \"quote\": \"Hospital means any institution established for in-patient care and day care treatment of illness and/or injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments Act, 2010.\"}",
-    "t": "22:01:24"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -896,7 +896,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"2.1\"}",
     "result": "{\"clause_id\": \"2.1\", \"page\": 1, \"title\": \"Sum insured\", \"quote\": \"The Sum Insured under this policy is Rs. 5,00,000 per policy year on an individual basis.\"}",
-    "t": "22:01:24"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -904,17 +904,17 @@
     "tool": "search_rules",
     "args": "{\"query\":\"unitemized difference bill total itemized\"}",
     "result": "{\"rules\": []}",
-    "t": "22:01:24"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 9744,
     "usd": 0.016878,
-    "t": "22:01:35"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -922,7 +922,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"5.2\"}",
     "result": "{\"clause_id\": \"5.2\", \"page\": 3, \"title\": \"Claim documents\", \"quote\": \"Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.\"}",
-    "t": "22:01:35"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -930,7 +930,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"5.3\"}",
     "result": "{\"clause_id\": \"5.3\", \"page\": 3, \"title\": \"Non-payable items\", \"quote\": \"Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.\"}",
-    "t": "22:01:35"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
@@ -938,40 +938,40 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.3\"}",
     "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
-    "t": "22:01:35"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 11148,
     "usd": 0.021192,
-    "t": "22:01:49"
+    "t": "20:28:18"
    },
    {
     "stage": "tpa",
     "kind": "done",
     "text": "9 predicted issues; 17 tool calls",
     "notes": "Waiting periods cleared: 42 months continuous since 2023-04-01, so initial 1M and cataract-specific 24M served; PED hypertension declared and 36M PED wait served, cataract unrelated. Cataract sublimit 70000 per eye not breached on current admissible but caps any revival. Provide kit breakup, implant invoice/sticker, corrected itemized bill for 1700 diff, and non-differential-billing certificate to contest D-PD if eligible.",
-    "t": "22:01:49"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
     "kind": "start",
     "text": "Patient Advocate challenging each predicted cut",
-    "t": "22:01:49"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 5349,
     "usd": 0.010908000000000001,
-    "t": "22:01:58"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -979,7 +979,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"non-payable items List I II III IV standardization\"}",
     "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portab…",
-    "t": "22:01:58"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -987,7 +987,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"proportionate deduction room rent differential billing certificate\"}",
     "result": "{\"rules\": [{\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy, …",
-    "t": "22:01:58"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -995,7 +995,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"delayed intimation condonation claim rejection intimation 48 hours planned\"}",
     "result": "{\"rules\": [{\"id\": \"IN-CONDONE-DELAY\", \"rule\": \"Claims should not be rejected solely for delayed intimation or document submission where the delay is for reasons beyond the insured's control.\", \"source\": \"IRDAI standard terms and conditions (Standardization Guidelines 2020)\", \"overrides_policy\": true}, {\"id\": \"IN-CRC\", \"rule\": \"No claim may be repudiated without review and approval by the insurer's…",
-    "t": "22:01:58"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -1003,7 +1003,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"room rent limit upgrade non-availability eligible category\"}",
     "result": "{\"rules\": [{\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Li…",
-    "t": "22:01:58"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -1011,7 +1011,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.1\"}",
     "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
-    "t": "22:01:58"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -1019,7 +1019,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.3\"}",
     "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
-    "t": "22:01:58"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -1027,17 +1027,17 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.5\"}",
     "result": "{\"clause_id\": \"3.5\", \"page\": 2, \"title\": \"Co-payment\", \"quote\": \"A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission.\"}",
-    "t": "22:01:58"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 7102,
     "usd": 0.013189,
-    "t": "22:02:08"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -1045,7 +1045,7 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"kit charges itemized breakup consumables payable\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-NP-01\", \"illustrative\": true, \"issue_type\": \"non_payable\", \"complaint\": \"Consumables bundled as 'kit' disallowed entirely.\", \"decision\": \"partly allowed\", \"reasoning\": \"Itemized consumables forming part of procedure held payable.\", \"office\": null, \"year\": null}]}",
-    "t": "22:02:08"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -1053,7 +1053,7 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"proportionate deduction no differential billing certificate room category\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
-    "t": "22:02:08"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -1061,7 +1061,7 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"delayed intimation condonation planned surgery reimbursement\"}",
     "result": "{\"precedents\": []}",
-    "t": "22:02:08"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
@@ -1069,172 +1069,148 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"room rent non-availability eligible category upgrade\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}, {\"id\": \"ILL-PED-01\", \"illustrative\": true, \"issue_type\": \"ped\", \"co…",
-    "t": "22:02:08"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 9835,
     "usd": 0.021835,
-    "t": "22:02:25"
+    "t": "20:28:18"
    },
    {
     "stage": "advocate",
     "kind": "done",
     "text": "verdicts for 9 findings; 11 tool calls",
-    "t": "22:02:25"
+    "t": "20:28:18"
    },
    {
     "stage": "critic",
     "kind": "start",
     "text": "Critic auditing statuses, fixes and citations",
-    "t": "22:02:25"
+    "t": "20:28:18"
    },
    {
     "stage": "jury",
     "kind": "start",
     "text": "3-host jury on 4 judgement(s), in parallel: muse, baseten, fireworks",
-    "t": "22:02:25"
+    "t": "20:28:18"
    },
    {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:02:28"
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 3730,
+    "usd": 0.0038400000000000005,
+    "t": "20:28:18"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1420,
     "usd": 0.00131,
-    "t": "22:02:29"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "muse",
-    "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 1962,
-    "usd": 0.005561999999999999,
-    "t": "22:02:33"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "non-JSON answer from muse → repair pass",
-    "t": "22:02:33"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "muse",
-    "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 575,
-    "usd": 0.001712,
-    "t": "22:02:35"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=1200",
-    "t": "22:02:41"
-   },
-   {
-    "stage": "critic",
-    "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=2400",
-    "t": "22:02:55"
+    "t": "20:28:18"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "fireworks",
     "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
+    "cached": true,
     "tokens": 2019,
     "usd": 0.0022095,
-    "t": "22:03:09"
+    "t": "20:28:18"
    },
    {
     "stage": "jury",
     "kind": "info",
     "text": "non-JSON answer from fireworks → repair pass",
-    "t": "22:03:09"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:03:12"
+    "t": "20:28:18"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
+    "tokens": 1962,
+    "usd": 0.005561999999999999,
+    "t": "20:28:18"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:28:18"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:28:18"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
     "tokens": 2590,
     "usd": 0.006189999999999999,
-    "t": "22:03:15"
+    "t": "20:28:18"
    },
    {
     "stage": "jury",
     "kind": "fallback",
     "text": "fireworks abstained (empty)",
-    "t": "22:03:15"
+    "t": "20:28:18"
    },
    {
     "stage": "jury",
     "kind": "info",
     "text": "fewer than 2 votes (baseten) — statuses unchanged",
-    "t": "22:03:15"
-   },
-   {
-    "stage": "critic",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 3730,
-    "usd": 0.0038400000000000005,
-    "t": "22:03:42"
+    "t": "20:28:18"
    },
    {
     "stage": "critic",
     "kind": "done",
     "text": "Report largely accurate but F02 overstates non-payable by Rs1,750 (Lists II-IV are subsumed, not excluded) and F09 duplicates co-pay. Other fixable items (F01,F03,F05,F07,F08) have lawful, actionable fixes; valid deductions (F04,F06) are correctly applied.",
-    "t": "22:03:42"
+    "t": "20:28:18"
    },
    {
     "stage": "verify",
     "kind": "info",
     "text": "9 verified finding(s); 8 fully cited",
-    "t": "22:03:42"
+    "t": "20:28:18"
    },
    {
     "stage": "report",
     "kind": "info",
-    "text": "done in 187.3s · 20 model call(s) (0 cached) · $0.1671",
-    "t": "22:03:42"
+    "text": "done in 0.3s · 16 model call(s) (16 cached) · $0.0000",
+    "t": "20:28:19"
    }
   ],
-  "cost_usd": 0.202496,
-  "llm_calls": 20,
+  "cost_usd": 0.0,
+  "llm_calls": 16,
   "engine": "full",
   "provider_calls": {
    "baseten": {
     "calls": 3,
-    "cached": 0,
-    "usd": 0.0103405,
-    "tokens": 8253,
+    "cached": 3,
+    "usd": 0.0,
+    "tokens": 8457,
     "roles": [
      "extract",
      "jury"
@@ -1242,9 +1218,9 @@
    },
    "muse": {
     "calls": 11,
-    "cached": 0,
-    "usd": 0.139779,
-    "tokens": 72711,
+    "cached": 11,
+    "usd": 0.0,
+    "tokens": 72690,
     "roles": [
      "tpa",
      "advocate",
@@ -1253,16 +1229,16 @@
    },
    "fireworks": {
     "calls": 2,
-    "cached": 0,
-    "usd": 0.006049500000000001,
+    "cached": 2,
+    "usd": 0.0,
     "tokens": 5749,
     "roles": [
-     "jury",
-     "critic"
+     "critic",
+     "jury"
     ]
    }
   },
-  "generated_at": "2026-10-31T22:03:42",
+  "generated_at": "2026-11-01T20:28:19",
   "payout_detail_before": {
    "claimed": 71350.0,
    "admissible_before_copay": 49300.0,
@@ -1377,7 +1353,7 @@
  "bundle": {
   "policy_id": "demo_shield",
   "bill": {
-   "hospital": "Sunrise Eye & General Hospital, Ahmedabad",
+   "hospital": null,
    "bill_no": "SEH/26/10412",
    "admission_date": "2026-10-20",
    "discharge_date": "2026-10-21",

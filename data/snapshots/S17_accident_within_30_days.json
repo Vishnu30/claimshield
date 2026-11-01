@@ -1,0 +1,751 @@
+{
+ "scenario": "S17_accident_within_30_days",
+ "recorded_at": "2026-11-01T15:23:08+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 74500.0,
+  "payout_before": 74500.0,
+  "payout_after_fixes": 74500.0,
+  "payout_after_appeal": 74500.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 0.0,
+  "patient_pays_after": 0.0,
+  "insurer_paid": null,
+  "risk_score": 0,
+  "risk_band": "low",
+  "summary_en": "Claimed ₹74,500. As it stands the insurer is likely to pay ₹74,500 (cut ₹0). Fixing 2 issue(s) before submission raises this to ₹74,500.",
+  "summary_localized": "Claimed ₹74,500. As it stands the insurer is likely to pay ₹74,500 (cut ₹0). Fixing 2 issue(s) before submission raises this to ₹74,500.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "missing_doc",
+    "title": "1 document(s) missing",
+    "raised_by": "advocate",
+    "status": "fixable",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.9,
+    "explanation_en": "Missing: FIR / MLC (accident).",
+    "explanations": {
+     "en": "Missing: FIR / MLC (accident)."
+    },
+    "fix": "Before filing, close this query. Go to the hospital Casualty / Medical Records desk and ask: 'Please give me attested copy of MLC with MLC number + Emergency casualty papers / ER notes showing RTA history, date-time 05-10-2026, fracture distal radius.' If police was involved, go to the police station where accident was reported with ID + hospital papers and ask: 'Please give me copy of FIR / CSR / community service register extract for RTA on 05-10-2026.' If no FIR was ever filed, do NOT file a false late FIR - instead take MLC + ER notes + discharge summary showing RTA + X-ray/OT notes + impl",
+    "fix_localized": {},
+    "policy_cite": null,
+    "bill_cite": null,
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "required_docs": {
+      "required": [
+       "claim_form_part_a",
+       "claim_form_part_b",
+       "final_itemized_bill",
+       "payment_receipts",
+       "discharge_summary",
+       "investigation_reports",
+       "prescriptions",
+       "pharmacy_bills",
+       "id_proof",
+       "policy_copy",
+       "cancelled_cheque",
+       "implant_invoice_sticker",
+       "fir_or_mlc"
+      ],
+      "missing": [
+       {
+        "id": "fir_or_mlc",
+        "label": "FIR / MLC (accident)",
+        "critical": false,
+        "trigger": "accident"
+       }
+      ],
+      "triggers": [
+       "implant",
+       "accident"
+      ],
+      "cashless_rule": null
+     },
+     "advocate_argument": "Policy clause 5.2 lists standard reimbursement docs (form, bills, discharge summary, investigations, prescriptions) and does not list FIR/MLC for every claim - it is trigger-based extra proof for accident. TPA has correctly flagged it as missing, amount 0, so no deduction yet, only query/delay risk. Providing MLC/ER proof pre-submission prevents that query."
+    },
+    "verified": true,
+    "verifier_notes": []
+   },
+   {
+    "id": "F02",
+    "issue_type": "other",
+    "title": "FIR / MLC missing - required to prove accident exemption from 30-day initial waiting",
+    "raised_by": "tpa",
+    "status": "fixable",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.9,
+    "explanation_en": "Admission 2026-10-05 is only 10 days after policy start 2026-09-25, so within 30-day initial waiting under clause 4.1. Evidence pack waiting hits=[] only because diagnosis is coded as accident (fracture distal radius following RTA, emergency ORIF). Insurer will only honour the 'except claims arising due to an accident' exception if accident is proved. Docs list shows implant_invoice_sticker etc provided but fir_or_mlc missing. Expect query / conditional delay pending FIR/MLC, not a monetary deduction.",
+    "explanations": {
+     "en": "Admission 2026-10-05 is only 10 days after policy start 2026-09-25, so within 30-day initial waiting under clause 4.1. Evidence pack waiting hits=[] only because diagnosis is coded as accident (fracture distal radius following RTA, emergency ORIF). Insurer will only honour the 'except claims arising due to an accident' exception if accident is proved. Docs list shows implant_invoice_sticker etc provided but fir_or_mlc missing. Expect query / conditional delay pending FIR/MLC, not a monetary deduction."
+    },
+    "fix": "Same action as F01 but to lock the 30-day exemption: Ask the treating orthopaedic surgeon / MRD to ensure final discharge summary diagnosis line reads: 'Fracture distal radius following Road Traffic Accident on 05-10-2026 - Emergency ORIF with plate/screws' with date-time and mode of injury. Staple on top in this order before submission: 1) MLC + casualty papers, 2) discharge summary highlighting RTA + emergency, 3) X-ray + OT notes, 4) implant invoice/sticker you already have, 5) proof intimation was done within 6 hours of admission. Write on cover letter: 'Admission 05-10-2026 is Day-10 from",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident.",
+     "bbox": [
+      78.0,
+      623.2874755859375,
+      509.37615966796875,
+      649.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-CRC]",
+     "page": null,
+     "quote": "No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [],
+    "tool_evidence": {
+     "advocate_argument": "Clause 4.1 says 'Expenses related to treatment of any illness within 30 days from first policy commencement shall be excluded except claims arising due to an accident.' Admission 05-10-2026 is Day-10 so would be excluded as illness, but fracture distal radius following RTA with emergency ORIF falls squarely in the 'except accident' exception. Intimation in 6 hours complies with clause 5.1 24-hour emergency rule and corroborates accident/emergency. Insurer can only deny under 4.1 with CRC approval citing specific clause; denial solely for missing FIR when MLC + ER + discharge summary prove accident would violate 4.1. Fix by filing accident proof now."
+    },
+    "verified": false,
+    "verifier_notes": [
+     "advocate: needs_review → fixable",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   }
+  ],
+  "missing_docs": [
+   {
+    "id": "fir_or_mlc",
+    "label": "FIR / MLC (accident)",
+    "critical": false,
+    "trigger": "accident"
+   }
+  ],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F01",
+    "who": "Hospital / You",
+    "action": "Before filing, close this query. Go to the hospital Casualty / Medical Records desk and ask: 'Please give me attested copy of MLC with MLC number + Emergency casualty papers / ER notes showing RTA history, date-time 05-10-2026, fracture distal radius.' If police was involved, go to the police station where accident was reported with ID + hospital papers and ask: 'Please give me copy of FIR / CSR / community service register extract for RTA on 05-10-2026.' If no FIR was ever filed, do NOT file a false late FIR - instead take MLC + ER notes + discharge summary showing RTA + X-ray/OT notes + impl",
+    "status": "fixable",
+    "impact": 0.0,
+    "when": "before submission"
+   },
+   {
+    "step": 2,
+    "finding": "F02",
+    "who": "You",
+    "action": "Same action as F01 but to lock the 30-day exemption: Ask the treating orthopaedic surgeon / MRD to ensure final discharge summary diagnosis line reads: 'Fracture distal radius following Road Traffic Accident on 05-10-2026 - Emergency ORIF with plate/screws' with date-time and mode of injury. Staple on top in this order before submission: 1) MLC + casualty papers, 2) discharge summary highlighting RTA + emergency, 3) X-ray + OT notes, 4) implant invoice/sticker you already have, 5) proof intimation was done within 6 hours of admission. Write on cover letter: 'Admission 05-10-2026 is Day-10 from",
+    "status": "fixable",
+    "impact": 0.0,
+    "when": "before submission"
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:51:38"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:51:38"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 2425,
+    "usd": 0.0029985,
+    "t": "20:51:43"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 7 lines via baseten",
+    "t": "20:51:43"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1203,
+    "usd": 0.0014385,
+    "t": "20:51:46"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Fracture distal radius, left, following road traffic accident via baseten",
+    "t": "20:51:46"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:51:46"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:51:46"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 1 candidate finding(s)",
+    "t": "20:51:46"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:51:46"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4509,
+    "usd": 0.007785,
+    "t": "20:51:52"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.1\"}",
+    "result": "{\"clause_id\": \"4.1\", \"page\": 2, \"title\": \"Initial waiting period\", \"quote\": \"Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident.\"}",
+    "t": "20:51:52"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"fracture distal radius ORIF\"}",
+    "result": "{\"admission\": \"2026-10-05\", \"policy_start\": \"2026-09-25\", \"continuous_since\": \"2026-09-25\", \"months_insurer_view\": 0, \"months_continuous\": 0, \"hits\": []}",
+    "t": "20:51:52"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"ORIF fracture distal radius locking plate\"}",
+    "result": "{\"matched\": false}",
+    "t": "20:51:52"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 0, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": false, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unt…",
+    "t": "20:51:52"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"initial waiting period accident emergency exemption\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": t…",
+    "t": "20:51:52"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5065,
+    "usd": 0.007582,
+    "t": "20:51:56"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"5.1\"}",
+    "result": "{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}",
+    "t": "20:51:56"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "compute_payout",
+    "args": "{}",
+    "result": "{\"claimed\": 74500.0, \"payout\": 74500.0, \"copay\": 0.0, \"deductions\": []}",
+    "t": "20:51:56"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5658,
+    "usd": 0.009222000000000001,
+    "t": "20:52:02"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"5.2\"}",
+    "result": "{\"clause_id\": \"5.2\", \"page\": 3, \"title\": \"Claim documents\", \"quote\": \"Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.\"}",
+    "t": "20:52:02"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5742,
+    "usd": 0.009096,
+    "t": "20:52:09"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "2 predicted issues; 8 tool calls",
+    "notes": "Engine shows 0 deductions and compute_payout 74500 payable. Agree: room 3000/day within 5000/day limit (3.1), no proportionate deduction (3.3), no sublimit (cataract limit irrelevant), no copay age 31, no non-payables, intimation 6h within 24h (5.1). Initial waiting 4.1 does not apply because accident is expressly exempted - subject to filing FIR/MLC. Submit FIR/MLC promptly to secure exemption.",
+    "t": "20:52:09"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:52:09"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2332,
+    "usd": 0.004612,
+    "t": "20:52:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"FIR MLC mandatory accident claim proof\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-CRC\", \"rule\": \"No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–…",
+    "t": "20:52:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"30-day initial waiting period accident exemption\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": t…",
+    "t": "20:52:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.1\"}",
+    "result": "{\"clause_id\": \"4.1\", \"page\": 2, \"title\": \"Initial waiting period\", \"quote\": \"Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident.\"}",
+    "t": "20:52:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"FIR not mandatory accident mediclaim alternative proof\"}",
+    "result": "{\"precedents\": []}",
+    "t": "20:52:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2963,
+    "usd": 0.004588999999999999,
+    "t": "20:52:15"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"claim documents essential FIR police report\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-DOCS-CASHLESS\", \"rule\": \"For cashless claims, the insurer/TPA must obtain required documents from the hospital; the policyholder should not be asked to submit them.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-CRC\", \"rule\": \"No claim may be repudiated without review and approval by the insurer's Claims Review Com…",
+    "t": "20:52:15"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"accident emergency hospitalization documents required\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-DOCS-CASHLESS\", \"rule\": \"For cashless claims, the insurer/TPA must obtain required documents from the hospital; the policyholder should not be asked to submit them.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}]}",
+    "t": "20:52:15"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"accident claim rejected FIR missing MLC\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-PED-01\", \"illustrative\": true, \"issue_type\": \"ped\", \"complaint\": \"Claim repudiated for non-disclosure of hypertension after 6 years of continuous cover.\", \"decision\": \"allowed\", \"reasoning\": \"Moratorium bars contesting non-disclosure after 60 months absent fraud.\", \"office\": null, \"year\": null}]}",
+    "t": "20:52:15"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"fracture distal radius ORIF accident\"}",
+    "result": "{\"admission\": \"2026-10-05\", \"policy_start\": \"2026-09-25\", \"continuous_since\": \"2026-09-25\", \"months_insurer_view\": 0, \"months_continuous\": 0, \"hits\": []}",
+    "t": "20:52:15"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4283,
+    "usd": 0.00737,
+    "t": "20:52:20"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"query\":\"accident definition emergency\"}",
+    "result": "{\"matches\": [{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}, {\"clause_id\": \"Excl05\", \"page\": 3, \"title\": \"Cosmetic surgery\", \"quote\": \"Expenses for cosmetic or plastic surgery or any treatment to change appearanc…",
+    "t": "20:52:20"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"query\":\"documents required claim reimbursement FIR MLC\"}",
+    "result": "{\"matches\": [{\"clause_id\": \"5.2\", \"page\": 3, \"title\": \"Claim documents\", \"quote\": \"Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.\"}, {\"clause_id\": \"3.5\", \"page\": 2, \"title\": \"Co-payment\", \"quote\": \"A co-payment of 10% of the admissible claim amount applies to e…",
+    "t": "20:52:20"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 6607,
+    "usd": 0.015052,
+    "t": "20:52:36"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 2 findings; 10 tool calls",
+    "t": "20:52:36"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:52:36"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "2-host jury on 1 judgement(s), in parallel: muse, baseten",
+    "t": "20:52:36"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "20:52:39"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1039,
+    "usd": 0.0011195,
+    "t": "20:52:39"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1770,
+    "usd": 0.002085,
+    "t": "20:52:40"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 1581,
+    "usd": 0.005181,
+    "t": "20:52:43"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:52:43"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:52:43"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "fewer than 2 votes (baseten) — statuses unchanged",
+    "t": "20:52:43"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "2 verified finding(s); 1 fully cited",
+    "t": "20:52:43"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 65.0s · 15 model call(s) (1 cached) · $0.0809",
+    "t": "20:52:43"
+   }
+  ],
+  "cost_usd": 0.115174,
+  "llm_calls": 15,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 4,
+    "cached": 0,
+    "usd": 0.0076415,
+    "tokens": 6437,
+    "roles": [
+     "extract",
+     "jury",
+     "critic"
+    ]
+   },
+   "muse": {
+    "calls": 10,
+    "cached": 1,
+    "usd": 0.070489,
+    "tokens": 39294,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:52:43",
+  "payout_detail_before": {
+   "claimed": 74500.0,
+   "admissible_before_copay": 74500.0,
+   "copay": 0.0,
+   "payout": 74500.0,
+   "patient_pays": 0.0,
+   "deductions": [],
+   "rejected": false
+  }
+ },
+ "letters": {
+  "hospital": {
+   "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
+   "salutation": "Dear Billing / TPA Desk,",
+   "paragraphs": [
+    "I am writing regarding the in-patient treatment of [PATIENT_NAME] at [HOSPITAL] admitted on [ADMISSION_DATE] under Policy No. [POLICY_NO] / Claim No. [CLAIM_NO] to be submitted to [INSURER]. Before submission, audit shows a query-risk that the hospital can help correct.",
+    "As per records provided, diagnosis is fracture distal radius following Road Traffic Accident on 05-10-2026 treated by emergency ORIF with plate/screws, with intimation done within 6 hours of admission and implant invoice/sticker available. Admission 05-10-2026 is 10 days after policy start 2026-09-25. FIR / MLC is noted as missing."
+   ],
+   "grounds": [
+    {
+     "title": "1 document(s) missing",
+     "text": "You are requested to provide attested copy of MLC with MLC number with Emergency casualty papers / ER notes showing RTA history, date-time 05-10-2026, fracture distal radius. If police was involved, kindly advise on obtaining copy of FIR / CSR / community service register extract for RTA on 05-10-2026 from the concerned station with ID and hospital papers. If no FIR was ever filed, please do not create a late FIR and instead provide MLC with ER notes with discharge summary showing RTA with X-ray/OT notes with implant records already available. This is trigger-based extra proof for accident and will prevent query/delay at submission (Impact: ₹0).",
+     "cites": []
+    },
+    {
+     "title": "FIR / MLC missing - required to prove accident exemption from 30-day initial waiting",
+     "text": "You are requested to ensure the final discharge summary diagnosis line records 'Fracture distal radius following Road Traffic Accident on 05-10-2026 - Emergency ORIF with plate/screws' with date-time and mode of injury, and to arrange the submission set in order: 1) MLC with casualty papers, 2) discharge summary highlighting RTA and emergency, 3) X-ray with OT notes, 4) implant invoice/sticker already available, 5) proof intimation was done within 6 hours of admission, with cover note that admission 05-10-2026 is Day-10 from policy start 2026-09-25 and falls under the accident exception to the 30-day exclusion. Admission within 30 days would otherwise be excluded as illness, but fracture distal radius following RTA with emergency ORIF falls in the 'except accident' exception (Impact: ₹0).",
+     "cites": [
+      "Policy p.2: \"Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident.\"",
+      "IRDAI Master Circular on Health Insurance Business 2024 [IN-CRC]: \"No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause.\""
+     ]
+    }
+   ],
+   "relief": "Kindly issue attested MLC with MLC number with Emergency casualty papers / ER notes and corrected discharge summary recording RTA on 05-10-2026 with emergency ORIF, with itemized documents, so the claim for [PATIENT_NAME] under [POLICY_NO] / [CLAIM_NO] to [INSURER] is not delayed or short-paid.",
+   "enclosures": [
+    "Copy of current bill"
+   ],
+   "closing": "Thank you,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": "Trauma Care Centre, Chandigarh",
+   "bill_no": "TCC-441",
+   "admission_date": "2026-10-05",
+   "discharge_date": "2026-10-07",
+   "room_category": "Twin sharing",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 2.0,
+     "rate": 3000.0,
+     "amount": 6000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Orthopaedic surgeon fee - ORIF",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 25000.0,
+     "amount": 25000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Anaesthesia",
+     "category": "anaesthesia",
+     "qty": 1.0,
+     "rate": 6000.0,
+     "amount": 6000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 12000.0,
+     "amount": 12000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Locking plate & screws (implant)",
+     "category": "implant",
+     "qty": 1.0,
+     "rate": 18000.0,
+     "amount": 18000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 5000.0,
+     "amount": 5000.0,
+     "date": "2026-10-06",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L07",
+     "description": "X-ray & CT",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 2500.0,
+     "amount": 2500.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 74500.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Fracture distal radius, left, following road traffic accident",
+   "procedure": "ORIF with locking plate",
+   "icd10": null,
+   "admission_type": "emergency",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 31,
+   "sum_insured": null,
+   "policy_start": "2026-09-25",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque",
+    "implant_invoice_sticker"
+   ],
+   "narrative": null,
+   "narrative_lang": null,
+   "intimation_hours_after_admission": 6.0
+  }
+ }
+}

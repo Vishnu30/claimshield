@@ -1,0 +1,20 @@
+{
+ "letters": {
+  "appeal": {
+   "letters": 7,
+   "grounds_cited": 1.0,
+   "placeholders": 1.0,
+   "no_pii": 1.0,
+   "score": 0
+  },
+  "hospital": {
+   "letters": 11,
+   "grounds_cited": 1.0,
+   "placeholders": 0.18181818181818182,
+   "no_pii": 1.0,
+   "score": 0
+  }
+ },
+ "muse_usd": 0.303117,
+ "claims": 36
+}

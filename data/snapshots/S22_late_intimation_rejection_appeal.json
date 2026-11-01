@@ -1,6 +1,6 @@
 {
  "scenario": "S22_late_intimation_rejection_appeal",
- "recorded_at": "2026-10-31T16:57:31+00:00",
+ "recorded_at": "2026-11-01T15:24:37+00:00",
  "profile": "prod",
  "report": {
   "mode": "appeal",
@@ -72,95 +72,95 @@
     "stage": "ingest",
     "kind": "info",
     "text": "3 document(s): bill:1p, discharge:1p, rejection:1p",
-    "t": "22:26:04"
+    "t": "20:54:37"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
-    "t": "22:26:04"
+    "t": "20:54:37"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 2280,
     "usd": 0.002807,
-    "t": "22:26:09"
+    "t": "20:54:37"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "bill: 6 lines via baseten",
-    "t": "22:26:09"
+    "t": "20:54:37"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1136,
     "usd": 0.001343,
-    "t": "22:26:12"
+    "t": "20:54:37"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "discharge: Acute appendicitis via baseten",
-    "t": "22:26:12"
+    "t": "20:54:37"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1276,
     "usd": 0.001551,
-    "t": "22:26:14"
+    "t": "20:54:37"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "rejection: 1 reason(s) via baseten",
-    "t": "22:26:14"
+    "t": "20:54:37"
    },
    {
     "stage": "privacy",
     "kind": "info",
     "text": "2 personal identifier(s) masked before any model call",
-    "t": "22:26:14"
+    "t": "20:54:37"
    },
    {
     "stage": "tools",
     "kind": "info",
     "text": "deterministic checks run: 14 tools",
-    "t": "22:26:14"
+    "t": "20:54:37"
    },
    {
     "stage": "rules",
     "kind": "info",
     "text": "rules engine: 1 candidate finding(s)",
-    "t": "22:26:14"
+    "t": "20:54:37"
    },
    {
     "stage": "tpa",
     "kind": "start",
     "text": "TPA Adjudicator reviewing claim like the insurer would",
-    "t": "22:26:14"
+    "t": "20:54:37"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 4855,
     "usd": 0.008785,
-    "t": "22:26:21"
+    "t": "20:54:37"
    },
    {
     "stage": "tpa",
@@ -168,7 +168,7 @@
     "tool": "waiting_period_check",
     "args": "{\"condition\":\"acute appendicitis\"}",
     "result": "{\"admission\": \"2026-09-01\", \"policy_start\": \"2021-01-15\", \"continuous_since\": \"2021-01-15\", \"months_insurer_view\": 67, \"months_continuous\": 67, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 67, \"months_elapsed_continuous\": 67, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
-    "t": "22:26:21"
+    "t": "20:54:37"
    },
    {
     "stage": "tpa",
@@ -176,7 +176,7 @@
     "tool": "sublimit_check",
     "args": "{\"procedure\":\"laparoscopic appendicectomy\"}",
     "result": "{\"matched\": false}",
-    "t": "22:26:21"
+    "t": "20:54:37"
    },
    {
     "stage": "tpa",
@@ -184,7 +184,7 @@
     "tool": "ped_check",
     "args": "{}",
     "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 67, \"moratorium_months\": 60, \"moratorium_passed\": true, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unti…",
-    "t": "22:26:21"
+    "t": "20:54:37"
    },
    {
     "stage": "tpa",
@@ -192,7 +192,7 @@
     "tool": "get_clause",
     "args": "{\"query\":\"intimation delay condonation emergency\"}",
     "result": "{\"matches\": [{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}]}",
-    "t": "22:26:21"
+    "t": "20:54:37"
    },
    {
     "stage": "tpa",
@@ -200,40 +200,40 @@
     "tool": "search_rules",
     "args": "{\"query\":\"delayed intimation rejection claim condone emergency\"}",
     "result": "{\"rules\": [{\"id\": \"IN-CONDONE-DELAY\", \"rule\": \"Claims should not be rejected solely for delayed intimation or document submission where the delay is for reasons beyond the insured's control.\", \"source\": \"IRDAI standard terms and conditions (Standardization Guidelines 2020)\", \"overrides_policy\": true}, {\"id\": \"IN-CRC\", \"rule\": \"No claim may be repudiated without review and approval by the insurer's…",
-    "t": "22:26:21"
+    "t": "20:54:37"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 7316,
     "usd": 0.015491,
-    "t": "22:26:33"
+    "t": "20:54:37"
    },
    {
     "stage": "tpa",
     "kind": "done",
     "text": "1 predicted issues; 5 tool calls",
     "notes": "Appeal case: emergency laparoscopic appendicectomy for acute appendicitis. All deterministic checks pass. Late intimation condonable per IN-CONDONE-DELAY and rejection without specific clause violates IN-CRC. No waiting, sublimit, PED, room/PD, copay or exclusion deduction. Recommend overturn rejection and pay Rs.71000 in full subject to tariff reasonableness.",
-    "t": "22:26:33"
+    "t": "20:54:37"
    },
    {
     "stage": "advocate",
     "kind": "start",
     "text": "Patient Advocate challenging each predicted cut",
-    "t": "22:26:33"
+    "t": "20:54:37"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 1703,
     "usd": 0.002903,
-    "t": "22:26:35"
+    "t": "20:54:37"
    },
    {
     "stage": "advocate",
@@ -241,7 +241,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"intimation delay condone 24 hours emergency\"}",
     "result": "{\"rules\": [{\"id\": \"IN-CONDONE-DELAY\", \"rule\": \"Claims should not be rejected solely for delayed intimation or document submission where the delay is for reasons beyond the insured's control.\", \"source\": \"IRDAI standard terms and conditions (Standardization Guidelines 2020)\", \"overrides_policy\": true}, {\"id\": \"IN-CASHLESS-TAT\", \"rule\": \"Cashless authorisation must be decided within 1 hour of reques…",
-    "t": "22:26:35"
+    "t": "20:54:37"
    },
    {
     "stage": "advocate",
@@ -249,7 +249,7 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"late intimation delay condoned genuine claim emergency\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-PED-01\", \"illustrative\": true, \"issue_type\": \"ped\", \"complaint\": \"Claim repudiated for non-disclosure of hypertension after 6 years of continuous cover.\", \"decision\": \"allowed\", \"reasoning\": \"Moratorium bars contesting non-disclosure after 60 months absent fraud.\", \"office\": null, \"year\": null}]}",
-    "t": "22:26:35"
+    "t": "20:54:37"
    },
    {
     "stage": "advocate",
@@ -257,85 +257,61 @@
     "tool": "get_clause",
     "args": "{\"query\":\"intimation 24 hours admission notice requirement\"}",
     "result": "{\"matches\": [{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}, {\"clause_id\": \"1.2\", \"page\": 1, \"title\": \"Day care treatment\", \"quote\": \"Day care treatment means medical treatment and/or surgical procedure which is …",
-    "t": "22:26:35"
+    "t": "20:54:37"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 3036,
     "usd": 0.006243,
-    "t": "22:26:40"
+    "t": "20:54:37"
    },
    {
     "stage": "advocate",
     "kind": "done",
     "text": "verdicts for 1 findings; 3 tool calls",
-    "t": "22:26:40"
+    "t": "20:54:37"
    },
    {
     "stage": "critic",
     "kind": "start",
     "text": "Critic auditing statuses, fixes and citations",
-    "t": "22:26:40"
+    "t": "20:54:37"
    },
    {
     "stage": "jury",
     "kind": "start",
-    "text": "3-host jury on 1 judgement(s), in parallel: muse, baseten, fireworks",
-    "t": "22:26:40"
+    "text": "2-host jury on 1 judgement(s), in parallel: muse, baseten",
+    "t": "20:54:37"
    },
    {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on baseten; one retry with max_tokens=1200",
-    "t": "22:26:43"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:26:44"
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 1370,
+    "usd": 0.0016809999999999998,
+    "t": "20:54:37"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1561,
     "usd": 0.0019805,
-    "t": "22:26:48"
+    "t": "20:54:37"
    },
    {
     "stage": "jury",
     "kind": "info",
     "text": "non-JSON answer from baseten → repair pass",
-    "t": "22:26:48"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:26:51"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "muse",
-    "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 1503,
-    "usd": 0.005103,
-    "t": "22:26:51"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "non-JSON answer from muse → repair pass",
-    "t": "22:26:51"
+    "t": "20:54:37"
    },
    {
     "stage": "jury",
@@ -343,119 +319,75 @@
     "provider": "muse",
     "model": "muse-spark-1.3",
     "cached": true,
-    "tokens": 575,
-    "usd": 0.001712,
-    "t": "22:26:51"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=1200",
-    "t": "22:26:51"
+    "tokens": 2590,
+    "usd": 0.006189999999999999,
+    "t": "20:54:37"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 2590,
-    "usd": 0.006189999999999999,
-    "t": "22:26:54"
-   },
-   {
-    "stage": "critic",
-    "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=2400",
-    "t": "22:27:02"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 1560,
-    "usd": 0.00198,
-    "t": "22:27:13"
+    "cached": true,
+    "tokens": 1503,
+    "usd": 0.005103,
+    "t": "20:54:37"
    },
    {
     "stage": "jury",
     "kind": "info",
-    "text": "non-JSON answer from fireworks → repair pass",
-    "t": "22:27:13"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:27:16"
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:54:37"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 2590,
-    "usd": 0.006189999999999999,
-    "t": "22:27:19"
-   },
-   {
-    "stage": "jury",
-    "kind": "fallback",
-    "text": "fireworks abstained (empty)",
-    "t": "22:27:19"
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:54:37"
    },
    {
     "stage": "jury",
     "kind": "fallback",
     "text": "baseten abstained (empty)",
-    "t": "22:27:19"
+    "t": "20:54:37"
    },
    {
     "stage": "jury",
     "kind": "info",
     "text": "fewer than 2 votes (none) — statuses unchanged",
-    "t": "22:27:19"
-   },
-   {
-    "stage": "critic",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 1370,
-    "usd": 0.0016809999999999998,
-    "t": "22:27:24"
+    "t": "20:54:37"
    },
    {
     "stage": "critic",
     "kind": "done",
     "text": "Single finding is sound and safe to rely on with noted nuance; no status change needed.",
-    "t": "22:27:24"
+    "t": "20:54:37"
    },
    {
     "stage": "verify",
     "kind": "info",
     "text": "1 verified finding(s); 1 fully cited",
-    "t": "22:27:24"
+    "t": "20:54:37"
    },
    {
     "stage": "report",
     "kind": "info",
-    "text": "done in 80.2s · 20 model call(s) (1 cached) · $0.0767",
-    "t": "22:27:24"
+    "text": "done in 0.1s · 12 model call(s) (12 cached) · $0.0000",
+    "t": "20:54:37"
    }
   ],
-  "cost_usd": 0.084148,
-  "llm_calls": 20,
+  "cost_usd": 0.0,
+  "llm_calls": 12,
   "engine": "full",
   "provider_calls": {
    "baseten": {
     "calls": 4,
-    "cached": 0,
-    "usd": 0.007681500000000001,
+    "cached": 4,
+    "usd": 0.0,
     "tokens": 6253,
     "roles": [
      "extract",
@@ -463,10 +395,10 @@
     ]
    },
    "muse": {
-    "calls": 8,
-    "cached": 1,
-    "usd": 0.050905000000000006,
-    "tokens": 24168,
+    "calls": 7,
+    "cached": 7,
+    "usd": 0.0,
+    "tokens": 21557,
     "roles": [
      "tpa",
      "advocate",
@@ -474,17 +406,16 @@
     ]
    },
    "fireworks": {
-    "calls": 2,
-    "cached": 0,
-    "usd": 0.0036609999999999998,
-    "tokens": 2930,
+    "calls": 1,
+    "cached": 1,
+    "usd": 0.0,
+    "tokens": 1370,
     "roles": [
-     "jury",
      "critic"
     ]
    }
   },
-  "generated_at": "2026-10-31T22:27:24",
+  "generated_at": "2026-11-01T20:54:37",
   "payout_detail_before": {
    "claimed": 71000.0,
    "admissible_before_copay": 0.0,

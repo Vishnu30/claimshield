@@ -1,0 +1,72 @@
+{
+ "languages": {
+  "hi": {
+   "claims": 12,
+   "coverage": 1.0,
+   "numbers_kept": 1.0,
+   "meaning": 5.0
+  },
+  "hinglish": {
+   "claims": 12,
+   "coverage": 1.0,
+   "numbers_kept": 1.0,
+   "meaning": 4.9772727272727275
+  },
+  "gu": {
+   "claims": 12,
+   "coverage": 1.0,
+   "numbers_kept": 1.0,
+   "meaning": 5.0
+  },
+  "mr": {
+   "claims": 12,
+   "coverage": 0.9655172413793104,
+   "numbers_kept": 1.0,
+   "meaning": 5.0
+  },
+  "kn": {
+   "claims": 12,
+   "coverage": 1.0,
+   "numbers_kept": 1.0,
+   "meaning": 5.0
+  },
+  "ta": {
+   "claims": 12,
+   "coverage": 0.7241379310344828,
+   "numbers_kept": 1.0,
+   "meaning": 5.0
+  },
+  "te": {
+   "claims": 12,
+   "coverage": 0.896551724137931,
+   "numbers_kept": 1.0,
+   "meaning": 5.0
+  },
+  "bn": {
+   "claims": 12,
+   "coverage": 0.8275862068965517,
+   "numbers_kept": 1.0,
+   "meaning": 5.0
+  },
+  "ml": {
+   "claims": 12,
+   "coverage": 0.8103448275862069,
+   "numbers_kept": 1.0,
+   "meaning": 4.983333333333333
+  },
+  "pa": {
+   "claims": 12,
+   "coverage": 0.7931034482758621,
+   "numbers_kept": 1.0,
+   "meaning": 4.963636363636364
+  },
+  "or": {
+   "claims": 12,
+   "coverage": 0.6724137931034483,
+   "numbers_kept": 1.0,
+   "meaning": 4.909090909090909
+  }
+ },
+ "muse_usd": 2.3660109999999994,
+ "claims": 12
+}

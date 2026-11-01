@@ -15,11 +15,16 @@ CHALLENGE = [k for k, v in CAT.items() if v == "challenge"]
 
 
 @pytest.fixture(autouse=True)
-def offline():
+def offline(tmp_path, monkeypatch):
+    """Offline, and with no translated interface files: tests click buttons by their English labels,
+    so locales built on this machine (app/locales/<lang>.json) must not change the labels under test."""
+    import app.i18n as i18n
     old = config.LLM_MODE
     config.LLM_MODE = "off"
+    monkeypatch.setattr(i18n, "LOCALES", tmp_path / "no_locales"); i18n._LOADED.clear()
     yield
     config.LLM_MODE = old
+    i18n._LOADED.clear()
 
 
 def _app():

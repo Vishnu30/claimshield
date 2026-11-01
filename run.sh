@@ -9,6 +9,7 @@ case "$cmd" in
             [ -f .env ] || { cp .env.example .env; echo "Created .env — add API keys, or leave it empty for offline mode"; }
             python scripts/doctor.py || true; echo; echo "Ready. Start the app with: ./run.sh app" ;;
   samples)  python scripts/make_scenarios.py ;;
+  studies)  shift; python scripts/muse_studies.py "$@" ;;
   app)      python -m streamlit run app/ui.py ;;
   offline)  LLM_MODE=off python -m streamlit run app/ui.py ;;
   demo)     LLM_MODE=replay python -m streamlit run app/ui.py ;;

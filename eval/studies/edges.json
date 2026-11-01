@@ -1,0 +1,221 @@
+{
+ "cases": [
+  {
+   "file": "rotated_bill.pdf",
+   "mode": "appeal",
+   "outcome": "result",
+   "detail": "₹71,350 claimed · 7 findings",
+   "seconds": 105.8,
+   "ok": true
+  },
+  {
+   "file": "rotated_bill.pdf",
+   "mode": "pre_discharge",
+   "outcome": "result",
+   "detail": "₹71,350 claimed · 9 findings",
+   "seconds": 116.9,
+   "ok": true
+  },
+  {
+   "file": "rotated_bill.pdf",
+   "mode": "pre_submission",
+   "outcome": "result",
+   "detail": "₹71,350 claimed · 9 findings",
+   "seconds": 120.7,
+   "ok": true
+  },
+  {
+   "file": "long_bill_60_lines.pdf",
+   "mode": "pre_discharge",
+   "outcome": "result",
+   "detail": "₹116,000 claimed · 7 findings",
+   "seconds": 149.0,
+   "ok": true
+  },
+  {
+   "file": "long_bill_60_lines.pdf",
+   "mode": "pre_submission",
+   "outcome": "result",
+   "detail": "₹116,000 claimed · 5 findings",
+   "seconds": 81.0,
+   "ok": true
+  },
+  {
+   "file": "password_protected_bill.pdf",
+   "mode": "pre_discharge",
+   "outcome": "result",
+   "detail": "₹71,350 claimed · 9 findings",
+   "seconds": 156.8,
+   "ok": true
+  },
+  {
+   "file": "password_protected_bill.pdf",
+   "mode": "pre_submission",
+   "outcome": "result",
+   "detail": "₹71,350 claimed · 11 findings",
+   "seconds": 133.1,
+   "ok": true
+  },
+  {
+   "file": "long_bill_60_lines.pdf",
+   "mode": "appeal",
+   "outcome": "result",
+   "detail": "₹116,000 claimed · 6 findings",
+   "seconds": 173.4,
+   "ok": true
+  },
+  {
+   "file": "low_res_photo.jpg",
+   "mode": "pre_discharge",
+   "outcome": "message",
+   "detail": "No billed line items could be read from the bill. Is this the hospital's final itemized bill? If it is a photo, retake it flat, in good ligh",
+   "seconds": 45.8,
+   "ok": true
+  },
+  {
+   "file": "iphone_photo.heic",
+   "mode": "pre_discharge",
+   "outcome": "message",
+   "detail": "iphone_photo.heic: iPhone HEIC photos are not supported — share the photo as JPG (Settings → Camera → Most Compatible).",
+   "seconds": 0.0,
+   "ok": true
+  },
+  {
+   "file": "iphone_photo.heic",
+   "mode": "pre_submission",
+   "outcome": "message",
+   "detail": "iphone_photo.heic: iPhone HEIC photos are not supported — share the photo as JPG (Settings → Camera → Most Compatible).",
+   "seconds": 0.0,
+   "ok": true
+  },
+  {
+   "file": "iphone_photo.heic",
+   "mode": "appeal",
+   "outcome": "message",
+   "detail": "iphone_photo.heic: iPhone HEIC photos are not supported — share the photo as JPG (Settings → Camera → Most Compatible).",
+   "seconds": 0.0,
+   "ok": true
+  },
+  {
+   "file": "blank_page.pdf",
+   "mode": "pre_discharge",
+   "outcome": "message",
+   "detail": "No billed line items could be read from the bill. Is this the hospital's final itemized bill? If it is a photo, retake it flat, in good ligh",
+   "seconds": 29.4,
+   "ok": true
+  },
+  {
+   "file": "blank_page.pdf",
+   "mode": "pre_submission",
+   "outcome": "message",
+   "detail": "No billed line items could be read from the bill. Is this the hospital's final itemized bill? If it is a photo, retake it flat, in good ligh",
+   "seconds": 8.1,
+   "ok": true
+  },
+  {
+   "file": "blank_page.pdf",
+   "mode": "appeal",
+   "outcome": "message",
+   "detail": "No billed line items could be read from the bill. Is this the hospital's final itemized bill? If it is a photo, retake it flat, in good ligh",
+   "seconds": 7.6,
+   "ok": true
+  },
+  {
+   "file": "corrupt.pdf",
+   "mode": "pre_discharge",
+   "outcome": "message",
+   "detail": "corrupt.pdf: the file is damaged or not a real PDF.",
+   "seconds": 0.0,
+   "ok": true
+  },
+  {
+   "file": "corrupt.pdf",
+   "mode": "pre_submission",
+   "outcome": "message",
+   "detail": "corrupt.pdf: the file is damaged or not a real PDF.",
+   "seconds": 0.0,
+   "ok": true
+  },
+  {
+   "file": "corrupt.pdf",
+   "mode": "appeal",
+   "outcome": "message",
+   "detail": "corrupt.pdf: the file is damaged or not a real PDF.",
+   "seconds": 0.0,
+   "ok": true
+  },
+  {
+   "file": "not_a_bill.pdf",
+   "mode": "pre_discharge",
+   "outcome": "message",
+   "detail": "No billed line items could be read from the bill. Is this the hospital's final itemized bill? If it is a photo, retake it flat, in good ligh",
+   "seconds": 4.4,
+   "ok": true
+  },
+  {
+   "file": "not_a_bill.pdf",
+   "mode": "pre_submission",
+   "outcome": "message",
+   "detail": "No billed line items could be read from the bill. Is this the hospital's final itemized bill? If it is a photo, retake it flat, in good ligh",
+   "seconds": 5.6,
+   "ok": true
+  },
+  {
+   "file": "not_a_bill.pdf",
+   "mode": "appeal",
+   "outcome": "message",
+   "detail": "No billed line items could be read from the bill. Is this the hospital's final itemized bill? If it is a photo, retake it flat, in good ligh",
+   "seconds": 3.2,
+   "ok": true
+  },
+  {
+   "file": "password_protected_bill.pdf",
+   "mode": "appeal",
+   "outcome": "result",
+   "detail": "₹71,350 claimed · 10 findings",
+   "seconds": 338.7,
+   "ok": true
+  },
+  {
+   "file": "low_res_photo.jpg",
+   "mode": "appeal",
+   "outcome": "result",
+   "detail": "₹71,080 claimed · 8 findings",
+   "seconds": 263.7,
+   "ok": true
+  },
+  {
+   "file": "multi-file + duplicate",
+   "mode": "pre_submission",
+   "outcome": "result",
+   "detail": "duplicate caught across files",
+   "ok": true,
+   "seconds": 0
+  },
+  {
+   "file": "low_res_photo.jpg",
+   "mode": "pre_submission",
+   "outcome": "result",
+   "detail": "₹71,080 claimed · 8 findings",
+   "seconds": 354.2,
+   "ok": true
+  },
+  {
+   "file": "room-category policy upload",
+   "mode": "pre_submission",
+   "outcome": "result",
+   "detail": "category entitlement handled without a ₹ cap",
+   "ok": true,
+   "seconds": 0
+  },
+  {
+   "file": "scanned policy upload",
+   "mode": "pre_submission",
+   "outcome": "result",
+   "detail": "bill checks still run; policy read by Muse vision or flagged",
+   "ok": true,
+   "seconds": 0
+  }
+ ],
+ "muse_usd": 1.7652420000000002
+}

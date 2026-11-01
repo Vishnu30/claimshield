@@ -1,6 +1,6 @@
 {
  "scenario": "S11_scanned_cataract_gujarati",
- "recorded_at": "2026-10-31T16:42:43+00:00",
+ "recorded_at": "2026-11-01T15:17:32+00:00",
  "profile": "prod",
  "report": {
   "mode": "pre_discharge",
@@ -692,79 +692,79 @@
     "stage": "ingest",
     "kind": "info",
     "text": "2 document(s): bill:1p scan, discharge:1p",
-    "t": "22:04:13"
+    "t": "20:47:30"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
-    "t": "22:04:13"
+    "t": "20:47:30"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 5309,
     "usd": 0.0061415,
-    "t": "22:05:34"
+    "t": "20:47:31"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "bill: 11 lines via baseten",
-    "t": "22:05:34"
+    "t": "20:47:31"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1175,
     "usd": 0.0013895000000000001,
-    "t": "22:05:38"
+    "t": "20:47:31"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "discharge: Mature cataract, right eye via baseten",
-    "t": "22:05:38"
+    "t": "20:47:31"
    },
    {
     "stage": "privacy",
     "kind": "info",
     "text": "2 personal identifier(s) masked before any model call",
-    "t": "22:05:38"
+    "t": "20:47:31"
    },
    {
     "stage": "tools",
     "kind": "info",
     "text": "deterministic checks run: 14 tools",
-    "t": "22:05:38"
+    "t": "20:47:31"
    },
    {
     "stage": "rules",
     "kind": "info",
     "text": "rules engine: 7 candidate finding(s)",
-    "t": "22:05:38"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
     "kind": "start",
     "text": "TPA Adjudicator reviewing claim like the insurer would",
-    "t": "22:05:38"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 6643,
     "usd": 0.012409,
-    "t": "22:05:47"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -772,7 +772,7 @@
     "tool": "waiting_period_check",
     "args": "{\"condition\":\"cataract\"}",
     "result": "{\"admission\": \"2026-10-02\", \"policy_start\": \"2021-11-01\", \"continuous_since\": \"2021-11-01\", \"months_insurer_view\": 59, \"months_continuous\": 59, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 59, \"months_elapsed_continuous\": 59, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
-    "t": "22:05:47"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -780,7 +780,7 @@
     "tool": "sublimit_check",
     "args": "{\"procedure\":\"phacoemulsification with IOL cataract\"}",
     "result": "{\"matched\": true, \"procedure\": \"cataract\", \"matched_on\": \"cataract\", \"limit\": 70000.0, \"basis\": \"per_eye\", \"cite\": {\"clause_id\": \"3.4\", \"page\": 2, \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}}",
-    "t": "22:05:47"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -788,7 +788,7 @@
     "tool": "ped_check",
     "args": "{}",
     "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 59, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unt…",
-    "t": "22:05:47"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -796,7 +796,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.1\"}",
     "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
-    "t": "22:05:47"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -804,17 +804,17 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.3\"}",
     "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
-    "t": "22:05:47"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 7443,
     "usd": 0.012432,
-    "t": "22:05:56"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -822,7 +822,7 @@
     "tool": "non_payable_lookup",
     "args": "{\"description\":\"Food charges (attendant)\"}",
     "result": "{\"matches\": [{\"item\": \"food charges\", \"list\": \"I\", \"treatment\": \"not payable\"}, {\"item\": \"attendant charges\", \"list\": \"I\", \"treatment\": \"not payable\"}]}",
-    "t": "22:05:56"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -830,7 +830,7 @@
     "tool": "non_payable_lookup",
     "args": "{\"description\":\"Toiletries kit admission kit\"}",
     "result": "{\"matches\": [{\"item\": \"admission kit\", \"list\": \"II\", \"treatment\": \"subsumed into room charges\"}]}",
-    "t": "22:05:56"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -838,7 +838,7 @@
     "tool": "non_payable_lookup",
     "args": "{\"description\":\"Surgical kit\"}",
     "result": "{\"matches\": []}",
-    "t": "22:05:56"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -846,7 +846,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.4\"}",
     "result": "{\"clause_id\": \"3.4\", \"page\": 2, \"title\": \"Sub-limits\", \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}",
-    "t": "22:05:56"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -854,17 +854,17 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.5\"}",
     "result": "{\"clause_id\": \"3.5\", \"page\": 2, \"title\": \"Co-payment\", \"quote\": \"A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission.\"}",
-    "t": "22:05:56"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 8634,
     "usd": 0.015429,
-    "t": "22:06:07"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -872,7 +872,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"5.1\"}",
     "result": "{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}",
-    "t": "22:06:07"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -880,17 +880,17 @@
     "tool": "search_rules",
     "args": "{\"query\":\"non-payable List I II IV subsumed\"}",
     "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portab…",
-    "t": "22:06:07"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 9031,
     "usd": 0.015895,
-    "t": "22:06:17"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -898,7 +898,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"5.3\"}",
     "result": "{\"clause_id\": \"5.3\", \"page\": 3, \"title\": \"Non-payable items\", \"quote\": \"Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.\"}",
-    "t": "22:06:17"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -906,7 +906,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"1.1\"}",
     "result": "{\"clause_id\": \"1.1\", \"page\": 1, \"title\": \"Hospital\", \"quote\": \"Hospital means any institution established for in-patient care and day care treatment of illness and/or injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments Act, 2010.\"}",
-    "t": "22:06:17"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -914,17 +914,17 @@
     "tool": "compute_payout",
     "args": "{}",
     "result": "{\"claimed\": 61200.0, \"payout\": 37912.5, \"copay\": 4212.5, \"deductions\": [{\"id\": \"D-UNITEM\", \"issue_type\": \"mismatch\", \"label\": \"Bill total exceeds itemized lines\", \"amount\": 1200.0, \"item_ids\": []}, {\"id\": \"D-NP\", \"issue_type\": \"non_payable\", \"label\": \"Non-payable items (regulator list)\", \"amount\": 1000.0, \"item_ids\": [\"L10\", \"L11\"]}, {\"id\": \"D-NP-KIT\", \"issue_type\": \"non_payable\", \"label\": \"Un-ite…",
-    "t": "22:06:17"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 9185,
     "usd": 0.014633,
-    "t": "22:06:25"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
@@ -932,40 +932,40 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"5.2\"}",
     "result": "{\"clause_id\": \"5.2\", \"page\": 3, \"title\": \"Claim documents\", \"quote\": \"Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.\"}",
-    "t": "22:06:25"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 10917,
     "usd": 0.021102,
-    "t": "22:06:43"
+    "t": "20:47:31"
    },
    {
     "stage": "tpa",
     "kind": "done",
     "text": "9 predicted issues; 16 tool calls",
     "notes": "Waiting served: 59 months continuous > 24M cataract specific and 36M PED; sublimit 70000 per eye not breached. 10% senior-citizen copay (age 66) applies per 3.5 - payout per engine 37912.5 after copay 4212.5. તમારો મોતિયાનો ક્લેઇમ પાત્ર છે, પણ ડીલક્સ રૂમને લીધે રૂમ + ડૉક્ટર/OT ફી પર કાપ થશે, વધુમાં ફૂડ/ટોઇલેટરીઝ/કિટ અને 1200 નો તફાવત કપાશે. IOL બિલ-સ્ટિકર અને કિટનું બ્રેકઅપ આપશો તો રૂ.3000 માંથી કેટલુંક બચી શકે.",
-    "t": "22:06:43"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
     "kind": "start",
     "text": "Patient Advocate challenging each predicted cut",
-    "t": "22:06:43"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 4743,
     "usd": 0.009186,
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
@@ -973,7 +973,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"non-payable List I List II food attendant toiletries admission kit\"}",
     "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portab…",
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
@@ -981,7 +981,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"proportionate deduction room rent differential billing certificate\"}",
     "result": "{\"rules\": [{\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy, …",
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
@@ -989,7 +989,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"late intimation condonation planned hospitalization 48 hours\"}",
     "result": "{\"rules\": [{\"id\": \"IN-CONDONE-DELAY\", \"rule\": \"Claims should not be rejected solely for delayed intimation or document submission where the delay is for reasons beyond the insured's control.\", \"source\": \"IRDAI standard terms and conditions (Standardization Guidelines 2020)\", \"overrides_policy\": true}, {\"id\": \"IN-CASHLESS-TAT\", \"rule\": \"Cashless authorisation must be decided within 1 hour of reques…",
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
@@ -997,7 +997,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"kit charges itemized breakup consumables payable\"}",
     "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy…",
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
@@ -1005,7 +1005,7 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"proportionate deduction no differential billing hospital certificate\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
@@ -1013,7 +1013,7 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"surgical kit disallowed itemized breakup allowed\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-NP-01\", \"illustrative\": true, \"issue_type\": \"non_payable\", \"complaint\": \"Consumables bundled as 'kit' disallowed entirely.\", \"decision\": \"partly allowed\", \"reasoning\": \"Itemized consumables forming part of procedure held payable.\", \"office\": null, \"year\": null}]}",
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
@@ -1021,7 +1021,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.3\"}",
     "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
@@ -1029,7 +1029,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.1\"}",
     "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
@@ -1037,91 +1037,67 @@
     "tool": "waiting_period_check",
     "args": "{\"condition\":\"cataract\"}",
     "result": "{\"admission\": \"2026-10-02\", \"policy_start\": \"2021-11-01\", \"continuous_since\": \"2021-11-01\", \"months_insurer_view\": 59, \"months_continuous\": 59, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 59, \"months_elapsed_continuous\": 59, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
-    "t": "22:06:49"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 9253,
     "usd": 0.021253,
-    "t": "22:07:08"
+    "t": "20:47:31"
    },
    {
     "stage": "advocate",
     "kind": "done",
     "text": "verdicts for 5 findings; 9 tool calls",
-    "t": "22:07:08"
+    "t": "20:47:31"
    },
    {
     "stage": "localize",
     "kind": "info",
     "text": "translating to gu in parallel with the jury",
-    "t": "22:07:08"
+    "t": "20:47:31"
    },
    {
     "stage": "critic",
     "kind": "start",
     "text": "Critic auditing statuses, fixes and citations",
-    "t": "22:07:08"
+    "t": "20:47:31"
    },
    {
     "stage": "jury",
     "kind": "start",
-    "text": "3-host jury on 5 judgement(s), in parallel: muse, baseten, fireworks",
-    "t": "22:07:08"
+    "text": "2-host jury on 5 judgement(s), in parallel: muse, baseten",
+    "t": "20:47:31"
    },
    {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on baseten; one retry with max_tokens=1200",
-    "t": "22:07:11"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:07:11"
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 4164,
+    "usd": 0.004482,
+    "t": "20:47:31"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 2123,
     "usd": 0.0022615,
-    "t": "22:07:14"
+    "t": "20:47:31"
    },
    {
     "stage": "jury",
     "kind": "info",
     "text": "non-JSON answer from baseten → repair pass",
-    "t": "22:07:14"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:07:17"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "muse",
-    "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 2065,
-    "usd": 0.005665,
-    "t": "22:07:17"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "non-JSON answer from muse → repair pass",
-    "t": "22:07:17"
+    "t": "20:47:31"
    },
    {
     "stage": "jury",
@@ -1129,320 +1105,246 @@
     "provider": "muse",
     "model": "muse-spark-1.3",
     "cached": true,
-    "tokens": 575,
-    "usd": 0.001712,
-    "t": "22:07:17"
+    "tokens": 2065,
+    "usd": 0.005665,
+    "t": "20:47:31"
    },
    {
     "stage": "jury",
     "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=1200",
-    "t": "22:07:20"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "muse",
-    "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 2590,
-    "usd": 0.006189999999999999,
-    "t": "22:07:21"
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:47:31"
    },
    {
     "stage": "localize",
     "kind": "call",
     "provider": "fireworks",
     "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
+    "cached": true,
     "tokens": 1648,
     "usd": 0.002085,
-    "t": "22:07:37"
+    "t": "20:47:31"
    },
    {
     "stage": "localize",
     "kind": "call",
     "provider": "fireworks",
     "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
+    "cached": true,
     "tokens": 2021,
     "usd": 0.0024665,
-    "t": "22:07:41"
-   },
-   {
-    "stage": "critic",
-    "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=2400",
-    "t": "22:07:42"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 2122,
-    "usd": 0.002261,
-    "t": "22:07:44"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "non-JSON answer from fireworks → repair pass",
-    "t": "22:07:44"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:07:46"
+    "t": "20:47:31"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:47:31"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 2557,
+    "usd": 0.0032785,
+    "t": "20:47:31"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
     "tokens": 2590,
     "usd": 0.006189999999999999,
-    "t": "22:07:50"
+    "t": "20:47:31"
    },
    {
     "stage": "jury",
     "kind": "fallback",
     "text": "baseten abstained (empty)",
-    "t": "22:07:50"
-   },
-   {
-    "stage": "jury",
-    "kind": "fallback",
-    "text": "fireworks abstained (empty)",
-    "t": "22:07:50"
+    "t": "20:47:31"
    },
    {
     "stage": "jury",
     "kind": "info",
     "text": "fewer than 2 votes (none) — statuses unchanged",
-    "t": "22:07:50"
-   },
-   {
-    "stage": "localize",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 2024,
-    "usd": 0.002593,
-    "t": "22:07:51"
-   },
-   {
-    "stage": "localize",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 2557,
-    "usd": 0.0032785,
-    "t": "22:08:02"
-   },
-   {
-    "stage": "critic",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 4164,
-    "usd": 0.004482,
-    "t": "22:08:37"
+    "t": "20:47:31"
    },
    {
     "stage": "critic",
     "kind": "done",
     "text": "review complete",
-    "t": "22:08:37"
+    "t": "20:47:31"
    },
    {
     "stage": "verify",
     "kind": "info",
     "text": "9 verified finding(s); 8 fully cited",
-    "t": "22:08:37"
+    "t": "20:47:31"
    },
    {
-    "stage": "evidence",
-    "kind": "info",
-    "text": "answer cut off on baseten; one retry with max_tokens=400",
-    "t": "22:08:45"
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 2024,
+    "usd": 0.002593,
+    "t": "20:47:31"
    },
    {
     "stage": "evidence",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1813,
     "usd": 0.0013065,
-    "t": "22:08:55"
+    "t": "20:47:31"
    },
    {
     "stage": "evidence",
     "kind": "info",
     "text": "non-JSON answer from baseten → repair pass",
-    "t": "22:08:55"
+    "t": "20:47:31"
    },
    {
     "stage": "evidence",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 820,
     "usd": 0.0006100000000000001,
-    "t": "22:08:56"
-   },
-   {
-    "stage": "evidence",
-    "kind": "info",
-    "text": "answer cut off on baseten; one retry with max_tokens=400",
-    "t": "22:09:04"
+    "t": "20:47:31"
    },
    {
     "stage": "evidence",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1817,
     "usd": 0.0013085000000000002,
-    "t": "22:09:12"
+    "t": "20:47:31"
    },
    {
     "stage": "evidence",
     "kind": "info",
     "text": "non-JSON answer from baseten → repair pass",
-    "t": "22:09:12"
+    "t": "20:47:31"
    },
    {
     "stage": "evidence",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 820,
     "usd": 0.0006100000000000001,
-    "t": "22:09:13"
-   },
-   {
-    "stage": "evidence",
-    "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=400",
-    "t": "22:11:25"
-   },
-   {
-    "stage": "evidence",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 1809,
-    "usd": 0.0013045,
-    "t": "22:11:34"
-   },
-   {
-    "stage": "evidence",
-    "kind": "info",
-    "text": "non-JSON answer from fireworks → repair pass",
-    "t": "22:11:34"
+    "t": "20:47:31"
    },
    {
     "stage": "evidence",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
+    "tokens": 1812,
+    "usd": 0.001306,
+    "t": "20:47:32"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "20:47:32"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": true,
     "tokens": 820,
     "usd": 0.0006100000000000001,
-    "t": "22:11:35"
-   },
-   {
-    "stage": "evidence",
-    "kind": "info",
-    "text": "answer cut off on baseten; one retry with max_tokens=400",
-    "t": "22:11:44"
+    "t": "20:47:32"
    },
    {
     "stage": "evidence",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1817,
     "usd": 0.0013085000000000002,
-    "t": "22:11:53"
+    "t": "20:47:32"
    },
    {
     "stage": "evidence",
     "kind": "info",
     "text": "non-JSON answer from baseten → repair pass",
-    "t": "22:11:53"
-   },
-   {
-    "stage": "evidence",
-    "kind": "info",
-    "text": "answer cut off on baseten; one retry with max_tokens=400",
-    "t": "22:11:54"
+    "t": "20:47:32"
    },
    {
     "stage": "evidence",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
-    "tokens": 1020,
-    "usd": 0.00091,
-    "t": "22:11:56"
+    "cached": true,
+    "tokens": 820,
+    "usd": 0.0006100000000000001,
+    "t": "20:47:32"
    },
    {
     "stage": "localize",
     "kind": "call",
     "provider": "fireworks",
     "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 979,
-    "usd": 0.0012055,
-    "t": "22:12:17"
-   },
-   {
-    "stage": "localize",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
+    "cached": true,
     "tokens": 2054,
     "usd": 0.0024980000000000002,
-    "t": "22:12:31"
+    "t": "20:47:32"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 979,
+    "usd": 0.0012055,
+    "t": "20:47:32"
    },
    {
     "stage": "localize",
     "kind": "done",
     "text": "results written in gu",
-    "t": "22:12:31"
+    "t": "20:47:32"
    },
    {
     "stage": "report",
     "kind": "info",
-    "text": "done in 498.2s · 42 model call(s) (1 cached) · $0.1999",
-    "t": "22:12:31"
+    "text": "done in 1.3s · 29 model call(s) (29 cached) · $0.0000",
+    "t": "20:47:32"
    }
   ],
-  "cost_usd": 0.21388,
-  "llm_calls": 42,
+  "cost_usd": 0.0,
+  "llm_calls": 29,
   "engine": "full",
   "provider_calls": {
    "baseten": {
-    "calls": 10,
-    "cached": 0,
-    "usd": 0.016456000000000002,
-    "tokens": 17534,
+    "calls": 11,
+    "cached": 11,
+    "usd": 0.0,
+    "tokens": 19146,
     "roles": [
      "extract",
      "jury",
@@ -1450,10 +1352,10 @@
     ]
    },
    "muse": {
-    "calls": 12,
-    "cached": 1,
-    "usd": 0.140384,
-    "tokens": 73669,
+    "calls": 11,
+    "cached": 11,
+    "usd": 0.0,
+    "tokens": 71058,
     "roles": [
      "tpa",
      "advocate",
@@ -1461,19 +1363,17 @@
     ]
    },
    "fireworks": {
-    "calls": 9,
-    "cached": 0,
-    "usd": 0.022174,
-    "tokens": 19378,
+    "calls": 7,
+    "cached": 7,
+    "usd": 0.0,
+    "tokens": 15447,
     "roles": [
-     "localize",
-     "jury",
      "critic",
-     "evidence"
+     "localize"
     ]
    }
   },
-  "generated_at": "2026-10-31T22:11:56",
+  "generated_at": "2026-11-01T20:47:32",
   "payout_detail_before": {
    "claimed": 61200.0,
    "admissible_before_copay": 42125.0,

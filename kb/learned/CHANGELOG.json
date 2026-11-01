@@ -1,0 +1,54 @@
+[
+ {
+  "time": "2026-11-01 19:16",
+  "study": "vision",
+  "change": "no failures — nothing to learn",
+  "fixed": "—",
+  "regressions": "—",
+  "accepted": "n/a"
+ },
+ {
+  "time": "2026-11-01 19:17",
+  "study": "chat",
+  "change": "chat prompt: “Always answer waiting-period, room-rent and coverage-limit questions from policy schedule with citations in user's language, never blank.”",
+  "diagnosis": "Blank answers across waiting-period, room-rent and disease-wise coverage questions in multiple policies and languages show systematic abstention, not artefact; a general citation-grounded answering note fixes all.",
+  "fixed": "0/5",
+  "regressions": "1/3",
+  "accepted": "reverted"
+ },
+ {
+  "time": "2026-11-01 19:20",
+  "study": "letters",
+  "change": "no safe change proposed",
+  "diagnosis": "All failures are empty outputs with no content to evaluate across hospital and appeal letters, indicating generation failure or test artefact. No allowed lever addresses this: prompt_note is restricted to appeal only, and np_alias, reason_pattern, glossary do not affect letter generation.",
+  "fixed": "—",
+  "regressions": "—",
+  "accepted": "no"
+ },
+ {
+  "time": "2026-11-01 19:33",
+  "study": "redteam",
+  "change": "no safe change proposed",
+  "diagnosis": "empty_answer",
+  "fixed": "—",
+  "regressions": "—",
+  "accepted": "no"
+ },
+ {
+  "time": "2026-11-01 19:43",
+  "study": "languages",
+  "change": "no failures — nothing to learn",
+  "fixed": "—",
+  "regressions": "—",
+  "accepted": "n/a"
+ },
+ {
+  "time": "2026-11-01 19:55",
+  "study": "robust",
+  "change": "no safe change proposed",
+  "diagnosis": "Empty answer - no content provided to analyze",
+  "fixed": "—",
+  "regressions": "—",
+  "accepted": "no"
+ }
+]

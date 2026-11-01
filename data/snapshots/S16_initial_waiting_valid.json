@@ -1,0 +1,460 @@
+{
+ "scenario": "S16_initial_waiting_valid",
+ "recorded_at": "2026-11-01T15:21:38+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 27000.0,
+  "payout_before": 0.0,
+  "payout_after_fixes": 0.0,
+  "payout_after_appeal": 0.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 27000.0,
+  "patient_pays_after": 27000.0,
+  "insurer_paid": null,
+  "risk_score": 100,
+  "risk_band": "high",
+  "summary_en": "Claimed ₹27,000. As it stands the insurer is likely to pay ₹0 (cut ₹27,000). Fixing 0 issue(s) before submission raises this to ₹0.",
+  "summary_localized": "Claimed ₹27,000. As it stands the insurer is likely to pay ₹0 (cut ₹27,000). Fixing 0 issue(s) before submission raises this to ₹0.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "waiting_period",
+    "title": "Initial waiting period: any illness",
+    "raised_by": "tpa",
+    "status": "valid",
+    "inr_impact": 27000.0,
+    "deduction_ids": [
+     "D-WAIT"
+    ],
+    "confidence": 0.91,
+    "explanation_en": "The policy requires 1 months for any illness. Covered 0 months with this insurer.",
+    "explanations": {
+     "en": "The policy requires 1 months for any illness. Covered 0 months with this insurer."
+    },
+    "fix": "Do not submit this claim for reimbursement - you will bear the Rs.27,000. Policy started 2026-09-01 and admission was 2026-09-19 (day 18), so it falls inside the 30-day initial wait. Only exception: if you had another health policy continuing without a break just before 2026-09-01, ask that old insurer for a portability/continuity certificate showing continuous coverage and give it to the TPA to get credit. If not, save the policy for treatments after 2026-10-01.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident.",
+     "bbox": [
+      78.0,
+      623.2874755859375,
+      509.37615966796875,
+      649.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "waiting_period_check": {
+      "kind": "initial",
+      "condition": "any illness",
+      "months_required": 1,
+      "regulator_max": null,
+      "months_elapsed_insurer_view": 0,
+      "months_elapsed_continuous": 0,
+      "applies_insurer_view": true,
+      "applies_correctly": true,
+      "cite": {
+       "clause_id": "4.1",
+       "page": 2,
+       "quote": "Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident."
+      }
+     },
+     "tpa_reasoning": "Policy commenced 2026-09-01, admission 2026-09-19 is day 18, within 30-day initial wait. Diagnosis Enteric fever (typhoid) treated with IV antibiotics is an illness, not an accident, so exception does not apply. Entire claim inadmissible per clause 4.1.",
+     "advocate_argument": "Admission 2026-09-19 is 18 days after first commencement 2026-09-01, within 30-day exclusion. Diagnosis enteric fever treated with IV antibiotics is an illness, not an accident, so the accident exception in clause 4.1 does not apply. TPA application is correct and regulator permits 30-day initial wait. No portability credit shown - continuous coverage since is same as policy start."
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: ..."
+    ]
+   }
+  ],
+  "missing_docs": [],
+  "action_plan": [],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:51:00"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:51:00"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 2290,
+    "usd": 0.002872,
+    "t": "20:51:05"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 4 lines via baseten",
+    "t": "20:51:05"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1199,
+    "usd": 0.0014385000000000001,
+    "t": "20:51:08"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Enteric fever (typhoid) via baseten",
+    "t": "20:51:08"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:51:08"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:51:08"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 1 candidate finding(s)",
+    "t": "20:51:08"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:51:08"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4302,
+    "usd": 0.006855,
+    "t": "20:51:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.1\"}",
+    "result": "{\"clause_id\": \"4.1\", \"page\": 2, \"title\": \"Initial waiting period\", \"quote\": \"Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident.\"}",
+    "t": "20:51:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"enteric fever typhoid\"}",
+    "result": "{\"admission\": \"2026-09-19\", \"policy_start\": \"2026-09-01\", \"continuous_since\": \"2026-09-01\", \"months_insurer_view\": 0, \"months_continuous\": 0, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 0, \"months_elapsed_continuous\": 0, \"applies_insurer_view\": true, \"applies_correctly\": true, \"cite\": {\"clause_id\": \"4.1\", \"pag…",
+    "t": "20:51:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"enteric fever typhoid IV antibiotics\"}",
+    "result": "{\"matched\": false}",
+    "t": "20:51:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4573,
+    "usd": 0.006439,
+    "t": "20:51:15"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "1 predicted issues; 3 tool calls",
+    "notes": "Pre-submission: full billed Rs 27000 at risk under 30-day initial waiting. Room, proportionate, copay, sublimit, PED, docs, intimation all otherwise clear. No accident history to rebut.",
+    "t": "20:51:15"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:51:15"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2122,
+    "usd": 0.00412,
+    "t": "20:51:18"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.1\"}",
+    "result": "{\"clause_id\": \"4.1\", \"page\": 2, \"title\": \"Initial waiting period\", \"quote\": \"Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident.\"}",
+    "t": "20:51:18"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"initial waiting period 30 days illness accident exception\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-OMBUDSMAN\", \"rule\": \"A complaint to the Insurance Ombudsman is free, can be filed after the insurer rejects the grievance or fails to reply within 30 days, and must be filed within one year of the insurer's final reply.\", \"source\": \"Insurance Ombudsman Rules, 2017\", \"overrides_policy\": false}, {\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods canno…",
+    "t": "20:51:18"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"initial 30 day waiting period illness typhoid\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-WP-01\", \"illustrative\": true, \"issue_type\": \"waiting_period\", \"complaint\": \"Specific waiting period applied despite portability from previous insurer.\", \"decision\": \"allowed\", \"reasoning\": \"Waiting period served under previous continuous policy must be credited.\", \"office\": null, \"year\": null}]}",
+    "t": "20:51:18"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"enteric fever typhoid\"}",
+    "result": "{\"admission\": \"2026-09-19\", \"policy_start\": \"2026-09-01\", \"continuous_since\": \"2026-09-01\", \"months_insurer_view\": 0, \"months_continuous\": 0, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 0, \"months_elapsed_continuous\": 0, \"applies_insurer_view\": true, \"applies_correctly\": true, \"cite\": {\"clause_id\": \"4.1\", \"pag…",
+    "t": "20:51:18"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 3673,
+    "usd": 0.007651,
+    "t": "20:51:25"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 1 findings; 4 tool calls",
+    "t": "20:51:25"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:51:25"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "skipped (2 provider(s) ready, 0 candidate(s))",
+    "t": "20:51:25"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=2400",
+    "t": "20:51:29"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 2794,
+    "usd": 0.003797,
+    "t": "20:51:38"
+   },
+   {
+    "stage": "critic",
+    "kind": "done",
+    "text": "...",
+    "t": "20:51:38"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "1 verified finding(s); 1 fully cited",
+    "t": "20:51:38"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 38.6s · 8 model call(s) (0 cached) · $0.0352",
+    "t": "20:51:38"
+   }
+  ],
+  "cost_usd": 0.0352,
+  "llm_calls": 8,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 3,
+    "cached": 0,
+    "usd": 0.0081075,
+    "tokens": 6283,
+    "roles": [
+     "extract",
+     "critic"
+    ]
+   },
+   "muse": {
+    "calls": 4,
+    "cached": 0,
+    "usd": 0.025064999999999997,
+    "tokens": 14670,
+    "roles": [
+     "tpa",
+     "advocate"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:51:38",
+  "payout_detail_before": {
+   "claimed": 27000.0,
+   "admissible_before_copay": 0.0,
+   "copay": 0.0,
+   "payout": 0.0,
+   "patient_pays": 27000.0,
+   "deductions": [
+    {
+     "id": "D-WAIT",
+     "issue_type": "waiting_period",
+     "label": "Waiting period not completed (claim inadmissible)",
+     "amount": 27000.0,
+     "item_ids": []
+    }
+   ],
+   "rejected": true
+  }
+ },
+ "letters": {},
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": null,
+   "bill_no": null,
+   "admission_date": "2026-09-19",
+   "discharge_date": "2026-09-22",
+   "room_category": "Twin sharing",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 3.0,
+     "rate": 3000.0,
+     "amount": 9000.0,
+     "date": "2026-09-19",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Physician visits",
+     "category": "consultation",
+     "qty": 1.0,
+     "rate": 4500.0,
+     "amount": 4500.0,
+     "date": "2026-09-19",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 8000.0,
+     "amount": 8000.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "Widal, blood culture",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 5500.0,
+     "amount": 5500.0,
+     "date": "2026-09-19",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 27000.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Enteric fever (typhoid)",
+   "procedure": "IV antibiotics",
+   "icd10": null,
+   "admission_type": "emergency",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 27,
+   "sum_insured": null,
+   "policy_start": "2026-09-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque"
+   ],
+   "narrative": null,
+   "narrative_lang": null,
+   "intimation_hours_after_admission": 3.0
+  }
+ }
+}

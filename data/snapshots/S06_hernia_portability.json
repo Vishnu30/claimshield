@@ -1,0 +1,725 @@
+{
+ "scenario": "S06_hernia_portability",
+ "recorded_at": "2026-11-01T15:08:54+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 70500.0,
+  "payout_before": 70500.0,
+  "payout_after_fixes": 70500.0,
+  "payout_after_appeal": 70500.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 0.0,
+  "patient_pays_after": 0.0,
+  "insurer_paid": null,
+  "risk_score": 0,
+  "risk_band": "low",
+  "summary_en": "Claimed ₹70,500. As it stands the insurer is likely to pay ₹70,500 (cut ₹0). Fixing 2 issue(s) before submission raises this to ₹70,500.",
+  "summary_localized": "Claimed ₹70,500. As it stands the insurer is likely to pay ₹70,500 (cut ₹0). Fixing 2 issue(s) before submission raises this to ₹70,500.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "missing_doc",
+    "title": "1 document(s) missing",
+    "raised_by": "advocate",
+    "status": "fixable",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.93,
+    "explanation_en": "Missing: Previous / ported policy copies (continuity proof).",
+    "explanations": {
+     "en": "Missing: Previous / ported policy copies (continuity proof)."
+    },
+    "fix": "Ask your previous insurer (customer care / agent / portal) and your current insurer portability cell: get (1) all policy schedules + renewal receipts from 2022-05-01 to 2025-07-31 showing policy numbers and zero break, and (2) portability acceptance letter / continuity certificate showing prior inception date 2022-05-01 and prior sum insured. Say: 'Please issue a no-break continuity certificate for portability for my claim.' Attach all pages to the reimbursement file before submission.",
+    "fix_localized": {},
+    "policy_cite": null,
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]",
+     "page": null,
+     "quote": "On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-WP-01"
+    ],
+    "tool_evidence": {
+     "required_docs": {
+      "required": [
+       "claim_form_part_a",
+       "claim_form_part_b",
+       "final_itemized_bill",
+       "payment_receipts",
+       "discharge_summary",
+       "investigation_reports",
+       "prescriptions",
+       "pharmacy_bills",
+       "id_proof",
+       "policy_copy",
+       "cancelled_cheque",
+       "implant_invoice_sticker",
+       "previous_policy_copies"
+      ],
+      "missing": [
+       {
+        "id": "previous_policy_copies",
+        "label": "Previous / ported policy copies (continuity proof)",
+        "critical": false,
+        "trigger": "portability"
+       }
+      ],
+      "triggers": [
+       "implant",
+       "portability"
+      ],
+      "cashless_rule": null
+     },
+     "advocate_argument": "Continuity proof is the legal trigger for portability credit. Without it TPA will pend/reject, with it waiting served must be credited."
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status fixable is consistent with missing continuity proof; rule correctly cites portability credit. Fix is actionable/lawful (request prior schedules/receipts/portability letter). No amount claimed. ",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   },
+   {
+    "id": "F02",
+    "issue_type": "other",
+    "title": "Specific waiting period for hernia – portability continuity to be proved",
+    "raised_by": "tpa",
+    "status": "fixable",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.9,
+    "explanation_en": "Discharge is Left inguinal hernia treated by Lichtenstein open hernioplasty with mesh. Clause 4.2 excludes hernia until 24 months continuous coverage. Evidence-pack waiting check failed (admission date missing, needs_review). Patient asserts continuous cover since 2022-05-01 with porting in Aug 2025 which if proved would satisfy 24-month wait via clause 4.4 / IN-PORTABILITY, but previous/ported policy copies are missing (F01) and admission date and condition duration are null. Insurer will pend for continuity proof and will reject under 4.2 if not proved.",
+    "explanations": {
+     "en": "Discharge is Left inguinal hernia treated by Lichtenstein open hernioplasty with mesh. Clause 4.2 excludes hernia until 24 months continuous coverage. Evidence-pack waiting check failed (admission date missing, needs_review). Patient asserts continuous cover since 2022-05-01 with porting in Aug 2025 which if proved would satisfy 24-month wait via clause 4.4 / IN-PORTABILITY, but previous/ported policy copies are missing (F01) and admission date and condition duration are null. Insurer will pend for continuity proof and will reject under 4.2 if not proved."
+    },
+    "fix": "Attach the F01 continuity set (2022-05-01 onwards + portability letter) plus discharge summary/final bill showing admission date. Ask hospital records: 'Please confirm admission/discharge dates on discharge summary with seal.' You state cover since 2022-05-01 and ported Aug 2025 = ~39 months, which exceeds 24-month hernia wait, so once proved the exclusion falls away. File together, do not file without F01.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.",
+     "bbox": [
+      78.0,
+      659.2874755859375,
+      516.7861938476562,
+      711.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]",
+     "page": null,
+     "quote": "On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-WP-01"
+    ],
+    "tool_evidence": {
+     "advocate_argument": "Clause 4.2 excludes hernia until 24 months continuous coverage, which is allowed under IN-SPECIFIC-MAX (max 36 months). Clause 4.4 plus IN-PORTABILITY which overrides policy requires credit for waiting already served on porting. 2022-05-01 to 2025-08-01 satisfies 24 months if proved, per ILL-WP-01."
+    },
+    "verified": false,
+    "verifier_notes": [
+     "advocate: needs_review → fixable",
+     "critic: Status fixable/needs_review is consistent; does not overclaim denial or payable amount. Correctly flags admission date missing and relies on patient assertion pending F01 proof. Policy quote truncated",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   }
+  ],
+  "missing_docs": [
+   {
+    "id": "previous_policy_copies",
+    "label": "Previous / ported policy copies (continuity proof)",
+    "critical": false,
+    "trigger": "portability"
+   }
+  ],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F01",
+    "who": "Hospital / You",
+    "action": "Ask your previous insurer (customer care / agent / portal) and your current insurer portability cell: get (1) all policy schedules + renewal receipts from 2022-05-01 to 2025-07-31 showing policy numbers and zero break, and (2) portability acceptance letter / continuity certificate showing prior inception date 2022-05-01 and prior sum insured. Say: 'Please issue a no-break continuity certificate for portability for my claim.' Attach all pages to the reimbursement file before submission.",
+    "status": "fixable",
+    "impact": 0.0,
+    "when": "before submission"
+   },
+   {
+    "step": 2,
+    "finding": "F02",
+    "who": "You",
+    "action": "Attach the F01 continuity set (2022-05-01 onwards + portability letter) plus discharge summary/final bill showing admission date. Ask hospital records: 'Please confirm admission/discharge dates on discharge summary with seal.' You state cover since 2022-05-01 and ported Aug 2025 = ~39 months, which exceeds 24-month hernia wait, so once proved the exclusion falls away. File together, do not file without F01.",
+    "status": "fixable",
+    "impact": 0.0,
+    "when": "before submission"
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:35:31"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:35:31"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3959,
+    "usd": 0.0053015,
+    "t": "20:35:40"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 7 lines via baseten",
+    "t": "20:35:40"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 974,
+    "usd": 0.001095,
+    "t": "20:35:42"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Left inguinal hernia via baseten",
+    "t": "20:35:42"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:35:42"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:35:42"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 1 candidate finding(s)",
+    "t": "20:35:42"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:35:42"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4747,
+    "usd": 0.008908,
+    "t": "20:35:49"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"hernia\"}",
+    "result": "{\"error\": \"admission_date or policy_start missing\", \"needs_review\": true, \"hits\": []}",
+    "t": "20:35:49"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"hernioplasty with mesh\"}",
+    "result": "{\"matched\": false}",
+    "t": "20:35:49"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": null, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": false, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded …",
+    "t": "20:35:49"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.2\"}",
+    "result": "{\"clause_id\": \"4.2\", \"page\": 2, \"title\": \"Specific waiting period\", \"quote\": \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\"}",
+    "t": "20:35:49"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4664,
+    "usd": 0.0069050000000000005,
+    "t": "20:35:54"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.4\"}",
+    "result": "{\"clause_id\": \"4.4\", \"page\": 3, \"title\": \"Portability\", \"quote\": \"In case of portability, the waiting periods already served under the previous policy shall be credited to the extent of the previous sum insured.\"}",
+    "t": "20:35:54"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"portability continuity waiting period credit\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PORTABILITY\", \"rule\": \"On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"sour…",
+    "t": "20:35:54"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 6549,
+    "usd": 0.013065,
+    "t": "20:36:04"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "2 predicted issues; 6 tool calls",
+    "notes": "No engine deductions to contest. Room Rs 3000/day within 1% SI cap Rs 5000/day, ratio 1.0 so no proportionate deduction per 3.3, no copay (age 46 <61), no hernia sublimit, no non-payables. Claim appears payable subject only to proving 24-month specific wait via portability documents and admission date.",
+    "t": "20:36:04"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:36:04"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2254,
+    "usd": 0.00418,
+    "t": "20:36:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"portability continuity waiting period credit\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PORTABILITY\", \"rule\": \"On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"sour…",
+    "t": "20:36:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"hernia specific waiting period 24 months\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": t…",
+    "t": "20:36:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"query\":\"specific waiting period hernia 24 months clause 4.2\"}",
+    "result": "{\"matches\": [{\"clause_id\": \"4.2\", \"page\": 2, \"title\": \"Specific waiting period\", \"quote\": \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\"}…",
+    "t": "20:36:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"portability continuity proved waiting period hernia allowed\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-WP-01\", \"illustrative\": true, \"issue_type\": \"waiting_period\", \"complaint\": \"Specific waiting period applied despite portability from previous insurer.\", \"decision\": \"allowed\", \"reasoning\": \"Waiting period served under previous continuous policy must be credited.\", \"office\": null, \"year\": null}]}",
+    "t": "20:36:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 3412,
+    "usd": 0.005509,
+    "t": "20:36:11"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"query\":\"portability continuity credit waiting period\"}",
+    "result": "{\"matches\": [{\"clause_id\": \"4.4\", \"page\": 3, \"title\": \"Portability\", \"quote\": \"In case of portability, the waiting periods already served under the previous policy shall be credited to the extent of the previous sum insured.\"}, {\"clause_id\": \"4.1\", \"page\": 2, \"title\": \"Initial waiting period\", \"quote\": \"Expenses related to the treatment of any illness within 30 days from the first policy commencem…",
+    "t": "20:36:11"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"hernia\"}",
+    "result": "{\"error\": \"admission_date or policy_start missing\", \"needs_review\": true, \"hits\": []}",
+    "t": "20:36:11"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5054,
+    "usd": 0.010919000000000002,
+    "t": "20:36:20"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 2 findings; 6 tool calls",
+    "t": "20:36:20"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:36:20"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "3-host jury on 1 judgement(s), in parallel: muse, baseten, fireworks",
+    "t": "20:36:20"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=1200",
+    "t": "20:36:22"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "20:36:22"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1634,
+    "usd": 0.002017,
+    "t": "20:36:26"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 1576,
+    "usd": 0.005175999999999999,
+    "t": "20:36:28"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:36:28"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:36:28"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1379,
+    "usd": 0.0014644999999999999,
+    "t": "20:36:46"
+   },
+   {
+    "stage": "jury",
+    "kind": "fallback",
+    "text": "fireworks abstained (no answer within 60s)",
+    "t": "20:37:20"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "fewer than 2 votes (baseten) — statuses unchanged",
+    "t": "20:38:22"
+   },
+   {
+    "stage": "critic",
+    "kind": "done",
+    "text": "Both findings appropriately deferred pending continuity and admission-date evidence; no unlawful advice or overclaim of waiting-period satisfaction.",
+    "t": "20:38:22"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "2 verified finding(s); 1 fully cited",
+    "t": "20:38:22"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 171.5s · 14 model call(s) (1 cached) · $0.0684",
+    "t": "20:38:22"
+   }
+  ],
+  "cost_usd": 0.103618,
+  "llm_calls": 14,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 3,
+    "cached": 0,
+    "usd": 0.008413499999999999,
+    "tokens": 6567,
+    "roles": [
+     "extract",
+     "jury"
+    ]
+   },
+   "muse": {
+    "calls": 8,
+    "cached": 1,
+    "usd": 0.054662,
+    "tokens": 28810,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   },
+   "fireworks": {
+    "calls": 1,
+    "cached": 0,
+    "usd": 0.0014644999999999999,
+    "tokens": 1379,
+    "roles": [
+     "critic"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:38:22",
+  "payout_detail_before": {
+   "claimed": 70500.0,
+   "admissible_before_copay": 70500.0,
+   "copay": 0.0,
+   "payout": 70500.0,
+   "patient_pays": 0.0,
+   "deductions": [],
+   "rejected": false
+  }
+ },
+ "letters": {
+  "hospital": {
+   "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
+   "salutation": "Dear Billing / TPA Desk,",
+   "paragraphs": [
+    "I am writing on behalf of [PATIENT_NAME] regarding the in-patient bill for admission on [ADMISSION_DATE] at [HOSPITAL] for submission to [INSURER] under [POLICY_NO] / [CLAIM_NO]. Before submission, an audit against the policy shows items the insurer is likely to pend/deduct that the hospital can help correct.",
+    "As per the papers provided, the diagnosis is Left inguinal hernia treated by Lichtenstein open hernioplasty with mesh. The patient asserts continuous cover since 2022-05-01 with porting in Aug 2025, but admission date and condition duration are currently null and previous/ported policy copies are missing."
+   ],
+   "grounds": [
+    {
+     "title": "1 document(s) missing",
+     "text": "Continuity proof is missing from the file: all policy schedules and renewal receipts from 2022-05-01 to 2025-07-31 showing zero break, and the portability acceptance letter / continuity certificate showing prior inception date 2022-05-01. Continuity proof is the legal trigger for portability credit, without which the TPA will pend/reject. Kindly confirm admission/discharge dates on the discharge summary with seal and withhold final submission until the continuity set is attached to the reimbursement file.",
+     "cites": [
+      "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]"
+     ]
+    },
+    {
+     "title": "Specific waiting period for hernia – portability continuity to be proved",
+     "text": "The insurer will examine the hernia claim under the specific waiting period exclusion for hernia until expiry of 24 months of continuous coverage, namely: \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\" The asserted cover from 2022-05-01 with porting in Aug 2025 would exceed 24 months if proved, and on portability waiting periods already served must be credited up to the earlier sum insured. Kindly issue a corrected itemized final bill and a sealed discharge summary confirming admission/discharge dates, to be filed together with the continuity set, failing which the insurer will pend for continuity proof and reject under the 24-month exclusion.",
+     "cites": [
+      "policy page 2",
+      "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]"
+     ]
+    }
+   ],
+   "relief": "Kindly issue the corrected/itemized discharge summary with seal confirming admission/discharge dates and the corrected itemized final bill for [PATIENT_NAME] at [HOSPITAL], and withhold submission to [INSURER] under [POLICY_NO] / [CLAIM_NO] until the continuity set is attached, so the claim is not short-paid or rejected.",
+   "enclosures": [
+    "Copy of current bill"
+   ],
+   "closing": "Thank you,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": null,
+   "bill_no": null,
+   "admission_date": null,
+   "discharge_date": null,
+   "room_category": null,
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 2.0,
+     "rate": 3000.0,
+     "amount": 6000.0,
+     "date": "2026-10-08",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Surgeon fee - open hernioplasty",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 28000.0,
+     "amount": 28000.0,
+     "date": "2026-10-08",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Anaesthesia",
+     "category": "anaesthesia",
+     "qty": 1.0,
+     "rate": 7000.0,
+     "amount": 7000.0,
+     "date": "2026-10-08",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 12000.0,
+     "amount": 12000.0,
+     "date": "2026-10-08",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Polypropylene mesh (implant)",
+     "category": "implant",
+     "qty": 1.0,
+     "rate": 9000.0,
+     "amount": 9000.0,
+     "date": "2026-10-08",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 5000.0,
+     "amount": 5000.0,
+     "date": "2026-10-09",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L07",
+     "description": "Pre-op investigations",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 3500.0,
+     "amount": 3500.0,
+     "date": "2026-10-08",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 70500.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Left inguinal hernia",
+   "procedure": "Lichtenstein open hernioplasty with mesh",
+   "icd10": null,
+   "admission_type": "planned",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 46,
+   "sum_insured": null,
+   "policy_start": "2025-08-01",
+   "continuous_coverage_since": "2022-05-01",
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque",
+    "implant_invoice_sticker"
+   ],
+   "narrative": "I ported from my old insurer in August 2025; I have had cover since 2022.",
+   "narrative_lang": null,
+   "intimation_hours_after_admission": null
+  }
+ }
+}

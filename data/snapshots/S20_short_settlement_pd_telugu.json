@@ -1,6 +1,6 @@
 {
  "scenario": "S20_short_settlement_pd_telugu",
- "recorded_at": "2026-10-31T16:51:19+00:00",
+ "recorded_at": "2026-11-01T15:24:30+00:00",
  "profile": "prod",
  "report": {
   "mode": "appeal",
@@ -107,7 +107,7 @@
     "deduction_ids": [
      "D-PD"
     ],
-    "confidence": 0.95,
+    "confidence": 0.94,
     "explanation_en": "Because the room exceeded the limit, the insurer scales associated charges (₹70,000) by 77%, cutting ₹16,154. Pharmacy, consumables, implants and diagnostics (₹46,000) are protected from this cut.",
     "explanations": {
      "en": "Because the room exceeded the limit, the insurer scales associated charges (₹70,000) by 77%, cutting ₹16,154. Pharmacy, consumables, implants and diagnostics (₹46,000) are protected from this cut.",
@@ -172,9 +172,6 @@
      },
      "tpa_reasoning": "Room rent exceeds limit, so associated expenses L02 surgeon, L03 anaesthesia, L04 OT, L05 nursing subject to ratio 0.76923. Pharmacy, implant, investigation correctly exempted. Engine D-PD Rs.16153.85 is per policy.",
      "advocate_argument": "Math is correct per clause 3.3 (ratio 5000/6500=0.76923 x Rs.70000 = Rs.16153.85 cut) and IN-PD-EXEMPT is complied (Rs.46000 pharmacy/implant/investigation/consumable exempted). But IN-PD-NODIFF overrides policy: PD is illegal if hospital does not follow differential billing. Evidence shows differential_billing=null, so cannot decide valid vs contestable without hospital certificate.",
-     "jury": {
-      "baseten": "valid"
-     },
      "title_localized": {
       "te": "డాక్టర్/OT/నర్సింగ్ ఫీజుల్లో దామాషా కోత"
      }
@@ -194,7 +191,7 @@
     "status": "contestable",
     "inr_impact": 10615.15,
     "deduction_ids": [],
-    "confidence": 0.87,
+    "confidence": 0.84,
     "explanation_en": "Even applying every valid deduction in the policy, the correct settlement is ₹1,14,846; the insurer paid ₹1,04,231. The extra ₹10,615 cut is not supported.",
     "explanations": {
      "en": "Even applying every valid deduction in the policy, the correct settlement is ₹1,14,846; the insurer paid ₹1,04,231. The extra ₹10,615 cut is not supported.",
@@ -218,9 +215,6 @@
      "correct_payout": 114846.15,
      "insurer_paid": 104231.0,
      "advocate_argument": "Even after allowing valid room-rent excess Rs.4500 and proportionate Rs.16153.85, correct payout is Rs.114846.15 vs paid Rs.104231. Unexplained shortfall Rs.10615.15 has no clause support and violates IN-CRC requirement to give specific clause-wise reasons approved by Claims Review Committee.",
-     "jury": {
-      "baseten": "contestable"
-     },
      "title_localized": {
       "te": "భీమా కంపెనీ తన పాలసీ నిబంధనల ప్రకారం ఇవ్వాల్సిన దానికంటే తక్కువ డబ్బు చెల్లించింది"
      }
@@ -276,95 +270,95 @@
     "stage": "ingest",
     "kind": "info",
     "text": "3 document(s): bill:1p, discharge:1p, rejection:1p",
-    "t": "22:18:12"
+    "t": "20:54:30"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
-    "t": "22:18:12"
+    "t": "20:54:30"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 3995,
     "usd": 0.0053265,
-    "t": "22:18:22"
+    "t": "20:54:30"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "bill: 8 lines via baseten",
-    "t": "22:18:22"
+    "t": "20:54:30"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1141,
     "usd": 0.0013434999999999999,
-    "t": "22:18:25"
+    "t": "20:54:30"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "discharge: Medial meniscus tear, right knee via baseten",
-    "t": "22:18:25"
+    "t": "20:54:30"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1778,
     "usd": 0.002292,
-    "t": "22:18:29"
+    "t": "20:54:30"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "rejection: 1 reason(s) via baseten",
-    "t": "22:18:29"
+    "t": "20:54:30"
    },
    {
     "stage": "privacy",
     "kind": "info",
     "text": "2 personal identifier(s) masked before any model call",
-    "t": "22:18:29"
+    "t": "20:54:30"
    },
    {
     "stage": "tools",
     "kind": "info",
     "text": "deterministic checks run: 14 tools",
-    "t": "22:18:29"
+    "t": "20:54:30"
    },
    {
     "stage": "rules",
     "kind": "info",
     "text": "rules engine: 3 candidate finding(s)",
-    "t": "22:18:29"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
     "kind": "start",
     "text": "TPA Adjudicator reviewing claim like the insurer would",
-    "t": "22:18:29"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 4986,
     "usd": 0.008595,
-    "t": "22:18:35"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
@@ -372,7 +366,7 @@
     "tool": "waiting_period_check",
     "args": "{\"condition\":\"meniscus tear\"}",
     "result": "{\"admission\": \"2026-08-28\", \"policy_start\": \"2019-03-01\", \"continuous_since\": \"2019-03-01\", \"months_insurer_view\": 89, \"months_continuous\": 89, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 89, \"months_elapsed_continuous\": 89, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
-    "t": "22:18:35"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
@@ -380,7 +374,7 @@
     "tool": "waiting_period_check",
     "args": "{\"condition\":\"arthroscopic meniscectomy\"}",
     "result": "{\"admission\": \"2026-08-28\", \"policy_start\": \"2019-03-01\", \"continuous_since\": \"2019-03-01\", \"months_insurer_view\": 89, \"months_continuous\": 89, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 89, \"months_elapsed_continuous\": 89, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
-    "t": "22:18:35"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
@@ -388,7 +382,7 @@
     "tool": "sublimit_check",
     "args": "{\"procedure\":\"arthroscopic meniscectomy\"}",
     "result": "{\"matched\": false}",
-    "t": "22:18:35"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
@@ -396,7 +390,7 @@
     "tool": "sublimit_check",
     "args": "{\"procedure\":\"meniscus tear\"}",
     "result": "{\"matched\": false}",
-    "t": "22:18:35"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
@@ -404,17 +398,17 @@
     "tool": "ped_check",
     "args": "{}",
     "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 89, \"moratorium_months\": 60, \"moratorium_passed\": true, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unti…",
-    "t": "22:18:35"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 5952,
     "usd": 0.009788999999999999,
-    "t": "22:18:40"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
@@ -422,7 +416,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.1\"}",
     "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
-    "t": "22:18:40"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
@@ -430,40 +424,40 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.3\"}",
     "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
-    "t": "22:18:40"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 7273,
     "usd": 0.014146,
-    "t": "22:18:50"
+    "t": "20:54:30"
    },
    {
     "stage": "tpa",
     "kind": "done",
     "text": "3 predicted issues; 7 tool calls",
     "notes": "No waiting, sublimit, copay, PED, exclusion or documentation issue. Initial 1-month and 36-month PED waiting served with 89 months continuous since 2019-03-01, moratorium passed. Meniscectomy not in 24-month specific list and not a cataract sublimit. Age 45 so 10% senior copay not triggered. Admissible deductions total D-ROOM+D-PD, payable 114846.15 vs insurer paid 104231 - short settlement of ~10615 in favour of insured for appeal.",
-    "t": "22:18:50"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
     "kind": "start",
     "text": "Patient Advocate challenging each predicted cut",
-    "t": "22:18:50"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 3560,
     "usd": 0.008021,
-    "t": "22:18:56"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
@@ -471,7 +465,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"proportionate deduction room rent associated expenses\"}",
     "result": "{\"rules\": [{\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy, consumables, implants, medical devices and diagnostics.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow differential billing by room categ…",
-    "t": "22:18:56"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
@@ -479,7 +473,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"room rent limit 1% sum insured\"}",
     "result": "{\"rules\": [{\"id\": \"IN-PORTABILITY\", \"rule\": \"On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow d…",
-    "t": "22:18:56"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
@@ -487,7 +481,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"claim settlement short payment correct payout\"}",
     "result": "{\"rules\": [{\"id\": \"IN-CRC\", \"rule\": \"No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–…",
-    "t": "22:18:56"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
@@ -495,7 +489,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.1\"}",
     "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
-    "t": "22:18:56"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
@@ -503,17 +497,17 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.3\"}",
     "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
-    "t": "22:18:56"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 4389,
     "usd": 0.007593,
-    "t": "22:19:01"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
@@ -521,7 +515,7 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"proportionate deduction differential billing room rent\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
-    "t": "22:19:01"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
@@ -529,7 +523,7 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"room rent limit exceeded proportionate\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
-    "t": "22:19:01"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
@@ -537,79 +531,71 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"short settlement paid less than payable\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-NP-01\", \"illustrative\": true, \"issue_type\": \"non_payable\", \"complaint\": \"Consumables bundled as 'kit' disallowed entirely.\", \"decision\": \"partly allowed\", \"reasoning\": \"Itemized consumables forming part of procedure held payable.\", \"office\": null, \"year\": null}]}",
-    "t": "22:19:01"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 7130,
     "usd": 0.016922,
-    "t": "22:19:17"
+    "t": "20:54:30"
    },
    {
     "stage": "advocate",
     "kind": "done",
     "text": "verdicts for 3 findings; 8 tool calls",
-    "t": "22:19:17"
+    "t": "20:54:30"
    },
    {
     "stage": "localize",
     "kind": "info",
     "text": "translating to te in parallel with the jury",
-    "t": "22:19:17"
+    "t": "20:54:30"
    },
    {
     "stage": "critic",
     "kind": "start",
     "text": "Critic auditing statuses, fixes and citations",
-    "t": "22:19:17"
+    "t": "20:54:30"
    },
    {
     "stage": "jury",
     "kind": "start",
-    "text": "3-host jury on 2 judgement(s), in parallel: muse, baseten, fireworks",
-    "t": "22:19:17"
+    "text": "2-host jury on 2 judgement(s), in parallel: muse, baseten",
+    "t": "20:54:30"
    },
    {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on baseten; one retry with max_tokens=1200",
-    "t": "22:19:19"
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 1528,
+    "usd": 0.001872,
+    "t": "20:54:30"
    },
    {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:19:19"
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 2583,
+    "usd": 0.0032915,
+    "t": "20:54:30"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1579,
     "usd": 0.0018294999999999997,
-    "t": "22:19:23"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "muse",
-    "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 1681,
-    "usd": 0.005280999999999999,
-    "t": "22:19:27"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "non-JSON answer from muse → repair pass",
-    "t": "22:19:27"
+    "t": "20:54:30"
    },
    {
     "stage": "jury",
@@ -617,105 +603,85 @@
     "provider": "muse",
     "model": "muse-spark-1.3",
     "cached": true,
-    "tokens": 575,
-    "usd": 0.001712,
-    "t": "22:19:27"
+    "tokens": 1681,
+    "usd": 0.005280999999999999,
+    "t": "20:54:30"
    },
    {
     "stage": "jury",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 1138,
-    "usd": 0.001169,
-    "t": "22:19:31"
-   },
-   {
-    "stage": "jury",
-    "kind": "done",
-    "text": "votes from fireworks, baseten; unanimous on 2/2",
-    "t": "22:19:31"
-   },
-   {
-    "stage": "critic",
     "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=2400",
-    "t": "22:19:40"
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:54:30"
    },
    {
-    "stage": "localize",
+    "stage": "jury",
     "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 1528,
-    "usd": 0.001872,
-    "t": "22:19:41"
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:54:30"
    },
    {
-    "stage": "localize",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 2583,
-    "usd": 0.0032915,
-    "t": "22:19:55"
+    "stage": "jury",
+    "kind": "info",
+    "text": "fewer than 2 votes (baseten) — statuses unchanged",
+    "t": "20:54:30"
    },
    {
     "stage": "critic",
     "kind": "call",
     "provider": "fireworks",
     "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
+    "cached": true,
     "tokens": 3256,
     "usd": 0.0039570000000000004,
-    "t": "22:20:29"
+    "t": "20:54:30"
    },
    {
     "stage": "critic",
     "kind": "done",
     "text": "F02 and F03 are retainable with corrections (F02 fix truncation, F03 rule mismatch/dependency on F02). F01 is not retainable as written due to missing SI evidence for ₹5,000 limit and unlawful 'do not appeal' advice; requires rewrite to needs_review and lawful grievance guidance before patient relia",
-    "t": "22:20:29"
+    "t": "20:54:30"
    },
    {
     "stage": "verify",
     "kind": "info",
     "text": "3 verified finding(s); 3 fully cited",
-    "t": "22:20:29"
+    "t": "20:54:30"
    },
    {
     "stage": "localize",
     "kind": "call",
     "provider": "fireworks",
     "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
+    "cached": true,
     "tokens": 2629,
     "usd": 0.0033145,
-    "t": "22:21:13"
+    "t": "20:54:30"
    },
    {
     "stage": "localize",
     "kind": "done",
     "text": "results written in te",
-    "t": "22:21:13"
+    "t": "20:54:30"
    },
    {
     "stage": "report",
     "kind": "info",
-    "text": "done in 180.9s · 20 model call(s) (1 cached) · $0.1011",
-    "t": "22:21:13"
+    "text": "done in 0.3s · 16 model call(s) (16 cached) · $0.0000",
+    "t": "20:54:30"
    }
   ],
-  "cost_usd": 0.109944,
-  "llm_calls": 20,
+  "cost_usd": 0.0,
+  "llm_calls": 16,
   "engine": "full",
   "provider_calls": {
    "baseten": {
     "calls": 4,
-    "cached": 0,
-    "usd": 0.010791499999999999,
+    "cached": 4,
+    "usd": 0.0,
     "tokens": 8493,
     "roles": [
      "extract",
@@ -724,9 +690,9 @@
    },
    "muse": {
     "calls": 8,
-    "cached": 1,
-    "usd": 0.07034699999999999,
-    "tokens": 35546,
+    "cached": 8,
+    "usd": 0.0,
+    "tokens": 35525,
     "roles": [
      "tpa",
      "advocate",
@@ -734,18 +700,17 @@
     ]
    },
    "fireworks": {
-    "calls": 5,
-    "cached": 0,
-    "usd": 0.013604,
-    "tokens": 11134,
+    "calls": 4,
+    "cached": 4,
+    "usd": 0.0,
+    "tokens": 9996,
     "roles": [
-     "jury",
      "localize",
      "critic"
     ]
    }
   },
-  "generated_at": "2026-10-31T22:20:29",
+  "generated_at": "2026-11-01T20:54:30",
   "payout_detail_before": {
    "claimed": 135500.0,
    "admissible_before_copay": 114846.15,

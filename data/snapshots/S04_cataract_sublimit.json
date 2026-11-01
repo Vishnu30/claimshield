@@ -1,0 +1,516 @@
+{
+ "scenario": "S04_cataract_sublimit",
+ "recorded_at": "2026-11-01T15:05:09+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 94000.0,
+  "payout_before": 70000.0,
+  "payout_after_fixes": 70000.0,
+  "payout_after_appeal": 70000.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 24000.0,
+  "patient_pays_after": 24000.0,
+  "insurer_paid": null,
+  "risk_score": 28,
+  "risk_band": "medium",
+  "summary_en": "Claimed ₹94,000. As it stands the insurer is likely to pay ₹70,000 (cut ₹24,000). Fixing 0 issue(s) before submission raises this to ₹70,000.",
+  "summary_localized": "Claimed ₹94,000. As it stands the insurer is likely to pay ₹70,000 (cut ₹24,000). Fixing 0 issue(s) before submission raises this to ₹70,000.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "sublimit",
+    "title": "Sub-limit for cataract",
+    "raised_by": "tpa",
+    "status": "valid",
+    "inr_impact": 24000.0,
+    "deduction_ids": [
+     "D-SUBLIMIT"
+    ],
+    "confidence": 1.0,
+    "explanation_en": "Your policy caps cataract at ₹70,000; the admissible amount exceeds it by ₹24,000.",
+    "explanations": {
+     "en": "Your policy caps cataract at ₹70,000; the admissible amount exceeds it by ₹24,000."
+    },
+    "fix": "No fix will remove this — budget to pay Rs.24,000 yourself. Ask the hospital billing desk to file the claim for Rs.70,000 for left-eye surgery and give you a separate receipt for the Rs.24,000 balance to keep your reimbursement clean.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Cataract surgery is payable up to Rs. 70,000 per eye per policy year.",
+     "bbox": [
+      145.05099487304688,
+      380.2874755859375,
+      434.4021301269531,
+      393.3404541015625
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "sublimit_check": {
+      "matched": true,
+      "procedure": "cataract",
+      "matched_on": "cataract",
+      "limit": 70000.0,
+      "basis": "per_eye",
+      "cite": {
+       "clause_id": "3.4",
+       "page": 2,
+       "quote": "Cataract surgery is payable up to Rs. 70,000 per eye per policy year."
+      }
+     },
+     "tpa_reasoning": "Left-eye femto phaco with IOL is cataract surgery. Policy caps cataract at Rs 70,000 per eye per year. Total bill exceeds cap, engine excess of Rs 24,000 applies. Waiting periods served (86 months continuous >24 months specific), no room excess, no copay.",
+     "advocate_argument": "Left-eye femto phaco with IOL is cataract surgery and falls squarely under Clause 3.4 which caps 'Cataract surgery...up to Rs.70,000 per eye per policy year'. Waiting periods are served (86 months continuous > 24-month specific for cataract), so coverage applies but only up to the cap. No regulator rule prohibits cataract per-eye sub-limits, so the Rs.24,000 excess over Rs.70,000 is correctly borne by patient."
+    },
+    "verified": true,
+    "verifier_notes": []
+   }
+  ],
+  "missing_docs": [],
+  "action_plan": [],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:34:03"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:34:03"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 4102,
+    "usd": 0.005535999999999999,
+    "t": "20:34:12"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 6 lines via baseten",
+    "t": "20:34:12"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1086,
+    "usd": 0.0012540000000000001,
+    "t": "20:34:15"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Immature cataract, left eye via baseten",
+    "t": "20:34:15"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:34:15"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:34:15"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 1 candidate finding(s)",
+    "t": "20:34:15"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:34:15"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5560,
+    "usd": 0.01108,
+    "t": "20:34:25"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"cataract\"}",
+    "result": "{\"matched\": true, \"procedure\": \"cataract\", \"matched_on\": \"cataract\", \"limit\": 70000.0, \"basis\": \"per_eye\", \"cite\": {\"clause_id\": \"3.4\", \"page\": 2, \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}}",
+    "t": "20:34:25"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"cataract\"}",
+    "result": "{\"admission\": \"2026-08-11\", \"policy_start\": \"2019-06-01\", \"continuous_since\": \"2019-06-01\", \"months_insurer_view\": 86, \"months_continuous\": 86, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 86, \"months_elapsed_continuous\": 86, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "20:34:25"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.4\"}",
+    "result": "{\"clause_id\": \"3.4\", \"page\": 2, \"title\": \"Sub-limits\", \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}",
+    "t": "20:34:25"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 86, \"moratorium_months\": 60, \"moratorium_passed\": true, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unti…",
+    "t": "20:34:25"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 6033,
+    "usd": 0.010251,
+    "t": "20:34:34"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"5.1\"}",
+    "result": "{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}",
+    "t": "20:34:34"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5896,
+    "usd": 0.009232,
+    "t": "20:34:42"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "1 predicted issues; 5 tool calls",
+    "notes": "Policy since 2019-06-01, admission 2026-08-11, ~86 months continuous: initial 1-mo, specific 24-mo for cataract, and PED 36-mo all served; moratorium passed. Room rent within 1% SI limit, no proportionate deduction. Age 52 so 10% senior copay not triggered. Docs complete including implant invoice/sticker. No non-payables or exclusion hits. Payable capped at cataract per-eye sub-limit per D-SUBLIMIT.",
+    "t": "20:34:42"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:34:42"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 1870,
+    "usd": 0.0032170000000000002,
+    "t": "20:34:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.4\"}",
+    "result": "{\"clause_id\": \"3.4\", \"page\": 2, \"title\": \"Sub-limits\", \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}",
+    "t": "20:34:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"cataract sublimit per eye cap\"}",
+    "result": "{\"rules\": []}",
+    "t": "20:34:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"cataract sublimit deduction\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
+    "t": "20:34:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 3011,
+    "usd": 0.006623,
+    "t": "20:34:51"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"cataract\"}",
+    "result": "{\"admission\": \"2026-08-11\", \"policy_start\": \"2019-06-01\", \"continuous_since\": \"2019-06-01\", \"months_insurer_view\": 86, \"months_continuous\": 86, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 86, \"months_elapsed_continuous\": 86, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "20:34:51"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 3445,
+    "usd": 0.007069000000000001,
+    "t": "20:34:57"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 1 findings; 4 tool calls",
+    "t": "20:34:57"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:34:57"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "skipped (3 provider(s) ready, 0 candidate(s))",
+    "t": "20:34:57"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1580,
+    "usd": 0.00199,
+    "t": "20:35:09"
+   },
+   {
+    "stage": "critic",
+    "kind": "done",
+    "text": "review complete",
+    "t": "20:35:09"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "1 verified finding(s); 1 fully cited",
+    "t": "20:35:09"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 65.9s · 9 model call(s) (0 cached) · $0.0563",
+    "t": "20:35:09"
+   }
+  ],
+  "cost_usd": 0.0563,
+  "llm_calls": 9,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 2,
+    "cached": 0,
+    "usd": 0.006789999999999999,
+    "tokens": 5188,
+    "roles": [
+     "extract"
+    ]
+   },
+   "muse": {
+    "calls": 6,
+    "cached": 0,
+    "usd": 0.04747199999999999,
+    "tokens": 25815,
+    "roles": [
+     "tpa",
+     "advocate"
+    ]
+   },
+   "fireworks": {
+    "calls": 1,
+    "cached": 0,
+    "usd": 0.00199,
+    "tokens": 1580,
+    "roles": [
+     "critic"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:35:09",
+  "payout_detail_before": {
+   "claimed": 94000.0,
+   "admissible_before_copay": 70000.0,
+   "copay": 0.0,
+   "payout": 70000.0,
+   "patient_pays": 24000.0,
+   "deductions": [
+    {
+     "id": "D-SUBLIMIT",
+     "issue_type": "sublimit",
+     "label": "Sub-limit for cataract",
+     "amount": 24000.0,
+     "item_ids": []
+    }
+   ],
+   "rejected": false
+  }
+ },
+ "letters": {},
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": "Vision Plus Eye Centre, Mumbai",
+   "bill_no": "VP-2210",
+   "admission_date": "2026-08-11",
+   "discharge_date": "2026-08-11",
+   "room_category": "Day care",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Day care bed",
+     "category": "room",
+     "qty": 1.0,
+     "rate": 3000.0,
+     "amount": 3000.0,
+     "date": "2026-08-11",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Surgeon fee - femto phaco",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 38000.0,
+     "amount": 38000.0,
+     "date": "2026-08-11",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 12000.0,
+     "amount": 12000.0,
+     "date": "2026-08-11",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "Trifocal IOL (implant)",
+     "category": "implant",
+     "qty": 1.0,
+     "rate": 36000.0,
+     "amount": 36000.0,
+     "date": "2026-08-11",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 2000.0,
+     "amount": 2000.0,
+     "date": "2026-08-11",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Biometry & OCT",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 3000.0,
+     "amount": 3000.0,
+     "date": "2026-08-11",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 94000.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Immature cataract, left eye",
+   "procedure": "Femto-laser assisted phacoemulsification with trifocal IOL",
+   "icd10": null,
+   "admission_type": "day_care",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 52,
+   "sum_insured": null,
+   "policy_start": "2019-06-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque",
+    "implant_invoice_sticker"
+   ],
+   "narrative": null,
+   "narrative_lang": null,
+   "intimation_hours_after_admission": null
+  }
+ }
+}

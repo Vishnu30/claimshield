@@ -1,0 +1,479 @@
+{
+ "scenario": "S18_cosmetic_exclusion",
+ "recorded_at": "2026-11-01T15:23:48+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 90000.0,
+  "payout_before": 90000.0,
+  "payout_after_fixes": 90000.0,
+  "payout_after_appeal": 90000.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 0.0,
+  "patient_pays_after": 0.0,
+  "insurer_paid": null,
+  "risk_score": 5,
+  "risk_band": "low",
+  "summary_en": "Claimed ₹90,000. As it stands the insurer is likely to pay ₹90,000 (cut ₹0). Fixing 0 issue(s) before submission raises this to ₹90,000.",
+  "summary_localized": "Claimed ₹90,000. As it stands the insurer is likely to pay ₹90,000 (cut ₹0). Fixing 0 issue(s) before submission raises this to ₹90,000.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "exclusion",
+    "title": "Possible exclusion: Excl05",
+    "raised_by": "advocate",
+    "status": "needs_review",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.66,
+    "explanation_en": "Treatment may fall under exclusion: Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an accident, burn or cancer are excluded.",
+    "explanations": {
+     "en": "Treatment may fall under exclusion: Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an accident, burn or cancer are excluded."
+    },
+    "fix": "Ask your treating surgeon + hospital Medical Records before you submit: 1) Discharge summary with final diagnosis and reason surgery was needed for health/function (not appearance), 2) Operative notes, 3) A one-line certificate on hospital letterhead stating 'This was not cosmetic - medically necessary for [diagnosis], / reconstruction following accident/burn/cancer on [date]' with seal/sign. Tell them: 'Please write why surgery was medically required and if it was after accident/burn/cancer give date and details.' Attach these with investigation reports and prescriptions.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an accident, burn or cancer are excluded.",
+     "bbox": [
+      78.0,
+      356.2874755859375,
+      482.9756774902344,
+      382.3404541015625
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "advocate_argument": "TPA flagged possible Excl05 with no evidence of diagnosis or cosmetic purpose. Excl05 excludes only 'cosmetic or plastic surgery or any treatment to change appearance' and expressly allows 'reconstruction following an accident, burn or cancer'. Without diagnosis, indication, or operative details it is impossible to decide if exclusion applies, so denial cannot be accepted as valid yet.",
+     "jury": {
+      "baseten": "fixable",
+      "muse": "needs_review"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status needs_review is consistent with hedged 'may fall' language and no evidence cited; no overclaim to definitive denial. Fix is lawful (patient requesting own discharge summary/operative notes) and"
+    ]
+   }
+  ],
+  "missing_docs": [],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F01",
+    "who": "Doctor / Insurer",
+    "action": "Ask your treating surgeon + hospital Medical Records before you submit: 1) Discharge summary with final diagnosis and reason surgery was needed for health/function (not appearance), 2) Operative notes, 3) A one-line certificate on hospital letterhead stating 'This was not cosmetic - medically necessary for [diagnosis], / reconstruction following accident/burn/cancer on [date]' with seal/sign. Tell them: 'Please write why surgery was medically required and if it was after accident/burn/cancer give date and details.' Attach these with investigation reports and prescriptions.",
+    "status": "needs_review",
+    "impact": 0.0,
+    "when": "check"
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:53:08"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:53:08"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 4238,
+    "usd": 0.005771,
+    "t": "20:53:20"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 5 lines via baseten",
+    "t": "20:53:20"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1175,
+    "usd": 0.0014005,
+    "t": "20:53:23"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Nasal hump deformity via baseten",
+    "t": "20:53:23"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:53:23"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:53:23"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 1 candidate finding(s)",
+    "t": "20:53:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:53:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4196,
+    "usd": 0.006314,
+    "t": "20:53:27"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"Excl05\"}",
+    "result": "{\"clause_id\": \"Excl05\", \"page\": 3, \"title\": \"Cosmetic surgery\", \"quote\": \"Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an accident, burn or cancer are excluded.\"}",
+    "t": "20:53:27"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "compute_payout",
+    "args": "{}",
+    "result": "{\"claimed\": 90000.0, \"payout\": 90000.0, \"copay\": 0.0, \"deductions\": []}",
+    "t": "20:53:27"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"cosmetic surgery exclusion accident burn cancer reconstruction\"}",
+    "result": "{\"rules\": []}",
+    "t": "20:53:27"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5007,
+    "usd": 0.008601000000000001,
+    "t": "20:53:33"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "1 predicted issues; 3 tool calls",
+    "notes": "Engine compute_payout shows 90000 payout with 0 deductions but has not applied exclusion rejection (F01 only flags possible Excl05). Adjudicator predicts full rejection under Excl05. Waiting/PED/room/copay/docs all clear and irrelevant once exclusion applies. Do not submit as payable health claim.",
+    "t": "20:53:33"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:53:33"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 1971,
+    "usd": 0.004083,
+    "t": "20:53:33"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"query\":\"Excl05 cosmetic plastic surgery reconstruction\"}",
+    "result": "{\"matches\": [{\"clause_id\": \"Excl05\", \"page\": 3, \"title\": \"Cosmetic surgery\", \"quote\": \"Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an accident, burn or cancer are excluded.\"}, {\"clause_id\": \"3.4\", \"page\": 2, \"title\": \"Sub-limits\", \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}]}",
+    "t": "20:53:33"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"cosmetic plastic surgery exclusion reconstruction accident burn cancer\"}",
+    "result": "{\"rules\": []}",
+    "t": "20:53:33"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"cosmetic exclusion reconstructive surgery ombudsman\"}",
+    "result": "{\"precedents\": []}",
+    "t": "20:53:33"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 2937,
+    "usd": 0.006813,
+    "t": "20:53:33"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 1 findings; 3 tool calls",
+    "t": "20:53:33"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:53:33"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "2-host jury on 1 judgement(s), in parallel: muse, baseten",
+    "t": "20:53:33"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 1211,
+    "usd": 0.003905,
+    "t": "20:53:33"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": true,
+    "tokens": 1571,
+    "usd": 0.0019855,
+    "t": "20:53:33"
+   },
+   {
+    "stage": "jury",
+    "kind": "done",
+    "text": "votes from baseten, muse; unanimous on 0/1",
+    "t": "20:53:33"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=2400",
+    "t": "20:53:38"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 2604,
+    "usd": 0.0035220000000000004,
+    "t": "20:53:48"
+   },
+   {
+    "stage": "critic",
+    "kind": "done",
+    "text": "Single finding appropriately cautious as needs_review with no definitive denial; fix is lawful but incomplete and overbroad relative to policy exception, needs correction to target accident/burn/cancer reconstruction evidence.",
+    "t": "20:53:48"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "1 verified finding(s); 1 fully cited",
+    "t": "20:53:48"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 39.8s · 10 model call(s) (4 cached) · $0.0276",
+    "t": "20:53:48"
+   }
+  ],
+  "cost_usd": 0.0276,
+  "llm_calls": 10,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 4,
+    "cached": 1,
+    "usd": 0.0106935,
+    "tokens": 9588,
+    "roles": [
+     "extract",
+     "jury",
+     "critic"
+    ]
+   },
+   "muse": {
+    "calls": 5,
+    "cached": 3,
+    "usd": 0.014915000000000001,
+    "tokens": 15322,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:53:48",
+  "payout_detail_before": {
+   "claimed": 90000.0,
+   "admissible_before_copay": 90000.0,
+   "copay": 0.0,
+   "payout": 90000.0,
+   "patient_pays": 0.0,
+   "deductions": [],
+   "rejected": false
+  }
+ },
+ "letters": {},
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": "Aesthetica Clinic, Mumbai",
+   "bill_no": "AC-90",
+   "admission_date": "2026-08-20",
+   "discharge_date": "2026-08-20",
+   "room_category": "Day care",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Day care room",
+     "category": "room",
+     "qty": 1.0,
+     "rate": 3000.0,
+     "amount": 3000.0,
+     "date": "2026-08-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Surgeon fee - rhinoplasty",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 60000.0,
+     "amount": 60000.0,
+     "date": "2026-08-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 15000.0,
+     "amount": 15000.0,
+     "date": "2026-08-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "Anaesthesia",
+     "category": "anaesthesia",
+     "qty": 1.0,
+     "rate": 8000.0,
+     "amount": 8000.0,
+     "date": "2026-08-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 4000.0,
+     "amount": 4000.0,
+     "date": "2026-08-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 90000.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Nasal hump deformity",
+   "procedure": "Cosmetic rhinoplasty",
+   "icd10": null,
+   "admission_type": "planned",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 26,
+   "sum_insured": null,
+   "policy_start": "2020-07-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque"
+   ],
+   "narrative": null,
+   "narrative_lang": null,
+   "intimation_hours_after_admission": null
+  }
+ }
+}

@@ -278,6 +278,9 @@ def complete(role: str, messages: list[dict], schema: Optional[dict] = None, too
     mode = config.LLM_MODE
     if mode == "off":
         raise LLMUnavailable("LLM_MODE=off")
+    from core import learned
+    if messages and messages[0].get("role") == "system" and isinstance(messages[0].get("content"), str) and learned.notes(role):
+        messages = [{**messages[0], "content": learned.with_notes(role, messages[0]["content"])}] + list(messages[1:])
     chain = [p for p in (providers or ROUTES.get(role, ["baseten"])) if p in PROVIDERS]
     errors = []
     for provider in chain:

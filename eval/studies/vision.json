@@ -1,0 +1,38 @@
+{
+ "by_input": {
+  "pdf": {
+   "claims": 32,
+   "lines": 212,
+   "found": 212,
+   "extra": 0,
+   "total_ok": 32,
+   "payout_ok": 32
+  },
+  "multi-file": {
+   "claims": 2,
+   "lines": 19,
+   "found": 19,
+   "extra": 0,
+   "total_ok": 2,
+   "payout_ok": 2
+  },
+  "photo": {
+   "claims": 1,
+   "lines": 7,
+   "found": 7,
+   "extra": 0,
+   "total_ok": 1,
+   "payout_ok": 1
+  },
+  "scan": {
+   "claims": 1,
+   "lines": 11,
+   "found": 11,
+   "extra": 0,
+   "total_ok": 1,
+   "payout_ok": 1
+  }
+ },
+ "muse_usd": 0.5520070000000001,
+ "claims": 36
+}

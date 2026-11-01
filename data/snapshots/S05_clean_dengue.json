@@ -1,0 +1,334 @@
+{
+ "scenario": "S05_clean_dengue",
+ "recorded_at": "2026-11-01T15:05:31+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 48000.0,
+  "payout_before": 48000.0,
+  "payout_after_fixes": 48000.0,
+  "payout_after_appeal": 48000.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 0.0,
+  "patient_pays_after": 0.0,
+  "insurer_paid": null,
+  "risk_score": 0,
+  "risk_band": "low",
+  "summary_en": "No issues found. Expected payout ₹48,000 of ₹48,000 claimed.",
+  "summary_localized": "No issues found. Expected payout ₹48,000 of ₹48,000 claimed.",
+  "findings": [],
+  "missing_docs": [],
+  "action_plan": [],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:35:09"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:35:09"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3055,
+    "usd": 0.0039915,
+    "t": "20:35:15"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 5 lines via baseten",
+    "t": "20:35:15"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1127,
+    "usd": 0.0013254999999999999,
+    "t": "20:35:18"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Dengue fever with thrombocytopenia via baseten",
+    "t": "20:35:18"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:35:18"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:35:18"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 0 candidate finding(s)",
+    "t": "20:35:18"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:35:18"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4230,
+    "usd": 0.007236,
+    "t": "20:35:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"dengue fever\"}",
+    "result": "{\"error\": \"admission_date or policy_start missing\", \"needs_review\": true, \"hits\": []}",
+    "t": "20:35:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"dengue fever conservative management\"}",
+    "result": "{\"matched\": false}",
+    "t": "20:35:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": null, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": false, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded …",
+    "t": "20:35:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "non_payable_lookup",
+    "args": "{\"description\":\"Pharmacy & IV fluids\"}",
+    "result": "{\"matches\": []}",
+    "t": "20:35:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "compute_payout",
+    "args": "{}",
+    "result": "{\"claimed\": 48000.0, \"payout\": 48000.0, \"copay\": 0.0, \"deductions\": []}",
+    "t": "20:35:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5352,
+    "usd": 0.010008,
+    "t": "20:35:31"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "0 predicted issues; 5 tool calls",
+    "notes": "Clean 3-day dengue conservative claim for Rs 48000. Room Rs 4500/day within Rs 5000/day limit (1% SI) - no excess, no proportionate deduction per 3.3 with regulator exemptions. Dengue not in 24-mo specific list and not a sublimit procedure, age 30 so no 61+ copay, intimation 6h within 24h, no non-payables, docs complete, no exclusions hit. compute_payout confirms Rs 48000 payable. Admission date missing prevents tool waiting check, but policy since 2021-03-15 implies 1-mo initial wait long served if admission recent - obtain admission date to close file.",
+    "t": "20:35:31"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:35:31"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "skipped (3 provider(s) ready, 0 candidate(s))",
+    "t": "20:35:31"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "0 verified finding(s); 0 fully cited",
+    "t": "20:35:31"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 21.6s · 4 model call(s) (0 cached) · $0.0226",
+    "t": "20:35:31"
+   }
+  ],
+  "cost_usd": 0.0226,
+  "llm_calls": 4,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 2,
+    "cached": 0,
+    "usd": 0.0053170000000000005,
+    "tokens": 4182,
+    "roles": [
+     "extract"
+    ]
+   },
+   "muse": {
+    "calls": 2,
+    "cached": 0,
+    "usd": 0.017244,
+    "tokens": 9582,
+    "roles": [
+     "tpa"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:35:31",
+  "payout_detail_before": {
+   "claimed": 48000.0,
+   "admissible_before_copay": 48000.0,
+   "copay": 0.0,
+   "payout": 48000.0,
+   "patient_pays": 0.0,
+   "deductions": [],
+   "rejected": false
+  }
+ },
+ "letters": {},
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": null,
+   "bill_no": null,
+   "admission_date": null,
+   "discharge_date": null,
+   "room_category": null,
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Single private room",
+     "category": "room",
+     "qty": 3.0,
+     "rate": 4500.0,
+     "amount": 13500.0,
+     "date": "2026-09-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Physician visits",
+     "category": "consultation",
+     "qty": 1.0,
+     "rate": 6000.0,
+     "amount": 6000.0,
+     "date": "2026-09-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Nursing charges",
+     "category": "nursing",
+     "qty": 1.0,
+     "rate": 3000.0,
+     "amount": 3000.0,
+     "date": "2026-09-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "Pharmacy & IV fluids",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 14500.0,
+     "amount": 14500.0,
+     "date": "2026-09-03",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "CBC, NS1, platelet monitoring",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 11000.0,
+     "amount": 11000.0,
+     "date": "2026-09-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 48000.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Dengue fever with thrombocytopenia",
+   "procedure": "Conservative management",
+   "icd10": "A90",
+   "admission_type": "emergency",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 30,
+   "sum_insured": null,
+   "policy_start": "2021-03-15",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque"
+   ],
+   "narrative": null,
+   "narrative_lang": null,
+   "intimation_hours_after_admission": 6.0
+  }
+ }
+}

@@ -1,0 +1,835 @@
+{
+ "scenario": "S07_billing_errors",
+ "recorded_at": "2026-11-01T15:12:33+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 48000.0,
+  "payout_before": 37900.0,
+  "payout_after_fixes": 37900.0,
+  "payout_after_appeal": 37900.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 10100.0,
+  "patient_pays_after": 0.0,
+  "insurer_paid": null,
+  "risk_score": 23,
+  "risk_band": "low",
+  "summary_en": "Claimed ₹48,000. As it stands the insurer is likely to pay ₹37,900 (cut ₹10,100). Fixing 2 issue(s) before submission raises this to ₹37,900.",
+  "summary_localized": "Claimed ₹48,000. As it stands the insurer is likely to pay ₹37,900 (cut ₹10,100). Fixing 2 issue(s) before submission raises this to ₹37,900.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "mismatch",
+    "title": "Duplicate charges on the bill",
+    "raised_by": "tpa",
+    "status": "fixable",
+    "inr_impact": 9600.0,
+    "deduction_ids": [
+     "D-DUP"
+    ],
+    "confidence": 0.95,
+    "explanation_en": "1 line(s) look billed in error, worth ₹9,600. The insurer will not pay them and you would owe them to the hospital.",
+    "explanations": {
+     "en": "1 line(s) look billed in error, worth ₹9,600. The insurer will not pay them and you would owe them to the hospital."
+    },
+    "fix": "Go to the hospital Billing Desk + In-patient Pharmacy BEFORE you file. Ask for: (1) day-wise / date-wise detailed pharmacy bills for L03 and L04 showing date, drug name, qty, batch, amount + matching doctor prescriptions for each date. Say: 'Please give me date-wise break-up for the two Rs.9600 antibiotics lines - with prescription copies - to prove two separate dispensings.' If it was a system double-entry, ask for a revised final itemized bill removing L04 with seal/sign and a correction letter.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.",
+     "bbox": [
+      78.0,
+      648.2874755859375,
+      507.76116943359375,
+      687.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": {
+     "doc": "bill.pdf",
+     "page": 1,
+     "quote": "Pharmacy - antibiotics",
+     "bbox": [
+      36.0,
+      248.3624725341797,
+      559.2755737304688,
+      260.0414733886719
+     ],
+     "verified": false
+    },
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "duplicates": [
+      {
+       "item_id": "L04",
+       "duplicate_of": "L03",
+       "description": "Pharmacy - antibiotics",
+       "amount": 9600.0,
+       "page": 1
+      }
+     ],
+     "tpa_reasoning": "L03 and L04 are identical 'Pharmacy - antibiotics' for 9600 each. No distinct date/batch break-up in evidence pack to show separate dispensing. Insurer will pay once and deduct duplicate pending day-wise pharmacy bills with prescriptions.",
+     "advocate_argument": "Insurer pays only once for identical lines unless separate dispensing is proved with itemized bills + prescriptions. TPA correctly flags L03/L04 as duplicate pending proof. This is not a regulator-prohibited deduction - pharmacy is payable when verified."
+    },
+    "verified": true,
+    "verifier_notes": []
+   },
+   {
+    "id": "F02",
+    "issue_type": "mismatch",
+    "title": "Quantity × rate errors",
+    "raised_by": "tpa",
+    "status": "fixable",
+    "inr_impact": 500.0,
+    "deduction_ids": [
+     "D-ARITH"
+    ],
+    "confidence": 0.98,
+    "explanation_en": "1 line(s) look billed in error, worth ₹500. The insurer will not pay them and you would owe them to the hospital.",
+    "explanations": {
+     "en": "1 line(s) look billed in error, worth ₹500. The insurer will not pay them and you would owe them to the hospital."
+    },
+    "fix": "Go to the hospital Billing Desk BEFORE you file. Ask for a corrected final itemized bill for L05. Say: 'Your bill shows 5 x Rs.300 = Rs.2000, correct is Rs.1500 - please correct to Rs.1500 and give revised bill with seal/sign, or give written rate justification if rate is different.' File only the corrected bill + receipt.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.",
+     "bbox": [
+      78.0,
+      648.2874755859375,
+      507.76116943359375,
+      687.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": {
+     "doc": "bill.pdf",
+     "page": 1,
+     "quote": "Nebulisation (5 sessions)",
+     "bbox": [
+      36.0,
+      284.3624572753906,
+      559.2755737304688,
+      296.0414733886719
+     ],
+     "verified": false
+    },
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "arithmetic_errors": [
+      {
+       "item_id": "L05",
+       "description": "Nebulisation (5 sessions)",
+       "qty": 5.0,
+       "rate": 300.0,
+       "amount": 2000.0,
+       "expected": 1500.0,
+       "excess": 500.0,
+       "page": 1
+      }
+     ],
+     "tpa_reasoning": "L05 Nebulisation (5 sessions) billed 2000 but qty 5 x rate 300 = 1500. Excess 500 is arithmetic overcharge and not payable as actual verified expense.",
+     "advocate_argument": "Qty x rate = 5 x 300 = 1500, billed 2000. Excess Rs.500 is arithmetic overcharge and not payable as actual verified expense. Correctable by hospital revision, not a contestable repudiation."
+    },
+    "verified": true,
+    "verifier_notes": []
+   }
+  ],
+  "missing_docs": [],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F01",
+    "who": "Hospital billing desk",
+    "action": "Go to the hospital Billing Desk + In-patient Pharmacy BEFORE you file. Ask for: (1) day-wise / date-wise detailed pharmacy bills for L03 and L04 showing date, drug name, qty, batch, amount + matching doctor prescriptions for each date. Say: 'Please give me date-wise break-up for the two Rs.9600 antibiotics lines - with prescription copies - to prove two separate dispensings.' If it was a system double-entry, ask for a revised final itemized bill removing L04 with seal/sign and a correction letter.",
+    "status": "fixable",
+    "impact": 9600.0,
+    "when": "before submission"
+   },
+   {
+    "step": 2,
+    "finding": "F02",
+    "who": "Hospital billing desk",
+    "action": "Go to the hospital Billing Desk BEFORE you file. Ask for a corrected final itemized bill for L05. Say: 'Your bill shows 5 x Rs.300 = Rs.2000, correct is Rs.1500 - please correct to Rs.1500 and give revised bill with seal/sign, or give written rate justification if rate is different.' File only the corrected bill + receipt.",
+    "status": "fixable",
+    "impact": 500.0,
+    "when": "before submission"
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:38:54"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:38:54"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3259,
+    "usd": 0.0042725,
+    "t": "20:39:03"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 6 lines via baseten",
+    "t": "20:39:03"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1470,
+    "usd": 0.0018450000000000003,
+    "t": "20:39:07"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Community acquired pneumonia via baseten",
+    "t": "20:39:07"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:39:07"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:39:07"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 2 candidate finding(s)",
+    "t": "20:39:07"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:39:07"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4854,
+    "usd": 0.008355000000000001,
+    "t": "20:39:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"pneumonia\"}",
+    "result": "{\"admission\": \"2026-09-20\", \"policy_start\": \"2020-02-01\", \"continuous_since\": \"2020-02-01\", \"months_insurer_view\": 79, \"months_continuous\": 79, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 79, \"months_elapsed_continuous\": 79, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "20:39:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"pneumonia\"}",
+    "result": "{\"matched\": false}",
+    "t": "20:39:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 79, \"moratorium_months\": 60, \"moratorium_passed\": true, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unti…",
+    "t": "20:39:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"1.1\"}",
+    "result": "{\"clause_id\": \"1.1\", \"page\": 1, \"title\": \"Hospital\", \"quote\": \"Hospital means any institution established for in-patient care and day care treatment of illness and/or injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments Act, 2010.\"}",
+    "t": "20:39:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5386,
+    "usd": 0.008413,
+    "t": "20:39:17"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"2.1\"}",
+    "result": "{\"clause_id\": \"2.1\", \"page\": 1, \"title\": \"Sum insured\", \"quote\": \"The Sum Insured under this policy is Rs. 5,00,000 per policy year on an individual basis.\"}",
+    "t": "20:39:17"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"1.2\"}",
+    "result": "{\"clause_id\": \"1.2\", \"page\": 1, \"title\": \"Day care treatment\", \"quote\": \"Day care treatment means medical treatment and/or surgical procedure which is undertaken under general or local anaesthesia in a hospital in less than 24 hours because of technological advancement.\"}",
+    "t": "20:39:17"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.4\"}",
+    "result": "{\"clause_id\": \"3.4\", \"page\": 2, \"title\": \"Sub-limits\", \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}",
+    "t": "20:39:17"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5804,
+    "usd": 0.008864,
+    "t": "20:39:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.5\"}",
+    "result": "{\"clause_id\": \"3.5\", \"page\": 2, \"title\": \"Co-payment\", \"quote\": \"A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission.\"}",
+    "t": "20:39:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"1.4\"}",
+    "result": "{\"clause_id\": \"1.4\", \"page\": 1, \"title\": \"Associated medical expenses\", \"quote\": \"Associated medical expenses include room rent, nursing charges, operation theatre charges, fees of the treating doctor, surgeon and anaesthetist, but do not include the cost of pharmacy and consumables, cost of implants and medical devices and cost of diagnostics.\"}",
+    "t": "20:39:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"5.1\"}",
+    "result": "{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}",
+    "t": "20:39:23"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 6185,
+    "usd": 0.009062,
+    "t": "20:39:29"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.1\"}",
+    "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
+    "t": "20:39:29"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"6.1\"}",
+    "result": "{\"clause_id\": \"6.1\", \"page\": 4, \"title\": \"Grievance\", \"quote\": \"Any grievance may be addressed to the Grievance Redressal Officer of the Company. If not resolved within 14 days, the insured may approach the Insurance Ombudsman.\"}",
+    "t": "20:39:29"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"5.2\"}",
+    "result": "{\"clause_id\": \"5.2\", \"page\": 3, \"title\": \"Claim documents\", \"quote\": \"Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.\"}",
+    "t": "20:39:29"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 6350,
+    "usd": 0.008474,
+    "t": "20:39:33"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"1.3\"}",
+    "result": "{\"clause_id\": \"1.3\", \"page\": 1, \"title\": \"Pre-existing disease\", \"quote\": \"Pre-existing disease means any condition, ailment, injury or disease that is diagnosed by a physician or for which medical advice or treatment was recommended by, or received from, a physician within 36 months prior to the date of commencement of the policy.\"}",
+    "t": "20:39:33"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.3\"}",
+    "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
+    "t": "20:39:33"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"5.3\"}",
+    "result": "{\"clause_id\": \"5.3\", \"page\": 3, \"title\": \"Non-payable items\", \"quote\": \"Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.\"}",
+    "t": "20:39:33"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 8448,
+    "usd": 0.015507,
+    "t": "20:39:44"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "2 predicted issues; 16 tool calls",
+    "notes": "No room excess, no proportionate deduction, no waiting period, sublimit, copay, intimation or documentation issue per evidence pack. Pneumonia emergency admission with IV antibiotics appears medically necessary. Moratorium passed at 79 months continuous cover. Only engine billing errors apply.",
+    "t": "20:39:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:39:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2380,
+    "usd": 0.004798,
+    "t": "20:39:48"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"duplicate charges pharmacy itemized bill\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy, consumables, implants, medical devices and diagnostics.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure …",
+    "t": "20:39:48"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"quantity rate arithmetic billing error actual expenses\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy, …",
+    "t": "20:39:48"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"duplicate pharmacy billing deduction\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
+    "t": "20:39:48"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"query\":\"pharmacy itemized bill reasonable charges\"}",
+    "result": "{\"matches\": [{\"clause_id\": \"1.4\", \"page\": 1, \"title\": \"Associated medical expenses\", \"quote\": \"Associated medical expenses include room rent, nursing charges, operation theatre charges, fees of the treating doctor, surgeon and anaesthetist, but do not include the cost of pharmacy and consumables, cost of implants and medical devices and cost of diagnostics.\"}, {\"clause_id\": \"3.2\", \"page\": 2, \"titl…",
+    "t": "20:39:48"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4158,
+    "usd": 0.00933,
+    "t": "20:39:56"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 2 findings; 4 tool calls",
+    "t": "20:39:56"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "3-host jury on 2 judgement(s), in parallel: muse, baseten, fireworks",
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 1623,
+    "usd": 0.005222999999999999,
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": true,
+    "tokens": 1681,
+    "usd": 0.0020404999999999998,
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 1680,
+    "usd": 0.00204,
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from fireworks → repair pass",
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 2590,
+    "usd": 0.006189999999999999,
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "fallback",
+    "text": "fireworks abstained (empty)",
+    "t": "20:39:56"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "fewer than 2 votes (baseten) — statuses unchanged",
+    "t": "20:39:56"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on fireworks; one retry with max_tokens=2400",
+    "t": "20:40:08"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=2400",
+    "t": "20:42:15"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 2964,
+    "usd": 0.003882,
+    "t": "20:42:23"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "2 verified finding(s); 2 fully cited",
+    "t": "20:42:23"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 209.5s · 18 model call(s) (5 cached) · $0.0870",
+    "t": "20:42:23"
+   }
+  ],
+  "cost_usd": 0.10012199999999999,
+  "llm_calls": 18,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 4,
+    "cached": 1,
+    "usd": 0.009999500000000001,
+    "tokens": 9374,
+    "roles": [
+     "extract",
+     "jury",
+     "critic"
+    ]
+   },
+   "muse": {
+    "calls": 11,
+    "cached": 3,
+    "usd": 0.072803,
+    "tokens": 48332,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   },
+   "fireworks": {
+    "calls": 1,
+    "cached": 1,
+    "usd": 0.0,
+    "tokens": 1680,
+    "roles": [
+     "jury"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:42:23",
+  "payout_detail_before": {
+   "claimed": 48000.0,
+   "admissible_before_copay": 37900.0,
+   "copay": 0.0,
+   "payout": 37900.0,
+   "patient_pays": 10100.0,
+   "deductions": [
+    {
+     "id": "D-DUP",
+     "issue_type": "mismatch",
+     "label": "Duplicate line items",
+     "amount": 9600.0,
+     "item_ids": [
+      "L04"
+     ]
+    },
+    {
+     "id": "D-ARITH",
+     "issue_type": "mismatch",
+     "label": "Qty × rate errors",
+     "amount": 500.0,
+     "item_ids": [
+      "L05"
+     ]
+    }
+   ],
+   "rejected": false
+  }
+ },
+ "letters": {
+  "hospital": {
+   "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
+   "salutation": "Dear Billing / TPA Desk,",
+   "paragraphs": [
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]) at [HOSPITAL]. Before we submit the claim to [INSURER] under [POLICY_NO], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
+   ],
+   "grounds": [
+    {
+     "title": "Duplicate charges on the bill",
+     "text": "We respectfully request correction for lines L03 and L04, two Rs.9600 antibiotics lines flagged as duplicate pending proof. We request day-wise / date-wise detailed pharmacy bills for L03 and L04 showing date, drug name, qty, batch, amount with matching doctor prescriptions for each date to prove two separate dispensings. If L04 was a system double-entry, we request a revised final itemized bill removing L04 with seal/sign and a correction letter. The insurer pays only once for identical lines unless separate dispensing is proved with itemized bills and prescriptions. (Impact: ₹9,600)",
+     "cites": [
+      "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions."
+     ]
+    },
+    {
+     "title": "Quantity × rate errors",
+     "text": "We respectfully request correction for line L05 where the bill shows 5 x Rs.300 = Rs.2000, whereas the correct arithmetic is Rs.1500. We request a corrected final itemized bill for L05 correcting to Rs.1500 with seal/sign, or written rate justification if the rate is different, and we will file only the corrected bill with receipt. The excess Rs.500 is arithmetic overcharge and not payable as verified expense. (Impact: ₹500)",
+     "cites": [
+      "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions."
+     ]
+    }
+   ],
+   "relief": "Kindly issue the corrected/itemized documents with seal/sign and correction letter so the claim for [PATIENT_NAME] is not short-paid.",
+   "enclosures": [
+    "Copy of current bill"
+   ],
+   "closing": "Thank you,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": "Green Valley Hospital, Indore",
+   "bill_no": "GVH-1209",
+   "admission_date": "2026-09-20",
+   "discharge_date": "2026-09-24",
+   "room_category": "Twin sharing",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 4.0,
+     "rate": 3000.0,
+     "amount": 12000.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Physician visits",
+     "category": "consultation",
+     "qty": 1.0,
+     "rate": 8000.0,
+     "amount": 8000.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Pharmacy - antibiotics",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 9600.0,
+     "amount": 9600.0,
+     "date": "2026-09-21",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "Pharmacy - antibiotics",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 9600.0,
+     "amount": 9600.0,
+     "date": "2026-09-21",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Nebulisation (5 sessions)",
+     "category": "procedure",
+     "qty": 5.0,
+     "rate": 300.0,
+     "amount": 2000.0,
+     "date": "2026-09-21",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Chest X-ray & labs",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 6800.0,
+     "amount": 6800.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 48000.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Community acquired pneumonia",
+   "procedure": "IV antibiotics, nebulisation",
+   "icd10": null,
+   "admission_type": "emergency",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 45,
+   "sum_insured": null,
+   "policy_start": "2020-02-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque"
+   ],
+   "narrative": null,
+   "narrative_lang": null,
+   "intimation_hours_after_admission": 10.0
+  }
+ }
+}

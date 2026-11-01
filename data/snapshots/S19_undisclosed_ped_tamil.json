@@ -1,0 +1,564 @@
+{
+ "scenario": "S19_undisclosed_ped_tamil",
+ "recorded_at": "2026-11-01T15:24:30+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "ta",
+  "currency": "₹",
+  "claimed": 71000.0,
+  "payout_before": 71000.0,
+  "payout_after_fixes": 71000.0,
+  "payout_after_appeal": 71000.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 0.0,
+  "patient_pays_after": 0.0,
+  "insurer_paid": null,
+  "risk_score": 0,
+  "risk_band": "low",
+  "summary_en": "Claimed ₹71,000. As it stands the insurer is likely to pay ₹71,000 (cut ₹0). Fixing 0 issue(s) before submission raises this to ₹71,000.",
+  "summary_localized": "₹71,000 கோரப்பட்டது. இப்போதைய நிலையில் காப்பீட்டு நிறுவனம் ₹71,000 தர வாய்ப்புள்ளது (பிடித்தம் ₹0). சமர்ப்பிக்கும் முன் 0 பிரச்சனைகளை சரி செய்தால் இது ₹71,000 ஆக இருக்கும்.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "ped",
+    "title": "Possible undisclosed pre-existing condition",
+    "raised_by": "advocate",
+    "status": "valid",
+    "inr_impact": 71000.0,
+    "deduction_ids": [],
+    "confidence": 0.6,
+    "explanation_en": "Records mention diabetes, not declared on the proposal. If it pre-dates the policy, the insurer may repudiate.",
+    "explanations": {
+     "en": "Records mention diabetes, not declared on the proposal. If it pre-dates the policy, the insurer may repudiate.",
+     "ta": "மருத்துவ ரெக்கார்டில் சர்க்கரை நோய் (diabetes) இருப்பதாக உள்ளது, ஆனால் பாலிசி எடுக்கும்போது அதை சொல்லவில்லை. இந்த நோய் பாலிசி எடுப்பதற்கு முன்பே இருந்தது என்றால், இன்சூரன்ஸ் நிறுவனம் கிளைம் தர மறுக்க வாய்ப்பு உள்ளது."
+    },
+    "fix": "இதை இப்போது சரி செய்ய முடியாது. உங்கள் அம்மாவுக்கு சர்க்கரை நோய் காயம் (diabetic wound) = சர்க்கரை நோயின் நேரடி பின்விளைவு. பாலிசி Aug-2024ல் எடுத்து 26 மாதம் தான் ஆகிறது, 36 மாத காத்திருப்பு முடியவில்லை. சமர்ப்பிக்கும் முன்: 1) சர்க்கரை நோய் முதலில் எப்போது கண்டுபிடிக்கப்பட்டது என்று டாக்டரிடம் கேட்டு தெரிந்து கொள்ளுங்கள். Aug-2024க்கு பிறகு தான் வந்தது என்றால் மட்டும் அந்த லேப் ரிப்போர்ட் + டாக்டர் சான்றிதழ் வாங்கி கொடுங்கள். 2) இதற்கு முன் வேறு பாலிசி இருந்து மாற்றி (portability) வந்திருந்தால் மட்டும் பழைய பாலிசி சான்றிதழ் கொடுங்கள். இல்லையென்றால் இந்த Rs.71000 நீங்கள் தான் கட்ட வேண்டும், ப",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy.",
+     "bbox": [
+      78.0,
+      721.2874755859375,
+      512.0361328125,
+      760.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-PED-MAX]",
+     "page": null,
+     "quote": "Waiting period for pre-existing diseases cannot exceed 36 months.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-PED-01"
+    ],
+    "tool_evidence": {
+     "ped_check": {
+      "conditions_in_records": [
+       "diabetes"
+      ],
+      "undeclared": [
+       "diabetes"
+      ],
+      "condition_predates_policy": true,
+      "months_continuous": 26,
+      "moratorium_months": 60,
+      "moratorium_passed": false,
+      "ped_waiting_months": 36,
+      "regulator_ped_max": 36,
+      "ped_waiting_served": false,
+      "cite": {
+       "clause_id": "4.3",
+       "page": 2,
+       "quote": "Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy."
+      }
+     },
+     "advocate_argument": "Records show diabetes pre-dating 2024-08-01 inception, undeclared, and current admission is for diabetic wound = direct complication. Clause 4.3 excludes PED and direct complications until 36 months continuous coverage. Only 26 months served, so PED waiting not served. 36-month PED wait is within regulator max, and 60-month moratorium not reached so non-disclosure can still be contested. No portability credit on record.",
+     "title_localized": {
+      "ta": "முன்பே இருந்த நோயை தெரிவிக்காமல் விட்டிருக்கலாம்"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "advocate: needs_review → valid",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   }
+  ],
+  "missing_docs": [],
+  "action_plan": [],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:53:48"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:53:48"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3775,
+    "usd": 0.0050415,
+    "t": "20:53:56"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 6 lines via baseten",
+    "t": "20:53:56"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1182,
+    "usd": 0.001398,
+    "t": "20:53:59"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Diabetic foot ulcer with cellulitis, left foot via baseten",
+    "t": "20:53:59"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:53:59"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:53:59"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 1 candidate finding(s)",
+    "t": "20:53:59"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:53:59"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4843,
+    "usd": 0.008728,
+    "t": "20:54:06"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"diabetic foot ulcer\"}",
+    "result": "{\"admission\": \"2026-10-10\", \"policy_start\": \"2024-08-01\", \"continuous_since\": \"2024-08-01\", \"months_insurer_view\": 26, \"months_continuous\": 26, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 26, \"months_elapsed_continuous\": 26, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "20:54:06"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"wound debridement\"}",
+    "result": "{\"matched\": false}",
+    "t": "20:54:06"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [\"diabetes\"], \"undeclared\": [\"diabetes\"], \"condition_predates_policy\": true, \"months_continuous\": 26, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": false, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications …",
+    "t": "20:54:06"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.3\"}",
+    "result": "{\"clause_id\": \"4.3\", \"page\": 2, \"title\": \"Pre-existing disease waiting period\", \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy.\"}",
+    "t": "20:54:06"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5863,
+    "usd": 0.010699,
+    "t": "20:54:12"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "1 predicted issues; 4 tool calls",
+    "notes": "",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 2782,
+    "usd": 0.006712,
+    "t": "20:54:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [\"diabetes\"], \"undeclared\": [\"diabetes\"], \"condition_predates_policy\": true, \"months_continuous\": 26, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": false, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications …",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.3\"}",
+    "result": "{\"clause_id\": \"4.3\", \"page\": 2, \"title\": \"Pre-existing disease waiting period\", \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy.\"}",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"pre-existing disease waiting period 36 months diabetes complications\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": t…",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"moratorium non-disclosure repudiation 60 months\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portability/renewals) no claim can be contested for non-disclosure or misrepresentation, except established fraud.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; …",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"diabetes non-disclosure repudiation ombudsman\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-PED-01\", \"illustrative\": true, \"issue_type\": \"ped\", \"complaint\": \"Claim repudiated for non-disclosure of hypertension after 6 years of continuous cover.\", \"decision\": \"allowed\", \"reasoning\": \"Moratorium bars contesting non-disclosure after 60 months absent fraud.\", \"office\": null, \"year\": null}, {\"id\": \"ILL-NP-01\", \"illustrative\": true, \"issue_type\": \"non_payable\", \"com…",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 5219,
+    "usd": 0.012509,
+    "t": "20:54:12"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 1 findings; 5 tool calls",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "localize",
+    "kind": "info",
+    "text": "translating to ta in parallel with the jury",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "skipped (2 provider(s) ready, 0 candidate(s))",
+    "t": "20:54:12"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 2656,
+    "usd": 0.003325,
+    "t": "20:54:12"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=2400",
+    "t": "20:54:17"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 2894,
+    "usd": 0.0038469999999999997,
+    "t": "20:54:26"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "20:54:26"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 2753,
+    "usd": 0.0025765,
+    "t": "20:54:30"
+   },
+   {
+    "stage": "critic",
+    "kind": "done",
+    "text": "review complete",
+    "t": "20:54:30"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "1 verified finding(s); 1 fully cited",
+    "t": "20:54:30"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 1184,
+    "usd": 0.00149,
+    "t": "20:54:30"
+   },
+   {
+    "stage": "localize",
+    "kind": "done",
+    "text": "results written in ta",
+    "t": "20:54:30"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 41.5s · 11 model call(s) (4 cached) · $0.0343",
+    "t": "20:54:30"
+   }
+  ],
+  "cost_usd": 0.0343,
+  "llm_calls": 11,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 4,
+    "cached": 0,
+    "usd": 0.012863,
+    "tokens": 10604,
+    "roles": [
+     "extract",
+     "critic"
+    ]
+   },
+   "muse": {
+    "calls": 4,
+    "cached": 2,
+    "usd": 0.019427,
+    "tokens": 18707,
+    "roles": [
+     "tpa",
+     "advocate"
+    ]
+   },
+   "fireworks": {
+    "calls": 2,
+    "cached": 2,
+    "usd": 0.0,
+    "tokens": 3840,
+    "roles": [
+     "localize"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:54:30",
+  "payout_detail_before": {
+   "claimed": 71000.0,
+   "admissible_before_copay": 71000.0,
+   "copay": 0.0,
+   "payout": 71000.0,
+   "patient_pays": 0.0,
+   "deductions": [],
+   "rejected": false
+  }
+ },
+ "letters": {},
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": "Kauvery Hospital, Chennai",
+   "bill_no": "KH-3399",
+   "admission_date": "2026-10-10",
+   "discharge_date": "2026-10-15",
+   "room_category": "Twin sharing",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 5.0,
+     "rate": 3000.0,
+     "amount": 15000.0,
+     "date": "2026-10-10",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Surgeon fee - debridement",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 15000.0,
+     "amount": 15000.0,
+     "date": "2026-10-11",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 8000.0,
+     "amount": 8000.0,
+     "date": "2026-10-11",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "Pharmacy & antibiotics",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 22000.0,
+     "amount": 22000.0,
+     "date": "2026-10-11",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Cultures, HbA1c, X-ray",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 7000.0,
+     "amount": 7000.0,
+     "date": "2026-10-10",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Dressing charges",
+     "category": "procedure",
+     "qty": 1.0,
+     "rate": 4000.0,
+     "amount": 4000.0,
+     "date": "2026-10-12",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 71000.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Diabetic foot ulcer with cellulitis, left foot",
+   "procedure": "Wound debridement",
+   "icd10": null,
+   "admission_type": "emergency",
+   "comorbidities": [
+    "diabetes"
+   ],
+   "history_notes": "Type 2 diabetes mellitus for 6 years on metformin.",
+   "condition_duration_months": 72,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "ta",
+   "patient_age": 57,
+   "sum_insured": null,
+   "policy_start": "2024-08-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque"
+   ],
+   "narrative": "என் அம்மாவுக்கு சர்க்கரை நோய் காயத்துக்கு சிகிச்சை நடந்தது. பாலிசி இரண்டு வருடம் முன்பு எடுத்தோம்.",
+   "narrative_lang": null,
+   "intimation_hours_after_admission": 8.0
+  }
+ }
+}

@@ -1,0 +1,699 @@
+{
+ "scenario": "S02_hernia_waiting_valid",
+ "recorded_at": "2026-11-01T15:00:18+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 86700.0,
+  "payout_before": 0.0,
+  "payout_after_fixes": 0.0,
+  "payout_after_appeal": 0.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 86700.0,
+  "patient_pays_after": 86700.0,
+  "insurer_paid": null,
+  "risk_score": 100,
+  "risk_band": "high",
+  "summary_en": "Claimed ₹86,700. As it stands the insurer is likely to pay ₹0 (cut ₹86,700). Fixing 0 issue(s) before submission raises this to ₹0.",
+  "summary_localized": "Claimed ₹86,700. As it stands the insurer is likely to pay ₹0 (cut ₹86,700). Fixing 0 issue(s) before submission raises this to ₹0.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "waiting_period",
+    "title": "Specific waiting period: hernia",
+    "raised_by": "tpa",
+    "status": "valid",
+    "inr_impact": 86700.0,
+    "deduction_ids": [
+     "D-WAIT"
+    ],
+    "confidence": 0.97,
+    "explanation_en": "The policy requires 24 months for hernia. Covered 14 months with this insurer.",
+    "explanations": {
+     "en": "The policy requires 24 months for hernia. Covered 14 months with this insurer."
+    },
+    "fix": "Do NOT file this as a payable claim now. Ask your insurer/TPA in writing: 'Please confirm if any prior continuous health cover can be credited to my 24-month hernia wait?' If you had NO prior policy without break, self-pay and wait - hernia cover opens only after 01-08-2027. If you DID have a prior policy, get a Portability Certificate from the old insurer showing continuous dates and sum insured and attach it before submission.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.",
+     "bbox": [
+      78.0,
+      659.2874755859375,
+      516.7861938476562,
+      711.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-SPECIFIC-MAX]",
+     "page": null,
+     "quote": "Specific disease/procedure waiting periods cannot exceed 36 months.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [],
+    "tool_evidence": {
+     "waiting_period_check": {
+      "kind": "specific",
+      "condition": "hernia",
+      "months_required": 24,
+      "regulator_max": 36,
+      "months_elapsed_insurer_view": 14,
+      "months_elapsed_continuous": 14,
+      "applies_insurer_view": true,
+      "applies_correctly": true,
+      "cite": {
+       "clause_id": "4.2",
+       "page": 2,
+       "quote": "Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures."
+      }
+     },
+     "tpa_reasoning": "Diagnosis Right inguinal hernia K40.9 treated by laparoscopic TEP hernioplasty. Policy start 2025-08-01 to admission 2026-10-05 = 14 months continuous coverage. Clause 4.2 excludes hernia until expiry of 24 months continuous coverage. 14 < 24, so entire hospitalization expense is excluded. Engine correctly applies full bill 86700 as inadmissible.",
+     "advocate_argument": "Right inguinal hernia K40.9 with TEP hernioplasty falls squarely in Clause 4.2 list which excludes hernia until 24 months continuous coverage. Policy start 2025-08-01 to admission 2026-10-05 = 14 months, 14 < 24 so exclusion applies. 24 months is within regulator max of 36 months, so clause is legal. No prior continuous cover evidenced to credit."
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status 'valid' is consistent: 14 months coverage < 24-month specific disease wait cited, and 24 months is within 36-month regulatory cap. Fix is actionable/lawful (portability credit inquiry, do not m",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   },
+   {
+    "id": "F02",
+    "issue_type": "ped",
+    "title": "Possible concurrent PED bar if hernia onset predated policy",
+    "raised_by": "tpa",
+    "status": "needs_review",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.64,
+    "explanation_en": "Discharge history states 'Nil significant' and condition_duration_months is null. If insurer obtains GP records showing hernia symptoms/lump before 2025-08-01, clause 4.3 PED exclusion until 36 months would also apply independently. Recommend retaining proof of first onset after policy inception, but specific waiting period alone already bars claim.",
+    "explanations": {
+     "en": "Discharge history states 'Nil significant' and condition_duration_months is null. If insurer obtains GP records showing hernia symptoms/lump before 2025-08-01, clause 4.3 PED exclusion until 36 months would also apply independently. Recommend retaining proof of first onset after policy inception, but specific waiting period alone already bars claim."
+    },
+    "fix": "Ask your operating surgeon and family GP for a one-page dated certificate to pre-empt a PED query. Say: 'Please certify when my hernia lump/pain was first noted and that I had no prior hernia treatment before 2025-08-01.' Attach the first OPD slip and first ultrasound showing date after policy start. Keep it ready and submit only if TPA raises PED.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy.",
+     "bbox": [
+      78.0,
+      721.2874755859375,
+      512.0361328125,
+      760.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-PED-MAX]",
+     "page": null,
+     "quote": "Waiting period for pre-existing diseases cannot exceed 36 months.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [],
+    "tool_evidence": {
+     "advocate_argument": "PED exclusion under Clause 4.3 needs proof the hernia existed before 2025-08-01. Current records show 'Nil significant' history, ped_check shows no conditions in records and condition_predates_policy null. With only 14 months continuous cover the 36-month PED wait is not yet served, so IF pre-dating were proved it would bar independently, but there is currently no evidence to apply it."
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status 'needs_review' is consistent: no PED evidence in record (Nil significant, null duration) so cannot mark valid, but correctly flags independent 36-month PED risk if prior GP records emerge. Fix ",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   }
+  ],
+  "missing_docs": [],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F02",
+    "who": "You / Doctor",
+    "action": "Ask your operating surgeon and family GP for a one-page dated certificate to pre-empt a PED query. Say: 'Please certify when my hernia lump/pain was first noted and that I had no prior hernia treatment before 2025-08-01.' Attach the first OPD slip and first ultrasound showing date after policy start. Keep it ready and submit only if TPA raises PED.",
+    "status": "needs_review",
+    "impact": 0.0,
+    "when": "check"
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:28:19"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "20:28:19"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3804,
+    "usd": 0.005068,
+    "t": "20:28:28"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 7 lines via baseten",
+    "t": "20:28:28"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1259,
+    "usd": 0.0015125,
+    "t": "20:28:31"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Right inguinal hernia via baseten",
+    "t": "20:28:31"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:28:31"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:28:31"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 1 candidate finding(s)",
+    "t": "20:28:31"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:28:31"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4200,
+    "usd": 0.005817,
+    "t": "20:28:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{}",
+    "result": "{\"admission\": \"2026-10-05\", \"policy_start\": \"2025-08-01\", \"continuous_since\": \"2025-08-01\", \"months_insurer_view\": 14, \"months_continuous\": 14, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 14, \"months_elapsed_continuous\": 14, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "20:28:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{}",
+    "result": "{\"matched\": false}",
+    "t": "20:28:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 14, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": false, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded un…",
+    "t": "20:28:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.2\"}",
+    "result": "{\"clause_id\": \"4.2\", \"page\": 2, \"title\": \"Specific waiting period\", \"quote\": \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\"}",
+    "t": "20:28:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5617,
+    "usd": 0.008986000000000001,
+    "t": "20:28:42"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "2 predicted issues; 4 tool calls",
+    "notes": "Pre-submission prediction: full rejection expected under 4.2 specific waiting period. Room rent within 1% SI limit, no proportionate deduction, no copay at age 40, no sublimit for hernia, docs complete including implant invoice, but irrelevant as waiting period makes claim inadmissible. Do not submit as payable claim; will be repudiated as D-WAIT.",
+    "t": "20:28:42"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:28:42"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2285,
+    "usd": 0.004208,
+    "t": "20:28:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"hernia\"}",
+    "result": "{\"admission\": \"2026-10-05\", \"policy_start\": \"2025-08-01\", \"continuous_since\": \"2025-08-01\", \"months_insurer_view\": 14, \"months_continuous\": 14, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 14, \"months_elapsed_continuous\": 14, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "20:28:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 14, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": false, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded un…",
+    "t": "20:28:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.2\"}",
+    "result": "{\"clause_id\": \"4.2\", \"page\": 2, \"title\": \"Specific waiting period\", \"quote\": \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\"}",
+    "t": "20:28:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"specific waiting period hernia 24 months continuous coverage\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": t…",
+    "t": "20:28:44"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 3932,
+    "usd": 0.007520000000000001,
+    "t": "20:28:51"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"hernia specific waiting period exclusion upheld\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-WP-01\", \"illustrative\": true, \"issue_type\": \"waiting_period\", \"complaint\": \"Specific waiting period applied despite portability from previous insurer.\", \"decision\": \"allowed\", \"reasoning\": \"Waiting period served under previous continuous policy must be credited.\", \"office\": null, \"year\": null}]}",
+    "t": "20:28:51"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"pre-existing disease definition diagnosis 36 months\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": t…",
+    "t": "20:28:51"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5050,
+    "usd": 0.01069,
+    "t": "20:29:00"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 2 findings; 6 tool calls",
+    "t": "20:29:00"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:29:00"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "3-host jury on 1 judgement(s), in parallel: muse, baseten, fireworks",
+    "t": "20:29:00"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "20:29:02"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=1200",
+    "t": "20:29:02"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 1560,
+    "usd": 0.00516,
+    "t": "20:29:07"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:29:07"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:29:07"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1618,
+    "usd": 0.002009,
+    "t": "20:29:08"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "20:29:08"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "20:29:10"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2579,
+    "usd": 0.006179,
+    "t": "20:29:13"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1597,
+    "usd": 0.0017875,
+    "t": "20:29:15"
+   },
+   {
+    "stage": "jury",
+    "kind": "fallback",
+    "text": "baseten abstained (empty)",
+    "t": "20:30:00"
+   },
+   {
+    "stage": "jury",
+    "kind": "fallback",
+    "text": "fireworks abstained (no answer within 60s)",
+    "t": "20:30:00"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on fireworks; one retry with max_tokens=1200",
+    "t": "20:30:08"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1617,
+    "usd": 0.0020085,
+    "t": "20:30:18"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "fewer than 2 votes (none) — statuses unchanged",
+    "t": "20:30:18"
+   },
+   {
+    "stage": "critic",
+    "kind": "done",
+    "text": "Both findings are rule-consistent and not overclaimed; F01 correctly applies 24-month hernia wait, F02 appropriately remains needs_review pending proof of onset.",
+    "t": "20:30:18"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "2 verified finding(s); 2 fully cited",
+    "t": "20:30:18"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 119.5s · 17 model call(s) (1 cached) · $0.0697",
+    "t": "20:30:18"
+   }
+  ],
+  "cost_usd": 0.0697,
+  "llm_calls": 17,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 3,
+    "cached": 0,
+    "usd": 0.0085895,
+    "tokens": 6681,
+    "roles": [
+     "extract",
+     "jury"
+    ]
+   },
+   "muse": {
+    "calls": 8,
+    "cached": 1,
+    "usd": 0.04855999999999999,
+    "tokens": 25777,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   },
+   "fireworks": {
+    "calls": 2,
+    "cached": 0,
+    "usd": 0.003796,
+    "tokens": 3214,
+    "roles": [
+     "critic",
+     "jury"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:30:18",
+  "payout_detail_before": {
+   "claimed": 86700.0,
+   "admissible_before_copay": 0.0,
+   "copay": 0.0,
+   "payout": 0.0,
+   "patient_pays": 86700.0,
+   "deductions": [
+    {
+     "id": "D-WAIT",
+     "issue_type": "waiting_period",
+     "label": "Waiting period not completed (claim inadmissible)",
+     "amount": 86700.0,
+     "item_ids": []
+    }
+   ],
+   "rejected": true
+  }
+ },
+ "letters": {},
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": null,
+   "bill_no": null,
+   "admission_date": "2026-10-05",
+   "discharge_date": "2026-10-07",
+   "room_category": "Twin sharing",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 2.0,
+     "rate": 3000.0,
+     "amount": 6000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Surgeon fee - laparoscopic hernioplasty",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 35000.0,
+     "amount": 35000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Anaesthesia",
+     "category": "anaesthesia",
+     "qty": 1.0,
+     "rate": 8000.0,
+     "amount": 8000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 15000.0,
+     "amount": 15000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Prolene mesh (implant)",
+     "category": "implant",
+     "qty": 1.0,
+     "rate": 12000.0,
+     "amount": 12000.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 6500.0,
+     "amount": 6500.0,
+     "date": "2026-10-06",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L07",
+     "description": "Pre-op investigations",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 4200.0,
+     "amount": 4200.0,
+     "date": "2026-10-05",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 86700.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Right inguinal hernia",
+   "procedure": "Laparoscopic TEP hernioplasty with mesh",
+   "icd10": "K40.9",
+   "admission_type": "planned",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 40,
+   "sum_insured": null,
+   "policy_start": "2025-08-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque",
+    "implant_invoice_sticker"
+   ],
+   "narrative": null,
+   "narrative_lang": null,
+   "intimation_hours_after_admission": null
+  }
+ }
+}

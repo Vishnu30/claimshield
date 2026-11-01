@@ -27,10 +27,11 @@ if /I "%CMD%"=="models"   ( python scripts\doctor.py --models %2 & goto :eof )
 if /I "%CMD%"=="test"     ( python -m pytest -q & goto :eof )
 if /I "%CMD%"=="build-kb" ( python scripts\build_kb.py %2 %3 %4 %5 & goto :eof )
 if /I "%CMD%"=="snapshot" ( python scripts\demo.py snapshot %2 %3 %4 & goto :eof )
+if /I "%CMD%"=="studies"  ( python scripts\muse_studies.py %2 %3 %4 %5 %6 %7 & goto :eof )
 if /I "%CMD%"=="samples"  ( python scripts\make_scenarios.py & goto :eof )
 if /I "%CMD%"=="eval"     ( python eval\run_eval.py --engines rules lean single --max-usd 8 & goto :eof )
 if /I "%CMD%"=="credits"  ( python scripts\demo.py credits & goto :eof )
-echo Usage: run [setup^|app^|offline^|demo^|doctor^|check^|test^|build-kb^|snapshot^|samples^|eval^|credits^|models]
+echo Usage: run [setup^|app^|offline^|demo^|doctor^|check^|test^|build-kb^|snapshot^|studies^|samples^|eval^|credits^|models]
 goto :eof
 :err
 echo Setup failed. Check Python 3.10-3.12 is installed and on PATH:  python --version

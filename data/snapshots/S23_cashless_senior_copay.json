@@ -1,0 +1,774 @@
+{
+ "scenario": "S23_cashless_senior_copay",
+ "recorded_at": "2026-11-01T15:26:05+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "currency": "₹",
+  "claimed": 75000.0,
+  "payout_before": 60000.0,
+  "payout_after_fixes": 60000.0,
+  "payout_after_appeal": 60000.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 15000.0,
+  "patient_pays_after": 15000.0,
+  "insurer_paid": null,
+  "risk_score": 27,
+  "risk_band": "medium",
+  "summary_en": "Claimed ₹75,000. As it stands the insurer is likely to pay ₹60,000 (cut ₹15,000). Fixing 1 issue(s) before submission raises this to ₹60,000.",
+  "summary_localized": "Claimed ₹75,000. As it stands the insurer is likely to pay ₹60,000 (cut ₹15,000). Fixing 1 issue(s) before submission raises this to ₹60,000.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "copay",
+    "title": "20% co-payment",
+    "raised_by": "advocate",
+    "status": "valid",
+    "inr_impact": 15000.0,
+    "deduction_ids": [],
+    "confidence": 0.8,
+    "explanation_en": "Your policy requires you to pay 20% of the admissible amount (insured aged 60 or above).",
+    "explanations": {
+     "en": "Your policy requires you to pay 20% of the admissible amount (insured aged 60 or above)."
+    },
+    "fix": "No fix - budget to pay it. Ask hospital billing to show 20% copay as separate line on final bill so you pay only 20% of admissible amount, not of non-payables.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "The insured shall bear 20% of every admissible claim if the insured person is aged 60 years or above at the time of admission.",
+     "bbox": [
+      78.0,
+      240.28750610351562,
+      513.584716796875,
+      266.34051513671875
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "copay_check": {
+      "pct": 20.0,
+      "condition": "insured aged 60 or above",
+      "cite": {
+       "clause_id": "3.5",
+       "page": 2,
+       "quote": "The insured shall bear 20% of every admissible claim if the insured person is aged 60 years or above at the time of admission."
+      },
+      "patient_age": 62
+     },
+     "advocate_argument": "Clause 3.5 expressly requires 20% copay if aged 60+ at admission. Patient is 62. No regulator rule found that caps or bans age-based copay disclosed in policy, so deduction is correct."
+    },
+    "verified": true,
+    "verifier_notes": []
+   },
+   {
+    "id": "F02",
+    "issue_type": "other",
+    "title": "48-month specific waiting period for hernia not proven - admission date missing",
+    "raised_by": "tpa",
+    "status": "fixable",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.75,
+    "explanation_en": "Diagnosis Right inguinal hernia / Lichtenstein hernioplasty falls under 48-month specific waiting list per clause 4.2. waiting_period_check returned needs_review true (admission_date missing) and evidence_pack waiting error. Policy_start 2018-01-01 suggests period could be served if coverage continuous to 2026, but continuous_coverage_since and admission date are null, so insurer will not pay until admission date and continuity proved. If admission within 48 months of inception, full rejection.",
+    "explanations": {
+     "en": "Diagnosis Right inguinal hernia / Lichtenstein hernioplasty falls under 48-month specific waiting list per clause 4.2. waiting_period_check returned needs_review true (admission_date missing) and evidence_pack waiting error. Policy_start 2018-01-01 suggests period could be served if coverage continuous to 2026, but continuous_coverage_since and admission date are null, so insurer will not pay until admission date and continuity proved. If admission within 48 months of inception, full rejection."
+    },
+    "fix": "Ask your insurer TPA desk for continuity certificate plus collect renewal premium receipts/policy schedules from 2018-01-01 to 2026 showing no break, and ask hospital MRD to give corrected discharge summary with admission date and diagnosis Right inguinal hernia / Lichtenstein hernioplasty. Say: 'Please record admission date and confirm continuous coverage since 2018 so 48-month waiting is shown as served.' Submit both before submission.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "The following are excluded for the first 48 months of continuous coverage: cataract, hernia, joint replacement, knee replacement, hysterectomy, gall bladder stones, kidney stones and varicose veins.",
+     "bbox": [
+      78.0,
+      496.2875061035156,
+      513.6131591796875,
+      535.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-SPECIFIC-MAX]",
+     "page": null,
+     "quote": "Specific disease/procedure waiting periods cannot exceed 36 months.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-WP-01"
+    ],
+    "tool_evidence": {
+     "advocate_argument": "Clause 4.2 excludes hernia for first 48 months of continuous coverage. Policy start 2018 suggests ~8 years to 2026, so waiting would be served if continuity proved, but admission date and continuous_coverage_since are null so insurer cannot pay yet. Backup: even if break, 48 months violates IN-SPECIFIC-MAX 36-month cap which overrides policy."
+    },
+    "verified": false,
+    "verifier_notes": [
+     "advocate: needs_review → fixable",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   },
+   {
+    "id": "F03",
+    "issue_type": "ped",
+    "title": "Hernia duration unknown - possible PED query",
+    "raised_by": "tpa",
+    "status": "needs_review",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.4,
+    "explanation_en": "Discharge history_notes Nil significant and condition_duration_months null. Inguinal hernia is often long-standing; insurer will ask for duration certificate to rule out pre-existing disease under clause 4.3. ped_check shows moratorium_passed false and ped_waiting_served false, so if hernia predates 2018 inception and was undeclared, PED exclusion could apply.",
+    "explanations": {
+     "en": "Discharge history_notes Nil significant and condition_duration_months null. Inguinal hernia is often long-standing; insurer will ask for duration certificate to rule out pre-existing disease under clause 4.3. ped_check shows moratorium_passed false and ped_waiting_served false, so if hernia predates 2018 inception and was undeclared, PED exclusion could apply."
+    },
+    "fix": "Ask treating surgeon for duration-of-illness certificate on hospital letterhead stating: when lump/pain first noticed, date of first diagnosis of right inguinal hernia, no prior hernia treatment before 2018, with UHID and signature. Also attach same 2018-to-2026 continuity proof as F02. Say: 'Please certify first onset date to rule out PED.'",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Pre-existing diseases are excluded until 48 months of continuous coverage have elapsed.",
+     "bbox": [
+      78.0,
+      545.2874755859375,
+      511.513671875,
+      571.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-PED-MAX]",
+     "page": null,
+     "quote": "Waiting period for pre-existing diseases cannot exceed 36 months.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-PED-01"
+    ],
+    "tool_evidence": {
+     "advocate_argument": "Clause 4.3 PED exclusion needs proof hernia predated 2018 and was undeclared. Records show Nil significant and no duration, so PED not proven. If continuity since 2018 proved, PED wait even at 48 months is served, and capped to 36 months by IN-PED-MAX, plus IN-MORATORIUM bars non-disclosure contest after 60 months continuous except fraud."
+    },
+    "verified": true,
+    "verifier_notes": [
+     "advocate: needs_review → fixable",
+     "regulator rule text is a seed paraphrase — verify against circular",
+     "low confidence → needs review"
+    ]
+   }
+  ],
+  "missing_docs": [],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F02",
+    "who": "You",
+    "action": "Ask your insurer TPA desk for continuity certificate plus collect renewal premium receipts/policy schedules from 2018-01-01 to 2026 showing no break, and ask hospital MRD to give corrected discharge summary with admission date and diagnosis Right inguinal hernia / Lichtenstein hernioplasty. Say: 'Please record admission date and confirm continuous coverage since 2018 so 48-month waiting is shown as served.' Submit both before submission.",
+    "status": "fixable",
+    "impact": 0.0,
+    "when": "before submission"
+   },
+   {
+    "step": 2,
+    "finding": "F03",
+    "who": "You / Doctor",
+    "action": "Ask treating surgeon for duration-of-illness certificate on hospital letterhead stating: when lump/pain first noticed, date of first diagnosis of right inguinal hernia, no prior hernia treatment before 2018, with UHID and signature. Also attach same 2018-to-2026 continuity proof as F02. Say: 'Please certify first onset date to rule out PED.'",
+    "status": "needs_review",
+    "impact": 0.0,
+    "when": "check"
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p, discharge:1p",
+    "t": "20:54:37"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: Classic Mediclaim (Demo, legacy wording) (0 credits)",
+    "t": "20:54:37"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 2865,
+    "usd": 0.0036625000000000004,
+    "t": "20:54:43"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 7 lines via baseten",
+    "t": "20:54:43"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1023,
+    "usd": 0.0011705,
+    "t": "20:54:47"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Right inguinal hernia via baseten",
+    "t": "20:54:47"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "20:54:47"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "20:54:47"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 1 candidate finding(s)",
+    "t": "20:54:47"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "20:54:47"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4225,
+    "usd": 0.007555000000000001,
+    "t": "20:54:51"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"hernia\"}",
+    "result": "{\"error\": \"admission_date or policy_start missing\", \"needs_review\": true, \"hits\": []}",
+    "t": "20:54:51"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"hernia\"}",
+    "result": "{\"matched\": false}",
+    "t": "20:54:51"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": null, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 48, \"regulator_ped_max\": 36, \"ped_waiting_served\": false, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Pre-existing diseases are excluded until 48 months of continuous coverage have elapsed.\"}}",
+    "t": "20:54:51"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.2\"}",
+    "result": "{\"clause_id\": \"4.2\", \"page\": 2, \"title\": \"Specific waiting period\", \"quote\": \"The following are excluded for the first 48 months of continuous coverage: cataract, hernia, joint replacement, knee replacement, hysterectomy, gall bladder stones, kidney stones and varicose veins.\"}",
+    "t": "20:54:51"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.5\"}",
+    "result": "{\"clause_id\": \"3.5\", \"page\": 2, \"title\": \"Co-payment\", \"quote\": \"The insured shall bear 20% of every admissible claim if the insured person is aged 60 years or above at the time of admission.\"}",
+    "t": "20:54:51"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4225,
+    "usd": 0.005632,
+    "t": "20:54:53"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "compute_payout",
+    "args": "{}",
+    "result": "{\"claimed\": 75000.0, \"payout\": 60000.0, \"copay\": 15000.0, \"deductions\": []}",
+    "t": "20:54:53"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 6573,
+    "usd": 0.014679,
+    "t": "20:55:06"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "3 predicted issues; 6 tool calls",
+    "notes": "Engine finds no payable deductions: room 7000 for 2 days @3500/day within Rs 4000/day limit (3.1), no ICU, no non-payables, no hernia sublimit (sublimit matched false), no proportionate deduction (ratio 1.0). compute_payout: claimed 75000, copay 15000 (20% age>=60 per 3.5, age 62), payout 60000. Copay is cost-share, not listed as D- deduction. Cashless pre-auth/intimation proof and mesh implant invoice/sticker (trigger implant) should be kept ready to avoid query. Final payout conditional on proving 48-month hernia waiting served.",
+    "t": "20:55:06"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "20:55:06"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2045,
+    "usd": 0.003377,
+    "t": "20:55:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.5\"}",
+    "result": "{\"clause_id\": \"3.5\", \"page\": 2, \"title\": \"Co-payment\", \"quote\": \"The insured shall bear 20% of every admissible claim if the insured person is aged 60 years or above at the time of admission.\"}",
+    "t": "20:55:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.2\"}",
+    "result": "{\"clause_id\": \"4.2\", \"page\": 2, \"title\": \"Specific waiting period\", \"quote\": \"The following are excluded for the first 48 months of continuous coverage: cataract, hernia, joint replacement, knee replacement, hysterectomy, gall bladder stones, kidney stones and varicose veins.\"}",
+    "t": "20:55:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.3\"}",
+    "result": "{\"clause_id\": \"4.3\", \"page\": 2, \"title\": \"Pre-existing diseases\", \"quote\": \"Pre-existing diseases are excluded until 48 months of continuous coverage have elapsed.\"}",
+    "t": "20:55:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"hernia\"}",
+    "result": "{\"error\": \"admission_date or policy_start missing\", \"needs_review\": true, \"hits\": []}",
+    "t": "20:55:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": null, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 48, \"regulator_ped_max\": 36, \"ped_waiting_served\": false, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Pre-existing diseases are excluded until 48 months of continuous coverage have elapsed.\"}}",
+    "t": "20:55:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 3014,
+    "usd": 0.0052250000000000005,
+    "t": "20:55:11"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"co-payment senior citizen 60 disclosure\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portability/renewals) no claim can be contested for non-disclosure or misrepresentation, except established fraud.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}]}",
+    "t": "20:55:11"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"specific waiting period hernia 48 months continuous coverage\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": t…",
+    "t": "20:55:11"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"pre-existing disease waiting period maximum moratorium\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": t…",
+    "t": "20:55:11"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"hernia waiting period continuity proof\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-WP-01\", \"illustrative\": true, \"issue_type\": \"waiting_period\", \"complaint\": \"Specific waiting period applied despite portability from previous insurer.\", \"decision\": \"allowed\", \"reasoning\": \"Waiting period served under previous continuous policy must be credited.\", \"office\": null, \"year\": null}]}",
+    "t": "20:55:11"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"PED hernia duration certificate pre-existing\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-PED-01\", \"illustrative\": true, \"issue_type\": \"ped\", \"complaint\": \"Claim repudiated for non-disclosure of hypertension after 6 years of continuous cover.\", \"decision\": \"allowed\", \"reasoning\": \"Moratorium bars contesting non-disclosure after 60 months absent fraud.\", \"office\": null, \"year\": null}]}",
+    "t": "20:55:11"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5802,
+    "usd": 0.01302,
+    "t": "20:55:21"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 3 findings; 10 tool calls",
+    "t": "20:55:21"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "20:55:21"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "2-host jury on 2 judgement(s), in parallel: muse, baseten",
+    "t": "20:55:21"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=1200",
+    "t": "20:55:23"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "20:55:24"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=2400",
+    "t": "20:55:25"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1749,
+    "usd": 0.0020745,
+    "t": "20:55:27"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 1691,
+    "usd": 0.005291,
+    "t": "20:55:29"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "20:55:29"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 554,
+    "usd": 0.0016279999999999999,
+    "t": "20:55:29"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "fewer than 2 votes (baseten) — statuses unchanged",
+    "t": "20:55:29"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3167,
+    "usd": 0.0039835,
+    "t": "20:55:34"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "20:55:34"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=2400",
+    "t": "20:55:37"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3974,
+    "usd": 0.004387,
+    "t": "20:55:41"
+   },
+   {
+    "stage": "critic",
+    "kind": "fallback",
+    "text": "skipped (no JSON found)",
+    "t": "20:55:41"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "3 verified finding(s); 2 fully cited",
+    "t": "20:55:41"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 64.2s · 17 model call(s) (1 cached) · $0.0789",
+    "t": "20:55:41"
+   }
+  ],
+  "cost_usd": 0.10775799999999999,
+  "llm_calls": 17,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 5,
+    "cached": 0,
+    "usd": 0.015278000000000002,
+    "tokens": 12778,
+    "roles": [
+     "extract",
+     "jury",
+     "critic"
+    ]
+   },
+   "muse": {
+    "calls": 8,
+    "cached": 1,
+    "usd": 0.054779,
+    "tokens": 28129,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   }
+  },
+  "generated_at": "2026-11-01T20:55:41",
+  "payout_detail_before": {
+   "claimed": 75000.0,
+   "admissible_before_copay": 75000.0,
+   "copay": 15000.0,
+   "payout": 60000.0,
+   "patient_pays": 15000.0,
+   "deductions": [],
+   "rejected": false
+  }
+ },
+ "letters": {
+  "hospital": {
+   "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
+   "salutation": "Dear Billing / TPA Desk,",
+   "paragraphs": [
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]). Before we submit the claim to [INSURER], an audit against the policy shows items the insurer is likely to deduct that the hospital can correct."
+   ],
+   "grounds": [
+    {
+     "title": "48-month specific waiting period for hernia not proven - admission date missing",
+     "text": "The records show diagnosis of Right inguinal hernia / Lichtenstein hernioplasty with admission date missing and continuous coverage since 2018-01-01 not yet proved, so the 48-month waiting under Clause 4.2 cannot be shown as served. Policy start 2018-01-01 to 2026 was noted, and the insurer will require admission date and continuity with no break to consider payment. Please issue a corrected discharge summary recording [ADMISSION_DATE] with diagnosis Right inguinal hernia / Lichtenstein hernioplasty for submission to [INSURER]. (Impact: ₹0)",
+     "cites": [
+      "Clause 4.2: The following are excluded for the first 48 months of continuous coverage: cataract, hernia, joint replacement, knee replacement, hysterectomy, gall bladder stones, kidney stones and varicose veins.",
+      "IRDAI Master Circular on Health Insurance Business 2024 [IN-SPECIFIC-MAX]: Specific disease/procedure waiting periods cannot exceed 36 months."
+     ]
+    }
+   ],
+   "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",
+   "enclosures": [
+    "Copy of current bill"
+   ],
+   "closing": "Thank you,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
+ "bundle": {
+  "policy_id": "demo_classic",
+  "bill": {
+   "hospital": null,
+   "bill_no": null,
+   "admission_date": null,
+   "discharge_date": null,
+   "room_category": null,
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 2.0,
+     "rate": 3500.0,
+     "amount": 7000.0,
+     "date": "2026-10-01",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Surgeon fee - open hernioplasty",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 30000.0,
+     "amount": 30000.0,
+     "date": "2026-10-01",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Anaesthesia",
+     "category": "anaesthesia",
+     "qty": 1.0,
+     "rate": 7000.0,
+     "amount": 7000.0,
+     "date": "2026-10-01",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 12000.0,
+     "amount": 12000.0,
+     "date": "2026-10-01",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Mesh (implant)",
+     "category": "implant",
+     "qty": 1.0,
+     "rate": 10000.0,
+     "amount": 10000.0,
+     "date": "2026-10-01",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 5000.0,
+     "amount": 5000.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L07",
+     "description": "Investigations",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 4000.0,
+     "amount": 4000.0,
+     "date": "2026-09-30",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 75000.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Right inguinal hernia",
+   "procedure": "Lichtenstein hernioplasty",
+   "icd10": null,
+   "admission_type": "planned",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_submission",
+   "jurisdiction": "IN",
+   "user_lang": "en",
+   "patient_age": 62,
+   "sum_insured": null,
+   "policy_start": "2018-01-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "cashless",
+   "city_tier": null,
+   "docs_provided": [
+    "id_proof",
+    "policy_copy",
+    "claim_form_part_a"
+   ],
+   "narrative": null,
+   "narrative_lang": null,
+   "intimation_hours_after_admission": null
+  }
+ }
+}

@@ -1,6 +1,6 @@
 {
  "scenario": "S08_ped_rejection_appeal",
- "recorded_at": "2026-10-31T16:53:44+00:00",
+ "recorded_at": "2026-11-01T15:12:33+00:00",
  "profile": "prod",
  "report": {
   "mode": "appeal",
@@ -164,95 +164,95 @@
     "stage": "ingest",
     "kind": "info",
     "text": "3 document(s): bill:1p, discharge:1p, rejection:1p",
-    "t": "22:21:19"
+    "t": "20:42:33"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
-    "t": "22:21:19"
+    "t": "20:42:33"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 4926,
     "usd": 0.006725,
-    "t": "22:21:32"
+    "t": "20:42:33"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "bill: 8 lines via baseten",
-    "t": "22:21:32"
+    "t": "20:42:33"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1196,
     "usd": 0.001415,
-    "t": "22:21:35"
+    "t": "20:42:33"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "discharge: Acute anterior wall myocardial infarction via baseten",
-    "t": "22:21:35"
+    "t": "20:42:33"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1127,
     "usd": 0.0013224999999999999,
-    "t": "22:21:38"
+    "t": "20:42:33"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "rejection: 1 reason(s) via baseten",
-    "t": "22:21:38"
+    "t": "20:42:33"
    },
    {
     "stage": "privacy",
     "kind": "info",
     "text": "2 personal identifier(s) masked before any model call",
-    "t": "22:21:38"
+    "t": "20:42:33"
    },
    {
     "stage": "tools",
     "kind": "info",
     "text": "deterministic checks run: 14 tools",
-    "t": "22:21:38"
+    "t": "20:42:33"
    },
    {
     "stage": "rules",
     "kind": "info",
     "text": "rules engine: 1 candidate finding(s)",
-    "t": "22:21:38"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
     "kind": "start",
     "text": "TPA Adjudicator reviewing claim like the insurer would",
-    "t": "22:21:38"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 4775,
     "usd": 0.007984999999999999,
-    "t": "22:21:43"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
@@ -260,7 +260,7 @@
     "tool": "ped_check",
     "args": "{}",
     "result": "{\"conditions_in_records\": [\"hypertension\"], \"undeclared\": [\"hypertension\"], \"condition_predates_policy\": false, \"months_continuous\": 77, \"moratorium_months\": 60, \"moratorium_passed\": true, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complic…",
-    "t": "22:21:43"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
@@ -268,7 +268,7 @@
     "tool": "waiting_period_check",
     "args": "{\"condition\":\"myocardial infarction PTCA\"}",
     "result": "{\"admission\": \"2026-09-10\", \"policy_start\": \"2020-04-01\", \"continuous_since\": \"2020-04-01\", \"months_insurer_view\": 77, \"months_continuous\": 77, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 77, \"months_elapsed_continuous\": 77, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
-    "t": "22:21:43"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
@@ -276,7 +276,7 @@
     "tool": "sublimit_check",
     "args": "{\"procedure\":\"PTCA angioplasty stent\"}",
     "result": "{\"matched\": false}",
-    "t": "22:21:43"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
@@ -284,17 +284,17 @@
     "tool": "compute_payout",
     "args": "{}",
     "result": "{\"claimed\": 256000.0, \"payout\": 0.0, \"copay\": 0.0, \"deductions\": [{\"id\": \"D-REJ\", \"issue_type\": \"wrongful_rejection\", \"label\": \"Claim repudiated by insurer\", \"amount\": 256000.0, \"item_ids\": []}]}",
-    "t": "22:21:43"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 6184,
     "usd": 0.011526999999999999,
-    "t": "22:21:52"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
@@ -302,7 +302,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"4.3\"}",
     "result": "{\"clause_id\": \"4.3\", \"page\": 2, \"title\": \"Pre-existing disease waiting period\", \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy.\"}",
-    "t": "22:21:52"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
@@ -310,7 +310,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"4.4\"}",
     "result": "{\"clause_id\": \"4.4\", \"page\": 3, \"title\": \"Portability\", \"quote\": \"In case of portability, the waiting periods already served under the previous policy shall be credited to the extent of the previous sum insured.\"}",
-    "t": "22:21:52"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
@@ -318,7 +318,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"1.1\"}",
     "result": "{\"clause_id\": \"1.1\", \"page\": 1, \"title\": \"Hospital\", \"quote\": \"Hospital means any institution established for in-patient care and day care treatment of illness and/or injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments Act, 2010.\"}",
-    "t": "22:21:52"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
@@ -326,7 +326,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"moratorium 60 months contestability pre-existing\"}",
     "result": "{\"rules\": [{\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portability/renewals) no claim can be contested for non-disclosure or misrepresentation, except established fraud.\",…",
-    "t": "22:21:52"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
@@ -334,40 +334,40 @@
     "tool": "search_rules",
     "args": "{\"query\":\"rejection without reasons speaking order\"}",
     "result": "{\"rules\": [{\"id\": \"IN-CRC\", \"rule\": \"No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-CONDONE-DELAY\", \"rule\": \"Claims should not be rejected solely for delayed intimation or documen…",
-    "t": "22:21:52"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 8174,
     "usd": 0.016829,
-    "t": "22:22:07"
+    "t": "20:42:33"
    },
    {
     "stage": "tpa",
     "kind": "done",
     "text": "2 predicted issues; 9 tool calls",
     "notes": "Appeal of blank rejection with no clause cited. Engine shows line_sum 256000 equals stated total, no non-payables, no room/ICU/proportionate deduction. PED/specific/initial waits served, moratorium passed, implant sticker already on file. Appeal should demand speaking order per IN-CRC and file previous policy copies + first-diagnosis certificate for hypertension to prove continuity.",
-    "t": "22:22:07"
+    "t": "20:42:33"
    },
    {
     "stage": "advocate",
     "kind": "start",
     "text": "Patient Advocate challenging each predicted cut",
-    "t": "22:22:07"
+    "t": "20:42:33"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 2170,
     "usd": 0.004024,
-    "t": "22:22:10"
+    "t": "20:42:33"
    },
    {
     "stage": "advocate",
@@ -375,7 +375,7 @@
     "tool": "ped_check",
     "args": "{}",
     "result": "{\"conditions_in_records\": [\"hypertension\"], \"undeclared\": [\"hypertension\"], \"condition_predates_policy\": false, \"months_continuous\": 77, \"moratorium_months\": 60, \"moratorium_passed\": true, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complic…",
-    "t": "22:22:10"
+    "t": "20:42:33"
    },
    {
     "stage": "advocate",
@@ -383,7 +383,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"moratorium 60 months continuous coverage non-disclosure fraud\"}",
     "result": "{\"rules\": [{\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portability/renewals) no claim can be contested for non-disclosure or misrepresentation, except established fraud.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; …",
-    "t": "22:22:10"
+    "t": "20:42:33"
    },
    {
     "stage": "advocate",
@@ -391,7 +391,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"pre-existing disease definition PED waiting period disclosure\"}",
     "result": "{\"rules\": [{\"id\": \"IN-PED-MAX\", \"rule\": \"Waiting period for pre-existing diseases cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": t…",
-    "t": "22:22:10"
+    "t": "20:42:33"
    },
    {
     "stage": "advocate",
@@ -399,7 +399,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"claim documents required continuity proof previous policy\"}",
     "result": "{\"rules\": [{\"id\": \"IN-DOCS-CASHLESS\", \"rule\": \"For cashless claims, the insurer/TPA must obtain required documents from the hospital; the policyholder should not be asked to submit them.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-PORTABILITY\", \"rule\": \"On portability or migration, waiting periods already served under the previous co…",
-    "t": "22:22:10"
+    "t": "20:42:33"
    },
    {
     "stage": "advocate",
@@ -407,161 +407,131 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"hypertension MI complication PED moratorium non-disclosure\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-PED-01\", \"illustrative\": true, \"issue_type\": \"ped\", \"complaint\": \"Claim repudiated for non-disclosure of hypertension after 6 years of continuous cover.\", \"decision\": \"allowed\", \"reasoning\": \"Moratorium bars contesting non-disclosure after 60 months absent fraud.\", \"office\": null, \"year\": null}, {\"id\": \"ILL-NP-01\", \"illustrative\": true, \"issue_type\": \"non_payable\", \"com…",
-    "t": "22:22:10"
+    "t": "20:42:33"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 5257,
     "usd": 0.01204,
-    "t": "22:22:21"
+    "t": "20:42:33"
    },
    {
     "stage": "advocate",
     "kind": "done",
     "text": "verdicts for 2 findings; 5 tool calls",
-    "t": "22:22:21"
+    "t": "20:42:33"
    },
    {
     "stage": "critic",
     "kind": "start",
     "text": "Critic auditing statuses, fixes and citations",
-    "t": "22:22:21"
+    "t": "20:42:33"
    },
    {
     "stage": "jury",
     "kind": "start",
     "text": "3-host jury on 1 judgement(s), in parallel: muse, baseten, fireworks",
-    "t": "22:22:21"
+    "t": "20:42:33"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 1922,
+    "usd": 0.002287,
+    "t": "20:42:33"
    },
    {
     "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:22:23"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on baseten; one retry with max_tokens=1200",
-    "t": "22:22:24"
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 1547,
+    "usd": 0.005123,
+    "t": "20:42:33"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1613,
     "usd": 0.0020065,
-    "t": "22:22:27"
+    "t": "20:42:33"
    },
    {
     "stage": "jury",
     "kind": "info",
     "text": "non-JSON answer from baseten → repair pass",
-    "t": "22:22:27"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "muse",
-    "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 1547,
-    "usd": 0.005123,
-    "t": "22:22:27"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:22:29"
-   },
-   {
-    "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=1200",
-    "t": "22:22:32"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "muse",
-    "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 2590,
-    "usd": 0.006189999999999999,
-    "t": "22:22:33"
-   },
-   {
-    "stage": "critic",
-    "kind": "info",
-    "text": "answer cut off on fireworks; one retry with max_tokens=2400",
-    "t": "22:22:44"
+    "t": "20:42:33"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "fireworks",
     "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
+    "cached": true,
     "tokens": 1612,
     "usd": 0.002006,
-    "t": "22:22:57"
+    "t": "20:42:33"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 2590,
+    "usd": 0.006189999999999999,
+    "t": "20:42:33"
    },
    {
     "stage": "jury",
     "kind": "fallback",
     "text": "baseten abstained (empty)",
-    "t": "22:22:57"
+    "t": "20:42:33"
    },
    {
     "stage": "jury",
     "kind": "done",
-    "text": "votes from muse, fireworks; unanimous on 1/1",
-    "t": "22:22:57"
-   },
-   {
-    "stage": "critic",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 1922,
-    "usd": 0.002287,
-    "t": "22:23:15"
+    "text": "votes from fireworks, muse; unanimous on 1/1",
+    "t": "20:42:33"
    },
    {
     "stage": "critic",
     "kind": "done",
     "text": "Both findings are coherent and lawful; F02's contestability is conditional on F01 documentation proving continuous cover and onset date. No unlawful advice or material overclaim if dependency is respected.",
-    "t": "22:23:15"
+    "t": "20:42:33"
    },
    {
     "stage": "verify",
     "kind": "info",
     "text": "2 verified finding(s); 2 fully cited",
-    "t": "22:23:15"
+    "t": "20:42:33"
    },
    {
     "stage": "report",
     "kind": "info",
-    "text": "done in 115.5s · 18 model call(s) (0 cached) · $0.0903",
-    "t": "22:23:15"
+    "text": "done in 0.1s · 13 model call(s) (13 cached) · $0.0000",
+    "t": "20:42:33"
    }
   ],
-  "cost_usd": 0.12454200000000001,
-  "llm_calls": 18,
+  "cost_usd": 0.0,
+  "llm_calls": 13,
   "engine": "full",
   "provider_calls": {
    "baseten": {
     "calls": 4,
-    "cached": 0,
-    "usd": 0.011468999999999998,
+    "cached": 4,
+    "usd": 0.0,
     "tokens": 8862,
     "roles": [
      "extract",
@@ -570,8 +540,8 @@
    },
    "muse": {
     "calls": 7,
-    "cached": 0,
-    "usd": 0.063718,
+    "cached": 7,
+    "usd": 0.0,
     "tokens": 30697,
     "roles": [
      "tpa",
@@ -581,16 +551,16 @@
    },
    "fireworks": {
     "calls": 2,
-    "cached": 0,
-    "usd": 0.004293,
+    "cached": 2,
+    "usd": 0.0,
     "tokens": 3534,
     "roles": [
-     "jury",
-     "critic"
+     "critic",
+     "jury"
     ]
    }
   },
-  "generated_at": "2026-10-31T22:23:15",
+  "generated_at": "2026-11-01T20:42:33",
   "payout_detail_before": {
    "claimed": 256000.0,
    "admissible_before_copay": 0.0,

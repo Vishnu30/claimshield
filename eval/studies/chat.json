@@ -1,0 +1,10 @@
+{
+ "chat": {
+  "questions": 62,
+  "policies": 12,
+  "correct": 0.11290322580645161,
+  "cited": 1.0,
+  "hindi_correct": 0.0
+ },
+ "muse_usd": 0.229023
+}

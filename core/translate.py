@@ -30,7 +30,10 @@ def translate(items: dict[str, str], lang: str, label: str = "tr") -> dict[str, 
     out: dict[str, str] = {}
 
     def run(batch):
-        data, _ = llm.complete_json("localize", SYSTEM.format(lang_name=name), json.dumps(batch, ensure_ascii=False), SCHEMA,
+        from core import learned
+        g = learned.glossary(lang)
+        sys_ = SYSTEM.format(lang_name=name) + ("\nUse these terms consistently: " + "; ".join(f"{k} → {v}" for k, v in list(g.items())[:40]) if g else "")
+        data, _ = llm.complete_json("localize", sys_, json.dumps(batch, ensure_ascii=False), SCHEMA,
                                     label=f"{label}:{lang}", reasoning=False, max_tokens=2000)
         t = data.get("t", data) if isinstance(data, dict) else {}
         return {k: str(v) for k, v in t.items() if k in batch and isinstance(v, (str, int, float)) and str(v).strip()}

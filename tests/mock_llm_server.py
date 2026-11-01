@@ -39,6 +39,9 @@ def respond(req: dict):
         return 200, _reply(json.dumps({"found": True, "box": [120, 240, 880, 262]}))
     if "skeptical reviewer" in sys:
         return 200, _reply(json.dumps({"reviews": [{"id": "F01", "keep": True, "concern": None, "confidence": 0.9}], "overall": "consistent"}))
+    if "You improve ClaimShield" in sys:
+        role = "chat" if "'chat'" in sys else "tpa" if "'tpa'" in sys else "extract" if "'extract'" in sys else "localize" if "'localize'" in sys else "appeal"
+        return 200, _reply(json.dumps({"diagnosis": "mock", "changes": [{"kind": "prompt_note", "role": role, "text": "Quote the exact policy clause number in every answer."}]}))
     if "Translate every value into" in sys:
         body = json.loads(msgs[1]["content"])
         return 200, _reply(json.dumps({"t": {k: "[tr] " + v for k, v in body.items()}}))

@@ -1,6 +1,6 @@
 {
  "scenario": "S13_multi_bill_duplicate_bengali",
- "recorded_at": "2026-10-31T16:44:52+00:00",
+ "recorded_at": "2026-11-01T15:19:33+00:00",
  "profile": "prod",
  "report": {
   "mode": "pre_submission",
@@ -76,13 +76,12 @@
      ],
      "tpa_reasoning": "Evidence pack reconcile confirms L09 'Pharmacy - in-patient medicines' is duplicate_of L06 with same description and same amount. Patient narrative in Bengali also reports pharmacy written twice. Only one instance actually incurred is payable; duplicate must be removed.",
      "advocate_argument": "L09 is same description and same amount Rs.7400 as L06 and patient narrative confirms double writing. Insurer pays only expenses actually incurred once; duplicate line is not payable and must be corrected at hospital before submission, not appealed later.",
-     "jury": {
-      "muse": "fixable",
-      "baseten": "fixable",
-      "fireworks": "fixable"
-     },
      "title_localized": {
       "bn": "বিলে একই খরচ দুবার ধরা হয়েছে"
+     },
+     "jury": {
+      "muse": "fixable",
+      "baseten": "fixable"
      }
     },
     "verified": true,
@@ -125,11 +124,11 @@
     "precedent_ids": [],
     "tool_evidence": {
      "advocate_argument": "No deduction yet (Rs.0). Cannot confirm overlap between consolidated L06 pharmacy and separate L07/L08 injections without detailed pharmacy break-up and prescription match. Keep as needs_review to prevent future duplicate disallowance.",
-     "jury": {
-      "muse": "needs_review"
-     },
      "title_localized": {
       "bn": "ইনজেকশনের আলাদা বিল আর ফার্মেসির একসাথে বিল মিলিয়ে দেখুন"
+     },
+     "jury": {
+      "muse": "needs_review"
      }
     },
     "verified": false,
@@ -168,95 +167,95 @@
     "stage": "ingest",
     "kind": "info",
     "text": "3 document(s): bill:1p, bill:1p, discharge:1p",
-    "t": "22:12:43"
+    "t": "20:49:33"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
-    "t": "22:12:43"
+    "t": "20:49:33"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 3646,
     "usd": 0.004849,
-    "t": "22:12:51"
+    "t": "20:49:33"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "bill: 6 lines via baseten",
-    "t": "22:12:51"
+    "t": "20:49:33"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 2812,
     "usd": 0.003667,
-    "t": "22:12:57"
+    "t": "20:49:33"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "bill: 3 lines via baseten",
-    "t": "22:12:57"
+    "t": "20:49:33"
    },
    {
     "stage": "extract",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 963,
     "usd": 0.0010785,
-    "t": "22:12:59"
+    "t": "20:49:33"
    },
    {
     "stage": "extract",
     "kind": "info",
     "text": "discharge: Symptomatic cholelithiasis via baseten",
-    "t": "22:12:59"
+    "t": "20:49:33"
    },
    {
     "stage": "privacy",
     "kind": "info",
     "text": "2 personal identifier(s) masked before any model call",
-    "t": "22:12:59"
+    "t": "20:49:33"
    },
    {
     "stage": "tools",
     "kind": "info",
     "text": "deterministic checks run: 14 tools",
-    "t": "22:12:59"
+    "t": "20:49:33"
    },
    {
     "stage": "rules",
     "kind": "info",
     "text": "rules engine: 1 candidate finding(s)",
-    "t": "22:12:59"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
     "kind": "start",
     "text": "TPA Adjudicator reviewing claim like the insurer would",
-    "t": "22:12:59"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 5066,
     "usd": 0.008963,
-    "t": "22:13:04"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -264,7 +263,7 @@
     "tool": "waiting_period_check",
     "args": "{\"condition\":\"cholelithiasis\"}",
     "result": "{\"admission\": \"2026-09-02\", \"policy_start\": \"2021-06-01\", \"continuous_since\": \"2021-06-01\", \"months_insurer_view\": 63, \"months_continuous\": 63, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 63, \"months_elapsed_continuous\": 63, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
-    "t": "22:13:04"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -272,7 +271,7 @@
     "tool": "sublimit_check",
     "args": "{\"procedure\":\"laparoscopic cholecystectomy\"}",
     "result": "{\"matched\": false}",
-    "t": "22:13:04"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -280,17 +279,17 @@
     "tool": "ped_check",
     "args": "{}",
     "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 63, \"moratorium_months\": 60, \"moratorium_passed\": true, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unti…",
-    "t": "22:13:04"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 5268,
     "usd": 0.007638000000000001,
-    "t": "22:13:09"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -298,7 +297,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"1.2\"}",
     "result": "{\"clause_id\": \"1.2\", \"page\": 1, \"title\": \"Day care treatment\", \"quote\": \"Day care treatment means medical treatment and/or surgical procedure which is undertaken under general or local anaesthesia in a hospital in less than 24 hours because of technological advancement.\"}",
-    "t": "22:13:09"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -306,17 +305,17 @@
     "tool": "get_clause",
     "args": "{\"query\":\"duplicate billing payable actual expenses\"}",
     "result": "{\"matches\": [{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}, {\"cla…",
-    "t": "22:13:09"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 5851,
     "usd": 0.008707,
-    "t": "22:13:14"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -324,7 +323,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"2.1\"}",
     "result": "{\"clause_id\": \"2.1\", \"page\": 1, \"title\": \"Sum insured\", \"quote\": \"The Sum Insured under this policy is Rs. 5,00,000 per policy year on an individual basis.\"}",
-    "t": "22:13:14"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -332,17 +331,17 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"1.1\"}",
     "result": "{\"clause_id\": \"1.1\", \"page\": 1, \"title\": \"Hospital\", \"quote\": \"Hospital means any institution established for in-patient care and day care treatment of illness and/or injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments Act, 2010.\"}",
-    "t": "22:13:14"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 5704,
     "usd": 0.007258,
-    "t": "22:13:16"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -350,7 +349,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.4\"}",
     "result": "{\"clause_id\": \"3.4\", \"page\": 2, \"title\": \"Sub-limits\", \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}",
-    "t": "22:13:16"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -358,17 +357,17 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"3.5\"}",
     "result": "{\"clause_id\": \"3.5\", \"page\": 2, \"title\": \"Co-payment\", \"quote\": \"A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission.\"}",
-    "t": "22:13:16"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 5997,
     "usd": 0.0076170000000000005,
-    "t": "22:13:20"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -376,17 +375,17 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"1.4\"}",
     "result": "{\"clause_id\": \"1.4\", \"page\": 1, \"title\": \"Associated medical expenses\", \"quote\": \"Associated medical expenses include room rent, nursing charges, operation theatre charges, fees of the treating doctor, surgeon and anaesthetist, but do not include the cost of pharmacy and consumables, cost of implants and medical devices and cost of diagnostics.\"}",
-    "t": "22:13:20"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 6240,
     "usd": 0.008069999999999999,
-    "t": "22:13:22"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -394,7 +393,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"1.3\"}",
     "result": "{\"clause_id\": \"1.3\", \"page\": 1, \"title\": \"Pre-existing disease\", \"quote\": \"Pre-existing disease means any condition, ailment, injury or disease that is diagnosed by a physician or for which medical advice or treatment was recommended by, or received from, a physician within 36 months prior to the date of commencement of the policy.\"}",
-    "t": "22:13:22"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -402,7 +401,7 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"5.1\"}",
     "result": "{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}",
-    "t": "22:13:22"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
@@ -410,40 +409,40 @@
     "tool": "get_clause",
     "args": "{\"clause_id\":\"5.2\"}",
     "result": "{\"clause_id\": \"5.2\", \"page\": 3, \"title\": \"Claim documents\", \"quote\": \"Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.\"}",
-    "t": "22:13:22"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 7765,
     "usd": 0.016186,
-    "t": "22:13:34"
+    "t": "20:49:33"
    },
    {
     "stage": "tpa",
     "kind": "done",
     "text": "2 predicted issues; 13 tool calls",
     "notes": "Room rent within 1% SI limit, no excess, no proportionate deduction. Specific waiting for cholelithiasis under 4.2 served with 63 months continuous coverage since 2021-06-01; initial waiting 4.1 also served. PED waiting 4.3 served and moratorium passed. No sublimit for laparoscopic cholecystectomy, no copay at age 48, docs complete, no exclusion hit.",
-    "t": "22:13:34"
+    "t": "20:49:33"
    },
    {
     "stage": "advocate",
     "kind": "start",
     "text": "Patient Advocate challenging each predicted cut",
-    "t": "22:13:34"
+    "t": "20:49:33"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 2128,
     "usd": 0.003958,
-    "t": "22:13:37"
+    "t": "20:49:33"
    },
    {
     "stage": "advocate",
@@ -451,7 +450,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"duplicate charges itemized bill hospital correction\"}",
     "result": "{\"rules\": [{\"id\": \"IN-DOCS-CASHLESS\", \"rule\": \"For cashless claims, the insurer/TPA must obtain required documents from the hospital; the policyholder should not be asked to submit them.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are su…",
-    "t": "22:13:37"
+    "t": "20:49:33"
    },
    {
     "stage": "advocate",
@@ -459,7 +458,7 @@
     "tool": "search_rules",
     "args": "{\"query\":\"pharmacy bills itemized break-up requirement reimbursement\"}",
     "result": "{\"rules\": [{\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy, consumables, implants, medical devices and diagnostics.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PORTABILITY\", \"rule\": \"On portability or migration, waiting periods already served under the previous continuous policy must be cred…",
-    "t": "22:13:37"
+    "t": "20:49:33"
    },
    {
     "stage": "advocate",
@@ -467,17 +466,17 @@
     "tool": "search_precedents",
     "args": "{\"query\":\"duplicate pharmacy billing double charge\"}",
     "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
-    "t": "22:13:37"
+    "t": "20:49:33"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 3437,
     "usd": 0.007115,
-    "t": "22:13:43"
+    "t": "20:49:33"
    },
    {
     "stage": "advocate",
@@ -485,157 +484,141 @@
     "tool": "get_clause",
     "args": "{\"query\":\"actually incurred reasonable necessary duplicate billing\"}",
     "result": "{\"matches\": []}",
-    "t": "22:13:43"
+    "t": "20:49:33"
    },
    {
     "stage": "advocate",
     "kind": "call",
     "provider": "muse",
     "model": "muse-spark-1.3",
-    "cached": false,
+    "cached": true,
     "tokens": 5028,
     "usd": 0.013158000000000001,
-    "t": "22:13:58"
+    "t": "20:49:33"
    },
    {
     "stage": "advocate",
     "kind": "done",
     "text": "verdicts for 2 findings; 4 tool calls",
-    "t": "22:13:58"
+    "t": "20:49:33"
    },
    {
     "stage": "localize",
     "kind": "info",
     "text": "translating to bn in parallel with the jury",
-    "t": "22:13:58"
+    "t": "20:49:33"
    },
    {
     "stage": "critic",
     "kind": "start",
     "text": "Critic auditing statuses, fixes and citations",
-    "t": "22:13:58"
+    "t": "20:49:33"
    },
    {
     "stage": "jury",
     "kind": "start",
-    "text": "3-host jury on 2 judgement(s), in parallel: muse, baseten, fireworks",
-    "t": "22:13:58"
+    "text": "2-host jury on 2 judgement(s), in parallel: muse, baseten",
+    "t": "20:49:33"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 1878,
+    "usd": 0.002139,
+    "t": "20:49:33"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 2383,
+    "usd": 0.0031035,
+    "t": "20:49:33"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": true,
+    "tokens": 1415,
+    "usd": 0.0017515,
+    "t": "20:49:33"
    },
    {
     "stage": "jury",
-    "kind": "info",
-    "text": "answer cut off on muse; one retry with max_tokens=1200",
-    "t": "22:14:00"
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 1564,
+    "usd": 0.0049239999999999996,
+    "t": "20:49:33"
    },
    {
     "stage": "jury",
     "kind": "call",
     "provider": "baseten",
     "model": "meta-models/muse-spark-open-1026",
-    "cached": false,
+    "cached": true,
     "tokens": 1102,
     "usd": 0.001151,
-    "t": "22:14:00"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "muse",
-    "model": "muse-spark-1.3",
-    "cached": false,
-    "tokens": 1564,
-    "usd": 0.0049239999999999996,
-    "t": "22:14:05"
-   },
-   {
-    "stage": "jury",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 1101,
-    "usd": 0.0011505,
-    "t": "22:14:10"
+    "t": "20:49:33"
    },
    {
     "stage": "jury",
     "kind": "done",
-    "text": "votes from muse, baseten, fireworks; unanimous on 2/2",
-    "t": "22:14:10"
-   },
-   {
-    "stage": "critic",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 1878,
-    "usd": 0.002139,
-    "t": "22:14:16"
+    "text": "votes from muse, baseten; unanimous on 2/2",
+    "t": "20:49:33"
    },
    {
     "stage": "critic",
     "kind": "done",
     "text": "review complete",
-    "t": "22:14:16"
+    "t": "20:49:33"
    },
    {
     "stage": "verify",
     "kind": "info",
     "text": "2 verified finding(s); 1 fully cited",
-    "t": "22:14:16"
+    "t": "20:49:33"
    },
    {
     "stage": "localize",
     "kind": "call",
     "provider": "fireworks",
     "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 1415,
-    "usd": 0.0017515,
-    "t": "22:14:20"
-   },
-   {
-    "stage": "localize",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
-    "tokens": 2383,
-    "usd": 0.0031035,
-    "t": "22:14:31"
-   },
-   {
-    "stage": "localize",
-    "kind": "call",
-    "provider": "fireworks",
-    "model": "accounts/fireworks/models/muse-spark-open",
-    "cached": false,
+    "cached": true,
     "tokens": 1716,
     "usd": 0.002046,
-    "t": "22:14:52"
+    "t": "20:49:33"
    },
    {
     "stage": "localize",
     "kind": "done",
     "text": "results written in bn",
-    "t": "22:14:52"
+    "t": "20:49:33"
    },
    {
     "stage": "report",
     "kind": "info",
-    "text": "done in 129.5s · 21 model call(s) (0 cached) · $0.1174",
-    "t": "22:14:52"
+    "text": "done in 0.2s · 19 model call(s) (19 cached) · $0.0000",
+    "t": "20:49:33"
    }
   ],
-  "cost_usd": 0.1174,
-  "llm_calls": 21,
+  "cost_usd": 0.0,
+  "llm_calls": 19,
   "engine": "full",
   "provider_calls": {
    "baseten": {
     "calls": 4,
-    "cached": 0,
-    "usd": 0.010745499999999998,
+    "cached": 4,
+    "usd": 0.0,
     "tokens": 8523,
     "roles": [
      "extract",
@@ -644,8 +627,8 @@
    },
    "muse": {
     "calls": 11,
-    "cached": 0,
-    "usd": 0.093594,
+    "cached": 11,
+    "usd": 0.0,
     "tokens": 54048,
     "roles": [
      "tpa",
@@ -654,18 +637,17 @@
     ]
    },
    "fireworks": {
-    "calls": 5,
-    "cached": 0,
-    "usd": 0.010190500000000002,
-    "tokens": 8493,
+    "calls": 4,
+    "cached": 4,
+    "usd": 0.0,
+    "tokens": 7392,
     "roles": [
-     "jury",
      "critic",
      "localize"
     ]
    }
   },
-  "generated_at": "2026-10-31T22:14:16",
+  "generated_at": "2026-11-01T20:49:33",
   "payout_detail_before": {
    "claimed": 88900.0,
    "admissible_before_copay": 81500.0,
