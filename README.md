@@ -3,7 +3,7 @@
 ### Know what your health insurer will cut — before they do.
 **Insurers use AI agents to adjudicate claims. ClaimShield gives patients the same agents, on their side, before the insurer decides.**
 
-▶️ **Demo video (3 min):** `<paste link>`
+▶️ **Demo video (3 min):** https://youtu.be/TYvy7HsDpbo
 
 ![ClaimShield home](docs/screenshots/01_home.jpg)
 
