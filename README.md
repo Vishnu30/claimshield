@@ -8,7 +8,7 @@
 
 ▶️ **Demo video (3 min):** `<paste link>`
 
-![ClaimShield home](docs/screenshots/01_home.png)
+![ClaimShield home](docs/screenshots/01_home.jpg)
 
 ---
 
@@ -96,12 +96,12 @@ ClaimShield audits a hospital bill **line by line against the patient's own poli
 ## Screenshots
 | | |
 |---|---|
-| ![Home](docs/screenshots/01_home.png) **Home** — language, claim stage, samples | ![Progress](docs/screenshots/02_progress.png) **Live analysis** — agents at work |
-| ![Results](docs/screenshots/03_results.png) **Results** — verdict, payout now vs after fixes, risk | ![What to do](docs/screenshots/04_what_to_do.png) **What to do** — fixes that add money, no-cost steps |
-| ![Findings](docs/screenshots/05_findings_evidence.png) **Findings** — clause + highlighted bill line | ![What if](docs/screenshots/06_what_if.png) **What if** — payout waterfall |
-| ![Letters](docs/screenshots/07_appeal_letter.png) **Letters** — appeal + escalation dates | ![Tamil](docs/screenshots/08_tamil_results.png) **12 languages** — translated in place |
-| ![Expert view](docs/screenshots/09_expert_view.png) **Expert view** — every model call per host | ![Evaluation](docs/screenshots/10_evaluation.png) **Evaluation** — 36 labelled claims |
-| ![Knowledge base](docs/screenshots/11_knowledge_base.png) **Knowledge base** — policies, IRDAI rules, sources | |
+| ![Home](docs/screenshots/01_home.jpg) **Home** — language, claim stage, samples | ![Progress](docs/screenshots/02_progress.jpg) **Live analysis** — agents at work |
+| ![Results](docs/screenshots/03_results.jpg) **Results** — verdict, payout now vs after fixes, risk | ![What to do](docs/screenshots/04_what_to_do.jpg) **What to do** — fixes that add money, no-cost steps |
+| ![Findings](docs/screenshots/05_findings_evidence.jpg) **Findings** — clause + highlighted bill line | ![What if](docs/screenshots/06_what_if.jpg) **What if** — payout waterfall |
+| ![Letters](docs/screenshots/07_appeal_letter.jpg) **Letters** — appeal + escalation dates | ![Tamil](docs/screenshots/08_tamil_results.jpg) **12 languages** — translated in place |
+| ![Expert view](docs/screenshots/09_expert_view.jpg) **Expert view** — every model call per host | ![Evaluation](docs/screenshots/10_evaluation.jpg) **Evaluation** — 36 labelled claims |
+| ![Knowledge base](docs/screenshots/11_knowledge_base.jpg) **Knowledge base** — policies, IRDAI rules, sources | |
 
 <sub>**Sources:** IRDAI Annual Report 2023-24 ([Business Standard](https://business-standard.com/industry/news/health-insurers-disallowed-claims-worth-rs-15-100-cr-during-fy24-irdai-124123000562_1.html), [Business Today](https://www.businesstoday.in/personal-finance/insurance/story/health-insurance-claim-rejections-by-insurance-companies-went-up-by-1910-in-fy24-458593-2024-12-26)) · Lok Sabha Unstarred Q. 93, 03.02.2025 ([Sansad](https://eparlib.sansad.in/bitstream/123456789/2989107/1/AU93_3riLi5.pdf), [Moneylife](https://moneylife.in/article/health-insurance-claims-worth-rs2603765-crore-rejected-by-insurers-in-fy2324-govt/76282.html)) · LocalCircles survey, Jun–Dec 2024 ([Moneylife](https://moneylife.in/article/6-in-10-health-insurance-claimants-waited-648-hours-for-claim-approval-and-discharge-from-hospital-localcircles/76013.html), [LocalCircles](https://m-www.localcircles.com/a/press/page/health-insurance-claims-processing)).</sub>
 
@@ -333,13 +333,12 @@ Every result shows its calls per host. **Expert view** lists every model call, a
 ```bash
 python eval/run_eval.py --engines rules lean full single --files --max-usd 10     # single = one Muse pass, no tools (ablation)
 ```
-<!-- paste the table printed by run_eval.py; it also appears in the app under Evaluation -->
 | Engine | Precision | Recall | Status acc. | ₹ error | Citations | Cost |
 |---|---|---|---|---|---|---|
-| full (TPA + Advocate + Jury + Critic) | | | | | | |
-| lean (Advocate) | | | | | | |
-| single (one Muse pass, ablation) | | | | | | |
-| rules (no AI) | | | | | | |
+| full (TPA + Advocate + Jury + Critic) | 0.86 | 1.00 | 0.92 | ₹0 | 100% | $1.47 (36 claims) |
+| lean (Advocate) | 1.00 | 1.00 | 0.88 | ₹0 | 100% | $0.33 (36 claims) |
+| single (one Muse pass, ablation) | 1.00 | 0.01 | 0.00 | ₹0 | 0% | $0.02 (36 claims) |
+| rules (no AI) | 1.00 | 1.00 | 1.00 | ₹0 | 100% | $0.00 (36 claims) |
 
 `run test` runs 157 tests offline in ~2 minutes:
 
