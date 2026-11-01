@@ -1,0 +1,154 @@
+{
+ "policy_id": "demo_category",
+ "insurer": "Bluebird Health Insurance (synthetic)",
+ "product": "Category Care Floater (Demo)",
+ "uin": "DEMOHLIP25011V022526",
+ "jurisdiction": "IN",
+ "sum_insured": 1000000.0,
+ "room_rent": {
+  "kind": "category",
+  "value": null,
+  "max_value": null,
+  "category": "single private AC room",
+  "cite": {
+   "clause_id": "3.1",
+   "page": 2,
+   "quote": "Room rent is payable up to the actual charges of a single private AC room."
+  }
+ },
+ "icu_rent": {
+  "kind": "none",
+  "value": null,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": "3.2",
+   "page": 2,
+   "quote": "Intensive Care Unit charges are payable at actuals."
+  }
+ },
+ "proportionate_deduction": true,
+ "proportionate_cite": {
+  "clause_id": "3.3",
+  "page": 2,
+  "quote": "If the insured person occupies a room category higher than the eligible single private AC room, all associated medical expenses except pharmacy, consumables, implants and diagnostics shall be payable in the proportion that the tariff of the eligible room bears to the tariff of the room occupied."
+ },
+ "copays": [
+  {
+   "pct": 20.0,
+   "condition": "only for treatment in a city of a higher zone than the zone of cover",
+   "age_min": null,
+   "cite": {
+    "clause_id": "3.4",
+    "page": 2,
+    "quote": "A co-payment of 20% applies only to claims for treatment taken in a city of a higher zone than the zone of cover chosen."
+   }
+  }
+ ],
+ "sublimits": [],
+ "waiting_periods": [
+  {
+   "kind": "initial",
+   "months": 1,
+   "conditions": [],
+   "cite": {
+    "clause_id": "4.1",
+    "page": 2,
+    "quote": "Any illness within the first 30 days of the policy commencement is excluded, except accidents."
+   }
+  },
+  {
+   "kind": "specific",
+   "months": 24,
+   "conditions": [
+    "cataract",
+    "hernia",
+    "joint replacement",
+    "gall bladder stones",
+    "kidney stones"
+   ],
+   "cite": {
+    "clause_id": "4.2",
+    "page": 2,
+    "quote": "The following are excluded for the first 24 months of continuous coverage: cataract, hernia, joint replacement, gall bladder stones and kidney stones."
+   }
+  },
+  {
+   "kind": "ped",
+   "months": 36,
+   "conditions": [],
+   "cite": {
+    "clause_id": "4.3",
+    "page": 2,
+    "quote": "Pre-existing diseases are covered after 36 months of continuous coverage."
+   }
+  }
+ ],
+ "exclusions": [],
+ "intimation_emergency_hours": 24,
+ "intimation_planned_days_before": null,
+ "claim_submission_days": null,
+ "clauses": [
+  {
+   "id": "1.1",
+   "title": "Hospital",
+   "page": 1,
+   "text": "Hospital means any institution registered with the local authorities for in-patient care with qualified doctors and nursing staff round the clock."
+  },
+  {
+   "id": "2.1",
+   "title": "Sum insured",
+   "page": 1,
+   "text": "The Sum Insured under this policy is Rs. 10,00,000 per policy year on a floater basis."
+  },
+  {
+   "id": "3.1",
+   "title": "Room rent",
+   "page": 2,
+   "text": "Room rent is payable up to the actual charges of a single private AC room."
+  },
+  {
+   "id": "3.2",
+   "title": "Intensive care",
+   "page": 2,
+   "text": "Intensive Care Unit charges are payable at actuals."
+  },
+  {
+   "id": "3.3",
+   "title": "Proportionate deduction",
+   "page": 2,
+   "text": "If the insured person occupies a room category higher than the eligible single private AC room, all associated medical expenses except pharmacy, consumables, implants and diagnostics shall be payable in the proportion that the tariff of the eligible room bears to the tariff of the room occupied."
+  },
+  {
+   "id": "3.4",
+   "title": "Zone co-payment",
+   "page": 2,
+   "text": "A co-payment of 20% applies only to claims for treatment taken in a city of a higher zone than the zone of cover chosen."
+  },
+  {
+   "id": "4.1",
+   "title": "Initial waiting period",
+   "page": 2,
+   "text": "Any illness within the first 30 days of the policy commencement is excluded, except accidents."
+  },
+  {
+   "id": "4.2",
+   "title": "Specific waiting period",
+   "page": 2,
+   "text": "The following are excluded for the first 24 months of continuous coverage: cataract, hernia, joint replacement, gall bladder stones and kidney stones."
+  },
+  {
+   "id": "4.3",
+   "title": "Pre-existing diseases",
+   "page": 2,
+   "text": "Pre-existing diseases are covered after 36 months of continuous coverage."
+  },
+  {
+   "id": "5.1",
+   "title": "Claim intimation",
+   "page": 2,
+   "text": "Emergency hospitalisation must be intimated within 24 hours of admission."
+  }
+ ],
+ "source_file": "data/policies/demo_category_policy.pdf"
+}

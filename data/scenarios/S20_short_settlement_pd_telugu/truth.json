@@ -1,0 +1,167 @@
+{
+ "bill": {
+  "hospital": "Yashoda Hospital, Secunderabad",
+  "bill_no": "YH-12011",
+  "admission_date": "2026-08-28",
+  "discharge_date": "2026-08-31",
+  "room_category": "Single private",
+  "room_days": 3.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Single private room",
+    "category": "room",
+    "qty": 3.0,
+    "rate": 6500.0,
+    "amount": 19500.0,
+    "date": "2026-08-28",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - arthroscopic meniscectomy",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 40000.0,
+    "amount": 40000.0,
+    "date": "2026-08-28",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 9000.0,
+    "amount": 9000.0,
+    "date": "2026-08-28",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 18000.0,
+    "amount": 18000.0,
+    "date": "2026-08-28",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "N1",
+    "description": "Nursing charges",
+    "category": "nursing",
+    "qty": 1.0,
+    "rate": 3000.0,
+    "amount": 3000.0,
+    "date": "2026-08-28",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "Bioabsorbable screws (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 22000.0,
+    "amount": 22000.0,
+    "date": "2026-08-28",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 14000.0,
+    "amount": 14000.0,
+    "date": "2026-08-29",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "MRI & labs",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 10000.0,
+    "amount": 10000.0,
+    "date": "2026-08-27",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 135500.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Medial meniscus tear, right knee",
+  "procedure": "Arthroscopic partial meniscectomy",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "appeal",
+  "jurisdiction": "IN",
+  "user_lang": "te",
+  "patient_age": 45,
+  "sum_insured": null,
+  "policy_start": "2019-03-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque",
+   "rejection_letter",
+   "implant_invoice_sticker"
+  ],
+  "narrative": "బీమా సంస్థ మా క్లెయిమ్‌లో చాలా మొత్తం తగ్గించింది. గది అద్దె ఎక్కువ అని చెప్పారు.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Short-settlement — PD applied to medicines & implants (appeal), Telugu output",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf",
+ "rejection": {
+  "insurer": "Demo General Insurance (synthetic)",
+  "letter_date": "2026-09-25",
+  "claim_no": "DGI/HL/26/57002",
+  "decision": "partial",
+  "amount_claimed": 135500.0,
+  "amount_paid": 104231.0,
+  "reasons": [
+   {
+    "text": "Proportionate deduction applied on all expenses as room category exceeded eligibility",
+    "clause_cited": "3.3",
+    "amount": 10615.0
+   }
+  ],
+  "source_file": null
+ }
+}

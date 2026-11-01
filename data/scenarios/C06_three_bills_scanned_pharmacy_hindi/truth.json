@@ -1,0 +1,331 @@
+{
+ "bill": {
+  "hospital": "Sanjeevani Hospital, Lucknow",
+  "bill_no": "SHL-2201",
+  "admission_date": "2026-09-18",
+  "discharge_date": "2026-09-22",
+  "room_category": "Twin sharing",
+  "room_days": 4.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 4.0,
+    "rate": 3000.0,
+    "amount": 12000.0,
+    "date": "2026-09-18",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "C1",
+    "description": "Physician visits",
+    "category": "consultation",
+    "qty": 1.0,
+    "rate": 6000.0,
+    "amount": 6000.0,
+    "date": "2026-09-18",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "N1",
+    "description": "Nursing charges",
+    "category": "nursing",
+    "qty": 1.0,
+    "rate": 4000.0,
+    "amount": 4000.0,
+    "date": "2026-09-18",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "IV fluids",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 2400.0,
+    "amount": 2400.0,
+    "date": "2026-09-19",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Platelet count (3 tests)",
+    "category": "investigation",
+    "qty": 3.0,
+    "rate": 300.0,
+    "amount": 1500.0,
+    "date": "2026-09-19",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "F1",
+    "description": "IV fluids",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 2400.0,
+    "amount": 2400.0,
+    "date": "2026-09-19",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "F2",
+    "description": "Paracetamol infusion",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 1800.0,
+    "amount": 1800.0,
+    "date": "2026-09-19",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "F3",
+    "description": "Antibiotics",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 5200.0,
+    "amount": 5200.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "D1",
+    "description": "Dengue NS1 + IgM",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 2200.0,
+    "amount": 2200.0,
+    "date": "2026-09-18",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "D2",
+    "description": "LFT, KFT",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 1600.0,
+    "amount": 1600.0,
+    "date": "2026-09-19",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 39100.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Dengue fever with warning signs",
+  "procedure": "IV fluids, platelet monitoring",
+  "icd10": null,
+  "admission_type": "emergency",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "hi",
+  "patient_age": 29,
+  "sum_insured": null,
+  "policy_start": "2022-06-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque"
+  ],
+  "narrative": "अस्पताल, दवा और जाँच के तीन अलग बिल हैं, कुछ चीज़ें दो बार लगी लग रही हैं।",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": 12.0
+ },
+ "policy_id": "demo_shield",
+ "title": "Three bills (one scanned) — cross-bill duplicate + arithmetic error, Hindi",
+ "tier": "challenge",
+ "blurb": "Hospital + scanned pharmacy + diagnostics bills reconciled together",
+ "render": "pdf",
+ "bill_parts": {
+  "bill.pdf": {
+   "hospital": "Sanjeevani Hospital, Lucknow",
+   "bill_no": "SHL-2201",
+   "admission_date": "2026-09-18",
+   "discharge_date": "2026-09-22",
+   "room_category": "Twin sharing",
+   "room_days": 4.0,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "R1",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 4.0,
+     "rate": 3000.0,
+     "amount": 12000.0,
+     "date": "2026-09-18",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "C1",
+     "description": "Physician visits",
+     "category": "consultation",
+     "qty": 1.0,
+     "rate": 6000.0,
+     "amount": 6000.0,
+     "date": "2026-09-18",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "N1",
+     "description": "Nursing charges",
+     "category": "nursing",
+     "qty": 1.0,
+     "rate": 4000.0,
+     "amount": 4000.0,
+     "date": "2026-09-18",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "P1",
+     "description": "IV fluids",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 2400.0,
+     "amount": 2400.0,
+     "date": "2026-09-19",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "V1",
+     "description": "Platelet count (3 tests)",
+     "category": "investigation",
+     "qty": 3.0,
+     "rate": 300.0,
+     "amount": 1500.0,
+     "date": "2026-09-19",
+     "page": 1,
+     "doc": "bill"
+    }
+   ],
+   "discount": 0,
+   "stated_total": 25900,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "bill_pharmacy.pdf": {
+   "hospital": "Sanjeevani Medicals (scanned)",
+   "bill_no": "SHL-2201",
+   "admission_date": "2026-09-18",
+   "discharge_date": "2026-09-22",
+   "room_category": "Twin sharing",
+   "room_days": 4.0,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "F1",
+     "description": "IV fluids",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 2400.0,
+     "amount": 2400.0,
+     "date": "2026-09-19",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "F2",
+     "description": "Paracetamol infusion",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 1800.0,
+     "amount": 1800.0,
+     "date": "2026-09-19",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "F3",
+     "description": "Antibiotics",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 5200.0,
+     "amount": 5200.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill"
+    }
+   ],
+   "discount": 0,
+   "stated_total": 9400,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill_pharmacy.pdf"
+  },
+  "bill_diagnostics.pdf": {
+   "hospital": "City Diagnostics",
+   "bill_no": "SHL-2201",
+   "admission_date": "2026-09-18",
+   "discharge_date": "2026-09-22",
+   "room_category": "Twin sharing",
+   "room_days": 4.0,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "D1",
+     "description": "Dengue NS1 + IgM",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 2200.0,
+     "amount": 2200.0,
+     "date": "2026-09-18",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "D2",
+     "description": "LFT, KFT",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 1600.0,
+     "amount": 1600.0,
+     "date": "2026-09-19",
+     "page": 1,
+     "doc": "bill"
+    }
+   ],
+   "discount": 0,
+   "stated_total": 3800,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill_diagnostics.pdf"
+  }
+ }
+}

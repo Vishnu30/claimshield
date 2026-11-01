@@ -1,0 +1,95 @@
+{
+ "bill": {
+  "hospital": "Manipal Hospital, Jaipur",
+  "bill_no": "MHJ-1190",
+  "admission_date": "2026-09-25",
+  "discharge_date": "2026-09-26",
+  "room_category": null,
+  "room_days": null,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "K1",
+    "description": "Laparoscopic hernia repair package",
+    "category": "package",
+    "qty": 1.0,
+    "rate": 65000.0,
+    "amount": 65000.0,
+    "date": "2026-09-25",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy (outside package)",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 3000.0,
+    "amount": 3000.0,
+    "date": "2026-09-26",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X1",
+    "description": "Registration charges",
+    "category": "misc",
+    "qty": 1.0,
+    "rate": 300.0,
+    "amount": 300.0,
+    "date": "2026-09-25",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 2000.0,
+  "stated_total": 66300.0,
+  "package": true,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Right inguinal hernia",
+  "procedure": "Laparoscopic TEP repair (package)",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 38,
+  "sum_insured": null,
+  "policy_start": "2021-04-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque",
+   "implant_invoice_sticker"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Package bill with extra items and a hospital discount",
+ "tier": "challenge",
+ "blurb": "Package rules, discount arithmetic and a hidden non-payable",
+ "render": "pdf"
+}

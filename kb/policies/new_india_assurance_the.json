@@ -1,0 +1,1139 @@
+{
+ "policy_id": "new_india_assurance_the",
+ "insurer": "New India Assurance",
+ "product": "THE",
+ "uin": "NIAHLIP25040V102425",
+ "jurisdiction": "IN",
+ "sum_insured": null,
+ "room_rent": {
+  "kind": "none",
+  "value": null,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": null,
+   "quote": null
+  }
+ },
+ "icu_rent": {
+  "kind": "pct_si",
+  "value": 1.0,
+  "max_value": 15.0,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": 11,
+   "quote": "Subject to this, we will reimburse the following Reasonable and Customary, and Medically Necessary Expenses admissible as per the terms and conditions of the Policy: Room rent, Boarding, DMO / RMO / CMO / RMP Charges, Nursing (Including Injection / Drugs and Intra venous fluid administration expenses), not exceeding 1% of the Sum Insured per day maximum Up to Rs. as mentioned in the below table: Plan Name Sum Insured Room Rent Limit Basic Plan Up to Rs. 15L 1% of the Sum Insured per day maximum up to Rs. 15,000 per day UPLIFT Plan Rs. 25L, 50L and 1Cr 1% of the Sum Insured per day maximum up t"
+  }
+ },
+ "proportionate_deduction": true,
+ "proportionate_cite": {
+  "clause_id": null,
+  "page": 12,
+  "quote": "Cost of Pharmacy and Consumables, Cost of Implants, Artificial Limbs and Medical Devices and Cost of Diagnostics Pre-Hospitalization Medical expenses for up to 30 days Post-Hospitalization Medical expenses for up to 60 days Note: • Dental Treatment (Inpatient): We will cover for medical expenses incurred towards dental treatment done under anaesthesia necessitated due to an accident/injury/illness requiring Hospitalization as Inpatient treatment. • PROPORTIONATE DEDUCTION: Proportionate Deduction is applicable on the Associate Medical Expenses, if the Insured Person opts for a higher Room than"
+ },
+ "copays": [
+  {
+   "pct": 20.0,
+   "condition": "33. IS THERE ANY CO-PAY APPLICABLE UNDER THE CLAIM? Co-Pay is applicable as per the following conditions: • Insured Pers",
+   "age_min": null,
+   "cite": {
+    "clause_id": "33",
+    "page": 9,
+    "quote": "33. IS THERE ANY CO-PAY APPLICABLE UNDER THE CLAIM? Co-Pay is applicable as per the following conditions: • Insured Person opting for Zone 1 premium can avail treatment anywhere in India and No Co-pay shall be applicable. • Insured Person residing in zone 2 will be allowed to opt for zone 1 and the premium will be calculated as per selected zone. • The condition of 20% Co-payment will be applicable, if the insured Person from zone 2, gets treated in zone 1. • Co-Pay shall not be applicable for immediate hospitalization arising out of Accident."
+   }
+  }
+ ],
+ "sublimits": [
+  {
+   "procedure": "cataract",
+   "aliases": [
+    "phacoemulsification",
+    "phaco",
+    "iol"
+   ],
+   "limit": null,
+   "pct_si": 20.0,
+   "basis": "per_eye",
+   "cite": {
+    "clause_id": null,
+    "page": 12,
+    "quote": "Proportionate Deduction shall also not be applied in respect of Hospitals which do not follow differential billing or for those expenses in which differential billing is not adopted based on the room category, as evidenced by the Hospital’s schedule of charges / tariff. • LIMIT ON PAYMENT FOR CATARACT: Our liability for payment of any claim relating to Cataract, for each eye, shall not exceed 20% of the Sum Insured subject to a maximum of Rs. As mentioned in the below table."
+   }
+  },
+  {
+   "procedure": "modern treatment",
+   "aliases": [
+    "robotic surgery",
+    "oral chemotherapy",
+    "immunotherapy"
+   ],
+   "limit": 15000.0,
+   "pct_si": 1.0,
+   "basis": "per_claim",
+   "cite": {
+    "clause_id": null,
+    "page": 14,
+    "quote": "This benefit is not available for Modern Treatments listed below. • NEW BORN BABY COVER A New Born Baby is covered for any Medically Necessary Hospitalisation resulting from acute Illness or bodily Injury under the mother’s available Sum Insured in Base Policy from the date of birth Plan Name Sum Insured(Rs) Ambulance Charges Limit Basic Plan Up to 15 lakh 1% of Sum insured subject to maximum of Rs.15000, whichever is less Uplift Plan 25L and 50 L Maximum of Rs.25000, whichever is less Uplift Plan 1Cr,2Cr, 3Cr and 5Cr Maximum of Rs.30,000, whichever is less"
+   }
+  }
+ ],
+ "waiting_periods": [
+  {
+   "kind": "initial",
+   "months": 1,
+   "conditions": [],
+   "cite": {
+    "clause_id": "31",
+    "page": 9,
+    "quote": "31. CAN I MAKE A CLAIM IMMEDIATELY AFTER TAKING A POLICY? Claims for Illnesses cannot be made during the first 30 days of a fresh Insurance policy."
+   }
+  },
+  {
+   "kind": "ped",
+   "months": 36,
+   "conditions": [],
+   "cite": {
+    "clause_id": null,
+    "page": 22,
+    "quote": "Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with us. b."
+   }
+  },
+  {
+   "kind": "specific",
+   "months": 3,
+   "conditions": [
+    "Diabetes Mellitus",
+    "Hypertension",
+    "Cardiac Conditions"
+   ],
+   "cite": {
+    "clause_id": "Excl02",
+    "page": 23,
+    "quote": "Expenses related to the treatment of the following listed conditions, surgeries / treatments shall be excluded until the expiry of Ninety Days / 24 / 36 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer."
+   }
+  }
+ ],
+ "exclusions": [
+  {
+   "code": "Excl05",
+   "text": ") Expenses related to any admission primarily for enforced bed rest and not for receiving treatment.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl05",
+    "page": 24,
+    "quote": "Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment • REST CURE, REHABILITATION AND RESPITE CARE (Code- Excl05) Expenses related to any admission primarily for enforced bed rest and not for receiving treatment."
+   }
+  },
+  {
+   "code": "Excl06",
+   "text": ") Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: a.",
+   "keywords": [
+    "obesity"
+   ],
+   "cite": {
+    "clause_id": "Excl06",
+    "page": 24,
+    "quote": "Any services for people who are terminally ill to address physical, social, emotional and spiritual needs. • OBESITY/ WEIGHT CONTROL (Code- Excl06) Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: a."
+   }
+  },
+  {
+   "code": "Excl07",
+   "text": "): Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex. • COSMETIC OR PLASTIC SURGERY (Code- Excl08): Expenses for cosmetic or plastic surgery or any treatment",
+   "keywords": [
+    "cosmetic",
+    "plastic surgery"
+   ],
+   "cite": {
+    "clause_id": "Excl07",
+    "page": 25,
+    "quote": "Severe Sleep Apnea iv. Uncontrolled Type2 Diabetes • CHANGE-OF-GENDER TREATMENTS (Code- Excl07): Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex. • COSMETIC OR PLASTIC SURGERY (Code- Excl08): Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured."
+   }
+  },
+  {
+   "code": "Excl09",
+   "text": "): Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scu",
+   "keywords": [
+    "hazardous"
+   ],
+   "cite": {
+    "clause_id": "Excl09",
+    "page": 25,
+    "quote": "For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner. • HAZARDOUS OR ADVENTURE SPORTS (Code- Excl09): Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving. • BREACH OF LAW (Code- Excl10): Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a br"
+   }
+  },
+  {
+   "code": "Excl12",
+   "text": ") • Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl12",
+    "page": 25,
+    "quote": "(Code- Excl12) • Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons."
+   }
+  },
+  {
+   "code": "Excl13",
+   "text": ") • Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day ca",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl13",
+    "page": 25,
+    "quote": "(Code- Excl13) • Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day care procedure."
+   }
+  },
+  {
+   "code": "Excl14",
+   "text": ") • REFRACTIVE ERROR (Code- Excl15): Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres. • UNPROVEN TREATMENTS (Code- Excl16): Expenses related to any unproven treatment, services an",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl14",
+    "page": 25,
+    "quote": "(Code- Excl14) • REFRACTIVE ERROR (Code- Excl15): Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres. • UNPROVEN TREATMENTS (Code- Excl16): Expenses related to any unproven treatment, services and supplies for or in connection with any treatment."
+   }
+  },
+  {
+   "code": "Excl17",
+   "text": ") Expenses related to sterility and infertility.",
+   "keywords": [
+    "infertility"
+   ],
+   "cite": {
+    "clause_id": "Excl17",
+    "page": 26,
+    "quote": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY • STERILITY AND INFERTILITY (Code- Excl17) Expenses related to sterility and infertility."
+   }
+  }
+ ],
+ "intimation_emergency_hours": 24,
+ "intimation_planned_days_before": null,
+ "claim_submission_days": 15,
+ "clauses": [
+  {
+   "id": "C1.1",
+   "title": "",
+   "page": 1,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY THE NEW INDIA ASSURANCE CO. LTD. REGISTERED & HEAD OFFICE: 87, MAHATMA GANDHI ROAD, MUMBAI - 400 001. NEW INDIA MEDICLAIM POLICY - PROSPECTUS We welcome You as Our Customer. This document explains how the NEW INDIA MEDICLAIM could provide value to You. In the document the word ‘You’, ‘‘Your’ means you, the Insured under the Policy. ‘We’, ‘Our’, ‘Us’ means New India Assurance Co. Ltd. NEW INDIA MEDICLAIM POLICY is a Policy designed to cover Hospitalisation expenses and/or services incurred in India."
+  },
+  {
+   "id": "1",
+   "title": "",
+   "page": 1,
+   "text": "1. WHO CAN TAKE THIS POLICY? All the persons proposed for this Insurance should be between the age of 18 years and 65 years. Children between the age of 3 months and 18 years can be covered under the policy. Children between 18 years to 25 years can also be covered provided they are financially dependent on the parents. On attaining the age of 18 years or ceasing to be financially dependent on the parents, they can, on renewal take a separate Policy. In such an event the benefits on Continuous Coverage can be ported to the new Policy. The upper age limit will not apply to mentally challenged children and an unmarried dependent daughter(s). The persons beyond 65 years can continue their insurance provided they are Insured under the Policy with us without any break. Midterm inclusion is allowed for newly married spouse and child (after completing 90- days) by charging pro-rata Premium for the remaining period of the Policy. A New Born Baby, born during the Policy period to an Insured mother who is covered for a continuous period of 24 months, will be covered from date of birth till the expiry of the Policy, without any additional Premium. No coverage for the New Born Baby would be available during subsequent Renewals unless the child is declared for Insurance and covered as an Insured Person. Note: This coverage is available for a New Born Baby born during the Policy Period to a female Insured Person, who has twenty-four months of Continuous Coverage with Us."
+  },
+  {
+   "id": "2",
+   "title": "",
+   "page": 1,
+   "text": "2. WHAT ARE THE PLANS AND SUM INSUREDS AVAILABLE IN THIS POLICY? There are 2 plans available in this policy: Basic Plan: Sum Insured of (Rs.) 1 lakh, 2 Lakh, 3 Lakh, 5 Lakh, 8 Lakh, 10 Lakh, 12 Lakh, 15 Lakh Uplift Plan: Sum Insured (Rs.) 25 Lakh, 50 Lakh, 1 Crore, 2 Crore, 3 Crore, 5 Crore"
+  },
+  {
+   "id": "3",
+   "title": "",
+   "page": 1,
+   "text": "3. CAN I COVER MY FAMILY MEMBERS IN ONE POLICY? Yes. You can cover Your family members in one policy, with separate Sum Insured for each Insured Person. The members of the family who could be covered under the Policy are: a) Proposer b) Proposer’s Spouse"
+  },
+  {
+   "id": "C2.5",
+   "title": "",
+   "page": 2,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY c) Proposer’s Children d) Proposer’s Parents e) Proposer’s Brother/Sister f) Proposer’s Ward g) Employers can cover their Employees Note: i. Brother/Sister can only be covered when they are financially dependent on the proposer. For the relations Employer-Employee/Brother/Sister/Ward 80D certificate shall not be applicable."
+  },
+  {
+   "id": "4",
+   "title": "",
+   "page": 2,
+   "text": "4. WHAT DOES THE POLICY COVER? This Policy is designed to give You, the Insured, protection against unforeseen Hospitalisation expenses."
+  },
+  {
+   "id": "5",
+   "title": "",
+   "page": 2,
+   "text": "5. WHAT IS A PRE-EXISTING DISEASE? The term Pre-existing condition/disease is defined in the Policy. It means any condition, ailment, Injury or Illness a That is/are diagnosed by a physician within 36 months prior to the effective date of the Policy issued by Us and its reinstatement or b For which medical advice or treatment was recommended by, or received from, a physician within 36 months prior to the effective date of the Policy or its reinstatement."
+  },
+  {
+   "id": "6",
+   "title": "",
+   "page": 2,
+   "text": "6. IS PRE-ACCEPTANCE MEDICAL CHECK-UP REQUIRED? i. Pre-acceptance test is required for all the members entering after the age of 50 for the first time. ii. However, the condition (i) shall be relaxed to 60 years’ subject to the following conditions: a. A minimum of 3 persons should be covered in the policy. b. At least one of the members age should be less than 35 Years. Irrespective of the (i) & (ii) a person needs to undergo this pre-acceptance medical check-up if he has an adverse medical history. The cost of this check-up will be borne by the proposer. But if the proposal is accepted, then 50% of the cost of this check-up will be reimbursed to the proposer. Note: Adverse Medical History means a person: i. Who has undergone more than one Hospitalization in previous two years, ii. Who is suffering from Critical Illness, Recurring Illness or Chronic Illness. iii. Is Suffering from Hypertension / Diabetes. iv. Is not in good health and free from Physical and mental diseases or infirmity or medical complaints."
+  },
+  {
+   "id": "7",
+   "title": "",
+   "page": 2,
+   "text": "7. IS HOSPITALISATION ALWAYS NECESSARY TO GET A CLAIM? Yes. Unless the Insured Person is Hospitalised for a condition warranting Hospitalisation, no claim is payable under the Policy. The Policy does not cover outpatient treatments."
+  },
+  {
+   "id": "8",
+   "title": "",
+   "page": 2,
+   "text": "8. HOW LONG DOES THE INSURED PERSON NEED TO BE HOSPITALISED? The Policy pays only where the Hospitalisation is for more than twenty-four hours. But for certain"
+  },
+  {
+   "id": "C3.11",
+   "title": "",
+   "page": 3,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY treatments specified in the Policy, period of stay at the Hospital could be less than twenty-four hours. Please refer to Annexure I of the Policy for details."
+  },
+  {
+   "id": "9",
+   "title": "",
+   "page": 3,
+   "text": "9. WHAT DO I NEED TO DO AFTER I GET HOSPITALISED? Immediately on Hospitalisation or within twenty-four hours of such Hospitalisation, please intimate the TPA of this fact, with details of Your Policy Number, Name of the Hospital and treatment undertaken. This is an important condition of the Policy that you need to comply with."
+  },
+  {
+   "id": "10",
+   "title": "IS PAYMENT AVAILABLE FOR EXPENSES INCURRED BEFORE HOSPITALISATION?",
+   "page": 3,
+   "text": "10. IS PAYMENT AVAILABLE FOR EXPENSES INCURRED BEFORE HOSPITALISATION? Yes. Relevant medical expenses incurred before hospitalization for a period of 30 days prior to the date of Hospitalisation are payable. Relevant medical expenses mean expenses related to the treatment of the disease for which the insured is Hospitalised."
+  },
+  {
+   "id": "11",
+   "title": "IS PAYMENT AVAILABLE FOR EXPENSES INCURRED AFTER HOSPITALISATION?",
+   "page": 3,
+   "text": "11. IS PAYMENT AVAILABLE FOR EXPENSES INCURRED AFTER HOSPITALISATION? Yes. Relevant medical expenses incurred after Discharge from the Hospital for a period of 60 days after the date of discharge are payable. Relevant medical expenses mean expenses related to the treatment of the disease for which the insured is Hospitalised."
+  },
+  {
+   "id": "12",
+   "title": "CAN I GET TREATED ANYWHERE?",
+   "page": 3,
+   "text": "12. CAN I GET TREATED ANYWHERE? The Policy covers treatment and/or services rendered only in India."
+  },
+  {
+   "id": "13",
+   "title": "WHETHER THE PREMIUM IS UNIFORM ACROSS INDIA?",
+   "page": 3,
+   "text": "13. WHETHER THE PREMIUM IS UNIFORM ACROSS INDIA? Premium will be charged based on the classification of these namely. Zone 1 Maharashtra and Gujarat Zone 2 Rest Of India"
+  },
+  {
+   "id": "14",
+   "title": "IS THERE A LIMIT TO WHAT THE COMPANY WILL PAY FOR HOSPITALISATION?",
+   "page": 3,
+   "text": "14. IS THERE A LIMIT TO WHAT THE COMPANY WILL PAY FOR HOSPITALISATION? Yes. Our liability for all claims admitted during the Period of Insurance will be only up to Sum Insured for which the Insured Person is covered as mentioned in the Schedule. In respect of those Insured Persons with Cumulative Bonus/Buffer, our liability for claims admitted under this Policy shall not exceed the aggregate of the Sum Insured and the Cumulative Bonus/Buffer. In cases where the Insured Person was Hospitalised more than once, the total of all amounts paid a) for all cases of Hospitalisation, b) expenses paid for medical expenses prior to Hospitalisation, c) expenses paid for medical expenses after discharge from hospital, and d) any other payment made under the Policy shall not exceed the Sum Insured and Cumulative Bonus / Buffer as mentioned in the Schedule."
+  },
+  {
+   "id": "15",
+   "title": "WHAT SUM INSURED SHOULD I CHOOSE?",
+   "page": 3,
+   "text": "15. WHAT SUM INSURED SHOULD I CHOOSE? You are free to choose any Sum Insured ranging from Rs. 1 Lakh to 5 Crores. The Premium You pay depends upon Your Age and the Sum Insured chosen. You are free to choose any Sum Insured available in the range specified above. But it is in your own interest to choose the Sum Insured which could satisfy your present as well as future needs. Sum Insured of Rs. 4 lakhs, 6 lakhs and 7 lakhs are not available for a fresh Policy and is only available in case of renewal with same Sum insured."
+  },
+  {
+   "id": "16",
+   "title": "WHAT IS THE POLICY TERM/PERIOD OF INSURANCE OR THE POLICY PERIOD?",
+   "page": 3,
+   "text": "16. WHAT IS THE POLICY TERM/PERIOD OF INSURANCE OR THE POLICY PERIOD? The Policy Period or the Period of Insurance is one year as stated in the Policy Schedule. However, the Policy Term can be 1 Year or 2 Years or 3 Years."
+  },
+  {
+   "id": "C4.20",
+   "title": "",
+   "page": 4,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY"
+  },
+  {
+   "id": "17",
+   "title": "WHAT IS THE BASIS OF CHARGING THE PREMIUM?",
+   "page": 4,
+   "text": "17. WHAT IS THE BASIS OF CHARGING THE PREMIUM? The premium will be charged as per the completed age of the insured at the time of taking the policy. Please refer Annexure A for premium chart."
+  },
+  {
+   "id": "18",
+   "title": "HOW IS THE PREMIUM CHARGED AGE BANDWISE OR AGE WISE?",
+   "page": 4,
+   "text": "18. HOW IS THE PREMIUM CHARGED AGE BANDWISE OR AGE WISE? The premium will be charged as per the age of the insured."
+  },
+  {
+   "id": "19",
+   "title": "WHAT ARE THE SPECIAL CONDITIONS APPLICABLE FOR LONG TERM POLICIES AND IS THERE ANY",
+   "page": 4,
+   "text": "19. WHAT ARE THE SPECIAL CONDITIONS APPLICABLE FOR LONG TERM POLICIES AND IS THERE ANY DISCOUNT FOR TAKING THE POLICY UP TO 3 YEARS? • Policy Term, Discounts and Sum Insured applicable are illustrated with example as follows: Policy Term Policy Period Sum Insured Discount in % One year"
+  },
+  {
+   "id": "1.1.2025",
+   "title": "to 31.12.2025",
+   "page": 4,
+   "text": "1.1.2025 to 31.12.2025 10,00,000 Three years"
+  },
+  {
+   "id": "1.1.2026",
+   "title": "to 31.12.2026",
+   "page": 4,
+   "text": "1.1.2026 to 31.12.2026 10,00,000 • No modifications during midterm of policy term for the following is allowed: i. Increase of Sum Insured ii. Decrease of Sum Insured iii. Plan Change iv. Opting in or out of optional covers v. Addition of members except newly wedded spouse or new born baby (after completion of 3 months). • In cases where the policy term exceeds one year, Sum Insured, including any sub-limits are applicable or reckoned separately for each year. • There is no provision for carrying over these benefits from one policy year to another. It's essential to understand that benefits and coverages specific to the second or third year cannot be utilized during the initial year meaning the benefits are not cumulative. In cases where the policy term exceeds one year, Sum Insured, Sub-limits (If applicable), Cumulative Bonus (If applicable), Reinstatement of Sum Insured (If applicable) or Auto TOP-UP of Sum Insured (If applicable) are applicable or reckoned separately for each year. • There is no provision for carrying over these benefits from one policy year to another. It's essential to understand that benefits and coverages specific to the second or third year cannot be utilized during the first year itself meaning the benefits are not cumulative. • The terms, conditions, and exclusions stipulated in the Policy or any associated Endorsements are integral to the contract and must be adhered to. These provisions apply separately to each policy year."
+  },
+  {
+   "id": "20",
+   "title": "IS THERE ANY BENEFIT FOR TAKING THE POLICY FOR UP TO 3 YEARS?",
+   "page": 4,
+   "text": "20. IS THERE ANY BENEFIT FOR TAKING THE POLICY FOR UP TO 3 YEARS? • Renewal Burden: Long-term health insurance policy reduces the burden of renewing the"
+  },
+  {
+   "id": "C5.27",
+   "title": "",
+   "page": 5,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY policy every year. You can purchase a policy with a duration of multiple years (e.g., 2 to 3 years), providing continuous coverage without annual renewals. • Premium Stability: Health insurance premiums can be revised periodically, often leading to increased costs. Long-term health insurance can help you avoid these premium hikes, ensuring that your hard-earned money is safeguarded. • Cost-Effective Premiums: We offer discounts on the policy premium for long-term health insurance plans. Buying a policy with a duration of two to three years is more cost-effective than renewing insurance every year for the same duration. • Peace of Mind: Ultimately, a long-term health insurance policy provides peace of mind, knowing that you have a reliable and stable insurance plan in place."
+  },
+  {
+   "id": "21",
+   "title": "IN CASE OF AYURVEDIC TREATMENT, WILL THE ENTIRE AMOUNT BE PAID?",
+   "page": 5,
+   "text": "21. IN CASE OF AYURVEDIC TREATMENT, WILL THE ENTIRE AMOUNT BE PAID? Yes. Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy system of medicines is covered up to 100% of the Sum Insured during each policy year as specified in the policy schedule."
+  },
+  {
+   "id": "22",
+   "title": "CAN THE POLICY BE RENEWED WHEN THE PRESENT POLICY EXPIRES?",
+   "page": 5,
+   "text": "22. CAN THE POLICY BE RENEWED WHEN THE PRESENT POLICY EXPIRES? Yes. You can, and to get all Continuity benefits under the Policy, you should renew the Policy before the expiry of the present policy. For instance, if Your Policy commences from 2nd October, 2022 date of expiry is usually on 1st October, 2023. You should renew Your Policy by paying the Renewal Premium on or before 1st October 2023."
+  },
+  {
+   "id": "23",
+   "title": "IS THERE ANY GRACE PERIOD FOR RENEWAL OF THE POLICY?",
+   "page": 5,
+   "text": "23. IS THERE ANY GRACE PERIOD FOR RENEWAL OF THE POLICY? Yes. If Your Policy is renewed within 30 days of the expiry of the previous Policy, then the Continuity Benefits would not be affected. But even if You renew Your Policy within 30 days of expiry of previous Policy, any disease contracted or injuries sustained or Hospitalization commencing during the break in insurance is not covered. Therefore, it is in Your own interest to see that You renew the Policy before it expires."
+  },
+  {
+   "id": "24",
+   "title": "WHAT IS CONTINUITY BENEFIT?",
+   "page": 5,
+   "text": "24. WHAT IS CONTINUITY BENEFIT? There are certain treatments which are payable only after the Insured Person is continuously covered for a specified period. For example, Cataract is covered only after twenty-four months of continuous insurance. If an Insured took a Fresh Policy in October2020, does not renew it on time and takes the Policy only in December 2021, and after that renewed it on time in December 2022. In this case any claim for Cataract would not become payable, as the Insured person was not continuously covered for twenty-four months. If, the Insured had renewed the Policy in time in October 2021 and then in October 2022, then the Insured would have been continuously covered for twenty-four months and therefore the claim for Cataract in the Policy beginning from October"
+  },
+  {
+   "id": "2022",
+   "title": "would be payable. For other benefits under the Policy such as cost of health check-up,",
+   "page": 5,
+   "text": "2022 would be payable. For other benefits under the Policy such as cost of health check-up, continuous Insurance is necessary. Therefore, you should always ensure that you pay Your Renewal Premium before Your Policy expires."
+  },
+  {
+   "id": "25",
+   "title": "WHAT IS CUMULATIVE BONUS?",
+   "page": 5,
+   "text": "25. WHAT IS CUMULATIVE BONUS? Cumulative Bonus means any increase or addition in the Sum Insured granted by Us without an associated increase in premium. The Sum Insured under Policy shall be increased by 25% at each renewal in respect of each claim free year of insurance, subject to maximum of 50% for Sum Insured up to Rs.15 Lakhs (Basic Plan) and maximum of 100% for Sum Insured Rs.25 Lakhs to Rs.5 Crores.(Uplift Plan). If a claim is made in any particular year; the cumulative bonus accrued shall be reduced at the same rate at which it"
+  },
+  {
+   "id": "C6.34",
+   "title": "",
+   "page": 6,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY is accrued. Cumulative bonus will be lost if policy is not renewed before or within 30 days from the date of expiry. In case sum insured under the policy is reduced at the time of renewal, the applicable Cumulative Bonus percentage shall be applied on the reduced Sum Insured. In case the insured is having more than one policy, the Cumulative Bonus shall be reduced from the policy/policies in which claim is made irrespective of number of policies. Note: Unless otherwise specified, Cumulative Bonus shall not be treated as part of the Sum Insured for the purposes of reckoning any limit specified in the Policy."
+  },
+  {
+   "id": "26",
+   "title": "WHAT IS CUMULATIVE BONUS BUFFER?",
+   "page": 6,
+   "text": "26. WHAT IS CUMULATIVE BONUS BUFFER? The Cumulative Bonus Buffer accrued to your Mediclaim 2012 Policy, on migration to New India Mediclaim is protected. But for claim free renewal after migration to New India Mediclaim No accrual would be made to the Cumulative Bonus Buffer. The Cumulative Bonus Buffer will be available until it is completely used and is applicable for only 1 L Sum Insured."
+  },
+  {
+   "id": "27",
+   "title": "WHAT WILL HAPPEN TO MY CUMULATIVE BONUS BUFFER?",
+   "page": 6,
+   "text": "27. WHAT WILL HAPPEN TO MY CUMULATIVE BONUS BUFFER? The Cumulative Bonus Buffer under the policy, if any, shall be converted to Cumulative Bonus for"
+  },
+  {
+   "id": "2#2",
+   "title": "Lakhs & above Sum Insured.",
+   "page": 6,
+   "text": "2 Lakhs & above Sum Insured. The following scenarios may arise on a claim free renewal after converting the Cumulative Bonus Buffer to Cumulative Bonus. For Sum Insured up to 15 Lakhs Earlier Cumulative Bonus Buffer is Cumulative Bonus shall be capped at <=25% of the Sum Insured 25% of the Sum Insured >25% of the Sum Insured 50% of the Sum Insured For Sum Insured from 25 Lakhs to 5 Crores Earlier Cumulative Bonus Buffer is Cumulative Bonus shall be capped at <=25% of the Sum Insured 25% of the Sum Insured >25% of the Sum Insured 50% of the Sum Insured >50% of the Sum Insured 75% of the Sum Insured >75% of the Sum Insured 100% of the Sum Insured"
+  },
+  {
+   "id": "28",
+   "title": "CAN THE SUM INSURED BE INCREASED AT THE TIME OF RENEWAL?",
+   "page": 6,
+   "text": "28. CAN THE SUM INSURED BE INCREASED AT THE TIME OF RENEWAL? We may agree for a request for increase in Sum Insured at the time of renewal. But We are not obliged to agree to this request, if the Insured is not in good health. Moreover, for persons aged over 50, a request could entail subjecting the Person for Medical Examination and other medical tests. (In case the risk is accepted, 50% of the reasonable cost of Medical Examination would be reimbursed). Enhancement of Sum Insured is subject to the limits mentioned below:"
+  },
+  {
+   "id": "C7.39",
+   "title": "",
+   "page": 7,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY Age Criteria Basic Plan Uplift Plan Age <= 50 years Up to Sum Insured of 15 lakhs without Medical Examination. Sum Insured up to Rs. 5 crores without Medical Examination. subject to the condition that:"
+  },
+  {
+   "id": "1#2",
+   "title": "the insured person is not suffering from",
+   "page": 7,
+   "text": "1. the insured person is not suffering from pre-existing critical/ recurring/ chronic illness."
+  },
+  {
+   "id": "2#3",
+   "title": "There is no claim in the policy in the",
+   "page": 7,
+   "text": "2. There is no claim in the policy in the preceeding 2 years. Age 51-60 Years Sum Insured up to Rs. 15 lakhs, without Medical Examination. subject to the condition that:"
+  },
+  {
+   "id": "1#3",
+   "title": "the insured person is not",
+   "page": 7,
+   "text": "1. the insured person is not suffering from pre-existing critical/ recurring/ chronic illness."
+  },
+  {
+   "id": "2#4",
+   "title": "There is no claim in the policy",
+   "page": 7,
+   "text": "2. There is no claim in the policy in the preceding 2 years. A. Sum Insured up to Rs. 25 lakhs, without Medical Examination. subject to the condition that:"
+  },
+  {
+   "id": "1#4",
+   "title": "the insured person is not suffering from",
+   "page": 7,
+   "text": "1. the insured person is not suffering from pre-existing critical/ recurring/ chronic illness."
+  },
+  {
+   "id": "2#5",
+   "title": "There is no claim in the policy in the",
+   "page": 7,
+   "text": "2. There is no claim in the policy in the preceeding 2 years. B. Sum Insured up to Rs. 5 crores, with Medical Examination, subject to the condition that:"
+  },
+  {
+   "id": "1#5",
+   "title": "the insured person is not suffering from",
+   "page": 7,
+   "text": "1. the insured person is not suffering from pre-existing critical/ recurring/ chronic illness."
+  },
+  {
+   "id": "2#6",
+   "title": "There is no claim in the policy in the",
+   "page": 7,
+   "text": "2. There is no claim in the policy in the preceding 2 years."
+  },
+  {
+   "id": "3#2",
+   "title": "Applicable for Existing Sum Insured Rs. 5",
+   "page": 7,
+   "text": "3. Applicable for Existing Sum Insured Rs. 5 lakhs or above only. Age 61 – 65 Years With Medical Examination subject to the condition that:"
+  },
+  {
+   "id": "1#6",
+   "title": "the insured person is not",
+   "page": 7,
+   "text": "1. the insured person is not suffering from pre-existing critical/ recurring/ chronic illness."
+  },
+  {
+   "id": "2#7",
+   "title": "There is no claim in the policy",
+   "page": 7,
+   "text": "2. There is no claim in the policy in the preceding 2 years. Upto Sum Insured Rs.1 Crore - with Medical Examination"
+  },
+  {
+   "id": "1#7",
+   "title": "the insured person is not suffering from",
+   "page": 7,
+   "text": "1. the insured person is not suffering from pre-existing critical/ recurring/ chronic illness."
+  },
+  {
+   "id": "2#8",
+   "title": "There is no claim in the policy in the",
+   "page": 7,
+   "text": "2. There is no claim in the policy in the preceding 2 years."
+  },
+  {
+   "id": "3#3",
+   "title": "Applicable for Existing Sum Insured Rs. 5",
+   "page": 7,
+   "text": "3. Applicable for Existing Sum Insured Rs. 5 lakhs or above only. Age above 65 years *One time option given for renewals due in one year from the date of launch of Uplift Plan. (30th July 2026 to 29th July"
+  },
+  {
+   "id": "2027",
+   "title": "",
+   "page": 7,
+   "text": "2027) *One time option given for renewals due in one year from the date of launch of Uplift Plan. (30th July 2026 to 29th July 2027) Upto Sum Insured Rs.25 lakhs - with Medical Examination"
+  },
+  {
+   "id": "C8.55",
+   "title": "",
+   "page": 8,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY Upto Sum Insured Rs. 15 lakhs With Medical Examination subject to the condition that:"
+  },
+  {
+   "id": "1#8",
+   "title": "the insured person is not",
+   "page": 8,
+   "text": "1. the insured person is not suffering from pre-existing critical/ recurring/ chronic illness."
+  },
+  {
+   "id": "2#9",
+   "title": "There is no claim in the",
+   "page": 8,
+   "text": "2. There is no claim in the policy in the preceding 2 years."
+  },
+  {
+   "id": "3#4",
+   "title": "Applicable for Existing Sum",
+   "page": 8,
+   "text": "3. Applicable for Existing Sum Insured Rs. 5 lakhs or above only. * all the lives should continue in the New policy with an exception for 25+ non-dependent/ married children"
+  },
+  {
+   "id": "1#9",
+   "title": "the insured person is not suffering from",
+   "page": 8,
+   "text": "1. the insured person is not suffering from pre-existing critical/ recurring/ chronic illness."
+  },
+  {
+   "id": "2#10",
+   "title": "There is no claim in the policy in the",
+   "page": 8,
+   "text": "2. There is no claim in the policy in the preceding 2 years."
+  },
+  {
+   "id": "3#5",
+   "title": "Applicable for Existing Sum Insured Rs.",
+   "page": 8,
+   "text": "3. Applicable for Existing Sum Insured Rs."
+  },
+  {
+   "id": "5#2",
+   "title": "lakhs or above only.",
+   "page": 8,
+   "text": "5 lakhs or above only. * all the lives should continue in the New policy with an exception for 25+ non- dependent/ married children Enhancement of Sum Insured shall not be considered for:"
+  },
+  {
+   "id": "1#10",
+   "title": "Any Insured Person who had undergone more than one Hospitalisation in the preceding",
+   "page": 8,
+   "text": "1) Any Insured Person who had undergone more than one Hospitalisation in the preceding two years."
+  },
+  {
+   "id": "2#11",
+   "title": "Any Insured Person suffering from one or more of the following Illnesses / Conditions:",
+   "page": 8,
+   "text": "2) Any Insured Person suffering from one or more of the following Illnesses / Conditions: a) Any chronic Illness b) Any recurring Illness c) Any Critical Illness In respect of any enhancement of Sum Insured, exclusions 4.1, 4.2 and 4.3 would apply to the additional Sum Insured from such date."
+  },
+  {
+   "id": "29",
+   "title": "IS THERE AN AGE LIMIT UPTO WHICH THE POLICY WOULD BE RENEWED?",
+   "page": 8,
+   "text": "29. IS THERE AN AGE LIMIT UPTO WHICH THE POLICY WOULD BE RENEWED? No. Your Policy can be renewed, as long as You pay the Renewal Premium before the date of expiry of the Policy. There is an age limit for taking a fresh Policy, but there is no age limit for renewal. However, if You do not renew Your Policy before the date of expiry or within thirty days of the date of expiry, the Policy may not be renewed, and only a fresh Policy could be issued, subject to Our underwriting rules. In such cases, it is possible that a fresh Policy could not be issued by Us. It is therefore in Your interest to ensure that Your Policy is renewed before expiry."
+  },
+  {
+   "id": "30",
+   "title": "CAN THE INSURANCE COMPANY REFUSE TO RENEW THE POLICY?",
+   "page": 8,
+   "text": "30. CAN THE INSURANCE COMPANY REFUSE TO RENEW THE POLICY? We may refuse to renew the Policy only on rare occasions such as fraud, misrepresentation or suppression or non-cooperation being committed by You or any one acting on Your behalf in obtaining insurance or subsequently in relation thereto. If We discontinue selling this Policy, it might not be possible to renew this Policy on the same terms and conditions. In such a case You shall however have the option for renewal under any similar Policy being issued by the Company, provided the benefits payable shall be subject to the terms contained in such other Policy. In case of revision or modification or withdrawal of the Policy a notice will be provided to You 90"
+  },
+  {
+   "id": "C9.67",
+   "title": "",
+   "page": 9,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY days before such revision or modification or withdrawal. Renewal can also be refused if the Policy is not renewed before expiry of the Policy or within the Grace Period."
+  },
+  {
+   "id": "31",
+   "title": "CAN I MAKE A CLAIM IMMEDIATELY AFTER TAKING A POLICY?",
+   "page": 9,
+   "text": "31. CAN I MAKE A CLAIM IMMEDIATELY AFTER TAKING A POLICY? Claims for Illnesses cannot be made during the first 30 days of a fresh Insurance policy. However, claims for Hospitalization due to accidents occurring during the first thirty days are payable. There are certain treatments where the waiting period is 90 days, two, three or four years. Please see Conditions 4.1, 4.2 and 4.3 of the Policy."
+  },
+  {
+   "id": "32",
+   "title": "WHAT IS THIRD PARTY ADMINISTRATOR (TPA)?",
+   "page": 9,
+   "text": "32. WHAT IS THIRD PARTY ADMINISTRATOR (TPA)? Third Party Administrator (TPA) is a service provider to facilitate service to You for providing Cashless facility for all hospitalizations that come under the scope of Your policy. The TPA also settles reimbursement claims within the scope of the Policy."
+  },
+  {
+   "id": "33",
+   "title": "IS THERE ANY CO-PAY APPLICABLE UNDER THE CLAIM?",
+   "page": 9,
+   "text": "33. IS THERE ANY CO-PAY APPLICABLE UNDER THE CLAIM? Co-Pay is applicable as per the following conditions: • Insured Person opting for Zone 1 premium can avail treatment anywhere in India and No Co-pay shall be applicable. • Insured Person residing in zone 2 will be allowed to opt for zone 1 and the premium will be calculated as per selected zone. • The condition of 20% Co-payment will be applicable, if the insured Person from zone 2, gets treated in zone 1. • Co-Pay shall not be applicable for immediate hospitalization arising out of Accident. Co- Pay shall also not be applicable for Illness or Treatments having sub-limit. Note: The insured can opt the zone at the time of proposal but can change it only at the time of renewal."
+  },
+  {
+   "id": "34",
+   "title": "WHAT IS CASHLESS HOSPITALIZATION?",
+   "page": 9,
+   "text": "34. WHAT IS CASHLESS HOSPITALIZATION? Cashless hospitalization is service provided by the TPA on Our behalf whereby you are not required to settle the hospitalization expenses at the time of discharge from hospital. The settlement is done directly by the TPA on Our behalf. However, those expenses which are not admissible under the Policy would not be paid, and You would have to pay such inadmissible expenses to the Hospital. Cashless facility is available only in Networked Hospitals. Prior approval is required from the TPA before the patient is admitted into the Network Hospital. You may visit our website at http://newindia.co.in/listofhospitals.aspx. The list of Network Hospitals can also be obtained from the TPA or from their website. You will have full freedom to choose the hospitals from the Network Hospitals and avail Cashless facility on production of proof of Insurance and Your identity, subject to the claim being admissible. The TPA might not agree to provide Cashless facility at a hospital which is not a Network Hospital. In such cases You may avail treatment at any Hospital of Your choice and seek reimbursement of the claim subject to the terms and conditions of the Policy. In cases where the admissibility of the claim could not be determined with the available documents, even if the treatment is at a Network Hospital, the TPA may refuse to provide Cashless facility. Such refusal may not necessarily mean denial of the claim. You may seek reimbursement of the expenses incurred by producing all relevant documents and the TPA may pay the claim, if it is admissible under the terms and conditions of the Policy."
+  },
+  {
+   "id": "C10.72",
+   "title": "",
+   "page": 10,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY"
+  },
+  {
+   "id": "35",
+   "title": "WHAT IS A PPN? CAN I GO FOR REIMBURSEMENT IN A PPN?",
+   "page": 10,
+   "text": "35. WHAT IS A PPN? CAN I GO FOR REIMBURSEMENT IN A PPN? Preferred provider network (PPN) means network providers in specific cities which have agreed to a cashless packaged pricing for specified planned procedures for the policyholders of the Company. The list of planned procedures is available with the Company/TPA and subject to amendment from time to time. Yes, your claim will be admissible but Reimbursement of expenses incurred in PPN for the procedures (as listed under PPN package) shall be subject to the rates applicable to PPN package pricing."
+  },
+  {
+   "id": "36",
+   "title": "CAN I CHANGE HOSPITALS DURING THE COURSE OF MY TREATMENT?",
+   "page": 10,
+   "text": "36. CAN I CHANGE HOSPITALS DURING THE COURSE OF MY TREATMENT? Yes, it is possible to shift to another hospital for reasons of requirement of better medical procedure. However, this will be evaluated by the TPA on the merits of the case and as per policy terms and conditions."
+  },
+  {
+   "id": "37",
+   "title": "HOW TO GET REIMBURSEMENTS IN CASE OF TREATMENT IN NON-NETWORK HOSPITALS",
+   "page": 10,
+   "text": "37. HOW TO GET REIMBURSEMENTS IN CASE OF TREATMENT IN NON-NETWORK HOSPITALS OR DENIAL OF CASHLESS FACILITY? In case of treatment in a non-Network Hospital, TPA will reimburse You the amount of bills subject to the conditions of the Policy. You must ensure that the Hospital where treatment is taken fulfils the conditions of definition of Hospital in the Policy. Within twenty-four hours of Hospitalisation, the TPA should be intimated. The following documents in original should be submitted to the TPA within Fifteen days from the date of Discharge from the Hospital: i. Claim Form duly filled and signed by the claimant ii. All documents pertaining to the illness starting from the date it was first detected i.e. Doctor's consultation reports/history iii. Numbered Bill/Receipt and Discharge certificate / card from the Hospital. iv. Cash Memos from the Hospitals (s) / Chemists (s), supported by proper prescriptions. v. Receipt and Pathological test reports from Pathologist supported by the note from the attending Medical Practitioner / Surgeon recommending such Pathological tests/ pathological. vi. Surgeon's certificate stating nature of operation performed and Surgeons’ bill and receipt. vii. Attending Doctor's/ Consultant's/ Specialist's / Anesthetist’s bill and receipt, and certificate regarding diagnosis. viii. Details of previous policies if the details are not already with TPA or any other information needed by the TPA for considering the claim. ix. In case of post-Hospitalisation treatment, submit all claim documents within 15 days after completion of such treatment. x. Provide TPA with authorization to obtain medical and other records from any Hospital, Laboratory or other agency."
+  },
+  {
+   "id": "38",
+   "title": "HOW TO GET REIMBURSEMENT FOR PRE AND POST HOSPITALIZATION EXPENSES?",
+   "page": 10,
+   "text": "38. HOW TO GET REIMBURSEMENT FOR PRE AND POST HOSPITALIZATION EXPENSES? The Policy allows reimbursement of medical expenses incurred before and after admissible Hospitalisation up to a certain number of days. For reimbursement, send all bills in original with supporting documents along with a copy of the discharge summary and a copy of the authorization letter to your TPA. The bills must be sent to the TPA within 15 days from the date of completion of"
+  },
+  {
+   "id": "C11.77",
+   "title": "",
+   "page": 11,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY treatment. You must also provide the TPA with additional information and assistance as may be required by the company/TPA in dealing with the claim."
+  },
+  {
+   "id": "39",
+   "title": "WILL THE ENTIRE AMOUNT OF THE CLAIMED EXPENSES BE PAID?",
+   "page": 11,
+   "text": "39. WILL THE ENTIRE AMOUNT OF THE CLAIMED EXPENSES BE PAID? The entire amount of the claim is payable, if it is within the Sum Insured and is related with the Hospitalization as per Policy conditions and is supported by proper documents, except the expenses which are excluded."
+  },
+  {
+   "id": "40",
+   "title": "HOW MUCH WE WILL REIMBURSE?",
+   "page": 11,
+   "text": "40. HOW MUCH WE WILL REIMBURSE? Our liability for all claims admitted during the Period of Insurance will be only up to Sum Insured for which the Insured Person is covered as mentioned in the Schedule. In respect of those Insured Persons with Cumulative Bonus/Buffer, our liability for claims admitted under this Policy shall not exceed the aggregate of the Sum Insured and the Cumulative Bonus/Buffer. Subject to this, we will reimburse the following Reasonable and Customary, and Medically Necessary Expenses admissible as per the terms and conditions of the Policy: Room rent, Boarding, DMO / RMO / CMO / RMP Charges, Nursing (Including Injection / Drugs and Intra venous fluid administration expenses), not exceeding 1% of the Sum Insured per day maximum Up to Rs. as mentioned in the below table: Plan Name Sum Insured Room Rent Limit Basic Plan Up to Rs. 15L 1% of the Sum Insured per day maximum up to Rs. 15,000 per day UPLIFT Plan Rs. 25L, 50L and 1Cr 1% of the Sum Insured per day maximum up to Rs. 30,000 per day UPLIFT Plan Rs. 2Cr, 3Cr and 5Cr Actuals"
+  },
+  {
+   "id": "C11.80",
+   "title": "",
+   "page": 11,
+   "text": "Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU), Intensivist charges, Monitor and Pulse Oxymeter expenses not exceeding 2% of the Sum Insured per day maximum Up to Rs. As mentioned in the below table: Plan Name Sum Insured Room Rent Limit Basic Plan Up to Rs. 15L 2% of the Sum Insured per day maximum up to Rs 25,000 per day UPLIFT Plan Rs. 25L, 50L and 1Cr 2% of the Sum Insured per"
+  },
+  {
+   "id": "C12.81",
+   "title": "",
+   "page": 12,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY day maximum up to Rs. 50,000 per day UPLIFT Plan 2Cr, 3Cr and 5Cr Actuals Associate Medical Expenses; such as Professional fees of Surgeon, Anaesthetist, Consultant, Specialist; Anaesthesia, Operating Theatre Charges and Procedure Charges such as Dialysis, Chemotherapy, Radiotherapy & similar medical expenses related to the treatment. Cost of Pharmacy and Consumables, Cost of Implants, Artificial Limbs and Medical Devices and Cost of Diagnostics Pre-Hospitalization Medical expenses for up to 30 days Post-Hospitalization Medical expenses for up to 60 days Note: • Dental Treatment (Inpatient): We will cover for medical expenses incurred towards dental treatment done under anaesthesia necessitated due to an accident/injury/illness requiring Hospitalization as Inpatient treatment. • PROPORTIONATE DEDUCTION: Proportionate Deduction is applicable on the Associate Medical Expenses, if the Insured Person opts for a higher Room than his eligible category. It shall be effected in the same proportion as the eligible rate per day bears to the actual rate per day of Room Rent. However, it is not applicable on a. Cost of Pharmacy and Consumables b. Cost of Implants, Artificial Limbs and Medical Devices c. Cost of Diagnostics. Proportionate Deduction shall also not be applied in respect of Hospitals which do not follow differential billing or for those expenses in which differential billing is not adopted based on the room category, as evidenced by the Hospital’s schedule of charges / tariff."
+  },
+  {
+   "id": "C12.82",
+   "title": "",
+   "page": 12,
+   "text": "• LIMIT ON PAYMENT FOR CATARACT: Our liability for payment of any claim relating to Cataract, for each eye, shall not exceed 20% of the Sum Insured subject to a maximum of Rs. As mentioned in the below table. The limit mentioned above shall be applicable per event for all the Policies of Our Company including Group Policies. Even if two or more Policies of New India are invoked, sublimit of the Policy chosen by Insured shall prevail and our liability is restricted to stated sublimit. Sum Insured Per Eye Limit Up to Rs.15L Maximum up to Rs.50,000 for each eye Rs.25L, 50L , 1Cr, Maximum up to Rs.75,000 for each eye Rs.2Cr, 3Cr and 5Cr Maximum up to Rs.1,00,000 for each eye"
+  },
+  {
+   "id": "C13.83",
+   "title": "",
+   "page": 13,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY • COVERAGE UNDER AYUSH TREATMENT Expenses incurred for inpatient care treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy systems of medicines is covered up to 100% of Sum Insured, during each policy year as specified in the policy schedule. • HOSPITAL CASH: For those Insured Persons, whose Sum Insured is more than or equal to Rs. three lakhs, we will pay Hospital Cash at the rate of 0.1% of the Sum Insured, for each day of Hospitalisation admissible under the Policy up to 10 days. The payment under this Clause for Any One Illness shall not exceed 1% of the Sum Insured. The payment under this Clause is applicable only where the period of Hospitalisation exceeds 24 consecutive hours. Payment under this clause shall reduce the Sum Insured. The sublimits according to the SI bands are mentioned below:"
+  },
+  {
+   "id": "C13.84",
+   "title": "",
+   "page": 13,
+   "text": "Hospital Cash will be payable for completion of every 24 hours and not part thereof. • HEALTH CHECK-UP: The Insured Person shall be entitled for reimbursement of the cost of medical check-up at the end of a block of every 3 Claim Free Years. Such payment shall be restricted to 1% of the average Sum Insured of the insured person in the preceding 3 years subject to maximum limits as mentioned in below table . This benefit is available only once in three years. Any payment made under this clause shall not be considered as a claim. • PAYMENT OF AMBULANCE CHARGES: We will pay You the charges for Ambulance services not exceeding 1% of the Sum Insured per Insured event subject to maximum limits, as mentioned in the below table, Reasonably and Medically Necessarily incurred for shifting any Insured Person to Hospital for admission in Emergency Ward or ICU, or from one Hospital to another Hospital for better medical facilities. Plan Name Sum Insured(Rs.) Hospital Cash Limit Basic Plan 3L to 15L"
+  },
+  {
+   "id": "10#2",
+   "title": "days",
+   "page": 13,
+   "text": "10 days Uplift Plan 25L, 50L and 1Cr Maximum Up to Rs.2500 Per day for max 10 days Uplift Plan 2Cr, 3Cr and 5Cr Maximum Up to Rs.3000 per day for max 10 days Plan Name Sum Insured(Rs) HEALTH CHECK-UP Limit Basic Plan Upto Rs 15L Maximum Up to Rs.5000 Uplift Plan 25L, 50L Maximum Up to Rs.10,000 Uplift Plan 1Cr Maximum Up to Rs.12,500 Uplift Plan 2Cr, 3Cr and 5Cr Maximum Up to Rs.15,000"
+  },
+  {
+   "id": "C14.86",
+   "title": "",
+   "page": 14,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY • PAYMENTS ONLY IF INCLUDED IN HOSPITAL BILL: No payment shall be made for any Hospitalisation expenses incurred, unless they form part of the Hospital Bill. However, the bills raised by Surgeon, Anaesthetist directly and not included in the Hospital Bill shall be paid provided a numbered Bill is produced in support thereof, for an amount not exceeding Rs. Ten thousand, where such payment is made in cash and for an amount not exceeding Rs. Twenty thousand, where such payment is made by cheque. • MEDICAL EXPENSES FOR ORGAN TRANSPLANT: If treatment involves Organ Transplant to Insured Person, then We will also pay Hospitalisation Expenses (excluding cost of organ) incurred on the donor, provided Our liability towards expenses incurred on the donor and the insured recipient shall not exceed the aggregate of the Sum Insured and Cumulative Bonus, if any, of the Insured Person receiving the organ."
+  },
+  {
+   "id": "C14.87",
+   "title": "",
+   "page": 14,
+   "text": "• REINSTATEMENT OF SUM INSURED If the Sum Insured is exhausted due to a claim admissible under the Policy, then the Sum Insured shall be reinstated to the Sum Insured stated in the Schedule, provided our liability under the Reinstated Sum Insured shall be subject to the following conditions:"
+  },
+  {
+   "id": "1#11",
+   "title": "Such Reinstatement of Sum Insured shall be effected only where the Sum Insured is Rs.",
+   "page": 14,
+   "text": "1. Such Reinstatement of Sum Insured shall be effected only where the Sum Insured is Rs. Five Lakhs or more."
+  },
+  {
+   "id": "2#12",
+   "title": "Such Reinstatement shall take effect only after the Date of Discharge from the Hospital",
+   "page": 14,
+   "text": "2. Such Reinstatement shall take effect only after the Date of Discharge from the Hospital and for the subsequent Hospitalisation"
+  },
+  {
+   "id": "3#6",
+   "title": "No Illness or Injury, for a Hospitalisation occurring during the Period of Insurance till the",
+   "page": 14,
+   "text": "3. No Illness or Injury, for a Hospitalisation occurring during the Period of Insurance till the Date of Reinstatement, for which a Claim is paid or admissible, shall be considered under the Reinstated Sum Insured."
+  },
+  {
+   "id": "4#2",
+   "title": "Such Reinstatement shall be available only once for each Insured Person during a Period",
+   "page": 14,
+   "text": "4. Such Reinstatement shall be available only once for each Insured Person during a Period of Insurance."
+  },
+  {
+   "id": "5#3",
+   "title": "",
+   "page": 14,
+   "text": "5. The sequence of utilization of Sum Insured will be as below: a. Sum Insured; b. Cumulative Bonus/Buffer (if any); c. Reinstated Sum Insured"
+  },
+  {
+   "id": "6#2",
+   "title": "",
+   "page": 14,
+   "text": "6. This benefit is not available for Modern Treatments listed below. • NEW BORN BABY COVER A New Born Baby is covered for any Medically Necessary Hospitalisation resulting from acute Illness or bodily Injury under the mother’s available Sum Insured in Base Policy from the date of birth Plan Name Sum Insured(Rs) Ambulance Charges Limit Basic Plan Up to 15 lakh 1% of Sum insured subject to maximum of Rs.15000, whichever is less Uplift Plan 25L and 50 L Maximum of Rs.25000, whichever is less Uplift Plan 1Cr,2Cr, 3Cr and 5Cr Maximum of Rs.30,000, whichever is less"
+  },
+  {
+   "id": "C15.94",
+   "title": "",
+   "page": 15,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY"
+  },
+  {
+   "id": "1#12",
+   "title": "till expiry of the current policy or 90 days whichever is earlier if the Mother is continuously covered for 24",
+   "page": 15,
+   "text": "1. till expiry of the current policy or 90 days whichever is earlier if the Mother is continuously covered for 24 months under the base policy or"
+  },
+  {
+   "id": "2#13",
+   "title": "till expiry of the  90 days from date of birth if the Mother is not continuously covered for 24 months  under",
+   "page": 15,
+   "text": "2. till expiry of the 90 days from date of birth if the Mother is not continuously covered for 24 months under the base policy . After 90 days Baby to be specifically declared for insurance and additional pro-rata premium should be paid under Base policy  No coverage for the New Born Baby would be available during subsequent renewals unless the child is declared for insurance and covered as an Insured Person in both the above scenarios. What is covered?  Any expense incurred towards illness or bodily injury would be covered for the new born baby under the mother’s available Sum Insured. Provided any expenses related to any illness or injury of a pre-term/pre-mature new born baby and any post natal expenses of such pre-term/pre-mature new born baby will not be covered. Note : Baby born before completion of 37th week of gestation will be defined as Pre-term/pre-mature .  Congenital External Anomaly of the New Born Baby is covered only after 36 months Waiting Period.  Waiting Period for Congenital Internal Disease would not apply to a New Born Baby during the year of Birth and also subsequent renewals, if Premium is paid for such New Born Baby and the renewals are effected before or within 30 days of expiry of the Policy."
+  },
+  {
+   "id": "C15.97",
+   "title": "",
+   "page": 15,
+   "text": "What is not covered? This policy does not pay for"
+  },
+  {
+   "id": "1#13",
+   "title": "Routine pre-natal &/or post-natal doctor visits and check-ups, standard baby care, clinical visits ,",
+   "page": 15,
+   "text": "1. Routine pre-natal &/or post-natal doctor visits and check-ups, standard baby care, clinical visits , routine vaccinations."
+  },
+  {
+   "id": "2#14",
+   "title": "Expenses related to any illness or injury of a new born pre-term/pre-mature and any post natal",
+   "page": 15,
+   "text": "2. Expenses related to any illness or injury of a new born pre-term/pre-mature and any post natal expenses of pre-term/pre-mature new born baby will not be covered."
+  },
+  {
+   "id": "3#7",
+   "title": "non-medical hospital cost such as standard nursery or crèche charges.",
+   "page": 15,
+   "text": "3. non-medical hospital cost such as standard nursery or crèche charges. • MEDICAL EXPENSES INCURRED UNDER TWO POLICY PERIODS: If the claim event falls within two policy periods, the claims shall be paid taking into consideration the available Sum Insured of the expiring Policy only. Sum Insured of the Renewed Policy will not be available for the Hospitalisation (including Pre & Post Hospitalisation Expenses), which has commenced in the expiring Policy. Claim shall be settled on per event basis. • CUMULATIVE BONUS The Sum Insured under Policy shall be increased by 25% at each renewal in respect of each claim free year of insurance, subject to maximum of 50% for Sum Insured up to Rs.15 Lakhs and 100% for Sum Insured from 25Lakhs to Rs.5 Crores. If a claim is made in any particular year; the cumulative bonus accrued shall be reduced at the same rate at which it is accrued."
+  },
+  {
+   "id": "C16.101",
+   "title": "",
+   "page": 16,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY Cumulative bonus will be lost if policy is not renewed before or within 30 days from the date of expiry. In case sum insured under the policy is reduced at the time of renewal, the applicable Cumulative Bonus percentage shall be applied on the reduced Sum Insured. In case the insured is having more than one policy, the Cumulative Bonus shall be reduced from the policy/policies in which claim is made irrespective of number of policies. Note: Unless otherwise specified, Cumulative Bonus shall not be treated as part of the Sum Insured for the purposes of reckoning any limit specified in the Policy. Note: i. Cumulative Bonus shall be applicable for persons having Sum Insured of 2 Lakh & above. ii. The Cumulative Bonus Buffer under the expiring policy having Sum Insured of 2 Lakh & above, if any, shall be converted to Cumulative Bonus. iii. In case where the policy is on individual basis, the CB shall be added and available individually to the insured person who has not claimed under the expiring policy. iv. CB shall be available only if the Policy is renewed within the Grace Period. v. If the Insured Persons in the expiring policy are covered on an individual basis as specified in the Policy Schedule and there is an accumulated CB for each Insured Person under the expiring policy, and such expiring policy has been Renewed on a floater policy basis as specified in the Policy Schedule then the CB to be carried forward for credit in such Renewed Policy shall be the Lowest among all the Insured Persons. vi. In case of floater policies where Insured Persons Renew their expiring policy by splitting the Sum Insured in to two or more floater policies/individual policies, the same CB of the expiring policy shall be applicable to each Individual of such Renewed Policies. vii. If the Sum Insured has been reduced at the time of Renewal, the applicable Cumulative Bonus percentage shall be applied on the reduced Sum Insured. viii. If the Sum Insured under the Policy has been increased at the time of Renewal the Cumulative Bonus shall be calculated on the Sum Insured of the last completed Policy Year. ix. If a claim is made in the expiring Policy Year, and is notified to Us after the acceptance of Renewal premium any awarded CB shall be withdrawn. • SPECIFIC COVERAGES: a) Artificial life maintenance, including life support machine use, where such treatment will not result in recovery or restoration of normal state of Health under any circumstances. We cover the expenses up to 10% of the Sum Insured and for a maximum of 15 days per policy period for covered illness. This sub limit is applicable only for person who is declared to be in a vegetative state as certified by the treating medical practitioner. ● 15 days per policy period for Basic Plan ● 20 days per policy period for Uplift Plan b) Puberty and Menopause related Disorders: Treatment for any symptoms, Illness, complications arising due to physiological conditions associated with Puberty, Menopause such as menopausal bleeding or flushing is covered only as Inpatient procedure after 24 months of continuous coverage. This cover will have a sub-limit of up to 25% of Sum Insured per policy period."
+  },
+  {
+   "id": "C17.102",
+   "title": "",
+   "page": 17,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY c) Age Related Macular Degeneration (ARMD) is covered after 36 months of continuous coverage only for Intravitreal Injections and anti - VEGF medication. This cover will have a sub-limit of 10% of Sum Insured per policy period for different SI Bands. The sub limits for different SI bands are mentioned below: d) Genetic diseases or disorders are covered with a sub-limit of 25% of Sum Insured per policy period with 36 months waiting periods maximum up to the amount as mentioned in the below table, whichever is less. e) Treatment of Mental Illness: The Company shall indemnify the Medical Expenses incurred towards treatment of Mental Illness subject to the condition that Treatment shall be undertaken at a Hospital categorized as Mental Health Establishment or at a Hospital with a specific department for Mental Illness, under a Medical Practitioner qualified as Mental Health Professional. The following Mental Illnesses are covered after completion of 36 months of Continuous Coverage with a sub-limit up to 25% of Sum Insured per policy period up to Rs. As mentioned in the below table, whichever is less:"
+  },
+  {
+   "id": "C17.103",
+   "title": "",
+   "page": 17,
+   "text": ". ICD Code ICD Code Description F01-F09 Mental disorders due to known physiological conditions F10-F19 Mental and behavioral disorders due to psychoactive substance use F20-F29 Schizophrenia, schizotypal, delusional, and other non-mood psychotic disorders Plan Name Sum Insured Maximum Limits Basic Plan Up to Rs.15L Up to 25% of Sum Insured Uplift Plan 25L, 50L ,1Cr, Maximum up to Rs.5,00,000 Uplift Plan 2Cr, 3Cr and 5 Cr Maximum up to Rs.6,00,000 Plan Name Sum Insured Maximum Limits Basic Plan Up to Rs.15L Maximum up to Rs.75,000 Uplift Plan 25L, 50L ,1Cr, Maximum up to Rs.1,00,000 Uplift Plan 2Cr, 3Cr and 5 Cr Maximum up to Rs.1,50,000 Plan Name Sum Insured Maximum Limits Basic Plan Up to Rs.15L Max up to Rs.3,75,000 Uplift Plan 25L, 50L ,1Cr,2Cr, 3Cr and 5 Cr Maximum up to Rs.5,00,000 Plan Name Sum Insured Maximum Limits Basic Plan Up to Rs 15L Max Up to Rs.3,75,000 Uplift Plan 25L, 50L ,1Cr,2Cr, 3Cr and 5 Cr Maximum up to Rs. 5,00,000"
+  },
+  {
+   "id": "C18.104",
+   "title": "",
+   "page": 18,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY F60-F69 Disorders of adult personality and behavior F70-F79 Intellectual disabilities Exclusion: Any kind of psychological counselling, cognitive/ family/ group/ behaviour/ palliative therapy or psychotherapy shall not be covered. • COVERAGE FOR MODERN TREATMENTS or PROCEDURES: The following procedures will be covered (wherever medically indicated) either as in patient or as part of day care treatment in a hospital up to the limit specified against each procedure during the policy period. S. NO. TREATMENT OR PROCEDURE LIMIT (PER POLICY PERIOD) Sum Insured Upto to Rs. 15L 25L ,50L and"
+  },
+  {
+   "id": "3.17.1",
+   "title": "",
+   "page": 18,
+   "text": "3.17.1 Uterine Artery Embolization and HIFU (High intensity focused ultrasound) Upto 20% of Sum Insured subject to a Maximum upto Rs. 2 Lakh Subject to a Maximum upto Rs. 3 Lakh Subject to a Maximum uptoRs. 5 Lakh"
+  },
+  {
+   "id": "3.17.2",
+   "title": "",
+   "page": 18,
+   "text": "3.17.2 Balloon Sinuplasty. Upto 20% of Sum Insured subject to a Maximum upto Rs. 2 Lakh Subject to a Maximum upto Rs. 3 Lakh Subject to a Maximum upto Rs. 5 Lakh"
+  },
+  {
+   "id": "3.17.3",
+   "title": "",
+   "page": 18,
+   "text": "3.17.3 Deep Brain stimulation. Upto 50% of Sum Insured subject to a maximum upto Rs. 5 Lakh Subject to a Maximum upto Rs. 7.5 Lakh Subject to a Maximum upto Rs. 10 Lakh"
+  },
+  {
+   "id": "3.17.4",
+   "title": "",
+   "page": 18,
+   "text": "3.17.4 Oral chemotherapy. Upto 10% of Sum Insured subject to Maximum upto Rs. 1 Lakh Subject to a Maximum upto Rs. 1.5 Lakh Subject to a Maximum upto Rs. 2 Lakh"
+  },
+  {
+   "id": "3.17.5",
+   "title": "",
+   "page": 18,
+   "text": "3.17.5 Immunotherapy- Monoclonal Antibody to be given as injection. Upto 25% of Sum Insured subject to a Maximum of Rs 2 Lakh. Subject to a Maximum upto Rs. 3 Lakh Subject to a Maximum upto Rs. 5 Lakh"
+  },
+  {
+   "id": "3.17.6",
+   "title": "",
+   "page": 18,
+   "text": "3.17.6 Intravitreal injections. Upto 10% of Sum Insured subject to a Maximum of Rs.75,000. Subject to a Maximum upto Rs. 1.5 Lakh Subject to a Maximum upto Rs. 2 Lakh"
+  },
+  {
+   "id": "3.17.7",
+   "title": "",
+   "page": 18,
+   "text": "3.17.7 Robotic surgeries. Upto 50% of Sum Insured subject to Maximum of Rs. 5 Lakh. Subject to a Maximum upto Rs. 7.5 Lakh Subject to a Maximum upto Rs. 10 Lakh"
+  },
+  {
+   "id": "3.17.8",
+   "title": "",
+   "page": 18,
+   "text": "3.17.8 Stereotactic radio surgeries. Upto 50% of Sum Insured subject to Maximum Rs. 3 Lakh. Subject to a Maximum upto Rs. 5 Lakh Subject to a Maximum upto Rs. 7.5 Lakh"
+  },
+  {
+   "id": "3.17.9",
+   "title": "",
+   "page": 18,
+   "text": "3.17.9 Bronchial Thermoplasty. Upto 50% of Sum Insured subject to Subject to a Maximum Subject to a Maximum"
+  },
+  {
+   "id": "C19.114",
+   "title": "",
+   "page": 19,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY Maximum of Rs. 2.5 Lakh. upto Rs. 3.5 Lakh upto Rs. 5 Lakh"
+  },
+  {
+   "id": "3.17.10",
+   "title": "",
+   "page": 19,
+   "text": "3.17.10 Vaporisation of the prostrate (Green laser treatment or holmium laser treatment). Upto 50% of Sum Insured subject to Maximum of Rs. 2.5 Lakh. Subject to a Maximum upto Rs. 3.5 Lakh Subject to a Maximum upto Rs. 5 Lakh"
+  },
+  {
+   "id": "3.17.11",
+   "title": "",
+   "page": 19,
+   "text": "3.17.11 IONM-(Intra Operative Neuro Monitoring). Upto10% of Sum Insuredsubject to Maximum of Rs. 50,000. Subject to a Maximum upto Rs. 1 Lakh Subject to a Maximum upto Rs. 1.5 Lakh"
+  },
+  {
+   "id": "3.17.12",
+   "title": "",
+   "page": 19,
+   "text": "3.17.12 Stem cell therapy: Hematopoietic stem cells for bone marrow transplant for haematological conditions to be covered. Upto 50% of Sum Insured subject to Maximum of Rs. 2.5 Lakh. Subject to a Maximum upto Rs. 3.5 Lakh Subject to a Maximum upto Rs. 5 Lakh • TREATMENT FOR CONGENITAL DISEASES Congenital Internal Disease or Defects or anomalies shall be covered after 24 months of Continuous Coverage. Congenital External Disease or Defects or anomalies shall be covered after 36 months of Continuous Coverage, but such cover for Congenital External Disease or Defects or anomalies shall be limited to 10% of the average Sum Insured in the preceding three years up to maximum of Rs. (As mentioned in the below table), whichever is less:"
+  },
+  {
+   "id": "41",
+   "title": "WHAT ARE THE OPTIONAL COVERS AVAILABLE IN THE POLICY?",
+   "page": 19,
+   "text": "41. WHAT ARE THE OPTIONAL COVERS AVAILABLE IN THE POLICY? Following are the optional covers available under the policy. • OPTIONAL COVER I: REVISION IN LIMIT OF CATARACT This optional cover, if opted, will be in addition to limit specified in Clause 3.3. On payment of additional Premium as mentioned in Schedule, it is declared and agreed that following additional amount for Cataract shall become payable but not exceeding the actual expenses incurred: Plan Name Sum Insured Congenital External Disease Limit Basic Plan Upto Rs 15L Maximum Upto Rs 1,50,000 Uplift Plan 25L, 50L , 1 Cr Maximum Upto Rs 10,00,000 Uplift Plan 2Cr, 3Cr and 5Cr Maximum Upto Rs. 15,00,000"
+  },
+  {
+   "id": "C20.119",
+   "title": "",
+   "page": 20,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY This optional cover is available for sum insured of Rs.8 Lakhs to sum insured 15 Lakhs. Plan Name Sum Insured Additional Cataract limit Basic Plan Rs. 8,00,000 Rs. 80,000 Basic Plan Rs. 10,00,000 Rs. 1,00,000 Basic Plan Rs. 12,00,000 Rs. 1,20,000 Basic Plan Rs. 15,00,000 Rs. 1,50,000 Note: Benefit of this cover will be available after the expiry of :"
+  },
+  {
+   "id": "36#2",
+   "title": "months for up to SI 15 Lakhs from the date of opting this cover.",
+   "page": 20,
+   "text": "36 months for up to SI 15 Lakhs from the date of opting this cover. • For Sum Insured of Rs. 25 Lakhs and above, the insured has the option of opting for Enhanced Cataract Limit Rider. In case of renewals with Optional cataract cover opting for Uplift plan the insured has the option of continuing the same optional cover as per the Expiring Policy limits only. The Enhanced Cataract Limit Rider shall NOT be available for Sum Insured upto Rs. 15 lakhs. OPTIONAL COVER II: VOLUNTARY CO-PAY If the Insured person opts for voluntary co-pay of 20%, a discount of 15% shall be of given on the premium payable for the Insured Person."
+  },
+  {
+   "id": "42",
+   "title": "WHAT WILL HAPPEN WHEN MY SUM INSURED IS EXHAUSTED DURING POLICYPERIOD?",
+   "page": 20,
+   "text": "42. WHAT WILL HAPPEN WHEN MY SUM INSURED IS EXHAUSTED DURING POLICYPERIOD? If the Sum Insured is exhausted due to a claim admissible under the Policy, then the Sum Insured shall be reinstated to the Sum Insured stated in the Schedule, provided our liability under the Reinstated Sum Insured shall be subject to the following conditions:"
+  },
+  {
+   "id": "1#14",
+   "title": "Such Reinstatement of Sum Insured shall be effected only where the Sum Insured is Rs.",
+   "page": 20,
+   "text": "1. Such Reinstatement of Sum Insured shall be effected only where the Sum Insured is Rs."
+  },
+  {
+   "id": "2#15",
+   "title": "Such Reinstatement shall take effect only after the Date of Discharge from the Hospital",
+   "page": 20,
+   "text": "2. Such Reinstatement shall take effect only after the Date of Discharge from the Hospital and for the subsequent Hospitalisation"
+  },
+  {
+   "id": "3#8",
+   "title": "No Illness or Injury, for a Hospitalisation occurring during the Period of Insurance till the",
+   "page": 20,
+   "text": "3. No Illness or Injury, for a Hospitalisation occurring during the Period of Insurance till the Date of Reinstatement, for which a Claim is paid or admissible, shall be considered under the Reinstated Sum Insured."
+  },
+  {
+   "id": "4#3",
+   "title": "Such Reinstatement shall be available only once for each Insured Person during a Period",
+   "page": 20,
+   "text": "4. Such Reinstatement shall be available only once for each Insured Person during a Period of Insurance."
+  },
+  {
+   "id": "5#4",
+   "title": "",
+   "page": 20,
+   "text": "5. The sequence of utilization of Sum Insured will be as below: a. Sum Insured; b. Cumulative Bonus/Buffer (if any); c. Reinstated Sum Insured"
+  },
+  {
+   "id": "C21.127",
+   "title": "",
+   "page": 21,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY"
+  },
+  {
+   "id": "6#3",
+   "title": "",
+   "page": 21,
+   "text": "6. This benefit is not available for Modern Treatments listed in Policy Clause No.: 3.17."
+  },
+  {
+   "id": "43",
+   "title": "CAN ANY CLAIM BE REJECTED OR REFUSED?",
+   "page": 21,
+   "text": "43. CAN ANY CLAIM BE REJECTED OR REFUSED? Yes, a claim, which is not covered under the Policy conditions, can be rejected. In case You are not satisfied by the reasons for rejection, you can represent to Us within 15 days of such denial. If You do not receive a response to Your representation or if You are not satisfied with the response, You may write to our Grievance Cell, the details of which are provided at our website at https://www.newindia.co.in/portal/readMore/Grievances You may also call our Call Centre at the Toll-free number 1800-209-1415, which is available 24x7. You also have the right to represent your case to the Insurance Ombudsman. The contact details of the office of the Insurance Ombudsman could be obtained from https://www.cioins.co.in/Ombudsman"
+  },
+  {
+   "id": "44",
+   "title": "CAN I CANCEL THE POLICY?",
+   "page": 21,
+   "text": "44. CAN I CANCEL THE POLICY? The policyholder may cancel his/her policy at any time during the term, by giving 7 days’ notice in writing. The Insurer shall a. Refunds proportionate premium for unexpired policy period, if the term of policy up to one year and there is no claim (s) made during the policy period. b. Refund premium for the unexpired policy period, in respect of policies with term more than"
+  },
+  {
+   "id": "1#15",
+   "title": "year and risk coverage for such policy years has not commenced",
+   "page": 21,
+   "text": "1 year and risk coverage for such policy years has not commenced Notwithstanding anything contained herein or otherwise, no refunds of premium shall be made in respect of Cancellation where, any claim has been admitted or has been lodged or any benefit has been availed by the insured person under the policy. The Company may cancel the policy at any time on grounds of misrepresentation non-disclosure of material facts, fraud by the insured person by giving 15 days' written notice. There would be no refund of premium on cancellation on grounds of misrepresentation, non- disclosure of material facts or fraud."
+  },
+  {
+   "id": "45",
+   "title": "WHAT IS FREE LOOK PERIOD?",
+   "page": 21,
+   "text": "45. WHAT IS FREE LOOK PERIOD? The Free Look Period shall be applicable on new individual health insurance policies, except for those policies of less than a year, renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of thirty days from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable. A period of 30 days (from the date of receipt of the policy document) is available to the policyholder to review the terms and conditions of the policy. If he/she is not satisfied with any of the terms and conditions, he/she has the option to cancel his/her policy. This option is available in case of policies with a term of one year or more. lf the insured has not made any claim during the Free Look Period, the insured shall be entitled to i. a refund of the premium paid less any expenses incurred by the Company on medical examination of the insured person and the stamp duty charges or ii. where the risk has already commenced and the option of return of the policy is exercised"
+  },
+  {
+   "id": "C22.133",
+   "title": "",
+   "page": 22,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY by the insured person, a deduction towards the proportionate risk premium for period of cover or iii. Where only a part of the insurance coverage has commenced, such proportionate premium commensurate with the insurance coverage during such period"
+  },
+  {
+   "id": "46",
+   "title": "IS THERE ANY BENEFIT UNDER THE INCOME TAX ACT FOR THE PREMIUM PAID FOR",
+   "page": 22,
+   "text": "46. IS THERE ANY BENEFIT UNDER THE INCOME TAX ACT FOR THE PREMIUM PAID FOR THIS INSURANCE? Yes. Payments made for health insurance in any mode other than cash are eligible for deduction from taxable income as per Section 80 D of the Income Tax Act, 1961. For details, please refer to the relevant Section of the Income Tax Act."
+  },
+  {
+   "id": "47",
+   "title": "WHAT IS PORTABILITY AND MIGRATION?",
+   "page": 22,
+   "text": "47. WHAT IS PORTABILITY AND MIGRATION? Migration: means, the right accorded to health insurance policyholders (including all members under family cover and members of group Health insurance policy), to transfer the credit gained for pre-existing conditions and time bound exclusions, with the same insurer. You will have the option to migrate the policy to other Health Insurance products/plans offered by the company by applying for migration of the policy at-least 30 days before the policy renewal date as per IRDAI guidelines on Migration. If You are presently covered and has been continuously covered without any lapses under any Health Insurance product/plan offered by the Company, then You will get the accrued continuity benefits in waiting periods as per IRDAI guidelines on Migration. For detailed guidelines on Migration. Kindly refer the link https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_NoYearList.aspx?DF=RL&mid=4.2 Portability: You will have the option to port the policy to other Insurers by applying to such Insurer to port the entire policy along with all the members of the family, if any, at-least 30 days before, but not earlier than 60 days from the policy renewal date as per IRDAI guidelines related to portability. If such person is presently covered and has been continuously covered without any lapses under any Health Insurance policy with an India General/Health Insurer, the proposed Insured person will get the accrued continuity benefits in waiting periods as per IRDAI guidelines on portability. For detailed guidelines on Portability. Kindly refer the link https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_NoYearList.aspx?DF=RL&mid=4.2"
+  },
+  {
+   "id": "48",
+   "title": "WHAT ARE EXCLUDED UNDER THIS POLICY",
+   "page": 22,
+   "text": "48. WHAT ARE EXCLUDED UNDER THIS POLICY No claim will be payable under this Policy for the following • PRE-EXISTING DISEASES (Code- Excl01) a. Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with us. b. In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase. c. If the Insured Person is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations, then waiting period for the same would be reduced to the extent of prior coverage."
+  },
+  {
+   "id": "C23.137",
+   "title": "",
+   "page": 23,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY d. Coverage under the policy after the expiry of 36 months for any pre-existing disease is subject to the same being declared at the time of application and accepted by us. • SPECIFIC WAITING PERIOD (Code- Excl02) a. Expenses related to the treatment of the following listed conditions, surgeries / treatments shall be excluded until the expiry of Ninety Days / 24 / 36 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer. This exclusion shall not be applicable for claims arising due to an accident. b. In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c. If any of the specified disease/procedure falls under the waiting period specified for pre- existing diseases, then the longer of the two waiting periods shall apply. d. The waiting period for listed conditions shall apply even if contracted after the policy or declared and accepted without a specific exclusion. e. If the Insured Person is continuously covered without any break as defined under the applicable norms on portability stipulated by IRDAI, then waiting period for the same would be reduced to the extent of prior coverage."
+  },
+  {
+   "id": "3#9",
+   "title": "",
+   "page": 23,
+   "text": "3. Cardiac Conditions (ii) 24 Months waiting period"
+  },
+  {
+   "id": "1#16",
+   "title": "",
+   "page": 23,
+   "text": "1. All internal and external benign tumours, cysts, polyps of any kind, including benign breast lumps"
+  },
+  {
+   "id": "11#2",
+   "title": "Pilonidal sinus, Sinusitis and related disorders",
+   "page": 23,
+   "text": "11. Pilonidal sinus, Sinusitis and related disorders"
+  },
+  {
+   "id": "12#2",
+   "title": "Prolapse inter Vertebral Disc and Spinal Diseases unless arising from accident",
+   "page": 23,
+   "text": "12. Prolapse inter Vertebral Disc and Spinal Diseases unless arising from accident"
+  },
+  {
+   "id": "C24.142",
+   "title": "",
+   "page": 24,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY"
+  },
+  {
+   "id": "14#2",
+   "title": "Stone in Gall Bladder and Bile duct, excluding malignancy",
+   "page": 24,
+   "text": "14. Stone in Gall Bladder and Bile duct, excluding malignancy"
+  },
+  {
+   "id": "16#2",
+   "title": "Treatment for Menorrhagia/Fibromyoma, Myoma and Prolapsed uterus",
+   "page": 24,
+   "text": "16. Treatment for Menorrhagia/Fibromyoma, Myoma and Prolapsed uterus"
+  },
+  {
+   "id": "19#2",
+   "title": "Puberty and Menopause related Disorders",
+   "page": 24,
+   "text": "19. Puberty and Menopause related Disorders"
+  },
+  {
+   "id": "20#2",
+   "title": "Internal Congenital Diseases",
+   "page": 24,
+   "text": "20. Internal Congenital Diseases (iii) 36 Months waiting period"
+  },
+  {
+   "id": "2#16",
+   "title": "",
+   "page": 24,
+   "text": "2. Joint Replacement due to Degenerative Condition"
+  },
+  {
+   "id": "3#10",
+   "title": "",
+   "page": 24,
+   "text": "3. Age-related Osteoarthritis & Osteoporosis"
+  },
+  {
+   "id": "5#5",
+   "title": "",
+   "page": 24,
+   "text": "5. Age Related Macular Degeneration (ARMD)"
+  },
+  {
+   "id": "6#4",
+   "title": "",
+   "page": 24,
+   "text": "6. Genetic diseases or disorders • FIRST THIRTY DAYS WAITING PERIOD (Code- Excl03) a. Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b. This exclusion shall not, however, apply if the Insured Person has Continuous Coverage for more than twelve months. c. The within referred waiting period is made applicable to the enhanced sum insured in the event of granting higher sum insured subsequently. • INVESTIGATION & EVALUATION (Code- Excl04) a. Expenses related to any admission primarily for diagnostics and evaluation purposes. b. Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment • REST CURE, REHABILITATION AND RESPITE CARE (Code- Excl05) Expenses related to any admission primarily for enforced bed rest and not for receiving treatment. This also includes: a. Custodial care either at home or in a nursing facility for personal care such as help with activities of daily living such as bathing, dressing, moving around either by skilled nurses or assistant or non-skilled persons. b. Any services for people who are terminally ill to address physical, social, emotional and spiritual needs. • OBESITY/ WEIGHT CONTROL (Code- Excl06) Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: a. Surgery to be conducted is upon the advice of the Doctor b. The surgery/Procedure conducted should be supported by clinical protocols c. The member has to be 18 years of age or older and"
+  },
+  {
+   "id": "C25.151",
+   "title": "",
+   "page": 25,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY d. Body Mass Index (BMI);"
+  },
+  {
+   "id": "2#17",
+   "title": "",
+   "page": 25,
+   "text": "2. greater than or equal to 35 in conjunction with any of the following severe co- morbidities following failure of less invasive methods of weight loss: i. Obesity-related cardiomyopathy ii. Coronary heart disease iii. Severe Sleep Apnea iv. Uncontrolled Type2 Diabetes • CHANGE-OF-GENDER TREATMENTS (Code- Excl07): Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex. • COSMETIC OR PLASTIC SURGERY (Code- Excl08): Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured. For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner. • HAZARDOUS OR ADVENTURE SPORTS (Code- Excl09): Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving. • BREACH OF LAW (Code- Excl10): Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent. • EXCLUDED PROVIDERS (Code-Excl11): Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed in its website / notified to the policyholders are not admissible. However, in case of life-threatening situations or following an accident, expenses up to the stage of stabilization are payable but not the complete claim. • Treatment for, Alcoholism, drug or substance abuse or any addictive condition and consequences thereof. (Code- Excl12) • Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons. (Code- Excl13) • Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day care procedure. (Code- Excl14) • REFRACTIVE ERROR (Code- Excl15): Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres. • UNPROVEN TREATMENTS (Code- Excl16): Expenses related to any unproven treatment, services and supplies for or in connection with any treatment. Unproven treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness."
+  },
+  {
+   "id": "C26.153",
+   "title": "",
+   "page": 26,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY • STERILITY AND INFERTILITY (Code- Excl17) Expenses related to sterility and infertility. This includes: a. Any type of contraception, sterilization b. Assisted Reproduction services including artificial insemination and advanced reproductive technologies such as IVF, ZIFT, GIFT, ICSI c. Gestational Surrogacy d. Reversal of sterilization • MATERNITY EXPENSES (Code - Excl18) a. Medicaltreatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy; b. Expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period. SPECIFIC EXCLUSIONS • Acupressure, acupuncture, magnetic therapies. • Any expenses incurred on Domiciliary Hospitalization. • Service charges, Surcharges, Luxury Tax, Admission fees, Registration fees, Record Charges and Telephone Charges levied by the Hospital. • Bodily Injury or Illness due to wilful or deliberate exposure to danger (except in an attempt to save human life), intentional self-inflicted Injury and attempted suicide. • Circumcision unless Medically Necessary or as may be necessitated due to an Accident. • Convalescence and General debility. • Cost of braces, equipment or external prosthetic devices, eyeglasses, Cost of spectacles and contact lenses, hearing aids including cochlear implants. • External Medical / Non-medical equipment used for diagnosis and/or treatment including CPAP/BIPAP, Oxygen Concentrator, Infusion pump , Ambulatory devices (walker, crutches, Collars, Caps, Splints, Elasto crepe bandages, external orthopaedic pads) and sub cutaneous insulin pump, Diabetic foot wear, Glucometer / Thermometer and equipment, which is subsequently used at home and outlives the use and life of the Insured Person. • Nuclear, chemical or biological attack or weapons, contributed to, caused by, resulting from or from any other cause or event contributing concurrently or in any other sequence to the loss, claim or expense. For the purpose of this exclusion: a. Nuclear attack or weapons means the use of any nuclear weapon or device or waste or combustion of nuclear fuel or the emission, discharge, dispersal, release or escape of fissile/ fusion material emitting a level of radioactivity capable of causing any Illness, incapacitating disablement or death. b. Chemical attack or weapons means the emission, discharge, dispersal, release or escape of any solid, liquid or gaseous chemical compound which, when suitably distributed, is capable of causing any Illness, incapacitating disablement or death. c. Biological attack or weapons means the emission, discharge, dispersal, release or escape of any pathogenic (disease producing) micro-organisms and/or biologically produced toxins (including genetically modified organisms and chemically synthesized toxins) which"
+  },
+  {
+   "id": "C27.154",
+   "title": "",
+   "page": 27,
+   "text": "UIN: NIAHLIP25040V102425 NEW INDIA MEDICLAIM POLICY are capable of causing any Illness, incapacitating disablement or death. • Stem cell implantation/Surgery for other than those treatments mentioned in clause 3.20.12 • Expenses incurred for Rotational Field Quantum Magnetic Resonance (RFQMR), External Counter Pulsation (ECP), Enhanced External Counter Pulsation (EECP), Hyperbaric Oxygen Therapy. • Treatment and/or services taken outside the geographical limits of India • Vaccination and/or inoculation • War (whether declared or not) and war like occurrence or invasion, acts of foreign enemies, hostilities, civil war, rebellion, revolutions, insurrections, mutiny, military or usurped power, seizure, capture, arrest, restraints and detainment of all kinds. • Procedures/treatments usually done in outpatient department are not payable under the Policy even if converted as an in-patient in the Hospital for more than 24 hours. • Change of treatment from one system to another unless recommended by the consultant / Hospital under which the treatment is taken."
+  }
+ ],
+ "source_file": "data/raw/policies/New India Mediclaim Policy.pdf"
+}

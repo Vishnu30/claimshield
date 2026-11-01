@@ -1,0 +1,1805 @@
+{
+ "policy_id": "united_india_family_medicare_policy",
+ "insurer": "United India",
+ "product": "Family Medicare Policy",
+ "uin": "UIIHLIP24090V052324",
+ "jurisdiction": "IN",
+ "sum_insured": null,
+ "room_rent": {
+  "kind": "pct_si",
+  "value": 1.0,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": 7,
+   "quote": "Room, Boarding and Nursing expenses (all inclusive) incurred as provided by the Hospital/Nursing Home up to the limits provided below: Sum Insured Limit (Rs.) per day < Rs. 5 Lacs 1% of Sum Insured"
+  }
+ },
+ "icu_rent": {
+  "kind": "pct_si",
+  "value": 2.0,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": 8,
+   "quote": "Charges for accommodation in Intensive Care Unit (ICU)/ Intensive Cardiac Care Unit (ICCU) up to the limits provided below: Sum Insured Limit (Rs.) per day < Rs. 5 Lacs 2% of Sum Insured Rs. 5 Lacs and Above Actuals iii."
+  }
+ },
+ "proportionate_deduction": true,
+ "proportionate_cite": {
+  "clause_id": "1.1",
+  "page": 8,
+  "quote": "1.1 Note: i. PROPORTIONATE PAYMENT CLAUSE: In case of admission to a room at rates exceeding the aforesaid limits in clause III.A.1.i, the reimbursement/payment of all associated medical expenses incurred at the Hospital shall be effected in the same proportion as the admissible rate per day bears to the actual rate per day of Room Rent."
+ },
+ "copays": [
+  {
+   "pct": 10.0,
+   "condition": "6. Co-Payment For persons with age of entry above 60 years in Family Medicare Policy, every admissible claim under Claus",
+   "age_min": null,
+   "cite": {
+    "clause_id": "6",
+    "page": 20,
+    "quote": "6. Co-Payment For persons with age of entry above 60 years in Family Medicare Policy, every admissible claim under Clause III.A.1- III.A.6 shall be subject to a Co-payment of 10% on the admissible claim amount."
+   }
+  }
+ ],
+ "sublimits": [
+  {
+   "procedure": "cataract",
+   "aliases": [
+    "phacoemulsification",
+    "phaco",
+    "iol"
+   ],
+   "limit": 50000.0,
+   "pct_si": 10.0,
+   "basis": "per_eye",
+   "cite": {
+    "clause_id": "1.2",
+    "page": 8,
+    "quote": "1.2 Sub-limit: a) Cataract Surgery Limit: Expenses in respect of the Cataract surgeries will be restricted to 10% of Sum Insured subject to maximum of Rs. 50,000/- per eye."
+   }
+  }
+ ],
+ "waiting_periods": [
+  {
+   "kind": "initial",
+   "months": 1,
+   "conditions": [],
+   "cite": {
+    "clause_id": null,
+    "page": 12,
+    "quote": "Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. ii."
+   }
+  },
+  {
+   "kind": "ped",
+   "months": 48,
+   "conditions": [],
+   "cite": {
+    "clause_id": null,
+    "page": 11,
+    "quote": "Pre-Existing Diseases (Code – Excl01) i. Expenses related to the treatment of a pre-existing disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with us. ii."
+   }
+  },
+  {
+   "kind": "specific",
+   "months": 24,
+   "conditions": [
+    "benign prostatic",
+    "piles",
+    "fissure",
+    "fistula",
+    "disc"
+   ],
+   "cite": {
+    "clause_id": null,
+    "page": 11,
+    "quote": "Expenses related to the treatment of the listed Conditions, surgeries/treatments as per Table A and Table B below, shall be excluded until the expiry of 24 months and 48 months respectively of continuous coverage after the date of inception of the first policy with us."
+   }
+  }
+ ],
+ "exclusions": [
+  {
+   "code": "Excl01",
+   "text": ") i. Expenses related to the treatment of a pre-existing disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with us. ii.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl01",
+    "page": 11,
+    "quote": "Pre-Existing Diseases (Code – Excl01) i. Expenses related to the treatment of a pre-existing disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with us. ii."
+   }
+  },
+  {
+   "code": "Excl04",
+   "text": ") i. Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded. ii.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl04",
+    "page": 12,
+    "quote": "Investigation & Evaluation (Code – Excl04) i. Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded. ii."
+   }
+  },
+  {
+   "code": "Excl05",
+   "text": ") Expenses related to any admission primarily for enforced bed rest and not for receiving treatment.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl05",
+    "page": 12,
+    "quote": "5. Rest Cure, Rehabilitation and Respite Care (Code – Excl05) Expenses related to any admission primarily for enforced bed rest and not for receiving treatment."
+   }
+  },
+  {
+   "code": "Excl06",
+   "text": ") Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: i.",
+   "keywords": [
+    "obesity"
+   ],
+   "cite": {
+    "clause_id": "Excl06",
+    "page": 12,
+    "quote": "6. Obesity/Weight Control (Code – Excl06) Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: i."
+   }
+  },
+  {
+   "code": "Excl07",
+   "text": ") Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl07",
+    "page": 13,
+    "quote": "Change-of-Gender treatments (Code – Excl07) Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex."
+   }
+  },
+  {
+   "code": "Excl08",
+   "text": ") Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to ",
+   "keywords": [
+    "cosmetic",
+    "plastic surgery"
+   ],
+   "cite": {
+    "clause_id": "Excl08",
+    "page": 13,
+    "quote": "8. Cosmetic or Plastic Surgery (Code – Excl08) Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured."
+   }
+  },
+  {
+   "code": "Excl09",
+   "text": ") Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scub",
+   "keywords": [
+    "hazardous"
+   ],
+   "cite": {
+    "clause_id": "Excl09",
+    "page": 13,
+    "quote": "9. Hazardous or Adventure Sports (Code – Excl09) Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving."
+   }
+  },
+  {
+   "code": "Excl10",
+   "text": ") Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl10",
+    "page": 13,
+    "quote": "10. Breach of Law (Code – Excl10) Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent."
+   }
+  },
+  {
+   "code": "Excl11",
+   "text": ") Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed on its website/notified to the policyholders are not admissible.",
+   "keywords": [
+    "war"
+   ],
+   "cite": {
+    "clause_id": "Excl11",
+    "page": 13,
+    "quote": "11. Excluded Providers (Code – Excl11) Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed on its website/notified to the policyholders are not admissible."
+   }
+  },
+  {
+   "code": "Excl12",
+   "text": ") Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof.",
+   "keywords": [
+    "alcohol"
+   ],
+   "cite": {
+    "clause_id": "Excl12",
+    "page": 13,
+    "quote": "12. (Code – Excl12) Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof."
+   }
+  },
+  {
+   "code": "Excl13",
+   "text": ") Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl13",
+    "page": 13,
+    "quote": "13. (Code – Excl13) Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons."
+   }
+  },
+  {
+   "code": "Excl14",
+   "text": ") Dietary supplements and substances that can be purchased without a prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of a hospitalisation claim or day ",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl14",
+    "page": 13,
+    "quote": "14. (Code – Excl14) Dietary supplements and substances that can be purchased without a prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of a hospitalisation claim or day care procedure."
+   }
+  },
+  {
+   "code": "Excl15",
+   "text": ") Expenses related to the treatment for correction of eyesight due to refractive error less than 7.5 dioptres.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl15",
+    "page": 13,
+    "quote": "15. Refractive Error (Code – Excl15) Expenses related to the treatment for correction of eyesight due to refractive error less than 7.5 dioptres."
+   }
+  },
+  {
+   "code": "Excl16",
+   "text": ") Expenses related to any unproven treatment, services and supplies for or in connection with any treatment.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl16",
+    "page": 13,
+    "quote": "16. Unproven Treatments (Code – Excl16) Expenses related to any unproven treatment, services and supplies for or in connection with any treatment."
+   }
+  },
+  {
+   "code": "Excl17",
+   "text": ") Expenses related to sterility and infertility.",
+   "keywords": [
+    "infertility"
+   ],
+   "cite": {
+    "clause_id": "Excl17",
+    "page": 13,
+    "quote": "17. Sterility and Infertility (Code – Excl17) Expenses related to sterility and infertility."
+   }
+  },
+  {
+   "code": "Excl18",
+   "text": ") i Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalisation) except ectopic pregnancy; ii Expenses towards miscarriage (unless due to an accident) and lawfu",
+   "keywords": [
+    "war"
+   ],
+   "cite": {
+    "clause_id": "Excl18",
+    "page": 13,
+    "quote": "Gestational Surrogacy iv. Reversal of sterilization 18. Maternity (Code- Excl18) i Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalisation) except ectopic pregnancy; ii Expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period."
+   }
+  }
+ ],
+ "intimation_emergency_hours": 24,
+ "intimation_planned_days_before": 2,
+ "claim_submission_days": null,
+ "clauses": [
+  {
+   "id": "C1.1",
+   "title": "",
+   "page": 1,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "1",
+   "title": "| P a g e",
+   "page": 1,
+   "text": "1 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 Family Medicare Policy Terms & Conditions I. PREAMBLE This Policy is a contract of insurance issued by UNITED INDIA INSURANCE COMPANY (hereinafter called the COMPANY) to the Proposer mentioned in the Schedule (hereinafter called the ‘Insured’) to cover the person(s) named in the schedule (hereinafter called the ‘Insured Persons’). The Policy is based on the statements and declaration provided in the Proposal Form by the Proposer and is subject to: i The receipt of full premium, ii Disclosure to information norm including the information provided in the Proposal Form by the Proposer on behalf of him/her-self and all persons to be Insured which is incorporated in the policy and is the basis of it; and iii The terms, conditions and exclusions of this Policy. A. Operative Clause If during the Policy Period the Insured Person(s) is required to be hospitalized for treatment of an Illness or Injury at a Hospital /Day Care Centre, following Medical Advice of a duly qualified Medical Practitioner, the Company shall indemnify Medically Necessary, Reasonable and Customary Medical Expenses towards the Coverage mentioned hereunder. Provided further that, any amount payable under the Policy shall be subject to the terms of coverage (including any limits/sub limits), exclusions, conditions and definitions contained herein. Maximum liability of the Company under all such Claims during each Policy Year shall be the Total Sum Insured. B. Cover Type The Policy provides cover on an Individual or Family Floater basis. A separate Sum Insured for each Insured Person is provided under Individual basis while under Family Floater basis, the Sum Insured is shared by the whole family of the Insured as specified in the Policy Schedule and Our total liability for the family cannot exceed the Total Sum Insured in a Policy period. The cover type basis shall be as specified in the Policy Schedule. II. DEFINITIONS The terms defined below and at other junctures in the Policy have the meanings ascribed to them wherever they appear in this Policy and, where, the context so requires, references to the singular include references to the plural; references to the male includes the female and references to any statutory enactment includes subsequent changes to the same. A. Standard Definitions"
+  },
+  {
+   "id": "1#2",
+   "title": "Accident",
+   "page": 1,
+   "text": "1. Accident is a sudden, unforeseen, and involuntary event caused by external, visible and violent means."
+  },
+  {
+   "id": "2",
+   "title": "Any One Illness",
+   "page": 1,
+   "text": "2. Any One Illness will be deemed to mean a continuous period of illness and it includes relapse within 45 days from the date of last consultation with the Hospital / Nursing Home where treatment has been taken."
+  },
+  {
+   "id": "3",
+   "title": "AYUSH Day Care Centre",
+   "page": 1,
+   "text": "3. AYUSH Day Care Centre means and includes Community Health Care Centre (CHC), Primary Health Centre (PHC), Dispensary, Clinic, Polyclinic or any such health centre which is registered with the local authorities, wherever applicable and having facilities for carrying out treatment procedures and medical or surgical/para-surgical interventions or both under the supervision of registered AYUSH Medical Practitioner (s) on day care basis without in-patient services and must comply with all the following criterion: i. Having qualified registered AYUSH Medical Practitioner (s) in charge; ii. Having dedicated AYUSH therapy sections as required and/or has equipped operation theatre where surgical procedures are to be carried out; iii. Maintaining daily records of the patients and making them accessible to the insurance Company’s authorized representative."
+  },
+  {
+   "id": "4",
+   "title": "AYUSH Hospital",
+   "page": 1,
+   "text": "4. AYUSH Hospital is a healthcare facility wherein medical/ surgical/ para-surgical treatment procedures and interventions are carried out by AYUSH Medical Practitioner(s) comprising of any of the following:"
+  },
+  {
+   "id": "C2.7",
+   "title": "",
+   "page": 2,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "2#2",
+   "title": "| P a g e",
+   "page": 2,
+   "text": "2 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 i. Central or State Government AYUSH Hospital; or ii. Teaching hospital attached to AYUSH College recognized by the Central Government/Central Council of Indian Medicine/Central Council for Homeopathy; or iii. AYUSH Hospital, standalone or co-located with in-patient healthcare facility of any recognized system of medicine, registered with the local authorities, wherever applicable, and is under the supervision of a qualified registered AYUSH Medical Practitioner and must comply with all the following criterion: a. Having at least 5 in-patient beds; b. Having qualified AYUSH Medical Practitioner in charge round the clock; c. Having dedicated AYUSH therapy sections as required and/or has equipped operation theatre where surgical procedures are to be carried out; d. Maintaining daily records of the patients and making them accessible to the insurance company’s authorized representative."
+  },
+  {
+   "id": "5",
+   "title": "Cashless Facility",
+   "page": 2,
+   "text": "5. Cashless Facility means a facility extended by the insurer to the insured where the payments, of the costs of treatment undergone by the insured in accordance with the policy terms and conditions, are directly made to the network provider by the insurer to the extent pre-authorization is approved."
+  },
+  {
+   "id": "6",
+   "title": "Condition Precedent",
+   "page": 2,
+   "text": "6. Condition Precedent shall mean a policy term or condition upon which the Insurer’s liability under the policy is conditional upon."
+  },
+  {
+   "id": "7",
+   "title": "Congenital Anomaly",
+   "page": 2,
+   "text": "7. Congenital Anomaly refers to a condition(s) which is present since birth, and which is abnormal with reference to form, structure or position. i. Internal Congenital Anomaly – Congenital anomaly which is not in the visible and accessible parts of the body. ii. External Congenital Anomaly – Congenital anomaly which is in the visible and accessible parts of the body."
+  },
+  {
+   "id": "8",
+   "title": "Co-Payment",
+   "page": 2,
+   "text": "8. Co-Payment means a cost sharing requirement under a health insurance policy that provides that the Policyholder/ Insured will bear a specified percentage of the admissible claims amount. A co-payment does not reduce the Sum Insured."
+  },
+  {
+   "id": "9",
+   "title": "Day Care Centre",
+   "page": 2,
+   "text": "9. Day Care Centre means any institution established for day care treatment of illness and/or injuries or a medical set-up within a hospital and which has been registered with the local authorities, wherever applicable, and is under the supervision of a registered and qualified medical practitioner AND must comply with all minimum criteria as under: i. Has qualified nursing staff under its employment ii. Has qualified Medical Practitioner(s) in charge iii. Has a fully equipped operation theatre of its own where surgical procedures are carried out; iv. Maintains daily records of patients and will make these accessible to the Insurance Company’s authorized personnel."
+  },
+  {
+   "id": "10",
+   "title": "Day Care Treatment",
+   "page": 2,
+   "text": "10. Day Care Treatment means medical treatment, and/or surgical procedure which is: i. undertaken under general or local anesthesia in a hospital/Day Care Centre in less than twenty-four hours because of technological advancement, and ii. which would have otherwise required hospitalisation of more than twenty-four hours. Treatment normally taken on an out-patient basis is not included in the scope of this definition"
+  },
+  {
+   "id": "11",
+   "title": "Deductible",
+   "page": 2,
+   "text": "11. Deductible is a cost sharing requirement under a Health Insurance Policy that provides that the Insurer will not be liable for a specified rupee amount in case of Indemnity policies and for a specified number of days/hours in case of hospital cash policies which will apply before any benefits are payable by the Insurer. A deductible does not reduce the sum insured."
+  },
+  {
+   "id": "12",
+   "title": "Dental Treatment",
+   "page": 2,
+   "text": "12. Dental Treatment means a treatment related to teeth or structures supporting teeth including examinations, fillings (where appropriate), crowns, extractions and surgery."
+  },
+  {
+   "id": "C3.17",
+   "title": "",
+   "page": 3,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "3#2",
+   "title": "| P a g e",
+   "page": 3,
+   "text": "3 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324"
+  },
+  {
+   "id": "13",
+   "title": "Domiciliary Hospitalisation",
+   "page": 3,
+   "text": "13. Domiciliary Hospitalisation means medical treatment for an Illness/Disease/Injury which in the normal course would require care and treatment at a hospital but is actually taken while confined at home under any of the following circumstances: i. the condition of the patient is such that he/she is not in a condition to be removed to a hospital, or ii. the patient takes treatment at home on account of the non-availability of room in a hospital."
+  },
+  {
+   "id": "14",
+   "title": "Emergency Care",
+   "page": 3,
+   "text": "14. Emergency Care means management for an illness or injury which results in symptoms which occur suddenly and unexpectedly, and requires immediate care by a medical practitioner to prevent death or serious long-term impairment of the Insured person’s health."
+  },
+  {
+   "id": "15",
+   "title": "Grace Period",
+   "page": 3,
+   "text": "15. Grace Period means the specified period of time immediately following the premium due date during which a payment can be made to renew or continue a policy in force without loss of continuity benefits such as waiting periods and coverage of pre- existing diseases. Coverage is not available for the period for which no premium is received."
+  },
+  {
+   "id": "16",
+   "title": "Hospital/Nursing Home",
+   "page": 3,
+   "text": "16. Hospital/Nursing Home means any institution established for in-patient care and day care treatment of illness and/or injuries and which has been registered as a Hospital with the local authorities under the Clinical Establishments (Registration and Regulation) Act, 2010 or under the enactments specified under the Schedule of Section 56(1) of the said Act OR complies with all minimum criteria as under: i. Has qualified nursing staff under its employment round the clock ii. Has at least 10 in-patient beds in towns having a population of less than 10 lacs and at least 15 in-patient beds in all other places; iii. Has qualified Medical Practitioner(s) in charge round the clock; iv. Has a fully equipped Operation Theatre of its own where surgical procedures are carried out; v. Maintains daily records of patients and makes these accessible to the insurance company’s authorized personnel"
+  },
+  {
+   "id": "17",
+   "title": "Hospitalisation",
+   "page": 3,
+   "text": "17. Hospitalisation means admission in a Hospital/Nursing Home for a minimum period of 24 Inpatient care consecutive hours except for the standard day care procedures/treatments as defined above, where such admission could be for a period of less than 24 consecutive hours."
+  },
+  {
+   "id": "18",
+   "title": "Illness",
+   "page": 3,
+   "text": "18. Illness means a sickness or a disease or pathological condition leading to the impairment of normal physiological function and requires medical treatment. i. Acute Condition - Acute condition is a disease, illness or injury that is likely to respond quickly to treatment which aims to return the person to his or her state of health immediately before suffering the disease/ illness/ injury which leads to full recovery. ii. Chronic Condition – A chronic condition is defined as a disease, illness, or injury that has one or more of the following characteristics: a. it needs ongoing or long-term monitoring through consultations, examinations, check-ups, and /or tests b. it needs ongoing or long-term control or relief of symptoms c. it requires rehabilitation for the patient or for the patient to be specially trained to cope with it d. it continues indefinitely e. it recurs or is likely to recur."
+  },
+  {
+   "id": "19",
+   "title": "Injury",
+   "page": 3,
+   "text": "19. Injury means accidental physical bodily harm excluding illness or disease solely and directly caused by external, violent, visible and evident means which is verified and certified by a Medical Practitioner."
+  },
+  {
+   "id": "20",
+   "title": "In-Patient Care",
+   "page": 3,
+   "text": "20. In-Patient Care means treatment for which the insured person has to stay in a hospital for more than 24 hours for a covered event."
+  },
+  {
+   "id": "21",
+   "title": "Intensive Care Unit",
+   "page": 3,
+   "text": "21. Intensive Care Unit means an identified section, ward or wing of a hospital which is under the constant supervision of a dedicated Medical Practitioner(s), and which is specially equipped for the continuous monitoring and treatment of patients who are in a critical condition, or require life support facilities and where the level of care and supervision is considerably more sophisticated and intensive than in the ordinary and other wards."
+  },
+  {
+   "id": "C4.28",
+   "title": "",
+   "page": 4,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "4#2",
+   "title": "| P a g e",
+   "page": 4,
+   "text": "4 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324"
+  },
+  {
+   "id": "22",
+   "title": "Intensive Care Unit (ICU) Charges",
+   "page": 4,
+   "text": "22. Intensive Care Unit (ICU) Charges means the amount charged by a Hospital towards ICU expenses which shall include the expenses for ICU bed, general medical support services provided to any ICU patient including monitoring devices, critical care nursing and intensivist charges."
+  },
+  {
+   "id": "23",
+   "title": "Maternity Expenses",
+   "page": 4,
+   "text": "23. Maternity Expenses Means: i. medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization); ii. expenses towards lawful medical termination of pregnancy during the policy period."
+  },
+  {
+   "id": "24",
+   "title": "Medical Advice",
+   "page": 4,
+   "text": "24. Medical Advice means any consultation or advice from a Medical Practitioner including the issuance of any prescription or follow-up prescription."
+  },
+  {
+   "id": "25",
+   "title": "Medical Expenses",
+   "page": 4,
+   "text": "25. Medical Expenses means those expenses that an Insured Person has necessarily and actually incurred for medical treatment on account of illness or Accident on the advice of a Medical Practitioner, as long as these are no more than would have been payable if the Insured Person had not been insured and no more than other hospitals or doctors in the same locality would have charged for the same medical treatment."
+  },
+  {
+   "id": "26",
+   "title": "Medically Necessary Treatment",
+   "page": 4,
+   "text": "26. Medically Necessary Treatment means any treatment, tests, medication, or stay in hospital or part of a stay in hospital which: i. is required for the medical management of the illness or injury suffered by the Insured; ii. must not exceed the level of care necessary to provide safe, adequate and appropriate medical care in scope, duration, or intensity; iii. must have been prescribed by a medical practitioner; iv. must conform to the professional standards widely accepted in international medical practice or by the medical community in India."
+  },
+  {
+   "id": "27",
+   "title": "Medical Practitioner",
+   "page": 4,
+   "text": "27. Medical Practitioner means a person who holds a valid registration from the Medical Council of any State or Medical Council of India or Council for Indian Medicine or for Homeopathy set up by the Government of India or a State Government and is thereby entitled to practice medicine within its jurisdiction; and is acting within its scope and jurisdiction of license. The term Medical Practitioner would include Physician, Specialist and Surgeon. The Registered Medical Practitioner should not be the Insured or any member of his family including parents and in-laws."
+  },
+  {
+   "id": "28",
+   "title": "Migration",
+   "page": 4,
+   "text": "28. Migration means the right accorded to health insurance policyholders (including all members under family cover and members of group health insurance policy), to transfer the credit gained for pre-existing conditions and time-bound exclusions, with the same insurer."
+  },
+  {
+   "id": "29",
+   "title": "Network Provider",
+   "page": 4,
+   "text": "29. Network Provider means hospitals or health care providers enlisted by an insurer, TPA or jointly by an Insurer and TPA to provide medical services to an insured by a cashless facility."
+  },
+  {
+   "id": "30",
+   "title": "New Born Baby",
+   "page": 4,
+   "text": "30. New Born Baby means baby born during the Policy Period and is aged up to 90 days."
+  },
+  {
+   "id": "31",
+   "title": "Non-Network Provider",
+   "page": 4,
+   "text": "31. Non-Network Provider means any hospital, day care centre or other provider that is not part of the network."
+  },
+  {
+   "id": "32",
+   "title": "Notification Of Claim",
+   "page": 4,
+   "text": "32. Notification Of Claim means the process of intimating a claim to the insurer or TPA through any of the recognized modes of communication."
+  },
+  {
+   "id": "33",
+   "title": "Out-Patient (OPD) Treatment",
+   "page": 4,
+   "text": "33. Out-Patient (OPD) Treatment means the one in which the Insured visits a clinic / hospital or associated facility like a consultation room for diagnosis and treatment based on the advice of a Medical Practitioner. The Insured is not admitted as a day care or in-patient."
+  },
+  {
+   "id": "C5.42",
+   "title": "",
+   "page": 5,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "5#2",
+   "title": "| P a g e",
+   "page": 5,
+   "text": "5 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324"
+  },
+  {
+   "id": "34",
+   "title": "Portability",
+   "page": 5,
+   "text": "34. Portability means the right accorded to individual health insurance policyholders (including all members under family cover), to transfer the credit gained for pre-existing conditions and time-bound exclusions, from one insurer to another insurer."
+  },
+  {
+   "id": "35",
+   "title": "Pre-Existing Disease",
+   "page": 5,
+   "text": "35. Pre-Existing Disease means any condition, ailment, injury or disease: i. That is/are diagnosed by a physician within 48 months prior to the effective date of the policy issued by the insurer or ii. For which medical advice or treatment was recommended by, or received from, a physician within 48 months prior to the effective date of the policy or its reinstatement."
+  },
+  {
+   "id": "36",
+   "title": "Pre-Hospitalisation Medical Expenses",
+   "page": 5,
+   "text": "36. Pre-Hospitalisation Medical Expenses means medical expenses incurred during pre-defined number of days preceding the hospitalisation of the Insured Person provided that: i. Such Medical expenses are incurred for the same condition for which the Insured Person’s Hospitalisation was required, and ii. The In-patient Hospitalisation claim for such Hospitalisation is admissible by Us."
+  },
+  {
+   "id": "37",
+   "title": "Post-Hospitalisation Medical Expenses",
+   "page": 5,
+   "text": "37. Post-Hospitalisation Medical Expenses means medical expenses incurred during pre-defined number of days immediately after the Insured Person is discharged from the hospital provided that: i. Such Medical expenses are incurred for the same condition for which the Insured Person’s Hospitalisation was required, and ii. The In-patient Hospitalisation claim for such Hospitalisation is admissible by Us."
+  },
+  {
+   "id": "38",
+   "title": "Qualified Nurse",
+   "page": 5,
+   "text": "38. Qualified Nurse means a person who holds a valid registration from the Nursing Council of India or the Nursing Council of any state in India."
+  },
+  {
+   "id": "39",
+   "title": "Reasonable And Customary Charges",
+   "page": 5,
+   "text": "39. Reasonable And Customary Charges mean the charges for services or supplies, which are the standard charges for the specific provider and consistent with the prevailing charges in the geographical area for identical or similar services, taking into account the nature of illness/injury involved."
+  },
+  {
+   "id": "40",
+   "title": "Renewal",
+   "page": 5,
+   "text": "40. Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of a grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods."
+  },
+  {
+   "id": "41",
+   "title": "Room Rent",
+   "page": 5,
+   "text": "41. Room Rent means the amount charged by a Hospital towards room and boarding expenses and shall include the Associated Medical Expenses."
+  },
+  {
+   "id": "42",
+   "title": "Surgery Or Surgical Procedure",
+   "page": 5,
+   "text": "42. Surgery Or Surgical Procedure means manual and/or operative procedure(s) required for treatment of an illness or injury, correction of deformities and defects, diagnosis and cure of diseases, relief from suffering and prolongation of life, performed in a hospital or day care centre by a medical practitioner."
+  },
+  {
+   "id": "43",
+   "title": "Third-Party Administrator (TPA)",
+   "page": 5,
+   "text": "43. Third-Party Administrator (TPA) means a company registered under the IRDAI (Third Party Administrators – Health Services) Regulations, 2016 notified by the Authority, and is engaged, for a fee or remuneration by an insurance company, for the purpose of providing health services as defined in the regulations."
+  },
+  {
+   "id": "44",
+   "title": "Unproven/Experimental Treatment",
+   "page": 5,
+   "text": "44. Unproven/Experimental Treatment means the treatment including drug experimental therapy which is not based on established medical practice in India, is treatment experimental or unproven."
+  },
+  {
+   "id": "C6.55",
+   "title": "",
+   "page": 6,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "6#2",
+   "title": "| P a g e",
+   "page": 6,
+   "text": "6 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 B. Specific Definitions"
+  },
+  {
+   "id": "1#3",
+   "title": "Age",
+   "page": 6,
+   "text": "1. Age means completed age in years on the Policy Commencement Date."
+  },
+  {
+   "id": "2#3",
+   "title": "Associated Medical Expenses",
+   "page": 6,
+   "text": "2. Associated Medical Expenses means hospitalisation-related expenses on Surgeon, Anesthetist, Medical Practitioner, Consultants and Specialist Fees (whether paid directly to the treating doctor/surgeon or to the hospital), Anesthetics, Blood, Oxygen, Operation Theatre Charges, Surgical Appliances and such other similar expenses which vary based on the room category occupied by the Insured Person whilst undergoing treatment in a hospital. Such Associated Medical expenses do not include: i. cost of pharmacy and consumables medicines ii. cost of implants/medical devices iii. cost of diagnostics The scope of this definition is limited to admissible claims where a proportionate deduction is applicable."
+  },
+  {
+   "id": "3#3",
+   "title": "AYUSH Treatment",
+   "page": 6,
+   "text": "3. AYUSH Treatment means hospitalisation treatment given under Ayurveda, Yoga, Naturopathy, Unani, Siddha and Homeopathy systems."
+  },
+  {
+   "id": "4#3",
+   "title": "Break in policy",
+   "page": 6,
+   "text": "4. Break in policy means the period of gap that occurs at the end of the existing policy term, when the premium due for renewal on a given policy is not paid on or before the premium renewal date or within 30 days thereof."
+  },
+  {
+   "id": "5#3",
+   "title": "Cancellation",
+   "page": 6,
+   "text": "5. Cancellation defines the terms on which the policy contract can be terminated either by the Insurer or the Insured person by giving sufficient notice to the other which is not lower than a period of fifteen days."
+  },
+  {
+   "id": "6#3",
+   "title": "Continuous Coverage",
+   "page": 6,
+   "text": "6. Continuous Coverage means uninterrupted coverage of the Insured Person under the Health Insurance Policy from the date of inception of policy for the first time as mentioned in the policy schedule. However, for the purpose of applying waiting periods, the break in insurance period for which the premium was not received shall be excluded from it."
+  },
+  {
+   "id": "7#2",
+   "title": "Family",
+   "page": 6,
+   "text": "7. Family means the persons named in the Policy Schedule who are the Insured Person, his/her legal spouse, Dependent Children."
+  },
+  {
+   "id": "8#2",
+   "title": "Insured Person",
+   "page": 6,
+   "text": "8. Insured Person means person(s) named in the schedule of the Policy."
+  },
+  {
+   "id": "9#2",
+   "title": "Material Fact",
+   "page": 6,
+   "text": "9. Material Fact means all relevant information sought by the Company in the Proposal Form and other connected documents to enable it to take an informed decision in the context of underwriting the risk."
+  },
+  {
+   "id": "10#2",
+   "title": "Nominee",
+   "page": 6,
+   "text": "10. Nominee means the person named in the Policy Schedule, Policy certificate and/or endorsement (if any) who is nominated by the Policy Holder/Insured Person, to receive the benefits under this Policy as per the terms of the Policy if the Insured Person deceases."
+  },
+  {
+   "id": "11#2",
+   "title": "Organ Donor",
+   "page": 6,
+   "text": "11. Organ Donor means any person whose organ has been made available in accordance and compliance with The Transplantation of Human Organs (Amendment) Act, 1994 and relevant rules and amendments thereof. The donated organ must be for the use of the Insured Person."
+  },
+  {
+   "id": "12#2",
+   "title": "Policy",
+   "page": 6,
+   "text": "12. Policy means these Policy wordings, the Policy Schedule and any applicable endorsements or extensions attaching to and/or forming part thereof. The Policy contains details of the benefits, exclusions, and applicable terms & conditions."
+  },
+  {
+   "id": "13#2",
+   "title": "Policy Period",
+   "page": 6,
+   "text": "13. Policy Period means the period for which this policy is taken and is in force as specified in the Schedule."
+  },
+  {
+   "id": "C7.70",
+   "title": "",
+   "page": 7,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "7#3",
+   "title": "| P a g e",
+   "page": 7,
+   "text": "7 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324"
+  },
+  {
+   "id": "14#2",
+   "title": "Preferred Provider Network (PPN):",
+   "page": 7,
+   "text": "14. Preferred Provider Network (PPN): means a network of hospitals which have agreed to a cashless packaged pricing for certain procedures for the Insured Person. The updated list of network providers/PPN is available on our website (https://uiic.co.in/en/tpa-ppn- network-hospitals) and the website of the TPA mentioned in the schedule and is subject to amendment from time to time."
+  },
+  {
+   "id": "15#2",
+   "title": "Proposal Form",
+   "page": 7,
+   "text": "15. Proposal Form means the form to be filled in by the prospect in written or electronic or any other format as requested by the Company and approved by the IRDAI, for furnishing all material information as required by the Insurer, to: i. Enable the Insurer to take an informed decision in the context of underwriting the risk ii. And in the event of acceptance of the risk, to determine the rates, benefits, terms and conditions of the cover to be granted."
+  },
+  {
+   "id": "16#2",
+   "title": "Single Occupancy Standard Air-Conditioned Room",
+   "page": 7,
+   "text": "16. Single Occupancy Standard Air-Conditioned Room means an individual air-conditioned room for accommodating a single patient with attached wash room. This room may have a television, telephone, and a couch. Such room must be the most economical of all such air-conditioned accommodations available in that hospital as single occupancy. This does not include deluxe room / suite or room with additional facilities other than those stated herein."
+  },
+  {
+   "id": "17#2",
+   "title": "Sub-Limit",
+   "page": 7,
+   "text": "17. Sub-Limit means a cost sharing requirement under a health insurance policy in which an Insurer would not be liable to pay any amount in excess of the pre-defined limit."
+  },
+  {
+   "id": "18#2",
+   "title": "Sum Insured",
+   "page": 7,
+   "text": "18. Sum Insured means the pre-defined limit specified in the Policy Schedule."
+  },
+  {
+   "id": "19#2",
+   "title": "Total Sum Insured",
+   "page": 7,
+   "text": "19. Total Sum Insured means the aggregate limit of Indemnity which consists of the Sum Insured and Restored Sum Insured. It represents Our maximum, total, and cumulative liability for any and all claims made under the Policy, in respect of that Insured Person(s) (on Individual Sum Insured basis) or for all Insured Persons (on Family Floater basis) during the policy period."
+  },
+  {
+   "id": "20#2",
+   "title": "Waiting Period",
+   "page": 7,
+   "text": "20. Waiting Period means a period from the inception of this Policy during which specified diseases/treatments are not covered. On completion of the period, diseases/treatments shall be covered provided the Policy has been continuously renewed without any break."
+  },
+  {
+   "id": "21#2",
+   "title": "We/Our/Us/Company/Insurer",
+   "page": 7,
+   "text": "21. We/Our/Us/Company/Insurer means United India Insurance Company Limited."
+  },
+  {
+   "id": "22#2",
+   "title": "You/Your",
+   "page": 7,
+   "text": "22. You/Your means the person who has taken this Policy and is shown as Insured Person or the first Insured Person (if more than one person covered in the policy) in the Schedule. III. BENEFITS COVERED The coverages available under this Policy are described below. A. Base Covers The Policy provides base coverage as described below in this section provided that the expenses are incurred on the written Medical Advice of a Medical Practitioner and are incurred on Medically Necessary Treatment of the Insured Person."
+  },
+  {
+   "id": "1#4",
+   "title": "In-patient Hospitalisation Expenses Cover",
+   "page": 7,
+   "text": "1. In-patient Hospitalisation Expenses Cover We will pay the Reasonable and Customary Charges for the following Medical Expenses of an Insured Person in case of Medically Necessary Treatment taken during Hospitalisation provided that the admission date of the Hospitalisation due to Illness or Injury is within the Policy Period: i. Room, Boarding and Nursing expenses (all inclusive) incurred as provided by the Hospital/Nursing Home up to the limits provided below: Sum Insured Limit (Rs.) per day < Rs. 5 Lacs 1% of Sum Insured"
+  },
+  {
+   "id": "C8.82",
+   "title": "",
+   "page": 8,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "8#3",
+   "title": "| P a g e",
+   "page": 8,
+   "text": "8 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 Rs. 5 Lacs and Above 1% of Sum Insured or Single Occupancy Standard AC Room Charges whichever is higher These expenses will include nursing care, RMO charges, patient’s diet charges, IV Fluids/Blood transfusion/injection administration charges and similar expenses. ii. Charges for accommodation in Intensive Care Unit (ICU)/ Intensive Cardiac Care Unit (ICCU) up to the limits provided below: Sum Insured Limit (Rs.) per day < Rs. 5 Lacs 2% of Sum Insured Rs. 5 Lacs and Above Actuals iii. The fees charged by the Medical Practitioner, Surgeon, Specialists, and anesthetists treating the Insured Person; iv. Operation theatre charges, v. Anesthesia, Blood, Oxygen, Surgical Appliances and/ or Medical Appliances, medicines and drugs, Cost of Artificial Limbs, cost of prosthetic devices implanted during surgical procedure like pacemaker, orthopedic implants, infra cardiac valve replacements, vascular stents, relevant laboratory/ diagnostic tests, X-Ray, dialysis, chemotherapy, radiotherapy, and such other similar medical expenses related to the treatment."
+  },
+  {
+   "id": "1.1",
+   "title": "Note:",
+   "page": 8,
+   "text": "1.1 Note: i. PROPORTIONATE PAYMENT CLAUSE: In case of admission to a room at rates exceeding the aforesaid limits in clause III.A.1.i, the reimbursement/payment of all associated medical expenses incurred at the Hospital shall be effected in the same proportion as the admissible rate per day bears to the actual rate per day of Room Rent. Proportionate Deductions shall not be applied in respect of those hospitals where differential billing is not followed or for those expenses where differential billing is not adopted based on the room category. ii. No payment shall be made under clause III.A.1.iii other than as part of the hospitalisation bill. However, the bills raised by Surgeon, Anesthetist directly and not forming part of the hospital bill shall be paid provided a pre- numbered bill/receipt is produced in support thereof, when such payment is made ONLY by cheque/ credit card/debit card or digital/online transfer. iii. All Day Care treatments as per definition of Clause II.A.10 are covered."
+  },
+  {
+   "id": "1.2",
+   "title": "Sub-limit:",
+   "page": 8,
+   "text": "1.2 Sub-limit: a) Cataract Surgery Limit: Expenses in respect of the Cataract surgeries will be restricted to 10% of Sum Insured subject to maximum of Rs. 50,000/- per eye. This limit is applicable per hospitalisation / surgery. b) Mental Illness Cover Limit: In case of following mental illnesses, the actual In-patient Hospitalization expenses will be covered up to 25% of Sum Insured subject to a maximum of Rs. 3,00,000 per policy period; a. Schizophrenia (ICD - F20; F21; F25) b. Bipolar Affective Disorders (ICD - F31; F34) c. Depression (ICD - F32; F33) d. Obsessive Compulsive Disorders (ICD - F42; F60.5) e. Psychosis (ICD - F22; F23; F28; F29)"
+  },
+  {
+   "id": "2#4",
+   "title": "Pre-Hospitalisation and Post-Hospitalisation Expenses –",
+   "page": 8,
+   "text": "2. Pre-Hospitalisation and Post-Hospitalisation Expenses – We will cover, on a reimbursement basis, the Insured Person’s i. Pre-hospitalisation Medical Expenses incurred due to an Illness or Injury during the period up to 30 days prior to hospitalisation; and ii. Post- hospitalisation Medical Expenses incurred due to an Illness or Injury during the period up to 60 days after the discharge from the hospital, Subject to a maximum of 10% of Sum Insured for Pre- and Post-Hospitalisation combined, provided that: a. We have accepted a claim for primary In-patient Hospitalization under Clause III.A.1 above. b. The Pre-hospitalisation and Post-hospitalisation Medical Expenses are related to the same Illness or Injury."
+  },
+  {
+   "id": "3#4",
+   "title": "Donor Expenses Cover",
+   "page": 8,
+   "text": "3. Donor Expenses Cover We will cover the In-patient Hospitalization Medical Expenses incurred for an organ donor’s treatment during the Policy Period for the harvesting of the organ donated provided that: i. The donation conforms to The Transplantation of Human Organs Act 1994 and the organ is for the use of the Insured Person;"
+  },
+  {
+   "id": "C9.88",
+   "title": "",
+   "page": 9,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "9#3",
+   "title": "| P a g e",
+   "page": 9,
+   "text": "9 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 ii. We have admitted a claim towards In-patient Hospitalisation under Clause III.A.1 and it is related to the same condition; organ donated is for the use of the Insured Person as certified in writing by a Medical Practitioner; iii. We will not cover: a. Pre-hospitalization Medical Expenses or Post-hospitalisation Medical Expenses of the organ donor; b. Screening expenses of the organ donor; c. Costs directly or indirectly associated with the acquisition of the donor’s organ; d. Transplant of any organ/tissue where the transplant is experimental or investigational; e. Expenses related to organ transportation or preservation; f. Any other medical treatment or complication in respect of the donor, consequent to harvesting."
+  },
+  {
+   "id": "4#4",
+   "title": "Restoration of Sum Insured",
+   "page": 9,
+   "text": "4. Restoration of Sum Insured If the Sum Insured is exhausted completely or partially due to claims made and paid/accepted as payable during the Policy Period, then it is agreed that a Restored Sum Insured equal to 100% of the Sum Insured will be automatically and instantly available for the particular Policy Period, provided that: i. In case of policies on Individual Sum Insured basis, the Restored sum insured will be available only once to each Insured Person individually in a Policy Period. ii. In case of policies of Family Floater basis, the Restored Sum Insured will be available only once to the whole family on floater basis during a Policy Period. iii. Such restored Sum Insured can be utilized only for illness / disease unrelated to the illness(es) / disease(s) for which claim(s) was / were made for the same insured person. iv. The maximum liability for a claim in a Policy Year cannot exceed the Sum Insured. v. If the Restored Sum Insured is not utilized in a Policy Period, it shall not be carried forward to any subsequent Policy Period. Note: i. Restoration of Sum Insured is available only for Sum Insured options from Rs. 3 lakhs and above. ii. The payment from the Restored Sum Insured will be done only after exhaustion of the Sum Insured."
+  },
+  {
+   "id": "5#4",
+   "title": "Modern Treatment Methods & Advancement in Technologies:",
+   "page": 9,
+   "text": "5. Modern Treatment Methods & Advancement in Technologies: In case of an admissible claim under Clause III.A.1, expenses incurred on the following procedures (wherever medically indicated) shall be covered. i. Uterine Artery Embolization and HIFU (High Intensity focused ultrasound) ii. Balloon Sinuplasty iii. Deep Brain Stimulation iv. Oral Chemotherapy v. Immunotherapy - Monoclonal Antibody to be given as an injection vi. Intra-vitreal injections vii. Robotic Surgeries viii. Stereotactic Radio Surgeries ix. Bronchial Thermoplasty x. Vaporization of the Prostrate (Green Laser Treatment or Holmium Laser Treatment) xi. IONM - (Intra Operative Neuro Monitoring) xii. Stem Cell Therapy; Hematopoietic stem cells for bone marrow transplant for hematological conditions to be covered Note: The claims under Clause III.A.5.iv (Oral Chemotherapy) and III.A.5. v (Immunotherapy-Monoclonal Antibody to be given as injection) shall be treated as post-Hospitalisation claim(s). However, the time and monetary limits as mentioned in Clause III.A.2 above shall not be applied."
+  },
+  {
+   "id": "6#4",
+   "title": "Road Ambulance Cover",
+   "page": 9,
+   "text": "6. Road Ambulance Cover We will cover the costs incurred up to: i."
+  },
+  {
+   "id": "0",
+   "title": "5% of the Sum Insured subject to a maximum of Rs. 2,500 per event and",
+   "page": 9,
+   "text": "0.5% of the Sum Insured subject to a maximum of Rs. 2,500 per event and ii. 1% of the Sum Insured subject to a maximum of Rs. 5,000 per policy period on transportation of the Insured Person by road Ambulance to a Hospital for treatment in an Emergency following an Illness or Injury which occurs during the Policy Period. The necessity of use of an Ambulance must be certified by the treating Medical Practitioner and becomes payable if a claim has been admitted under Clause III.A.1 and the expenses are related to the same Illness or Injury. We will also cover the costs incurred on transportation of the Insured Person by road Ambulance in the following circumstances up to the limits specified above under this cover, if:"
+  },
+  {
+   "id": "C10.94",
+   "title": "",
+   "page": 10,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "10#3",
+   "title": "| P a g e",
+   "page": 10,
+   "text": "10 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 a. it is medically required to transfer the Insured Person to another Hospital or diagnostic Centre during the course of Hospitalization for advanced diagnostic treatment in circumstances where such facility is not available in the existing Hospital; b. it is medically required to transfer the Insured Person to another Hospital during the course of Hospitalization due to lack of super specialty treatment in the existing Hospital."
+  },
+  {
+   "id": "7#4",
+   "title": "Cost of Health Check-up",
+   "page": 10,
+   "text": "7. Cost of Health Check-up Expenses incurred towards cost of health check-up up to 1% of average Sum Insured of preceding 3 policy years, subject to a maximum of Rs. 5,000 per person for policies issued on individual sum insured basis/ Rs. 10,000 per policy period for policies issued on family floater basis for a block of every three claim-free years provided the health check-up is done at hospitals/diagnostic Centre authorised by us within a year from the date when it got due and the policy is in force. Payment under this benefit does not reduce the Total Sum Insured. In case of the policy on family floater basis, if a claim is made by any of the Insured Persons, the health check-up benefits will not be available under the policy. Note: Payment of expenses towards cost of health check-up will not prejudice the company's right to deal with a claim in case of non-disclosure of material fact and /or Pre-Existing Diseases in terms of the policy."
+  },
+  {
+   "id": "8#4",
+   "title": "Organ Donor Benefit- When Insured Person is the Donor",
+   "page": 10,
+   "text": "8. Organ Donor Benefit- When Insured Person is the Donor A lump sum payment of 10% of Sum Insured, to take care of medical and other incidental expenses is payable to the Insured Person donating an organ provided that the donation conforms to the Transplantation of Human Organs Act"
+  },
+  {
+   "id": "1994",
+   "title": "(amended) and any other extant Act, Central / State Rules / regulations, as applicable, in respect of",
+   "page": 10,
+   "text": "1994 (amended) and any other extant Act, Central / State Rules / regulations, as applicable, in respect of transplantation of human organs. This benefit is subject to the Policy (Family Medicare Policy) having been continuously in force for at least 12 (twelve) months in respect of that Insured Person. B. Optional Covers:"
+  },
+  {
+   "id": "1#5",
+   "title": "Maternity Expenses and New Born Baby Cover",
+   "page": 10,
+   "text": "1. Maternity Expenses and New Born Baby Cover a. Maternity Expenses We shall pay the Medical Expenses incurred as an In-patient for a delivery (including caesarean section) or lawful medical termination of pregnancy during the Policy Period limited to two deliveries or terminations or either during the lifetime of the Insured Person. This benefit is applicable only when the Sum Insured is above Rs. 3 Lacs, and available only to the Insured or his spouse, provided that: i. Family Medicare Policy with this optional cover has been continuously in force for a period of minimum 24 months. ii. Those Insured Persons who are already having two or more living children will not be eligible for this benefit. iii. Company’s maximum liability per delivery or termination shall be limited to 10% of the Sum Insured as stated in the Schedule subject to a maximum of Rs. 40,000 in case of normal delivery and Rs. 60,000 in case of caesarean section and in no case shall the Company’s liability under this clause exceed 10% of the Sum Insured, in any one Policy Period. b. New Born Baby Cover New born Baby shall be covered from day one up to the age of 90 days and expenses incurred for treatment taken in Hospital as in-patient shall only be payable, provided that: i. Claim under Maternity Expenses under Clause III.B.1.a is admissible under the Policy ii. Company’s liability shall be limited to 10% of the Sum Insured as stated in the Schedule. iii. In case the 90-days period for the New Born Baby is spread over two Policy Periods, the aggregate liability of the Company, for all claims in respect of the New Born Baby, shall be limited to 10% of the Sum Insured of the Policy under which Maternity claim was admitted. Special conditions applicable to Maternity Expenses and New Born Baby Cover i. These benefits are admissible only if the expenses are incurred in Hospital/Nursing Home as in-patients in India. ii. Surrogate or vicarious pregnancy is not covered. iii. Expenses incurred in connection with voluntary medical termination of pregnancy during the first twelve weeks from the date of conception are not covered. iv. Pre-natal and post-natal expenses are not covered unless admitted in Hospital/Nursing Home and treatment is taken there. v. Pre-Hospitalisation and Post-Hospitalisation benefits are not available under clauses III.B.1.a and III.B.1.b."
+  },
+  {
+   "id": "C11.100",
+   "title": "",
+   "page": 11,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "11#3",
+   "title": "| P a g e",
+   "page": 11,
+   "text": "11 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 vi. Subject to the terms & conditions, the Policy covers New Born Baby beyond 90 days only on payment of requisite premium. vii. If this Option is in force in respect of the Insured Person, a) The relevant part of clause IV.A.18 will be deemed inoperative. b) The waiting period for “Internal Congenital Anomaly” from Table A of Clause IV.A.2 will be deemed inoperative for the New Born Baby throughout the time such baby is continuously covered under this product."
+  },
+  {
+   "id": "2#5",
+   "title": "Daily Cash Allowance on Hospitalisation",
+   "page": 11,
+   "text": "2. Daily Cash Allowance on Hospitalisation We will pay Daily Cash Allowance to the Insured Person for every continuous and completed period of 24 hours of Hospitalisation, subject to the hospitalisation claim being admissible under the policy, as per the table below: The aggregate of Daily Cash Allowance during the policy period shall not exceed ‘per policy period limits’ as mentioned in the table above. Daily Cash Allowance will not be payable for Day Care Treatment claims. Deductible equivalent to Daily Cash Allowance for the first 24 hours Hospitalization will be levied on each Hospitalisation during the Policy Period. IV. EXCLUSIONS A. Waiting Periods The Company shall not be liable to make any payment under the policy in connection with or in respect of the following expenses till the expiry of waiting period mentioned below:"
+  },
+  {
+   "id": "1#6",
+   "title": "Pre-Existing Diseases (Code – Excl01)",
+   "page": 11,
+   "text": "1. Pre-Existing Diseases (Code – Excl01) i. Expenses related to the treatment of a pre-existing disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with us. ii. In case of enhancement of the Sum Insured, the exclusion shall apply afresh to the extent of the Sum Insured increase. iii. If the Insured Person is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations, then the waiting period for the same would be reduced to the extent of prior coverage. iv. Coverage under the policy after the expiry of 48 months for any pre-existing disease is subject to the same being declared at the time of application and accepted by us."
+  },
+  {
+   "id": "2#6",
+   "title": "Specified Disease/Procedure Waiting Period (Code – Excl02)",
+   "page": 11,
+   "text": "2. Specified Disease/Procedure Waiting Period (Code – Excl02) i. Expenses related to the treatment of the listed Conditions, surgeries/treatments as per Table A and Table B below, shall be excluded until the expiry of 24 months and 48 months respectively of continuous coverage after the date of inception of the first policy with us. This exclusion shall not be applicable for claims arising due to an accident. ii. In case of enhancement of the sum insured the exclusion shall apply afresh to the extent of the sum insured increase. iii. If any of the specified disease/procedure falls under the waiting period specified for Pre-Existing diseases, then the longer of the two waiting periods shall apply. iv. The waiting period for listed conditions shall apply even if contracted after the policy or declared and accepted without a specific exclusion. v. If the Insured Person is continuously covered without any break as defined under the applicable norms on portability stipulated by IRDAI, then the waiting period for the same would be reduced to the extent of prior coverage. vi. List of specific diseases/procedures: Table A. Two years waiting period Non infective Arthritis Piles, Fissures and Fistula-in-ano; Pilonidal sinus Benign ENT disorders Prolapse intervertebral Disc and Spinal Diseases unless arising from Accident Benign prostatic hypertrophy Benign Skin Disorders Sum Insured Limit (Rs.) per day Up to Rs. 5 Lacs Rs. 500 per day subject to a maximum of Rs. 5,000 per policy period Above Rs. 5 Lacs and up to Rs. 15 Lacs Rs. 1,000 per day subject to a maximum of Rs. 10,000 per policy period Above Rs. 15 Lacs and up to Rs. 25 Lacs Rs. 2,000 per day subject to a maximum of Rs. 20,000 per policy period"
+  },
+  {
+   "id": "C12.105",
+   "title": "",
+   "page": 12,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "12#3",
+   "title": "| P a g e",
+   "page": 12,
+   "text": "12 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 Cataract Calculus diseases Acid Peptic diseases Treatment for Menorrhagia/Fibromyoma, Myoma and Prolapse of uterus Gout and Rheumatism Any treatment for varicose veins and ulcers including surgical intervention Hernia of all types Polycystic ovarian disease Hydrocele Internal Congenital Anomaly All internal and external benign tumors, cysts, polyps of any kind, including benign breast lumps Table B. Four years waiting period Joint Replacement due to Degenerative condition, unless necessitated due to an accident. Age-related Osteoarthritis & Osteoporosis Age-related Macular Degeneration (ARMD) Named Mental Illnesses: Schizophrenia (ICD - F20; F21; F25) Bipolar Affective Disorders (ICD - F31; F34) Depression (ICD - F32; F33) Obsessive Compulsive Disorders (ICD - F42; F60.5) Psychosis (ICD - F22; F23; F28; F29) All Neurodegenerative disorders"
+  },
+  {
+   "id": "3#5",
+   "title": "30-Day Waiting Period (Code – Excl03)",
+   "page": 12,
+   "text": "3. 30-Day Waiting Period (Code – Excl03) i. Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. ii. This exclusion shall not, however, apply if the Insured Person has Continuous Coverage for more than twelve months. iii. The within-referred waiting period is made applicable to the enhanced sum insured in the event of granting a higher sum insured subsequently. B. Standard Permanent Exclusions The Company shall not be liable to make any payment under this Policy in respect of any expenses incurred by You in connection with or in respect of:"
+  },
+  {
+   "id": "4#5",
+   "title": "Investigation & Evaluation (Code – Excl04)",
+   "page": 12,
+   "text": "4. Investigation & Evaluation (Code – Excl04) i. Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded. ii. Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment are excluded."
+  },
+  {
+   "id": "5#5",
+   "title": "Rest Cure, Rehabilitation and Respite Care (Code – Excl05)",
+   "page": 12,
+   "text": "5. Rest Cure, Rehabilitation and Respite Care (Code – Excl05) Expenses related to any admission primarily for enforced bed rest and not for receiving treatment. This also includes: i. Custodial care either at home or in a nursing facility for personal care such as help with activities of daily living such as bathing, dressing, and moving around either by skilled nurses or assistants or non-skilled persons. ii. Any services for people who are terminally ill to address physical, social, emotional and spiritual needs."
+  },
+  {
+   "id": "6#5",
+   "title": "Obesity/Weight Control (Code – Excl06)",
+   "page": 12,
+   "text": "6. Obesity/Weight Control (Code – Excl06) Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: i. Surgery to be conducted is upon the advice of the Doctor ii. The surgery/Procedure conducted should be supported by clinical protocols iii. The member has to be 18 years of age or older and iv. Body Mass Index (BMI): a. Greater than or equal to 40 or b. greater than or equal to 35 in conjunction with any of the following severe co-morbidities following failure of less invasive methods of weight loss: b.1. Obesity-related cardiomyopathy b.2. Coronary heart disease b.3. Severe Sleep Apnea b.4. Uncontrolled Type2 Diabetes"
+  },
+  {
+   "id": "C13.111",
+   "title": "",
+   "page": 13,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "13#3",
+   "title": "| P a g e",
+   "page": 13,
+   "text": "13 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324"
+  },
+  {
+   "id": "7#5",
+   "title": "Change-of-Gender treatments (Code – Excl07)",
+   "page": 13,
+   "text": "7. Change-of-Gender treatments (Code – Excl07) Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex."
+  },
+  {
+   "id": "8#5",
+   "title": "Cosmetic or Plastic Surgery (Code – Excl08)",
+   "page": 13,
+   "text": "8. Cosmetic or Plastic Surgery (Code – Excl08) Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured. For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner."
+  },
+  {
+   "id": "9#4",
+   "title": "Hazardous or Adventure Sports (Code – Excl09)",
+   "page": 13,
+   "text": "9. Hazardous or Adventure Sports (Code – Excl09) Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving."
+  },
+  {
+   "id": "10#4",
+   "title": "Breach of Law (Code – Excl10)",
+   "page": 13,
+   "text": "10. Breach of Law (Code – Excl10) Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent."
+  },
+  {
+   "id": "11#4",
+   "title": "Excluded Providers (Code – Excl11)",
+   "page": 13,
+   "text": "11. Excluded Providers (Code – Excl11) Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed on its website/notified to the policyholders are not admissible. However, in case of life-threatening situations or following an accident, expenses up to the stage of stabilization are payable but not the complete claim."
+  },
+  {
+   "id": "12#4",
+   "title": "(Code – Excl12)",
+   "page": 13,
+   "text": "12. (Code – Excl12) Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof."
+  },
+  {
+   "id": "13#4",
+   "title": "(Code – Excl13)",
+   "page": 13,
+   "text": "13. (Code – Excl13) Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons."
+  },
+  {
+   "id": "14#3",
+   "title": "(Code – Excl14)",
+   "page": 13,
+   "text": "14. (Code – Excl14) Dietary supplements and substances that can be purchased without a prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of a hospitalisation claim or day care procedure."
+  },
+  {
+   "id": "15#3",
+   "title": "Refractive Error (Code – Excl15)",
+   "page": 13,
+   "text": "15. Refractive Error (Code – Excl15) Expenses related to the treatment for correction of eyesight due to refractive error less than 7.5 dioptres."
+  },
+  {
+   "id": "16#3",
+   "title": "Unproven Treatments (Code – Excl16)",
+   "page": 13,
+   "text": "16. Unproven Treatments (Code – Excl16) Expenses related to any unproven treatment, services and supplies for or in connection with any treatment. Unproven treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness."
+  },
+  {
+   "id": "17#3",
+   "title": "Sterility and Infertility (Code – Excl17)",
+   "page": 13,
+   "text": "17. Sterility and Infertility (Code – Excl17) Expenses related to sterility and infertility. This includes: i. Any type of contraception, sterilization ii. Assisted Reproduction services including artificial insemination and advanced reproductive technologies such as IVF, ZIFT, GIFT, ICSI iii. Gestational Surrogacy iv. Reversal of sterilization"
+  },
+  {
+   "id": "18#3",
+   "title": "Maternity (Code- Excl18)",
+   "page": 13,
+   "text": "18. Maternity (Code- Excl18) i Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalisation) except ectopic pregnancy; ii Expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period."
+  },
+  {
+   "id": "C14.125",
+   "title": "",
+   "page": 14,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "14#4",
+   "title": "| P a g e",
+   "page": 14,
+   "text": "14 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 C. Specific Permanent Exclusions"
+  },
+  {
+   "id": "1#7",
+   "title": "",
+   "page": 14,
+   "text": "1. All expenses caused by or arising from or attributable to foreign invasion, act of foreign enemies, hostilities, warlike operations (whether war be declared or not or while performing duties in the armed forces of any country), civil war, public defence, rebellion, revolution, insurrection, military or usurped power."
+  },
+  {
+   "id": "2#7",
+   "title": "",
+   "page": 14,
+   "text": "2. All Illnesses/expenses caused by ionizing radiation or contamination by radioactivity from any nuclear fuel (explosive or hazardous form) or any nuclear waste from the combustion of nuclear fuel, nuclear/chemical/biological attack."
+  },
+  {
+   "id": "3#6",
+   "title": "",
+   "page": 14,
+   "text": "3. Any expenses incurred on Domiciliary Hospitalization."
+  },
+  {
+   "id": "4#6",
+   "title": "",
+   "page": 14,
+   "text": "4. Any expenses incurred on Out-patient treatment (OPD treatment). Procedures/treatments usually done in outpatient department are not payable under the policy even if admitted/converted as an in-patient in the hospital for more than"
+  },
+  {
+   "id": "5#6",
+   "title": "",
+   "page": 14,
+   "text": "5. Any item(s) or treatment specified in ‘List of Non-Medical Expenses under this Policy’ as per clauses in Annexure – 1, unless specifically covered under the Policy."
+  },
+  {
+   "id": "6#6",
+   "title": "",
+   "page": 14,
+   "text": "6. Any treatment related to sleep disorder or sleep apnoea syndrome."
+  },
+  {
+   "id": "7#6",
+   "title": "",
+   "page": 14,
+   "text": "7. Artificial life maintenance including life support machine use, from the date of confirmation by the treating doctor that the patient is in a vegetative state."
+  },
+  {
+   "id": "8#6",
+   "title": "",
+   "page": 14,
+   "text": "8. Change of treatment from one system of medicine to another system unless recommended by the consultant/hospital under whom the treatment is taken."
+  },
+  {
+   "id": "9#5",
+   "title": "",
+   "page": 14,
+   "text": "9. Circumcision unless necessary for Treatment of an Illness or Injury not excluded hereunder or due to an Accident."
+  },
+  {
+   "id": "10#5",
+   "title": "Congenital External Diseases or Defects or anomalies.",
+   "page": 14,
+   "text": "10. Congenital External Diseases or Defects or anomalies."
+  },
+  {
+   "id": "11#5",
+   "title": "Cost of hearing aids; including optometric therapy.",
+   "page": 14,
+   "text": "11. Cost of hearing aids; including optometric therapy."
+  },
+  {
+   "id": "12#5",
+   "title": "Cost of routine medical examination and preventive health check-up unless as provided for in clause III.A.7.",
+   "page": 14,
+   "text": "12. Cost of routine medical examination and preventive health check-up unless as provided for in clause III.A.7. 13. Dental treatment or surgery of any kind unless necessitated by disease or accident and requiring hospitalisation."
+  },
+  {
+   "id": "14#5",
+   "title": "Intentional self-inflicted Injury or attempted suicide.",
+   "page": 14,
+   "text": "14. Intentional self-inflicted Injury or attempted suicide."
+  },
+  {
+   "id": "15#4",
+   "title": "Routine eye-examination expenses, cost of spectacles, contact lenses.",
+   "page": 14,
+   "text": "15. Routine eye-examination expenses, cost of spectacles, contact lenses."
+  },
+  {
+   "id": "16#4",
+   "title": "Stem cell implantation/Surgery/Therapy, harvesting, storage or any kind of treatment using stem cells except",
+   "page": 14,
+   "text": "16. Stem cell implantation/Surgery/Therapy, harvesting, storage or any kind of treatment using stem cells except Hematopoietic stem cells for bone marrow transplant for haematological conditions; growth hormone therapy."
+  },
+  {
+   "id": "17#4",
+   "title": "Treatments including Rotational Field Quantum Magnetic Resonance (RFQMR), External Counter Pulsation (ECP),",
+   "page": 14,
+   "text": "17. Treatments including Rotational Field Quantum Magnetic Resonance (RFQMR), External Counter Pulsation (ECP), Enhanced External Counter Pulsation (EECP), Hyperbaric Oxygen Therapy, chondrocyte or osteocyte implantation, procedures using platelet rich plasma, Trans Cutaneous Electric Nerve Stimulation; Use of oral immunomodulatory/ supplemental drugs."
+  },
+  {
+   "id": "18#4",
+   "title": "Treatments other than Allopathy and AYUSH branches of medicine.",
+   "page": 14,
+   "text": "18. Treatments other than Allopathy and AYUSH branches of medicine."
+  },
+  {
+   "id": "19#3",
+   "title": "Unless used intra-operatively, any expenses incurred on prosthesis, corrective devices; External and or durable",
+   "page": 14,
+   "text": "19. Unless used intra-operatively, any expenses incurred on prosthesis, corrective devices; External and or durable Medical/ Non-medical equipment of any kind used for diagnosis and/or treatment and/or monitoring and/or maintenance and/or support including instruments used in treatment of sleep apnoea syndrome; Infusion pump, Oxygen concentrator, Ambulatory devices, sub cutaneous insulin pump and also any medical equipment, which are subsequently used at home. This is indicative. Please refer to clauses in Annexure-1 for the complete list of non- payable items."
+  },
+  {
+   "id": "20#3",
+   "title": "Vaccination or inoculation of any kind unless it is post animal bite.",
+   "page": 14,
+   "text": "20. Vaccination or inoculation of any kind unless it is post animal bite."
+  },
+  {
+   "id": "21#3",
+   "title": "In respect of the existing diseases, disclosed by the insured and mentioned in the policy schedule (based on insured’s",
+   "page": 14,
+   "text": "21. In respect of the existing diseases, disclosed by the insured and mentioned in the policy schedule (based on insured’s consent), Insured Person is not entitled to get the coverage for specified ICD Codes V. GENERAL TERMS AND CLAUSES A. Standard Terms and Clauses"
+  },
+  {
+   "id": "1#8",
+   "title": "Cancellation",
+   "page": 14,
+   "text": "1. Cancellation CANCELLATION AFTER PERIOD ON RISK RATE OF PREMIUM TO BE REFUNDED Up to one month 75% of the annual rate > one month and up to three months 50% of the annual rate > three months and up to six months 25% of the annual rate"
+  },
+  {
+   "id": "C15.148",
+   "title": "",
+   "page": 15,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "15#5",
+   "title": "| P a g e",
+   "page": 15,
+   "text": "15 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 i. The policyholder may cancel this Policy by giving 15 days’ written notice, and in such an event, the Company shall refund premium for the unexpired Policy Period as per the rates detailed below: Notwithstanding anything contained herein or otherwise, no refunds of premium shall be made in respect of Cancellation where, any claim has been admitted or has been lodged or any benefit has been availed by the Insured Person under the policy. ii. The Company may cancel the policy at any time on grounds of mis-representation, non-disclosure of material facts, fraud by the Insured Person, by giving 15 days’ written notice. There would be no refund of premium on cancellation on grounds of mis-representation, non-disclosure of material facts or fraud."
+  },
+  {
+   "id": "2#8",
+   "title": "Claim Settlement (provision for Penal Interest)",
+   "page": 15,
+   "text": "2. Claim Settlement (provision for Penal Interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document. ii. In the case of delay in the payment of a claim, the Company shall be liable to pay interest to the policyholder from the date of receipt of last necessary document to the date of payment of claim at a rate 2% above the bank rate. iii. However, where the circumstances of a claim warrant an investigation in the opinion of the Company, it shall initiate and complete such investigation at the earliest, in any case not later than 30 days from the date of receipt of last necessary document. In such cases, the Company shall settle or reject the claim within 45 days from the date of receipt of last necessary document. iv. In case of delay beyond stipulated 45 days, the company shall be liable to pay interest to the policyholder at a rate 2% above the bank rate from the date of receipt of last necessary document to the date of payment of claim. \"Bank rate\" shall mean the rate fixed by the Reserve Bank of India (RBl) at the beginning of the financial year in which claim has fallen due."
+  },
+  {
+   "id": "3#7",
+   "title": "Complete Discharge",
+   "page": 15,
+   "text": "3. Complete Discharge Any payment to the Policyholder/Insured Person or his/her nominees or his/her legal representative or assignee or to the Hospital/Nursing Home, as the case may be, for any benefit under the Policy shall be a valid discharge towards payment of claim by the Company to the extent of that amount for the particular claim."
+  },
+  {
+   "id": "4#7",
+   "title": "Condition Precedent to Admission of Liability",
+   "page": 15,
+   "text": "4. Condition Precedent to Admission of Liability The terms and conditions of the policy must be fulfilled by the insured person for the Company to make any payment for claim(s) arising under the policy."
+  },
+  {
+   "id": "5#7",
+   "title": "Disclosure of Information",
+   "page": 15,
+   "text": "5. Disclosure of Information The policy shall be void and all premium paid thereon shall be forfeited to the Company in the event of misrepresentation, misdescription or non-disclosure of any material fact by the policyholder."
+  },
+  {
+   "id": "6#7",
+   "title": "Fraud",
+   "page": 15,
+   "text": "6. Fraud If any claim made by the Insured Person is in any respect fraudulent, or if any false statement, or declaration is made or used in support thereof, or if any fraudulent means or devices are used by the Insured Person or anyone acting on his/her behalf to obtain any benefit under this policy, all benefits under this policy and the premium paid shall be forfeited. Any amount already paid against claims made under this policy but which are found fraudulent later shall be repaid by all recipient(s)/ Policyholder(s), who has made that particular claim, who shall be jointly and severally liable for such repayment to the Insurer. For the purpose of this clause, the expression “fraud” means any of the following acts committed by the Insured Person or by his agent or the hospital/doctor/any other party acting on behalf of the Insured Person, with intent to deceive the Insurer or to induce the Insurer to issue an insurance policy: i. the suggestion, as a fact of that which is not true and which the Insured Person does not believe to be true; ii. the active concealment of a fact by the Insured Person having knowledge or belief of the fact; iii. any other act fitted to deceive; and iv. any such act or omission as the law specially declares to be fraudulent The company shall not repudiate the claim and/ or forfeit the policy benefits on the ground of fraud, if the Insured Person/Beneficiary can prove that the misstatement was true to the best of his knowledge and there was no deliberate Exceeding six months No refund"
+  },
+  {
+   "id": "C16.155",
+   "title": "",
+   "page": 16,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "16#5",
+   "title": "| P a g e",
+   "page": 16,
+   "text": "16 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 intention to suppress the fact or that such misstatement of or suppression of material fact are within the knowledge of the Insurer."
+  },
+  {
+   "id": "7#7",
+   "title": "Free Look Period",
+   "page": 16,
+   "text": "7. Free Look Period The free look period shall be applicable on new Family Medicare policies and not on renewals or at the time of porting/migrating the policy. The Insured Person shall be allowed free look period of 15 days from date of receipt of the policy document to review the terms and conditions of the policy and to return the same if not acceptable. If the Insured has not made any claim during the free look period, the Insured shall be entitled to: i. A refund of the premium paid less any expenses incurred by the Company on medical examination of the insured persons and the stamp duty charges or ii. Where the risk has already commenced and the option of return of the policy is exercised by the insured person, a deduction towards the proportionate risk premium for period of cover or iii. Where only a part of the insurance coverage has commenced, such proportionate premium commensurate with the insurance coverage during such period."
+  },
+  {
+   "id": "8#7",
+   "title": "Migration",
+   "page": 16,
+   "text": "8. Migration The Insured Person will have the option to migrate the policy to other health insurance products/plans offered by the company by applying for migration of the policy at least 30 days before the policy renewal date as per IRDAI guidelines on Migration. If such person is presently covered and has been continuously covered without any lapses under any health insurance product/plan offered by the company, the Insured Person will get the accrued continuity benefits in waiting periods as per IRDAI guidelines on migration. For Detailed Guidelines on Migration, kindly refer the link: https://irdai.gov.in/document-detail?documentId=393128"
+  },
+  {
+   "id": "9#6",
+   "title": "Moratorium Period",
+   "page": 16,
+   "text": "9. Moratorium Period After completion of eight continuous years under the policy no look back would be applied. This period of eight years is called as moratorium period. The moratorium would be applicable for the sums insured of the first policy and subsequently completion of eight continuous years would be applicable from date of enhancement of sums insured only on the enhanced limits. After the expiry of Moratorium Period no claim under this policy shall be contestable except for proven fraud and permanent exclusions specified in the policy contract. The policies would however be subject to all limits, sub-limits, co-payments, and deductibles as per the policy."
+  },
+  {
+   "id": "10#6",
+   "title": "Multiple Policies",
+   "page": 16,
+   "text": "10. Multiple Policies i. In case of multiple policies taken by an Insured Person during a period from one or more Insurers to indemnify treatment costs, the Insured Person shall have the right to require a settlement of his/her claim in terms of any of his/her policies. In all such cases the Insurer chosen by the Insured Person shall be obliged to settle the claim as long as the claim is within the limits of and according to the terms of the chosen policy. ii. Insured Person having multiple policies shall also have the right to prefer claims under this policy for the amounts disallowed under any other policy/policies, even if the Sum Insured is not exhausted. Then the Insurer shall independently settle the claim subject to the terms and condition of this policy. iii. If the amount to be claimed exceeds the Sum Insured under a single policy, the Insured Person shall have the right to choose Insurer from whom he/she wants to claim the balance amount. iv. Where an Insured Person has policies from more than one Insurer to cover the same risk on indemnity basis, the Insured Person shall only be indemnified the treatment costs in accordance with the terms and conditions of the chosen policy."
+  },
+  {
+   "id": "11#6",
+   "title": "Nomination",
+   "page": 16,
+   "text": "11. Nomination The policyholder is required at the inception of the policy to make a nomination for the purpose of payment of claims under the policy in the event of death of the policyholder. Any change of nomination shall be communicated to the Company in writing and such change shall be effective only when an endorsement on the policy is made. ln the event of death of the policyholder, the Company will pay the nominee {as named in the Policy Schedule/Policy Certificate/Endorsement (if any)} and in case there is no subsisting nominee, to the legal heirs or legal representatives of the policyholder whose discharge shall be treated as full and final discharge of its liability under the policy."
+  },
+  {
+   "id": "12#6",
+   "title": "Portability",
+   "page": 16,
+   "text": "12. Portability The Insured Person will have the option to port the policy to other Insurers by applying to such Insurer to port the entire policy along with all the members of the family, if any, at least 45 days before, but not earlier than 60 days from the policy renewal date as per IRDAI guidelines related to portability. If such person is presently covered and has been continuously covered without any lapses under any health insurance policy with an Indian General/Health"
+  },
+  {
+   "id": "C17.163",
+   "title": "",
+   "page": 17,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "17#5",
+   "title": "| P a g e",
+   "page": 17,
+   "text": "17 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 Insurer, the proposed Insured Person will get the accrued continuity benefits in waiting periods as per IRDAI guidelines on portability. For Detailed Guidelines on Portability, kindly refer the link: https://irdai.gov.in/document- detail?documentId=393128"
+  },
+  {
+   "id": "13#5",
+   "title": "Possibility of Revision of Terms of the Policy including the Premium Rates",
+   "page": 17,
+   "text": "13. Possibility of Revision of Terms of the Policy including the Premium Rates The Company, with prior approval of IRDAI, may revise or modify the terms of the policy including the premium rates. The Insured Person shall be notified three months before the changes are effected."
+  },
+  {
+   "id": "14#6",
+   "title": "Redressal of Grievance",
+   "page": 17,
+   "text": "14. Redressal of Grievance In case of any grievance, the Insured Person may contact the company through: ➢ Website : www.uiic.co.in ➢ Toll free : 1800 425 333 33 ➢ E-mail : customercare@uiic.co.in ➢ Courier : Customer Care Department, Head Office, United India Insurance Co. Ltd., 24, Whites Road, Chennai, Tamil Nadu- 600034 The insured person may also approach the grievance cell at any of the Company's branches with the details of the grievance. If Insured Person is not satisfied with the redressal of the grievance through one of the above methods, the insured Person may contact the grievance officer at customercare@uiic.co.in. ➢ For updated details of grievance officer, kindly refer the link https://uiic.co.in/en/customercare/grievance. ➢ If Insured Person is not satisfied with the redressal of grievance through above methods, the Insured Person may also approach the Office of Insurance Ombudsman of the respective area/region for redressal of grievance as per Insurance Ombudsman Rules 2017. The contact details of the Insurance Ombudsman offices have been provided as Annexure-2. ➢ Grievance may also be lodged at IRDAI Integrated Grievance Management System: https://bimabharosa.irdai.gov.in/"
+  },
+  {
+   "id": "15#6",
+   "title": "Renewal of Policy",
+   "page": 17,
+   "text": "15. Renewal of Policy The policy shall ordinarily be renewable except on grounds of fraud or misrepresentation by the Insured Person. i. The Company shall endeavour to give notice for renewal. However, the Company is not under obligation to give any notice for renewal. ii. Renewal shall not be denied on the ground that the Insured Person had made a claim or claims in the preceding policy years. iii. Request for renewal along with requisite premium shall be received by the Company before the end of the policy period. iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. v. No loading shall apply on renewals based on individual claims experience."
+  },
+  {
+   "id": "16#6",
+   "title": "Withdrawal of Policy",
+   "page": 17,
+   "text": "16. Withdrawal of Policy i. In the likelihood of this product being withdrawn in future, the Company will intimate the Policyholders about the same 90 days prior to expiry of the policy. ii. Insured Person will have the option to migrate to similar health insurance product available with the Company at the time of renewal with all the accrued continuity benefits such as cumulative bonus, waiver of waiting period as per IRDAI guidelines, provided the policy has been maintained without a break B. Specific Terms and Clauses"
+  },
+  {
+   "id": "1#9",
+   "title": "Arbitration",
+   "page": 17,
+   "text": "1. Arbitration i. If any dispute or difference shall arise as to the quantum to be paid under the policy (liability being otherwise admitted) such difference shall independently of all other questions be referred to the decision of a sole arbitrator to be appointed in writing by the parties or if they cannot agree upon a single arbitrator within 30 days of any party invoking arbitration, the same shall be referred to a panel of three arbitrators, comprising of two arbitrators, one to be appointed by each of the parties to the dispute/difference and the third arbitrator to be appointed by such two arbitrators and arbitration shall be conducted under and in accordance with the provisions of the Arbitration and Conciliation Act, 1996, as amended by Arbitration and Conciliation (Amendment) Act, 2015."
+  },
+  {
+   "id": "C18.170",
+   "title": "",
+   "page": 18,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "18#5",
+   "title": "| P a g e",
+   "page": 18,
+   "text": "18 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 ii. It is clearly agreed and understood that no difference or dispute shall be referable to arbitration as herein before provided, if the Company has disputed or not accepted liability under or in respect of this Policy. iii. It is hereby expressly stipulated and declared that it shall be a condition precedent to any right of action or suit upon this policy that award by such arbitrator/arbitrators of the amount of the loss or damage shall be first obtained."
+  },
+  {
+   "id": "2#9",
+   "title": "Automatic change in Coverage under the Policy",
+   "page": 18,
+   "text": "2. Automatic change in Coverage under the Policy The coverage for the Insured Person(s) shall automatically terminate: i. In the case of his/her/their (Insured Person(s)) demise; However, the cover shall continue for the remaining Insured Persons till the end of the Policy Period. The other Insured Person(s) may also apply to renew the policy. In case, the other Insured Person(s) is/are minor, the policy shall be renewed only through any one of his/her/their natural guardian or a guardian appointed by the court. All relevant particulars in respect of such person(s) (including his/her/their relationship with the Insured Person(s)) must be submitted to the company along with the application. Provided no claim has been made, and termination takes place on account of death of the Insured Person(s), pro-rata refund of premium of the deceased Insured Person(s) for the balance period of the policy will be effective. ii. Upon exhaustion of Total Sum Insured for the policy period. However, the policy is subject to renewal on the due date as per the applicable terms and conditions."
+  },
+  {
+   "id": "3#8",
+   "title": "Basis of Insurance",
+   "page": 18,
+   "text": "3. Basis of Insurance i. This policy is issued on the basis of the truth and accuracy of statements in the Proposal. ii. This policy shall be void and all premium paid hereon shall be forfeited to the Company, in the event of fraud, misrepresentation or misdescription or non-disclosure of any material fact. iii. The Proposal Form, Pre-acceptance Health check-up report (if carried out) and the Policy issued shall constitute complete contract of insurance."
+  },
+  {
+   "id": "4#8",
+   "title": "Change of Sum Insured",
+   "page": 18,
+   "text": "4. Change of Sum Insured i. The Insured can apply for change of Sum Insured at the time of renewal, by submitting a fresh proposal form/written request to the company. ii. Any request for enhancement of Sum Insured must be accompanied by a declaration that the Insured or any other Insured Person(s) in respect of whom such enhancement is sought is not aware of any symptoms or other indications that may give rise to a claim under the policy. The Company may require such Insured Person/s to undergo a medical examination to enable the Company to take a decision on accepting the request for enhancement in the Sum Insured. iii. The acceptance of enhancement of Sum Insured would be at the discretion of the company, subject to underwriting, based on the health condition of the Insured Persons & claim history of the policy. iv. All waiting periods as defined in the Policy shall apply for the incremental portion of the Sum Insured from the effective date of enhancement of such Sum Insured considering such Policy Period as the first Policy with the Company."
+  },
+  {
+   "id": "5#8",
+   "title": "Claim Procedure",
+   "page": 18,
+   "text": "5. Claim Procedure i. Notification of Claim Upon the happening of any event which may give rise to a claim under this Policy, the Insured Person/Insured Person’s representative shall notify the TPA (if claim is processed by TPA)/company (if claim is processed by the company) in writing providing all relevant information relating to claim including plan of treatment, policy number etc. within the prescribed time limit as under: a. Within 24 hours from the date of emergency hospitalisation required or before the Insured Person’s discharge from Hospital, whichever is earlier. b. At least 48 hours prior to admission in Hospital in case of a planned Hospitalisation ii. Procedure for Cashless Claims a. Cashless facility for treatment in network hospitals only shall be available to Insured if opted for claim processing by TPA. b. Treatment may be taken in a network provider/PPN hospital and is subject to pre authorization by the TPA. Booklet containing list of network provider/PPN hospitals shall be provided by the TPA. Updated list of network provider/PPN is available on website of the company (https://uiic.co.in/en/tpa-ppn-network- hospitals) and the TPA mentioned in the schedule. c. The customer may call the TPA’s toll free phone number provided in the policy copy/on the health ID card for intimation of claim and related assistance. Please keep the ID number handy for easy reference."
+  },
+  {
+   "id": "C19.176",
+   "title": "",
+   "page": 19,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "19#4",
+   "title": "| P a g e",
+   "page": 19,
+   "text": "19 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 d. On admission in the network provider/PPN hospital, please produce the ID card issued by the TPA at the Hospital Helpdesk. Cashless request form available with the network provider/PPN and TPA shall be filled and submitted to the TPA for authorization. e. The TPA upon getting cashless request form and related medical information from the Insured Person/ network provider/PPN shall issue pre-authorization letter to the hospital after verification. f. At the time of discharge, the Insured Person shall verify and sign the discharge papers and pay for non- medical and inadmissible expenses. g. The TPA reserves the right to deny pre-authorization in case the Insured Person is unable to provide the relevant medical details. h. Denial of a Pre-authorization request is in no way to be construed as denial of treatment or denial of coverage. The Insured Person may get the treatment as per treating doctor’s advice and submit the claim documents to the TPA for possible reimbursement. iii. Procedure for reimbursement of Claims a. In non-network hospitals payment must be made up-front and for reimbursement of claims the Insured Person may submit the necessary documents to TPA (if claim is processed by TPA)/company (if claim is processed by the company) within the prescribed time limit. b. Claims for Pre- and Post-Hospitalisation will be settled on reimbursement basis on production of relevant claim papers and cash receipts within the prescribed time limit. c. Claims for Cost of Health Check-up will be settled on reimbursement basis on production of test reports and cash receipts within the prescribed time limit. iv. Documents The claim is to be supported with the following original documents and submitted within the prescribed time limit: a. Duly completed claim form b. Attending medical practitioner’s / surgeon’s certificate regarding diagnosis/ nature of operation performed, along with date of diagnosis, advise for admission, investigation test reports etc. supported by the prescription from attending medical practitioner. c. Medical history of the patient as recorded, bills (including break up of charges) and payment receipts duly supported by the prescription from attending medical practitioner/ hospital. d. Discharge certificate/ summary from the hospital. e. Cash-memos from the Diagnostic Centre(s)/ hospital(s)/ chemist(s) supported by proper prescription. f. Payment receipts from doctors, surgeons and anesthetists. g. Bills, receipts, Stickers of the Implants. h. Any other document required by company/ TPA Note: In the event of a claim lodged as per Settlement under multiple policies clause and the original documents having been submitted to the other Insurer, the company may accept the duly certified documents listed under Clause V.B.5.iv and claim settlement advice duly certified by the other Insurer subject to satisfaction of the company. v. Time Limit for submission of documents Type of Claim Time Limit for submission of documents to company/TPA Reimbursement of hospitalisation, daycare and pre-hospitalisation expenses Within 15 (fifteen) days of date of discharge from hospital. Reimbursement of post hospitalisation expenses Within 15 (fifteen) days from completion of post- hospitalisation treatment. Reimbursement of Cost of Health Check-up"
+  },
+  {
+   "id": "C19.178",
+   "title": "",
+   "page": 19,
+   "text": "Within 15 (fifteen) days from Health Check-up Notes: a. The company shall only accept bills/invoices/medical treatment related documents only in the Insured Person’s name for whom the claim is submitted. b. Waiver of clause V.B.5.v may be considered in extreme cases of hardship where it is proved to the satisfaction of the Company that under the circumstances in which the Insured was placed it was not possible for him or any other person to give such notice or file claim within the prescribed time-limit."
+  },
+  {
+   "id": "C20.179",
+   "title": "",
+   "page": 20,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "20#4",
+   "title": "| P a g e",
+   "page": 20,
+   "text": "20 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 c. The Insured Person shall also give the TPA / Company such additional information and assistance as the TPA / Company may require in dealing with the claim including an authorisation to obtain Medical and other records from the hospital, lab, etc. d. All the documents submitted to TPA shall be electronically collected by us for settlement/denial of the claims by the appropriate authority. e. Any medical practitioner or Authorised Person authorised by the TPA / Company shall be allowed to examine the Insured Person in case of any alleged injury or disease leading to Hospitalisation if so required. vi. Services offered by TPA Servicing of claims i.e., claim admissions and assessments, under this Policy by way of preauthorization of cashless treatment or processing of claims, as per the terms and conditions of the policy. The services offered by a TPA shall not include: a. Claim settlement and claim rejection; b. Any services directly to any Insured Person or to any other person unless such service is in accordance with the terms and conditions of the Agreement entered into with the Company."
+  },
+  {
+   "id": "6#8",
+   "title": "Co-Payment",
+   "page": 20,
+   "text": "6. Co-Payment For persons with age of entry above 60 years in Family Medicare Policy, every admissible claim under Clause III.A.1- III.A.6 shall be subject to a Co-payment of 10% on the admissible claim amount."
+  },
+  {
+   "id": "7#8",
+   "title": "Endorsements (Changes in Policy)",
+   "page": 20,
+   "text": "7. Endorsements (Changes in Policy) This policy constitutes the complete contract of insurance. This Policy cannot be modified by anyone (including an insurance agent or broker) except the Company. Any change made by the Company shall be evidenced by a written endorsement signed and stamped."
+  },
+  {
+   "id": "8#8",
+   "title": "Limitation of Liability",
+   "page": 20,
+   "text": "8. Limitation of Liability If a claim is rejected and is not the subject of any pending suit or other proceeding or arbitration within twelve months from the date of such rejection, the claim shall be deemed to have been abandoned. Our liability shall be extinguished and the claim shall not be recoverable thereafter."
+  },
+  {
+   "id": "9#7",
+   "title": "Notice & Communication",
+   "page": 20,
+   "text": "9. Notice & Communication i. Any notice, direction or instruction or any other communication related to the Policy should be made in writing. ii. Where the claims are serviced by the TPA, communication should be made to the TPA at the contact details provided in the Policy Schedule for issues related to ID card, PPN/network provider. Where the claims are serviced by the company, any policy related issues or change in address, communication should be made to the policy issuing office at the address mentioned in the schedule. iii. The Insured shall notify the policy issuing office in writing, of any material change, such as change in occupation, during the policy period. iv. The company or TPA shall communicate to the Insured Person at the address mentioned in the schedule. v. No insurance agents, brokers, other person or entity is authorized to receive any notice on behalf of Us unless explicitly stated in writing by Us. vi. No waiver of any terms, provisions, conditions and endorsements of this policy shall be valid unless made in writing and signed by an authorised official of the Company."
+  },
+  {
+   "id": "10#7",
+   "title": "Premium",
+   "page": 20,
+   "text": "10. Premium i Unless full premium is paid before commencement of risk, this Policy shall have no effect. ii Premium can be paid online for both, new policies and renewals. iii PAN details must be submitted by the Insured. In case PAN is not available, Form 60 or Form 61 must be submitted. iv Tax rebate available as per provision of Income Tax rules under Section 80-D."
+  },
+  {
+   "id": "11#7",
+   "title": "Territorial Jurisdiction",
+   "page": 20,
+   "text": "11. Territorial Jurisdiction All disputes or differences under or in relation to the interpretation of the terms, conditions, validity, construct, limitations and/or exclusions contained in the policy shall be determined by the Indian court and according to Indian law."
+  },
+  {
+   "id": "C21.187",
+   "title": "",
+   "page": 21,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "21#4",
+   "title": "| P a g e",
+   "page": 21,
+   "text": "21 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324"
+  },
+  {
+   "id": "12#7",
+   "title": "Territorial Limit",
+   "page": 21,
+   "text": "12. Territorial Limit The geographical scope of this Policy applies to events limited to India. All medical treatment for the purpose of this insurance will have to be taken in India only and all admitted or payable claims shall be settled in India in Indian currency only. VI. OTHER TERMS AND CONDITIONS"
+  },
+  {
+   "id": "1#10",
+   "title": "",
+   "page": 21,
+   "text": "1. Loadings & Discount i No Claim Discount For every claim free year, the Insured shall be entitled to a No Claim Discount of 5% on renewal premium subject to a maximum of 15%. The No Claim Discount will be withdrawn: a. If the policy is not renewed within the grace period allowed under the policy. b. In the event of any claim reported under the expiring policy for policies issued on family floater basis. c. For policies issued on Individual SI basis, only for the Insured Person, for which the claim has been reported under the expiring policy. ii Family Discount In case of policies issued on Individual Sum Insured Basis, 5% family discount will be allowed if more than one person of a family is covered. iii Family Floater Discount If the policy is issued on Family Floater basis, a Family Floater Discount will be allowed based on the family composition. iv Direct Channel Discount A discount is applicable for fresh policies purchased online through the Company’s website or directly from United India's office, without any agent or an intermediary. For renewals, the discount shall be offered provided that both the renewing policy and expiring policy are without any agent or an intermediary. v Underwriting Loading for Pre-existing Conditions We may apply a risk loading on the premium payable (excluding statutory levies & taxes) based on your health status if accepted at the time of underwriting. Loadings will be applied from Inception Date of the first Policy including subsequent renewal(s). The loadings are applicable on individual ailments only. In case of loading on two or more ailments, the loadings shall apply in conjunction on additive basis. However, maximum risk loading per individual shall not exceed 200% of Premium excluding applicable Taxes. Note: The application of loading does not mean that the illness/ condition, for which loading has been applied, would be covered from inception. Any waiting period as mentioned in Clause IV.A.1 above shall be applied on illness/condition, as applicable."
+  },
+  {
+   "id": "2#10",
+   "title": "IRDAI Regulations",
+   "page": 21,
+   "text": "2. IRDAI Regulations This policy is subject to Provisions of Insurance Act, 1938, IRDAI (Health Insurance) Regulations 2016 and IRDAI (Protection of Policyholders’ Interest) Regulations 2017 as amended from time to time."
+  },
+  {
+   "id": "C22.192",
+   "title": "",
+   "page": 22,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "22#3",
+   "title": "| P a g e",
+   "page": 22,
+   "text": "22 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 UNITED INDIA INSURANCE COMPANY LIMITED Policy Issuing Office Address PH: (****) ******* EMAIL:****@**** FAMILY MEDICARE POLICY UIN: POLICY NO.: PERIOD OF INSURANCE FROM --:-- Hrs on dd/mm/yyyy To MIDNIGHT on dd/mm/yyyy Policyholder Name Address Agent Name : Agent Code : Mobile/Landline Number/Email : / IMPORTANT NOTICE: KINDLY UPDATE YOUR AADHAAR NO. AND PAN/FORM 60. PLEASE IGNORE IF ALREADY UPDATED. For any Information, Service Requests and Grievances please write to {officecode}@uiic.co.in For ID Cards & Claim Intimations Please contact the TPA mentioned in the Policy document. REGD. OFFICE, 24, WHITES ROAD, CHENNAI – 600014 Website: http://www.uiic.co.in"
+  },
+  {
+   "id": "C23.194",
+   "title": "",
+   "page": 23,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "23#2",
+   "title": "| P a g e",
+   "page": 23,
+   "text": "23 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 FAMILY MEDICARE POLICY SCHEDULE Insured Details Sl no Insured Name Age/Gender ABHA ID Relation Occupation Pre-Existing Disease /Condition declared Nominee Name Nominee Relation"
+  },
+  {
+   "id": "4#9",
+   "title": "",
+   "page": 23,
+   "text": "4 Sl no Insured Name Sum Insured Premium Hospital Daily cash Limit (per day/per policy) Hospital Daily cash Premium if opted for Maternity Exp. & New Born Baby Cover Premium if opted for Pre-Existing Disease/ condition loading Inception Date of first policy"
+  },
+  {
+   "id": "4#10",
+   "title": "",
+   "page": 23,
+   "text": "4 Total Basic Premium Net Premium Add Hospital Daily Cash Premium Add CGST@ 9% of Premium Add Maternity Expenses/ New Born Baby Cover Premium Add SGST @ 9% of Premium Add PED Loading Total Premium Payable Less No Claim Discount Receipt No Less Family Discount Less Family Floater Discount Receipt Date Less Direct Channel Discount Agent Name Agent/Broker Code Agent Contact Number Dev Officer Code Customer GST No.: Office GST No.: SAC Code: Invoice No. & Date: Amount Subject to Reverse Charges Anti-Money Laundering Clause:-In the event of a claim under the policy exceeding 1 lakh or a claim for refund of premium exceeding 1 lakh, the insured will comply with the provisions of AML policy of the company. The AML policy is available in all our operating offices as well as Company's web site."
+  },
+  {
+   "id": "C23.198",
+   "title": "",
+   "page": 23,
+   "text": "Policy Number Previous Policy No Name/ID Of Policyholder Tel. (O) Tel(R) Fax Business/Occupation Mobile Email Period Of Insurance From --:-- Hrs of dd/mm/yyyy To Midnight of dd/mm/yyyy Policy Type Individual Sum Insured Basis/ Family Floater Basis QR CODE"
+  },
+  {
+   "id": "C24.199",
+   "title": "",
+   "page": 24,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "24#2",
+   "title": "| P a g e",
+   "page": 24,
+   "text": "24 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 Date of Proposal and Declaration: IN WITNESS WHEREOF, the undersigned being duly authorised has hereunto set his/her hand at <Office Location> <Office Code> on this __ day of ,<Month> ,<Year>. For and On behalf of United India Insurance Co. Ltd. Authorised Signatory. Affix Policy Stamp Here"
+  },
+  {
+   "id": "C25.201",
+   "title": "",
+   "page": 25,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "25#2",
+   "title": "| P a g e",
+   "page": 25,
+   "text": "25 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 POLICY NO.: UIN: Details of TPA Please contact the following TPA for Issue of Identity Cards, Cashless Approvals & Claims Settlement. Name of TPA Address Toll Free number Contact Details For General Enquiries For Cashless approval For Claim intimation For Grievances Telephone Numbers Email IDs"
+  },
+  {
+   "id": "C26.203",
+   "title": "",
+   "page": 26,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "26#2",
+   "title": "| P a g e",
+   "page": 26,
+   "text": "26 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 ANNEXURE – 1 List of Non-Medical Expenses under this Policy: ▪ List I – Optional Items - Indicated whether payable or not under the Policy ▪ List II – Items that are to be subsumed into Room Charges ▪ List III – Items that are to be subsumed into Procedure Charges ▪ List IV – Items that are to be subsumed into costs of treatment List 1"
+  },
+  {
+   "id": "4#11",
+   "title": "",
+   "page": 26,
+   "text": "4 Belts/ Braces Payable for cases who have undergone surgery of thoracic or lumbar spine."
+  },
+  {
+   "id": "9#8",
+   "title": "",
+   "page": 26,
+   "text": "9 Food Charges (Other Than Patient’s Diet Provided By Hospital) Not Payable"
+  },
+  {
+   "id": "10#8",
+   "title": "",
+   "page": 26,
+   "text": "10 Leggings Payable in case of varicose vein surgery"
+  },
+  {
+   "id": "19#5",
+   "title": "",
+   "page": 26,
+   "text": "19 Slings Reasonable costs for one sling in case of upper arm fractures is payable"
+  },
+  {
+   "id": "20#5",
+   "title": "",
+   "page": 26,
+   "text": "20 Blood Grouping and Cross Matching Of Donors Samples Part of Cost of Blood, not payable"
+  },
+  {
+   "id": "21#5",
+   "title": "",
+   "page": 26,
+   "text": "21 Service Charges Where Nursing Charge Also Charged Part of room charge not payable separately"
+  },
+  {
+   "id": "22#4",
+   "title": "",
+   "page": 26,
+   "text": "22 Television Charges Payable under room charges not if separately levied"
+  },
+  {
+   "id": "23#3",
+   "title": "",
+   "page": 26,
+   "text": "23 Surcharges Part of Room Charge, not payable separately"
+  },
+  {
+   "id": "24#3",
+   "title": "",
+   "page": 26,
+   "text": "24 Attendant Charges Not Payable - Part of Room Charges"
+  },
+  {
+   "id": "25#3",
+   "title": "",
+   "page": 26,
+   "text": "25 Extra Diet of Patient (Other Than That Which Forms Part Of Bed Charge) Not Payable"
+  },
+  {
+   "id": "33#2",
+   "title": "",
+   "page": 26,
+   "text": "33 Mortuary Charges Payable up to 24 hours, shifting charges not payable"
+  },
+  {
+   "id": "35#2",
+   "title": "",
+   "page": 26,
+   "text": "35 Oxygen Cylinder (For Usage Outside the Hospital) Not Payable"
+  },
+  {
+   "id": "45",
+   "title": "",
+   "page": 26,
+   "text": "45 Knee Braces (Long/ Short/ Hinged) Not Payable"
+  },
+  {
+   "id": "46",
+   "title": "",
+   "page": 26,
+   "text": "46 Knee Immobilizer/ Shoulder Immobilizer Not Payable"
+  },
+  {
+   "id": "47",
+   "title": "",
+   "page": 26,
+   "text": "47 Lumbo Sacral Belt Payable for cases who have undergone surgery of lumbar spine."
+  },
+  {
+   "id": "C27.220",
+   "title": "",
+   "page": 27,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "27#2",
+   "title": "| P a g e",
+   "page": 27,
+   "text": "27 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 List 1"
+  },
+  {
+   "id": "48",
+   "title": "",
+   "page": 27,
+   "text": "48 Nimbus Bed or Water Or Air Bed Charges Payable for any ICU patient requiring more than 3 days in ICU, all patients with paraplegia/quadriplegia for any reason and at a reasonable cost of approximately Rs 200/- day"
+  },
+  {
+   "id": "51",
+   "title": "",
+   "page": 27,
+   "text": "51 Abdominal Binder Payable for cases who have undergone surgery of lumbar spine."
+  },
+  {
+   "id": "52",
+   "title": "",
+   "page": 27,
+   "text": "52 Private Nurses Charges- Special Nursing Charges Payable in post-hospitalisation"
+  },
+  {
+   "id": "53",
+   "title": "",
+   "page": 27,
+   "text": "53 Sugar Free Tablets Payable -Sugar free variants of admissible medicines are not excluded"
+  },
+  {
+   "id": "54",
+   "title": "",
+   "page": 27,
+   "text": "54 Creams Powders Lotions (Toiletries Are Not Payable, Only Prescribed Medical Pharmaceuticals Payable) Payable when prescribed"
+  },
+  {
+   "id": "55",
+   "title": "",
+   "page": 27,
+   "text": "55 ECG Electrodes Up to 5 electrodes are required for every case visiting OT or ICU. For longer stay in ICU, may require a change and at least one set every second day is payable."
+  },
+  {
+   "id": "56",
+   "title": "",
+   "page": 27,
+   "text": "56 Gloves Sterilized Gloves payable / unsterilized gloves not payable"
+  },
+  {
+   "id": "57",
+   "title": "",
+   "page": 27,
+   "text": "57 Nebulization Kit Payable reasonably if used during hospitalisation"
+  },
+  {
+   "id": "58",
+   "title": "",
+   "page": 27,
+   "text": "58 Any Kit With No Details Mentioned [Delivery Kit, Ortho-kit, Recovery Kit, Etc.] Not Payable"
+  },
+  {
+   "id": "63",
+   "title": "",
+   "page": 27,
+   "text": "63 Pelvic Traction Belt Payable in case of PIVD requiring traction"
+  },
+  {
+   "id": "68",
+   "title": "",
+   "page": 27,
+   "text": "68 Vasofix Safety Payable - maximum of 3 in 48 hours and then 1 in 24 hours List II"
+  },
+  {
+   "id": "1#11",
+   "title": "",
+   "page": 27,
+   "text": "1 Baby Charges (Unless Specified/Indicated)"
+  },
+  {
+   "id": "29#2",
+   "title": "",
+   "page": 27,
+   "text": "29 Documentation Charges / Administrative Expenses"
+  },
+  {
+   "id": "32#2",
+   "title": "",
+   "page": 27,
+   "text": "32 Entrance Pass / Visitor’s Pass Charges"
+  },
+  {
+   "id": "33#3",
+   "title": "",
+   "page": 27,
+   "text": "33 Expenses Related To Prescription On Discharge"
+  },
+  {
+   "id": "35#3",
+   "title": "",
+   "page": 27,
+   "text": "35 Incidental Expenses / Misc. Charges (Not Explained)"
+  },
+  {
+   "id": "36#2",
+   "title": "",
+   "page": 27,
+   "text": "36 Patient Identification Band / Name Tag"
+  },
+  {
+   "id": "C28.239",
+   "title": "",
+   "page": 28,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "28#2",
+   "title": "| P a g e",
+   "page": 28,
+   "text": "28 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 List III"
+  },
+  {
+   "id": "2#11",
+   "title": "",
+   "page": 28,
+   "text": "2 Disposables Razors Charges (For Site Preparations)"
+  },
+  {
+   "id": "12#8",
+   "title": "",
+   "page": 28,
+   "text": "12 Surgical Blades, Harmonic Scalpel, Shaver List IV"
+  },
+  {
+   "id": "2#12",
+   "title": "",
+   "page": 28,
+   "text": "2 Hospitalisation For Evaluation/Diagnostic Purpose"
+  },
+  {
+   "id": "4#12",
+   "title": "",
+   "page": 28,
+   "text": "4 Blood Reservation Charges And Ante Natal Booking Charges"
+  },
+  {
+   "id": "8#9",
+   "title": "",
+   "page": 28,
+   "text": "8 Hydrogen Peroxide / Spirit / Disinfectants, Etc."
+  },
+  {
+   "id": "9#9",
+   "title": "",
+   "page": 28,
+   "text": "9 Nutrition Planning Charges – Dietician Charges, Diet Charges"
+  },
+  {
+   "id": "C29.247",
+   "title": "",
+   "page": 29,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "29#3",
+   "title": "| P a g e",
+   "page": 29,
+   "text": "29 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 ANNEXURE – 2 The contact details of the Insurance Ombudsman offices are as below: Jurisdiction Office of the Insurance Ombudsman Gujarat, Dadra & Nagar Haveli, Daman & Diu Office of the Insurance Ombudsman, Jeevan Prakash Building, 6th floor, Tilak Marg, Relief Road, AHMEDABAD – 380 001. Tel.: 079 - 25501201/02/05/06 Email: bimalokpal.ahmedabad@cioins.co.in Karnataka Office of the Insurance Ombudsman, Jeevan Soudha Building No. 57-27-N-19 Ground Floor, 19/19, 24th Main Road, JP Nagar, 1st Phase, Bengaluru – 560 078. Tel.: 080 - 26652048 / 26652049 Email: bimalokpal.bengaluru@cioins.co.in Madhya Pradesh, Chhattisgarh Office of the Insurance Ombudsman, Janak Vihar Complex, 2nd Floor, 6, Malviya Nagar, Opp. Airtel Office, Near New Market, Bhopal – 462 003. Tel.: 0755 - 2769201 / 2769202 Email: bimalokpal.bhopal@cioins.co.in Odisha Office of the Insurance Ombudsman, 62, Forest Park, Bhubaneswar –"
+  },
+  {
+   "id": "751",
+   "title": "009.",
+   "page": 29,
+   "text": "751 009. Tel.: 0674 - 2596461 /2596455 Email: bimalokpal.bhubaneswar@cioins.co.in Punjab, Haryana (excluding Gurugram, Faridabad, Sonepat and Bahadurgarh), Himachal Pradesh, Union Territories of Jammu & Kashmir, Ladakh & Chandigarh Office of the Insurance Ombudsman, S.C.O. No. 101, 102 & 103, 2nd Floor, Batra Building, Sector 17 – D, Chandigarh – 160 017. Tel.: 0172 - 2706196 / 2706468 Email: bimalokpal.chandigarh@cioins.co.in Tamil Nadu, Puducherry Town and Karaikal (which are part of Puducherry) Office of the Insurance Ombudsman, Fatima Akhtar Court, 4th Floor, 453, Anna Salai, Teynampet, CHENNAI – 600 018. Tel.: 044 - 24333668 / 24335284 Email: bimalokpal.chennai@cioins.co.in Delhi & following Districts of Haryana - Gurugram, Faridabad, Sonepat & Bahadurgarh Office of the Insurance Ombudsman, 2/2 A, Universal Insurance Building, Asaf Ali Road, New Delhi – 110 002. Tel.: 011 - 23232481/23213504 Email: bimalokpal.delhi@cioins.co.in Assam, Meghalaya, Manipur, Mizoram, Arunachal Pradesh, Nagaland and Tripura Office of the Insurance Ombudsman, Jeevan Nivesh, 5th Floor, Nr. Pan bazar over bridge, S.S. Road, Guwahati – 781001(ASSAM). Tel.: 0361 - 2632204 / 2602205 Email: bimalokpal.guwahati@cioins.co.in Andhra Pradesh, Telangana, Yanam and part of Union Territory of Puducherry Office of the Insurance Ombudsman,"
+  },
+  {
+   "id": "6#9",
+   "title": "2-46, 1st floor, \"Moin Court\", Lane Opp. Saleem Function Palace,",
+   "page": 29,
+   "text": "6-2-46, 1st floor, \"Moin Court\", Lane Opp. Saleem Function Palace, A. C. Guards, Lakdi-Ka-Pool, Hyderabad - 500 004. Tel.: 040 - 23312122 Email: bimalokpal.hyderabad@cioins.co.in Rajasthan Office of the Insurance Ombudsman, Jeevan Nidhi – II Bldg., Gr. Floor, Bhawani Singh Marg, Jaipur - 302 005. Tel.: 0141 - 2740363 Email: bimalokpal.jaipur@cioins.co.in Kerala, Lakshadweep, Mahe- a part of Union Territory of Puducherry Office of the Insurance Ombudsman, 2nd Floor, Pulinat Bldg., Opp. Cochin Shipyard, M. G. Road, Ernakulam - 682 015. Tel.: 0484 - 2358759 / 2359338 Email: bimalokpal.ernakulam@cioins.co.in West Bengal, Sikkim, Andaman & Nicobar Islands Office of the Insurance Ombudsman, Hindustan Bldg. Annexe, 4th Floor, 4, C.R. Avenue, KOLKATA - 700 072. Tel.: 033 - 22124339 / 22124340"
+  },
+  {
+   "id": "C30.251",
+   "title": "",
+   "page": 30,
+   "text": "United India Insurance Company Limited Corporate Identity Number: U93090TN1938GOI000108 Registered Office: 24 Whites Road, Chennai – 600014 IRDAI REG NO.545"
+  },
+  {
+   "id": "30#2",
+   "title": "| P a g e",
+   "page": 30,
+   "text": "30 | P a g e Family Medicare Policy – Terms & Conditions UIN: UIIHLIP24090V052324 Jurisdiction Office of the Insurance Ombudsman Email: bimalokpal.kolkata@cioins.co.in Districts of Uttar Pradesh: Lalitpur, Jhansi, Mahoba, Hamirpur, Banda, Chitrakoot, Allahabad, Mirzapur, Sonbhabdra, Fatehpur, Pratapgarh, Jaunpur,Varanasi, Gazipur, Jalaun, Kanpur, Lucknow, Unnao, Sitapur, Lakhimpur, Bahraich, Barabanki, Raebareli, Sravasti, Gonda, Faizabad, Amethi, Kaushambi, Balrampur, Basti, Ambedkarnagar, Sultanpur, Maharajgang, Santkabirnagar, Azamgarh, Kushinagar, Gorkhpur, Deoria, Mau, Ghazipur, Chandauli, Ballia, Sidharathnagar Office of the Insurance Ombudsman, 6th Floor, Jeevan Bhawan, Phase-II, Nawal Kishore Road, Hazratganj, Lucknow - 226 001. Tel.: 0522 - 2231330 / 2231331 Email: bimalokpal.lucknow@cioins.co.in Goa, Mumbai Metropolitan Region (excluding Navi Mumbai & Thane) Office of the Insurance Ombudsman, 3rd Floor, Jeevan Seva Annexe, S. V. Road, Santacruz (W), Mumbai - 400 054. Tel.: 69038821/23/24/25/26/27/28/28/29/30/31 Email: bimalokpal.mumbai@cioins.co.in State of Uttarakhand and the following Districts of Uttar Pradesh: Agra, Aligarh, Bagpat, Bareilly, Bijnor, Budaun, Bulandshehar, Etah, Kannauj, Mainpuri, Mathura, Meerut, Moradabad, Muzaffarnagar, Oraiyya, Pilibhit, Etawah, Farrukhabad, Firozbad, Gautam Buddh nagar, Ghaziabad, Hardoi, Shahjahanpur, Hapur, Shamli, Rampur, Kashganj, Sambhal, Amroha, Hathras, Kanshiramnagar, Saharanpur Office of the Insurance Ombudsman, Bhagwan Sahai Palace 4th Floor, Main Road, Naya Bans, Sector 15, Distt: Gautam Buddh Nagar, U.P-201301. Tel.: 0120-2514252 / 2514253 Email: bimalokpal.noida@cioins.co.in Bihar, Jharkhand Office of the Insurance Ombudsman, 2nd Floor, Lalit Bhawan, Bailey Road, Patna 800 001. Tel.: 0612-2547068 Email: bimalokpal.patna@cioins.co.in Maharashtra, Areas of Navi Mumbai and Thane (excluding Mumbai Metropolitan Region) Office of the Insurance Ombudsman, Jeevan Darshan Bldg., 3rd Floor, C.T.S. No.s. 195 to 198, N.C. Kelkar Road, Narayan Peth, Pune – 411 030. Tel.: 020-41312555 Email: bimalokpal.pune@cioins.co.in"
+  },
+  {
+   "id": "C30.253",
+   "title": "",
+   "page": 30,
+   "text": "The updated details of Insurance Ombudsman are also available at: ▪ IRDAI website: https://www.irdai.gov.in/ ▪ General Insurance Council website: https://www.gicouncil.in/ ▪ Our Company Website: https://uiic.co.in/ ▪ From any of the offices of our Company"
+  }
+ ],
+ "source_file": "data/raw/policies/United India Insurance Company Limited.pdf"
+}

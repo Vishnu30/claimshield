@@ -1,0 +1,18 @@
+{
+ "issues": [
+  [
+   "waiting_period",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 0.0,
+ "claimed": 86700.0,
+ "payout_before": 0.0,
+ "payout_after_fixes": 0.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "en",
+ "render": "pdf"
+}

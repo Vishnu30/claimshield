@@ -1,0 +1,293 @@
+{
+ "bill": {
+  "hospital": "Ruby Park Hospital, Kolkata",
+  "bill_no": "RPH-7720",
+  "admission_date": "2026-09-02",
+  "discharge_date": "2026-09-05",
+  "room_category": "Twin sharing",
+  "room_days": 3.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 3.0,
+    "rate": 3500.0,
+    "amount": 10500.0,
+    "date": "2026-09-03",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - lap cholecystectomy",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 32000.0,
+    "amount": 32000.0,
+    "date": "2026-09-03",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-09-03",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 14000.0,
+    "amount": 14000.0,
+    "date": "2026-09-03",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Ultrasound & LFT",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 6000.0,
+    "amount": 6000.0,
+    "date": "2026-09-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy - in-patient medicines",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 7400.0,
+    "amount": 7400.0,
+    "date": "2026-09-04",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "F1",
+    "description": "Pantoprazole injection",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 1200.0,
+    "amount": 1200.0,
+    "date": "2026-09-04",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "F2",
+    "description": "Ceftriaxone injection",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 2400.0,
+    "amount": 2400.0,
+    "date": "2026-09-04",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "F3",
+    "description": "Pharmacy - in-patient medicines",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 7400.0,
+    "amount": 7400.0,
+    "date": "2026-09-04",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 88900.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Symptomatic cholelithiasis",
+  "procedure": "Laparoscopic cholecystectomy",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "bn",
+  "patient_age": 48,
+  "sum_insured": null,
+  "policy_start": "2021-06-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque"
+  ],
+  "narrative": "হাসপাতালের ফার্মেসি বিল আলাদা দিয়েছে, কিছু ওষুধ দুবার লেখা আছে মনে হচ্ছে।",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Two bills (hospital + pharmacy) — duplicated medicines, Bengali output",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf",
+ "bill_parts": {
+  "bill.pdf": {
+   "hospital": "Ruby Park Hospital, Kolkata",
+   "bill_no": "RPH-7720",
+   "admission_date": "2026-09-02",
+   "discharge_date": "2026-09-05",
+   "room_category": "Twin sharing",
+   "room_days": 3.0,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "R1",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 3.0,
+     "rate": 3500.0,
+     "amount": 10500.0,
+     "date": "2026-09-03",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "S1",
+     "description": "Surgeon fee - lap cholecystectomy",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 32000.0,
+     "amount": 32000.0,
+     "date": "2026-09-03",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "A1",
+     "description": "Anaesthesia",
+     "category": "anaesthesia",
+     "qty": 1.0,
+     "rate": 8000.0,
+     "amount": 8000.0,
+     "date": "2026-09-03",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "O1",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 14000.0,
+     "amount": 14000.0,
+     "date": "2026-09-03",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "V1",
+     "description": "Ultrasound & LFT",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 6000.0,
+     "amount": 6000.0,
+     "date": "2026-09-02",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "P1",
+     "description": "Pharmacy - in-patient medicines",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 7400.0,
+     "amount": 7400.0,
+     "date": "2026-09-04",
+     "page": 1,
+     "doc": "bill"
+    }
+   ],
+   "discount": 0,
+   "stated_total": 77900,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "bill_pharmacy.pdf": {
+   "hospital": "Ruby Park Hospital — In-house Pharmacy",
+   "bill_no": "RPH-7720",
+   "admission_date": "2026-09-02",
+   "discharge_date": "2026-09-05",
+   "room_category": "Twin sharing",
+   "room_days": 3.0,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "F1",
+     "description": "Pantoprazole injection",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 1200.0,
+     "amount": 1200.0,
+     "date": "2026-09-04",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "F2",
+     "description": "Ceftriaxone injection",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 2400.0,
+     "amount": 2400.0,
+     "date": "2026-09-04",
+     "page": 1,
+     "doc": "bill"
+    },
+    {
+     "id": "F3",
+     "description": "Pharmacy - in-patient medicines",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 7400.0,
+     "amount": 7400.0,
+     "date": "2026-09-04",
+     "page": 1,
+     "doc": "bill"
+    }
+   ],
+   "discount": 0,
+   "stated_total": 11000,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill_pharmacy.pdf"
+  }
+ }
+}

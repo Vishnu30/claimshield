@@ -1,0 +1,65 @@
+{
+ "built_at": "2026-10-31T16:26:18+00:00",
+ "policies": [
+  {
+   "id": "bajaj_alliance",
+   "name": "Bajaj Allianz Bajaj Alliance"
+  },
+  {
+   "id": "bajaj_health_guard",
+   "name": "Bajaj Allianz Bajaj-Health-Guard"
+  },
+  {
+   "id": "care_supreme",
+   "name": "Care Health Care Supreme"
+  },
+  {
+   "id": "demo_category",
+   "name": "Bluebird Health Insurance (synthetic) Category Care Floater (Demo)"
+  },
+  {
+   "id": "demo_classic",
+   "name": "Old Shore Assurance (synthetic) Classic Mediclaim (Demo, legacy wording)"
+  },
+  {
+   "id": "demo_shield",
+   "name": "Demo General Insurance (synthetic) ClaimShield Demo Health Policy"
+  },
+  {
+   "id": "hdfc_ergo_company_optima_restore",
+   "name": "HDFC ERGO Company Optima Restore"
+  },
+  {
+   "id": "icici_lombard_arogya_sanjeevani_policy",
+   "name": "ICICI Lombard AROGYA SANJEEVANI POLICY"
+  },
+  {
+   "id": "new_india_assurance_the",
+   "name": "New India Assurance THE"
+  },
+  {
+   "id": "star_health_and_allied_shahlip26045v042526",
+   "name": "Star Health AND ALLIED | SHAHLIP26045V042526"
+  },
+  {
+   "id": "star_health_insurance",
+   "name": "Star Health Star Health Insurance"
+  },
+  {
+   "id": "united_india_family_medicare_policy",
+   "name": "United India Family Medicare Policy"
+  }
+ ],
+ "regulator_rules": 13,
+ "verbatim_rules": 0,
+ "non_payables": 141,
+ "precedents": 0,
+ "tariff_rows": 0,
+ "raw_pdfs": {
+  "irdai": 0,
+  "policies": 18,
+  "ombudsman": 1,
+  "tariffs": 9,
+  "checklists": 0
+ }
+}

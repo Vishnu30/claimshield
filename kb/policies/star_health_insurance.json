@@ -1,0 +1,754 @@
+{
+ "policy_id": "star_health_insurance",
+ "insurer": "Star Health",
+ "product": "Star Health Insurance",
+ "uin": "SHAHLIP26041V082526",
+ "jurisdiction": "IN",
+ "sum_insured": null,
+ "room_rent": {
+  "kind": "pct_si",
+  "value": 1.0,
+  "max_value": 750000.0,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": 2,
+   "quote": "Sum Insured (Rs.) Room Rent Limit (per day) Rs.1,00,000/- to Rs.5,00,000/- Up to 1% of the Sum Insured Rs.7,50,000/- and Rs.10,00,000/- Up to Rs.6,000/- Rs.15,00,000/- Up to Rs.7,000/- Rs.20,00,000/- Up to Rs.8,500/- Rs.25,00,000/- Up to Rs.10,000/- Note: Expenses relating to the hospitalization will be considered in proportion to the room rent limit stated in the policy or actuals whichever is less."
+  }
+ },
+ "icu_rent": {
+  "kind": "pct_si",
+  "value": 2.0,
+  "max_value": 1500000.0,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": 2,
+   "quote": "ICU charges Sum Insured (Rs.) Limit (per day) Rs.1,00,000/- to Rs.10,00,000/- Up to 2% of the Sum Insured Rs.15,00,000/- to Rs.25,00,000/- Actuals"
+  }
+ },
+ "proportionate_deduction": true,
+ "proportionate_cite": {
+  "clause_id": null,
+  "page": null,
+  "quote": null
+ },
+ "copays": [
+  {
+   "pct": 30.0,
+   "condition": "Co-Payment: This policy is subject to co-payment of 30% for all claims.",
+   "age_min": null,
+   "cite": {
+    "clause_id": null,
+    "page": 4,
+    "quote": "Co-Payment: This policy is subject to co-payment of 30% for all claims."
+   }
+  },
+  {
+   "pct": 25.0,
+   "condition": "Limit for room rent, 2. Limit for ICU Charges, 3. \u0007Limit for medical practitioner fee [25% of the SumInsured], 4. \u0007Limit",
+   "age_min": null,
+   "cite": {
+    "clause_id": null,
+    "page": 5,
+    "quote": "Limit for room rent, 2. Limit for ICU Charges, 3. \u0007Limit for medical practitioner fee [25% of the SumInsured], 4. \u0007Limit for Anethesia / OT Charges [50% of the Sum Insured]) - A Less: Co-pay (30%) Rs. 2,40,000 (30% co-pay on admissible claim amount) - B Claim amount payable after 30% copay Rs. 5,60,000 A (-) B Final Settled amount Rs. 4,00,000 Claim amount payable is greater than sublimit."
+   }
+  }
+ ],
+ "sublimits": [],
+ "waiting_periods": [
+  {
+   "kind": "initial",
+   "months": 1,
+   "conditions": [],
+   "cite": {
+    "clause_id": null,
+    "page": 6,
+    "quote": "Congenital Internal disease / defect 3. 30-day waiting period - Code Excl 03 A. \u0007Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered B. \u0007This exclusion shall not, however, apply if the Insured Person has continuous coverage for more than twelve months C. \u0007The within referred waiting period is made applicable to the enhanced Sum Insured in the event of granting higher Sum Insured subsequently 4."
+   }
+  },
+  {
+   "kind": "ped",
+   "months": 12,
+   "conditions": [],
+   "cite": {
+    "clause_id": "1",
+    "page": 5,
+    "quote": "1. Pre-Existing Diseases - Code Excl 01 A. \u0007Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first policy with insurer B. \u0007In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase C. \u0007If the Insured Person is continuously covered without any break as defined under the applicable norms on portability stipulated by IRDAI, then waiting period for the same would be reduced to the extent of prior c"
+   }
+  },
+  {
+   "kind": "specific",
+   "months": 24,
+   "conditions": [
+    "cataract",
+    "hernia",
+    "hydrocele",
+    "joint replacement",
+    "gall bladder",
+    "fissure",
+    "fistula",
+    "disc"
+   ],
+   "cite": {
+    "clause_id": null,
+    "page": 5,
+    "quote": "Specified disease / procedure waiting period - Code Excl 02 A. \u0007Expenses related to the treatment of following listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy with us."
+   }
+  }
+ ],
+ "exclusions": [
+  {
+   "code": "Excl01",
+   "text": "A. \u0007Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first policy with insurer B. \u0007In ca",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl01",
+    "page": 5,
+    "quote": "1. Pre-Existing Diseases - Code Excl 01 A. \u0007Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first policy with insurer B. \u0007In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase C. \u0007If the Insured Person is continuously covered without any break as defined under the applicable norms on portability stipulated by IRDAI, then waiting period for the same would be reduced to the extent of prior c"
+   }
+  },
+  {
+   "code": "Excl02",
+   "text": "A. \u0007Expenses related to the treatment of following listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy with us.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl02",
+    "page": 5,
+    "quote": "Specified disease / procedure waiting period - Code Excl 02 A. \u0007Expenses related to the treatment of following listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy with us."
+   }
+  },
+  {
+   "code": "Excl03",
+   "text": "A. \u0007Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered B. \u0007This exclusion shall not, however, app",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl03",
+    "page": 6,
+    "quote": "Congenital Internal disease / defect 3. 30-day waiting period - Code Excl 03 A. \u0007Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered B. \u0007This exclusion shall not, however, apply if the Insured Person has continuous coverage for more than twelve months C. \u0007The within referred waiting period is made applicable to the enhanced Sum Insured in the event of granting higher Sum Insured subsequently 4."
+   }
+  },
+  {
+   "code": "Excl04",
+   "text": "A. \u0007Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded B. \u0007Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment are excluded 5. \u0007Rest Cure,",
+   "keywords": [
+    "dental",
+    "rest cure"
+   ],
+   "cite": {
+    "clause_id": "Excl04",
+    "page": 6,
+    "quote": "Investigation & Evaluation - Code Excl 04 A. \u0007Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded B. \u0007Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment are excluded 5. \u0007Rest Cure, rehabilitation and respite care - Code Excl 05: Expenses related to any admission primarily for enforced bed rest and not for receiving treatment."
+   }
+  },
+  {
+   "code": "Excl06",
+   "text": "Expenses related to the surgical treatment of obesity that does not fulfill all the below conditions;",
+   "keywords": [
+    "obesity"
+   ],
+   "cite": {
+    "clause_id": "Excl06",
+    "page": 6,
+    "quote": "This also includes; 1. \u0007Custodial care either at home or in a nursing facility for personal care such as help with activities of daily living such as bathing, dressing, moving around either by skilled nurses or assistant or non-skilled persons 2. \u0007Any services for people who are terminally ill to address physical, social, emotional and spiritual needs 6. \u0007Obesity / Weight Control - Code Excl 06: Expenses related to the surgical treatment of obesity that does not fulfill all the below conditions;"
+   }
+  },
+  {
+   "code": "Excl07",
+   "text": "Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl07",
+    "page": 6,
+    "quote": "Uncontrolled Type2 Diabetes 7. \u0007Change-of-Gender treatments - Code Excl 07: Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex."
+   }
+  },
+  {
+   "code": "Excl08",
+   "text": "Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to th",
+   "keywords": [
+    "cosmetic",
+    "plastic surgery"
+   ],
+   "cite": {
+    "clause_id": "Excl08",
+    "page": 6,
+    "quote": "8. \u0007Cosmetic or plastic Surgery - Code Excl 08: Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured."
+   }
+  },
+  {
+   "code": "Excl09",
+   "text": "Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba ",
+   "keywords": [
+    "hazardous"
+   ],
+   "cite": {
+    "clause_id": "Excl09",
+    "page": 7,
+    "quote": "12 13 9. \u0007Hazardous or Adventure sports - Code Excl 09: Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving."
+   }
+  },
+  {
+   "code": "Excl10",
+   "text": "Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl10",
+    "page": 7,
+    "quote": "10. \u0007Breach of law - Code Excl 10: Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent."
+   }
+  },
+  {
+   "code": "Excl11",
+   "text": "Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed in its website / notified to the policyholders are not admissible.",
+   "keywords": [
+    "war"
+   ],
+   "cite": {
+    "clause_id": "Excl11",
+    "page": 7,
+    "quote": "11. \u0007Excluded Providers - Code Excl 11: Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed in its website / notified to the policyholders are not admissible."
+   }
+  },
+  {
+   "code": "Excl12",
+   "text": "13. \u0007Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl12",
+    "page": 7,
+    "quote": "12. \u0007Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof - Code Excl 12 13. \u0007Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons - Code Excl 13 14. \u0007Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalizat"
+   }
+  },
+  {
+   "code": "Excl16",
+   "text": "Expenses related to any unproven treatment, services and supplies for or in connection with any treatment.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl16",
+    "page": 7,
+    "quote": "5 dioptres. 16. \u0007Unproven Treatments - Code Excl 16: Expenses related to any unproven treatment, services and supplies for or in connection with any treatment."
+   }
+  },
+  {
+   "code": "Excl17",
+   "text": "Expenses related to sterility and infertility.",
+   "keywords": [
+    "infertility"
+   ],
+   "cite": {
+    "clause_id": "Excl17",
+    "page": 7,
+    "quote": "17. \u0007Sterility and Infertility - Code Excl 17: Expenses related to sterility and infertility."
+   }
+  },
+  {
+   "code": "Excl18",
+   "text": "a. \u0007Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy b. \u0007Expenses towards miscarriage (unless due to an accident) and lawfu",
+   "keywords": [
+    "war"
+   ],
+   "cite": {
+    "clause_id": "Excl18",
+    "page": 7,
+    "quote": "Gestational Surrogacy d. Reversal of sterilization 18. Maternity - Code Excl 18 a. \u0007Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy b. \u0007Expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period 19. \u0007Circumcision (unless necessary for treatment of a disease not excluded under this policy or necessitated due to an accident), Preputioplasty, Frenuloplasty, Preputial Dilatation and Removal of SMEGMA - Code Excl 19 "
+   }
+  },
+  {
+   "code": "Excl20",
+   "text": "21. \u0007Convalescence, general debility, run-down condition, Nutritional deficiency states - Code Excl 21 22.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl20",
+    "page": 7,
+    "quote": "Congenital External Condition / Defects / Anomalies - Code Excl 20 21. \u0007Convalescence, general debility, run-down condition, Nutritional deficiency states - Code Excl 21 22."
+   }
+  },
+  {
+   "code": "Excl22",
+   "text": "23. \u0007Injury/disease caused by or arising from or attributable to war, invasion, act of foreign enemy, warlike operations (whether war be declared or not) - Code Excl 24 24.",
+   "keywords": [
+    "war"
+   ],
+   "cite": {
+    "clause_id": "Excl22",
+    "page": 7,
+    "quote": "Intentional self injury - Code Excl 22 23. \u0007Injury/disease caused by or arising from or attributable to war, invasion, act of foreign enemy, warlike operations (whether war be declared or not) - Code Excl 24 24."
+   }
+  },
+  {
+   "code": "Excl25",
+   "text": "25. \u0007Expenses incurred on Enhanced External Counter Pulsation Therapy and related therapies, Chelation therapy, Hyperbaric Oxygen Therapy, Rotational Field Quantum Magnetic Resonance Therapy, VAX-D, Low level laser therapy, Photodynamic the",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl25",
+    "page": 7,
+    "quote": "Injury or disease caused by or contributed to by nuclear weapons/materials - Code Excl 25 25. \u0007Expenses incurred on Enhanced External Counter Pulsation Therapy and related therapies, Chelation therapy, Hyperbaric Oxygen Therapy, Rotational Field Quantum Magnetic Resonance Therapy, VAX-D, Low level laser therapy, Photodynamic therapy and such other similar therapies - Code Excl 26 26."
+   }
+  },
+  {
+   "code": "Excl27",
+   "text": "27. \u0007Autologous derived Stromal vascular Fraction, Chondrocyte Implantation, Procedures using Platelet Rich plasma and Intra articular injection therapy - Code Excl 28 28. \u0007Biologicals, except when administered as an in-patient, when clinic",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl27",
+    "page": 7,
+    "quote": "Unconventional, Untested, Experimental therapies - Code Excl 27 27. \u0007Autologous derived Stromal vascular Fraction, Chondrocyte Implantation, Procedures using Platelet Rich plasma and Intra articular injection therapy - Code Excl 28 28. \u0007Biologicals, except when administered as an in-patient, when clinically indicated and hospitalization warranted - Code Excl 29 29. \u0007Inoculation or Vaccination (except for post–bite treatment and for medical treatment for therapeutic reasons) - Code Excl 31 30. \u0007Dental treatment or surgery unless necessitated due to accidental injuries and requiring hospitalizat"
+   }
+  },
+  {
+   "code": "Excl37",
+   "text": "35. \u0007Existing disease/s, disclosed by the Insured and mentioned in the policy schedule under Permanent Exclusion (based on Insured’s consent) - Code Excl 38 Note: Exclusion Nos.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl37",
+    "page": 7,
+    "quote": "Other Excluded Expenses as detailed in the website www.starhealth.in - Code Excl 37 35. \u0007Existing disease/s, disclosed by the Insured and mentioned in the policy schedule under Permanent Exclusion (based on Insured’s consent) - Code Excl 38 Note: Exclusion Nos."
+   }
+  }
+ ],
+ "intimation_emergency_hours": 24,
+ "intimation_planned_days_before": 2,
+ "claim_submission_days": null,
+ "clauses": [
+  {
+   "id": "C1.1",
+   "title": "",
+   "page": 1,
+   "text": "1 Senior Citizens Red Carpet Health Insurance Policy SHAHLIP26041V082526"
+  },
+  {
+   "id": "C2.2",
+   "title": "",
+   "page": 2,
+   "text": "2 3 Senior Citizens Red Carpet Health Insurance Policy Senior Citizens Red Carpet Health Insurance Policy Turning sixty is a major milestone and for people, a time to start being more careful about their health. It is a matter of concern that insurance policies are hardly available to address this critical requirement. STAR Health’s Senior Citizens Red Carpet Health Insurance Policy is aimed speciﬁcally at senior citizens. It provides cover to anyone from the age of 60 and permits entry right up to the age of 75 with continuing cover thereafter till lifetime. It is our way of caring for a generation that has done so much to build the country we have today. Unique Identification No.: SHAHLIP26041V082526 Eligibility • Entry age between 60 and 75 years • Guaranteed Lifelong renewals \u0007Policy Term: The policy is available for 1/2/3 years which can be renewed. Where the policy is issued for more than 1 year, the Sum Insured is for each year, without any carry over beneﬁt thereof and the premium for such policies can be paid upfront as a single payment."
+  },
+  {
+   "id": "C2.3",
+   "title": "",
+   "page": 2,
+   "text": "Policy Type: Available on Individual Sum Insured and Floater Sum Insured basis. Floater Sum Insured basis means the Sum Insured ﬂoats amongst the insured persons. Day Care Procedures: All day care procedures are covered. Sum Insured Options Sum Insured on Individual Basis (Rs.) 1,00,000/- 2,00,000/- 3,00,000/- 4,00,000/- 5,00,000/- 7,50,000/- Sum Insured on Individual & Floater Basis (Rs.) 10,00,000/- 15,00,000/- 20,00,000/- 25,00,000/- \u0007Instalment Facility available: Premium can be paid Monthly, Quarterly and Half-yearly. For instalment mode of payment, there will be loading as given below: • Monthly: 4% • Quarterly: 3% • Half Yearly: 2% Medical Underwriting / Pre-Policy Medical Check-up: The company may ask the members to be proposed to undergo medical underwriting either through medical tests or any other medium viz tele underwriting etc. This will vary/depend upon the Sum Insured/ Medical History/ Zone and Age. If we accept the proposal, we will reimburse at least 50% of the costs incurred by the member undertaking such Pre-Policy medical check-up. If the following medical records of the person proposed for insurance are submitted, a discount of 10% of the premium is allowed."
+  },
+  {
+   "id": "4",
+   "title": "",
+   "page": 2,
+   "text": "4. Blood urea & creatinine The tests should have been taken within 45 days prior to the date of proposal or prior to the date of renewal. If the prospect submits these documents at the time of proposal or at the time of renewal, the discount will be given for all subsequent renewals if the policy is renewed continuously without break Coverage"
+  },
+  {
+   "id": "1",
+   "title": "",
+   "page": 2,
+   "text": "1. \u0007Hospitalization Cover: Room, Boarding and Nursing expenses as per the table given below; Sum Insured (Rs.) Room Rent Limit (per day) Rs.1,00,000/- to Rs.5,00,000/- Up to 1% of the Sum Insured Rs.7,50,000/- and Rs.10,00,000/- Up to Rs.6,000/- Rs.15,00,000/- Up to Rs.7,000/- Rs.20,00,000/- Up to Rs.8,500/- Rs.25,00,000/- Up to Rs.10,000/- Note: Expenses relating to the hospitalization will be considered in proportion to the room rent limit stated in the policy or actuals whichever is less."
+  },
+  {
+   "id": "2",
+   "title": "",
+   "page": 2,
+   "text": "2. Coverage for Modern Treatments Expenses are subject to the limits: (For details please refer website: www.starhealth.in)"
+  },
+  {
+   "id": "3",
+   "title": "",
+   "page": 2,
+   "text": "3. ICU charges Sum Insured (Rs.) Limit (per day) Rs.1,00,000/- to Rs.10,00,000/- Up to 2% of the Sum Insured Rs.15,00,000/- to Rs.25,00,000/- Actuals"
+  },
+  {
+   "id": "4#2",
+   "title": "\u0007Surgeon, Anesthetist, Medical Practitioner, Consultants and Specialist’s fees up to 25% of",
+   "page": 3,
+   "text": "4. \u0007Surgeon, Anesthetist, Medical Practitioner, Consultants and Specialist’s fees up to 25% of the Sum Insured per hospitalization"
+  },
+  {
+   "id": "5",
+   "title": "\u0007Anesthesia, Blood, Oxygen, Operation Theatre charges, Cost of Pacemaker etc up to 50%",
+   "page": 3,
+   "text": "5. \u0007Anesthesia, Blood, Oxygen, Operation Theatre charges, Cost of Pacemaker etc up to 50% of the Sum Insured per hospitalization"
+  },
+  {
+   "id": "6",
+   "title": "\u0007Emergency ambulance charges as per the table given below for transporting the insured",
+   "page": 3,
+   "text": "6. \u0007Emergency ambulance charges as per the table given below for transporting the insured person by private ambulance services to the hospital Sum Insured (Rs.) Limit per hospitalization (Rs.) Limit per policy period (Rs.) 1,00,000/- to 4,00,000/- 600/- 1,200/- 5,00,000/- to 10,00,000/- 1,000/- 2,000/- 15,00,000/- to 25,00,000/- 1,500/- 3,000/-"
+  },
+  {
+   "id": "7",
+   "title": "\u0007Pre Hospitalization medical expenses incurred for a period not exceeding 30 days prior",
+   "page": 3,
+   "text": "7. \u0007Pre Hospitalization medical expenses incurred for a period not exceeding 30 days prior to the date of hospitalization, for disease/illness, injury sustained following an admissible claim for hospitalization under the policy"
+  },
+  {
+   "id": "8",
+   "title": "\u0007Post Hospitalization: Wherever recommended by the treating medical practitioner,",
+   "page": 3,
+   "text": "8. \u0007Post Hospitalization: Wherever recommended by the treating medical practitioner, Post Hospitalization medical expenses equivalent to 7% of the hospitalization expenses comprising of Nursing Charges, Surgeon / Consultant fees, Diagnostic charges, Medicines and drugs expenses, subject to a maximum as per the table given below; Sum Insured (Rs.) Limits per occurrence (Rs.) 1,00,000/- to 7,50,000/- 5,000/- 10,00,000/- to 15,00,000/- 7,000/- 20,00,000/- to 25,00,000/- 10,000/-"
+  },
+  {
+   "id": "9",
+   "title": "\u0007AYUSH Treatment: Medical expenses for Inpatient Hospitalization incurred on treatment",
+   "page": 3,
+   "text": "9. \u0007AYUSH Treatment: Medical expenses for Inpatient Hospitalization incurred on treatment under Ayurveda, Unani, Siddha and Homeopathy systems of medicines in a AYUSH Hospital is payable up to the Sum Insured. Note : Claims under Yoga and Naturopathy system of treatment will be payable subject to prior approval from the company"
+  },
+  {
+   "id": "10",
+   "title": "\u0007Compassionate travel: In the event of the insured person being hospitalized for a life",
+   "page": 3,
+   "text": "10. \u0007Compassionate travel: In the event of the insured person being hospitalized for a life threatening emergency at a place away from his usual place of residence as recorded in the policy, the Company will reimburse the transportation expenses by air transportation incurred up to Rs. 10,000/- per occurrence for one immediate family member (other than the travel companion) for travel towards the place where hospital is located, provided the claim for hospitalization is admissible under the policy. Payment under this benefit does not form part of the Sum Insured."
+  },
+  {
+   "id": "11",
+   "title": "\u0007Repatriation of Mortal Remains: Following an admissible claim for hospitalization under",
+   "page": 3,
+   "text": "11. \u0007Repatriation of Mortal Remains: Following an admissible claim for hospitalization under the policy, the Company shall reimburse up to Rs.10,000/- per policy period towards the cost of repatriation of mortal remains of the insured person (including the cost of embalming and coffin charges) to the residence of the Insured as recorded in the policy. Payment under this benefit does not form part of the Sum Insured."
+  },
+  {
+   "id": "12",
+   "title": "\u0007Second Medical Opinion: The Insured Person can obtain a Second Medical Opinion from",
+   "page": 3,
+   "text": "12. \u0007Second Medical Opinion: The Insured Person can obtain a Second Medical Opinion from a Doctor in the Company’s network of Medical Practitioners. All the medical records provided by the Insured Person will be submitted to the Doctor chosen by him/her online and the medical opinion will be made available directly to the Insured by the Doctor. The Insured Person can obtain Second Medical Opinion via Star Health Mobile App, by booking an appointment with a Doctor. Special Conditions • This should be specifically requested for by the Insured Person • \u0007This opinion is given based only on the medical records submitted without examining the patient • \u0007The second opinion should be only for medical reasons and not for medico-legal purposes • \u0007Any liability due to any errors or omission or consequences of any action taken in reliance of the second opinion provided by the Medical Practitioner is outside the scope of this policy • Utilizing this facility alone will not be considered as a claim Note: Medical Records / Documents submitted for utilizing this facility will not prejudice the Company’s right to reject a claim in terms of policy"
+  },
+  {
+   "id": "13",
+   "title": "\u0007Home Care Treatment: Payable up to 10% of the Sum Insured subject to maximum of",
+   "page": 3,
+   "text": "13. \u0007Home Care Treatment: Payable up to 10% of the Sum Insured subject to maximum of Rs.50,000/- in a policy year, for treatment availed by the Insured Person at home, only for the specified conditions mentioned below, which in normal course would require care and treatment at a hospital but is actually taken at home provided that: a. The Medical practitioner advises the Insured person to undergo treatment at home b. \u0007There is a continuous active line of treatment with monitoring of the health status by a medical practitioner for each day through the duration of the home care treatment c. \u0007Daily monitoring chart including records of treatment administered duly signed by the treating doctor is maintained d. \u0007Insured can avail ‘’Home Care Treatment’’ service on cashless basis from the list of our Network service providers given in our website ‘’www.starhealth.in’’ e. Claim under this benefit forms part of Sum Insured. List of Conditions covered under Home care treatment: a. Fever and Infectious diseases which can be managed as In-patient b. Uncomplicated Urinary tract infections but needing Parenteral Antibiotics c. Asthma and COPD -Mild Exacerbations needing Home Nebulization d. Acute Gastritis / Gastroenteritis e. I.V. Chemotherapy [Where advised by the doctor] f. Palliative Cancer care requiring medical assistance g. Acute Vertigo h. Diabetic foot and Cellulitis i. IVDP [Cervical and Lumbar disc diseases] j. Major Surgeries / Arthroplasties needing IV Antibiotics Post Discharge k. Care for Brain and Spinal Injury Cases Post Discharge l. Post CVA Care at Home after Discharge"
+  },
+  {
+   "id": "14",
+   "title": "\u0007Unlimited Tele-Consultation: We will arrange Tele Consultations with qualified Medical",
+   "page": 4,
+   "text": "14. \u0007Unlimited Tele-Consultation: We will arrange Tele Consultations with qualified Medical Practitioner or Healthcare professional through various modes of communication like audio, video, online portal, chat through Star Health mobile application or digital platforms. The services provided under this cover will be made available subject to following conditions: i. \u0007The Medical Practitioner may recommend over-the-counter medications based on the information provided. ii. \u0007Tele Consultations should not substitute in-person consultation with independent Medical Practitioner/ Healthcare professional. iii. \u0007The proposer should seek assistance from a health care professional when interpreting and applying them to the Insured Person’s individual circumstances. If the Insured Person has any concerns about His/ her health, He/ She may consult His/ her general practitioner. We shall not hold any responsibility towards any loss or damage arising out of or in relation to any opinion, advice, prescription, actual or alleged errors, omissions and representations made by the Medical Practitioner/ Health care professional. iv. \u0007There shall be no maximum limit on the count of Tele-Consultations that can be availed in a Policy Year by each Insured Person. v. \u0007We/Medical Practitioner/Health care professional may refer the Insured Person to another specialist or a general physician (outside of our empaneled network) if required, and the charges for such specialist or a general physician will have to be borne by the Insured Person. vi. \u0007We shall not be liable for any discrepancy in the information provided under this cover. vii. Availing services is at the sole discretion and risk of the Insured Person."
+  },
+  {
+   "id": "C4.19",
+   "title": "",
+   "page": 4,
+   "text": "Special Features A. \u0007Out Patient Consultation: Expenses on Medical Consultations as an Out Patient incurred in Network hospitals up to the limits mentioned in the table given below with a limit of Rs.200/- per consultation. Payment under this benefit will not reduce the Sum Insured and is payable only when the policy is in force Sum Insured (Rs.) Limit per person per policy period for policy with Sum Insured on Individual Basis For Policy with Sum Insured on Floater Basis Limit Per Person (Rs.) Limit Per Policy Period (Rs.) 1,00,000 Not Available Not Available 2,00,000 3,00,000 600 4,00,000 800 5,00,000 1,000 7,50,000 1,200 10,00,000 1,400 1,400 2,400 15,00,000 1,800 1,800 3,000 20,00,000 2,200 2,200 3,800 25,00,000 2,600 2,600 4,400 Claims of Out Patient Consultations / treatments will be settled on Cashless basis. Note: Payment of any claim under Out Patient Consultation shall not be construed as a waiver of Company’s right to repudiate any claim on grounds of non disclosure of material fact or pre-existing disease, for hospitalization expenses under hospitalization provisions of the policy contract. B. \u0007Preventive Health Check-up: We will arrange for a Preventive Health Check-up at Our Network Providers for the applicable package as specified below as per opted Sum Insured and subject to the conditions specified below: Sum Insured on Individual Basis (Rs.) Applicable Package 1,00,000 to 4,00,000 NA 5,00,000 and 7,50,000 Package A 10,00,000 and 15,00,000 Package B 20,00,000 and 25,00,000 Package B Sum Insured on Floater Basis (Rs.) Applicable Package 10,00,000 and 15,00,000 Package B 20,00,000 and 25,00,000 Package B i. \u0007An initial waiting period of 30 days shall apply from the first inception of Policy. This waiting period shall not be applicable during subsequent renewals. ii. \u0007Health Check-up can be availed once per Policy Year per Insured Person in the Policy and all the tests must have been done on the same date. iii. \u0007For the updated and applicable list of tests available under such package, Insured Persons are required to check our website www.starhealth.in. iv. \u0007The pre-defined health check-up packages may be modified from time to time without prior notice. v. \u0007This cover can be availed through Star health mobile application, other digital platforms, or by calling at our Toll free number: 1800 425 2255. vi. \u0007The Network Provider/Health Service Provider shall be assigned by Us upon receiving the Insured Person’s request to avail a Health Check-up under this cover. vii. Utilization of this Health Check-up shall not impact the Sum Insured. viii. \u0007In case of long term policies, Insured Person(s) are eligible for a Health Check-up once every Policy Year."
+  },
+  {
+   "id": "C4.20",
+   "title": "",
+   "page": 4,
+   "text": "Co-Payment: This policy is subject to co-payment of 30% for all claims."
+  },
+  {
+   "id": "C5.21",
+   "title": "",
+   "page": 5,
+   "text": "8 9 Sublimits For Policy with Sum Insured on Individual Basis; Sum Insured (Rs.) Cataract Cerebro vascular Accident, Cardio vascular Diseases, Cancer (Including Chemotherapy / Radiotherapy), Medical Renal Diseases (Including Dialysis), Treatment of Breakage of Long Bones All other major surgeries Limit per person, per policy period for each diseases / Condition (Rs.) 1,00,000 15,000 75,000 60,000 2,00,000 15,000 1,50,000 1,20,000 3,00,000 18,000 2,00,000 1,50,000 4,00,000 20,000 2,25,000 2,00,000 5,00,000 21,500 2,75,000 2,25,000 7,50,000 23,000 3,00,000 2,50,000 10,00,000 25,000 3,50,000 2,75,000 15,00,000 30,000 4,00,000 3,00,000 20,00,000 35,000 4,50,000 3,25,000 25,00,000 40,000 5,00,000 3,50,000 For Policy with Sum Insured on Floater Basis; Sum Insured (Rs.) Cataract Cerebro vascular Accident, Cardio vascular Diseases, Cancer (Including Chemotherapy / Radiotherapy), Medical Renal Diseases (Including Dialysis), Treatment of Breakage of Long Bones All other major surgeries per policy period for each diseases / Condition (Rs.) Limit per person (Rs.) Limit per policy period (Rs.) Limit per person (Rs.) Limit per policy period (Rs.) Limit per person (Rs.) Limit per policy period (Rs.) 10,00,000 25,000 45,000 3,50,000 6,00,000 2,75,000 4,50,000 15,00,000 30,000 50,000 4,00,000 7,00,000 3,00,000 5,00,000 20,00,000 35,000 60,000 4,50,000 7,50,000 3,25,000 5,50,000 25,00,000 40,000 70,000 5,00,000 8,50,000 3,50,000 6,00,000 Note : The limits are applicable for treatment of each disease / condition"
+  },
+  {
+   "id": "C5.22",
+   "title": "",
+   "page": 5,
+   "text": "\u0007All Other Major Surgery means Intestinal obstruction – acute / sub acute / chronic, Bilo Pancreatic surgery, Gastro-Intestinal surgeries, Total Knee Replacement surgery, Total Hip Replacement surgery, Other major surgeries of joints, Hemi-Orthro Plasty surgeries, Surgeries on Prostrate, Surgery related to Genito-Urinary Tract. Note: Company’s liability in respect of all claims admitted during the period of insurance shall not exceed the Sum Insured mentioned in the policy schedule. \u0007Claim Illustration for Sublimit and Co-pay: Treatment for Cerebro Vascular Accident (Individual Basis); Sum Insured Rs.15,00,000 Actual claim amount Rs.10,00,000 Sublimit for CVA Rs. 4,00,000 Admissible claim amount Rs. 8,00,000 (After considering"
+  },
+  {
+   "id": "3#2",
+   "title": "\u0007Limit for medical practitioner fee [25% of",
+   "page": 5,
+   "text": "3. \u0007Limit for medical practitioner fee [25% of the SumInsured],"
+  },
+  {
+   "id": "4#3",
+   "title": "\u0007Limit for Anethesia / OT Charges [50% of the",
+   "page": 5,
+   "text": "4. \u0007Limit for Anethesia / OT Charges [50% of the Sum Insured]) - A Less: Co-pay (30%) Rs. 2,40,000 (30% co-pay on admissible claim amount) - B Claim amount payable after 30% copay Rs. 5,60,000 A (-) B Final Settled amount Rs. 4,00,000 Claim amount payable is greater than sublimit. Hence Company’s liability is up to sublimit \u0007Exclusions: The Company shall not be liable to make any payments under this policy in respect of any expenses what so ever incurred by the insured person in connection with or in respect of;"
+  },
+  {
+   "id": "1#2",
+   "title": "",
+   "page": 5,
+   "text": "1. Pre-Existing Diseases - Code Excl 01 A. \u0007Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first policy with insurer B. \u0007In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase C. \u0007If the Insured Person is continuously covered without any break as defined under the applicable norms on portability stipulated by IRDAI, then waiting period for the same would be reduced to the extent of prior coverage D. \u0007Coverage under the policy after the expiry of 12 months for any pre-existing disease is subject to the same being declared at the time of application and accepted by Insurer"
+  },
+  {
+   "id": "2#2",
+   "title": "Specified disease / procedure waiting period - Code Excl 02",
+   "page": 5,
+   "text": "2. Specified disease / procedure waiting period - Code Excl 02 A. \u0007Expenses related to the treatment of following listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy with us. This exclusion shall not be applicable for claims arising due to an accident B. \u0007In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase C \u0007If any of the specified disease/procedure falls under the waiting period specified for"
+  },
+  {
+   "id": "C6.27",
+   "title": "",
+   "page": 6,
+   "text": "10 11 Pre-Existing diseases, then the longer of the two waiting periods shall apply D. \u0007The waiting period for listed conditions shall apply even if contracted after the policy or declared and accepted without a specific exclusion E. \u0007If the Insured Person is continuously covered without any break as defined under the applicable norms on portability stipulated by IRDAI, then waiting period for the same would be reduced to the extent of prior coverage F. List of specific diseases/procedures; i. \u0007Treatment of Cataract and diseases of the anterior and posterior chamber of the Eye, Diseases of ENT, and Diseases related to Thyroid, Benign diseases of the breast ii. \u0007Subcutaneous Benign Lumps, Sebaceous cyst, Dermoid cyst, Mucous cyst lip / cheek, Carpal Tunnel Syndrome, Trigger Finger, Lipoma , Neurofibroma, Fibroadenoma, Ganglion and similar pathology iii. \u0007All treatments (Conservative, Operative treatment) and all types of intervention for Diseases related to Tendon, Ligament, Fascia, Bones and Joint Including Arthroscopy and Arthroplasty / Joint Replacement [other than caused by accident] iv. \u0007All types of treatment for Degenerative disc and Vertebral diseases including Replacement of bones and joints and Degenerative diseases of the Musculoskeletal system, Prolapse of Intervertebral Disc (other than caused by accident) v. \u0007All treatments (conservative, interventional, laparoscopic and open) related to Hepato-pancreato-biliary diseases including Gall bladder and Pancreatic calculi. All types of management for Kidney and Genitourinary tract calculi. vi. All types of Hernia vii. Desmoid Tumor, Umbilical Granuloma, Umbilical Sinus, Umbilical Fistula viii. \u0007All treatments (conservative, interventional, laparoscopic and open) related to all Diseases of Cervix, Uterus, Fallopian tubes, Ovaries, Uterine Bleeding, Pelvic Inflammatory Diseases ix. All Diseases of Prostate, Stricture Urethra, all Obstructive Uropathies x. Benign Tumours of Epididymis, Spermatocele, Varicocele, Hydrocele xi. \u0007Fistula, Fissure in Ano, Hemorrhoids, Pilonidal Sinus and Fistula, Rectal Prolapse, Stress Incontinence xii. Varicose veins and Varicose ulcers xiii. All types of transplant and related surgeries xiv. Congenital Internal disease / defect"
+  },
+  {
+   "id": "3#3",
+   "title": "30-day waiting period - Code Excl 03",
+   "page": 6,
+   "text": "3. 30-day waiting period - Code Excl 03 A. \u0007Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered B. \u0007This exclusion shall not, however, apply if the Insured Person has continuous coverage for more than twelve months C. \u0007The within referred waiting period is made applicable to the enhanced Sum Insured in the event of granting higher Sum Insured subsequently"
+  },
+  {
+   "id": "4#4",
+   "title": "Investigation & Evaluation - Code Excl 04",
+   "page": 6,
+   "text": "4. Investigation & Evaluation - Code Excl 04 A. \u0007Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded B. \u0007Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment are excluded"
+  },
+  {
+   "id": "5#2",
+   "title": "\u0007Rest Cure, rehabilitation and respite care - Code Excl 05: Expenses related to any",
+   "page": 6,
+   "text": "5. \u0007Rest Cure, rehabilitation and respite care - Code Excl 05: Expenses related to any admission primarily for enforced bed rest and not for receiving treatment. This also includes;"
+  },
+  {
+   "id": "1#3",
+   "title": "",
+   "page": 6,
+   "text": "1. \u0007Custodial care either at home or in a nursing facility for personal care such as help with activities of daily living such as bathing, dressing, moving around either by skilled nurses or assistant or non-skilled persons"
+  },
+  {
+   "id": "2#3",
+   "title": "\u0007Any services for people who are terminally ill to address physical, social, emotional",
+   "page": 6,
+   "text": "2. \u0007Any services for people who are terminally ill to address physical, social, emotional and spiritual needs"
+  },
+  {
+   "id": "6#2",
+   "title": "\u0007Obesity / Weight Control - Code Excl 06: Expenses related to the surgical treatment of",
+   "page": 6,
+   "text": "6. \u0007Obesity / Weight Control - Code Excl 06: Expenses related to the surgical treatment of obesity that does not fulfill all the below conditions; A. Surgery to be conducted is upon the advice of the Doctor B. The surgery/Procedure conducted should be supported by clinical protocols C. The member has to be 18 years of age or older and D. Body Mass Index (BMI);"
+  },
+  {
+   "id": "2#4",
+   "title": "\u0007greater than or equal to 35 in conjunction with any of the following severe",
+   "page": 6,
+   "text": "2. \u0007greater than or equal to 35 in conjunction with any of the following severe co-morbidities following failure of less invasive methods of weight loss; a. Obesity-related cardiomyopathy b. Coronary heart disease c. Severe Sleep Apnea d. Uncontrolled Type2 Diabetes"
+  },
+  {
+   "id": "7#2",
+   "title": "\u0007Change-of-Gender treatments - Code Excl 07: Expenses related to any treatment, including",
+   "page": 6,
+   "text": "7. \u0007Change-of-Gender treatments - Code Excl 07: Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex."
+  },
+  {
+   "id": "8#2",
+   "title": "\u0007Cosmetic or plastic Surgery - Code Excl 08: Expenses for cosmetic or plastic surgery or",
+   "page": 6,
+   "text": "8. \u0007Cosmetic or plastic Surgery - Code Excl 08: Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured. For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner."
+  },
+  {
+   "id": "9#2",
+   "title": "\u0007Hazardous or Adventure sports - Code Excl 09: Expenses related to any treatment",
+   "page": 7,
+   "text": "9. \u0007Hazardous or Adventure sports - Code Excl 09: Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving."
+  },
+  {
+   "id": "10#2",
+   "title": "\u0007Breach of law - Code Excl 10: Expenses for treatment directly arising from or consequent",
+   "page": 7,
+   "text": "10. \u0007Breach of law - Code Excl 10: Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent."
+  },
+  {
+   "id": "11#2",
+   "title": "\u0007Excluded Providers - Code Excl 11: Expenses incurred towards treatment in any hospital",
+   "page": 7,
+   "text": "11. \u0007Excluded Providers - Code Excl 11: Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed in its website / notified to the policyholders are not admissible. However, in case of life threatening situations or following an accident, expenses up to the stage of stabilization are payable but not the complete claim."
+  },
+  {
+   "id": "12#2",
+   "title": "\u0007Treatment for Alcoholism, drug or substance abuse or any addictive condition and",
+   "page": 7,
+   "text": "12. \u0007Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof - Code Excl 12"
+  },
+  {
+   "id": "13#2",
+   "title": "\u0007Treatments received in health hydros, nature cure clinics, spas or similar establishments",
+   "page": 7,
+   "text": "13. \u0007Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons - Code Excl 13"
+  },
+  {
+   "id": "14#2",
+   "title": "\u0007Dietary supplements and substances that can be purchased without prescription,",
+   "page": 7,
+   "text": "14. \u0007Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day care procedure - Code Excl 14"
+  },
+  {
+   "id": "15",
+   "title": "\u0007Refractive Error - Code Excl 15: Expenses related to the treatment for correction of eye",
+   "page": 7,
+   "text": "15. \u0007Refractive Error - Code Excl 15: Expenses related to the treatment for correction of eye sight due to refractive error less than 7. 5 dioptres."
+  },
+  {
+   "id": "16",
+   "title": "\u0007Unproven Treatments - Code Excl 16: Expenses related to any unproven treatment,",
+   "page": 7,
+   "text": "16. \u0007Unproven Treatments - Code Excl 16: Expenses related to any unproven treatment, services and supplies for or in connection with any treatment. Unproven treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness."
+  },
+  {
+   "id": "17",
+   "title": "\u0007Sterility and Infertility - Code Excl 17: Expenses related to sterility and infertility. This includes;",
+   "page": 7,
+   "text": "17. \u0007Sterility and Infertility - Code Excl 17: Expenses related to sterility and infertility. This includes; a. Any type of contraception, sterilization b. \u0007Assisted Reproduction services including artificial insemination and advanced reproductive technologies such as IVF, ZIFT, GIFT, ICSI c. Gestational Surrogacy d. Reversal of sterilization"
+  },
+  {
+   "id": "18",
+   "title": "Maternity - Code Excl 18",
+   "page": 7,
+   "text": "18. Maternity - Code Excl 18 a. \u0007Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy b. \u0007Expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period"
+  },
+  {
+   "id": "19",
+   "title": "\u0007Circumcision (unless necessary for treatment of a disease not excluded under this policy",
+   "page": 7,
+   "text": "19. \u0007Circumcision (unless necessary for treatment of a disease not excluded under this policy or necessitated due to an accident), Preputioplasty, Frenuloplasty, Preputial Dilatation and Removal of SMEGMA - Code Excl 19"
+  },
+  {
+   "id": "20",
+   "title": "Congenital External Condition / Defects / Anomalies - Code Excl 20",
+   "page": 7,
+   "text": "20. Congenital External Condition / Defects / Anomalies - Code Excl 20"
+  },
+  {
+   "id": "21",
+   "title": "\u0007Convalescence, general debility, run-down condition, Nutritional deficiency states -",
+   "page": 7,
+   "text": "21. \u0007Convalescence, general debility, run-down condition, Nutritional deficiency states - Code Excl 21"
+  },
+  {
+   "id": "22",
+   "title": "Intentional self injury - Code Excl 22",
+   "page": 7,
+   "text": "22. Intentional self injury - Code Excl 22"
+  },
+  {
+   "id": "23",
+   "title": "\u0007Injury/disease caused by or arising from or attributable to war, invasion, act of foreign",
+   "page": 7,
+   "text": "23. \u0007Injury/disease caused by or arising from or attributable to war, invasion, act of foreign enemy, warlike operations (whether war be declared or not) - Code Excl 24"
+  },
+  {
+   "id": "24",
+   "title": "Injury or disease caused by or contributed to by nuclear weapons/materials - Code Excl 25",
+   "page": 7,
+   "text": "24. Injury or disease caused by or contributed to by nuclear weapons/materials - Code Excl 25"
+  },
+  {
+   "id": "25",
+   "title": "\u0007Expenses incurred on Enhanced External Counter Pulsation Therapy and related",
+   "page": 7,
+   "text": "25. \u0007Expenses incurred on Enhanced External Counter Pulsation Therapy and related therapies, Chelation therapy, Hyperbaric Oxygen Therapy, Rotational Field Quantum Magnetic Resonance Therapy, VAX-D, Low level laser therapy, Photodynamic therapy and such other similar therapies - Code Excl 26"
+  },
+  {
+   "id": "26",
+   "title": "Unconventional, Untested, Experimental therapies - Code Excl 27",
+   "page": 7,
+   "text": "26. Unconventional, Untested, Experimental therapies - Code Excl 27"
+  },
+  {
+   "id": "27",
+   "title": "\u0007Autologous derived Stromal vascular Fraction, Chondrocyte Implantation, Procedures",
+   "page": 7,
+   "text": "27. \u0007Autologous derived Stromal vascular Fraction, Chondrocyte Implantation, Procedures using Platelet Rich plasma and Intra articular injection therapy - Code Excl 28"
+  },
+  {
+   "id": "28",
+   "title": "\u0007Biologicals, except when administered as an in-patient, when clinically indicated and",
+   "page": 7,
+   "text": "28. \u0007Biologicals, except when administered as an in-patient, when clinically indicated and hospitalization warranted - Code Excl 29"
+  },
+  {
+   "id": "29",
+   "title": "\u0007Inoculation or Vaccination (except for post–bite treatment and for medical treatment",
+   "page": 7,
+   "text": "29. \u0007Inoculation or Vaccination (except for post–bite treatment and for medical treatment for therapeutic reasons) - Code Excl 31"
+  },
+  {
+   "id": "30",
+   "title": "\u0007Dental treatment or surgery unless necessitated due to accidental injuries and requiring",
+   "page": 7,
+   "text": "30. \u0007Dental treatment or surgery unless necessitated due to accidental injuries and requiring hospitalization (Dental implants are not payable) - Code Excl 32"
+  },
+  {
+   "id": "31",
+   "title": "\u0007Hospital registration charges, admission charges, record charges, telephone charges",
+   "page": 7,
+   "text": "31. \u0007Hospital registration charges, admission charges, record charges, telephone charges and such other charges - Code Excl 34"
+  },
+  {
+   "id": "32",
+   "title": "Cochlear implants and procedure related hospitalization expenses - Code Excl 35",
+   "page": 7,
+   "text": "32. Cochlear implants and procedure related hospitalization expenses - Code Excl 35"
+  },
+  {
+   "id": "33",
+   "title": "Any hospitalizations which are not Medically Necessary - Code Excl 36",
+   "page": 7,
+   "text": "33. Any hospitalizations which are not Medically Necessary - Code Excl 36"
+  },
+  {
+   "id": "34",
+   "title": "Other Excluded Expenses as detailed in the website www.starhealth.in - Code Excl 37",
+   "page": 7,
+   "text": "34. Other Excluded Expenses as detailed in the website www.starhealth.in - Code Excl 37"
+  },
+  {
+   "id": "35",
+   "title": "\u0007Existing disease/s, disclosed by the Insured and mentioned in the policy schedule under",
+   "page": 7,
+   "text": "35. \u0007Existing disease/s, disclosed by the Insured and mentioned in the policy schedule under Permanent Exclusion (based on Insured’s consent) - Code Excl 38 Note: Exclusion Nos. 15, 17, 18, 29, 30, 32 are not applicable for Outpatient Consultation \u0007Moratorium Period: After completion of sixty continuous months of coverage (including portability and migration) in health insurance policy, no policy and claim shall be contestable by the insurer on grounds of non-disclosure, misrepresentation, except on grounds of established fraud. This period of sixty continuous months is called as moratorium period. The moratorium would be applicable for the sums insured of the first policy. Wherever, the Sum Insured is enhanced, completion of sixty continuous months would be applicable from the date of enhancement of sums insured only on the enhanced limits. \u0007Renewal of Policy: The policy shall be renewable provided the product is not withdrawn, except in case of established fraud or non-disclosure or misrepresentation by the Policyholder. If the product is withdrawn, the policyholder shall be provided with suitable options to migrate as per the procedure stated under “withdrawal clause” i. \u0007At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days."
+  },
+  {
+   "id": "C8.64",
+   "title": "",
+   "page": 8,
+   "text": "14 15 ii. \u0007While coverage is not available during the Grace Period, if the policy is renewed during the Grace Period, all the credits (Sum Insured, No Claim Bonus, Specific Waiting Periods, Waiting period for Pre-Existing Diseases, Moratorium period etc.) accrued under the policy shall be protected. \u0007Possibility of Revision of Terms of the Policy lncluding the Premium Rates: The Company,may revise or modify the terms of the policy including the premium rates as per the extant Guidelines. The insured person shall be notified thirty days before the changes are effected. \u0007Revision in Sum Insured: Any revision in Sum Insured is permissible only at the time of renewal. The Insured Person can propose such revision and may be allowed subject to Company’s approval and payment of appropriate premium. \u0007Migration: In case of migration of one policy to another with the same insurer, the policyholder (including all members under family cover and group insurance policies) can transfer the credits gained to the extent of the Sum Insured, No Claim Bonus, Specific Waiting periods, waiting period for pre-existing diseases, Moratorium period etc. in the previous policy to the migrated policy."
+  },
+  {
+   "id": "C8.65",
+   "title": "",
+   "page": 8,
+   "text": "Portability: A. \u0007The Policyholder has the choice to port his / her policy from one Insurer to another by applying to such Insurer to port the entire policy along with all the members of the family, if any, at least 30 days before, but not earlier than 60 days from the policy renewal date as per IRDAI guidelines related to portability. B. \u0007The Policyholder is entitled to transfer the credits gained to the extent of the Sum Insured, No Claim Bonus, Specific Waiting Periods, Waiting period for Pre-Existing Diseases, Moratorium period etc. from the existing Insurer to the Acquiring Insurer in the previous policy. \u0007Withdrawal of Policy: In the likelihood of this product being withdrawn in future, the Company will intimate the Policyholder about the same 90 days prior to expiry of the policy. I. \u0007A one-time option to renew the existing product, if renewal falls within the 90 days from the date of withdrawal of the product, or II. \u0007Policyholder will have the option to migrate to similar health insurance product available with the Company at the time of renewal. Policyholder can transfer the credits gained (to the extent of Sum Insured, No Claim Bonus, Specific Waiting Periods, Waiting period for Pre-Existing Diseases, Moratorium period etc.) in the previous policy to the migrated policy, provided the policy has been maintained without a break"
+  },
+  {
+   "id": "C8.66",
+   "title": "",
+   "page": 8,
+   "text": "\u0007Premium Payment in Instalments: lf the Policyholder has opted for Payment of Premium on an installment basis i.e. Half Yearly or Quarterly or Monthly as mentioned in the Policy Schedule/Certificate of Insurance, the following conditions shall apply (notwithstanding any terms contrary elsewhere in the policy) I. \u0007For monthly instalment option: Grace Period of 15 days would be given to pay the instalment premium due for the policy. ii. \u0007For Quarterly and Half yearly instalment option: Grace Period of 30 days would be given to pay the instalment premium due for the policy. iii. \u0007The Policyholder will get the accrued continuity benefit in respect of the (Sum Insured, No Claim Bonus, Specific Waiting Periods, Waiting period for Pre-Existing Diseases, Moratorium period etc.) in the event of payment of premium within the stipulated Grace Period. iv. No interest will be charged lf the instalment premium is not paid on due date. v. \u0007ln case of instalment premium due not received within the grace period, the policy will get cancelled. vi. \u0007ln the event of a claim, all subsequent premium instalments shall immediately become due and payable. vii. \u0007The company has the right to recover and deduct all the pending instalments from the claim amount due under the policy. viii. \u0007For premium paid in instalments during the policy period, coverage is available during the grace period also."
+  },
+  {
+   "id": "C8.67",
+   "title": "",
+   "page": 8,
+   "text": "\u0007Free Look Period: The Free Look Period shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The Policyholder shall be allowed free look period of thirty days from date of receipt of the policy document whether electronically or otherwise to review the terms and conditions of the policy. If the Policyholder is not satisfied with any of the terms and conditions and has not made any claim, the Policyholder has the option to cancel his/her policy. This option is available in case of policies with a term of one year or more. The Policyholder shall be entitled to a refund of the premium paid subject only to a deduction of a proportionate risk premium for the period of cover and the expenses, if any incurred by the Insurer on medical examination of the proposer and stamp duty charges. Cancellation: i. \u0007The Policyholder may cancel his policy any time during the term by giving 7 days written notice. In such an event, The Company shall a. \u0007refund proportionate premium for unexpired policy period, for policy term upto one year and there is no claim (s) made during the policy period. b. \u0007refund premium for the unexpired policy period, in respect of policies with policy term more than 1 year and risk coverage for such policy years has not commenced. ii. \u0007The Company may cancel the policy at any time on grounds of misrepresentation, nondisclosure of material facts, fraud by the Insured Person by giving 15 days’ written notice.There would be no refund of premium on cancellation on grounds of misrepresentation, non-disclosure of material facts or fraud Note: Incase of long term policies the refund will be given after adjusting the long term discount availed by the insured/ policyholder."
+  },
+  {
+   "id": "C8.68",
+   "title": "",
+   "page": 8,
+   "text": "\u0007Medical Underwriting Loading: Company may apply a risk loading on the premium payable (based upon the declarations made in the proposal form and the health status of the persons proposed for insurance)"
+  },
+  {
+   "id": "C9.69",
+   "title": "",
+   "page": 9,
+   "text": "16 17 • \u0007The maximum risk loading applicable for an individual shall not exceed above 125% per diagnosis / medical condition and an overall risk loading up to 200% per insured person. • \u0007This loading is applied from the Commencement Date of the Policy including subsequent renewal(s) with the Company • \u0007Company will inform about the applicable risk loading or exclusion or both as the case may be through a counter offer. • \u0007The Company will issue Policy only after getting the Proposer’s consent and additional premium (if any) \u0007Automatic Expiry: The insurance under this policy with respect to each relevant insured person shall expire immediately upon death of the insured person or on expiry of the Sum Insured whichever shall first occur. \u0007Disclosure of information: The policy shall become void and all premium paid thereon shall be forfeited to the Company, in the event of mis-representation, mis description or nondisclosure of any material fact by the policy holder."
+  },
+  {
+   "id": "C9.70",
+   "title": "",
+   "page": 9,
+   "text": "Claims Procedure • \u0007For assistance call 24 hours help-line 044-69006900 or Toll Free No. 1800 425 2255. Senior Citizens may call at 044-40020888 • \u0007Emergency Hospitalization (Cashless/Reimbursement): Within 24 hours of date and time of Hospitalization if the Insured Person has been hospitalized in an Emergency. • \u0007Planned Hospitalization (Cashless/Reimbursement): At least 48 hours prior to the proposed treatment or date and time of Hospitalization whichever is earlier. • Cashless facility wherever possible in network hospital. • \u0007In non-network hospitals payment must be made up-front and then reimbursement will be effected on submission of documents \u0007The Company: Star Health and Allied Insurance Co. Ltd., commenced its operations in"
+  },
+  {
+   "id": "2006",
+   "title": "as India’s first Standalone Health Insurance provider. As an exclusive Health Insurer,",
+   "page": 9,
+   "text": "2006 as India’s first Standalone Health Insurance provider. As an exclusive Health Insurer, the Company is providing sterling services in Health, Personal Accident & Overseas Travel Insurance and is committed to setting international benchmarks in service and personal caring. Star Advantages • No Third Party Administrator, direct in-house claims settlement • Faster and hassle – free claim settlement • Cashless hospitalization \u0007Tax Benefits: Payment of premium by any mode other than cash for this insurance is eligible for relief under Section 80D of the Income Tax Act 1961. TAXES ARE SUBJECT TO CHANGES IN TAX LAWS \u0007Prohibition of rebates: (Section 41 of Insurance Act 1938): No person shall allow or offer to allow, either directly or indirectly, as an inducement to any person to take out or renew or continue an insurance in respect of any kind of risk relating to lives or property in India, any rebate of the whole or part of the commission payable or any rebate of the premium shown in the policy, nor shall any person taking out or renewing or continuing a policy accept any rebate, except such rebate as may be allowed in accordance with the published prospectuses or tables of the insurer. Any person making default in complying with the provisions of this section shall be liable for a penalty which may extend to ten lakhs rupees."
+  },
+  {
+   "id": "C10.72",
+   "title": "",
+   "page": 10,
+   "text": "18 19 Benefit Illustration in respect of policies offered on individual and family floater basis Age of the Members insured(in yrs) Coverage opted on individual basis covering each member of the family separately (at a single point of time) Coverage opted on individual basis covering multiple members of the family under a single policy (Sum Insured is available for each member of the family) Coverage opted on family floater basis with overall Sum Insured (Only one Sum Insured is available for the entire family) Premium (Rs.) Sum Insured (Rs.) Premium (Rs.) Discount, if any Premium after discount (Rs.) Sum Insured (Rs.) Premium or consolidated premium for all members of family (Rs.) Floater discount,if any Premium after discount (Rs.) Sum Insured (Rs.) Illustration 1 68 27,533 10,00,000 27,533 Nil 27,533 10,00,000 55,066 11,011 44,055 10,00,000 61 27,533 10,00,000 27,533 27,533 10,00,000 Total Premium for all members of the family is Rs.55,066/-, when each member is covered separately. Sum Insured available for each individual is Rs.10,00,000/- Total Premium for all members of the family is Rs.55,066/-, when they are covered under a single policy. Sum Insured available for each family member is Rs.10,00,000/- Total Premium when policy is opted on floater basis is Rs.44,055/-. Sum Insured of Rs.10,00,000/- is available for the entire family (2A) Illustration 2 68 39,688 25,00,000 39,688 Nil 39,688 25,00,000 79,376 15,873 63,503 25,00,000 61 39,688 25,00,000 39,688 39,688 25,00,000 Total Premium for all members of the family is Rs.79,376/-, when each member is covered separately. Sum Insured available for each individual is Rs.25,00,000/- Total Premium for all members of the family is Rs.79,376/-, when they are covered under a single policy. Sum Insured available for each family member is Rs.25,00,000/- Total Premium when policy is opted on floater basis is Rs. 63,503/-. Sum Insured of Rs.25,00,000/- is available for the entire family (2A) Note: Premium rates specified in the above illustration are standard premium rates without considering any loading. Also, the premium rates are exclusive of taxes applicable. A-Adult"
+  },
+  {
+   "id": "C11.73",
+   "title": "",
+   "page": 11,
+   "text": "20 The information provided in this brochure is only indicative. For more details on the risk factors, terms and conditions, please read the policy wordings before concluding sale Or Visit our website www.starhealth IRDAI OR ITS OFFICIALS DO NOT INVOLVE IN ACTIVITIES LIKE SELLING INSURANCE POLICIES, ANNOUNCING BONUS OR INVESTMENT OF PREMIUMS. PUBLIC RECEIVING SUCH PHONE CALLS ARE REQUESTED TO LODGE A POLICE COMPLAINT Buy this Insurance Online at www.starhealth.in Online discount of 5% for first purchase and its renewals STAR HEALTH AND ALLIED INSURANCE CO LTD Registered Office : No. 1, New Tank Street, Valluvar Kottam High Road, Nungambakkam, Chennai - 600 034. Corporate Office : No. 148, Acropolis, Dr. Radha Krishnan Salai, Mylapore, Chennai - 600 004. Customer Care Number: 044 69006900 | Toll free: 1800 425 2255 Chat: +91 9597652225 | sms: STAR to 56677 | Email: support@starhealth.in CIN: L66010TN2005PLC056649 | IRDAI Regn. No: 129 BRO / SCRC / V.18 / 2025 Insurance is the subject matter of solicitation Senior Citizens Red Carpet Health Insurance Policy SHAHLIP26041V082526"
+  }
+ ],
+ "source_file": "data/raw/policies/star health insurance.pdf"
+}

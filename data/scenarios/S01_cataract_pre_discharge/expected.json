@@ -1,0 +1,42 @@
+{
+ "issues": [
+  [
+   "copay",
+   "valid"
+  ],
+  [
+   "mismatch",
+   "fixable"
+  ],
+  [
+   "missing_doc",
+   "fixable"
+  ],
+  [
+   "non_payable",
+   "fixable"
+  ],
+  [
+   "non_payable",
+   "valid"
+  ],
+  [
+   "proportionate",
+   "fixable"
+  ],
+  [
+   "room_rent",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 44370.0,
+ "claimed": 71350.0,
+ "payout_before": 44370.0,
+ "payout_after_fixes": 59130.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_discharge",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "en",
+ "render": "pdf"
+}

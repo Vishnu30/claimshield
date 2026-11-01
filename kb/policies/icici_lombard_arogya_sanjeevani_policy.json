@@ -1,0 +1,230 @@
+{
+ "policy_id": "icici_lombard_arogya_sanjeevani_policy",
+ "insurer": "ICICI Lombard",
+ "product": "AROGYA SANJEEVANI POLICY",
+ "uin": "ICIHLIP25041V022425",
+ "jurisdiction": "IN",
+ "sum_insured": 1000000.0,
+ "room_rent": {
+  "kind": "pct_si",
+  "value": 2.0,
+  "max_value": 5000.0,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": 3,
+   "quote": "Room Rent, Boarding, Nursing Expenses all inclusive as provided by the Hospital/Nursing Home up to 2% of the sum insured subject to maximum of I5,000 per day."
+  }
+ },
+ "icu_rent": {
+  "kind": "pct_si",
+  "value": 2.0,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": "15",
+   "page": 3,
+   "quote": "15 days of grace period when the premium is paid in installment Room Rent Capping: Room Rent, Boarding, Nursing Expenses all inclusive as provided by the Hospital/Nursing Home up to 2% of the sum insured subject to maximum of I5,000 per day. • Intensive Care Unit (ICU) RENT charges/Intensive Cardiac Care Unit (ICCU) charges all inclusive as provided by the Hospital/Nursing Home up to 5% of the sum insured subject to maximum of I10,000 per day Cashless hospitalisation: Avail cashless hospitalisation at any of our network providers / hospitals."
+  }
+ },
+ "proportionate_deduction": true,
+ "proportionate_cite": {
+  "clause_id": null,
+  "page": null,
+  "quote": null
+ },
+ "copays": [
+  {
+   "pct": 5.0,
+   "condition": "on claimed amount",
+   "age_min": null,
+   "cite": {
+    "clause_id": "Co - pay",
+    "page": 3,
+    "quote": "Co - pay: 5% co - pay applicable on claimed amount."
+   }
+  }
+ ],
+ "sublimits": [
+  {
+   "procedure": "cataract",
+   "aliases": [
+    "phacoemulsification",
+    "phaco",
+    "iol"
+   ],
+   "limit": null,
+   "pct_si": 25.0,
+   "basis": "per_eye",
+   "cite": {
+    "clause_id": null,
+    "page": 5,
+    "quote": "Sub limit: Applicable for cataract - 25% of Sum Insured or I40,000, whichever is lower, per each eye in one policy year."
+   }
+  },
+  {
+   "procedure": "Ambulance Charges",
+   "aliases": [],
+   "limit": 2000.0,
+   "pct_si": null,
+   "basis": "per hospitalisation",
+   "cite": {
+    "clause_id": "Ambulance Charges",
+    "page": 2,
+    "quote": "Ambulance Charges: Reimbursement up to I2,000 per hospitalisation for reasonable expenses incurred on availing an ambulance service offered by a hospital /ambulance service provider in an emergency condition."
+   }
+  }
+ ],
+ "waiting_periods": [
+  {
+   "kind": "specific",
+   "months": 24,
+   "conditions": [
+    "cataract",
+    "hernia",
+    "hydrocele",
+    "hysterectomy",
+    "gall bladder",
+    "sinusitis",
+    "tonsil",
+    "adenoid",
+    "piles",
+    "fissure",
+    "fistula",
+    "disc"
+   ],
+   "cite": {
+    "clause_id": "24",
+    "page": 4,
+    "quote": "24 months waiting period Specific Waiting Periods 1. Benign ENT disorder 2."
+   }
+  },
+  {
+   "kind": "ped",
+   "months": 36,
+   "conditions": [
+    "Declared and accepted pre - existing conditions / diseases"
+   ],
+   "cite": {
+    "clause_id": "Pre - existing diseases",
+    "page": 3,
+    "quote": "Pre - existing diseases: Declared and accepted pre - existing conditions / diseases will be covered immediately after 3 years of continuous coverage under the policy, if the policy is issued for the first time with ICICI Lombard."
+   }
+  }
+ ],
+ "exclusions": [],
+ "intimation_emergency_hours": null,
+ "intimation_planned_days_before": null,
+ "claim_submission_days": null,
+ "clauses": [
+  {
+   "id": "C1.1",
+   "title": "",
+   "page": 1,
+   "text": "AROGYA SANJEEVANI POLICY, ICICI LOMBARD Launching An economical, comprehensive health insurance policy for your family."
+  },
+  {
+   "id": "C2.2",
+   "title": "",
+   "page": 2,
+   "text": "Find Your Health Insurance Fit Coverage details With ICICI Lombard General Insurance Company Limited, choosing an insurance policy is not just a matter of saving tax at the end of the financial year, it is also about finding a policy that actually works for you. Once you have decided to take a policy, we will go about finding a policy that truly caters to your needs. Once selected, a single policy will provide a health cover that fits you and your family like a glove. Hospitalisation Expenses: All expenses pertaining to in - patient hospitalisation such as room rent, intensive care unit charges, surgeon’s and doctor’s fee, anesthesia, blood, oxygen, operation theatre charges etc. incurred during hospitalisation for a minimum period of 24 consecutive hours are covered under the basic hospitalisation cover. Day Care Surgeries / Treatments Coverage: All day care treatments are covered. Pre and Post hospitalisation expenses: Medical expenses incurred, immediately, 30 days before and 60 days after hospitalisation will be covered. AYUSH Treatment: Expenses for Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy (AYUSH) treatment only when it has been undergone in a government hospital or in any institute recognised by the government and / or accredited by Quality Council of India / National Accreditation Board on Health on Re - imbursement basis. Ambulance Charges: Reimbursement up to I2,000 per hospitalisation for reasonable expenses incurred on availing an ambulance service offered by a hospital /ambulance service provider in an emergency condition. Introducing Arogya Sanjeevani Policy, ICICI Lombard a standardised, no - frills health insurance policy for optimal medical coverage"
+  },
+  {
+   "id": "C3.3",
+   "title": "",
+   "page": 3,
+   "text": "Other terms and conditions Sum Insured: Up to I10 Lakhs Policy period: 1 year Floater benefit: Applicable only for legally wedded spouse, parents and parents - in - laws,dependent children (i.e. natural or legally adopted) between the age 3 months to 25 years. Maximum age of entry: 65 years Life - long renewability: The policy provides life - long renewal. Factors determining the renewal premium are"
+  },
+  {
+   "id": "(i)",
+   "title": "age slab of the senior most insured",
+   "page": 3,
+   "text": "(i) age slab of the senior most insured member at the time of renewal (ii) any change in the renewing policy. Loyalty Bonus: 5% irrespective of claims, provided the policy has been renewed with the Company without a break subject to a maximum of 50% of sum insured. Grace period for renewal: 30 days from the date of expiry of the policy. 15 days of grace period when the premium is paid in installment Room Rent Capping: Room Rent, Boarding, Nursing Expenses all inclusive as provided by the Hospital/Nursing Home up to 2% of the sum insured subject to maximum of I5,000 per day. • Intensive Care Unit (ICU) RENT charges/Intensive Cardiac Care Unit (ICCU) charges all inclusive as provided by the Hospital/Nursing Home up to 5% of the sum insured subject to maximum of I10,000 per day Cashless hospitalisation: Avail cashless hospitalisation at any of our network providers / hospitals. A list of these hospitals /providers is available on www.icicilombard.com. Pre - policy medical check - up: No medical tests will be required for insurance cover below the age of 46 years. Free Look period: We have extended the Free Look Period from 15 to 30 days, so you have adequate time your policy. Tax benefit: Avail tax deduction on premium paid under health insurance policy as per applicable provisions of Section 80D of Income Tax Act, 1961 and amendments made thereto. Co - pay: 5% co - pay applicable on claimed amount. Pre - existing diseases: Declared and accepted pre - existing conditions / diseases will be covered immediately after"
+  },
+  {
+   "id": "3",
+   "title": "years of continuous coverage under the",
+   "page": 3,
+   "text": "3 years of continuous coverage under the policy, if the policy is issued for the first time with ICICI Lombard. Such waiting period shall reduce if the insured has been covered under a similar policy before opting for this policy, subject however to portability regulations. 65 years 30 days TAX"
+  },
+  {
+   "id": "C4.6",
+   "title": "",
+   "page": 4,
+   "text": "Cancellation Grid: i. The policyholder may cancel this policy by giving 7 days written notice and in such an event, the Company shall refund premium for the unexpired policy period as detailed below. a) Refund proportionate premium for unexpired policy period, if the term of policy up to one year and there is no claim (s) made during the policy period. b) Refund premium for the unexpired policy period, in respect of policies with term more than"
+  },
+  {
+   "id": "1",
+   "title": "year and risk coverage for such policy years",
+   "page": 4,
+   "text": "1 year and risk coverage for such policy years has not commenced."
+  },
+  {
+   "id": "24",
+   "title": "months waiting period",
+   "page": 4,
+   "text": "24 months waiting period Specific Waiting Periods"
+  },
+  {
+   "id": "7",
+   "title": "All internal and external benign tumour,",
+   "page": 4,
+   "text": "7. All internal and external benign tumour, cysts, polyps of any kind, including benign breast lumps"
+  },
+  {
+   "id": "16",
+   "title": "Pilonidal sinus, Sinusitis and related",
+   "page": 4,
+   "text": "16. Pilonidal sinus, Sinusitis and related disorders"
+  },
+  {
+   "id": "17",
+   "title": "Prolapse inter Vertebral Disc and Spinal",
+   "page": 4,
+   "text": "17. Prolapse inter Vertebral Disc and Spinal Diseases unless arising from accident"
+  },
+  {
+   "id": "18",
+   "title": "Calculi in urinary system, Gall Bladder and",
+   "page": 4,
+   "text": "18. Calculi in urinary system, Gall Bladder and Bile duct, excluding malignancy."
+  },
+  {
+   "id": "20",
+   "title": "Internal Congenital Anomalies",
+   "page": 4,
+   "text": "20. Internal Congenital Anomalies Note: Above mentioned refund clause shall not be applicable for policies with freelook period; Premium refund for cancellations during the freelook period will be provided as per the Free look clause. Notwithstanding anything contained herein or otherwise, no refunds of premium shall be made in respect of Cancellation where, any claim has been admitted or has been lodged or any benefit has been availed by the Insured person under the Policy."
+  },
+  {
+   "id": "21",
+   "title": "Treatment for joint replacement unless",
+   "page": 4,
+   "text": "21. Treatment for joint replacement unless arising from accident"
+  },
+  {
+   "id": "22",
+   "title": "Age-related Osteoarthritis & Osteoporosis",
+   "page": 4,
+   "text": "22. Age-related Osteoarthritis & Osteoporosis"
+  },
+  {
+   "id": "C5.16",
+   "title": "",
+   "page": 5,
+   "text": "Sub limit: Applicable for cataract - 25% of Sum Insured or I40,000, whichever is lower, per each eye in one policy year. Procedures Covered: The following procedures will be covered (wherever medically indicated) either as in patient or as part of day care treatment in a hospital up to 50% of Sum Insured, specified in the policy schedule, during the policy period: Balloon Sinuplasty Deep Brain stimulation Oral chemotherapy Intra vitreal injections Robotic surgeries Stereotactic radio surgeries IONM - (Intra Operative Neuro Monitoring) Bronchical Thermoplasty Immunotherapy - Monoclonal Antibody to be given as injection Uterine Artery Embolization and HIFU (High intensity focused ultrasound) Vaporisation of the prostzate (Green laser treatment or holmium laser treatment) Stem cell therapy: Hematopoietic stem cells for bone marrow transplant for haematological conditions to be covered. The claims for ICICI Lombard Arogya Sanjeevani Policy are serviced by ICICI Lombard Health Care, ICICI Lombard’s very own claims processing portal. It has always been our endeavor to provide the best of policy and services to our valued customers, ICICI Lombard Health Care is our initiative towards this commitment. In case of emergency or planned hospitalisation, just use your health ID card at ICICI Lombard Health Care network hospitals and avail cashless services. Call our 24 hour toll free no. 1800"
+  },
+  {
+   "id": "2666",
+   "title": "",
+   "page": 5,
+   "text": "2666. For treatment in non - cashless hospitals, the form should be filled fully after discharge from hospital and sent to The relevant documents tocan be sent to ICICI Lombard Health Care, 1st, 4th (Half) , 5th and 6th floors, Varun Towers- II , Opp. Hyderabad Public school, Begumpet, Hyderabad, District Hyderabad, Telangana Pin Code -500016. How do I make a claim"
+  },
+  {
+   "id": "C6.18",
+   "title": "",
+   "page": 6,
+   "text": "*Disclaimer: Cashless approval is subject to pre - authorisation by the company. Only expenses relating to hospitalisation will be reimbursed as per the policy coverage. Non - medical expenses will not be reimbursed. Standard list of documents: Duly completed claim form signed by you and the medical practitioner. Original bills, receipts and discharge certificate / card from the hospital / medical practitioner. Original bills from chemists supported by proper prescription. Original investigation test reports and payment receipts. Indoor case papers. Medical Practitioner’s referral letter advising hospitalisation in non - accident cases. Any other document as required by ICICI Lombard Health Care to investigate the claim or our obligation to make payment for the same. What we will not pay (Exclusions under the policy) The Company shall not be liable to make any payment under the policy, in respect of any expenses incurred in connection with or in respect of: Investigation and Evaluation Obesity / Weight Control Rest Cure, rehabilitation and respite care Change - of - Gender treatments Cosmetic or plastic Surgery Hazardous or Adventure sports Breach of law Excluded Providers Treatment for, Alcoholism, drug or substance abuse or any addictive condition and consequences thereof Treatments received in heath hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons. Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalisation claim or day care procedure Refractive Error Unproven Treatments Sterility and Infertility Maternity Expenses War (whether declared or not) and war like occurrence or invasion, acts of foreign enemies, hostilities, civil war, rebellion, revolutions, insurrections, mutiny, military or usurped power, seizure, capture, arrest, restraints and detainment of all kinds. Nuclear, chemical or biological attack or weapons, contributed to, caused by, resulting from or from any other cause or event contributing concurrently or in any other sequence to the loss, claim or expense. Any expenses incurred on Domiciliary Hospitalisation and OPD treatment Treatment taken outside the geographical limits of India In respect of the existing diseases, disclosed by the insured and mentioned in the policy Arogya Sanjeevani Policy. Statutory Warning: Prohibition of Rebates (Under Section 41 of Insurance Act 1938). No person shall allow or offer to allow, either directly or indirectly as an inducement to any person to take out or renew or continue an insurance in respect of any kind of risk relating to lives or property, in India, any rebate of the whole or part of the commission payable or any rebate of the premium shown on the Policy, nor shall any person taking out or renewing or continuing a Policy accept any rebate, except such rebate as may be allowed in accordance with the published prospectuses or tables of the Insurer. Any person making default in complying with the provisions of this section shall be liable for a penalty which may extend to Ten Lakh Rupees. ICICI trade logo displayed above belongs to ICICI Bank and is used by ICICI Lombard General Insurance Company Limited under license and Lombard logo belongs to ICICI Lombard General Insurance Company Limited. The advertisement contains only an indication of the cover offered. For complete details on risk factors, terms, conditions, coverages and exclusions, please read the policy document carefully before concluding a sale. ICICI Lombard General Insurance Company Limited. Registered Office: ICICI Lombard House, 414, Veer Savarkar Marg, Near Siddhivinayak Temple, Prabhadevi, Mumbai - 400 025. IRDA Reg. No.: 115. Product Name: Arogya Sanjeevani. Misc 171. IRDA Reg. No.: 115. UIN: ICIHLIP25041V022425. Toll Free No.: 1800 2666. Fax No.: 02261961323. CIN: L67200MH2000PLC129408. Website: www.icicilombard.com. Email: customersupport@icicilombard.com. Advt.: ADV/9956"
+  }
+ ],
+ "source_file": "data/raw/policies/icici lombard aarogya-sanjeevani.pdf"
+}

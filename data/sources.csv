@@ -1,0 +1,38 @@
+id,category,mode,urls,query,keywords,domains
+irdai_master_health_2024,irdai,search,,IRDAI Master Circular on Health Insurance Business 2024 pdf,master|health,irdai.gov.in
+irdai_standardization_guidelines,irdai,search,,IRDAI Guidelines on Standardization in Health Insurance pdf,standard,irdai.gov.in
+irdai_std_products_master_2020,irdai,search,,IRDAI Master Circular on Standardization of Health Insurance Products 2020 pdf,standard,irdai.gov.in
+irdai_policyholders_2024,irdai,search,,IRDAI Master Circular Protection of Policyholders Interests 2024 pdf,policyholder,irdai.gov.in
+irdai_non_payables,irdai,search,,IRDAI list of non-payable items List I II III IV health insurance pdf,payable,irdai.gov.in
+irdai_arogya_sanjeevani_guidelines,irdai,search,,IRDAI guidelines Arogya Sanjeevani standard individual health insurance product pdf,arogya,irdai.gov.in
+pol_arogya_sanjeevani_newindia,policies,search,,New India Assurance Arogya Sanjeevani policy wording pdf,arogya,newindia.co.in
+pol_arogya_sanjeevani_star,policies,search,,Star Health Arogya Sanjeevani policy wording pdf,arogya,starhealth.in
+pol_arogya_sanjeevani_icici,policies,search,,ICICI Lombard Arogya Sanjeevani policy wording pdf,arogya,icicilombard.com
+pol_arogya_sanjeevani_sbi,policies,search,,SBI General Arogya Sanjeevani policy wording pdf,arogya,sbigeneral.in
+pol_arogya_sanjeevani_bajaj,policies,search,,Bajaj Allianz Arogya Sanjeevani policy wording pdf,arogya,bajajallianz.com
+pol_star_family_health_optima,policies,search,,Star Family Health Optima policy wording pdf,optima,starhealth.in
+pol_star_comprehensive,policies,search,,Star Comprehensive Insurance Policy wording pdf,comprehensive,starhealth.in
+pol_star_senior_citizens_red_carpet,policies,search,,Star Senior Citizens Red Carpet policy wording pdf,senior,starhealth.in
+pol_hdfc_optima_secure,policies,search,,HDFC ERGO Optima Secure policy wording pdf,optima,hdfcergo.com
+pol_hdfc_optima_restore,policies,search,,HDFC ERGO Optima Restore policy wording pdf,restore,hdfcergo.com
+pol_niva_reassure,policies,search,,Niva Bupa ReAssure 2.0 policy wording pdf,reassure,nivabupa.com
+pol_niva_health_companion,policies,search,,Niva Bupa Health Companion policy wording pdf,companion,nivabupa.com
+pol_care_supreme,policies,search,,Care Health Insurance Care Supreme policy wording pdf,supreme,careinsurance.com
+pol_care_health,policies,search,,Care Health Insurance Care policy wording pdf,care,careinsurance.com
+pol_icici_elevate,policies,search,,ICICI Lombard Elevate health policy wording pdf,elevate,icicilombard.com
+pol_icici_health_advantedge,policies,search,,ICICI Lombard Complete Health Insurance Health AdvantEdge policy wording pdf,advantedge,icicilombard.com
+pol_bajaj_health_guard,policies,search,,Bajaj Allianz Health Guard policy wording pdf,guard,bajajallianz.com
+pol_aditya_birla_activ_one,policies,search,,Aditya Birla Activ One health policy wording pdf,activ,adityabirlacapital.com
+pol_tata_aig_medicare,policies,search,,Tata AIG Medicare policy wording pdf,medicare,tataaig.com
+pol_manipalcigna_prohealth,policies,search,,ManipalCigna ProHealth Insurance policy wording pdf,prohealth,manipalcigna.com
+pol_sbi_arogya_supreme,policies,search,,SBI General Arogya Supreme policy wording pdf,supreme,sbigeneral.in
+pol_newindia_mediclaim,policies,search,,New India Mediclaim Policy wording pdf,mediclaim,newindia.co.in
+pol_united_family_medicare,policies,search,,United India Family Medicare policy wording pdf,medicare,uiic.co.in
+pol_oriental_happy_family_floater,policies,search,,Oriental Insurance Happy Family Floater policy wording pdf,floater,orientalinsurance.org.in
+pol_national_parivar_mediclaim,policies,search,,National Insurance Parivar Mediclaim policy wording pdf,parivar,nationalinsurance.nic.co.in
+pol_digit_health,policies,search,,Digit Health Insurance policy wording pdf,digit,godigit.com
+ombudsman_awards,ombudsman,probe,https://www.cioins.co.in/AwardsMonthwise/{Mon}{YYYY}/Health_individual {Month} {YYYY}.pdf,,,cioins.co.in
+ombudsman_annual_report,ombudsman,search,,Council for Insurance Ombudsmen annual report pdf,annual,cioins.co.in
+tariff_cghs_rates,tariffs,search,,CGHS revised package rates 2025 pdf,cghs,cghs.mohfw.gov.in|cghs.gov.in
+tariff_pmjay_hbp,tariffs,search,,PM-JAY Health Benefit Package HBP 2022 rates pdf,hbp|package,nha.gov.in|pmjay.gov.in
+checklist_claim_form,checklists,search,,IRDAI standard claim form health insurance Part A Part B pdf,claim,irdai.gov.in

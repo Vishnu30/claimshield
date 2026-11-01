@@ -1,0 +1,26 @@
+{
+ "issues": [
+  [
+   "proportionate",
+   "contestable"
+  ],
+  [
+   "room_rent",
+   "valid"
+  ],
+  [
+   "short_settlement",
+   "contestable"
+  ]
+ ],
+ "payout_as_is": 114846.15,
+ "claimed": 135500.0,
+ "payout_before": 104231.0,
+ "payout_after_fixes": 114846.15,
+ "recoverable_via_appeal": 26769.0,
+ "mode": "appeal",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "te",
+ "render": "pdf"
+}

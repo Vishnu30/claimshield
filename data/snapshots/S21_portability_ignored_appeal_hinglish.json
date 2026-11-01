@@ -1,0 +1,707 @@
+{
+ "scenario": "S21_portability_ignored_appeal_hinglish",
+ "recorded_at": "2026-10-31T16:56:04+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "appeal",
+  "jurisdiction": "IN",
+  "user_lang": "hinglish",
+  "currency": "₹",
+  "claimed": 95000.0,
+  "payout_before": 0.0,
+  "payout_after_fixes": 0.0,
+  "payout_after_appeal": 0.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 95000.0,
+  "patient_pays_after": 95000.0,
+  "insurer_paid": 0.0,
+  "risk_score": 100,
+  "risk_band": "high",
+  "summary_en": "Claimed ₹95,000; insurer paid ₹0. Our audit finds ₹0 recoverable through appeal on 1 ground(s).",
+  "summary_localized": "Aapne ₹95,000 ka claim kiya tha; company ne ₹0 diya hai. Hamari jaanch me pata chala hai ki appeal karne par 1 wajah se ₹0 wapas mil sakta hai.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "waiting_period",
+    "title": "Specific waiting period: hernia",
+    "raised_by": "tpa",
+    "status": "contestable",
+    "inr_impact": 95000.0,
+    "deduction_ids": [
+     "D-WAIT"
+    ],
+    "confidence": 0.67,
+    "explanation_en": "The policy requires 24 months for hernia. Covered 14 months with this insurer, 66 months continuously including earlier policies.",
+    "explanations": {
+     "en": "The policy requires 24 months for hernia. Covered 14 months with this insurer, 66 months continuously including earlier policies.",
+     "hinglish": "Policy me hernia ke liye 24 months tak wait karna hota hai. Is insurer ke saath aapke 14 months hue hain, lekin pehle wali policies ko jod kar lagatar 66 months ka cover ho chuka hai."
+    },
+    "fix": "Insurer ke Grievance Redressal Officer ko appeal email karo. Attach karo: 1) 2021-03-01 se 2026-09-20 tak ki saari previous policy copies + renewal receipts jisme koi gap na ho, 2) current policy copy (start 2025-07-01), 3) rejection letter. Email me likho: 'Hernia ka 24-month waiting Clause 4.2 ke hisab se first policy se continuous coverage par count karo, 66 months ho chuke hain, portability credit do.' 30 din me reply na aaye to Ombudsman me same set ke saath complaint karo.",
+    "fix_localized": {
+     "hinglish": "Insurer ke Grievance Redressal Officer ko appeal email bhejein. Saath me ye documents lagayein: 1) 2021-03-01 se 2026-09-20 tak ki saari purani policy copies + renewal receipts jinme beech me koi gap na ho, 2) current policy copy (start 2025-07-01), 3) rejection letter. Email me likhein: 'Hernia ka 24-month waiting Clause 4.2 ke hisaab se pehli policy se continuous coverage par ginein, 66 months pure ho chuke hain, portability credit dein.' Agar 30 din me jawab na aaye to Ombudsman me isi set ke saath shikayat kar dein."
+    },
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.",
+     "bbox": [
+      78.0,
+      659.2874755859375,
+      516.7861938476562,
+      711.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]",
+     "page": null,
+     "quote": "On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-WP-01"
+    ],
+    "tool_evidence": {
+     "waiting_period_check": {
+      "kind": "specific",
+      "condition": "hernia",
+      "months_required": 24,
+      "regulator_max": 36,
+      "months_elapsed_insurer_view": 14,
+      "months_elapsed_continuous": 66,
+      "applies_insurer_view": true,
+      "applies_correctly": false,
+      "cite": {
+       "clause_id": "4.2",
+       "page": 2,
+       "quote": "Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures."
+      }
+     },
+     "tpa_reasoning": "Hernia carries 24-month specific waiting under 4.2 from date of inception of first policy. Continuous coverage since 2021-03-01 = 66 months to admission 2026-09-20, so 24 months fully served. Insurer applied only 14 months since current policy start 2025-07-01 and ignored portability credit. Per IN-PORTABILITY waiting served under previous continuous policy must be credited. Evidence pack correctly shows applies_insurer_view true but applies_correctly false.",
+     "advocate_argument": "Clause 4.2 khud kehta hai exclusion sirf 'until expiry of 24 months of continuous coverage after date of inception of the first policy' tak hai. Admission 2026-09-20 tak 2021-03-01 se 66 months continuous cover hai, jo 24 months se zyada hai. Insurer ne sirf current policy ke 14 months gine aur portability ignore ki. IRDAI Master Circular IN-PORTABILITY kehta hai portability/migration par pehle served waiting period credit karna mandatory hai aur ye policy wording ko override karta hai.",
+     "jury": {
+      "baseten": "fixable",
+      "muse": "contestable",
+      "fireworks": "contestable"
+     },
+     "title_localized": {
+      "hinglish": "Hernia ke liye khaas waiting period"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "TPA disagrees: Hernia carries 24-month specific waiting under 4.2 from date of inception of first policy. Continuous coverage since 2021-03-01 = 66 months to admission 2026-09-20, so 24 months fully served. Insurer ",
+     "critic: Status 'contestable' is consistent with cited portability credit rule if 66-month continuous coverage is proven, but policy_quote is truncated at 'cataract, h' so hernia inclusion not fully evidenced;",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   }
+  ],
+  "missing_docs": [],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F01",
+    "who": "You → Insurer",
+    "action": "Insurer ke Grievance Redressal Officer ko appeal email karo. Attach karo: 1) 2021-03-01 se 2026-09-20 tak ki saari previous policy copies + renewal receipts jisme koi gap na ho, 2) current policy copy (start 2025-07-01), 3) rejection letter. Email me likho: 'Hernia ka 24-month waiting Clause 4.2 ke hisab se first policy se continuous coverage par count karo, 66 months ho chuke hain, portability credit do.' 30 din me reply na aaye to Ombudsman me same set ke saath complaint karo.",
+    "status": "contestable",
+    "impact": 95000.0,
+    "when": "in appeal",
+    "action_localized": {
+     "hinglish": "Insurance company ke Grievance Redressal Officer ko appeal ke liye email karein. Saath me ye documents lagayein: 1) 2021-03-01 se 2026-09-20 tak ki saari purani policy ki copies + renewal receipts jinme beech me koi gap na ho, 2) abhi wali policy ki copy (start 2025-07-01), 3) rejection letter. Email me ye likhein: 'Hernia ke liye 24-month ka waiting period Clause 4.2 ke hisaab se pehli policy se continuous coverage par gina jaye, 66 months pure ho chuke hain, portability credit diya jaye.' Agar 30 din me jawab na aaye to Ombudsman ke paas same documents ke saath shikayat karein."
+    }
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "3 document(s): bill:1p, discharge:1p, rejection:1p",
+    "t": "22:23:44"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "22:23:44"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3520,
+    "usd": 0.004645,
+    "t": "22:23:53"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 7 lines via baseten",
+    "t": "22:23:53"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1382,
+    "usd": 0.001706,
+    "t": "22:23:56"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Bilateral inguinal hernia via baseten",
+    "t": "22:23:56"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1399,
+    "usd": 0.0017345,
+    "t": "22:23:59"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "rejection: 1 reason(s) via baseten",
+    "t": "22:23:59"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "22:23:59"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "22:23:59"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 1 candidate finding(s)",
+    "t": "22:23:59"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "22:23:59"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4671,
+    "usd": 0.0074730000000000005,
+    "t": "22:24:04"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"hernia\"}",
+    "result": "{\"admission\": \"2026-09-20\", \"policy_start\": \"2025-07-01\", \"continuous_since\": \"2021-03-01\", \"months_insurer_view\": 14, \"months_continuous\": 66, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 14, \"months_elapsed_continuous\": 66, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "22:24:04"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"hernioplasty\"}",
+    "result": "{\"matched\": false}",
+    "t": "22:24:04"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 66, \"moratorium_months\": 60, \"moratorium_passed\": true, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unti…",
+    "t": "22:24:04"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.2\"}",
+    "result": "{\"clause_id\": \"4.2\", \"page\": 2, \"title\": \"Specific waiting period\", \"quote\": \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\"}",
+    "t": "22:24:04"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5381,
+    "usd": 0.007718,
+    "t": "22:24:08"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"portability continuity waiting period credit previous insurer\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PORTABILITY\", \"rule\": \"On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 months.\", \"sour…",
+    "t": "22:24:08"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"moratorium continuous coverage 60 months\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portability/renewals) no claim can be contested for non-disclosure or misrepresentation, except established fraud.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-SPECIFIC-MAX\", \"rule\": \"Specific disease/procedure waiting periods cannot exceed 36 mo…",
+    "t": "22:24:08"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 7006,
+    "usd": 0.012241,
+    "t": "22:24:18"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "1 predicted issues; 6 tool calls",
+    "notes": "Appeal valid hai. 2021 se continuous cover + previous_policy_copies on file hone se 24-month hernia waiting 4.2 served hai, insurer ka rejection portability ignore karke galat hai. Room rent within 1% SI limit (4000 vs 5000/day), no proportionate deduction, age 42 no copay, no hernia sublimit, no non-payables, no PED/exclusion hit, moratorium already passed at 66 months. Isliye D-WAIT sustain nahi hoga aur full 95000 payable banta hai subject to continuity verification.",
+    "t": "22:24:18"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "22:24:18"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2111,
+    "usd": 0.00365,
+    "t": "22:24:21"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"4.2\"}",
+    "result": "{\"clause_id\": \"4.2\", \"page\": 2, \"title\": \"Specific waiting period\", \"quote\": \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\"}",
+    "t": "22:24:21"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"portability waiting period credit continuous coverage\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PORTABILITY\", \"rule\": \"On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portability/renewals) no claim …",
+    "t": "22:24:21"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"waiting period portability hernia continuous coverage\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-WP-01\", \"illustrative\": true, \"issue_type\": \"waiting_period\", \"complaint\": \"Specific waiting period applied despite portability from previous insurer.\", \"decision\": \"allowed\", \"reasoning\": \"Waiting period served under previous continuous policy must be credited.\", \"office\": null, \"year\": null}, {\"id\": \"ILL-PED-01\", \"illustrative\": true, \"issue_type\": \"ped\", \"complaint\":…",
+    "t": "22:24:21"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 3707,
+    "usd": 0.007808,
+    "t": "22:24:27"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 1 findings; 3 tool calls",
+    "t": "22:24:27"
+   },
+   {
+    "stage": "localize",
+    "kind": "info",
+    "text": "translating to hinglish in parallel with the jury",
+    "t": "22:24:27"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "22:24:27"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "3-host jury on 1 judgement(s), in parallel: muse, baseten, fireworks",
+    "t": "22:24:27"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "22:24:29"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=1200",
+    "t": "22:24:29"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 1177,
+    "usd": 0.003667,
+    "t": "22:24:33"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1605,
+    "usd": 0.0020025,
+    "t": "22:24:34"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on fireworks; one retry with max_tokens=1200",
+    "t": "22:24:38"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on fireworks; one retry with max_tokens=2400",
+    "t": "22:24:47"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1391,
+    "usd": 0.0016825,
+    "t": "22:24:55"
+   },
+   {
+    "stage": "jury",
+    "kind": "done",
+    "text": "votes from baseten, muse, fireworks; unanimous on 0/1",
+    "t": "22:24:55"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1651,
+    "usd": 0.0020445,
+    "t": "22:24:56"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1482,
+    "usd": 0.001782,
+    "t": "22:25:15"
+   },
+   {
+    "stage": "critic",
+    "kind": "done",
+    "text": "Finding is plausible and fix is appropriate subject to verification of complete waiting-period wording, gap-free prior coverage, and sum insured limit; no overclaim beyond 'contestable'.",
+    "t": "22:25:15"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "1 verified finding(s); 1 fully cited",
+    "t": "22:25:15"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1372,
+    "usd": 0.001637,
+    "t": "22:25:35"
+   },
+   {
+    "stage": "localize",
+    "kind": "done",
+    "text": "results written in hinglish",
+    "t": "22:25:35"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 111.7s · 18 model call(s) (0 cached) · $0.0668",
+    "t": "22:25:35"
+   }
+  ],
+  "cost_usd": 0.102958,
+  "llm_calls": 18,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 4,
+    "cached": 0,
+    "usd": 0.010088,
+    "tokens": 7906,
+    "roles": [
+     "extract",
+     "jury"
+    ]
+   },
+   "muse": {
+    "calls": 6,
+    "cached": 0,
+    "usd": 0.042557,
+    "tokens": 24053,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   },
+   "fireworks": {
+    "calls": 4,
+    "cached": 0,
+    "usd": 0.007146,
+    "tokens": 5896,
+    "roles": [
+     "jury",
+     "localize",
+     "critic"
+    ]
+   }
+  },
+  "generated_at": "2026-10-31T22:25:15",
+  "payout_detail_before": {
+   "claimed": 95000.0,
+   "admissible_before_copay": 0.0,
+   "copay": 0.0,
+   "payout": 0.0,
+   "patient_pays": 95000.0,
+   "deductions": [
+    {
+     "id": "D-WAIT",
+     "issue_type": "waiting_period",
+     "label": "Waiting period not completed (claim inadmissible)",
+     "amount": 95000.0,
+     "item_ids": []
+    }
+   ],
+   "rejected": true
+  }
+ },
+ "letters": {
+  "appeal": {
+   "subject": "Appeal against repudiation / short-settlement of claim [CLAIM_NO] under policy [POLICY_NO]",
+   "salutation": "To the Grievance Redressal Officer, [INSURER]",
+   "paragraphs": [
+    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] for ₹95000 was rejected vide letter dated 2026-10-06 with ₹0 paid.",
+    "I respectfully submit that the decision is contrary to the policy terms and the applicable regulations, on the following grounds."
+   ],
+   "grounds": [
+    {
+     "title": "Specific waiting period: hernia",
+     "text": "The hernia claim is excluded only until expiry of 24 months of continuous coverage after the date of inception of the first policy under Clause 4.2. Continuous coverage from 2021-03-01 to admission on 2026-09-20 totals 66 months, including 14 months under the current policy commencing 2025-07-01, which exceeds the 24-month requirement. Counting only the current policy period ignores portability credit, while the IRDAI Master Circular on Health Insurance Business 2024 requires credit for waiting periods already served under previous continuous policies on portability or migration.",
+     "cites": [
+      "Policy clause (p.2): \"Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures.\"",
+      "IRDAI Master Circular on Health Insurance Business 2024 [IN-PORTABILITY]: \"On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).\""
+     ]
+    }
+   ],
+   "relief": "I request you to review the decision and settle ₹95000 with applicable interest, within the regulatory timeline.",
+   "enclosures": [
+    "Current policy copy (start 2025-07-01)",
+    "Previous policy copies and renewal receipts from 2021-03-01 to 2026-09-20 showing continuous coverage",
+    "Rejection letter dated 2026-10-06",
+    "Final itemized bill",
+    "Discharge summary"
+   ],
+   "closing": "Yours faithfully,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": "Fortis Hospital, Noida",
+   "bill_no": "FHN-7012",
+   "admission_date": "2026-09-20",
+   "discharge_date": "2026-09-22",
+   "room_category": "Twin sharing",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Twin sharing room",
+     "category": "room",
+     "qty": 2.0,
+     "rate": 4000.0,
+     "amount": 8000.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Surgeon fee - lap hernioplasty",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 38000.0,
+     "amount": 38000.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Anaesthesia",
+     "category": "anaesthesia",
+     "qty": 1.0,
+     "rate": 8000.0,
+     "amount": 8000.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 16000.0,
+     "amount": 16000.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Mesh (implant)",
+     "category": "implant",
+     "qty": 1.0,
+     "rate": 14000.0,
+     "amount": 14000.0,
+     "date": "2026-09-20",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 6000.0,
+     "amount": 6000.0,
+     "date": "2026-09-21",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L07",
+     "description": "Investigations",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 5000.0,
+     "amount": 5000.0,
+     "date": "2026-09-19",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 95000.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Bilateral inguinal hernia",
+   "procedure": "Laparoscopic TEP hernioplasty",
+   "icd10": null,
+   "admission_type": "planned",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": {
+   "insurer": "Demo General Insurance (synthetic)",
+   "letter_date": "2026-10-06",
+   "claim_no": "DGI/HL/26/60210",
+   "decision": "rejected",
+   "amount_claimed": 95000.0,
+   "amount_paid": 0.0,
+   "reasons": [],
+   "source_file": "rejection.pdf"
+  },
+  "ctx": {
+   "mode": "appeal",
+   "jurisdiction": "IN",
+   "user_lang": "hinglish",
+   "patient_age": 42,
+   "sum_insured": null,
+   "policy_start": "2025-07-01",
+   "continuous_coverage_since": "2021-03-01",
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque",
+    "rejection_letter",
+    "previous_policy_copies",
+    "implant_invoice_sticker"
+   ],
+   "narrative": "Insurance company ne bola waiting period complete nahi hua, par main 2021 se continuously insured hoon, bas company change ki thi.",
+   "narrative_lang": null,
+   "intimation_hours_after_admission": null
+  }
+ }
+}

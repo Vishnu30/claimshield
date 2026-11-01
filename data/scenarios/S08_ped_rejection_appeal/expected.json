@@ -1,0 +1,22 @@
+{
+ "issues": [
+  [
+   "missing_doc",
+   "fixable"
+  ],
+  [
+   "wrongful_rejection",
+   "contestable"
+  ]
+ ],
+ "payout_as_is": 0.0,
+ "claimed": 256000.0,
+ "payout_before": 0.0,
+ "payout_after_fixes": 0.0,
+ "recoverable_via_appeal": 256000.0,
+ "mode": "appeal",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "en",
+ "render": "pdf"
+}

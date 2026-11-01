@@ -1,0 +1,20 @@
+# secrets
+.env
+.streamlit/secrets.toml
+# environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# runtime
+logs/*.jsonl
+logs/cache/
+logs/resolved_models.json
+kb/policies/upl_*.json
+# downloaded source PDFs (re-fetchable: see data/sources.csv + data/sources_lock.csv)
+data/raw/**/*.pdf
+data/raw/**/*.part
+data/raw/inventory.json
+data/sources_status.json
+logs/snapshots/

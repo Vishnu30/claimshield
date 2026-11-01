@@ -1,0 +1,18 @@
+{
+ "issues": [
+  [
+   "short_settlement",
+   "contestable"
+  ]
+ ],
+ "payout_as_is": 106000.0,
+ "claimed": 106000.0,
+ "payout_before": 84000.0,
+ "payout_after_fixes": 106000.0,
+ "recoverable_via_appeal": 22000.0,
+ "mode": "appeal",
+ "tier": "challenge",
+ "bills": 1,
+ "lang": "kn",
+ "render": "pdf"
+}

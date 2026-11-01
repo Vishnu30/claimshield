@@ -1,0 +1,207 @@
+{
+ "policy_id": "demo_classic",
+ "insurer": "Old Shore Assurance (synthetic)",
+ "product": "Classic Mediclaim (Demo, legacy wording)",
+ "uin": "DEMOHLIP19007V021819",
+ "jurisdiction": "IN",
+ "sum_insured": 300000.0,
+ "room_rent": {
+  "kind": "fixed",
+  "value": 4000.0,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": "3.1",
+   "page": 2,
+   "quote": "Room, boarding and nursing expenses are payable up to Rs. 4,000 per day."
+  }
+ },
+ "icu_rent": {
+  "kind": "fixed",
+  "value": 8000.0,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": "3.2",
+   "page": 2,
+   "quote": "Intensive Care Unit expenses are payable up to Rs. 8,000 per day."
+  }
+ },
+ "proportionate_deduction": true,
+ "proportionate_cite": {
+  "clause_id": "3.3",
+  "page": 2,
+  "quote": "Where the room rent exceeds the eligible limit, all other expenses except pharmacy, consumables, implants and diagnostics shall be reduced in the proportion that the eligible room rent bears to the room rent actually incurred."
+ },
+ "copays": [
+  {
+   "pct": 20.0,
+   "condition": "insured aged 60 or above",
+   "age_min": 60,
+   "cite": {
+    "clause_id": "3.5",
+    "page": 2,
+    "quote": "The insured shall bear 20% of every admissible claim if the insured person is aged 60 years or above at the time of admission."
+   }
+  }
+ ],
+ "sublimits": [
+  {
+   "procedure": "cataract",
+   "aliases": [
+    "phacoemulsification",
+    "phaco",
+    "sics"
+   ],
+   "limit": 40000.0,
+   "pct_si": null,
+   "basis": "per_eye",
+   "cite": {
+    "clause_id": "3.4",
+    "page": 2,
+    "quote": "Cataract surgery is payable up to Rs. 40,000 per eye."
+   }
+  }
+ ],
+ "waiting_periods": [
+  {
+   "kind": "initial",
+   "months": 1,
+   "conditions": [],
+   "cite": {
+    "clause_id": "4.1",
+    "page": 2,
+    "quote": "Any illness contracted within 30 days of the first policy commencement is excluded, except accidental injuries."
+   }
+  },
+  {
+   "kind": "specific",
+   "months": 48,
+   "conditions": [
+    "cataract",
+    "hernia",
+    "joint replacement",
+    "knee replacement",
+    "hysterectomy",
+    "gall bladder stones",
+    "kidney stones",
+    "varicose veins"
+   ],
+   "cite": {
+    "clause_id": "4.2",
+    "page": 2,
+    "quote": "The following are excluded for the first 48 months of continuous coverage: cataract, hernia, joint replacement, knee replacement, hysterectomy, gall bladder stones, kidney stones and varicose veins."
+   }
+  },
+  {
+   "kind": "ped",
+   "months": 48,
+   "conditions": [],
+   "cite": {
+    "clause_id": "4.3",
+    "page": 2,
+    "quote": "Pre-existing diseases are excluded until 48 months of continuous coverage have elapsed."
+   }
+  }
+ ],
+ "exclusions": [
+  {
+   "code": "Excl03",
+   "text": "Cosmetic, aesthetic or plastic surgery that is not medically necessary is excluded.",
+   "keywords": [
+    "cosmetic",
+    "aesthetic",
+    "rhinoplasty"
+   ],
+   "cite": {
+    "clause_id": "Excl03",
+    "page": 3,
+    "quote": "Cosmetic, aesthetic or plastic surgery that is not medically necessary is excluded."
+   }
+  }
+ ],
+ "intimation_emergency_hours": 48,
+ "intimation_planned_days_before": null,
+ "claim_submission_days": null,
+ "clauses": [
+  {
+   "id": "1.1",
+   "title": "Hospital",
+   "page": 1,
+   "text": "Hospital means any institution registered with the local authorities for in-patient care with qualified nursing staff round the clock."
+  },
+  {
+   "id": "1.2",
+   "title": "Package rate",
+   "page": 1,
+   "text": "Where the hospital charges a fixed package for a procedure, the package amount shall be considered as the total expense for that procedure."
+  },
+  {
+   "id": "2.1",
+   "title": "Sum insured",
+   "page": 1,
+   "text": "The Sum Insured under this policy is Rs. 3,00,000 per policy year."
+  },
+  {
+   "id": "3.1",
+   "title": "Room rent",
+   "page": 2,
+   "text": "Room, boarding and nursing expenses are payable up to Rs. 4,000 per day."
+  },
+  {
+   "id": "3.2",
+   "title": "Intensive care",
+   "page": 2,
+   "text": "Intensive Care Unit expenses are payable up to Rs. 8,000 per day."
+  },
+  {
+   "id": "3.3",
+   "title": "Proportionate deduction",
+   "page": 2,
+   "text": "Where the room rent exceeds the eligible limit, all other expenses except pharmacy, consumables, implants and diagnostics shall be reduced in the proportion that the eligible room rent bears to the room rent actually incurred."
+  },
+  {
+   "id": "3.4",
+   "title": "Cataract limit",
+   "page": 2,
+   "text": "Cataract surgery is payable up to Rs. 40,000 per eye."
+  },
+  {
+   "id": "3.5",
+   "title": "Co-payment",
+   "page": 2,
+   "text": "The insured shall bear 20% of every admissible claim if the insured person is aged 60 years or above at the time of admission."
+  },
+  {
+   "id": "4.1",
+   "title": "Initial waiting period",
+   "page": 2,
+   "text": "Any illness contracted within 30 days of the first policy commencement is excluded, except accidental injuries."
+  },
+  {
+   "id": "4.2",
+   "title": "Specific waiting period",
+   "page": 2,
+   "text": "The following are excluded for the first 48 months of continuous coverage: cataract, hernia, joint replacement, knee replacement, hysterectomy, gall bladder stones, kidney stones and varicose veins."
+  },
+  {
+   "id": "4.3",
+   "title": "Pre-existing diseases",
+   "page": 2,
+   "text": "Pre-existing diseases are excluded until 48 months of continuous coverage have elapsed."
+  },
+  {
+   "id": "Excl03",
+   "title": "Cosmetic treatment",
+   "page": 3,
+   "text": "Cosmetic, aesthetic or plastic surgery that is not medically necessary is excluded."
+  },
+  {
+   "id": "5.1",
+   "title": "Claim intimation",
+   "page": 3,
+   "text": "The Company must be informed within 48 hours of an emergency admission."
+  }
+ ],
+ "source_file": "data/policies/demo_classic_policy.pdf"
+}

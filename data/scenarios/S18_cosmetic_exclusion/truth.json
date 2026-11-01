@@ -1,0 +1,116 @@
+{
+ "bill": {
+  "hospital": "Aesthetica Clinic, Mumbai",
+  "bill_no": "AC-90",
+  "admission_date": "2026-08-20",
+  "discharge_date": "2026-08-20",
+  "room_category": "Day care",
+  "room_days": 1.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Day care room",
+    "category": "room",
+    "qty": 1.0,
+    "rate": 3000.0,
+    "amount": 3000.0,
+    "date": "2026-08-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - rhinoplasty",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 60000.0,
+    "amount": 60000.0,
+    "date": "2026-08-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 15000.0,
+    "amount": 15000.0,
+    "date": "2026-08-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-08-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 4000.0,
+    "amount": 4000.0,
+    "date": "2026-08-20",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 90000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Nasal hump deformity",
+  "procedure": "Cosmetic rhinoplasty",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 26,
+  "sum_insured": null,
+  "policy_start": "2020-07-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Rhinoplasty — possible cosmetic exclusion",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

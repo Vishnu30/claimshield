@@ -1,0 +1,18 @@
+{
+ "issues": [
+  [
+   "room_rent",
+   "needs_review"
+  ]
+ ],
+ "payout_as_is": 44000.0,
+ "claimed": 44000.0,
+ "payout_before": 44000.0,
+ "payout_after_fixes": 44000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "challenge",
+ "bills": 1,
+ "lang": "or",
+ "render": "pdf"
+}

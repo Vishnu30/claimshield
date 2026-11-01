@@ -1,0 +1,119 @@
+{
+ "bill": {
+  "hospital": "Lakeview Hospital, Bengaluru",
+  "bill_no": "LVH-30021",
+  "admission_date": "2026-09-14",
+  "discharge_date": "2026-09-17",
+  "room_category": "General ward",
+  "room_days": 3.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "General ward",
+    "category": "room",
+    "qty": 3.0,
+    "rate": 1500.0,
+    "amount": 4500.0,
+    "date": "2026-09-14",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - laparoscopic appendicectomy",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 30000.0,
+    "amount": 30000.0,
+    "date": "2026-09-14",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 7000.0,
+    "amount": 7000.0,
+    "date": "2026-09-14",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 12000.0,
+    "amount": 12000.0,
+    "date": "2026-09-14",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 9800.0,
+    "amount": 9800.0,
+    "date": "2026-09-15",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "CT abdomen & labs",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 8700.0,
+    "amount": 8700.0,
+    "date": "2026-09-14",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 72000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Acute appendicitis",
+  "procedure": "Laparoscopic appendicectomy",
+  "icd10": "K35.8",
+  "admission_type": "emergency",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 35,
+  "sum_insured": null,
+  "policy_start": "2022-01-10",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "final_itemized_bill",
+   "payment_receipts",
+   "claim_form_part_a"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": 40.0
+ },
+ "policy_id": "demo_shield",
+ "title": "Appendicitis — missing documents + late intimation",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

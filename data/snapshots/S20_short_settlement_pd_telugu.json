@@ -1,0 +1,965 @@
+{
+ "scenario": "S20_short_settlement_pd_telugu",
+ "recorded_at": "2026-10-31T16:51:19+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "appeal",
+  "jurisdiction": "IN",
+  "user_lang": "te",
+  "currency": "₹",
+  "claimed": 135500.0,
+  "payout_before": 104231.0,
+  "payout_after_fixes": 114846.15,
+  "payout_after_appeal": 114846.15,
+  "recoverable_via_appeal": 10615.149999999994,
+  "patient_pays_before": 31269.0,
+  "patient_pays_after": 20653.85,
+  "insurer_paid": 104231.0,
+  "risk_score": 35,
+  "risk_band": "medium",
+  "summary_en": "Claimed ₹1,35,500; insurer paid ₹1,04,231. Our audit finds ₹10,615 recoverable through appeal on 1 ground(s).",
+  "summary_localized": "...",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "room_rent",
+    "title": "Room rent above your policy limit",
+    "raised_by": "tpa",
+    "status": "needs_review",
+    "inr_impact": 4500.0,
+    "deduction_ids": [
+     "D-ROOM"
+    ],
+    "confidence": 0.93,
+    "explanation_en": "Your policy allows ₹5,000/day; the room was billed at ₹6,500/day for 3 day(s).",
+    "explanations": {
+     "en": "Your policy allows ₹5,000/day; the room was billed at ₹6,500/day for 3 day(s).",
+     "te": "మీ పాలసీలో ₹5,000/day వరకు అనుమతి ఉంది; మీకు ₹6,500/day చొప్పున 3 day(s) కి బిల్ చేశారు."
+    },
+    "fix": "ఈ రూ.4,500 మీరే భరించాలి. తదుపరి సారి రూ.5,000/రోజు లోపు గది (జనరల్/షేరింగ్) తీసుకోండి. అప్పీల్ చేయవద్దు.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.",
+     "bbox": [
+      78.0,
+      259.2875061035156,
+      504.12261962890625,
+      285.34051513671875
+     ],
+     "verified": true
+    },
+    "bill_cite": {
+     "doc": "bill.pdf",
+     "page": 1,
+     "quote": "Single private room",
+     "bbox": [
+      36.0,
+      212.3624725341797,
+      559.2755737304688,
+      224.04147338867188
+     ],
+     "verified": false
+    },
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "room_rent_check": {
+      "kind": "room",
+      "limit_kind": "pct_si",
+      "cap_per_day": 5000.0,
+      "charged_per_day": 6500.0,
+      "days": 3.0,
+      "charged_total": 19500.0,
+      "item_ids": [
+       "L01"
+      ],
+      "cite": {
+       "clause_id": "3.1",
+       "page": 2,
+       "quote": "Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day."
+      },
+      "category_limit": null,
+      "applicable": true,
+      "excess": 4500.0,
+      "ratio": 0.7692307692307693
+     },
+     "tpa_reasoning": "Single private room charged Rs.6500/day for 3 days vs eligible Rs.5000/day (1% of SI 500000). Excess Rs.4500 correctly disallowed per engine D-ROOM.",
+     "advocate_argument": "Clause 3.1 limits room rent to 1% of SI = Rs.5000/day. Billed Rs.6500/day x 3 days = Rs.19500. Excess Rs.4500 is correctly disallowed. No regulator rule overrides room-rent cap.",
+     "title_localized": {
+      "te": "మీ పాలసీ పరిమితి కంటే గది అద్దె ఎక్కువ"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status 'valid' overclaims: policy_quote cites '1% of SI per day' but SI not evidenced to prove ₹5,000 limit; rule is null. Amount math (₹1,500 x 3 = ₹4,500) is correct only if limit proven. Fix is not",
+     "critic override valid → needs_review"
+    ]
+   },
+   {
+    "id": "F02",
+    "issue_type": "proportionate",
+    "title": "Proportionate deduction on doctor/OT/nursing fees",
+    "raised_by": "tpa",
+    "status": "needs_review",
+    "inr_impact": 16153.85,
+    "deduction_ids": [
+     "D-PD"
+    ],
+    "confidence": 0.95,
+    "explanation_en": "Because the room exceeded the limit, the insurer scales associated charges (₹70,000) by 77%, cutting ₹16,154. Pharmacy, consumables, implants and diagnostics (₹46,000) are protected from this cut.",
+    "explanations": {
+     "en": "Because the room exceeded the limit, the insurer scales associated charges (₹70,000) by 77%, cutting ₹16,154. Pharmacy, consumables, implants and diagnostics (₹46,000) are protected from this cut.",
+     "te": "గది అద్దె పరిమితి దాటినందున, ఇన్సూరెన్స్ కంపెనీ అనుబంధ ఛార్జీలను (₹70,000) 77% చొప్పున లెక్కించి ₹16,154 తగ్గించింది. ఫార్మసీ, వినియోగ వస్తువులు, ఇంప్లాంట్లు మరియు పరీక్షలు (₹46,000) కి ఈ కోత వర్తించదు."
+    },
+    "fix": "ఆసుపత్రి బిల్లింగ్ మేనేజర్ ను అడగండి: 'సర్జన్, అనస్థీషియా, OT, నర్సింగ్ ఛార్జీలు అన్ని గది రకాలకు ఒకేలా ఉన్నాయని, రూమ్ కేటగిరీ వారీగా తేడా లేదని' లిఖితపూర్వక సర్టిఫికేట్ + రేట్-కార్డ్ ఇవ్వండి. అది వస్తే IN-PD-NODIFF తో అప్పీల్ చేయవచ్చు.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.",
+     "bbox": [
+      78.0,
+      318.2874755859375,
+      517.27587890625,
+      370.3404541015625
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-PD-NODIFF]",
+     "page": null,
+     "quote": "Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-PD-01"
+    ],
+    "tool_evidence": {
+     "proportionate_check": {
+      "applicable": true,
+      "ratio": 0.7692307692307693,
+      "associated_total": 70000.0,
+      "associated_item_ids": [
+       "L02",
+       "L03",
+       "L04",
+       "L05"
+      ],
+      "exempt_total": 46000.0,
+      "exempt_categories": [
+       "consumable",
+       "implant",
+       "investigation",
+       "pharmacy"
+      ],
+      "pd_amount": 16153.85,
+      "differential_billing": null,
+      "package": false,
+      "policy_says_pd": true,
+      "cite": {
+       "clause_id": "3.3",
+       "page": 2,
+       "quote": "If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics."
+      },
+      "regulator_rules": [
+       "IN-PD-EXEMPT",
+       "IN-PD-NODIFF"
+      ]
+     },
+     "tpa_reasoning": "Room rent exceeds limit, so associated expenses L02 surgeon, L03 anaesthesia, L04 OT, L05 nursing subject to ratio 0.76923. Pharmacy, implant, investigation correctly exempted. Engine D-PD Rs.16153.85 is per policy.",
+     "advocate_argument": "Math is correct per clause 3.3 (ratio 5000/6500=0.76923 x Rs.70000 = Rs.16153.85 cut) and IN-PD-EXEMPT is complied (Rs.46000 pharmacy/implant/investigation/consumable exempted). But IN-PD-NODIFF overrides policy: PD is illegal if hospital does not follow differential billing. Evidence shows differential_billing=null, so cannot decide valid vs contestable without hospital certificate.",
+     "jury": {
+      "baseten": "valid"
+     },
+     "title_localized": {
+      "te": "డాక్టర్/OT/నర్సింగ్ ఫీజుల్లో దామాషా కోత"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "advocate: contestable → needs_review",
+     "critic: Status 'needs_review' is consistent with rule: proportionate deduction only if hospital follows differential billing by room category. Amount verified: ₹70,000 x (1-5000/6500)= ₹16,154 and correctly e",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   },
+   {
+    "id": "F03",
+    "issue_type": "short_settlement",
+    "title": "Insurer paid less than its own policy terms allow",
+    "raised_by": "advocate",
+    "status": "contestable",
+    "inr_impact": 10615.15,
+    "deduction_ids": [],
+    "confidence": 0.87,
+    "explanation_en": "Even applying every valid deduction in the policy, the correct settlement is ₹1,14,846; the insurer paid ₹1,04,231. The extra ₹10,615 cut is not supported.",
+    "explanations": {
+     "en": "Even applying every valid deduction in the policy, the correct settlement is ₹1,14,846; the insurer paid ₹1,04,231. The extra ₹10,615 cut is not supported.",
+     "te": "పాలసీలో ఉన్న అన్ని సరైన కోతలు తీసేసినా, మీకు రావాల్సిన సరైన మొత్తం ₹1,14,846; కానీ కంపెనీ ₹1,04,231 మాత్రమే ఇచ్చింది. అదనంగా కోసిన ₹10,615 కు ఎలాంటి ఆధారం లేదు."
+    },
+    "fix": "TPA/Insurer Grievance Cell కు రాయండి: 'మీ లెక్క ప్రకారం కూడా చెల్లించాల్సింది రూ.1,14,846, మీరు చెల్లించింది రూ.1,04,231. అదనపు రూ.10,615 కోతకు క్లాజ్ చూపండి, లేకుంటే చెల్లించండి' - పేమెంట్ లెక్క షీట్ జత చేయండి.",
+    "fix_localized": {
+     "te": "TPA/Insurer Grievance Cell కు ఇలా రాయండి: 'మీ లెక్క ప్రకారమే మాకు రావాల్సింది ₹1,14,846, మీరు చెల్లించింది ₹1,04,231. అదనపు ₹10,615 ఎందుకు కోశారో క్లాజ్ చూపించండి, లేకపోతే ఆ మొత్తం చెల్లించండి' - దీనితో పాటు పేమెంట్ లెక్క షీట్ జత చేయండి."
+    },
+    "policy_cite": null,
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Master Circular on Health Insurance Business 2024 [IN-CRC]",
+     "page": null,
+     "quote": "No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [],
+    "tool_evidence": {
+     "correct_payout": 114846.15,
+     "insurer_paid": 104231.0,
+     "advocate_argument": "Even after allowing valid room-rent excess Rs.4500 and proportionate Rs.16153.85, correct payout is Rs.114846.15 vs paid Rs.104231. Unexplained shortfall Rs.10615.15 has no clause support and violates IN-CRC requirement to give specific clause-wise reasons approved by Claims Review Committee.",
+     "jury": {
+      "baseten": "contestable"
+     },
+     "title_localized": {
+      "te": "భీమా కంపెనీ తన పాలసీ నిబంధనల ప్రకారం ఇవ్వాల్సిన దానికంటే తక్కువ డబ్బు చెల్లించింది"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status 'contestable' plausible and fix is actionable/lawful (seek clause-wise payment sheet from Grievance Cell). Amount math 1,14,846-1,04,231=10,615 correct. Overclaim risk: 'correct settlement' ass",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   }
+  ],
+  "missing_docs": [],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F03",
+    "who": "Insurer",
+    "action": "TPA/Insurer Grievance Cell కు రాయండి: 'మీ లెక్క ప్రకారం కూడా చెల్లించాల్సింది రూ.1,14,846, మీరు చెల్లించింది రూ.1,04,231. అదనపు రూ.10,615 కోతకు క్లాజ్ చూపండి, లేకుంటే చెల్లించండి' - పేమెంట్ లెక్క షీట్ జత చేయండి.",
+    "status": "contestable",
+    "impact": 10615.15,
+    "when": "in appeal",
+    "action_localized": {
+     "te": "..."
+    }
+   },
+   {
+    "step": 2,
+    "finding": "F02",
+    "who": "Hospital (certificate) / Insurer",
+    "action": "ఆసుపత్రి బిల్లింగ్ మేనేజర్ ను అడగండి: 'సర్జన్, అనస్థీషియా, OT, నర్సింగ్ ఛార్జీలు అన్ని గది రకాలకు ఒకేలా ఉన్నాయని, రూమ్ కేటగిరీ వారీగా తేడా లేదని' లిఖితపూర్వక సర్టిఫికేట్ + రేట్-కార్డ్ ఇవ్వండి. అది వస్తే IN-PD-NODIFF తో అప్పీల్ చేయవచ్చు.",
+    "status": "needs_review",
+    "impact": 16153.85,
+    "when": "check",
+    "action_localized": {
+     "te": "..."
+    }
+   },
+   {
+    "step": 3,
+    "finding": "F01",
+    "who": "You",
+    "action": "ఈ రూ.4,500 మీరే భరించాలి. తదుపరి సారి రూ.5,000/రోజు లోపు గది (జనరల్/షేరింగ్) తీసుకోండి. అప్పీల్ చేయవద్దు.",
+    "status": "needs_review",
+    "impact": 4500.0,
+    "when": "check",
+    "action_localized": {
+     "te": "..."
+    }
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "3 document(s): bill:1p, discharge:1p, rejection:1p",
+    "t": "22:18:12"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "22:18:12"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 3995,
+    "usd": 0.0053265,
+    "t": "22:18:22"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 8 lines via baseten",
+    "t": "22:18:22"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1141,
+    "usd": 0.0013434999999999999,
+    "t": "22:18:25"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Medial meniscus tear, right knee via baseten",
+    "t": "22:18:25"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1778,
+    "usd": 0.002292,
+    "t": "22:18:29"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "rejection: 1 reason(s) via baseten",
+    "t": "22:18:29"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "22:18:29"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "22:18:29"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 3 candidate finding(s)",
+    "t": "22:18:29"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "22:18:29"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4986,
+    "usd": 0.008595,
+    "t": "22:18:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"meniscus tear\"}",
+    "result": "{\"admission\": \"2026-08-28\", \"policy_start\": \"2019-03-01\", \"continuous_since\": \"2019-03-01\", \"months_insurer_view\": 89, \"months_continuous\": 89, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 89, \"months_elapsed_continuous\": 89, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "22:18:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"arthroscopic meniscectomy\"}",
+    "result": "{\"admission\": \"2026-08-28\", \"policy_start\": \"2019-03-01\", \"continuous_since\": \"2019-03-01\", \"months_insurer_view\": 89, \"months_continuous\": 89, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 89, \"months_elapsed_continuous\": 89, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "22:18:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"arthroscopic meniscectomy\"}",
+    "result": "{\"matched\": false}",
+    "t": "22:18:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"meniscus tear\"}",
+    "result": "{\"matched\": false}",
+    "t": "22:18:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 89, \"moratorium_months\": 60, \"moratorium_passed\": true, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unti…",
+    "t": "22:18:35"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 5952,
+    "usd": 0.009788999999999999,
+    "t": "22:18:40"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.1\"}",
+    "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
+    "t": "22:18:40"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.3\"}",
+    "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
+    "t": "22:18:40"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 7273,
+    "usd": 0.014146,
+    "t": "22:18:50"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "3 predicted issues; 7 tool calls",
+    "notes": "No waiting, sublimit, copay, PED, exclusion or documentation issue. Initial 1-month and 36-month PED waiting served with 89 months continuous since 2019-03-01, moratorium passed. Meniscectomy not in 24-month specific list and not a cataract sublimit. Age 45 so 10% senior copay not triggered. Admissible deductions total D-ROOM+D-PD, payable 114846.15 vs insurer paid 104231 - short settlement of ~10615 in favour of insured for appeal.",
+    "t": "22:18:50"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "22:18:50"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 3560,
+    "usd": 0.008021,
+    "t": "22:18:56"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"proportionate deduction room rent associated expenses\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy, consumables, implants, medical devices and diagnostics.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow differential billing by room categ…",
+    "t": "22:18:56"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"room rent limit 1% sum insured\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PORTABILITY\", \"rule\": \"On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow d…",
+    "t": "22:18:56"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"claim settlement short payment correct payout\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-CRC\", \"rule\": \"No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause.\", \"source\": \"IRDAI Master Circular on Health Insurance Business 2024\", \"overrides_policy\": true}, {\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–…",
+    "t": "22:18:56"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.1\"}",
+    "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
+    "t": "22:18:56"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.3\"}",
+    "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
+    "t": "22:18:56"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4389,
+    "usd": 0.007593,
+    "t": "22:19:01"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"proportionate deduction differential billing room rent\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
+    "t": "22:19:01"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"room rent limit exceeded proportionate\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
+    "t": "22:19:01"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"short settlement paid less than payable\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-NP-01\", \"illustrative\": true, \"issue_type\": \"non_payable\", \"complaint\": \"Consumables bundled as 'kit' disallowed entirely.\", \"decision\": \"partly allowed\", \"reasoning\": \"Itemized consumables forming part of procedure held payable.\", \"office\": null, \"year\": null}]}",
+    "t": "22:19:01"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 7130,
+    "usd": 0.016922,
+    "t": "22:19:17"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 3 findings; 8 tool calls",
+    "t": "22:19:17"
+   },
+   {
+    "stage": "localize",
+    "kind": "info",
+    "text": "translating to te in parallel with the jury",
+    "t": "22:19:17"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "22:19:17"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "3-host jury on 2 judgement(s), in parallel: muse, baseten, fireworks",
+    "t": "22:19:17"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=1200",
+    "t": "22:19:19"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "22:19:19"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1579,
+    "usd": 0.0018294999999999997,
+    "t": "22:19:23"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 1681,
+    "usd": 0.005280999999999999,
+    "t": "22:19:27"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "22:19:27"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 575,
+    "usd": 0.001712,
+    "t": "22:19:27"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1138,
+    "usd": 0.001169,
+    "t": "22:19:31"
+   },
+   {
+    "stage": "jury",
+    "kind": "done",
+    "text": "votes from fireworks, baseten; unanimous on 2/2",
+    "t": "22:19:31"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on fireworks; one retry with max_tokens=2400",
+    "t": "22:19:40"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1528,
+    "usd": 0.001872,
+    "t": "22:19:41"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 2583,
+    "usd": 0.0032915,
+    "t": "22:19:55"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 3256,
+    "usd": 0.0039570000000000004,
+    "t": "22:20:29"
+   },
+   {
+    "stage": "critic",
+    "kind": "done",
+    "text": "F02 and F03 are retainable with corrections (F02 fix truncation, F03 rule mismatch/dependency on F02). F01 is not retainable as written due to missing SI evidence for ₹5,000 limit and unlawful 'do not appeal' advice; requires rewrite to needs_review and lawful grievance guidance before patient relia",
+    "t": "22:20:29"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "3 verified finding(s); 3 fully cited",
+    "t": "22:20:29"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 2629,
+    "usd": 0.0033145,
+    "t": "22:21:13"
+   },
+   {
+    "stage": "localize",
+    "kind": "done",
+    "text": "results written in te",
+    "t": "22:21:13"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 180.9s · 20 model call(s) (1 cached) · $0.1011",
+    "t": "22:21:13"
+   }
+  ],
+  "cost_usd": 0.109944,
+  "llm_calls": 20,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 4,
+    "cached": 0,
+    "usd": 0.010791499999999999,
+    "tokens": 8493,
+    "roles": [
+     "extract",
+     "jury"
+    ]
+   },
+   "muse": {
+    "calls": 8,
+    "cached": 1,
+    "usd": 0.07034699999999999,
+    "tokens": 35546,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   },
+   "fireworks": {
+    "calls": 5,
+    "cached": 0,
+    "usd": 0.013604,
+    "tokens": 11134,
+    "roles": [
+     "jury",
+     "localize",
+     "critic"
+    ]
+   }
+  },
+  "generated_at": "2026-10-31T22:20:29",
+  "payout_detail_before": {
+   "claimed": 135500.0,
+   "admissible_before_copay": 114846.15,
+   "copay": 0.0,
+   "payout": 114846.15,
+   "patient_pays": 20653.85,
+   "deductions": [
+    {
+     "id": "D-ROOM",
+     "issue_type": "room_rent",
+     "label": "ROOM rent above eligible limit",
+     "amount": 4500.0,
+     "item_ids": [
+      "L01"
+     ]
+    },
+    {
+     "id": "D-PD",
+     "issue_type": "proportionate",
+     "label": "Proportionate deduction on associated expenses",
+     "amount": 16153.85,
+     "item_ids": [
+      "L02",
+      "L03",
+      "L04",
+      "L05"
+     ]
+    }
+   ],
+   "rejected": false
+  }
+ },
+ "letters": {
+  "appeal": {
+   "subject": "Appeal against repudiation / short-settlement of claim [CLAIM_NO] under policy [POLICY_NO]",
+   "salutation": "To the Grievance Redressal Officer, [INSURER]",
+   "paragraphs": [
+    "I, [PATIENT_NAME], hold policy [POLICY_NO]. My claim [CLAIM_NO] for hospitalisation at [HOSPITAL] from [ADMISSION_DATE] was decided citing: the deductions made.",
+    "I respectfully submit that the decision is contrary to the policy terms and the applicable regulations, on the following grounds."
+   ],
+   "grounds": [
+    {
+     "title": "Insurer paid less than its own policy terms allow",
+     "text": "Even after allowing valid room-rent excess Rs.4500 and proportionate Rs.16153.85, correct payout is Rs.114846.15 vs paid Rs.104231. Unexplained shortfall Rs.10615.15 has no clause support and violates IN-CRC requirement to give specific clause-wise reasons approved by Claims Review Committee.",
+     "cites": [
+      "IRDAI Master Circular on Health Insurance Business 2024 [IN-CRC]: No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause."
+     ]
+    }
+   ],
+   "relief": "I request you to review the decision and settle ₹10,615 with applicable interest, within the regulatory timeline.",
+   "enclosures": [
+    "Policy copy",
+    "Rejection / settlement letter",
+    "Final itemized bill",
+    "Discharge summary"
+   ],
+   "closing": "Yours faithfully,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": "Yashoda Hospital, Secunderabad",
+   "bill_no": "YH-12011",
+   "admission_date": "2026-08-28",
+   "discharge_date": "2026-08-31",
+   "room_category": "Single private",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Single private room",
+     "category": "room",
+     "qty": 3.0,
+     "rate": 6500.0,
+     "amount": 19500.0,
+     "date": "2026-08-28",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Surgeon fee - arthroscopic meniscectomy",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 40000.0,
+     "amount": 40000.0,
+     "date": "2026-08-28",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Anaesthesia",
+     "category": "anaesthesia",
+     "qty": 1.0,
+     "rate": 9000.0,
+     "amount": 9000.0,
+     "date": "2026-08-28",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 18000.0,
+     "amount": 18000.0,
+     "date": "2026-08-28",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "Nursing charges",
+     "category": "nursing",
+     "qty": 1.0,
+     "rate": 3000.0,
+     "amount": 3000.0,
+     "date": "2026-08-28",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Bioabsorbable screws (implant)",
+     "category": "implant",
+     "qty": 1.0,
+     "rate": 22000.0,
+     "amount": 22000.0,
+     "date": "2026-08-28",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L07",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 14000.0,
+     "amount": 14000.0,
+     "date": "2026-08-29",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L08",
+     "description": "MRI & labs",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 10000.0,
+     "amount": 10000.0,
+     "date": "2026-08-27",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 135500.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Medial meniscus tear, right knee",
+   "procedure": "Arthroscopic partial meniscectomy",
+   "icd10": null,
+   "admission_type": "planned",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": {
+   "insurer": "Demo General Insurance",
+   "letter_date": "2026-09-25",
+   "claim_no": "DGI/HL/26/57002",
+   "decision": "partial",
+   "amount_claimed": 135500.0,
+   "amount_paid": 104231.0,
+   "reasons": [],
+   "source_file": "rejection.pdf"
+  },
+  "ctx": {
+   "mode": "appeal",
+   "jurisdiction": "IN",
+   "user_lang": "te",
+   "patient_age": 45,
+   "sum_insured": null,
+   "policy_start": "2019-03-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque",
+    "rejection_letter",
+    "implant_invoice_sticker"
+   ],
+   "narrative": "బీమా సంస్థ మా క్లెయిమ్‌లో చాలా మొత్తం తగ్గించింది. గది అద్దె ఎక్కువ అని చెప్పారు.",
+   "narrative_lang": null,
+   "intimation_hours_after_admission": null
+  }
+ }
+}

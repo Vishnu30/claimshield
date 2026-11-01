@@ -1,0 +1,22 @@
+{
+ "issues": [
+  [
+   "intimation",
+   "contestable"
+  ],
+  [
+   "missing_doc",
+   "fixable"
+  ]
+ ],
+ "payout_as_is": 108000.0,
+ "claimed": 108000.0,
+ "payout_before": 108000.0,
+ "payout_after_fixes": 108000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "challenge",
+ "bills": 1,
+ "lang": "pa",
+ "render": "pdf"
+}

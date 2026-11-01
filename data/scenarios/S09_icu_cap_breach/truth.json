@@ -1,0 +1,127 @@
+{
+ "bill": {
+  "hospital": "Apex Multispeciality, Hyderabad",
+  "bill_no": "APX-5512",
+  "admission_date": "2026-09-15",
+  "discharge_date": "2026-09-20",
+  "room_category": "Single private",
+  "room_days": 2.0,
+  "icu_days": 3.0,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Single private room",
+    "category": "room",
+    "qty": 2.0,
+    "rate": 4500.0,
+    "amount": 9000.0,
+    "date": "2026-09-18",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "U1",
+    "description": "ICU charges",
+    "category": "icu",
+    "qty": 3.0,
+    "rate": 14000.0,
+    "amount": 42000.0,
+    "date": "2026-09-15",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "C1",
+    "description": "Physician visits",
+    "category": "consultation",
+    "qty": 1.0,
+    "rate": 9000.0,
+    "amount": 9000.0,
+    "date": "2026-09-15",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "N1",
+    "description": "Nursing charges",
+    "category": "nursing",
+    "qty": 1.0,
+    "rate": 4000.0,
+    "amount": 4000.0,
+    "date": "2026-09-15",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy & IV fluids",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 26000.0,
+    "amount": 26000.0,
+    "date": "2026-09-16",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Platelet monitoring & labs",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 15000.0,
+    "amount": 15000.0,
+    "date": "2026-09-15",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 105000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Dengue shock syndrome",
+  "procedure": "ICU management, platelet transfusion",
+  "icd10": "A91",
+  "admission_type": "emergency",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 34,
+  "sum_insured": null,
+  "policy_start": "2020-01-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": 5.0
+ },
+ "policy_id": "demo_shield",
+ "title": "Dengue shock — ICU above daily limit",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

@@ -1,0 +1,26 @@
+{
+ "issues": [
+  [
+   "missing_doc",
+   "fixable"
+  ],
+  [
+   "non_payable",
+   "fixable"
+  ],
+  [
+   "non_payable",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 20000.0,
+ "claimed": 21450.0,
+ "payout_before": 20000.0,
+ "payout_after_fixes": 20900.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "en",
+ "render": "photo"
+}

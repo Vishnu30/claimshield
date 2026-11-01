@@ -1,0 +1,26 @@
+{
+ "issues": [
+  [
+   "missing_doc",
+   "fixable"
+  ],
+  [
+   "proportionate",
+   "fixable"
+  ],
+  [
+   "room_rent",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 49300.0,
+ "claimed": 62700.0,
+ "payout_before": 49300.0,
+ "payout_after_fixes": 60200.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "en",
+ "render": "pdf"
+}

@@ -1,0 +1,128 @@
+{
+ "bill": {
+  "hospital": "Hospital Central",
+  "bill_no": "HC-881",
+  "admission_date": "2026-09-03",
+  "discharge_date": "2026-09-05",
+  "room_category": "Private suite",
+  "room_days": 2.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Private suite",
+    "category": "room",
+    "qty": 2.0,
+    "rate": 8000.0,
+    "amount": 16000.0,
+    "date": "2026-09-03",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - lap cholecystectomy",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 40000.0,
+    "amount": 40000.0,
+    "date": "2026-09-03",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 9000.0,
+    "amount": 9000.0,
+    "date": "2026-09-03",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 15000.0,
+    "amount": 15000.0,
+    "date": "2026-09-03",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 6000.0,
+    "amount": 6000.0,
+    "date": "2026-09-04",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Imaging & labs",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 5000.0,
+    "amount": 5000.0,
+    "date": "2026-09-02",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 91000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Gall bladder stones with cholecystitis",
+  "procedure": "Laparoscopic cholecystectomy",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "GENERIC",
+  "user_lang": "es",
+  "patient_age": 50,
+  "sum_insured": null,
+  "policy_start": "2020-01-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque",
+   "non_differential_billing_certificate"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Non-India claim on the generic pack — Spanish output",
+ "tier": "challenge",
+ "blurb": "Policy-only checks with no Indian regulator rules",
+ "render": "pdf"
+}

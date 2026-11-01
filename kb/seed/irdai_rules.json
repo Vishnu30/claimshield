@@ -1,0 +1,249 @@
+[
+ {
+  "id": "IN-MORATORIUM",
+  "topic": "ped",
+  "rule": "After 60 continuous months of coverage (incl. portability/renewals) no claim can be contested for non-disclosure or misrepresentation, except established fraud.",
+  "source": "IRDAI Master Circular on Health Insurance Business 2024",
+  "section": "Moratorium",
+  "overrides_policy": true,
+  "keywords": [
+   "moratorium",
+   "non-disclosure",
+   "misrepresentation",
+   "60 months",
+   "five years",
+   "ped"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-PED-MAX",
+  "topic": "ped",
+  "rule": "Waiting period for pre-existing diseases cannot exceed 36 months.",
+  "source": "IRDAI Master Circular on Health Insurance Business 2024",
+  "section": "Waiting periods",
+  "overrides_policy": true,
+  "keywords": [
+   "pre-existing",
+   "waiting",
+   "36 months",
+   "ped"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-SPECIFIC-MAX",
+  "topic": "waiting_period",
+  "rule": "Specific disease/procedure waiting periods cannot exceed 36 months.",
+  "source": "IRDAI Master Circular on Health Insurance Business 2024",
+  "section": "Waiting periods",
+  "overrides_policy": true,
+  "keywords": [
+   "specific",
+   "waiting",
+   "36 months"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-PORTABILITY",
+  "topic": "waiting_period",
+  "rule": "On portability or migration, waiting periods already served under the previous continuous policy must be credited (up to the earlier sum insured).",
+  "source": "IRDAI Master Circular on Health Insurance Business 2024",
+  "section": "Portability",
+  "overrides_policy": true,
+  "keywords": [
+   "portability",
+   "migration",
+   "credit",
+   "waiting"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-PD-EXEMPT",
+  "topic": "proportionate",
+  "rule": "Proportionate deduction cannot be applied to pharmacy, consumables, implants, medical devices and diagnostics.",
+  "source": "IRDAI Guidelines on Standardization in Health Insurance 2020",
+  "section": "Proportionate deduction",
+  "overrides_policy": true,
+  "keywords": [
+   "proportionate",
+   "associated medical expenses",
+   "pharmacy",
+   "implants",
+   "diagnostics"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-PD-NODIFF",
+  "topic": "proportionate",
+  "rule": "Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially.",
+  "source": "IRDAI Guidelines on Standardization in Health Insurance 2020",
+  "section": "Proportionate deduction",
+  "overrides_policy": true,
+  "keywords": [
+   "proportionate",
+   "differential billing",
+   "room category"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-NONPAY-LISTS",
+  "topic": "non_payable",
+  "rule": "Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.",
+  "source": "IRDAI Guidelines on Standardization in Health Insurance 2020",
+  "section": "Annexure: List of non-payable items",
+  "overrides_policy": true,
+  "keywords": [
+   "non-payable",
+   "list i",
+   "consumables",
+   "subsumed"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-CASHLESS-TAT",
+  "topic": "cashless",
+  "rule": "Cashless authorisation must be decided within 1 hour of request and final discharge authorisation within 3 hours.",
+  "source": "IRDAI Master Circular on Health Insurance Business 2024",
+  "section": "Cashless",
+  "overrides_policy": true,
+  "keywords": [
+   "cashless",
+   "1 hour",
+   "3 hours",
+   "discharge authorisation"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-CRC",
+  "topic": "rejection",
+  "rule": "No claim may be repudiated without review and approval by the insurer's Claims Review Committee; reasons must be communicated with the specific policy clause.",
+  "source": "IRDAI Master Circular on Health Insurance Business 2024",
+  "section": "Claim repudiation",
+  "overrides_policy": true,
+  "keywords": [
+   "repudiation",
+   "claims review committee",
+   "rejection",
+   "reasons"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-DOCS-CASHLESS",
+  "topic": "docs",
+  "rule": "For cashless claims, the insurer/TPA must obtain required documents from the hospital; the policyholder should not be asked to submit them.",
+  "source": "IRDAI Master Circular on Health Insurance Business 2024",
+  "section": "Documents",
+  "overrides_policy": true,
+  "keywords": [
+   "documents",
+   "cashless",
+   "hospital",
+   "not required"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-CONDONE-DELAY",
+  "topic": "intimation",
+  "rule": "Claims should not be rejected solely for delayed intimation or document submission where the delay is for reasons beyond the insured's control.",
+  "source": "IRDAI standard terms and conditions (Standardization Guidelines 2020)",
+  "section": "Claim procedure",
+  "overrides_policy": true,
+  "keywords": [
+   "delay",
+   "intimation",
+   "condonation",
+   "beyond control"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-GRO-TAT",
+  "topic": "escalation",
+  "rule": "Insurers must resolve grievances within 14 days; if unresolved or unsatisfactory, the policyholder may approach the Insurance Ombudsman.",
+  "source": "IRDAI Master Circular on Protection of Policyholders' Interests 2024",
+  "section": "Grievance redressal",
+  "overrides_policy": false,
+  "keywords": [
+   "grievance",
+   "14 days",
+   "ombudsman"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ },
+ {
+  "id": "IN-OMBUDSMAN",
+  "topic": "escalation",
+  "rule": "A complaint to the Insurance Ombudsman is free, can be filed after the insurer rejects the grievance or fails to reply within 30 days, and must be filed within one year of the insurer's final reply.",
+  "source": "Insurance Ombudsman Rules, 2017",
+  "section": "Rule 14",
+  "overrides_policy": false,
+  "keywords": [
+   "ombudsman",
+   "one year",
+   "30 days",
+   "free"
+  ],
+  "page": null,
+  "quote": null,
+  "seed": true,
+  "note": "Seed rule (paraphrased). Replace with verbatim quote via scripts/extract_kb.py",
+  "effective": "2024"
+ }
+]

@@ -1,0 +1,18 @@
+{
+ "issues": [
+  [
+   "ped",
+   "needs_review"
+  ]
+ ],
+ "payout_as_is": 71000.0,
+ "claimed": 71000.0,
+ "payout_before": 71000.0,
+ "payout_after_fixes": 71000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "ta",
+ "render": "pdf"
+}

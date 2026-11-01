@@ -1,0 +1,157 @@
+{
+ "bill": {
+  "hospital": "Fortis Hospital, Noida",
+  "bill_no": "FHN-7012",
+  "admission_date": "2026-09-20",
+  "discharge_date": "2026-09-22",
+  "room_category": "Twin sharing",
+  "room_days": 2.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 2.0,
+    "rate": 4000.0,
+    "amount": 8000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - lap hernioplasty",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 38000.0,
+    "amount": 38000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 16000.0,
+    "amount": 16000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "Mesh (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 14000.0,
+    "amount": 14000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 6000.0,
+    "amount": 6000.0,
+    "date": "2026-09-21",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Investigations",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 5000.0,
+    "amount": 5000.0,
+    "date": "2026-09-19",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 95000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Bilateral inguinal hernia",
+  "procedure": "Laparoscopic TEP hernioplasty",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "appeal",
+  "jurisdiction": "IN",
+  "user_lang": "hinglish",
+  "patient_age": 42,
+  "sum_insured": null,
+  "policy_start": "2025-07-01",
+  "continuous_coverage_since": "2021-03-01",
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque",
+   "rejection_letter",
+   "previous_policy_copies",
+   "implant_invoice_sticker"
+  ],
+  "narrative": "Insurance company ne bola waiting period complete nahi hua, par main 2021 se continuously insured hoon, bas company change ki thi.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Waiting period applied despite portability (appeal), Hinglish output",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf",
+ "rejection": {
+  "insurer": "Demo General Insurance (synthetic)",
+  "letter_date": "2026-10-06",
+  "claim_no": "DGI/HL/26/60210",
+  "decision": "rejected",
+  "amount_claimed": 95000.0,
+  "amount_paid": 0.0,
+  "reasons": [
+   {
+    "text": "Claim rejected as the 24-month waiting period for hernia is not completed",
+    "clause_cited": "4.2",
+    "amount": null
+   }
+  ],
+  "source_file": null
+ }
+}

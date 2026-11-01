@@ -1,0 +1,127 @@
+{
+ "bill": {
+  "hospital": "Green Valley Hospital, Indore",
+  "bill_no": "GVH-1209",
+  "admission_date": "2026-09-20",
+  "discharge_date": "2026-09-24",
+  "room_category": "Twin sharing",
+  "room_days": 4.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 4.0,
+    "rate": 3000.0,
+    "amount": 12000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "C1",
+    "description": "Physician visits",
+    "category": "consultation",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy - antibiotics",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 9600.0,
+    "amount": 9600.0,
+    "date": "2026-09-21",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P2",
+    "description": "Pharmacy - antibiotics",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 9600.0,
+    "amount": 9600.0,
+    "date": "2026-09-21",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "N1",
+    "description": "Nebulisation (5 sessions)",
+    "category": "procedure",
+    "qty": 5.0,
+    "rate": 300.0,
+    "amount": 2000.0,
+    "date": "2026-09-21",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Chest X-ray & labs",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 6800.0,
+    "amount": 6800.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 48000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Community acquired pneumonia",
+  "procedure": "IV antibiotics, nebulisation",
+  "icd10": null,
+  "admission_type": "emergency",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 45,
+  "sum_insured": null,
+  "policy_start": "2020-02-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": 10.0
+ },
+ "policy_id": "demo_shield",
+ "title": "Pneumonia — duplicate & arithmetic billing errors",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

@@ -1,0 +1,1317 @@
+[
+ {
+  "item": "baby food",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "baby utilities",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "beauty services",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "belts",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "braces",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "buds",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "cold pack",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "hot pack",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "carry bags",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "email",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "internet charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "food charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [
+   "food",
+   "meals",
+   "canteen",
+   "patient attendant food",
+   "attendant meal"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "attendant food",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "leggings",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "laundry",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [
+   "washing charges"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "mineral water",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "sanitary pad",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "telephone charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [
+   "telephone",
+   "phone"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "guest services",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "crepe bandage",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "diaper",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "eyelet collar",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "slings",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "blood grouping and cross matching of donors",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "service charges where nursing charge also charged",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "television charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "surcharges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "attendant charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [
+   "attendant bed",
+   "attendant"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "extra diet",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "birth certificate",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "certificate charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "courier charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "conveyance charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "medical certificate",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "medical records",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "photocopies charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "mortuary charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "walking aids",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "oxygen cylinder for use outside hospital",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "spacer",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "spirometre",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "nebulizer kit",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "steam inhaler",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "armsling",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "thermometer",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "cervical collar",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "splint",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "diabetic footwear",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "knee braces",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "ls belt",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "registration charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [
+   "registration",
+   "reg. fee",
+   "admission fee"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "admission charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "documentation charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [
+   "documentation",
+   "medical record charges",
+   "mrd charges"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "administrative charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "file charges",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "visitor pass",
+  "list": "I",
+  "treatment": "not payable",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "baby charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "hand wash",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "shoe cover",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [
+   "shoe covers",
+   "mask & shoe cover"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "caps",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "cradle charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "comb",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "eau-de-cologne",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "room freshener",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "foot cover",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "gown",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "slippers",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "tissue paper",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "tooth paste",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "tooth brush",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "bed pan",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "face mask",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [
+   "mask & cap",
+   "mask and cap",
+   "surgical mask",
+   "n95"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "flexi mask",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "hand holder",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "sputum cup",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "disinfectant lotions",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "luxury tax",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "hvac",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "house keeping charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "air conditioner charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "im iv injection charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "clean sheet",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "blanket",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "warmer blanket",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "admission kit",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [
+   "admission pack",
+   "welcome kit",
+   "patient kit",
+   "toiletries kit"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "diabetic chart charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "documentation charges discharge",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "discharge procedure charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "daily chart charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "entrance pass",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "expenses related to prescription on discharge",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "file opening charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "incidental expenses",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "patient identification band",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "name tag",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "pulseoxymeter charges",
+  "list": "II",
+  "treatment": "subsumed into room charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "hair removal cream",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "disposables razors",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "shaving",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "eye kit",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "eye drape",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [
+   "ophthalmic drape",
+   "drape sheet eye"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "x-ray film",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "boyles apparatus charges",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "cotton",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "cotton bandage",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "surgical tape",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "apron",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "tourniquet",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "orthobundle",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "gynaec bundle",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "eye pad",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "eye shield",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "camera cover",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "cd",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "dvd",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "gauze",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "ward and theatre booking charges",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "arthroscopy and endoscopy instruments",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "microscope cover",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "surgical blades",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "harmonic scalpel",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "shears",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "surgical drill",
+  "list": "III",
+  "treatment": "subsumed into procedure charges",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "ambulance collar",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "ambulance equipment",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "albumin",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "blood reservation charges",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "ecg electrodes",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "gloves",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [
+   "glove",
+   "examination gloves",
+   "surgical gloves"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "nebulisation kit",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "any kit with no details mentioned",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [
+   "kit (unitemized)",
+   "kit unitemized",
+   "misc kit"
+  ],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "kidney tray",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "mask",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "ounce glass",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "oxygen mask",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "pelvic traction belt",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "pan can",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "trolley cover",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "urometer",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "urine jug",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ },
+ {
+  "item": "vasofix safety",
+  "list": "IV",
+  "treatment": "subsumed into treatment costs",
+  "aliases": [],
+  "source": "IRDAI Standardization Guidelines 2020, Annexure (Lists I–IV)",
+  "source_page": null,
+  "seed": true
+ }
+]

@@ -1,0 +1,22 @@
+{
+ "issues": [
+  [
+   "exclusion",
+   "needs_review"
+  ],
+  [
+   "ped",
+   "needs_review"
+  ]
+ ],
+ "payout_as_is": 300000.0,
+ "claimed": 300000.0,
+ "payout_before": 300000.0,
+ "payout_after_fixes": 300000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "challenge",
+ "bills": 1,
+ "lang": "hi",
+ "render": "pdf"
+}

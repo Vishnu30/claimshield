@@ -1,0 +1,187 @@
+{
+ "bill": {
+  "hospital": "Ortho One Hospital, Coimbatore",
+  "bill_no": "OOH-5512",
+  "admission_date": "2026-09-02",
+  "discharge_date": "2026-09-06",
+  "room_category": "Single private",
+  "room_days": 4.0,
+  "icu_days": 1.0,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Single private room",
+    "category": "room",
+    "qty": 4.0,
+    "rate": 5500.0,
+    "amount": 22000.0,
+    "date": "2026-09-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "U1",
+    "description": "ICU (post-op)",
+    "category": "icu",
+    "qty": 1.0,
+    "rate": 10000.0,
+    "amount": 10000.0,
+    "date": "2026-09-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - total knee replacement",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 70000.0,
+    "amount": 70000.0,
+    "date": "2026-09-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 15000.0,
+    "amount": 15000.0,
+    "date": "2026-09-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 30000.0,
+    "amount": 30000.0,
+    "date": "2026-09-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "Knee prosthesis (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 95000.0,
+    "amount": 95000.0,
+    "date": "2026-09-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 20000.0,
+    "amount": 20000.0,
+    "date": "2026-09-03",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Investigations",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 12000.0,
+    "amount": 12000.0,
+    "date": "2026-09-01",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "N1",
+    "description": "Nursing charges",
+    "category": "nursing",
+    "qty": 1.0,
+    "rate": 6000.0,
+    "amount": 6000.0,
+    "date": "2026-09-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X1",
+    "description": "Knee braces",
+    "category": "misc",
+    "qty": 1.0,
+    "rate": 2500.0,
+    "amount": 2500.0,
+    "date": "2026-09-05",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X2",
+    "description": "Walking aids - walker",
+    "category": "misc",
+    "qty": 1.0,
+    "rate": 1800.0,
+    "amount": 1800.0,
+    "date": "2026-09-05",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 284300.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Primary osteoarthritis, left knee",
+  "procedure": "Total knee replacement, left",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [
+   "osteoarthritis"
+  ],
+  "history_notes": "Knee pain for 5 years.",
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "ta",
+  "patient_age": 67,
+  "sum_insured": null,
+  "policy_start": "2020-05-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [
+   "osteoarthritis"
+  ],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque",
+   "implant_invoice_sticker"
+  ],
+  "narrative": "அப்பாவுக்கு முழங்கால் மாற்று அறுவை சிகிச்சை நடந்தது.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_classic",
+ "title": "Senior knee replacement — room + ICU + PD + non-payables + 20% co-pay",
+ "tier": "challenge",
+ "blurb": "Five different cuts interacting on a legacy policy",
+ "render": "pdf"
+}

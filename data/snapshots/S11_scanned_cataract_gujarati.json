@@ -1,0 +1,1735 @@
+{
+ "scenario": "S11_scanned_cataract_gujarati",
+ "recorded_at": "2026-10-31T16:42:43+00:00",
+ "profile": "prod",
+ "report": {
+  "mode": "pre_discharge",
+  "jurisdiction": "IN",
+  "user_lang": "gu",
+  "currency": "₹",
+  "claimed": 61200.0,
+  "payout_before": 37912.5,
+  "payout_after_fixes": 51480.0,
+  "payout_after_appeal": 51480.0,
+  "recoverable_via_appeal": 0.0,
+  "patient_pays_before": 23287.5,
+  "patient_pays_after": 9720.0,
+  "insurer_paid": null,
+  "risk_score": 52,
+  "risk_band": "medium",
+  "summary_en": "Claimed ₹61,200. As it stands the insurer is likely to pay ₹37,912 (cut ₹23,288). Fixing 4 issue(s) before discharge raises this to ₹51,480.",
+  "summary_localized": "તમે ₹61,200 નો ક્લેમ કર્યો છે. અત્યારે વીમા કંપની લગભગ ₹37,912 ચૂકવશે (₹23,288 કપાશે). ડિસ્ચાર્જ પહેલા 4 બાબતો સુધારી લેશો તો આ રકમ વધીને ₹51,480 થઈ જશે.",
+  "findings": [
+   {
+    "id": "F01",
+    "issue_type": "mismatch",
+    "title": "Bill total does not match itemized charges",
+    "raised_by": "tpa",
+    "status": "fixable",
+    "inr_impact": 1200.0,
+    "deduction_ids": [
+     "D-UNITEM"
+    ],
+    "confidence": 0.95,
+    "explanation_en": "The bill total ₹61,200 is ₹1,200 more than the sum of its itemized lines (₹60,000). Insurers only pay itemized charges, so this gap would be deducted.",
+    "explanations": {
+     "en": "The bill total ₹61,200 is ₹1,200 more than the sum of its itemized lines (₹60,000). Insurers only pay itemized charges, so this gap would be deducted.",
+     "gu": "બિલનો કુલ ₹61,200 છે, જે વિગતવાર લાઇનોના સરવાળા (₹60,000) કરતાં ₹1,200 વધારે છે. ઇન્શ્યોરન્સ કંપની ફક્ત વિગતવાર ચાર્જ જ ચૂકવે છે, તેથી આ ₹1,200 કપાઈ જશે."
+    },
+    "fix": "ડિસ્ચાર્જ પહેલા હોસ્પિટલના બિલિંગ ડેસ્ક પર જાઓ અને કહો: 'કુલ ₹61,200 છે પણ લાઇનનો સરવાળો ₹60,000 થાય છે - ₹1,200 નો ફરક સુધારો, કુલ ₹60,000 કરો અથવા ₹1,200 નું આઇટમવાઇઝ બિલ આપો.' સુધારેલું સહી-સિક્કાવાળું બિલ લો.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.",
+     "bbox": [
+      78.0,
+      648.2874755859375,
+      507.76116943359375,
+      687.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": {
+     "doc": "bill.pdf",
+     "page": 1,
+     "quote": "Total",
+     "bbox": null,
+     "verified": false
+    },
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "reconcile_totals": {
+      "line_sum": 60000.0,
+      "stated_total": 61200.0,
+      "unitemized_diff": 1200.0
+     },
+     "tpa_reasoning": "Reconcile shows line_sum 60000 vs stated_total 61200 = unitemized_diff 1200. Insurer will not pay unitemized balance without itemization.",
+     "advocate_argument": "Rs.1200 is unitemized difference (61200 vs 60000). Insurer pays only itemized lines, so gap is deducted unless hospital corrects total or itemizes it before submission.",
+     "title_localized": {
+      "gu": "બિલનો કુલ આંકડો વિગતવાર ચાર્જ સાથે મેળ ખાતો નથી"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status fixable is consistent; mismatch gap is correctly flagged as deductible unless corrected. Policy quote cited is generic reimbursement checklist and does not directly support mismatch rule, but d"
+    ]
+   },
+   {
+    "id": "F02",
+    "issue_type": "non_payable",
+    "title": "2 non-payable item(s) on the bill",
+    "raised_by": "tpa",
+    "status": "valid",
+    "inr_impact": 1000.0,
+    "deduction_ids": [
+     "D-NP"
+    ],
+    "confidence": 0.98,
+    "explanation_en": "These items are on the regulator's standard non-payable lists: Food charges (attendant) (₹600, List I), Toiletries kit (₹400, List II).",
+    "explanations": {
+     "en": "These items are on the regulator's standard non-payable lists: Food charges (attendant) (₹600, List I), Toiletries kit (₹400, List II).",
+     "gu": "આ વસ્તુઓ રેગ્યુલેટરની નોન-પેએબલ યાદીમાં છે: અટેન્ડન્ટનું જમવાનું (₹600, List I), ટોયલેટરીઝ કિટ (₹400, List II)."
+    },
+    "fix": "આ ₹1,000 દર્દીએ ભરવાનું રહેશે - અટેન્ડન્ટનું જમવાનું ₹600 અને ટોયલેટરીઝ કિટ ₹400 ઇન્શ્યોરન્સમાં ન મળે. હોસ્પિટલ પાસે આ માટે કોઈ સર્ટિફિકેટ માંગશો નહીં.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.",
+     "bbox": [
+      78.0,
+      697.2874755859375,
+      509.9176940917969,
+      723.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": {
+     "doc": "bill.pdf",
+     "page": 1,
+     "quote": "Food charges (attendant)",
+     "bbox": null,
+     "verified": false
+    },
+    "irdai_cite": {
+     "doc": "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-NONPAY-LISTS]",
+     "page": null,
+     "quote": "Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [],
+    "tool_evidence": {
+     "non_payable_check": [
+      {
+       "item_id": "L10",
+       "description": "Food charges (attendant)",
+       "amount": 600.0,
+       "list": "I",
+       "matched": "food charges",
+       "treatment": "not payable",
+       "unitemized_kit": false,
+       "page": 1
+      },
+      {
+       "item_id": "L11",
+       "description": "Toiletries kit",
+       "amount": 400.0,
+       "list": "II",
+       "matched": "admission kit",
+       "treatment": "subsumed into room charges",
+       "unitemized_kit": false,
+       "page": 1
+      }
+     ],
+     "tpa_reasoning": "L10 Food charges (attendant) 600 is List I - not payable. L11 Toiletries kit 400 matches admission kit List II - subsumed into room charges, not separately payable. Total 1000 verified by lookup.",
+     "advocate_argument": "Food (attendant) is List I - not payable. Toiletries/admission kit is List II - subsumed in room charges, not separately payable. Deduction limited to standardized Lists per IRDAI, so valid.",
+     "title_localized": {
+      "gu": "બિલમાં 2 એવી વસ્તુઓ છે જે ઇન્શ્યોરન્સ નહીં ચૂકવે"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Overclaim: Toiletries kit ₹400 is List II. Per cited rule Lists II-IV are subsumed into room/procedure/treatment charges, not excluded from claim. Only Food charges (attendant) ₹600 List I is truly no",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   },
+   {
+    "id": "F03",
+    "issue_type": "non_payable",
+    "title": "'Kit' charges without itemization",
+    "raised_by": "tpa",
+    "status": "fixable",
+    "inr_impact": 3000.0,
+    "deduction_ids": [
+     "D-NP-KIT"
+    ],
+    "confidence": 0.91,
+    "explanation_en": "A kit billed as one line (₹3,000) with no contents is disallowed as 'any kit with no details mentioned'. Most of its contents are usually payable consumables.",
+    "explanations": {
+     "en": "A kit billed as one line (₹3,000) with no contents is disallowed as 'any kit with no details mentioned'. Most of its contents are usually payable consumables.",
+     "gu": "₹3,000 ની કિટ ફક્ત એક જ લાઈનમાં બિલ કરેલી છે, અંદર શું-શું છે તે લખ્યું નથી, તેથી 'વિગત વગરની કોઈપણ કિટ' તરીકે તે માન્ય નથી. હકીકતમાં તેની અંદરની મોટાભાગની વસ્તુઓ સામાન્ય રીતે વીમા હેઠળ ચૂકવવાપાત્ર હોય છે."
+    },
+    "fix": "ફાર્મસી/બિલિંગમાંથી 'સર્જિકલ કિટ ₹3,000' નું આઇટમવાઇઝ બ્રેકઅપ માંગો અને કહો: 'દરેક વસ્તુનું નામ, જથ્થો અને ભાવ લખીને, ફાર્મસી સ્ટેમ્પ સાથે આપો.' ડિસ્ચાર્જ પહેલા આ કાગળ ફાઇલમાં જોડો.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.",
+     "bbox": [
+      78.0,
+      697.2874755859375,
+      509.9176940917969,
+      723.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": {
+     "doc": "bill.pdf",
+     "page": 1,
+     "quote": "Surgical kit",
+     "bbox": null,
+     "verified": false
+    },
+    "irdai_cite": {
+     "doc": "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-NONPAY-LISTS]",
+     "page": null,
+     "quote": "Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [
+     "ILL-NP-01"
+    ],
+    "tool_evidence": {
+     "tpa_reasoning": "L07 Surgical kit 3000 with no breakup matches List IV 'any kit with no details' - subsumed into treatment costs. Without itemized breakup insurer will disallow full 3000.",
+     "advocate_argument": "One-line kit with no details falls under List IV 'any kit with no details' and is disallowed in full. If itemized, gloves, gauze, syringes etc. forming part of procedure are payable consumables.",
+     "title_localized": {
+      "gu": "વિગત વગર લગાવેલો 'કિટ' નો ચાર્જ"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status fixable is consistent with rule: 'any kit with no details mentioned' is List I non-payable unless itemized. Fix requesting itemized breakup with name/qty/rate and pharmacy stamp is actionable a",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   },
+   {
+    "id": "F04",
+    "issue_type": "room_rent",
+    "title": "Room rent above your policy limit",
+    "raised_by": "tpa",
+    "status": "valid",
+    "inr_impact": 3000.0,
+    "deduction_ids": [
+     "D-ROOM"
+    ],
+    "confidence": 0.99,
+    "explanation_en": "Your policy allows ₹5,000/day; the room was billed at ₹8,000/day for 1 day(s).",
+    "explanations": {
+     "en": "Your policy allows ₹5,000/day; the room was billed at ₹8,000/day for 1 day(s).",
+     "gu": "તમારી પોલિસીમાં રૂમ ભાડું ₹5,000/દિવસ સુધી માન્ય છે, જ્યારે હોસ્પિટલે 1 દિવસ માટે ₹8,000/દિવસ વસૂલ કર્યું છે."
+    },
+    "fix": "પોલિસી લિમિટ ₹5,000/દિવસ સામે ડીલક્સ રૂમ ₹8,000/દિવસ લીધો છે, તેથી ₹3,000 નો તફાવત દર્દીએ ભરવાનો રહેશે. હવે જો રોકાણ લંબાય તો જનરલ/એલિજિબલ રૂમમાં શિફ્ટ થવા વિનંતી કરો.",
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.",
+     "bbox": [
+      78.0,
+      259.2875061035156,
+      504.12261962890625,
+      285.34051513671875
+     ],
+     "verified": true
+    },
+    "bill_cite": {
+     "doc": "bill.pdf",
+     "page": 1,
+     "quote": "Deluxe room (1 day)",
+     "bbox": null,
+     "verified": false
+    },
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "room_rent_check": {
+      "kind": "room",
+      "limit_kind": "pct_si",
+      "cap_per_day": 5000.0,
+      "charged_per_day": 8000.0,
+      "days": 1.0,
+      "charged_total": 8000.0,
+      "item_ids": [
+       "L01"
+      ],
+      "cite": {
+       "clause_id": "3.1",
+       "page": 2,
+       "quote": "Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day."
+      },
+      "category_limit": null,
+      "applicable": true,
+      "excess": 3000.0,
+      "ratio": 0.625
+     },
+     "tpa_reasoning": "Policy 1% of SI = 5000/day cap. Charged Deluxe 8000/day x 1 day = 8000. Excess 3000 correctly disallowed.",
+     "advocate_argument": "Clause 3.1 caps room rent at 1% of SI = Rs.5000/day. Charged Rs.8000 x 1 day = Rs.8000. Excess Rs.3000 correctly disallowed.",
+     "title_localized": {
+      "gu": "પોલિસી લિમિટથી વધુ રૂમ ભાડું"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status valid consistent with policy quote (1% SI = ₹5,000/day) and evidence (₹8,000 billed). ₹3,000 excess correctly identified as patient-borne. Fix is lawful."
+    ]
+   },
+   {
+    "id": "F05",
+    "issue_type": "proportionate",
+    "title": "Proportionate deduction on doctor/OT/nursing fees",
+    "raised_by": "tpa",
+    "status": "fixable",
+    "inr_impact": 10875.0,
+    "deduction_ids": [
+     "D-PD"
+    ],
+    "confidence": 0.94,
+    "explanation_en": "Because the room exceeded the limit, the insurer scales associated charges (₹30,000) by 62%, cutting ₹10,875. Pharmacy, consumables, implants and diagnostics (₹22,000) are protected from this cut.",
+    "explanations": {
+     "en": "Because the room exceeded the limit, the insurer scales associated charges (₹30,000) by 62%, cutting ₹10,875. Pharmacy, consumables, implants and diagnostics (₹22,000) are protected from this cut.",
+     "gu": "રૂમનું ભાડું લિમિટ કરતાં વધારે હોવાથી, વીમા કંપનીએ તેની સાથે જોડાયેલા ખર્ચા (₹30,000) પર 62% પ્રમાણે ગણતરી કરીને ₹10,875 કાપ્યા છે. ફાર્મસી, વપરાશની વસ્તુઓ, ઇમ્પ્લાન્ટ અને તપાસના ખર્ચા (₹22,000) પર આ કપાત લાગુ પડતી નથી."
+    },
+    "fix": "Get a hospital certificate that surgeon, OT and nursing fees are the same in every room category (no differential billing).",
+    "fix_localized": {
+     "gu": "હોસ્પિટલ પાસેથી પ્રમાણપત્ર લઈ લો કે સર્જન, ઓટી અને નર્સિંગ ફી દરેક રૂમ કેટેગરીમાં એકસરખી જ છે (કોઈ અલગ ચાર્જ નથી)."
+    },
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.",
+     "bbox": [
+      78.0,
+      318.2874755859375,
+      517.27587890625,
+      370.3404541015625
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": {
+     "doc": "IRDAI Guidelines on Standardization in Health Insurance 2020 [IN-PD-NODIFF]",
+     "page": null,
+     "quote": "Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially.",
+     "bbox": null,
+     "verified": false
+    },
+    "precedent_ids": [],
+    "tool_evidence": {
+     "proportionate_check": {
+      "applicable": true,
+      "ratio": 0.625,
+      "associated_total": 30000.0,
+      "associated_item_ids": [
+       "L02",
+       "L03",
+       "L04",
+       "L05",
+       "L10",
+       "L11"
+      ],
+      "exempt_total": 22000.0,
+      "exempt_categories": [
+       "consumable",
+       "implant",
+       "investigation",
+       "pharmacy"
+      ],
+      "pd_amount": 11250.0,
+      "differential_billing": null,
+      "package": false,
+      "policy_says_pd": true,
+      "cite": {
+       "clause_id": "3.3",
+       "page": 2,
+       "quote": "If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics."
+      },
+      "regulator_rules": [
+       "IN-PD-EXEMPT",
+       "IN-PD-NODIFF"
+      ]
+     },
+     "tpa_reasoning": "Deluxe room triggers clause 3.3. Ratio eligible/charged = 5000/8000 = 0.625. Associated L02,L03,L04,L05,L10,L11 correctly included; pharmacy/implant/investigation/consumable correctly exempted per IN-PD-EXEMPT. After removing non-payables, 10875 PD is correct.",
+     "title_localized": {
+      "gu": "ડૉક્ટર / ઓટી / નર્સિંગ ફી પર પ્રમાણસર કપાત"
+     }
+    },
+    "verified": true,
+    "verifier_notes": [
+     "critic: Status fixable consistent with rule: proportionate deduction is challengeable with no-differential-billing certificate. Fix is lawful. Amount ₹10,875 implies 36.25% cut vs expected 37.5% (₹11,250 on ₹",
+     "regulator rule text is a seed paraphrase — verify against circular"
+    ]
+   },
+   {
+    "id": "F06",
+    "issue_type": "copay",
+    "title": "10% co-payment",
+    "raised_by": "rules",
+    "status": "valid",
+    "inr_impact": 4212.5,
+    "deduction_ids": [],
+    "confidence": 0.8,
+    "explanation_en": "Your policy requires you to pay 10% of the admissible amount (insured aged 61 or above).",
+    "explanations": {
+     "en": "Your policy requires you to pay 10% of the admissible amount (insured aged 61 or above).",
+     "gu": "તમારી પોલિસી મુજબ મંજૂર રકમના 10% તમારે જાતે ભરવાના રહે છે (વીમો લેનારની ઉંમર 61 કે તેથી વધુ હોવાથી)."
+    },
+    "fix": null,
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 2,
+     "quote": "A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission.",
+     "bbox": [
+      78.0,
+      403.2874755859375,
+      516.2162475585938,
+      429.3404541015625
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "copay_check": {
+      "pct": 10.0,
+      "condition": "insured aged 61 or above",
+      "cite": {
+       "clause_id": "3.5",
+       "page": 2,
+       "quote": "A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission."
+      },
+      "patient_age": 66
+     },
+     "title_localized": {
+      "gu": "10% સહ-ચુકવણી"
+     }
+    },
+    "verified": true,
+    "verifier_notes": []
+   },
+   {
+    "id": "F07",
+    "issue_type": "missing_doc",
+    "title": "5 document(s) missing",
+    "raised_by": "rules",
+    "status": "fixable",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.9,
+    "explanation_en": "Missing: Doctor's prescriptions, Payment receipts, Implant invoice + sticker, Hospital certificate: no differential billing by room category, Itemized breakup of 'kit' charges.",
+    "explanations": {
+     "en": "Missing: Doctor's prescriptions, Payment receipts, Implant invoice + sticker, Hospital certificate: no differential billing by room category, Itemized breakup of 'kit' charges.",
+     "gu": "આ કાગળો ખૂટે છે: ડોક્ટરના પ્રિસ્ક્રિપ્શન, પેમેન્ટની પહોંચ, ઈમ્પ્લાન્ટનું બિલ + સ્ટીકર, હોસ્પિટલનું પ્રમાણપત્ર કે રૂમની કેટેગરી પ્રમાણે બિલમાં કોઈ ફરક નથી, અને 'કિટ' ચાર્જનું વિગતવાર બ્રેકઅપ."
+    },
+    "fix": "Collect these before discharge/submission; the hospital must provide medical records on request.",
+    "fix_localized": {
+     "gu": "ડિસ્ચાર્જ / ક્લેમ જમા કરાવતા પહેલા આ બધા કાગળો ભેગા કરી લો; હોસ્પિટલે માંગવા પર મેડિકલ રેકોર્ડ આપવા જ પડે છે."
+    },
+    "policy_cite": null,
+    "bill_cite": null,
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "required_docs": {
+      "required": [
+       "final_itemized_bill",
+       "discharge_summary",
+       "investigation_reports",
+       "prescriptions",
+       "payment_receipts",
+       "implant_invoice_sticker",
+       "non_differential_billing_certificate",
+       "kit_itemized_breakup"
+      ],
+      "missing": [
+       {
+        "id": "prescriptions",
+        "label": "Doctor's prescriptions",
+        "critical": false,
+        "trigger": null
+       },
+       {
+        "id": "payment_receipts",
+        "label": "Payment receipts",
+        "critical": false,
+        "trigger": null
+       },
+       {
+        "id": "implant_invoice_sticker",
+        "label": "Implant invoice + sticker",
+        "critical": false,
+        "trigger": "implant"
+       },
+       {
+        "id": "non_differential_billing_certificate",
+        "label": "Hospital certificate: no differential billing by room category",
+        "critical": false,
+        "trigger": "proportionate"
+       },
+       {
+        "id": "kit_itemized_breakup",
+        "label": "Itemized breakup of 'kit' charges",
+        "critical": false,
+        "trigger": "kit"
+       }
+      ],
+      "triggers": [
+       "implant",
+       "proportionate",
+       "kit"
+      ],
+      "cashless_rule": null
+     },
+     "title_localized": {
+      "gu": "5 ડોક્યુમેન્ટ ખૂટે છે"
+     }
+    },
+    "verified": true,
+    "verifier_notes": []
+   },
+   {
+    "id": "F08",
+    "issue_type": "intimation",
+    "title": "Prior intimation for planned cataract surgery not on record",
+    "raised_by": "tpa",
+    "status": "needs_review",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.4,
+    "explanation_en": "Cataract phaco is planned hospitalisation requiring 48h prior intimation. intimation_hours_after_admission is null/unknown. If not intimated, insurer may impose late-intimation deduction or ask for condonation.",
+    "explanations": {
+     "en": "Cataract phaco is planned hospitalisation requiring 48h prior intimation. intimation_hours_after_admission is null/unknown. If not intimated, insurer may impose late-intimation deduction or ask for condonation.",
+     "gu": "મોતિયાનું ફેકો ઓપરેશન એ પ્લાન કરેલું હોસ્પિટલમાં દાખલ થવાનું છે, જેના માટે 48h પહેલા જાણ કરવી જરૂરી છે. intimation_hours_after_admission null/unknown છે. જો પહેલેથી જાણ ન કરી હોય તો ઈન્સ્યોરન્સ કંપની મોડી જાણ કરવા બદલ કપાત કરી શકે છે અથવા માફી માટે અરજી માંગી શકે છે."
+    },
+    "fix": null,
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.",
+     "bbox": [
+      78.0,
+      612.2874755859375,
+      476.10711669921875,
+      638.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "title_localized": {
+      "gu": "મોતિયાના પ્લાન કરેલા ઓપરેશનની પહેલેથી જાણ કર્યાનો રેકોર્ડ નથી"
+     }
+    },
+    "verified": true,
+    "verifier_notes": []
+   },
+   {
+    "id": "F09",
+    "issue_type": "other",
+    "title": "Implant invoice + sticker missing - IOL 14000 at risk of hold",
+    "raised_by": "tpa",
+    "status": "needs_review",
+    "inr_impact": 0.0,
+    "deduction_ids": [],
+    "confidence": 0.8,
+    "explanation_en": "Hydrophobic IOL 14000 claimed without implant invoice/sticker. Reimbursement checklist flags it missing. Insurer will hold/query implant until invoice + sticker provided; premium IOL upgrade if any is not payable beyond sublimit.",
+    "explanations": {
+     "en": "Hydrophobic IOL 14000 claimed without implant invoice/sticker. Reimbursement checklist flags it missing. Insurer will hold/query implant until invoice + sticker provided; premium IOL upgrade if any is not payable beyond sublimit.",
+     "gu": "Hydrophobic IOL 14000 નો ક્લેમ કર્યો છે પણ ઈમ્પ્લાન્ટનું બિલ/સ્ટીકર નથી. રિઈમ્બર્સમેન્ટ ચેકલિસ્ટમાં તે ખૂટે છે એમ બતાવે છે. બિલ + સ્ટીકર આપો ત્યાં સુધી ઈન્સ્યોરન્સ કંપની ઈમ્પ્લાન્ટનું પેમેન્ટ અટકાવશે / પ્રશ્ન પૂછશે; પ્રીમિયમ IOL અપગ્રેડ હોય તો સબલિમિટથી વધારે રકમ મળશે નહીં."
+    },
+    "fix": null,
+    "fix_localized": {},
+    "policy_cite": {
+     "doc": "policy",
+     "page": 3,
+     "quote": "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.",
+     "bbox": [
+      78.0,
+      648.2874755859375,
+      507.76116943359375,
+      687.3405151367188
+     ],
+     "verified": true
+    },
+    "bill_cite": null,
+    "irdai_cite": null,
+    "precedent_ids": [],
+    "tool_evidence": {
+     "title_localized": {
+      "gu": "ઈમ્પ્લાન્ટનું બિલ + સ્ટીકર ખૂટે છે - IOL 14000 નું પેમેન્ટ અટકી શકે છે"
+     }
+    },
+    "verified": false,
+    "verifier_notes": []
+   }
+  ],
+  "missing_docs": [
+   {
+    "id": "prescriptions",
+    "label": "Doctor's prescriptions",
+    "critical": false,
+    "trigger": null
+   },
+   {
+    "id": "payment_receipts",
+    "label": "Payment receipts",
+    "critical": false,
+    "trigger": null
+   },
+   {
+    "id": "implant_invoice_sticker",
+    "label": "Implant invoice + sticker",
+    "critical": false,
+    "trigger": "implant"
+   },
+   {
+    "id": "non_differential_billing_certificate",
+    "label": "Hospital certificate: no differential billing by room category",
+    "critical": false,
+    "trigger": "proportionate"
+   },
+   {
+    "id": "kit_itemized_breakup",
+    "label": "Itemized breakup of 'kit' charges",
+    "critical": false,
+    "trigger": "kit"
+   }
+  ],
+  "action_plan": [
+   {
+    "step": 1,
+    "finding": "F05",
+    "who": "Hospital (certificate) / Insurer",
+    "action": "Get a hospital certificate that surgeon, OT and nursing fees are the same in every room category (no differential billing).",
+    "status": "fixable",
+    "impact": 10875.0,
+    "when": "before discharge",
+    "action_localized": {
+     "gu": "હોસ્પિટલ પાસેથી પ્રમાણપત્ર લો કે સર્જન, OT અને નર્સિંગ ફી દરેક રૂમમાં એકસરખી જ છે (રૂમ પ્રમાણે ભાવમાં કોઈ ફરક નથી)."
+    }
+   },
+   {
+    "step": 2,
+    "finding": "F03",
+    "who": "Hospital billing desk",
+    "action": "ફાર્મસી/બિલિંગમાંથી 'સર્જિકલ કિટ ₹3,000' નું આઇટમવાઇઝ બ્રેકઅપ માંગો અને કહો: 'દરેક વસ્તુનું નામ, જથ્થો અને ભાવ લખીને, ફાર્મસી સ્ટેમ્પ સાથે આપો.' ડિસ્ચાર્જ પહેલા આ કાગળ ફાઇલમાં જોડો.",
+    "status": "fixable",
+    "impact": 3000.0,
+    "when": "before discharge",
+    "action_localized": {
+     "gu": "ફાર્મસી/બિલિંગમાંથી 'સર્જિકલ કિટ ₹3,000' નું આઇટમવાઇઝ બ્રેકઅપ માંગો અને કહો: 'દરેક વસ્તુનું નામ, જથ્થો અને ભાવ લખીને, ફાર્મસી સ્ટેમ્પ સાથે આપો.' ડિસ્ચાર્જ પહેલા આ કાગળ ફાઇલમાં જોડો."
+    }
+   },
+   {
+    "step": 3,
+    "finding": "F01",
+    "who": "Hospital billing desk",
+    "action": "ડિસ્ચાર્જ પહેલા હોસ્પિટલના બિલિંગ ડેસ્ક પર જાઓ અને કહો: 'કુલ ₹61,200 છે પણ લાઇનનો સરવાળો ₹60,000 થાય છે - ₹1,200 નો ફરક સુધારો, કુલ ₹60,000 કરો અથવા ₹1,200 નું આઇટમવાઇઝ બિલ આપો.' સુધારેલું સહી-સિક્કાવાળું બિલ લો.",
+    "status": "fixable",
+    "impact": 1200.0,
+    "when": "before discharge",
+    "action_localized": {
+     "gu": "ડિસ્ચાર્જ પહેલા હોસ્પિટલના બિલિંગ ડેસ્ક પર જાઓ અને કહો: 'કુલ ₹61,200 છે પણ લાઇનનો સરવાળો ₹60,000 થાય છે - ₹1,200 નો ફરક સુધારો, કુલ ₹60,000 કરો અથવા ₹1,200 નું આઇટમવાઇઝ બિલ આપો.' સુધારેલું સહી-સિક્કાવાળું બિલ લો."
+    }
+   },
+   {
+    "step": 4,
+    "finding": "F07",
+    "who": "Hospital / You",
+    "action": "Collect these before discharge/submission; the hospital must provide medical records on request.",
+    "status": "fixable",
+    "impact": 0.0,
+    "when": "before discharge",
+    "action_localized": {
+     "gu": "આ બધા કાગળો ડિસ્ચાર્જ / સબમિટ કરતા પહેલા ભેગા કરી લો; હોસ્પિટલે કહેવા પર મેડિકલ રેકોર્ડ આપવા જ પડે છે."
+    }
+   },
+   {
+    "step": 5,
+    "finding": "F08",
+    "who": "Insurer",
+    "action": "Prior intimation for planned cataract surgery not on record",
+    "status": "needs_review",
+    "impact": 0.0,
+    "when": "check",
+    "action_localized": {
+     "gu": "આયોજિત મોતિયાના ઓપરેશન માટે અગાઉથી જાણ કરી હોવાનો રેકોર્ડ નથી"
+    }
+   },
+   {
+    "step": 6,
+    "finding": "F09",
+    "who": "You",
+    "action": "Implant invoice + sticker missing - IOL 14000 at risk of hold",
+    "status": "needs_review",
+    "impact": 0.0,
+    "when": "check",
+    "action_localized": {
+     "gu": "ઇમ્પ્લાન્ટનું બિલ + સ્ટીકર નથી મળ્યું - IOL 14000 નું પેમેન્ટ અટકી શકે છે"
+    }
+   }
+  ],
+  "trace": [
+   {
+    "stage": "ingest",
+    "kind": "info",
+    "text": "2 document(s): bill:1p scan, discharge:1p",
+    "t": "22:04:13"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "policy from library: ClaimShield Demo Health Policy (0 credits)",
+    "t": "22:04:13"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 5309,
+    "usd": 0.0061415,
+    "t": "22:05:34"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "bill: 11 lines via baseten",
+    "t": "22:05:34"
+   },
+   {
+    "stage": "extract",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1175,
+    "usd": 0.0013895000000000001,
+    "t": "22:05:38"
+   },
+   {
+    "stage": "extract",
+    "kind": "info",
+    "text": "discharge: Mature cataract, right eye via baseten",
+    "t": "22:05:38"
+   },
+   {
+    "stage": "privacy",
+    "kind": "info",
+    "text": "2 personal identifier(s) masked before any model call",
+    "t": "22:05:38"
+   },
+   {
+    "stage": "tools",
+    "kind": "info",
+    "text": "deterministic checks run: 14 tools",
+    "t": "22:05:38"
+   },
+   {
+    "stage": "rules",
+    "kind": "info",
+    "text": "rules engine: 7 candidate finding(s)",
+    "t": "22:05:38"
+   },
+   {
+    "stage": "tpa",
+    "kind": "start",
+    "text": "TPA Adjudicator reviewing claim like the insurer would",
+    "t": "22:05:38"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 6643,
+    "usd": 0.012409,
+    "t": "22:05:47"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"cataract\"}",
+    "result": "{\"admission\": \"2026-10-02\", \"policy_start\": \"2021-11-01\", \"continuous_since\": \"2021-11-01\", \"months_insurer_view\": 59, \"months_continuous\": 59, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 59, \"months_elapsed_continuous\": 59, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "22:05:47"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "sublimit_check",
+    "args": "{\"procedure\":\"phacoemulsification with IOL cataract\"}",
+    "result": "{\"matched\": true, \"procedure\": \"cataract\", \"matched_on\": \"cataract\", \"limit\": 70000.0, \"basis\": \"per_eye\", \"cite\": {\"clause_id\": \"3.4\", \"page\": 2, \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}}",
+    "t": "22:05:47"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "ped_check",
+    "args": "{}",
+    "result": "{\"conditions_in_records\": [], \"undeclared\": [], \"condition_predates_policy\": null, \"months_continuous\": 59, \"moratorium_months\": 60, \"moratorium_passed\": false, \"ped_waiting_months\": 36, \"regulator_ped_max\": 36, \"ped_waiting_served\": true, \"cite\": {\"clause_id\": \"4.3\", \"page\": 2, \"quote\": \"Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded unt…",
+    "t": "22:05:47"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.1\"}",
+    "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
+    "t": "22:05:47"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.3\"}",
+    "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
+    "t": "22:05:47"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 7443,
+    "usd": 0.012432,
+    "t": "22:05:56"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "non_payable_lookup",
+    "args": "{\"description\":\"Food charges (attendant)\"}",
+    "result": "{\"matches\": [{\"item\": \"food charges\", \"list\": \"I\", \"treatment\": \"not payable\"}, {\"item\": \"attendant charges\", \"list\": \"I\", \"treatment\": \"not payable\"}]}",
+    "t": "22:05:56"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "non_payable_lookup",
+    "args": "{\"description\":\"Toiletries kit admission kit\"}",
+    "result": "{\"matches\": [{\"item\": \"admission kit\", \"list\": \"II\", \"treatment\": \"subsumed into room charges\"}]}",
+    "t": "22:05:56"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "non_payable_lookup",
+    "args": "{\"description\":\"Surgical kit\"}",
+    "result": "{\"matches\": []}",
+    "t": "22:05:56"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.4\"}",
+    "result": "{\"clause_id\": \"3.4\", \"page\": 2, \"title\": \"Sub-limits\", \"quote\": \"Cataract surgery is payable up to Rs. 70,000 per eye per policy year.\"}",
+    "t": "22:05:56"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.5\"}",
+    "result": "{\"clause_id\": \"3.5\", \"page\": 2, \"title\": \"Co-payment\", \"quote\": \"A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission.\"}",
+    "t": "22:05:56"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 8634,
+    "usd": 0.015429,
+    "t": "22:06:07"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"5.1\"}",
+    "result": "{\"clause_id\": \"5.1\", \"page\": 3, \"title\": \"Claim intimation\", \"quote\": \"Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission.\"}",
+    "t": "22:06:07"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"non-payable List I II IV subsumed\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portab…",
+    "t": "22:06:07"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 9031,
+    "usd": 0.015895,
+    "t": "22:06:17"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"5.3\"}",
+    "result": "{\"clause_id\": \"5.3\", \"page\": 3, \"title\": \"Non-payable items\", \"quote\": \"Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy.\"}",
+    "t": "22:06:17"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"1.1\"}",
+    "result": "{\"clause_id\": \"1.1\", \"page\": 1, \"title\": \"Hospital\", \"quote\": \"Hospital means any institution established for in-patient care and day care treatment of illness and/or injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments Act, 2010.\"}",
+    "t": "22:06:17"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "compute_payout",
+    "args": "{}",
+    "result": "{\"claimed\": 61200.0, \"payout\": 37912.5, \"copay\": 4212.5, \"deductions\": [{\"id\": \"D-UNITEM\", \"issue_type\": \"mismatch\", \"label\": \"Bill total exceeds itemized lines\", \"amount\": 1200.0, \"item_ids\": []}, {\"id\": \"D-NP\", \"issue_type\": \"non_payable\", \"label\": \"Non-payable items (regulator list)\", \"amount\": 1000.0, \"item_ids\": [\"L10\", \"L11\"]}, {\"id\": \"D-NP-KIT\", \"issue_type\": \"non_payable\", \"label\": \"Un-ite…",
+    "t": "22:06:17"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 9185,
+    "usd": 0.014633,
+    "t": "22:06:25"
+   },
+   {
+    "stage": "tpa",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"5.2\"}",
+    "result": "{\"clause_id\": \"5.2\", \"page\": 3, \"title\": \"Claim documents\", \"quote\": \"Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.\"}",
+    "t": "22:06:25"
+   },
+   {
+    "stage": "tpa",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 10917,
+    "usd": 0.021102,
+    "t": "22:06:43"
+   },
+   {
+    "stage": "tpa",
+    "kind": "done",
+    "text": "9 predicted issues; 16 tool calls",
+    "notes": "Waiting served: 59 months continuous > 24M cataract specific and 36M PED; sublimit 70000 per eye not breached. 10% senior-citizen copay (age 66) applies per 3.5 - payout per engine 37912.5 after copay 4212.5. તમારો મોતિયાનો ક્લેઇમ પાત્ર છે, પણ ડીલક્સ રૂમને લીધે રૂમ + ડૉક્ટર/OT ફી પર કાપ થશે, વધુમાં ફૂડ/ટોઇલેટરીઝ/કિટ અને 1200 નો તફાવત કપાશે. IOL બિલ-સ્ટિકર અને કિટનું બ્રેકઅપ આપશો તો રૂ.3000 માંથી કેટલુંક બચી શકે.",
+    "t": "22:06:43"
+   },
+   {
+    "stage": "advocate",
+    "kind": "start",
+    "text": "Patient Advocate challenging each predicted cut",
+    "t": "22:06:43"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 4743,
+    "usd": 0.009186,
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"non-payable List I List II food attendant toiletries admission kit\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-MORATORIUM\", \"rule\": \"After 60 continuous months of coverage (incl. portab…",
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"proportionate deduction room rent differential billing certificate\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-PD-NODIFF\", \"rule\": \"Proportionate deduction cannot be applied where the hospital does not follow differential billing by room category, or to expenses that are not billed differentially.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy, …",
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"late intimation condonation planned hospitalization 48 hours\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-CONDONE-DELAY\", \"rule\": \"Claims should not be rejected solely for delayed intimation or document submission where the delay is for reasons beyond the insured's control.\", \"source\": \"IRDAI standard terms and conditions (Standardization Guidelines 2020)\", \"overrides_policy\": true}, {\"id\": \"IN-CASHLESS-TAT\", \"rule\": \"Cashless authorisation must be decided within 1 hour of reques…",
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_rules",
+    "args": "{\"query\":\"kit charges itemized breakup consumables payable\"}",
+    "result": "{\"rules\": [{\"id\": \"IN-NONPAY-LISTS\", \"rule\": \"Items not payable are limited to the standardized Lists I–IV; Lists II–IV are subsumed into room, procedure or treatment charges rather than excluded from the claim.\", \"source\": \"IRDAI Guidelines on Standardization in Health Insurance 2020\", \"overrides_policy\": true}, {\"id\": \"IN-PD-EXEMPT\", \"rule\": \"Proportionate deduction cannot be applied to pharmacy…",
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"proportionate deduction no differential billing hospital certificate\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-PD-01\", \"illustrative\": true, \"issue_type\": \"proportionate\", \"complaint\": \"Proportionate deduction applied to medicines and implants due to room upgrade.\", \"decision\": \"allowed\", \"reasoning\": \"Deduction on exempt categories set aside per IRDAI standardization guidelines.\", \"office\": null, \"year\": null}]}",
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "search_precedents",
+    "args": "{\"query\":\"surgical kit disallowed itemized breakup allowed\"}",
+    "result": "{\"precedents\": [{\"id\": \"ILL-NP-01\", \"illustrative\": true, \"issue_type\": \"non_payable\", \"complaint\": \"Consumables bundled as 'kit' disallowed entirely.\", \"decision\": \"partly allowed\", \"reasoning\": \"Itemized consumables forming part of procedure held payable.\", \"office\": null, \"year\": null}]}",
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.3\"}",
+    "result": "{\"clause_id\": \"3.3\", \"page\": 2, \"title\": \"Proportionate deduction\", \"quote\": \"If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics.\"}",
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "get_clause",
+    "args": "{\"clause_id\":\"3.1\"}",
+    "result": "{\"clause_id\": \"3.1\", \"page\": 2, \"title\": \"Room rent\", \"quote\": \"Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day.\"}",
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "tool",
+    "tool": "waiting_period_check",
+    "args": "{\"condition\":\"cataract\"}",
+    "result": "{\"admission\": \"2026-10-02\", \"policy_start\": \"2021-11-01\", \"continuous_since\": \"2021-11-01\", \"months_insurer_view\": 59, \"months_continuous\": 59, \"hits\": [{\"kind\": \"initial\", \"condition\": \"any illness\", \"months_required\": 1, \"regulator_max\": null, \"months_elapsed_insurer_view\": 59, \"months_elapsed_continuous\": 59, \"applies_insurer_view\": false, \"applies_correctly\": false, \"cite\": {\"clause_id\": \"4.1\"…",
+    "t": "22:06:49"
+   },
+   {
+    "stage": "advocate",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 9253,
+    "usd": 0.021253,
+    "t": "22:07:08"
+   },
+   {
+    "stage": "advocate",
+    "kind": "done",
+    "text": "verdicts for 5 findings; 9 tool calls",
+    "t": "22:07:08"
+   },
+   {
+    "stage": "localize",
+    "kind": "info",
+    "text": "translating to gu in parallel with the jury",
+    "t": "22:07:08"
+   },
+   {
+    "stage": "critic",
+    "kind": "start",
+    "text": "Critic auditing statuses, fixes and citations",
+    "t": "22:07:08"
+   },
+   {
+    "stage": "jury",
+    "kind": "start",
+    "text": "3-host jury on 5 judgement(s), in parallel: muse, baseten, fireworks",
+    "t": "22:07:08"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=1200",
+    "t": "22:07:11"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "22:07:11"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 2123,
+    "usd": 0.0022615,
+    "t": "22:07:14"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "22:07:14"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "22:07:17"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2065,
+    "usd": 0.005665,
+    "t": "22:07:17"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from muse → repair pass",
+    "t": "22:07:17"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": true,
+    "tokens": 575,
+    "usd": 0.001712,
+    "t": "22:07:17"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on fireworks; one retry with max_tokens=1200",
+    "t": "22:07:20"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2590,
+    "usd": 0.006189999999999999,
+    "t": "22:07:21"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1648,
+    "usd": 0.002085,
+    "t": "22:07:37"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 2021,
+    "usd": 0.0024665,
+    "t": "22:07:41"
+   },
+   {
+    "stage": "critic",
+    "kind": "info",
+    "text": "answer cut off on fireworks; one retry with max_tokens=2400",
+    "t": "22:07:42"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 2122,
+    "usd": 0.002261,
+    "t": "22:07:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "non-JSON answer from fireworks → repair pass",
+    "t": "22:07:44"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "answer cut off on muse; one retry with max_tokens=1200",
+    "t": "22:07:46"
+   },
+   {
+    "stage": "jury",
+    "kind": "call",
+    "provider": "muse",
+    "model": "muse-spark-1.3",
+    "cached": false,
+    "tokens": 2590,
+    "usd": 0.006189999999999999,
+    "t": "22:07:50"
+   },
+   {
+    "stage": "jury",
+    "kind": "fallback",
+    "text": "baseten abstained (empty)",
+    "t": "22:07:50"
+   },
+   {
+    "stage": "jury",
+    "kind": "fallback",
+    "text": "fireworks abstained (empty)",
+    "t": "22:07:50"
+   },
+   {
+    "stage": "jury",
+    "kind": "info",
+    "text": "fewer than 2 votes (none) — statuses unchanged",
+    "t": "22:07:50"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 2024,
+    "usd": 0.002593,
+    "t": "22:07:51"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 2557,
+    "usd": 0.0032785,
+    "t": "22:08:02"
+   },
+   {
+    "stage": "critic",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 4164,
+    "usd": 0.004482,
+    "t": "22:08:37"
+   },
+   {
+    "stage": "critic",
+    "kind": "done",
+    "text": "review complete",
+    "t": "22:08:37"
+   },
+   {
+    "stage": "verify",
+    "kind": "info",
+    "text": "9 verified finding(s); 8 fully cited",
+    "t": "22:08:37"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=400",
+    "t": "22:08:45"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1813,
+    "usd": 0.0013065,
+    "t": "22:08:55"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "22:08:55"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 820,
+    "usd": 0.0006100000000000001,
+    "t": "22:08:56"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=400",
+    "t": "22:09:04"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1817,
+    "usd": 0.0013085000000000002,
+    "t": "22:09:12"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "22:09:12"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 820,
+    "usd": 0.0006100000000000001,
+    "t": "22:09:13"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "answer cut off on fireworks; one retry with max_tokens=400",
+    "t": "22:11:25"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 1809,
+    "usd": 0.0013045,
+    "t": "22:11:34"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "non-JSON answer from fireworks → repair pass",
+    "t": "22:11:34"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 820,
+    "usd": 0.0006100000000000001,
+    "t": "22:11:35"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=400",
+    "t": "22:11:44"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1817,
+    "usd": 0.0013085000000000002,
+    "t": "22:11:53"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "non-JSON answer from baseten → repair pass",
+    "t": "22:11:53"
+   },
+   {
+    "stage": "evidence",
+    "kind": "info",
+    "text": "answer cut off on baseten; one retry with max_tokens=400",
+    "t": "22:11:54"
+   },
+   {
+    "stage": "evidence",
+    "kind": "call",
+    "provider": "baseten",
+    "model": "meta-models/muse-spark-open-1026",
+    "cached": false,
+    "tokens": 1020,
+    "usd": 0.00091,
+    "t": "22:11:56"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 979,
+    "usd": 0.0012055,
+    "t": "22:12:17"
+   },
+   {
+    "stage": "localize",
+    "kind": "call",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "cached": false,
+    "tokens": 2054,
+    "usd": 0.0024980000000000002,
+    "t": "22:12:31"
+   },
+   {
+    "stage": "localize",
+    "kind": "done",
+    "text": "results written in gu",
+    "t": "22:12:31"
+   },
+   {
+    "stage": "report",
+    "kind": "info",
+    "text": "done in 498.2s · 42 model call(s) (1 cached) · $0.1999",
+    "t": "22:12:31"
+   }
+  ],
+  "cost_usd": 0.21388,
+  "llm_calls": 42,
+  "engine": "full",
+  "provider_calls": {
+   "baseten": {
+    "calls": 10,
+    "cached": 0,
+    "usd": 0.016456000000000002,
+    "tokens": 17534,
+    "roles": [
+     "extract",
+     "jury",
+     "evidence"
+    ]
+   },
+   "muse": {
+    "calls": 12,
+    "cached": 1,
+    "usd": 0.140384,
+    "tokens": 73669,
+    "roles": [
+     "tpa",
+     "advocate",
+     "jury"
+    ]
+   },
+   "fireworks": {
+    "calls": 9,
+    "cached": 0,
+    "usd": 0.022174,
+    "tokens": 19378,
+    "roles": [
+     "localize",
+     "jury",
+     "critic",
+     "evidence"
+    ]
+   }
+  },
+  "generated_at": "2026-10-31T22:11:56",
+  "payout_detail_before": {
+   "claimed": 61200.0,
+   "admissible_before_copay": 42125.0,
+   "copay": 4212.5,
+   "payout": 37912.5,
+   "patient_pays": 23287.5,
+   "deductions": [
+    {
+     "id": "D-UNITEM",
+     "issue_type": "mismatch",
+     "label": "Bill total exceeds itemized lines",
+     "amount": 1200.0,
+     "item_ids": []
+    },
+    {
+     "id": "D-NP",
+     "issue_type": "non_payable",
+     "label": "Non-payable items (regulator list)",
+     "amount": 1000.0,
+     "item_ids": [
+      "L10",
+      "L11"
+     ]
+    },
+    {
+     "id": "D-NP-KIT",
+     "issue_type": "non_payable",
+     "label": "Un-itemized kit charges",
+     "amount": 3000.0,
+     "item_ids": [
+      "L07"
+     ]
+    },
+    {
+     "id": "D-ROOM",
+     "issue_type": "room_rent",
+     "label": "ROOM rent above eligible limit",
+     "amount": 3000.0,
+     "item_ids": [
+      "L01"
+     ]
+    },
+    {
+     "id": "D-PD",
+     "issue_type": "proportionate",
+     "label": "Proportionate deduction on associated expenses",
+     "amount": 10875.0,
+     "item_ids": [
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "L10",
+      "L11"
+     ]
+    }
+   ],
+   "rejected": false
+  }
+ },
+ "letters": {
+  "hospital": {
+   "subject": "Request to correct the final bill before insurance submission — [PATIENT_NAME]",
+   "salutation": "Dear Billing / TPA Desk,",
+   "paragraphs": [
+    "I am writing regarding the in-patient bill for [PATIENT_NAME] (admitted [ADMISSION_DATE]) at [HOSPITAL] under Policy No. [POLICY_NO] / Claim No. [CLAIM_NO] to be submitted to [INSURER].",
+    "Before discharge, an audit against the policy shows items the insurer is likely to deduct that the hospital can correct. I request the corrections detailed below to avoid short-payment."
+   ],
+   "grounds": [
+    {
+     "title": "Bill total does not match itemized charges",
+     "text": "The bill total is ₹61,200 while the sum of itemized lines is ₹60,000, leaving an unitemized difference of ₹1,200 which the insurer will deduct as only itemized charges are payable. Please correct the total to ₹60,000 or provide an itemized bill for the ₹1,200 difference and issue a corrected signed and stamped bill before submission. (Impact: ₹1,200)",
+     "cites": [
+      "policy p.3: \"Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions.\""
+     ]
+    },
+    {
+     "title": "'Kit' charges without itemization"
+    }
+   ],
+   "relief": "Kindly issue the corrected/itemized documents so the claim is not short-paid.",
+   "enclosures": [
+    "Copy of current bill"
+   ],
+   "closing": "Thank you,\n[PATIENT_NAME]\n[CONTACT]"
+  }
+ },
+ "bundle": {
+  "policy_id": "demo_shield",
+  "bill": {
+   "hospital": "Shreeji Eye Hospital, Surat",
+   "bill_no": "SEH-2291",
+   "admission_date": "2026-10-02",
+   "discharge_date": "2026-10-03",
+   "room_category": "Deluxe",
+   "room_days": null,
+   "icu_days": null,
+   "line_items": [
+    {
+     "id": "L01",
+     "description": "Deluxe room (1 day)",
+     "category": "room",
+     "qty": 1.0,
+     "rate": 8000.0,
+     "amount": 8000.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L02",
+     "description": "Nursing charges",
+     "category": "nursing",
+     "qty": 1.0,
+     "rate": 1000.0,
+     "amount": 1000.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L03",
+     "description": "Surgeon fee - phaco",
+     "category": "surgeon",
+     "qty": 1.0,
+     "rate": 16000.0,
+     "amount": 16000.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L04",
+     "description": "Anaesthetist fee",
+     "category": "anaesthesia",
+     "qty": 1.0,
+     "rate": 4000.0,
+     "amount": 4000.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L05",
+     "description": "OT charges",
+     "category": "ot",
+     "qty": 1.0,
+     "rate": 8000.0,
+     "amount": 8000.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L06",
+     "description": "Hydrophobic IOL (implant)",
+     "category": "implant",
+     "qty": 1.0,
+     "rate": 14000.0,
+     "amount": 14000.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L07",
+     "description": "Surgical kit",
+     "category": "consumable",
+     "qty": 1.0,
+     "rate": 3000.0,
+     "amount": 3000.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L08",
+     "description": "Pharmacy",
+     "category": "pharmacy",
+     "qty": 1.0,
+     "rate": 2800.0,
+     "amount": 2800.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L09",
+     "description": "Investigations",
+     "category": "investigation",
+     "qty": 1.0,
+     "rate": 2200.0,
+     "amount": 2200.0,
+     "date": "2026-10-01",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L10",
+     "description": "Food charges (attendant)",
+     "category": "misc",
+     "qty": 1.0,
+     "rate": 600.0,
+     "amount": 600.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    },
+    {
+     "id": "L11",
+     "description": "Toiletries kit",
+     "category": "misc",
+     "qty": 1.0,
+     "rate": 400.0,
+     "amount": 400.0,
+     "date": "2026-10-02",
+     "page": 1,
+     "doc": "bill.pdf"
+    }
+   ],
+   "discount": 0.0,
+   "stated_total": 61200.0,
+   "package": false,
+   "differential_billing": null,
+   "source_file": "bill.pdf"
+  },
+  "discharge": {
+   "diagnosis": "Mature cataract, right eye",
+   "procedure": "Phacoemulsification with IOL, right eye",
+   "icd10": null,
+   "admission_type": "day_care",
+   "comorbidities": [],
+   "history_notes": "Nil significant",
+   "condition_duration_months": null,
+   "source_file": "discharge.pdf"
+  },
+  "rejection": null,
+  "ctx": {
+   "mode": "pre_discharge",
+   "jurisdiction": "IN",
+   "user_lang": "gu",
+   "patient_age": 66,
+   "sum_insured": null,
+   "policy_start": "2021-11-01",
+   "continuous_coverage_since": null,
+   "ped_declared": [],
+   "claim_type": "reimbursement",
+   "city_tier": null,
+   "docs_provided": [
+    "final_itemized_bill",
+    "discharge_summary",
+    "investigation_reports"
+   ],
+   "narrative": "મારી માતાનું મોતિયાનું ઓપરેશન થયું છે. હોસ્પિટલે ડીલક્સ રૂમ આપ્યો હતો અને બિલ બહુ વધારે લાગે છે.",
+   "narrative_lang": null,
+   "intimation_hours_after_admission": null
+  }
+ }
+}

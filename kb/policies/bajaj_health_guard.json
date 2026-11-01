@@ -1,0 +1,962 @@
+{
+ "policy_id": "bajaj_health_guard",
+ "insurer": "Bajaj Allianz",
+ "product": "Bajaj-Health-Guard",
+ "uin": "BAJHLIP25035V072425",
+ "jurisdiction": "IN",
+ "sum_insured": null,
+ "room_rent": {
+  "kind": "pct_si",
+  "value": 1.0,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": 4,
+   "quote": "Room rent and Boarding expenses as provided by the Hospital/Nursing Home subject to below limits • Silver Plan Up to 1% of Sum Insured per day (Excluding Cumulative Bonus) • Gold Plan and Platinum Plan a) Sum Insured 3 lacs to 7.5 lacs- maximum eligible room is Single private Air Conditioned room b) Sum Insured 10 Lacs and above - eligible for any room category ii."
+  }
+ },
+ "icu_rent": {
+  "kind": "none",
+  "value": null,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": null,
+   "quote": null
+  }
+ },
+ "proportionate_deduction": true,
+ "proportionate_cite": {
+  "clause_id": null,
+  "page": 4,
+  "quote": "In case of admission to a room at rates exceeding the limits as mentioned under 1(i), the reimbursement of all other expenses incurred at the Hospital, with the exception of cost of pharmacy/medicines, consumables, implants, medical devices & diagnostics shall be payable in the same proportion as the admissible rate per day bears to the actual rate per day of room rent charges."
+ },
+ "copays": [
+  {
+   "pct": 15.0,
+   "condition": "Zone C Goa, Punjab, Chandigarh, Chattisgarh, Bihar, Jharkhand, Andaman & Nicobar Islands, Arunachal Pradesh, Himachal Pr",
+   "age_min": null,
+   "cite": {
+    "clause_id": null,
+    "page": 4,
+    "quote": "Zone C Goa, Punjab, Chandigarh, Chattisgarh, Bihar, Jharkhand, Andaman & Nicobar Islands, Arunachal Pradesh, Himachal Pradesh, Jammu & Kashmir, Manipur, Meghalaya, Mizoram, Nagaland, Odisha, Sikkim, Tripura, Uttarakhand Note:- • Policyholders paying Zone A premium rates can avail treatment allover India without any co-payment. • \u0007Those, who pay Zone B premium rates and avail treatment in Zone A city will have to pay 15% co-payment on admissible claim amount. • \u0007Those, who pay Zone C premium rates and avail treatment in Zone A city will have to pay 20% co-payment on admissible claim amount. • \u0007"
+   }
+  },
+  {
+   "pct": 10.0,
+   "condition": "Co-pay Discount: a. \u0007If opted voluntarily and mentioned on the Policy Schedule that a Co-payment is effective by the Ins",
+   "age_min": null,
+   "cite": {
+    "clause_id": null,
+    "page": 13,
+    "quote": "Co-pay Discount: a. \u0007If opted voluntarily and mentioned on the Policy Schedule that a Co-payment is effective by the Insured then Insured will be eligible of additional 10% or 20% discount on the Policy premium. b. \u0007If a claim has been admitted under In-patient Hospitalization Treatment then, the Insured shall bear 10% or 20% respectively of the eligible claim amount payable under this section and Our liability, if any, shall only be in excess of that sum and would be subject to the Sum Insured. v."
+   }
+  }
+ ],
+ "sublimits": [
+  {
+   "procedure": "cataract",
+   "aliases": [
+    "phacoemulsification",
+    "phaco",
+    "iol"
+   ],
+   "limit": 20000.0,
+   "pct_si": 1.0,
+   "basis": "per_eye",
+   "cite": {
+    "clause_id": null,
+    "page": 11,
+    "quote": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 11 ◼ What are the Sub-limits under the Base Sum Insured? For Health Guard – Silver Plan Annual Policy Benefit/Procedure Sub-limit Per day Room rent- Normal Up to 1% of Sum Insured Cataract surgery Up to 20% of Sum Insured for each eye Road ambulance Up to INR 20,000/- per policy year Bariatric surgery Up to 25% of Sum insured For Health Guard – Gold and Platinum Plan Annual Policy Benefits/Procedures Sub-limit Per day Room rent- Normal Single private Air Conditioned room for SI 3 Lacs to 7.5 Lacs Cataract surgery 20% of Sum Insured for each "
+   }
+  },
+  {
+   "procedure": "joint replacement",
+   "aliases": [
+    "knee replacement",
+    "hip replacement"
+   ],
+   "limit": null,
+   "pct_si": null,
+   "basis": "per_claim",
+   "cite": {
+    "clause_id": null,
+    "page": 10,
+    "quote": "This Deductible will not be applied on the claim admissible under Maternity and New Born Baby Cover ◼ Is there any pre-policy check-up for enrolling under Health Guard policy? • Applicable only for new proposals. • No Medical tests up to 45 years, subject to no adverse health conditions • Medical tests would be advised for the below adverse health conditions: o Diabetes o Hypertension o Lipid Disorders o Combination of any of the above o Obesity o Joint Disorders • \u0007Tests may be advised for other health conditions, based on the severity of disease, clinical condition of the member, treatment t"
+   }
+  }
+ ],
+ "waiting_periods": [
+  {
+   "kind": "initial",
+   "months": 1,
+   "conditions": [],
+   "cite": {
+    "clause_id": "30",
+    "page": 15,
+    "quote": "30-day waiting period (Excl03) a) Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b) This exclusion shall not, however, apply if the Insured has Continuous Coverage for more than twelve months. c) The within referred waiting period is made applicable to the enhanced Sum Insured in the event of granting higher Sum Insured subsequently."
+   }
+  },
+  {
+   "kind": "ped",
+   "months": 36,
+   "conditions": [],
+   "cite": {
+    "clause_id": null,
+    "page": 14,
+    "quote": "Pre-existing Diseases waiting period (Excl01) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first Health Guard Policy with us. b) In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase. c) If the Insured is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to"
+   }
+  },
+  {
+   "kind": "specific",
+   "months": 24,
+   "conditions": [
+    "cataract",
+    "hernia",
+    "hydrocele",
+    "benign prostatic",
+    "hysterectomy",
+    "piles",
+    "haemorrhoid",
+    "fissure",
+    "fistula"
+   ],
+   "cite": {
+    "clause_id": "2",
+    "page": 14,
+    "quote": "2. Specified disease/procedure waiting period (Excl02) a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first Health Guard Policy with Us."
+   }
+  }
+ ],
+ "exclusions": [
+  {
+   "code": "Excl01",
+   "text": ") a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first Health Guard Policy with us.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl01",
+    "page": 14,
+    "quote": "Pre-existing Diseases waiting period (Excl01) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first Health Guard Policy with us. b) In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase. c) If the Insured is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to"
+   }
+  },
+  {
+   "code": "Excl02",
+   "text": ") a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first Health Guard Policy with Us.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl02",
+    "page": 14,
+    "quote": "2. Specified disease/procedure waiting period (Excl02) a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first Health Guard Policy with Us."
+   }
+  },
+  {
+   "code": "Excl03",
+   "text": ") a) Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b) This exclusion shall not, however, ap",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl03",
+    "page": 15,
+    "quote": "30-day waiting period (Excl03) a) Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b) This exclusion shall not, however, apply if the Insured has Continuous Coverage for more than twelve months. c) The within referred waiting period is made applicable to the enhanced Sum Insured in the event of granting higher Sum Insured subsequently."
+   }
+  },
+  {
+   "code": "Excl04",
+   "text": ") a) Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded . b) Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment are excluded.",
+   "keywords": [
+    "dental"
+   ],
+   "cite": {
+    "clause_id": "Excl04",
+    "page": 16,
+    "quote": "4. Investigation & Evaluation (Excl04) a) Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded . b) Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment are excluded."
+   }
+  },
+  {
+   "code": "Excl05",
+   "text": ") a) Expenses related to any admission primarily for enforced bed rest and not for receiving treatment.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl05",
+    "page": 16,
+    "quote": "5. Rest Cure, rehabilitation and respite care (Excl05) a) Expenses related to any admission primarily for enforced bed rest and not for receiving treatment."
+   }
+  },
+  {
+   "code": "Excl06",
+   "text": ") Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: 1) Surgery to be conducted is upon the advice of the Doctor 2) The surgery/Procedure conducted should be supported by clinical protocols ",
+   "keywords": [
+    "obesity"
+   ],
+   "cite": {
+    "clause_id": "Excl06",
+    "page": 16,
+    "quote": "6. Obesity/Weight Control (Excl06) Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: 1) Surgery to be conducted is upon the advice of the Doctor 2) The surgery/Procedure conducted should be supported by clinical protocols 3) The member has to be 18 years of age or older and 4) Body Mass Index (BMI); a) greater than or equal to 40 or b) \u0007greater than or equal to 35 in conjunction with any of the following severe co-morbidities following failure of less invasive methods of weight loss: i."
+   }
+  },
+  {
+   "code": "Excl07",
+   "text": ") Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl07",
+    "page": 16,
+    "quote": "Severe Sleep Apnea iv. Uncontrolled Type2 Diabetes 7. Change-of-gender treatments (Excl07) Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex."
+   }
+  },
+  {
+   "code": "Excl08",
+   "text": ") Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to ",
+   "keywords": [
+    "cosmetic",
+    "plastic surgery"
+   ],
+   "cite": {
+    "clause_id": "Excl08",
+    "page": 16,
+    "quote": "8. Cosmetic or plastic Surgery (Excl08) Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured."
+   }
+  },
+  {
+   "code": "Excl10",
+   "text": ") Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl10",
+    "page": 17,
+    "quote": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 17 10. Breach of law (Excl10) Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent."
+   }
+  },
+  {
+   "code": "Excl11",
+   "text": ") Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed in its website / notified to the policyholders are not admissible.",
+   "keywords": [
+    "war"
+   ],
+   "cite": {
+    "clause_id": "Excl11",
+    "page": 17,
+    "quote": "11. Excluded Providers (Excl11) Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed in its website / notified to the policyholders are not admissible."
+   }
+  },
+  {
+   "code": "Excl12",
+   "text": ") 13. \u0007Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reaso",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl12",
+    "page": 17,
+    "quote": "(Excl12) 13. \u0007Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons."
+   }
+  },
+  {
+   "code": "Excl13",
+   "text": ") 14. Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day ",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl13",
+    "page": 17,
+    "quote": "(Excl13) 14. Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day care procedure."
+   }
+  },
+  {
+   "code": "Excl14",
+   "text": ") 15. Refractive Error (Excl15) Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl14",
+    "page": 17,
+    "quote": "(Excl14) 15. Refractive Error (Excl15) Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres."
+   }
+  },
+  {
+   "code": "Excl16",
+   "text": ") Expenses related to any unproven treatment, services and supplies for or in connection with any treatment.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl16",
+    "page": 17,
+    "quote": "16. Unproven Treatments (Excl16) Expenses related to any unproven treatment, services and supplies for or in connection with any treatment."
+   }
+  },
+  {
+   "code": "Excl17",
+   "text": ") Expenses related to sterility and infertility.",
+   "keywords": [
+    "infertility"
+   ],
+   "cite": {
+    "clause_id": "Excl17",
+    "page": 17,
+    "quote": "17. Sterility and Infertility (Excl17) Expenses related to sterility and infertility."
+   }
+  }
+ ],
+ "intimation_emergency_hours": null,
+ "intimation_planned_days_before": null,
+ "claim_submission_days": null,
+ "clauses": [
+  {
+   "id": "C1.1",
+   "title": "",
+   "page": 1,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425"
+  },
+  {
+   "id": "C2.2",
+   "title": "",
+   "page": 2,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 2 Health Guard Policy provides you with a comprehensive range of benefits, ensuring you are covered for the larger expenses related to Illness/surgery. Bajaj Allianz’s Health Guard is designed to suit all your health care needs. It takes care of the medical treatment expenses incurred during hospitalization resulting from serious illness or accident. This cover has comprehensive benefits with affordable price suitable to your needs. Your health is precious to you - it enables you to live your life the way you please. But a sudden illness or accident can put a stop to your way of living and empty your savings. Protect yourself from the financial burden at the time of hospitalisation with the Bajaj Allianz Health Guard Policy. Now you don’t ever have to worry about not having enough money for treatment in case things go wrong. ◼ What are the Plans available under Health Guard policy? There are three plans available • Silver • Gold • Platinum ◼ What are the Sum Insured options available under the policy? • Health Guard –Silver Plan: Rs.1.5 / 2 Lacs • Health Guard –Gold Plan: Rs. 3 / 4 / 5 / 7.5 / 10 / 15 / 20 / 25 / 30 / 35 / 40 / 45 / 50 lacs • Health Guard Platinum Plan: Rs. 5 / 7.5 / 10 / 15 / 20 / 25 / 30 / 35 / 40 / 45 / 50/ 75 lacs/ 1 Crore ◼ Silver Plan Plans In-patient Hospitalization + Road Ambulance + Organ Donor Expenses + Bariatric Surgery Cover+ AYUSH Expenses Convalescence Benefit Daily Cash Benefit for accompanying an insured child Preventive Health Check Up Total Sum Insured Silver 150,000 5,000 5,000 1,500 161,500 200,000 2,000 212,000 ◼ Gold Plan Plans In-patient Hospitalization + Road Ambulance + Organ Donor Expenses + Bariatric Surgery Cover + AYUSH Expenses Convalescence Benefit Daily Cash Benefit for accompany- ing an insured child Preventive Health Check Up Maternity Expenses for Normal Delivery (Including New Born Baby Cover) Maternity Expenses for Caesarean Delivery (Including New Born Baby Cover) Total Sum Insured Gold 300,000 5,000 5,000 3,000 15,000 25,000 338,000 400,000 4,000 439,000 500,000 5,000 540,000 750,000 7,500 792,500 1,000,000 25,000 35,000 1,052,500 1,500,000 1,552,500 2,000,000 2,052,500 2,500,000 2,552,500 3,000,000 3,052,500 3,500,000 3,552,500 4,000,000 4,052,500 4,500,000 4,552,500 5,000,000 5,052,500"
+  },
+  {
+   "id": "C3.3",
+   "title": "",
+   "page": 3,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 3 ◼ Platinum Plan Plans In-patient Hospitalization + Road Ambulance + Organ Donor Expenses + Bariatric Surgery Cover + AYUSH Expenses Conva- lescence Benefit Daily Cash Benefit for accompa- nying an insured child Preventive Health Check Up Maternity Expenses for Normal Delivery (In- cluding New Born Baby Cover) Maternity Expenses for Caesar- ean Delivery (Including New Born Baby Cover) Recharge Benefit Total Sum Insured Platinum 500,000 5,000 5,000 5,000 15,000 25,000 100,000 640,000 750,000 7,500 150,000 942,500 1,000,000 25,000 35,000 200,000 1,252,500 1,500,000 300,000 1,852,500 2,000,000 400,000 2,452,500 2,500,000 500,000 3,052,500 3,000,000 3,552,500 3,500,000 4,052,500 4,000,000 4,552,500 4,500,000 5,052,500 5,000,000 5,552,500 7,500,000 8,052,500 10,000,000 10,552,500 ◼ What is the entry age? • Proposer /Spouse /Parents/Sister/ Brother/Parents-in-law/ Aunt/ Uncle 18 yrs to Lifelong • Dependent Children/Grandchildren: 3 months – 30 yrs ◼ What is the renewal age?"
+  },
+  {
+   "id": "C3.4",
+   "title": "",
+   "page": 3,
+   "text": "Under normal circumstances, lifetime renewal benefit is available under the policy, except on the grounds of Your moral hazard, misrepresentation, non- cooperation or fraud. (Subject to policy is renewed annually with us within the Grace period of 30 days from date of Expiry). ◼ What is the Policy Period? • Policy can be taken for 1year/ 2years OR 3years. ◼ What is premium paying term? • Annual premium payment for 1 year policy. For long term policies one time premium will be collected at the time of risk inception and for renewal at the end of the policy term. • Premium can also be paid on instalment basis- Annual (for long term policies), Half yearly, Quarterly or Monthly ◼ Is this a floater policy / individual policy? • Policy provides Individual as well as Floater sum insured options under all three plans. ◼ Who can be covered under Health Guard Policy? • Self, Spouse, Dependent Children, Grandchildren, Parents, Sister, Brother, Parents-in-law, Aunt, Uncle can be covered under individual option • Self, Spouse, dependent children can be covered under floater option. For Parents separate floater policy can be taken."
+  },
+  {
+   "id": "C4.5",
+   "title": "",
+   "page": 4,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 4 ◼ Premium Payment Zones There are three Zones for Premium payment Zone A Delhi / NCR, Mumbai including (Navi Mumbai, Thane and Kalyan), Hyderabad and Secunderabad, Kolkata, Ahmedabad, Vadodara and Surat. Zone B Rest of India apart, from the states/UTs/cities classified under Zone A and Zone C, are classified as Zone B. Zone C Goa, Punjab, Chandigarh, Chattisgarh, Bihar, Jharkhand, Andaman & Nicobar Islands, Arunachal Pradesh, Himachal Pradesh, Jammu & Kashmir, Manipur, Meghalaya, Mizoram, Nagaland, Odisha, Sikkim, Tripura, Uttarakhand Note:- • Policyholders paying Zone A premium rates can avail treatment allover India without any co-payment. • \u0007Those, who pay Zone B premium rates and avail treatment in Zone A city will have to pay 15% co-payment on admissible claim amount. • \u0007Those, who pay Zone C premium rates and avail treatment in Zone A city will have to pay 20% co-payment on admissible claim amount. • \u0007Those, who pay Zone C premium rates and avail treatment in Zone B city will have to pay 5% co-payment on admissible claim amount • This Co – payment will not be applicable for Accidental Hospitalization cases. • \u0007Policyholder residing in Zone B and Zone C can choose to pay premium for Zone A and avail treatment all over India without any co-payment. • If opted for coverage under Zone B, then insured will be eligible for 20% discount on the premium. • If opted for coverage under Zone C, then insured will be eligible for 30% discount on the premium ◼ Benefits under the Policy"
+  },
+  {
+   "id": "1",
+   "title": "",
+   "page": 4,
+   "text": "1. In-patient Hospitalization Treatment If You are hospitalized on the advice of a Medical practitioner as defined under Policy because of Illness or Accidental Bodily Injury sustained or contracted during the Policy Period, then We will pay You, Reasonable and Customary Medical Expenses incurred subject to i. Room rent and Boarding expenses as provided by the Hospital/Nursing Home subject to below limits • Silver Plan Up to 1% of Sum Insured per day (Excluding Cumulative Bonus) • Gold Plan and Platinum Plan a) Sum Insured 3 lacs to 7.5 lacs- maximum eligible room is Single private Air Conditioned room b) Sum Insured 10 Lacs and above - eligible for any room category ii. If admitted in ICU, the Company will pay up to actual ICU expenses provided by Hospital. iii. Nursing Expenses as provided by the hospital iv. Surgeon, Anesthetist, Medical Practitioner, Consultants, Specialists Fees. v. \u0007Anesthesia, Blood, Oxygen, Operation Theatre Charges, surgical appliances, Medicines & Drugs, Medical Consumables, Dialysis, Chemotherapy, Radiotherapy, physiotherapy, cost of prosthetic devices implanted during surgical procedure like Pacemaker, orthopedic implants, infra cardiac valve replacements, vascular stents vi. Relevant laboratory diagnostic tests, X-ray and such similar expenses that are medically necessary prescribed by the treating Medical Practitioner. In case of admission to a room at rates exceeding the limits as mentioned under 1(i), the reimbursement of all other expenses incurred at the Hospital, with the exception of cost of pharmacy/medicines, consumables, implants, medical devices & diagnostics shall be payable in the same proportion as the admissible rate per day bears to the actual rate per day of room rent charges."
+  },
+  {
+   "id": "C5.7",
+   "title": "",
+   "page": 5,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 5 Proportionate deductions shall not apply in respect of the Hospitals which do not follow differential billings or for those expenses in respect of which differential billing is not adopted based on the room category"
+  },
+  {
+   "id": "2",
+   "title": "",
+   "page": 5,
+   "text": "2. Pre-Hospitalization The Medical Expenses incurred during the 60 days immediately before You were Hospitalized, provided that: Such Medical Expenses were incurred for the same illness/injury for which subsequent Hospitalization was required, and We have accepted an inpatient Hospitalization claim under Inpatient Hospitalization Treatment."
+  },
+  {
+   "id": "3",
+   "title": "",
+   "page": 5,
+   "text": "3. Post-Hospitalization The Medical Expenses incurred during the 90 days immediately after You were discharged post Hospitalization provided that: Such costs are incurred in respect of the same illness/injury for which the earlier Hospitalization was required, and We have accepted an inpatient Hospitalization claim under Inpatient Hospitalization Treatment."
+  },
+  {
+   "id": "4",
+   "title": "",
+   "page": 5,
+   "text": "4. Road Ambulance We will pay the reasonable cost to a maximum of Rs. 20,000/- per Policy Year incurred on an ambulance offered by a healthcare or ambulance service provider for transferring You to the nearest Hospital with adequate emergency facilities for the provision of health services following an Emergency. We will also reimburse the expenses incurred on an ambulance offered by a healthcare or ambulance service provider for transferring You from the Hospital where You were admitted initially to another hospital with higher medical facilities. Claim under this section shall be payable by Us only when: i. Such life threatening emergency condition is certified by the Medical Practitioner, and ii. We have accepted Your Claim under “In-patient Hospitalization Treatment” or “Day Care Procedures” section of the Policy. Subject otherwise to the terms, conditions and exclusions of the Policy."
+  },
+  {
+   "id": "C5.11",
+   "title": "",
+   "page": 5,
+   "text": "This benefit will be applicable each year for policies with term more than 1 year."
+  },
+  {
+   "id": "5",
+   "title": "",
+   "page": 5,
+   "text": "5. Day Care Procedures We will pay You the medical expenses as listed above under In-patient Hospitalization Treatment for Day care procedures / Surgeries taken as an inpatient in a hospital or day care center but not in the outpatient department. Refer Annexure I of Policy Wordings for list of Day Care Procedures."
+  },
+  {
+   "id": "6",
+   "title": "",
+   "page": 5,
+   "text": "6. Organ Donor Expenses: We will pay expenses towards organ donor’s treatment for harvesting of the donated organ, provided that,"
+  },
+  {
+   "id": "1#2",
+   "title": "",
+   "page": 5,
+   "text": "1. The organ donor is any person whose organ has been made available in accordance and in compliance with THE TRANSPLANTATION OF HUMAN ORGANS (AMENDMENT) BILL, 2011and the organ donated is for the use of the Insured, and"
+  },
+  {
+   "id": "2#2",
+   "title": "",
+   "page": 5,
+   "text": "2. We have accepted an inpatient Hospitalization claim for the Insured under In Patient Hospitalization Treatment."
+  },
+  {
+   "id": "7",
+   "title": "",
+   "page": 5,
+   "text": "7. Convalescence Benefit: In the event of Insured Hospitalized for a disease/illness/injury for a continuous period exceeding 10 days, We will pay benefit amount as per the plan opted subject to below limits. a) Silver Plan Rs. 5,000 per Policy Year b) Gold and Platinum Plan • Rs. 5,000 for Sum Insured up to Rs. 5 lacs • Rs. 7,500 for Sum Insured 7.5 lacs and above per Policy Year. This benefit will be triggered provided that the hospitalization claim is accepted under In Patient Hospitalization Treatment. Payment under this benefit will not reduce the base sum insured mentioned in policy Schedule. This benefit will be applicable each year for policies with term more than 1 year."
+  },
+  {
+   "id": "C6.17",
+   "title": "",
+   "page": 6,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 6"
+  },
+  {
+   "id": "8",
+   "title": "",
+   "page": 6,
+   "text": "8. Daily Cash Benefit for Accompanying an Insured Child We will pay Daily Cash Benefit of Rs. 500 per day maximum up to 10 days during each Policy Year for reasonable accommodation expenses in respect of one parent/legal guardian, to stay with any minor Insured (under the Age of 12), provided the hospitalization claim is paid under Inpatient Hospitalization Treatment. Payment under this benefit will not reduce the base sum insured mentioned in policy Schedule. This benefit will be applicable each year for policies with term more than 1 year."
+  },
+  {
+   "id": "9",
+   "title": "",
+   "page": 6,
+   "text": "9. Sum Insured Reinstatement Benefit: If Inpatient Hospitalization Treatment Sum Insured and Cumulative Bonus or Super Cumulative Bonus (if any) is exhausted due to claims registered and paid during the Policy Year, then it is agreed that 100% of the Base Sum Insured specified under Inpatient Hospitalization Treatment would be reinstated for the particular Policy Year provided that: i. The reinstated Sum Insured will be triggered only after the Inpatient Hospitalization Treatment Sum Insured inclusive of the Cumulative Bonus or Super Cumulative Bonus (If applicable) has been completely exhausted during the Policy Year; ii. \u0007The reinstated Sum Insured can be used for claims made by the Insured in respect of the benefits stated in Inpatient Hospitalization Treatment. iii. If the claimed amount is higher than the Balance Sum Insured inclusive of the Cumulative Bonus or Super Cumulative Bonus (If applicable) under the policy, then this benefit will not be triggered for the same claim, however Sum Insured reinstatement would be triggered for subsequent claims for the same member or other insured members. iv. This benefit is applicable only once during each Policy Year and will not be carried forward to the subsequent Policy Year/ renewals if the benefit is not utilized. v. This benefit is applicable only once in life time of Insured covered under this Policy for claims regarding CANCER and KIDNEY FAILURE REQUIRING REGULAR DIALYSIS as defined under the Policy, however the insured member is eligible for re-instatement benefit every year for other admissible conditions. vi. This benefit will be applicable each year for long term policies. vii. Additional premium would not be charged for reinstatement of the Sum Insured. viii. In case of Family Floater Policy, Reinstatement of Sum Insured will be available for all Insured Persons in the Policy. Understanding Sum Insured Reinstatement made easy- Sum Insured at the beginning of the year Accumulated Cumulative Bonus Sum Insured with CB Hospitaliza- tion Amount Reinstat- ed Sum Insured Payable Claim Amount Balance Sum Insured 1st Claim 300,000 10% 330,000 350,000 0 330,000 0 2nd Claim - - - 200,000 300,000 200,000 100,000 3rd Claim - - - 200,000 0 100,000 0"
+  },
+  {
+   "id": "10",
+   "title": "",
+   "page": 6,
+   "text": "10. Preventive Health Check Up At the end of block of every continuous period as mentioned in coverage during which You have held Our Health Guard Policy, You are eligible for a free Preventive Health checkup. We will reimburse the amount as per the plan opted, subject to below limits • Silver Plan 1% of the Sum Insured maximum up to Rs. 2000/- for each Insured in Individual Policy during the block of 3 years • Gold Plan 1% of the Sum Insured max up to Rs. 5000/- for each Insured in Individual Policy during the block of 3 years. • Platinum Plan 1% of the Sum Insured max up to Rs. 5000/- for each Insured in Individual Policy during the block of 2 years. This benefit can be availed by proposer & spouse only under Floater Sum Insured Policies. You may approach Us for the arrangement of the Health Check up. For the avoidance of doubt, We shall not be liable for any other ancillary or peripheral costs or expenses (including but not limited to those for transportation, accommodation or sustenance). Contact Email id- healthcheck@bajajallianz.co.in. Note: Payment under this benefit will not reduce the base sum insured mentioned in policy Schedule."
+  },
+  {
+   "id": "C7.21",
+   "title": "",
+   "page": 7,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 7"
+  },
+  {
+   "id": "11",
+   "title": "",
+   "page": 7,
+   "text": "11. Bariatric Surgery Cover If You are hospitalized on the advice of a Medical practitioner because of Conditions mentioned below which required You to undergo Bariatric Surgery during the Policy Period, then We will pay You, Reasonable and Customary Expenses related to Bariatric Surgery Eligibility: For adults aged 18 years or older, presence of severe documented in contemporaneous clinical records, defined as any of the following: Body Mass Index (BMI); a) greater than or equal to 40 or b) greater than or equal to 35 in conjunction with any of the following severe co-morbidities following failure of less invasive methods of weight loss: i. Obesity-related cardiomyopathy ii. Coronary heart disease iii. Severe Sleep Apnea v. Uncontrolled Type 2 Diabetes Special Conditions applicable to Bariatric Surgery Cover a. This benefit is subject to a waiting period of 36 months from the date of commencement of the first Health Guard Policy with Us and continuous renewal thereof with the Company. b. Fresh waiting period of 36 months would apply for all the policies issued with continuity from other Health Indemnity product/plans of Our Company where Bariatric Surgery is not covered. c. Fresh waiting period of 36 months would apply for all the policies issued with continuity under portability guidelines from any other Non-Health or Standalone Health Insurance Company where Bariatric Surgery is not covered. d. If the Insured is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to the extent of prior coverage where Insured is having policy with Bariatric Surgery Cover. e. Our maximum liability will be restricted to i. 25% of Sum Insured in Silver Plan ii. 50% of Sum Insured maximum up to Rs. 5lac in Gold and Platinum Plan. f. Bariatric surgery performed for Cosmetic reasons is excluded. g. The indication for the procedure should be found appropriate by two qualified surgeons and the Insured shall obtain prior approval for cashless treatment from the Company."
+  },
+  {
+   "id": "12",
+   "title": "",
+   "page": 7,
+   "text": "12. Wellness Benefits At each renewal of Health Guard Policy with Us, You will be entitled for a wellness discount subject to below mentioned criteria being fulfilled by You during the preceding Policy Year. The below mentioned criteria should be fulfilled each year in case of long term policies. Sr. No Health Parameter Reading 1 Health Risk Assessment Complete the online health risk assessment 2 HbA1c (%) Up to 6.5% 3 Fasting Blood Sugar Up to 120 mg/dl 4 Blood Pressure (mm of Hg) Systolic Diastolic Up to 140 Up to 90 5 Body Mass Index (BMI)"
+  },
+  {
+   "id": "18",
+   "title": "– 25",
+   "page": 7,
+   "text": "18 – 25 6 Serum Cholesterol 200mg/dl 7 Steps Count 5,000 steps daily – 20 days every month 8 Hemoglobin Male-13-18g/dL Female- 11-15g/dL"
+  },
+  {
+   "id": "C8.25",
+   "title": "",
+   "page": 8,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 8 Parameters Achieved Discount Offered 4/5 out of 8 5% 6/7 out of 8"
+  },
+  {
+   "id": "8#2",
+   "title": "out of 8",
+   "page": 8,
+   "text": "8 out of 8 10% Wellness Eligibility Criteria:"
+  },
+  {
+   "id": "1#3",
+   "title": "",
+   "page": 8,
+   "text": "1. Wellness discount is applicable for members age 25 years and above"
+  },
+  {
+   "id": "2#3",
+   "title": "",
+   "page": 8,
+   "text": "2. If the insured member meets 4 out of 8 criteria, he/she is eligible for 5% discount, 6 out of 8 criteria he /she is eligible for 7.5% discount & meets with 8 criteria he / she is eligible for 10% discount."
+  },
+  {
+   "id": "3#2",
+   "title": "",
+   "page": 8,
+   "text": "3. If an Insured meets 8 out of 8 above mentioned parameters and in addition he/she walks for 10000 steps for 20 days every month then they will be eligible for additional discount of 2.5%."
+  },
+  {
+   "id": "4#2",
+   "title": "",
+   "page": 8,
+   "text": "4. In Floater Policies, discount will be offered basis the average of number of Parameters Achieved by all Insured members of age 25 years & above. Discount under Floater Policy = Total no. of parameters achieved by eligible members Total no. of eligible members in the family In addition to the above parameters, if the eligible members walk for 10000 steps each for 20 days every month then they will be eligible for additional discount of 2.5%"
+  },
+  {
+   "id": "13",
+   "title": "",
+   "page": 8,
+   "text": "13. AYUSH Hospitalization Expenses If You are Hospitalized for not less than 24 hrs, in an AYUSH Hospital which is a government hospital or in any institute recognized by government and/or accredited by Quality Council of India/National Accreditation Board on Health on the advice of a Medical practitioner because of Illness or Accidental Bodily Injury sustained or contracted during the Policy Period then We will pay You: In-patient Treatment- Medical Expenses for AYUSH treatment: • Room rent, boarding expenses • Nursing care • Consultation fees • Medicines, drugs and Medical consumables, • AYUSH treatment procedures Our maximum liability is up to the limit of Sum Insured as specified in the Policy Schedule in any AYUSH Hospital This benefit will be applicable each year for policies with term more than 1 year. The claim will be admissible under the Policy provided that,"
+  },
+  {
+   "id": "(i)",
+   "title": "",
+   "page": 8,
+   "text": "(i) \u0007The illness/injury requires inpatient admission and the procedure performed on the Insured cannot be carried out on out- patient basis"
+  },
+  {
+   "id": "14",
+   "title": "",
+   "page": 8,
+   "text": "14. Maternity Expenses (Applicable for Gold and Platinum Plan only) We will pay the Medical Expenses for the delivery of a baby (including caesarean section) and/or expenses related to medically recommended and lawful termination of pregnancy, limited to maximum 2 deliveries or termination(s) or either, a. Our maximum liability per delivery or termination shall be limited to the amount specified in the Policy Schedule as per Sum Insured opted. b. \u0007We will pay the Medical Expenses of pre-natal and post-natal hospitalization (90 days post-delivery) per delivery or termination up to the maternity limit. c. Waiting period of 72 months as mentioned in the Policy Schedule would apply from the date of issuance of the first Health Guard Policy with Us, d. If the Insured is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to the extent of prior coverage where Insured is having policy with Maternity Expense benefit. e. Fresh Waiting period of 72 months as mentioned in the Policy Schedule would apply for all the policies issued with continuity from other Health Indemnity product/plans of Our Company where maternity expenses are not covered."
+  },
+  {
+   "id": "C9.34",
+   "title": "",
+   "page": 9,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 9 f. Any complications arising, within 90 days post-delivery, out of or as a consequence of maternity/child birth will be covered up to the maternity limit. g. Payment under this benefit will not reduce the base sum insured mentioned in policy Schedule."
+  },
+  {
+   "id": "15",
+   "title": "",
+   "page": 9,
+   "text": "15. New Born Baby Cover (Applicable for Gold and Platinum Plan only) Coverage for new born baby will be considered subject to a claim being accepted under Maternity Expenses. We will pay the following expenses within the limit of the Sum Insured available under the Maternity Expenses section. We will pay for, a. Medical Expenses towards treatment of Your new born baby while You are Hospitalized as an inpatient for delivery for the Hospitalization, b. Hospitalization charges incurred on the new born baby during post birth including any complications shall be covered up to a period of 90 days from the date of birth and within limit of the Sum Insured under Maternity Expenses without payment of any additional premium c. Mandatory Vaccinations of the new born baby up to 90 days, as recommended by the Indian Pediatric Association will be covered under the Maternity Expenses Sum Insured. COVERS APPLICABLE FOR PLATINUM PLAN ONLY"
+  },
+  {
+   "id": "16",
+   "title": "",
+   "page": 9,
+   "text": "16. Super Cumulative Bonus This benefit would be extended if You renew Your “Health Guard” with Us without any break and there has been no claim in the preceding year, i. We will increase the Limit of Indemnity by 50% of base Sum Insured per annum for first 2 years and later 10% of base Sum Insured per annum for next 5 years. ii. Maximum bonus will not exceed 150% of the Hospitalization Sum Insured iii. If a claim is made in any year where a Super Cumulative Bonus has been applied, then the increased Limit of Indemnity in the Policy Period of the subsequent “Health Guard” shall be reduced to previous slab. However the Sum Insured would not be decreased. iv. In case of any increase or decrease of Sum Insured at renewal the Super Cumulative Bonus % would be calculated on the lesser Sum Insured. Claim free Year Year 1 Year 2 Year 3 Year 4 Year 5 Year 6 Year 7 % Increase in Limit of Indemnity 50% 50% 10% 10% 10% 10% 10%"
+  },
+  {
+   "id": "17",
+   "title": "",
+   "page": 9,
+   "text": "17. Recharge Benefit i. \u0007In event of claim amount exceeding the limit of indemnity, Sum Insured would be increased by 20% maximum up to 5 Lacs. SUM INSURED LIMIT (INR)"
+  },
+  {
+   "id": "5#2",
+   "title": "Lacs",
+   "page": 9,
+   "text": "5 Lacs ii. In case of Individual Sum Insured policies, this benefit will be applicable once in a policy year for each insured member. iii. For a Floater policy, this benefit will be applicable cumulatively to all insured members, once in a policy year iv. The unutilized Recharge amount cannot be carried forward to the subsequent renewal."
+  },
+  {
+   "id": "C10.39",
+   "title": "",
+   "page": 10,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 10 ◼ OPTIONAL COVERS"
+  },
+  {
+   "id": "1#4",
+   "title": "",
+   "page": 10,
+   "text": "1. Air Ambulance (Optional available for SI 5Lacs and above) In consideration of payment of additional premium by the Proposer to the Company and realization thereof by the Company,, We will indemnify You against the expenses incurred for rapid ambulance transportation in an airplane or helicopter from the site of first occurrence of the Illness / Accident to the nearest hospital during Policy Period necessitated due to emergency life threatening health conditions provided such hospitalization claim is admissible under “Health Guard” Policy. The claim would be reimbursed up to the actual expenses subject to a maximum Sum Insured limits as specified under the Air Ambulance Cover in the Policy Schedule, subject otherwise to all other terms, conditions and Exclusions of the Policy. Specific Conditions applicable to Air Ambulance Cover a. Return transportation to the Insured Person’s home by air ambulance is excluded. b. \u0007Such air ambulance should have valid license to operate as such by competent authorities of the Government/s. Air Ambulance Cover Sub limit options SI 5L"
+  },
+  {
+   "id": "7#2",
+   "title": "5L",
+   "page": 10,
+   "text": "7.5L 10L 15L 20L 25L 30L 35L 40L 45L 50L 75L 1Cr AA limit 5L 5L/10L/15 L/20 L/25L 5L/10L/15 L/20 L/25L/50 L"
+  },
+  {
+   "id": "2#4",
+   "title": "",
+   "page": 10,
+   "text": "2. Voluntary Aggregate Deductible We shall pay Reasonable & Customary Medical Expenses in respect of an admissible Hospitalization claim in excess of the Annual Aggregate Deductible limit of ` 50,000 / `100000 / ` 200000 / ` 300000, as opted by You , subject to the ”In-patient Hospitalization Treatment” section Sum Insured, terms, conditions and definitions, exclusions contained or otherwise. The deductible is applicable in aggregate towards all claims falling under ”In-patient Hospitalization Treatment” Sum Insured incurred during the policy period. This Deductible will not be applied on the claim admissible under Maternity and New Born Baby Cover ◼ Is there any pre-policy check-up for enrolling under Health Guard policy? • Applicable only for new proposals. • No Medical tests up to 45 years, subject to no adverse health conditions • Medical tests would be advised for the below adverse health conditions: o Diabetes o Hypertension o Lipid Disorders o Combination of any of the above o Obesity o Joint Disorders • \u0007Tests may be advised for other health conditions, based on the severity of disease, clinical condition of the member, treatment taken and investigation reports for the condition • Medical tests (pre-policy check-up) are mandatory for members above 45years. • The pre-policy check-up would be arranged at our empanelled diagnostic centers. •"
+  },
+  {
+   "id": "100",
+   "title": "% cost of pre-policy check-up would be refunded if the proposal is accepted & policy is issued.",
+   "page": 10,
+   "text": "100 % cost of pre-policy check-up would be refunded if the proposal is accepted & policy is issued. Age of the person to be insured Sum Insured Medical Examination Up to 45 years All Sum Insured options No Medical Tests* Above 45 years All Sum Insured options Full Medical Report, ECG with reporting, FBG, CBC WITH ESR , Cholesterol, HDL Cholesterol, Triglycer- ides, Creatinine, GGTP, SGOT, SGPT, HbA1c, Urinaly- sis, Total Protein, Sr. Albumin, Sr. Globulin, A:G Ratio *Subject to no adverse health conditions"
+  },
+  {
+   "id": "C11.44",
+   "title": "",
+   "page": 11,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 11 ◼ What are the Sub-limits under the Base Sum Insured? For Health Guard – Silver Plan Annual Policy Benefit/Procedure Sub-limit Per day Room rent- Normal Up to 1% of Sum Insured Cataract surgery Up to 20% of Sum Insured for each eye Road ambulance Up to INR 20,000/- per policy year Bariatric surgery Up to 25% of Sum insured For Health Guard – Gold and Platinum Plan Annual Policy Benefits/Procedures Sub-limit Per day Room rent- Normal Single private Air Conditioned room for SI 3 Lacs to 7.5 Lacs Cataract surgery 20% of Sum Insured for each eye up to maximum INR 1 Lac Road ambulance Up to INR 20,000/- per policy year Bariatric surgery Up to 50% of Sum insured maximum up to INR 5 Lacs Maternity Expenses I. For Sum Insured 3 lacs up to 7.5 lacs the limit for Normal delivery is 15000 INR & 25000 INR for caesarian delivery II. For Sum Insured 10 lacs and above the limit for Normal deliv- ery is 25000 INR & 35000 INR for caesarian delivery * ICD specific for Mental Illness specified in Separate Annexure in the Policy Wordings ◼ What additional benefits do I get? • Cumulative bonus for Silver and Gold Plan If You renew Your “ Health Guard” with Us without any break and there has been no claim in the preceding year, We will increase the Limit of Indemnity by 10% of base Sum Insured per annum, but: • The maximum cumulative increase in the Limit of Indemnity for Silver and Gold will be limited to 10 years and 100% of base Sum Insured of Your first “Health Guard” with Us. • This clause does not alter the annual character of this insurance • If a claim is made in any year where a cumulative increase has been applied, then the increased Limit of Indemnity in the Policy Period of the subsequent “Health Guard” shall be reduced by 10%, save that the limit of indemnity applicable to Your first “ Health Guard” with Us shall be preserved. ◼ Premium Payment in Instalments (Wherever applicable) If the insured person has opted for Payment of Premium on an instalment basis i.e. Annual (for long term polices only), Half Yearly, Quarterly or Monthly, as mentioned in the policy Schedule/Certificate of Insurance, the following Conditions shall apply (notwithstanding any terms contrary elsewhere in the policy) i) The grace period for payment of the premium for all types of insurance policies shall be: fifteen days where premium payment mode is monthly and thirty days in all other cases. ii) During such grace period, coverage will not be available from the due date of instalment premium till the date of receipt of premium by Company. iii) The insured person will get the accrued continuity benefit in respect of the “Waiting Periods”, “Specific Waiting Periods” in the event of payment of premium within the stipulated grace Period. iv) No interest will be charged if the instalment premium is not paid on due date. v) In case of instalment premium due not received within the grace period, the policy will get cancelled. vi) In the event of a claim, all subsequent premium instalments shall immediately become due and payable. vii) The company has the right to recover and deduct all the pending installments from the claim amount due under the policy."
+  },
+  {
+   "id": "C12.45",
+   "title": "",
+   "page": 12,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 12 ◼ Renewal of the policy The policy shall ordinarily be renewable except on misrepresentation by the insured person, grounds of fraud, misrepresentation by the insured person. i) The Company shall endeavor to give notice for renewal. However, the Company is not under obligation to give any notice for renewal. ii) Renewal shall not be denied on the ground that the insured person had made a claim or claims in the preceding policy years. iii) Request for renewal along with requisite premium shall be received by the Company before the end of the policy period. iv) At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. v) No loading shall apply on renewals based on individual claims experience ◼ Cancellation (A) Cancellation by the Policyholder The Policyholder can cancel this Policy by providing a written notice of 7 days. In such a case, the Company will refund the premium for the unexpired policy period as detailed below:"
+  },
+  {
+   "id": "1#5",
+   "title": "Cancellation of policy where full premium received at policy inception -",
+   "page": 12,
+   "text": "1. Cancellation of policy where full premium received at policy inception - • Annual Policy: The premium refund for the unexpired risk period will be on a pro-rata basis, provided no claim has been made during the policy year. • Multi-year Policy: oFor any policy year where the risk date has not yet started, the premium will be refunded without any deduction. oFor any policy year where the risk has started, the premium will be refunded on a pro-rata basis for that policy year, provided no claim has been made during the policy year and in full for future policy years."
+  },
+  {
+   "id": "2#5",
+   "title": "Cancellation of policy where Premium Received on Instalment Basis",
+   "page": 12,
+   "text": "2. Cancellation of policy where Premium Received on Instalment Basis The premium refund for the unexpired risk period will be on a pro-rata basis, provided no claim has been made during the policy year. (B) Additional Deductions - Notwithstanding the above, if (i) the risk under the Policy has already commenced, or (ii) only a part of the insurance coverage has commenced, and the option of Policy cancellation is exercised by the Policyholder, then expenses incurred by the Company on medical examination of the Policyholder will also be deducted before refunding of premium. (C) Cancellation by the Company The Company may cancel the Policy at any time on the grounds of misrepresentation, non-disclosure of material facts, or fraud by the Policyholder/insured person, by providing 15 days’ written notice. There will be no refund of premium for cancellations on these grounds. ◼ When can I enhance my Sum Insured? • Sum Insured enhancement will be allowed only at the time of renewals. • Sum Insured enhancement would be subject to the underwriting approval based on the declaration on the proposal form and No claim in the expiring policies. In case of a claim, referral to be made to Underwriting Medical Practitioners for further advise. ◼ Free Look Period The Free Look Period shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/ migrating the policy. The insured person shall be allowed free look period of thirty days from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable. lf the insured has not made any claim during the Free Look Period, the insured shall be entitled to i) a refund of the premium paid less any expenses incurred by the Company on medical examination of the insured person and the stamp duty charges or ii) where the risk has already commenced and the option of return of the policy is exercised by the insured person, a deduction towards the proportionate risk premium for period of cover or iii) \u0007Where only a part of the insurance coverage has commenced, such proportionate premium commensurate with the insurance coverage during such period"
+  },
+  {
+   "id": "C13.48",
+   "title": "",
+   "page": 13,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 13 ◼ Portability Conditions The Insured beneficiary will have the option to port the policy to other insurers by applying to such insurer to port the entire policy along with all the members of the family, if any, at least 45 days before, but not earlier than 60 days from the policy renewal date as per IRDAI guidelines related to portability. If such person is presently covered and has been continuously covered without any lapses under any health insurance policy with an Indian General/Health insurer, the proposed Insured beneficiary will get the accrued continuity benefits in waiting periods as per IRDAI guidelines on portability. For Detailed Guidelines on portability, kindly refer the link https://www.irdai.gov.in/ADMINCMS/cms/Circulars_List.aspx?mid=3.2.3 ◼ Possibility of Revision of Terms of the Policy lncluding the Premium Rates"
+  },
+  {
+   "id": "C13.49",
+   "title": "",
+   "page": 13,
+   "text": "The Company, with prior approval of lRDAl, may revise or modify the terms of the policy including the premium rates. The insured person shall be notified three months before the changes are effected. ◼ Migration of policy: The Insured beneficiary will have the option to migrate the policy to other health insurance products/plans offered by the company by applying for migration of the policy atleast 30 days before the policy renewal date as per IRDAI guidelines on Migration. If such person is presently covered and has been continuously covered without any lapses under any health insurance product/plan offered by the company, the Insured beneficiary will get the accrued continuity benefits in waiting periods as per IRDAI guidelines on migration. For Detailed Guidelines on migration, kindly refer the link https://www.irdai.gov.in/ADMINCMS/cms/Circulars_List.aspx?mid=3.2.3 ◼ Withdrawal of Policy i) ln the likelihood of this product being withdrawn in future, the Company will intimate the insured person about the same"
+  },
+  {
+   "id": "90",
+   "title": "days prior to expiry of the policy.",
+   "page": 13,
+   "text": "90 days prior to expiry of the policy. ii) lnsured Person will have the option to migrate to similar health insurance product available with the Company at the time of renewal with all the accrued continuity benefits such as cumulative bonus, waiver of waiting period as per IRDAI guidelines, provided the policy has been maintained without a break. ◼ Discounts: i. \u0007Family Discount: 10% family discount shall be offered if 2 eligible Family Members are covered under a single Policy and 15 % if more than 2 of any of the eligible Family Members are covered under a single Policy. Moreover, this family discount will be offered for both new policies as well as for renewal policies. Family discount is not applicable to Health Guard Floater Policies. ii. \u0007Employee Discount: 20% discount on published premium rates to employees of Bajaj Allianz & its group companies, this discount is applicable only if the Policy is booked in direct office code. iii. \u0007Online/Direct Business Discount: Discount of 5% will be offered in this product for policies underwritten through direct/online channel."
+  },
+  {
+   "id": "C13.51",
+   "title": "",
+   "page": 13,
+   "text": "Note: this discount is not applicable for Employees who get employee discount iv. Co-pay Discount: a. \u0007If opted voluntarily and mentioned on the Policy Schedule that a Co-payment is effective by the Insured then Insured will be eligible of additional 10% or 20% discount on the Policy premium. b. \u0007If a claim has been admitted under In-patient Hospitalization Treatment then, the Insured shall bear 10% or 20% respectively of the eligible claim amount payable under this section and Our liability, if any, shall only be in excess of that sum and would be subject to the Sum Insured. v. Long Term Policy Discount: a."
+  },
+  {
+   "id": "4#3",
+   "title": "% discount is applicable if Policy is opted for 2 years",
+   "page": 13,
+   "text": "4 % discount is applicable if Policy is opted for 2 years b."
+  },
+  {
+   "id": "8#3",
+   "title": "% discount is applicable if Policy is opted for 3 years",
+   "page": 13,
+   "text": "8 % discount is applicable if Policy is opted for 3 years Note: This will not apply to policies where premium is paid in instalments."
+  },
+  {
+   "id": "C14.54",
+   "title": "",
+   "page": 14,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 14 vi. Room Rent capping discount: \u0007If You opt for this cover You will be entitled for a per day room rent limit of 1.5% of hospitalization Sum Insured up to maximum Rs. 7,500 per day. By opting for this cover You will be eligible for discount on premium as per below grid- Base SI Gold Plan Platinum Plan 300,000 and above 5% 8% Note: a. The room rent does not include nursing charges. b. \u0007If the availed room category is higher than the eligible room category or if the room rent opted exceeds the eligible room rent then, a proportionate co-payment would be applied on all the expenses of the hospitalization except for cost of Medical consumables and Medicines. vii. Wellness Discount \u0007As detailed in Wellness Benefit, depending on number of parameters met by insured during a policy year discount will be offered on subsequent renewal premium. Parameters Achieved Discount"
+  },
+  {
+   "id": "8#4",
+   "title": "out of 8",
+   "page": 14,
+   "text": "8 out of 8 10% \u0007If the eligible members walk for 10000 steps each for 20 days every month then they will be eligible for additional discount of 2.5% viii. Zone Discount a. If You opt for coverage under Zone B, then You will be eligible for 20% discount on the premium b. If You opt for coverage under Zone C, then You will be eligible for 30% discount on the premium ◼ What are the exclusions under the policy? I. Waiting Period (Applicable for Silver, Gold and Platinum Plan)"
+  },
+  {
+   "id": "1#6",
+   "title": "",
+   "page": 14,
+   "text": "1. Pre-existing Diseases waiting period (Excl01) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first Health Guard Policy with us. b) In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase. c) If the Insured is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to the extent of prior coverage. d) Coverage under the Policy after the expiry of 36 months for any pre-existing disease is subject to the same being declared at the time of application and accepted by Us."
+  },
+  {
+   "id": "2#6",
+   "title": "",
+   "page": 14,
+   "text": "2. Specified disease/procedure waiting period (Excl02) a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first Health Guard Policy with Us. This exclusion shall not be applicable for claims arising due to an accident. b) In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase. c) If any of the specified disease/procedure falls under the waiting period specified for Pre-Existing diseases, then the longer of the two waiting periods shall apply. d) The waiting period for listed conditions shall apply even if contracted after the Policy or declared and accepted without a specific exclusion. e) If the Insured is continuously covered without any break as defined under the applicable norms on portability stipulated by IRDAI, then waiting period for the same would be reduced to the extent of prior coverage."
+  },
+  {
+   "id": "C15.58",
+   "title": "",
+   "page": 15,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 15 f) List of specific diseases/procedures is as below"
+  },
+  {
+   "id": "16#2",
+   "title": "Stones in the urinary and biliary systems",
+   "page": 15,
+   "text": "16. Stones in the urinary and biliary systems"
+  },
+  {
+   "id": "17#2",
+   "title": "Surgery on ears/tonsils/ adenoids/ paranasal",
+   "page": 15,
+   "text": "17. Surgery on ears/tonsils/ adenoids/ paranasal sinuses"
+  },
+  {
+   "id": "18#2",
+   "title": "Surgery on all internal or external tumours/cysts/ nodules/polyps of any",
+   "page": 15,
+   "text": "18. Surgery on all internal or external tumours/cysts/ nodules/polyps of any kind including breast lumps with exception of Malignant tumor or growth."
+  },
+  {
+   "id": "20",
+   "title": "Diseases of gall bladder including cholecystitis",
+   "page": 15,
+   "text": "20. Diseases of gall bladder including cholecystitis"
+  },
+  {
+   "id": "25",
+   "title": "Surgery for varicose veins and varicose ulcers",
+   "page": 15,
+   "text": "25. Surgery for varicose veins and varicose ulcers"
+  },
+  {
+   "id": "3#3",
+   "title": "",
+   "page": 15,
+   "text": "3. Any Medical Expenses incurred during the first three consecutive annual periods during which You have the benefit of a Health Guard Policy with Us in connection with: a) Joint replacement surgery, b) Surgery for vertebral column disorders (unless necessitated due to an accident) c) Surgery to correct deviated nasal septum d) Hypertrophied turbinate e) Congenital internal diseases or anomalies f) Treatment for correction of eye sight due to refractive error recommended by Ophthalmologist for medical reasons with refractive error greater or equal to 7.5 g) Bariatric Surgery h) Parkinson’s Disease i) Genetic disorders"
+  },
+  {
+   "id": "30",
+   "title": "day waiting period (Excl03)",
+   "page": 15,
+   "text": "30-day waiting period (Excl03) a) Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b) This exclusion shall not, however, apply if the Insured has Continuous Coverage for more than twelve months. c) The within referred waiting period is made applicable to the enhanced Sum Insured in the event of granting higher Sum Insured subsequently. II. Waiting Period for Maternity Expenses (Applicable only for Gold and Platinum Plan) Any treatment arising from or traceable to pregnancy, child birth including cesarean section and/or any treatment related to pre and postnatal care and complications arising out of Pregnancy and Childbirth until 72 months continuous period has elapsed since the inception of the first Health Guard Policy with US. However this exclusion will not apply to Ectopic Pregnancy proved by diagnostic means and certified to be life threatening by the attending medical practitioner. III. General Exclusions (Applicable for SilverPlan)"
+  },
+  {
+   "id": "1#7",
+   "title": "",
+   "page": 15,
+   "text": "1. Maternity ( Excl 18) a. Medical Treatment Expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy. b. Expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period."
+  },
+  {
+   "id": "2#7",
+   "title": "",
+   "page": 15,
+   "text": "2. Treatment for any other system other than modern medicine (allopathy)"
+  },
+  {
+   "id": "C16.68",
+   "title": "",
+   "page": 16,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 16 IV. General Exclusions (Applicable for Silver, Gold and Platinum Plan)"
+  },
+  {
+   "id": "1#8",
+   "title": "",
+   "page": 16,
+   "text": "1. Any dental treatment that comprises of cosmetic surgery, dentures, dental prosthesis, dental implants, orthodontics, surgery of any kind unless as a result of Accidental Bodily Injury to natural teeth and also requiring hospitalization."
+  },
+  {
+   "id": "2#8",
+   "title": "",
+   "page": 16,
+   "text": "2. Medical expenses where Inpatient care is not warranted and does not require supervision of qualified nursing staff and qualified medical practitioner round the clock."
+  },
+  {
+   "id": "3#4",
+   "title": "",
+   "page": 16,
+   "text": "3. War, invasion, acts of foreign enemies, hostilities (whether war be declared or not), civil war, commotion, unrest, rebellion, revolution, insurrection, military or usurped power or confiscation or nationalization or requisition of or damage by or under the order of any government or public local authority. Any Medical expenses incurred due to Act of Terrorism will be covered under the Policy."
+  },
+  {
+   "id": "4#4",
+   "title": "",
+   "page": 16,
+   "text": "4. Investigation & Evaluation (Excl04) a) Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded . b) Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment are excluded."
+  },
+  {
+   "id": "5#3",
+   "title": "",
+   "page": 16,
+   "text": "5. Rest Cure, rehabilitation and respite care (Excl05) a) Expenses related to any admission primarily for enforced bed rest and not for receiving treatment. This also includes: i. \u0007Custodial care either at home or in a nursing facility for personal care such as help with activities of daily living such as bathing, dressing, moving around either by skilled nurses or assistant or non-skilled persons. ii. \u0007 \u0007Any services for people who are terminally ill to address medical, physical, social, emotional and spiritual needs."
+  },
+  {
+   "id": "6#2",
+   "title": "",
+   "page": 16,
+   "text": "6. Obesity/Weight Control (Excl06) Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions:"
+  },
+  {
+   "id": "1#9",
+   "title": "",
+   "page": 16,
+   "text": "1) Surgery to be conducted is upon the advice of the Doctor"
+  },
+  {
+   "id": "2#9",
+   "title": "",
+   "page": 16,
+   "text": "2) The surgery/Procedure conducted should be supported by clinical protocols"
+  },
+  {
+   "id": "3#5",
+   "title": "",
+   "page": 16,
+   "text": "3) The member has to be 18 years of age or older and"
+  },
+  {
+   "id": "4#5",
+   "title": "",
+   "page": 16,
+   "text": "4) Body Mass Index (BMI); a) greater than or equal to 40 or b) \u0007greater than or equal to 35 in conjunction with any of the following severe co-morbidities following failure of less invasive methods of weight loss: i. Obesity-related cardiomyopathy ii. Coronary heart disease iii. Severe Sleep Apnea iv. Uncontrolled Type2 Diabetes"
+  },
+  {
+   "id": "7#3",
+   "title": "",
+   "page": 16,
+   "text": "7. Change-of-gender treatments (Excl07) Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex."
+  },
+  {
+   "id": "8#5",
+   "title": "",
+   "page": 16,
+   "text": "8. Cosmetic or plastic Surgery (Excl08) Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured. For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner."
+  },
+  {
+   "id": "9#2",
+   "title": "",
+   "page": 16,
+   "text": "9. The cost of spectacles, contact lenses, hearing aids, crutches, artificial limbs, dentures, artificial teeth and all other external appliances and/or devices whether for diagnosis or treatment except for intrinsic fixtures used for orthopedic treatments such as plates and K-wires."
+  },
+  {
+   "id": "C17.82",
+   "title": "",
+   "page": 17,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 17"
+  },
+  {
+   "id": "10#2",
+   "title": "",
+   "page": 17,
+   "text": "10. Breach of law (Excl10) Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent."
+  },
+  {
+   "id": "11#2",
+   "title": "",
+   "page": 17,
+   "text": "11. Excluded Providers (Excl11) Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed in its website / notified to the policyholders are not admissible. However, in case of life threatening situations or following an accident, expenses up to the stage of stabilization are payable but not the complete claim."
+  },
+  {
+   "id": "12#2",
+   "title": "",
+   "page": 17,
+   "text": "12. Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof. (Excl12)"
+  },
+  {
+   "id": "13#2",
+   "title": "",
+   "page": 17,
+   "text": "13. \u0007Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons. (Excl13)"
+  },
+  {
+   "id": "14#2",
+   "title": "",
+   "page": 17,
+   "text": "14. Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day care procedure. (Excl14)"
+  },
+  {
+   "id": "15#2",
+   "title": "",
+   "page": 17,
+   "text": "15. Refractive Error (Excl15) Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres."
+  },
+  {
+   "id": "16#3",
+   "title": "",
+   "page": 17,
+   "text": "16. Unproven Treatments (Excl16) Expenses related to any unproven treatment, services and supplies for or in connection with any treatment. Unproven treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness."
+  },
+  {
+   "id": "17#3",
+   "title": "",
+   "page": 17,
+   "text": "17. Sterility and Infertility (Excl17) Expenses related to sterility and infertility. This includes: a) Any type of contraception, sterilization b) Assisted Reproduction services including artificial insemination and advanced reproductive technologies such as IVF, ZIFT, GIFT, ICSI c) Gestational Surrogacy d) Reversal of sterilization"
+  },
+  {
+   "id": "18#3",
+   "title": "",
+   "page": 17,
+   "text": "18. External medical equipment of any kind used at home as post Hospitalization care including cost of instrument used in the treatment of Sleep Apnoea Syndrome (C.P.A.P), Continuous Peritoneal Ambulatory Dialysis (C.P.A.D) and Oxygen concentrator for Bronchial Asthmatic condition."
+  },
+  {
+   "id": "19",
+   "title": "",
+   "page": 17,
+   "text": "19. Congenital external diseases or defects or anomalies, growth hormone therapy, stem cell implantation or surgery except for Hematopoietic stem cells for bone marrow transplant for haematological conditions."
+  },
+  {
+   "id": "20#2",
+   "title": "",
+   "page": 17,
+   "text": "20. Intentional self-injury (including but not limited to the use or misuse of any intoxicating drugs or alcohol)"
+  },
+  {
+   "id": "21",
+   "title": "",
+   "page": 17,
+   "text": "21. \u0007Vaccination or inoculation unless forming a part of post bite treatment or if medically necessary and forming a part of treatment recommended by the treating Medical practitioner."
+  },
+  {
+   "id": "22",
+   "title": "",
+   "page": 17,
+   "text": "22. All non-medical Items as per Annexure II."
+  },
+  {
+   "id": "23",
+   "title": "",
+   "page": 17,
+   "text": "23. Any treatment received outside India is not covered under this Policy."
+  },
+  {
+   "id": "24",
+   "title": "",
+   "page": 17,
+   "text": "24. Circumcision unless required for the treatment of Illness or Accidental bodily injury."
+  },
+  {
+   "id": "C18.98",
+   "title": "",
+   "page": 18,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 18 ◼ Rider Available: WAIVER OF ROOM CAPPING (UIN- BAJHLAP21577V012021) PART A: OPERATIVE PARTS Waiver of Room Capping: \u0007In consideration of payment of additional premium by the Proposer to the Company and realization thereof by the Company, it is hereby agreed to waive off the room type restriction “up to Single Private Air Conditioned room” as stated under the “Health Guard-Gold” plan and “Health Guard-Platinum” Plan. \u0007If this Optional Cover is opted at the time of inception of the Policy or during renewal, the room rent expenses as defined under the base “Health Guard” Policy would be provided at actuals. • This Optional Cover can be availed with Sum Insured options of (i) INR 5,00,000/- and 7,50,000/- under “Health Guard-Gold” plan and “Health Guard-Platinum” Plan. • This Optional Cover would be covered within Sum Insured of Base Policy Section A 1. “In-patient Hospitalization Treatment”."
+  },
+  {
+   "id": "1#10",
+   "title": "",
+   "page": 18,
+   "text": "1. “Optional Cover” means the cover mentioned in PART A Operative Clause hereinabove."
+  },
+  {
+   "id": "2#10",
+   "title": "",
+   "page": 18,
+   "text": "2. All other DEFINITIONS as defined in “SECTION 2: DEFINITIONS” in the Policy Wordings title “Health Guard” are applicable mutatis mutandis, to these Optional Cover. PART C: GENERAL EXCLUSIONS APPLICABLE TO ALL SECTIONS"
+  },
+  {
+   "id": "1#11",
+   "title": "",
+   "page": 18,
+   "text": "1. All exclusions applicable in Base Policy title “Health Guard” shall be applicable to Optional Cover. PART D: SPECIFIC GENERAL CONDITIONS APPLICABLE TO ALL SECTIONS \u0007All Policy Terms and Conditions and General conditions of Base Policy title “Health Guard” read with Policy Schedule are applicable mutatis mutandis."
+  },
+  {
+   "id": "1#12",
+   "title": "",
+   "page": 18,
+   "text": "1. Opting Optional Cover- i. These Optional Cover cannot be opted during mid-term of Policy. ii. Once opted, the Optional Cover has to be continued for all renewals there on."
+  },
+  {
+   "id": "2#11",
+   "title": "",
+   "page": 18,
+   "text": "2. Cancellation of Optional Cover- All the terms and conditions as to Cancellation of Base Policy shall mutatis mutandis apply to the Cancelation of Optional Cover."
+  },
+  {
+   "id": "3#6",
+   "title": "",
+   "page": 18,
+   "text": "3. Renewal of Optional Cover- In case of renewal of Base Policy “Health Guard”, opted Optional Cover shall be automatically renewed subject to Company’s receipt of prescribed premium. Once Optional Cover are opted by Insured, Company will renew Base Policy together with Optional Cover and shall not renew only Base Policy."
+  },
+  {
+   "id": "1#13",
+   "title": "",
+   "page": 18,
+   "text": "1. If Base Policy “Health Guard” is withdrawn, then these Optional Cover shall also stand withdrawn. List of Claim documents: • Claim form with NEFT details & cancelled cheque duly signed by Insured • Original/Attested copies of Discharge Summary / Discharge Certificate / Death Summary with Surgical & anesthetics notes • Attested copies of Indoor case papers (if available) • Original/Attested copies Final Hospital Bill with break up of surgical charges, surgeon’s fees, OT charges etc • Original Paid Receipt against the final Hospital Bill. • Original bills towards Investigations done / Laboratory Bills. • Original/Attested copies of Investigation Reports against Investigations done. • Original bills and receipts paid for the transportation from Registered Ambulance Service Provider. Treating Medical Practitioner certificate to transfer the Injured person to a higher medical centre for further treatment (if Applicable). • Cashless settlement letter or other company settlement letter"
+  },
+  {
+   "id": "C19.106",
+   "title": "",
+   "page": 19,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 19 • First consultation letter for the current ailment. • In case of implant surgery, invoice & sticker. Please send the documents on below address Bajaj Allianz General Insurance Company 2nd Floor, Bajaj Finserv Building, Behind Weikfield IT park, Off Nagar Road, Viman Nagar Pune 411014| Toll free: 1800-103-2529, 1800-22-5858 All Claims will be settled by In house claims settlement team of the company and no TPA is engaged. ◼ Premium Please refer Annexure attached (rate Chart) for detailed premium rates. Annexure for ICD specific for Mental Illness ICD Codes ICD Description ICD Codes ICD Description F00 Dementia in Alzheimer disease F22 Persistent delusional disorders F02 Dementia in other diseases classified elsewhere F23 Acute and transient psychotic disorders F03 Unspecified dementia F24 Induced delusional disorder F05 Delirium, not induced by alcohol and other psychoactive substances F25 Schizoaffective disorders F07 Personality and behavioural disorders due to brain disease, damage and dysfunction F31 Bipolar affective disorder F09 Unspecified organic or symptomatic mental disorder F32 Depressive episode F20 Schizophrenia F33 Recurrent depressive disorder F21 Schizotypal disorder F40 Phobic anxiety disorders ◼ How do I Buy this policy? • Discuss the policy benefits, coverage and premium details with your insurance advisor or visit our website (www.bajajallianz.com) for details • Actively seek information on the charges and exclusions under the policy • Fill the proposal form stating your personal details and health profile • Ensure that the information given in the form is complete and accurate • We will process your proposal. Based on the information provided, you may be required to undergo pre-policy medical examination at our network diagnostic centers. Please note that you will have to pay the necessary amount for undergoing the specified medical examination and such tests shall be valid for a maximum period of 30days only • Depending on our evaluation if your proposal is accepted, then we will issue the policy subject to receipt of annual single premium as published on the prospectus. • If the policy is issued we will refund you 100% of the cost of the pre-policy medical examination • The Policy Schedule, Policy Wordings, Cashless Cards and Health Guide will be sent to your mailing address mentioned on the proposal form"
+  },
+  {
+   "id": "C20.107",
+   "title": "",
+   "page": 20,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 20 ◼ How do I make a Claim? Complete set of claim documents needs to be forwarded to Health Administration Team, Bajaj Allianz General Insurance Co. Ltd. 2nd floor, Bajaj Finserv Building, Behind Weikfield IT Park, Off Nagar Road, Viman Nagar-Pune - 411 014. The above information is indicative in nature, please refer the policy wordings or visit our website / our nearest office for further details Benefit Illustration in respect of Policies offered on Individual & Family Floater basis Age of the members to be insured Coverage opted on Individual Basis covering each member of the family separately (at a single point in time) Coverage opted on individual basis covering multiple members of the family under as single policy (Sum Insured is available for each member of the family) Coverage opted on floater basis with overall Sum Insured (Only one sum insured is available for the entire family) Premium (for Zone A) Sum Insured Premium (for Zone A) Discount Premium after discount Sum Insured Premium or consolidated premium for all members of family (for Zone A) Floater discount if any Premium after discount Sum Insured 45 17,653 300,000 17,653 15% 15,005 300,000 31,751 NA 300,000 40 14,805 300,000 14,805 15% 12,584 300,000 21 11,244 300,000 11,244 15% 9,557 300,000 18 6,894 300,000 6,894 15% 5,860 300,000 Total Premium (for Zone A) for all members of the family is Rs 50,596, when each member is covered separately (no discount applicable). Total Premium (for Zone A) for all members of the family is Rs 43006, when they are covered under a single policy. (Family Discount Applicable). Total premium (for Zone A) when policy is opted on floater basis is Rs 31,751 (no discount applicable). Sum Insured available for each individual is Rs 300,000 Sum Insured available for each family member is Rs 300,000 Sum Insured of Rs 300,000 is available for the entire family Note: Premium rates specified in the above illustration shall be standard premium rates without considering any loading. Also, the premium rates shall be exclusive of taxes applicable. Insured Empanelled Hospital Present Cashless Card Register Claim with Bajaj Allianz"
+  },
+  {
+   "id": "24#2",
+   "title": "hr helpline*",
+   "page": 20,
+   "text": "24 hr helpline* Non-Empanelled Hospital Insured Makes Payment Directly Send Claim Form + Bills+ all hospitalization documents To Bajaj Allianz for reimbursement"
+  },
+  {
+   "id": "C21.109",
+   "title": "",
+   "page": 21,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP25035V072425 21 BAJAJ ALLIANZ GENERAL INSURANCE CO. LTD. BAJAJ ALLIANZ HOUSE, AIRPORT ROAD, YERAWADA, PUNE - 411006. IRDA REG NO.: 113. FOR ANY QUERY (TOLL FREE)"
+  },
+  {
+   "id": "1800",
+   "title": "209-0144 /1800-209-5858",
+   "page": 21,
+   "text": "1800-209-0144 /1800-209-5858 www.bajajallianz.com bagichelp@bajajallianz.co.in For more details on risk factors, Terms and Conditions, please read the sales brochure before concluding a sale. Note: It is mandatory to keep updated your policy with your correct contact details and bank account details, to process any of your service requests faster and hassle-free. To update your contact details i.e., Mobile No., Email ID, PAN Card, and Bank Account details, please use chatbot, visit our website, contact your agent or nearest branch. CIN: U66010PN2000PLC015329 UIN : Health Guard - BAJHLIP25035V072425 | Add On Cover (Waiver of Room Capping - BAJHLAP21577V012021) BJAZ-B-0368/11-07-2024"
+  }
+ ],
+ "source_file": "data/raw/policies/bajaj-health-guard.pdf"
+}

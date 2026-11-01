@@ -1,0 +1,18 @@
+{
+ "issues": [
+  [
+   "icu_rent",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 93000.0,
+ "claimed": 105000.0,
+ "payout_before": 93000.0,
+ "payout_after_fixes": 93000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "en",
+ "render": "pdf"
+}

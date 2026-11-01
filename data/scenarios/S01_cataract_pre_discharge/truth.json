@@ -1,0 +1,224 @@
+{
+ "bill": {
+  "hospital": "Sunrise Eye & General Hospital, Ahmedabad",
+  "bill_no": "SEH/26/10412",
+  "admission_date": "2026-10-20",
+  "discharge_date": "2026-10-21",
+  "room_category": "Deluxe single",
+  "room_days": 1.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Deluxe room (1 day)",
+    "category": "room",
+    "qty": 1.0,
+    "rate": 7500.0,
+    "amount": 7500.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "N1",
+    "description": "Nursing charges",
+    "category": "nursing",
+    "qty": 1.0,
+    "rate": 1200.0,
+    "amount": 1200.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - phacoemulsification",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 18000.0,
+    "amount": 18000.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthetist fee",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 4500.0,
+    "amount": 4500.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 9000.0,
+    "amount": 9000.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "Foldable IOL (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 16500.0,
+    "amount": 16500.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "K1",
+    "description": "Phaco kit",
+    "category": "consumable",
+    "qty": 1.0,
+    "rate": 3800.0,
+    "amount": 3800.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy & drugs",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 3400.0,
+    "amount": 3400.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Investigations (biometry, A-scan, blood tests)",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 2600.0,
+    "amount": 2600.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X1",
+    "description": "Attendant food",
+    "category": "misc",
+    "qty": 1.0,
+    "rate": 900.0,
+    "amount": 900.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X2",
+    "description": "Registration & documentation charges",
+    "category": "misc",
+    "qty": 1.0,
+    "rate": 500.0,
+    "amount": 500.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X3",
+    "description": "Gloves (examination)",
+    "category": "consumable",
+    "qty": 1.0,
+    "rate": 450.0,
+    "amount": 450.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X4",
+    "description": "Mask & shoe cover",
+    "category": "consumable",
+    "qty": 1.0,
+    "rate": 300.0,
+    "amount": 300.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X5",
+    "description": "Admission kit",
+    "category": "misc",
+    "qty": 1.0,
+    "rate": 650.0,
+    "amount": 650.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X6",
+    "description": "Eye drape",
+    "category": "consumable",
+    "qty": 1.0,
+    "rate": 350.0,
+    "amount": 350.0,
+    "date": "2026-10-20",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 71350.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Senile mature cataract, right eye",
+  "procedure": "Phacoemulsification with foldable IOL implantation, right eye",
+  "icd10": "H25.1",
+  "admission_type": "day_care",
+  "comorbidities": [
+   "hypertension"
+  ],
+  "history_notes": "Known hypertensive for 4 years on amlodipine.",
+  "condition_duration_months": 48,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_discharge",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 63,
+  "sum_insured": null,
+  "policy_start": "2023-04-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [
+   "hypertension"
+  ],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "final_itemized_bill",
+   "discharge_summary",
+   "prescriptions",
+   "payment_receipts",
+   "investigation_reports"
+  ],
+  "narrative": "Mere papa ka cataract operation hua hai, kal discharge hai. Room deluxe liya tha kyunki general full tha.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Cataract — pre-discharge audit (hero demo)",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

@@ -1,0 +1,116 @@
+{
+ "bill": {
+  "hospital": "AMRI Hospital, Bhubaneswar",
+  "bill_no": "AMB-5520",
+  "admission_date": "2026-09-14",
+  "discharge_date": "2026-09-16",
+  "room_category": "Deluxe suite",
+  "room_days": 2.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Deluxe suite",
+    "category": "room",
+    "qty": 2.0,
+    "rate": 9000.0,
+    "amount": 18000.0,
+    "date": "2026-09-14",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "C1",
+    "description": "Physician visits",
+    "category": "consultation",
+    "qty": 1.0,
+    "rate": 6000.0,
+    "amount": 6000.0,
+    "date": "2026-09-14",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "N1",
+    "description": "Nursing charges",
+    "category": "nursing",
+    "qty": 1.0,
+    "rate": 3000.0,
+    "amount": 3000.0,
+    "date": "2026-09-14",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy & IV",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 9000.0,
+    "amount": 9000.0,
+    "date": "2026-09-15",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Investigations",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-09-14",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 44000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Acute gastroenteritis with severe dehydration",
+  "procedure": "IV fluids",
+  "icd10": null,
+  "admission_type": "emergency",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "or",
+  "patient_age": 45,
+  "sum_insured": null,
+  "policy_start": "2021-01-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": 4.0
+ },
+ "policy_id": "demo_category",
+ "title": "Deluxe room on a 'single private AC' policy — no ₹ cap, Odia",
+ "tier": "challenge",
+ "blurb": "Category-based entitlement; zone co-pay must not be applied",
+ "render": "pdf"
+}

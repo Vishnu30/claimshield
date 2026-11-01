@@ -1,0 +1,64 @@
+{
+ "code": "IN",
+ "name": "India",
+ "currency": "₹",
+ "currency_code": "INR",
+ "number_format": "indian",
+ "regulator": "IRDAI",
+ "features": {
+  "room_rent": true,
+  "proportionate_deduction": true,
+  "non_payables": true,
+  "moratorium_months": 60,
+  "ped_max_months": 36,
+  "specific_max_months": 36,
+  "copay": true,
+  "tariffs": true
+ },
+ "rules_file": "irdai_rules.json",
+ "non_payables_file": "irdai_non_payables.json",
+ "precedents_file": "ombudsman_awards.json",
+ "escalation": [
+  {
+   "step": "Insurer Grievance Redressal Officer (GRO)",
+   "how": "Email/written complaint quoting claim number; ask for acknowledgement.",
+   "respond_days": 14,
+   "file_within_days": null,
+   "rule": "IN-GRO-TAT"
+  },
+  {
+   "step": "Bima Bharosa (IRDAI portal)",
+   "how": "Register the complaint at bimabharosa.irdai.gov.in or call 155255.",
+   "respond_days": 14,
+   "file_within_days": null,
+   "rule": "IN-GRO-TAT"
+  },
+  {
+   "step": "Insurance Ombudsman",
+   "how": "Free; file with the ombudsman office for your area (cioins.co.in). Claims up to ₹50 lakh.",
+   "wait_days_before": 30,
+   "file_within_days": 365,
+   "rule": "IN-OMBUDSMAN"
+  },
+  {
+   "step": "Consumer Commission",
+   "how": "District / State commission under the Consumer Protection Act, 2019.",
+   "file_within_days": 730,
+   "rule": null
+  }
+ ],
+ "languages": [
+  "en",
+  "hi",
+  "hinglish",
+  "gu",
+  "mr",
+  "kn",
+  "ta",
+  "te",
+  "bn",
+  "ml",
+  "pa",
+  "or"
+ ]
+}

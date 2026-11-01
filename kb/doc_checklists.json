@@ -1,0 +1,100 @@
+{
+ "IN": {
+  "pre_discharge": {
+   "required": [
+    "final_itemized_bill",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "payment_receipts"
+   ],
+   "conditional": {
+    "implant": [
+     "implant_invoice_sticker"
+    ],
+    "proportionate": [
+     "non_differential_billing_certificate"
+    ],
+    "kit": [
+     "kit_itemized_breakup"
+    ],
+    "accident": [
+     "fir_or_mlc"
+    ]
+   }
+  },
+  "pre_submission": {
+   "required": [
+    "claim_form_part_a",
+    "claim_form_part_b",
+    "final_itemized_bill",
+    "payment_receipts",
+    "discharge_summary",
+    "investigation_reports",
+    "prescriptions",
+    "pharmacy_bills",
+    "id_proof",
+    "policy_copy",
+    "cancelled_cheque"
+   ],
+   "conditional": {
+    "implant": [
+     "implant_invoice_sticker"
+    ],
+    "accident": [
+     "fir_or_mlc"
+    ],
+    "proportionate": [
+     "non_differential_billing_certificate"
+    ],
+    "kit": [
+     "kit_itemized_breakup"
+    ],
+    "portability": [
+     "previous_policy_copies"
+    ]
+   }
+  },
+  "appeal": {
+   "required": [
+    "rejection_letter",
+    "policy_copy",
+    "final_itemized_bill",
+    "discharge_summary"
+   ],
+   "conditional": {
+    "ped": [
+     "previous_policy_copies",
+     "doctor_certificate_first_diagnosis"
+    ],
+    "portability": [
+     "previous_policy_copies"
+    ],
+    "implant": [
+     "implant_invoice_sticker"
+    ]
+   }
+  },
+  "cashless_note": "IN-DOCS-CASHLESS"
+ },
+ "labels": {
+  "final_itemized_bill": "Final itemized hospital bill",
+  "discharge_summary": "Discharge summary",
+  "investigation_reports": "Investigation / lab reports",
+  "prescriptions": "Doctor's prescriptions",
+  "payment_receipts": "Payment receipts",
+  "claim_form_part_a": "Claim form Part A (signed by insured)",
+  "claim_form_part_b": "Claim form Part B (filled by hospital)",
+  "pharmacy_bills": "Pharmacy bills",
+  "id_proof": "Photo ID / KYC",
+  "policy_copy": "Policy copy / e-card",
+  "cancelled_cheque": "Cancelled cheque / bank details",
+  "implant_invoice_sticker": "Implant invoice + sticker",
+  "non_differential_billing_certificate": "Hospital certificate: no differential billing by room category",
+  "kit_itemized_breakup": "Itemized breakup of 'kit' charges",
+  "fir_or_mlc": "FIR / MLC (accident)",
+  "previous_policy_copies": "Previous / ported policy copies (continuity proof)",
+  "doctor_certificate_first_diagnosis": "Doctor's certificate: date of first diagnosis",
+  "rejection_letter": "Rejection / settlement letter"
+ }
+}

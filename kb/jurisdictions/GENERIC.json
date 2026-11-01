@@ -1,0 +1,42 @@
+{
+ "code": "GENERIC",
+ "name": "Other / Generic (policy-only checks)",
+ "currency": "",
+ "currency_code": "",
+ "number_format": "western",
+ "regulator": "Local insurance regulator",
+ "features": {
+  "room_rent": true,
+  "proportionate_deduction": true,
+  "non_payables": false,
+  "moratorium_months": null,
+  "ped_max_months": null,
+  "specific_max_months": null,
+  "copay": true,
+  "tariffs": false
+ },
+ "rules_file": null,
+ "non_payables_file": null,
+ "precedents_file": null,
+ "escalation": [
+  {
+   "step": "Insurer internal complaint",
+   "how": "Written complaint quoting policy clause.",
+   "file_within_days": null
+  },
+  {
+   "step": "Insurance regulator / ombudsman",
+   "how": "Local regulator's complaint channel.",
+   "file_within_days": null
+  }
+ ],
+ "languages": [
+  "en",
+  "es",
+  "fr",
+  "ar",
+  "pt",
+  "id",
+  "sw"
+ ]
+}

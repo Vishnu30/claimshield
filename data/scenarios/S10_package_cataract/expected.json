@@ -1,0 +1,18 @@
+{
+ "issues": [
+  [
+   "sublimit",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 40000.0,
+ "claimed": 57500.0,
+ "payout_before": 40000.0,
+ "payout_after_fixes": 40000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "en",
+ "render": "pdf"
+}

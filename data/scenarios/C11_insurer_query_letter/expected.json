@@ -1,0 +1,22 @@
+{
+ "issues": [
+  [
+   "missing_doc",
+   "fixable"
+  ],
+  [
+   "missing_doc",
+   "fixable"
+  ]
+ ],
+ "payout_as_is": 180000.0,
+ "claimed": 180000.0,
+ "payout_before": 180000.0,
+ "payout_after_fixes": 180000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "appeal",
+ "tier": "challenge",
+ "bills": 1,
+ "lang": "en",
+ "render": "pdf"
+}

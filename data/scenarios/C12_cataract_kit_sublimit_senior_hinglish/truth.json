@@ -1,0 +1,140 @@
+{
+ "bill": {
+  "hospital": "Centre for Sight, Delhi",
+  "bill_no": "CFS-2026",
+  "admission_date": "2026-09-29",
+  "discharge_date": "2026-09-29",
+  "room_category": "Day care",
+  "room_days": 1.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Day care bed",
+    "category": "room",
+    "qty": 1.0,
+    "rate": 2000.0,
+    "amount": 2000.0,
+    "date": "2026-09-29",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - phacoemulsification",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 22000.0,
+    "amount": 22000.0,
+    "date": "2026-09-29",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 10000.0,
+    "amount": 10000.0,
+    "date": "2026-09-29",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "Toric IOL (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 21000.0,
+    "amount": 21000.0,
+    "date": "2026-09-29",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "K1",
+    "description": "Phaco kit",
+    "category": "consumable",
+    "qty": 1.0,
+    "rate": 4000.0,
+    "amount": 4000.0,
+    "date": "2026-09-29",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 1500.0,
+    "amount": 1500.0,
+    "date": "2026-09-29",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Biometry",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 1500.0,
+    "amount": 1500.0,
+    "date": "2026-09-28",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 62000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Senile cataract, right eye",
+  "procedure": "Phacoemulsification with toric IOL",
+  "icd10": null,
+  "admission_type": "day_care",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "hinglish",
+  "patient_age": 64,
+  "sum_insured": null,
+  "policy_start": "2017-05-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque",
+   "implant_invoice_sticker",
+   "kit_itemized_breakup"
+  ],
+  "narrative": "Papa ka cataract operation hua, bill 62 hazaar ka hai.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_classic",
+ "title": "Senior cataract — kit fix doesn't help because the sub-limit caps it, Hinglish",
+ "tier": "challenge",
+ "blurb": "Three cuts where fixing one changes nothing — the agents must say so",
+ "render": "pdf"
+}

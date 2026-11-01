@@ -1,0 +1,129 @@
+{
+ "bill": {
+  "hospital": "Kauvery Hospital, Chennai",
+  "bill_no": "KH-3399",
+  "admission_date": "2026-10-10",
+  "discharge_date": "2026-10-15",
+  "room_category": "Twin sharing",
+  "room_days": 5.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 5.0,
+    "rate": 3000.0,
+    "amount": 15000.0,
+    "date": "2026-10-10",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - debridement",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 15000.0,
+    "amount": 15000.0,
+    "date": "2026-10-11",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-10-11",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy & antibiotics",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 22000.0,
+    "amount": 22000.0,
+    "date": "2026-10-11",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Cultures, HbA1c, X-ray",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 7000.0,
+    "amount": 7000.0,
+    "date": "2026-10-10",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "T1",
+    "description": "Dressing charges",
+    "category": "procedure",
+    "qty": 1.0,
+    "rate": 4000.0,
+    "amount": 4000.0,
+    "date": "2026-10-12",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 71000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Diabetic foot ulcer with cellulitis, left foot",
+  "procedure": "Wound debridement",
+  "icd10": null,
+  "admission_type": "emergency",
+  "comorbidities": [
+   "diabetes"
+  ],
+  "history_notes": "Type 2 diabetes mellitus for 6 years on metformin.",
+  "condition_duration_months": 72,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "ta",
+  "patient_age": 57,
+  "sum_insured": null,
+  "policy_start": "2024-08-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque"
+  ],
+  "narrative": "என் அம்மாவுக்கு சர்க்கரை நோய் காயத்துக்கு சிகிச்சை நடந்தது. பாலிசி இரண்டு வருடம் முன்பு எடுத்தோம்.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": 8.0
+ },
+ "policy_id": "demo_shield",
+ "title": "Diabetic foot — undeclared diabetes, Tamil output",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

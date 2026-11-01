@@ -1,0 +1,105 @@
+{
+ "bill": {
+  "hospital": "Shanti Hospital, Patna",
+  "bill_no": "SH-221",
+  "admission_date": "2026-09-19",
+  "discharge_date": "2026-09-22",
+  "room_category": "Twin sharing",
+  "room_days": 3.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 3.0,
+    "rate": 3000.0,
+    "amount": 9000.0,
+    "date": "2026-09-19",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "C1",
+    "description": "Physician visits",
+    "category": "consultation",
+    "qty": 1.0,
+    "rate": 4500.0,
+    "amount": 4500.0,
+    "date": "2026-09-19",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Widal, blood culture",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 5500.0,
+    "amount": 5500.0,
+    "date": "2026-09-19",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 27000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Enteric fever (typhoid)",
+  "procedure": "IV antibiotics",
+  "icd10": null,
+  "admission_type": "emergency",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 27,
+  "sum_insured": null,
+  "policy_start": "2026-09-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": 3.0
+ },
+ "policy_id": "demo_shield",
+ "title": "Typhoid in first 30 days — initial waiting (valid)",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

@@ -1,0 +1,38 @@
+{
+ "issues": [
+  [
+   "copay",
+   "valid"
+  ],
+  [
+   "icu_rent",
+   "valid"
+  ],
+  [
+   "missing_doc",
+   "fixable"
+  ],
+  [
+   "non_payable",
+   "valid"
+  ],
+  [
+   "proportionate",
+   "fixable"
+  ],
+  [
+   "room_rent",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 191200.0,
+ "claimed": 284300.0,
+ "payout_before": 191200.0,
+ "payout_after_fixes": 217600.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "challenge",
+ "bills": 1,
+ "lang": "ta",
+ "render": "pdf"
+}

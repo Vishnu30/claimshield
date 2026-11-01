@@ -1,0 +1,136 @@
+{
+ "bill": {
+  "hospital": "KIMS Hospital, Hyderabad",
+  "bill_no": "KIMS-4410",
+  "admission_date": "2026-09-20",
+  "discharge_date": "2026-09-23",
+  "room_category": "Twin sharing",
+  "room_days": 3.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 3.0,
+    "rate": 4000.0,
+    "amount": 12000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Cardiologist - PTCA",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 50000.0,
+    "amount": 50000.0,
+    "date": "2026-09-21",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "Cath lab charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 45000.0,
+    "amount": 45000.0,
+    "date": "2026-09-21",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "Drug eluting stent (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 35000.0,
+    "amount": 35000.0,
+    "date": "2026-09-21",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 20000.0,
+    "amount": 20000.0,
+    "date": "2026-09-22",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Angiography & labs",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 18000.0,
+    "amount": 18000.0,
+    "date": "2026-09-20",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 180000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Unstable angina",
+  "procedure": "PTCA with DES to RCA",
+  "icd10": null,
+  "admission_type": "emergency",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "appeal",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 55,
+  "sum_insured": null,
+  "policy_start": "2018-06-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "rejection_letter",
+   "policy_copy",
+   "final_itemized_bill",
+   "discharge_summary"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": 6.0
+ },
+ "policy_id": "demo_shield",
+ "title": "Insurer query letter — documents requested before settlement",
+ "tier": "challenge",
+ "blurb": "Not a rejection yet: answer the query and the claim proceeds",
+ "render": "pdf",
+ "rejection": {
+  "insurer": "Demo General Insurance (synthetic)",
+  "letter_date": "2026-10-02",
+  "claim_no": "DGI/HL/26/62010",
+  "decision": "query",
+  "amount_claimed": 180000.0,
+  "amount_paid": null,
+  "reasons": [
+   {
+    "text": "Please submit the implant invoice with sticker and the investigation reports to process the claim",
+    "clause_cited": "5.2",
+    "amount": null
+   }
+  ],
+  "source_file": null
+ }
+}

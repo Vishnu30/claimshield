@@ -1,0 +1,553 @@
+{
+ "policy_id": "bajaj_alliance",
+ "insurer": "Bajaj Allianz",
+ "product": "Bajaj Alliance",
+ "uin": "BAJHLIP20164V011920",
+ "jurisdiction": "IN",
+ "sum_insured": null,
+ "room_rent": {
+  "kind": "pct_si",
+  "value": 2.0,
+  "max_value": 5000.0,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": 3,
+   "quote": "Hospitalization \u0007The Company shall indemnify Medical Expense incurred for Hospitalization of the Insured Person during the Policy year, up to the Sum Insured and Cumulative Bonus specified in the Policy Schedule, for, i. \u0007Room Rent, Boarding, Nursing Expenses all inclusive as provided by the Hospital / Nursing Home up to 2% of the sum insured subject to maximum of Rs.5000/-, per day. ii."
+  }
+ },
+ "icu_rent": {
+  "kind": "pct_si",
+  "value": 2.0,
+  "max_value": 5000.0,
+  "category": null,
+  "cite": {
+   "clause_id": null,
+   "page": 2,
+   "quote": "Hospitalization INR 1,00,000 INR 5,00,000 1. \u0007Room Rent, Boarding, Nursing Expenses- 2% of the sum insured subject to maximum of Rs.5000/-, per day 2. \u0007Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) - 5% of the sum insured subject to maximum of Rs.10,000/-, per day 3. \u0007road ambulance maximum of Rs. 2000/- per hospitalisation 2."
+  }
+ },
+ "proportionate_deduction": true,
+ "proportionate_cite": {
+  "clause_id": null,
+  "page": 3,
+  "quote": "Note: a. In case of admission to a room at rates exceeding the limits as mentioned under (i), the reimbursement of all other expenses incurred at the Hospital, with the exception of cost of Pharmacy/medicines, consumables, implants, medical devices & diagnostics, shall be payable in the same proportion as the admissible rate per day bears to the actual rate per day of room rent charges b."
+ },
+ "copays": [
+  {
+   "pct": 5.0,
+   "condition": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 3 • (Subject to policy is renewed annually with us within the Grace",
+   "age_min": null,
+   "cite": {
+    "clause_id": null,
+    "page": 3,
+    "quote": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 3 • (Subject to policy is renewed annually with us within the Grace period of 30 days from date of Expiry). \u000e What is the Policy Period? • Policy can be taken for 1 year. \u000e What is Premium paying term? • Premium can be paid on instalment basis- Annual, Half yearly, Quarterly or Monthly. \u000e Is this a floater policy / individual policy? • Policy provides Individual as well as Floater sum insured options. \u000e \u0007Who can be covered under Arogya Sanjeevani Policy, Bajaj Allianz General Insurance Company? • Self, legally wedded Spouse, Dependent Childr"
+   }
+  }
+ ],
+ "sublimits": [
+  {
+   "procedure": "cataract",
+   "aliases": [
+    "phacoemulsification",
+    "phaco",
+    "iol"
+   ],
+   "limit": 100000.0,
+   "pct_si": 25.0,
+   "basis": "per_eye",
+   "cite": {
+    "clause_id": null,
+    "page": 2,
+    "quote": "AYUSH Treatment INR 1,00,000 INR 5,00,000 3. Cataract Treatment 25% of Sum Insured or Rs.40,000/-, whichever is lower, per each eye in one policy period."
+   }
+  },
+  {
+   "procedure": "modern treatment",
+   "aliases": [
+    "robotic surgery",
+    "oral chemotherapy",
+    "immunotherapy"
+   ],
+   "limit": null,
+   "pct_si": null,
+   "basis": "per_claim",
+   "cite": {
+    "clause_id": "4",
+    "page": 2,
+    "quote": "4.Pre-hospitalization Up to and within Hospitalization Sum Insured 30 days 5.Post-hospitalization 60 days 6. \u0007Modern Treatment Methods 50% of Hospitalization Sum Insured A. \u0007Uterine Artery Embolization and HIFU (High Intensity focused ultrasound) B."
+   }
+  }
+ ],
+ "waiting_periods": [
+  {
+   "kind": "initial",
+   "months": 1,
+   "conditions": [],
+   "cite": {
+    "clause_id": null,
+    "page": 9,
+    "quote": "First Thirty Days Waiting Period(Code- Excl03) i. Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. ii."
+   }
+  },
+  {
+   "kind": "ped",
+   "months": 48,
+   "conditions": [],
+   "cite": {
+    "clause_id": null,
+    "page": 9,
+    "quote": "Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first Policy with us. b."
+   }
+  },
+  {
+   "kind": "specific",
+   "months": 48,
+   "conditions": [
+    "cataract",
+    "hernia",
+    "hydrocele",
+    "hysterectomy",
+    "joint replacement",
+    "gall bladder",
+    "sinusitis",
+    "tonsil",
+    "adenoid",
+    "piles",
+    "fissure",
+    "fistula",
+    "varicose",
+    "osteoarthritis",
+    "disc"
+   ],
+   "cite": {
+    "clause_id": null,
+    "page": 9,
+    "quote": "Specific Waiting Period: (Code- Excl02) a. Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first Policy with the Insurer."
+   }
+  }
+ ],
+ "exclusions": [
+  {
+   "code": "Excl03",
+   "text": ") i. Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. ii.",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl03",
+    "page": 9,
+    "quote": "First Thirty Days Waiting Period(Code- Excl03) i. Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. ii."
+   }
+  },
+  {
+   "code": "Excl02",
+   "text": ") a. Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first Policy wi",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl02",
+    "page": 9,
+    "quote": "Specific Waiting Period: (Code- Excl02) a. Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first Policy with the Insurer."
+   }
+  },
+  {
+   "code": "Excl06",
+   "text": ") Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: 1.",
+   "keywords": [
+    "obesity"
+   ],
+   "cite": {
+    "clause_id": "Excl06",
+    "page": 10,
+    "quote": "Any services for people who are terminally ill to address physical, social, emotional and spiritual needs. • Obesity/ Weight Control(Code- Excl06) Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions: 1."
+   }
+  },
+  {
+   "code": "Excl07",
+   "text": ") Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex. • Cosmetic or plastic Surgery: (Code- Excl08) Expenses for cosmetic or plastic surgery or any treatment ",
+   "keywords": [
+    "cosmetic",
+    "plastic surgery"
+   ],
+   "cite": {
+    "clause_id": "Excl07",
+    "page": 10,
+    "quote": "Severe Sleep Apnea iv. Uncontrolled Type2 Diabetes • Change-of-Gender treatments: (Code- Excl07) Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex. • Cosmetic or plastic Surgery: (Code- Excl08) Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured."
+   }
+  },
+  {
+   "code": "Excl09",
+   "text": ") Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scub",
+   "keywords": [
+    "hazardous"
+   ],
+   "cite": {
+    "clause_id": "Excl09",
+    "page": 10,
+    "quote": "For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner. • Hazardous or Adventure sports: (Code- Excl09) Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving. • Breach of law: Code- (Excl10) Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a br"
+   }
+  },
+  {
+   "code": "Excl13",
+   "text": ") • Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day ca",
+   "keywords": [],
+   "cite": {
+    "clause_id": "Excl13",
+    "page": 11,
+    "quote": "(Code- Excl13) • Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day care procedure (Code- Excl14) • Refractive Error: (Code- Excl15) Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres. • Unproven Treatments:(Code- Excl16) Expenses related to any unproven treatment, services and supplies for or in connection with any treatment."
+   }
+  },
+  {
+   "code": "Excl17",
+   "text": ") Expenses related to Sterility and Infertility.",
+   "keywords": [
+    "infertility"
+   ],
+   "cite": {
+    "clause_id": "Excl17",
+    "page": 11,
+    "quote": "Unproven treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness. • Sterility and Infertility: (Code- Excl17) Expenses related to Sterility and Infertility."
+   }
+  },
+  {
+   "code": "Excl18",
+   "text": "): i. medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy; ii. expenses towards miscarriage (unless due to an accident) and la",
+   "keywords": [
+    "war"
+   ],
+   "cite": {
+    "clause_id": "Excl18",
+    "page": 11,
+    "quote": "Gestational Surrogacy iv. Reversal of sterilization • Maternity Expenses (Code:Excl 18): i. medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy; ii. expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period. • War (whether declared or not) and war like occurrence or invasion, acts of foreign enemies, hostilities, civil war, rebellion, revolutions, insurrections, mutiny, military or usurped power, seizure, capture, "
+   }
+  }
+ ],
+ "intimation_emergency_hours": null,
+ "intimation_planned_days_before": null,
+ "claim_submission_days": null,
+ "clauses": [
+  {
+   "id": "C1.1",
+   "title": "",
+   "page": 1,
+   "text": "4V011920 1 CIN: U66010PN2000PLC015329 | UIN:BAJHLIP20164V011920 AROGYA SANJEEVANI POLICY, BAJAJ ALLIANZ GENERAL INSURANCE COMPANY Securing you and your Family's Health"
+  },
+  {
+   "id": "2",
+   "title": "",
+   "page": 2,
+   "text": "2 CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 Your health is precious to you - it enables you to live your life the way you please. But a sudden illness or accident can put a stop to your way of living and empty your savings. Protect yourself from the financial burden at the time of hospitalisation with the Arogya Sanjeevani Policy, Bajaj Allianz General Insurance Company. Now you don’t ever have to worry about not having enough money for treatment in case things go wrong. \u000e What is the Sum Insured options available under the policy? Coverage Sum Insured (Minimum) Sum Insured (Maximum) Remark"
+  },
+  {
+   "id": "1",
+   "title": "Hospitalization",
+   "page": 2,
+   "text": "1. Hospitalization INR 1,00,000 INR 5,00,000"
+  },
+  {
+   "id": "1#2",
+   "title": "\u0007Room Rent, Boarding, Nursing Expenses- 2%",
+   "page": 2,
+   "text": "1. \u0007Room Rent, Boarding, Nursing Expenses- 2% of the sum insured subject to maximum of Rs.5000/-, per day"
+  },
+  {
+   "id": "2#2",
+   "title": "\u0007Intensive Care Unit (ICU) / Intensive Cardiac",
+   "page": 2,
+   "text": "2. \u0007Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) - 5% of the sum insured subject to maximum of Rs.10,000/-, per day"
+  },
+  {
+   "id": "3",
+   "title": "\u0007road ambulance maximum of Rs. 2000/- per",
+   "page": 2,
+   "text": "3. \u0007road ambulance maximum of Rs. 2000/- per hospitalisation"
+  },
+  {
+   "id": "2#3",
+   "title": "AYUSH Treatment",
+   "page": 2,
+   "text": "2. AYUSH Treatment INR 1,00,000 INR 5,00,000"
+  },
+  {
+   "id": "3#2",
+   "title": "Cataract Treatment",
+   "page": 2,
+   "text": "3. Cataract Treatment 25% of Sum Insured or Rs.40,000/-, whichever is lower, per each eye in one policy period."
+  },
+  {
+   "id": "4",
+   "title": "Pre-hospitalization",
+   "page": 2,
+   "text": "4.Pre-hospitalization Up to and within Hospitalization Sum Insured"
+  },
+  {
+   "id": "6",
+   "title": "\u0007Modern Treatment",
+   "page": 2,
+   "text": "6. \u0007Modern Treatment Methods 50% of Hospitalization Sum Insured A. \u0007Uterine Artery Embolization and HIFU (High Intensity focused ultrasound) B. Balloon Sinuplasty C. Deep Brain Stimulation D. Oral Chemotherapy E. \u0007Immunotherapy – Monoclonal Antibody to be given as injection F. Intra vitreal injections G. Robotic surgeries H. Stereotactic radio surgeries I. Bronchical Thermoplasty J. \u0007Vaporisation of the prostrate (Green laser treatment or holmium laser treatment) K. IONM – (Intra Operative Neuro Monitoring) L. \u0007Stem Cell Therapy: Hematopoietic stem cells for bone marrow transplant for haematological conditions to be covered. \u000e What is the entry age? • Proposer /legally wedded Spouse /Parents/ Parents In law: 18 yrs to 65 years • Dependent Children: 3 months – 25 years \u000e What is the renewal age? • \u0007Under normal circumstances, lifetime renewal benefit is available under the policy, except on the grounds of Your moral hazard, misrepresentation, non- cooperation or fraud. • \u0007If the child above 18 years of age is financially independent, he or she shall be ineligible for coverage in the subsequent renewals."
+  },
+  {
+   "id": "C3.11",
+   "title": "",
+   "page": 3,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 3 • (Subject to policy is renewed annually with us within the Grace period of 30 days from date of Expiry). \u000e What is the Policy Period? • Policy can be taken for 1 year. \u000e What is Premium paying term? • Premium can be paid on instalment basis- Annual, Half yearly, Quarterly or Monthly. \u000e Is this a floater policy / individual policy? • Policy provides Individual as well as Floater sum insured options. \u000e \u0007Who can be covered under Arogya Sanjeevani Policy, Bajaj Allianz General Insurance Company? • Self, legally wedded Spouse, Dependent Children, Parents, Parents In laws can be covered. \u000e Is there any Co-pay? • 5% co pay on all claims \u000e Benefits under the Policy"
+  },
+  {
+   "id": "1#3",
+   "title": "Hospitalization",
+   "page": 3,
+   "text": "1. Hospitalization \u0007The Company shall indemnify Medical Expense incurred for Hospitalization of the Insured Person during the Policy year, up to the Sum Insured and Cumulative Bonus specified in the Policy Schedule, for, i. \u0007Room Rent, Boarding, Nursing Expenses all inclusive as provided by the Hospital / Nursing Home up to 2% of the sum insured subject to maximum of Rs.5000/-, per day. ii. Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses up to 5% of the sum insured subject to maximum of Rs.10,000/-, per day. iii. Surgeon, Anesthetist, Medical Practitioner, Consultants, Specialist Fees whether paid directly to the treating doctor/surgeon or to the hospital. iv. Anesthesia, blood, oxygen, operation theatre charges, surgical appliances, medicines and drugs, costs towards diagnostics, diagnostic imaging modalities and such similar other expenses. Note: a. In case of admission to a room at rates exceeding the limits as mentioned under (i), the reimbursement of all other expenses incurred at the Hospital, with the exception of cost of Pharmacy/medicines, consumables, implants, medical devices & diagnostics, shall be payable in the same proportion as the admissible rate per day bears to the actual rate per day of room rent charges b. Proportionate deductions shall not apply in respect of the Hospitals which do not follow differential billings or for those expenses in respect of which differential billing is not adopted based on the room category."
+  },
+  {
+   "id": "C3.13",
+   "title": "",
+   "page": 3,
+   "text": "Other Expenses a. Expenses incurred on treatment of cataract subject to the sub limits stated inCoverage 4.3 of the Policy Wordings b. Dental treatment, necessitated due to disease or an injury c. Plastic surgery necessitated due to disease or injury d. All Day Care Treatments e. Expenses incurred on road ambulance subject to a maximum of Rs. 2000/- per hospitalisation."
+  },
+  {
+   "id": "4#2",
+   "title": "",
+   "page": 4,
+   "text": "4 CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 Note:"
+  },
+  {
+   "id": "1#4",
+   "title": "Expenses of Hospitalization for a minimum period of 24 consecutive hours only shall be admissible. However,",
+   "page": 4,
+   "text": "1. Expenses of Hospitalization for a minimum period of 24 consecutive hours only shall be admissible. However, the time limit shall not apply in respect of Day Care Treatment"
+  },
+  {
+   "id": "2#4",
+   "title": "In case of admission to a room/ICU/ICCU at rates exceeding the aforesaid limits, the reimbursement/payment of",
+   "page": 4,
+   "text": "2. In case of admission to a room/ICU/ICCU at rates exceeding the aforesaid limits, the reimbursement/payment of all other expenses incurred at the Hospital, with the exception of cost of medicines, shall be effected in the same proportion as the admissible rate per day bears to the actual rate per day of Room Rent/ICU/ICCU charges."
+  },
+  {
+   "id": "2#5",
+   "title": "AYUSH Treatment",
+   "page": 4,
+   "text": "2. AYUSH Treatment The Company shall indemnify Medical Expenses incurred for Inpatient Care treatment under Ayurveda, Yoga and Naturopathy, Unani, Sidha and Homeopathy systems of medicines during each Policy Year upto the limit of Sum Insured as specified in the Policy Schedule in any AYUSH Hospital."
+  },
+  {
+   "id": "3#3",
+   "title": "Cataract Treatment",
+   "page": 4,
+   "text": "3. Cataract Treatment The Company shall indemnify Medical Expenses incurred for treatment of Cataract, subject to a limit of 25% of Sum Insured or Rs.40,000/-, whichever is lower, per each eye in one policy year."
+  },
+  {
+   "id": "4#3",
+   "title": "Pre Hospitalization",
+   "page": 4,
+   "text": "4. Pre Hospitalization The Company shall indemnify Pre-Hospitalization Medical Expenses incurred, related to an admissible Hospitalization requiring Inpatient Care, for a fixed period of 30 days prior to the date of admissible Hospitalization covered under the Policy."
+  },
+  {
+   "id": "5",
+   "title": "Post Hospitalisation",
+   "page": 4,
+   "text": "5. Post Hospitalisation The Company shall indemnify Post Hospitalization Medical Expenses incurred, related to an admissible Hospitalization requiring Inpatient Care, for a fixed period of 60 days from the date of discharge from the Hospital, following an admissible Hospitalization covered under the Policy. The following procedures will be covered (wherever medically indicated) either as In-patient or as part of day care treatment in a hospital up to 50% of Sum Insured, specified in the policy schedule, during the Policy Period: A. Uterine Artery Embolization and HIFU (High Intensity focused ultrasound) B. Balloon Sinuplasty C. Deep Brain Stimulation D. Oral Chemotherapy E. Immunotherapy – Monoclonal Antibody to be given as injection F. Intra vitreal injections G. Robotic surgeries H. Stereotactic radio surgeries I. Bronchical Thermoplasty J. Vaporisation of the prostrate (Green laser treatment or holmium laser treatment) K. IONM – (Intra Operative Neuro Monitoring) L. Stem Cell Therapy: Hematopoietic stem cells for bone marrow transplant for haematological conditions to be covered."
+  },
+  {
+   "id": "C4.21",
+   "title": "",
+   "page": 4,
+   "text": "The expenses that are not covered in this policy are placed under List-I of Annexure-A of the Policy Wordings. The list of expenses that are to be subsumed into room charges, or procedure charges or costs of treatment are placed under List-II, List-III and List –IV of Annexure-A of the Policy Wordings respectively. \u000e Is there any pre-policy check-up for enrolling under the policy? • Applicable only for new proposals. • No Medical tests upto 45 years, subject to no adverse health conditions • Medical tests would be advised for the below adverse health conditions:"
+  },
+  {
+   "id": "C5.22",
+   "title": "",
+   "page": 5,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 5 o Diabetes o Hypertension o Lipid Disorders o Combination of any of the above o Obesity o Joint Disorders • Medical tests (pre-policy check-up) are mandatory for members above 45years. • The pre-policy check-up would be arranged at our empanelled diagnostic centers. •"
+  },
+  {
+   "id": "100",
+   "title": "% cost of pre-policy check-up would be refunded if the proposal is accepted & policy is issued.",
+   "page": 5,
+   "text": "100 % cost of pre-policy check-up would be refunded if the proposal is accepted & policy is issued. Age of the person to be insured Sum Insured Medical Examination Up to 45 years All Sum Insured options No Medical Tests* Above 45 years All Sum Insured options Medical Tests required as listed below:Full Medical Report, ECG with reporting, FBG, CBC with ESR, Cholesterol, HDL Cholesterol, Triglycerides, Creatinine, GGTP, SGOT, SGPT, HbA1c, Urinalysis, Total Protein, Sr. Albumin, Sr. Globulin, A:G Ratio *Subject to no adverse health conditions mentioned above \u000e What are the Sub-limits under the Sum Insured? Annual Policy Benefit/Procedure Sub-limit Per day Room rent- Normal 2% of Sum Insured subject to a maximum of INR 5000/- Per day ICU/ICCU expenses 5% of Sum Insured subject to a maximum of INR 10,000/- Cataract surgery 25% of Sum Insured or INR 40,000/- whichever is lower for each eye Road Ambulance INR 2000/- per hospitalisation Listed Modern Treatment Methods 50% of Hospitalization Sum Insured \u000e What additional benefits do I get? • Cumulative bonus"
+  },
+  {
+   "id": "C5.24",
+   "title": "",
+   "page": 5,
+   "text": "Cumulative Bonus will be increased by 5% in respect of each claim free policy year (no claims are reported), provided the policy is renewed with the company without a break subject to maximum of 50% of the sum insured under the current policy year. If a claim is made in any particular year, the cumulative bonus accrued shall be reduced at the same rate at which it has accrued. However sum insured will be maintained and will not be reduced in the policy year. Notes: i. In case where the policy is on individual basis, the CB shall be added and available individually to the insured person if no claim has been reported. CB shall reduce only in case of claim from the same insured person. ii. In case where the policy is on floater basis, the CB shall be added and available to the family on floater basis, provided no claim has been reported from any member of the family. CB shall reduce in case of claim from any of the Insured Persons. iii. CB shall be available only if the Policy is renewed/ premium paid within the Grace Period. iv. If the Insured persons in the expiring policy are covered on an Individual basis as specified in the Policy Schedule and there is an accumulated CB for such Insured Person under the expiring policy, and such expiring policy has been renewed on a floater policy basis as specified in the Policy Schedule then the CB to be carried forward for credit in such Renewed Policy shall be the one that is applicable to the lowest among all the Insured Persons."
+  },
+  {
+   "id": "6#2",
+   "title": "",
+   "page": 6,
+   "text": "6 CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 v. In case of floater policies where Insured Persons renew their expiring policy by splitting the Sum Insured into two or more floater policies/individual policies or in cases where the policy is split due to the child attaining the age of 25 years, the CB of the expiring policy shall be apportioned to such Renewed Policies in the proportion of the Sum Insured of each Renewed Policy. vi. If the Sum Insured has been reduced at the time of Renewal, the applicable CB shall be reduced in the same proportion to the Sum Insured in current Policy. vii. If the Sum Insured under the Policy has been increased at the time of Renewal the CB shall be calculated on the Sum Insured of the last completed Policy Year. viii. If a claim is made in the expiring Policy Year, and is notified to Us after the acceptance of Renewal premium any awarded CB shall be withdrawn. \u000e What are Premium Payment Options- • Installment Premium"
+  },
+  {
+   "id": "C6.26",
+   "title": "",
+   "page": 6,
+   "text": "If the insured person has opted for Payment of Premium on an installment basis i.e. Half Yearly, Quarterly or Monthly, as mentioned in Your Policy Schedule/ Certificate of Insurance, the following Conditions shall apply ( notwithstanding any terms contrary elsewhere in the Policy) i. Grace Period of 15 days would be given to pay the installment premium due for the Policy. ii. During such grace period, coverage will not be available from the installment premium payment due date till the date of receipt of premium by the Company. iii. The benefits provided under – “Waiting Periods”, “Specific Waiting Periods” Section shall continue in the event of payment of premium within the stipulated Grace Period. iv. No interest will be charged if the installment premium is not paid on due date. v. In case of installment premium due not received within the grace period, the policy will get cancelled. \u000e Cancellation a. The Insured may cancel this Policy by giving 15 days’ written notice, and in such an event, the Company shall refund premium on short term rates for the unexpired Policy Period as per the rates detailed below. Refund % Refund of Premium (basis Policy Period) Timing of Cancellation"
+  },
+  {
+   "id": "0",
+   "title": "00%",
+   "page": 6,
+   "text": "0.00% \u0007Notwithstanding anything contained herein or otherwise, no refunds of premium shall be made in respect of Cancellation where, any claim has been admitted or has been lodged or any Benefit has been availed by the Insured person under the Policy. b. \u0007Cancellation grid for premium received on instalment basis and refund is as under \u0007For monthly/quarterly premium modes, no premium is refunded. For half yearly premium payment mode, the premium will be refunded as per the below table: Period in Risk (from latest instalment date) Premium Refund Pro Rate % of Half Yearly Premium Exceeding 15 days but less than or equal to 3 months 30% Exceeding 3 months but less than or equal to 6 months 0%"
+  },
+  {
+   "id": "C7.28",
+   "title": "",
+   "page": 7,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 7 c. \u0007The Company may cancel the policy at any time on grounds of mis-representation, non-disclosure of material facts, fraud by the Insured Person, by giving 15 days’ written notice. There would be no refund of premium on . cancellation on grounds of mis-representation, non-disclosure of material facts or fraud. \u000e Renewal of Policy The policy shall ordinarily be renewable except on grounds of fraud, moral hazard, misrepresentation by the insured person. The Company is not bound to give notice that it is due for renewal. i. Renewal shall not be denied on the ground that the insured had made a claim or claims in the preceding policy years ii. Request for renewal along with requisite premium shall be received by the Company before the end of the Policy Period. iii. At the end of the Policy Period, the policy shall terminate and can be renewed within the Grace Period to maintain continuity of benefits without Break in Policy. Coverage is not available during the grace period. iv. If not renewed within Grace Period after due renewal date, the Policy shall terminate. \u000e When can I enhance my Sum Insured?"
+  },
+  {
+   "id": "C7.29",
+   "title": "",
+   "page": 7,
+   "text": "Sum insured can be changed (increased/ decreased) only at the time of renewal or at any time, subject to underwriting by the Company. For any increase in SI, the waiting period shall start afresh only for the enhanced portion of the sum insured. \u000e Free Look Period The Free Look Period shall be applicable at the inception of the Policy and not on renewals or at the time of porting the Policy. The Insured or Insured Person(s) shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable. If the Insured or Insured Person(s) has not made any claim during the Free Look Period, the Insured shall be entitled to i. a refund of the premium paid less any expenses incurred by the Company on medical examination of the Insured Person and the stamp duty charges; or ii. where the risk has already commenced and the option of return of the Policy is exercised by the insured, a deduction towards the proportionate risk premium for period of cover or iii. Where only a part of the insurance coverage has commenced, such proportionate premium commensurate with the insurance coverage during such period; \u000e Portability Conditions"
+  },
+  {
+   "id": "C7.30",
+   "title": "",
+   "page": 7,
+   "text": "The Insured Person or Policy Holder will have the option to port the Policy to other insurers as per extant Guidelines related to Portability. If such person is presently covered and has been continuously covered without any lapses under any health insurance plan with an Indian General/Health insurer as per Guidelines on portability, the proposed Insured Person will get all the accrued continuity benefits in waiting periods as under: i. The waiting periods specified in Section 6 shall be reduced by the number of continuous preceding years of coverage of the Insured Person under the previous Health Insurance Policy ii. Portability benefit will be offered to the extent of sum of previous sum insured and accrued bonus ( as part of the base sum insured), portability benefit shall not apply to any other additional increased sum insured. For detailed Guidelines on Migration, kindly refer the link: https://www.irdai.gov.in/ADMINCMS/cms/ frmGuidelines_Layout.aspx?page=PageNo3987"
+  },
+  {
+   "id": "8",
+   "title": "",
+   "page": 8,
+   "text": "8 CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 \u000e Revision/ Modification of the policy: There is a possibility of revision/ modification of terms, conditions, coverages and/or premiums of this product at any time in future, with appropriate approval from IRDAI. In such an event of revision/modification of the product, intimation shall be set out to all the existing insured members at least 3 months prior to the date of such revision/modification comes into the effect \u000e Migration of policy: The Insured Person or Policy Holder will have the option to migrate the Policy to other health insurance products/plans offered by the Company as per the extant guidelines related to migration. If such person is presently covered and has been continuously covered without any lapses under any health insurance product/ plan offered by the Company, as per Guidelines on migration, the proposed Insured Person or Policy Holder will get all the accrued continuity benefits in waiting periods as below: i. The waiting periods specified in Section 6 shall be reduced by number of continuous preceding years of coverage of the Insured Person under the previous health insurance Policy. ii. Migration benefit will be offered to the extent of sum of previous sum insured and accrued bonus/multiplier benefit (as part of the base sum insured), migration benefit shall not apply to any other additional increased Sum Insured.)"
+  },
+  {
+   "id": "C8.32",
+   "title": "",
+   "page": 8,
+   "text": "For detailed Guidelines on Migration, kindly refer the link: https://www.irdai.gov.in/ADMINCMS/cms/ frmGuidelines_Layout.aspx?page=PageNo3987 \u000e Withdrawal of Policy There is possibility of withdrawal of this product at any time in future with appropriate approval from IRDAI, as We reserve Our right to do so with a intimation of 3 months to all the existing insured members. In such an event of withdrawal of this product, at the time of Your seeking renewal of this Policy, You can choose, among Our available similar and closely similar Health insurance products. Upon Your so choosing Our new product, You will be charged the Premium as per Our Underwriting Policy for such chosen new product, as approved by IRDAI. Provided however, if You do not respond to Our intimation regarding the withdrawal of the product under which this Policy is issued, then this Policy shall be withdrawn and shall not be available to You for renewal on the renewal date and accordingly upon Your seeking renewal of this Policy, You shall have to take a Policy under available new products of Us subject to Your paying the Premium as per Our Underwriting Policy for such available new product chosen by You and also subject to Portability condition. \u000e Discounts: i. Family Discount: 10% family discount shall be offered if 2 eligible Family Members are covered under a single Policy and 15 % if more than 2 of any of the eligible Family Members are covered under a single Policy. Moreover, this family discount will be offered for both new policies as well as for renewal policies. ii. Employee Discount: 20% discount on published premium rates to employees of Bajaj Allianz & its group companies, this discount is applicable only if the Policy is booked in direct office code. iii. Online/Direct Business Discount: Discount of 5% will be offered in this product for policies underwritten through direct/online channel."
+  },
+  {
+   "id": "C8.33",
+   "title": "",
+   "page": 8,
+   "text": "Note: this discount is not applicable for Employees who get employee discount \u000e What are the exclusions under the policy? I. Waiting Period The Company shall not be liable to make any payment under the Policy in connection with or in respect of following expenses till the expiry of waiting period mentioned below:"
+  },
+  {
+   "id": "C9.34",
+   "title": "",
+   "page": 9,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 9 Pre-Existing Diseases (Code- Excl01) a. Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first Policy with us. b. In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c. If the Insured Person is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to the extent of prior coverage. d. Coverage under the Policy after the expiry of 48 months for any pre-existing disease is subject to the same being declared at the time of application and accepted by us. First Thirty Days Waiting Period(Code- Excl03) i. Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. ii. This exclusion shall not, however, apply if the Insured Person has Continuous Coverage for more than twelve months. iii. The within referred waiting period is made applicable to the enhanced sum insured in the event of granting higher sum insured subsequently."
+  },
+  {
+   "id": "C9.35",
+   "title": "",
+   "page": 9,
+   "text": "Specific Waiting Period: (Code- Excl02) a. Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first Policy with the Insurer. This exclusion shall not be applicable for claims arising due to an accident. b. In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c. If any of the specified disease/procedure falls under the waiting period specified for pre-existing diseases, then the longer of the two waiting periods shall apply. d. The waiting period for listed conditions shall apply even if contracted after the Policy or declared and accepted without a specific exclusion. e. If the Insured Person is continuously covered without any break as defined under the applicable norms on portability stipulated by IRDAI, then waiting period for the same would be reduced to the extent of prior coverage."
+  },
+  {
+   "id": "24",
+   "title": "Months waiting period",
+   "page": 9,
+   "text": "24 Months waiting period Benign ENT disorders Gout and Rheumatism Tonsillectomy Hernia of all types Adenoidectomy Hydrocele Mastoidectomy Non Infective Arthritis Tympanoplasty Piles, Fissures and Fistula in anus Hysterectomy Pilonidal sinus, Sinusitis and related disorders All internal and external benign tumours, cysts, polyps of any kind, including benign breast lumps Prolapse inter Vertebral Disc and Spinal Diseases unless arising from accident Benign prostate hypertrophy Calculi in urinary system,Gall Bladder and Bile duct, excluding malignancy. Cataract and age related eye ailments Varicose Veins and Varicose Ulcers Gastric/ Duodenal Ulcer Internal Congenital Anomalies"
+  },
+  {
+   "id": "48",
+   "title": "Months waiting period",
+   "page": 9,
+   "text": "48 Months waiting period Treatment for joint replacement unless arising from accident Age-related Osteoarthritis & Osteoporosis"
+  },
+  {
+   "id": "10",
+   "title": "",
+   "page": 10,
+   "text": "10 CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 II. Exclusions The Company shall not be liable to make any payment under the policy, in respect of any expenses incurred in connection with or in respect of: • Investigation & Evaluation(Code- Excl04) a. Expenses related to any admission primarily for diagnostics and evaluation purposes only are excluded. b. Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment are excluded. • Rest Cure, rehabilitation and respite care(Code- Excl05) a. Expenses related to any admission primarily for enforced bed rest and not for receiving treatment. This also includes: i. Custodial care either at home or in a nursing facility for personal care such as help with activities of daily living such as bathing, dressing, moving around either by skilled nurses or assistant or non-skilled persons. ii. Any services for people who are terminally ill to address physical, social, emotional and spiritual needs. • Obesity/ Weight Control(Code- Excl06)"
+  },
+  {
+   "id": "C10.39",
+   "title": "",
+   "page": 10,
+   "text": "Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions:"
+  },
+  {
+   "id": "1#5",
+   "title": "",
+   "page": 10,
+   "text": "1. Surgery to be conducted is upon the advice of the Doctor"
+  },
+  {
+   "id": "2#6",
+   "title": "",
+   "page": 10,
+   "text": "2. The surgery/Procedure conducted should be supported by clinical protocols"
+  },
+  {
+   "id": "3#4",
+   "title": "",
+   "page": 10,
+   "text": "3. The member has to be 18 years of age or older and"
+  },
+  {
+   "id": "4#4",
+   "title": "",
+   "page": 10,
+   "text": "4. Body Mass Index (BMI); a. greater than or equal to 40 or b. greater than or equal to 35 in conjunction with any of the following severe co-morbidities following failure of less invasive methods of weight loss: i. Obesity-related cardiomyopathy ii. Coronary heart disease iii. Severe Sleep Apnea iv. Uncontrolled Type2 Diabetes • Change-of-Gender treatments: (Code- Excl07) Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex. • Cosmetic or plastic Surgery: (Code- Excl08) Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured. For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner. • Hazardous or Adventure sports: (Code- Excl09)"
+  },
+  {
+   "id": "C10.44",
+   "title": "",
+   "page": 10,
+   "text": "Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving. • Breach of law: Code- (Excl10) Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent. • Excluded Providers: Code- (Excl11) Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed in its website / notified to the policyholders are not admissible. However, in case of life threatening situations or following an accident, expenses up to the stage of stabilization are payable but not the complete claim. • Treatment for, Alcoholism, drug or substance abuse or any addictive condition and consequences thereof. (Code- Excl12)"
+  },
+  {
+   "id": "C11.45",
+   "title": "",
+   "page": 11,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 11 • Treatments received in heath hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons. (Code- Excl13) • Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day care procedure (Code- Excl14) • Refractive Error: (Code- Excl15) Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres. • Unproven Treatments:(Code- Excl16) Expenses related to any unproven treatment, services and supplies for or in connection with any treatment. Unproven treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness. • Sterility and Infertility: (Code- Excl17)"
+  },
+  {
+   "id": "C11.46",
+   "title": "",
+   "page": 11,
+   "text": "Expenses related to Sterility and Infertility. This includes: i. Any type of Contraception, sterilization ii. Assisted Reproduction services including artificial insemination and advanced reproductive technologies such as IVF, ZIFT, GIFT, ICSI iii. Gestational Surrogacy iv. Reversal of sterilization • Maternity Expenses (Code:Excl 18): i. medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy; ii. expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period. • War (whether declared or not) and war like occurrence or invasion, acts of foreign enemies, hostilities, civil war, rebellion, revolutions, insurrections, mutiny, military or usurped power, seizure, capture, arrest, restraints and detainment of all kinds. • Nuclear, chemical or biological attack or weapons, contributed to, caused by, resulting from or from any other cause or event contributing concurrently or in any other sequence to the loss, claim or expense. For the purpose of this exclusion: a. Nuclear attack or weapon means the use of any nuclear weapon or device or waste or combustion of nuclear fuel or the emission, discharge, dispersal, release or escape of fissile/fusion material emitting a level of radioactivity capable of causing any illness, incapacitating disablement or death. b. Chemical attack or weapons means the emission, discharge, dispersal, release or escape of any pathogenic (disease producing) micro-organisms and/or biologically produced toxins (including genetically modified organisms and chemically synthesized toxins) which are capable of causing any illness, incapacitating disablement or death. c. Biological attack or weapons means the emission, discharge, dispersal, release or escape of any pathogenic (disease producing) micro-organisms and/or biologically produced toxins (including genetically modified organisms and chemically synthesized toxins) which are capable of causing any illness, incapacitating disablement or death. • Any expenses incurred on Domiciliary Hospitalization and OPD Treatment. • Treatment taken outside the geographical limits of India • In respect of the existing diseases, disclosed by the insured and mentioned in the policy schedule (based on insured’s consent), policyholder is not entitled to get the coverage for specified ICD codes."
+  },
+  {
+   "id": "12",
+   "title": "",
+   "page": 12,
+   "text": "12 CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 \u000e List of Claim documents: The reimbursement claim is to be supported with the following documents and submitted within the prescribed time limit. i. Duly completed claim form ii. Photo identity proof of the patient iii. Medical practitioner’s prescription advising admission. iv. Original bills with itemized break-up v. Payment receipts vi. Discharge summary including complete medical history of the patient along with other details vii. Investigation / Diagnostic test reports etc. supported by the prescription from attending medical practitioner viii. OT notes or Surgeon’s certificate giving details of the operation performed (for surgical cases) ix. Sticker/Invoice of the Implants, wherever applicable. x. MLR (Medico Legal Report) copy if carried out and FIR (First Information Report) if registered, wherever applicable. xi. NEFT Details (to enable direct credit of claim amount in bank account) and cancelled cheque xii. KYC (identity proof with address) of the proposer, where claim liability is above Rs. 1 Lakh as per AML Guidelines. xiii. Legal heir/ succession certificate, wherever applicable xiv. Any other relevant document required by Company/ TPA for assessment of the claim."
+  },
+  {
+   "id": "1#6",
+   "title": "",
+   "page": 12,
+   "text": "1. The company shall only accept bills/invoices/medical treatment related documents only in the Insure Person’s name for whom the claim is submitted"
+  },
+  {
+   "id": "2#7",
+   "title": "",
+   "page": 12,
+   "text": "2. In the event of a claim lodged under the Policy and the original documents having been submitted to any other insurer, the Company shall accept the copy of the documents and claim settlement advice, duly certified by the other insurer subject to satisfaction of the Company"
+  },
+  {
+   "id": "3#5",
+   "title": "",
+   "page": 12,
+   "text": "3. Any delay in notification or submission may be condoned on merit where delay is proved to be for reasons beyond the control of the Insured Person Please send the documents on below address Bajaj Allianz General Insurance Company 2nd Floor, Bajaj Finserv Building, Behind Weikfield IT park, Off Nagar Road, Viman Nagar Pune 411014| Toll free: 1800-103-2529, 1800-22-5858 All Claims will be settled by In house claims settlement team of the company and no TPA is engaged. \u000e How do I Buy this policy? • Discuss the policy benefits, coverage and premium details with your insurance advisor or visit our website (www.bajajallianz.com) for details • Actively seek information on the charges and exclusions under the policy • Fill the proposal form stating your personal details and health profile • Ensure that the information given in the form is complete and accurate • We will process your proposal. Based on the information provided, you may be required to undergo pre-policy medical examination at our network diagnostic centers. Please note that you will have to pay the necessary amount for undergoing the specified medical examination and such tests shall be valid for a maximum period of 30days only"
+  },
+  {
+   "id": "C13.51",
+   "title": "",
+   "page": 13,
+   "text": "CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 13 • Depending on our evaluation if your proposal is accepted, then we will issue the policy subject to receipt of annual single premium as published on the prospectus. • If the policy is issued we will refund you 100% of the cost of the pre-policy medical examination • The Policy Schedule, Policy Wordings, Cashless Cards and Health Guide will be sent to your mailing address mentioned on the proposal form \u000e How do I make a Claim? Complete set of claim documents needs to be forwarded to Health Administration Team, Bajaj Allianz General Insurance Co. Ltd. 2nd floor, Bajaj Finserv Building, Behind Weikfield IT Park, Off Nagar Road,Viman Nagar-Pune - 411 014. The above information is indicative in nature, please refer the policy wordings or visit our website / our nearest office for further details Insured Empanelled Hospital Present Cashless Card Register Claim with Bajaj Allianz"
+  },
+  {
+   "id": "24#2",
+   "title": "hr helpline*",
+   "page": 13,
+   "text": "24 hr helpline* Non-Empanelled Hospital Insured Makes Payment Directly Send Claim Form + Bills+ all hospitalization documents To Bajaj Allianz for reimbursement"
+  },
+  {
+   "id": "14",
+   "title": "",
+   "page": 14,
+   "text": "14 CIN: U66010PN2000PLC015329, UIN: BAJHLIP20164V011920 For more details on risk factors, Terms and Conditions, please read the sales brochure before concluding a sale. CIN: U66010PN2000PLC015329 |UIN: BAJHLIP20164V011920 BJAZ-B-0294/9-Apr-20 Policy holders can download Caringly Yours app for one -touch access Available on: BAJAJ ALLIANZ GENERAL INSURANCE CO. LTD. BAJAJ ALLIANZ HOUSE, AIRPORT ROAD, YERAWADA, PUNE - 411006. IRDA REG NO.: 113. FOR ANY QUERY (TOLL FREE)"
+  },
+  {
+   "id": "1800",
+   "title": "209-0144 /1800-209-5858",
+   "page": 14,
+   "text": "1800-209-0144 /1800-209-5858 www.bajajallianz.com bagichelp@bajajallianz.co.in"
+  }
+ ],
+ "source_file": "data/raw/policies/bajaj alliance.pdf"
+}

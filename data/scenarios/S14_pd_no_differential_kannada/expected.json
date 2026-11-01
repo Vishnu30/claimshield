@@ -1,0 +1,22 @@
+{
+ "issues": [
+  [
+   "proportionate",
+   "contestable"
+  ],
+  [
+   "room_rent",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 110714.29,
+ "claimed": 137000.0,
+ "payout_before": 110714.29,
+ "payout_after_fixes": 110714.29,
+ "recoverable_via_appeal": 22285.710000000006,
+ "mode": "pre_submission",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "kn",
+ "render": "pdf"
+}

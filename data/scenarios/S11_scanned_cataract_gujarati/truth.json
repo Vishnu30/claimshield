@@ -1,0 +1,174 @@
+{
+ "bill": {
+  "hospital": "Shreeji Eye Hospital, Surat",
+  "bill_no": "SEH-2291",
+  "admission_date": "2026-10-02",
+  "discharge_date": "2026-10-03",
+  "room_category": "Deluxe",
+  "room_days": 1.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Deluxe room (1 day)",
+    "category": "room",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "N1",
+    "description": "Nursing charges",
+    "category": "nursing",
+    "qty": 1.0,
+    "rate": 1000.0,
+    "amount": 1000.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - phaco",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 16000.0,
+    "amount": 16000.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthetist fee",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 4000.0,
+    "amount": 4000.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "Hydrophobic IOL (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 14000.0,
+    "amount": 14000.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "K1",
+    "description": "Surgical kit",
+    "category": "consumable",
+    "qty": 1.0,
+    "rate": 3000.0,
+    "amount": 3000.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 2800.0,
+    "amount": 2800.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Investigations",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 2200.0,
+    "amount": 2200.0,
+    "date": "2026-10-01",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X1",
+    "description": "Food charges (attendant)",
+    "category": "misc",
+    "qty": 1.0,
+    "rate": 600.0,
+    "amount": 600.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "X2",
+    "description": "Toiletries kit",
+    "category": "misc",
+    "qty": 1.0,
+    "rate": 400.0,
+    "amount": 400.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 61200.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Mature cataract, right eye",
+  "procedure": "Phacoemulsification with IOL, right eye",
+  "icd10": null,
+  "admission_type": "day_care",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_discharge",
+  "jurisdiction": "IN",
+  "user_lang": "gu",
+  "patient_age": 66,
+  "sum_insured": null,
+  "policy_start": "2021-11-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "final_itemized_bill",
+   "discharge_summary",
+   "investigation_reports"
+  ],
+  "narrative": "મારી માતાનું મોતિયાનું ઓપરેશન થયું છે. હોસ્પિટલે ડીલક્સ રૂમ આપ્યો હતો અને બિલ બહુ વધારે લાગે છે.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Scanned bill (rotated, noisy) — cataract, Gujarati output",
+ "tier": "verified",
+ "blurb": "",
+ "render": "scan"
+}

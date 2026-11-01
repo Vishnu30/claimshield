@@ -1,0 +1,26 @@
+{
+ "issues": [
+  [
+   "copay",
+   "valid"
+  ],
+  [
+   "non_payable",
+   "fixable"
+  ],
+  [
+   "sublimit",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 32000.0,
+ "claimed": 62000.0,
+ "payout_before": 32000.0,
+ "payout_after_fixes": 32000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "challenge",
+ "bills": 1,
+ "lang": "hinglish",
+ "render": "pdf"
+}

@@ -1,0 +1,44 @@
+{
+ "code": "US",
+ "name": "United States (beta)",
+ "currency": "$",
+ "currency_code": "USD",
+ "number_format": "western",
+ "regulator": "State DOI / HHS",
+ "features": {
+  "room_rent": false,
+  "proportionate_deduction": false,
+  "non_payables": false,
+  "moratorium_months": null,
+  "ped_max_months": 0,
+  "specific_max_months": null,
+  "copay": true,
+  "tariffs": false
+ },
+ "rules_file": null,
+ "non_payables_file": null,
+ "precedents_file": null,
+ "escalation": [
+  {
+   "step": "Internal appeal with the plan",
+   "how": "File in writing; request the claim file and the clinical criteria used.",
+   "file_within_days": 180,
+   "respond_days": 60
+  },
+  {
+   "step": "External review (independent reviewer)",
+   "how": "Request via state process or HHS-administered process.",
+   "file_within_days": 120,
+   "respond_days": 45
+  },
+  {
+   "step": "State Department of Insurance complaint",
+   "how": "File with your state insurance regulator.",
+   "file_within_days": null
+  }
+ ],
+ "languages": [
+  "en",
+  "es"
+ ]
+}

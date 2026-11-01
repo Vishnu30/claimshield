@@ -1,0 +1,13 @@
+{
+ "issues": [],
+ "payout_as_is": 48000.0,
+ "claimed": 48000.0,
+ "payout_before": 48000.0,
+ "payout_after_fixes": 48000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "en",
+ "render": "pdf"
+}

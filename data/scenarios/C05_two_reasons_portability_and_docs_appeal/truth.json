@@ -1,0 +1,142 @@
+{
+ "bill": {
+  "hospital": "Ruby Hall Clinic, Pune",
+  "bill_no": "RHC-6021",
+  "admission_date": "2026-09-12",
+  "discharge_date": "2026-09-14",
+  "room_category": "Twin sharing",
+  "room_days": 2.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 2.0,
+    "rate": 4000.0,
+    "amount": 8000.0,
+    "date": "2026-09-12",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - lap cholecystectomy",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 35000.0,
+    "amount": 35000.0,
+    "date": "2026-09-12",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-09-12",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 15000.0,
+    "amount": 15000.0,
+    "date": "2026-09-12",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 7000.0,
+    "amount": 7000.0,
+    "date": "2026-09-13",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "USG & LFT",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 5000.0,
+    "amount": 5000.0,
+    "date": "2026-09-11",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 78000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Symptomatic cholelithiasis (gall bladder stones)",
+  "procedure": "Laparoscopic cholecystectomy",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "appeal",
+  "jurisdiction": "IN",
+  "user_lang": "mr",
+  "patient_age": 52,
+  "sum_insured": null,
+  "policy_start": "2025-08-01",
+  "continuous_coverage_since": "2022-01-01",
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "rejection_letter",
+   "policy_copy",
+   "final_itemized_bill",
+   "discharge_summary",
+   "previous_policy_copies"
+  ],
+  "narrative": "मी 2022 पासून सतत विमा घेतला आहे, फक्त कंपनी बदलली.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Rejected on two grounds — waiting period (ported) + missing reports",
+ "tier": "challenge",
+ "blurb": "One ground is wrong in law, the other is curable",
+ "render": "pdf",
+ "rejection": {
+  "insurer": "Demo General Insurance (synthetic)",
+  "letter_date": "2026-10-05",
+  "claim_no": "DGI/HL/26/61500",
+  "decision": "rejected",
+  "amount_claimed": 78000.0,
+  "amount_paid": 0.0,
+  "reasons": [
+   {
+    "text": "Waiting period of 24 months for gall bladder stones not completed",
+    "clause_cited": "4.2",
+    "amount": null
+   },
+   {
+    "text": "Investigation reports not submitted",
+    "clause_cited": "5.2",
+    "amount": null
+   }
+  ],
+  "source_file": null
+ }
+}

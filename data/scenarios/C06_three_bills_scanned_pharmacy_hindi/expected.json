@@ -1,0 +1,22 @@
+{
+ "issues": [
+  [
+   "mismatch",
+   "fixable"
+  ],
+  [
+   "mismatch",
+   "fixable"
+  ]
+ ],
+ "payout_as_is": 36100.0,
+ "claimed": 39100.0,
+ "payout_before": 36100.0,
+ "payout_after_fixes": 36100.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "challenge",
+ "bills": 3,
+ "lang": "hi",
+ "render": "pdf"
+}

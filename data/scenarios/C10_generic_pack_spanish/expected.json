@@ -1,0 +1,22 @@
+{
+ "issues": [
+  [
+   "proportionate",
+   "fixable"
+  ],
+  [
+   "room_rent",
+   "valid"
+  ]
+ ],
+ "payout_as_is": 61000.0,
+ "claimed": 91000.0,
+ "payout_before": 61000.0,
+ "payout_after_fixes": 85000.0,
+ "recoverable_via_appeal": 0.0,
+ "mode": "pre_submission",
+ "tier": "challenge",
+ "bills": 1,
+ "lang": "es",
+ "render": "pdf"
+}

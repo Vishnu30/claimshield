@@ -1,0 +1,150 @@
+{
+ "bill": {
+  "hospital": "Sparsh Ortho Centre, Bengaluru",
+  "bill_no": "SOC-6610",
+  "admission_date": "2026-09-22",
+  "discharge_date": "2026-09-24",
+  "room_category": "Single deluxe",
+  "room_days": 2.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Single deluxe room",
+    "category": "room",
+    "qty": 2.0,
+    "rate": 7000.0,
+    "amount": 14000.0,
+    "date": "2026-09-22",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - arthroscopic ACL reconstruction",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 45000.0,
+    "amount": 45000.0,
+    "date": "2026-09-22",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 10000.0,
+    "amount": 10000.0,
+    "date": "2026-09-22",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 20000.0,
+    "amount": 20000.0,
+    "date": "2026-09-22",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "ACL graft fixation screws (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 28000.0,
+    "amount": 28000.0,
+    "date": "2026-09-22",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 8000.0,
+    "amount": 8000.0,
+    "date": "2026-09-23",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "MRI knee",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 9000.0,
+    "amount": 9000.0,
+    "date": "2026-09-21",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "N1",
+    "description": "Nursing charges",
+    "category": "nursing",
+    "qty": 1.0,
+    "rate": 3000.0,
+    "amount": 3000.0,
+    "date": "2026-09-22",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 137000.0,
+  "package": false,
+  "differential_billing": false,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Complete ACL tear, right knee",
+  "procedure": "Arthroscopic ACL reconstruction",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "kn",
+  "patient_age": 50,
+  "sum_insured": null,
+  "policy_start": "2018-05-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque",
+   "implant_invoice_sticker"
+  ],
+  "narrative": "ನನ್ನ ಮೊಣಕಾಲಿಗೆ ಆರ್ಥ್ರೋಸ್ಕೋಪಿ ಆಯಿತು. ಎಲ್ಲಾ ಕೊಠಡಿಗಳಿಗೂ ಒಂದೇ ಶುಲ್ಕ ಎಂದು ಆಸ್ಪತ್ರೆ ಬರೆದು ಕೊಟ್ಟಿದೆ.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Room upgrade, hospital bills flat fees — PD contestable, Kannada output",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

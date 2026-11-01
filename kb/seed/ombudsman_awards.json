@@ -1,0 +1,76 @@
+[
+ {
+  "id": "ILL-PD-01",
+  "illustrative": true,
+  "office": null,
+  "year": null,
+  "insurer": null,
+  "issue_type": "proportionate",
+  "complaint": "Proportionate deduction applied to medicines and implants due to room upgrade.",
+  "decision": "allowed",
+  "reasoning_summary": "Deduction on exempt categories set aside per IRDAI standardization guidelines.",
+  "pdf": null,
+  "page": null,
+  "keywords": [
+   "proportionate",
+   "room rent",
+   "implant",
+   "pharmacy"
+  ]
+ },
+ {
+  "id": "ILL-PED-01",
+  "illustrative": true,
+  "office": null,
+  "year": null,
+  "insurer": null,
+  "issue_type": "ped",
+  "complaint": "Claim repudiated for non-disclosure of hypertension after 6 years of continuous cover.",
+  "decision": "allowed",
+  "reasoning_summary": "Moratorium bars contesting non-disclosure after 60 months absent fraud.",
+  "pdf": null,
+  "page": null,
+  "keywords": [
+   "ped",
+   "non-disclosure",
+   "moratorium",
+   "hypertension"
+  ]
+ },
+ {
+  "id": "ILL-NP-01",
+  "illustrative": true,
+  "office": null,
+  "year": null,
+  "insurer": null,
+  "issue_type": "non_payable",
+  "complaint": "Consumables bundled as 'kit' disallowed entirely.",
+  "decision": "partly allowed",
+  "reasoning_summary": "Itemized consumables forming part of procedure held payable.",
+  "pdf": null,
+  "page": null,
+  "keywords": [
+   "kit",
+   "consumables",
+   "non-payable"
+  ]
+ },
+ {
+  "id": "ILL-WP-01",
+  "illustrative": true,
+  "office": null,
+  "year": null,
+  "insurer": null,
+  "issue_type": "waiting_period",
+  "complaint": "Specific waiting period applied despite portability from previous insurer.",
+  "decision": "allowed",
+  "reasoning_summary": "Waiting period served under previous continuous policy must be credited.",
+  "pdf": null,
+  "page": null,
+  "keywords": [
+   "portability",
+   "waiting period",
+   "credit"
+  ]
+ }
+]

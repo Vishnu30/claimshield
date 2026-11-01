@@ -1,0 +1,130 @@
+{
+ "bill": {
+  "hospital": "Ganga Ram Hospital, Delhi",
+  "bill_no": "GRH-4041",
+  "admission_date": "2026-10-01",
+  "discharge_date": "2026-10-03",
+  "room_category": "Twin sharing",
+  "room_days": 2.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 2.0,
+    "rate": 3500.0,
+    "amount": 7000.0,
+    "date": "2026-10-01",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - open hernioplasty",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 30000.0,
+    "amount": 30000.0,
+    "date": "2026-10-01",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 7000.0,
+    "amount": 7000.0,
+    "date": "2026-10-01",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 12000.0,
+    "amount": 12000.0,
+    "date": "2026-10-01",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "Mesh (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 10000.0,
+    "amount": 10000.0,
+    "date": "2026-10-01",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 5000.0,
+    "amount": 5000.0,
+    "date": "2026-10-02",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Investigations",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 4000.0,
+    "amount": 4000.0,
+    "date": "2026-09-30",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 75000.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Right inguinal hernia",
+  "procedure": "Lichtenstein hernioplasty",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 62,
+  "sum_insured": null,
+  "policy_start": "2018-01-01",
+  "continuous_coverage_since": null,
+  "ped_declared": [],
+  "claim_type": "cashless",
+  "city_tier": null,
+  "docs_provided": [
+   "id_proof",
+   "policy_copy",
+   "claim_form_part_a"
+  ],
+  "narrative": null,
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_classic",
+ "title": "Cashless hernia, senior citizen — only co-pay applies",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

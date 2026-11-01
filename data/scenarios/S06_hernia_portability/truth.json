@@ -1,0 +1,139 @@
+{
+ "bill": {
+  "hospital": "City Care Hospital, Pune",
+  "bill_no": "CCH-7790",
+  "admission_date": "2026-10-08",
+  "discharge_date": "2026-10-10",
+  "room_category": "Twin sharing",
+  "room_days": 2.0,
+  "icu_days": null,
+  "line_items": [
+   {
+    "id": "R1",
+    "description": "Twin sharing room",
+    "category": "room",
+    "qty": 2.0,
+    "rate": 3000.0,
+    "amount": 6000.0,
+    "date": "2026-10-08",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "S1",
+    "description": "Surgeon fee - open hernioplasty",
+    "category": "surgeon",
+    "qty": 1.0,
+    "rate": 28000.0,
+    "amount": 28000.0,
+    "date": "2026-10-08",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "A1",
+    "description": "Anaesthesia",
+    "category": "anaesthesia",
+    "qty": 1.0,
+    "rate": 7000.0,
+    "amount": 7000.0,
+    "date": "2026-10-08",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "O1",
+    "description": "OT charges",
+    "category": "ot",
+    "qty": 1.0,
+    "rate": 12000.0,
+    "amount": 12000.0,
+    "date": "2026-10-08",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "I1",
+    "description": "Polypropylene mesh (implant)",
+    "category": "implant",
+    "qty": 1.0,
+    "rate": 9000.0,
+    "amount": 9000.0,
+    "date": "2026-10-08",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "P1",
+    "description": "Pharmacy",
+    "category": "pharmacy",
+    "qty": 1.0,
+    "rate": 5000.0,
+    "amount": 5000.0,
+    "date": "2026-10-09",
+    "page": 1,
+    "doc": "bill"
+   },
+   {
+    "id": "V1",
+    "description": "Pre-op investigations",
+    "category": "investigation",
+    "qty": 1.0,
+    "rate": 3500.0,
+    "amount": 3500.0,
+    "date": "2026-10-08",
+    "page": 1,
+    "doc": "bill"
+   }
+  ],
+  "discount": 0,
+  "stated_total": 70500.0,
+  "package": false,
+  "differential_billing": null,
+  "source_file": "bill.pdf"
+ },
+ "discharge": {
+  "diagnosis": "Left inguinal hernia",
+  "procedure": "Lichtenstein open hernioplasty with mesh",
+  "icd10": null,
+  "admission_type": "planned",
+  "comorbidities": [],
+  "history_notes": null,
+  "condition_duration_months": null,
+  "source_file": null
+ },
+ "ctx": {
+  "mode": "pre_submission",
+  "jurisdiction": "IN",
+  "user_lang": "en",
+  "patient_age": 46,
+  "sum_insured": null,
+  "policy_start": "2025-08-01",
+  "continuous_coverage_since": "2022-05-01",
+  "ped_declared": [],
+  "claim_type": "reimbursement",
+  "city_tier": null,
+  "docs_provided": [
+   "claim_form_part_a",
+   "claim_form_part_b",
+   "final_itemized_bill",
+   "payment_receipts",
+   "discharge_summary",
+   "investigation_reports",
+   "prescriptions",
+   "pharmacy_bills",
+   "id_proof",
+   "policy_copy",
+   "cancelled_cheque",
+   "implant_invoice_sticker"
+  ],
+  "narrative": "I ported from my old insurer in August 2025; I have had cover since 2022.",
+  "narrative_lang": null,
+  "intimation_hours_after_admission": null
+ },
+ "policy_id": "demo_shield",
+ "title": "Hernia — waiting period served via portability",
+ "tier": "verified",
+ "blurb": "",
+ "render": "pdf"
+}

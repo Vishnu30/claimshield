@@ -1,0 +1,22 @@
+{
+ "issues": [
+  [
+   "ped",
+   "needs_review"
+  ],
+  [
+   "waiting_period",
+   "contestable"
+  ]
+ ],
+ "payout_as_is": 0.0,
+ "claimed": 240000.0,
+ "payout_before": 0.0,
+ "payout_after_fixes": 0.0,
+ "recoverable_via_appeal": 192000.0,
+ "mode": "pre_submission",
+ "tier": "verified",
+ "bills": 1,
+ "lang": "mr",
+ "render": "pdf"
+}

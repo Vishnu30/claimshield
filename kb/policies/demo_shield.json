@@ -1,0 +1,268 @@
+{
+ "policy_id": "demo_shield",
+ "insurer": "Demo General Insurance (synthetic)",
+ "product": "ClaimShield Demo Health Policy",
+ "uin": "DEMOHLIP26001V012627",
+ "jurisdiction": "IN",
+ "sum_insured": 500000.0,
+ "room_rent": {
+  "kind": "pct_si",
+  "value": 1.0,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": "3.1",
+   "page": 2,
+   "quote": "Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day."
+  }
+ },
+ "icu_rent": {
+  "kind": "pct_si",
+  "value": 2.0,
+  "max_value": null,
+  "category": null,
+  "cite": {
+   "clause_id": "3.2",
+   "page": 2,
+   "quote": "Intensive Care Unit charges are payable up to 2% of the Sum Insured per day."
+  }
+ },
+ "proportionate_deduction": true,
+ "proportionate_cite": {
+  "clause_id": "3.3",
+  "page": 2,
+  "quote": "If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics."
+ },
+ "copays": [
+  {
+   "pct": 10.0,
+   "condition": "insured aged 61 or above",
+   "age_min": 61,
+   "cite": {
+    "clause_id": "3.5",
+    "page": 2,
+    "quote": "A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission."
+   }
+  }
+ ],
+ "sublimits": [
+  {
+   "procedure": "cataract",
+   "aliases": [
+    "phacoemulsification",
+    "iol implantation"
+   ],
+   "limit": 70000.0,
+   "pct_si": null,
+   "basis": "per_eye",
+   "cite": {
+    "clause_id": "3.4",
+    "page": 2,
+    "quote": "Cataract surgery is payable up to Rs. 70,000 per eye per policy year."
+   }
+  }
+ ],
+ "waiting_periods": [
+  {
+   "kind": "initial",
+   "months": 1,
+   "conditions": [],
+   "cite": {
+    "clause_id": "4.1",
+    "page": 2,
+    "quote": "Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident."
+   }
+  },
+  {
+   "kind": "specific",
+   "months": 24,
+   "conditions": [
+    "cataract",
+    "hernia",
+    "benign prostatic hypertrophy",
+    "joint replacement",
+    "gall bladder stones",
+    "cholelithiasis",
+    "sinusitis",
+    "piles",
+    "fissure"
+   ],
+   "cite": {
+    "clause_id": "4.2",
+    "page": 2,
+    "quote": "Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures."
+   }
+  },
+  {
+   "kind": "ped",
+   "months": 36,
+   "conditions": [],
+   "cite": {
+    "clause_id": "4.3",
+    "page": 2,
+    "quote": "Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy."
+   }
+  }
+ ],
+ "exclusions": [
+  {
+   "code": "Excl05",
+   "text": "Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an accident, burn or cancer are excluded.",
+   "keywords": [
+    "cosmetic",
+    "rhinoplasty",
+    "plastic surgery"
+   ],
+   "cite": {
+    "clause_id": "Excl05",
+    "page": 3,
+    "quote": "Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an accident, burn or cancer are excluded."
+   }
+  },
+  {
+   "code": "Excl09",
+   "text": "Expenses for surgical treatment of obesity that does not fulfil the stated medical criteria are excluded.",
+   "keywords": [
+    "bariatric",
+    "obesity surgery"
+   ],
+   "cite": {
+    "clause_id": "Excl09",
+    "page": 3,
+    "quote": "Expenses for surgical treatment of obesity that does not fulfil the stated medical criteria are excluded."
+   }
+  }
+ ],
+ "intimation_emergency_hours": 24,
+ "intimation_planned_days_before": 2,
+ "claim_submission_days": 30,
+ "clauses": [
+  {
+   "id": "1.1",
+   "title": "Hospital",
+   "page": 1,
+   "text": "Hospital means any institution established for in-patient care and day care treatment of illness and/or injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments Act, 2010."
+  },
+  {
+   "id": "1.2",
+   "title": "Day care treatment",
+   "page": 1,
+   "text": "Day care treatment means medical treatment and/or surgical procedure which is undertaken under general or local anaesthesia in a hospital in less than 24 hours because of technological advancement."
+  },
+  {
+   "id": "1.3",
+   "title": "Pre-existing disease",
+   "page": 1,
+   "text": "Pre-existing disease means any condition, ailment, injury or disease that is diagnosed by a physician or for which medical advice or treatment was recommended by, or received from, a physician within 36 months prior to the date of commencement of the policy."
+  },
+  {
+   "id": "1.4",
+   "title": "Associated medical expenses",
+   "page": 1,
+   "text": "Associated medical expenses include room rent, nursing charges, operation theatre charges, fees of the treating doctor, surgeon and anaesthetist, but do not include the cost of pharmacy and consumables, cost of implants and medical devices and cost of diagnostics."
+  },
+  {
+   "id": "2.1",
+   "title": "Sum insured",
+   "page": 1,
+   "text": "The Sum Insured under this policy is Rs. 5,00,000 per policy year on an individual basis."
+  },
+  {
+   "id": "3.1",
+   "title": "Room rent",
+   "page": 2,
+   "text": "Room rent, boarding and nursing expenses are payable up to 1% of the Sum Insured per day."
+  },
+  {
+   "id": "3.2",
+   "title": "Intensive care",
+   "page": 2,
+   "text": "Intensive Care Unit charges are payable up to 2% of the Sum Insured per day."
+  },
+  {
+   "id": "3.3",
+   "title": "Proportionate deduction",
+   "page": 2,
+   "text": "If the insured person is admitted in a room category with rent higher than the eligible limit, the associated medical expenses shall be payable in the same proportion as the eligible room rent bears to the actual room rent, except for pharmacy, consumables, implants, medical devices and diagnostics."
+  },
+  {
+   "id": "3.4",
+   "title": "Sub-limits",
+   "page": 2,
+   "text": "Cataract surgery is payable up to Rs. 70,000 per eye per policy year."
+  },
+  {
+   "id": "3.5",
+   "title": "Co-payment",
+   "page": 2,
+   "text": "A co-payment of 10% of the admissible claim amount applies to every claim where the insured person is aged 61 years or above at the time of admission."
+  },
+  {
+   "id": "4.1",
+   "title": "Initial waiting period",
+   "page": 2,
+   "text": "Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident."
+  },
+  {
+   "id": "4.2",
+   "title": "Specific waiting period",
+   "page": 2,
+   "text": "Expenses related to the treatment of the following listed conditions shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy: cataract, hernia, benign prostatic hypertrophy, joint replacement, gall bladder stones, sinusitis, piles and fissures."
+  },
+  {
+   "id": "4.3",
+   "title": "Pre-existing disease waiting period",
+   "page": 2,
+   "text": "Expenses related to the treatment of a pre-existing disease and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy."
+  },
+  {
+   "id": "4.4",
+   "title": "Portability",
+   "page": 3,
+   "text": "In case of portability, the waiting periods already served under the previous policy shall be credited to the extent of the previous sum insured."
+  },
+  {
+   "id": "4.5",
+   "title": "Moratorium",
+   "page": 3,
+   "text": "After completion of sixty continuous months of coverage, no claim under this policy shall be contestable on grounds of non-disclosure or misrepresentation, except on grounds of established fraud."
+  },
+  {
+   "id": "Excl05",
+   "title": "Cosmetic surgery",
+   "page": 3,
+   "text": "Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an accident, burn or cancer are excluded."
+  },
+  {
+   "id": "Excl09",
+   "title": "Obesity treatment",
+   "page": 3,
+   "text": "Expenses for surgical treatment of obesity that does not fulfil the stated medical criteria are excluded."
+  },
+  {
+   "id": "5.1",
+   "title": "Claim intimation",
+   "page": 3,
+   "text": "Intimation of emergency hospitalisation must be given within 24 hours of admission. Planned hospitalisation must be intimated at least 48 hours before admission."
+  },
+  {
+   "id": "5.2",
+   "title": "Claim documents",
+   "page": 3,
+   "text": "Reimbursement claims must be submitted within 30 days of discharge with the claim form, original itemized bills and receipts, discharge summary, investigation reports and prescriptions."
+  },
+  {
+   "id": "5.3",
+   "title": "Non-payable items",
+   "page": 3,
+   "text": "Items listed in the Annexure of non-payable items notified by the Authority are not payable under this policy."
+  },
+  {
+   "id": "6.1",
+   "title": "Grievance",
+   "page": 4,
+   "text": "Any grievance may be addressed to the Grievance Redressal Officer of the Company. If not resolved within 14 days, the insured may approach the Insurance Ombudsman."
+  }
+ ],
+ "source_file": "data/policies/demo_shield_policy.pdf"
+}
