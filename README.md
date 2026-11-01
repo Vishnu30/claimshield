@@ -3,42 +3,112 @@
 [![tests](https://github.com/<you>/claimshield/actions/workflows/tests.yml/badge.svg)](https://github.com/<you>/claimshield/actions/workflows/tests.yml)
 ![python](https://img.shields.io/badge/python-3.10–3.12-blue) ![license](https://img.shields.io/badge/license-MIT-green) ![Meta Muse Spark](https://img.shields.io/badge/built%20on-Meta%20Muse%20Spark-0F6B5F)
 
-**Insurers use AI agents to adjudicate your claim. ClaimShield gives patients the same agents — before the insurer decides.**
+### Know what your health insurer will cut — before they do.
+**Insurers use AI agents to adjudicate claims. ClaimShield gives patients the same agents, on their side, before the insurer decides.**
 
 ▶️ **Demo video (3 min):** `<paste link>`
 
-![home](docs/screenshots/01_home.png)
+![ClaimShield home](docs/screenshots/01_home.png)
+
+---
+
+## The problem
+
+### In numbers (India, FY 2023-24)
+| | |
+|---|---|
+| **57 crore** | lives covered by health insurance, under 2.68 crore policies |
+| **3.26 crore** | health insurance claims filed in one year |
+| **₹1.17 lakh crore** | claimed — but only **₹83,493 crore (71%)** paid |
+| **₹26,037 crore** | turned down: ₹15,100 cr *disallowed under policy terms* + ₹10,937 cr *repudiated* — **up 19% in a year** |
+| **5 in 10** | claimants say their claim was rejected or only partly approved **for invalid reasons** (survey of 1 lakh+ policyholders, 327 districts) |
+| **8 in 10** | believe claims are delayed so families give up and accept less |
+| **6 in 10** | waited 6–48 hours for hospital discharge while the claim was processed |
+
+### Why it happens
+| Cause | What families experience |
+|---|---|
+| **Policy clauses nobody reads** | Room-rent caps, *proportionate deduction* on doctor and OT fees, sub-limits, co-pays and waiting periods surface only in the settlement letter |
+| **"Non-payable" items** | Gloves, kits, food, registration and dozens of other items are cut line by line under IRDAI's standard lists |
+| **Bill errors** | Duplicate lines, quantity × rate mistakes, totals that don't match the itemized bill |
+| **Missing documents** | Claims are queried or held for one missing report or certificate |
+| **Wrongful rejections** | e.g. "pre-existing disease" after the 5-year moratorium, or ignoring portability credit, which families rarely know they can contest |
+| **Timing** | All of this is discovered **after discharge**, when the bill can no longer be changed and appeals take months |
+
+### The gap
+| Today | Limitation |
+|---|---|
+| Insurers and TPAs | Use automated adjudication — **for the insurer** |
+| Human claim-help services | Slow, paid, mostly after rejection |
+| Existing AI tools | Act only **after** a rejection; no line-by-line check of the bill against the policy |
+
+---
+
+## The solution
+
+### One line
+ClaimShield audits a hospital bill **line by line against the patient's own policy and IRDAI rules**, predicts every deduction **before** the insurer makes it, tells the family exactly what to fix, and drafts the appeal if the claim is already rejected — in their language.
+
+### Who it is for
+| User | Use |
+|---|---|
+| Patients and families | Check the bill before discharge or submission; contest a rejection |
+| Hospital insurance / billing desks | Correct bills before they go to the insurer |
+| NGOs, claim helplines, consumer forums | Faster, cited case preparation |
+
+### How it works
+| Step | What happens | Powered by |
+|---|---|---|
+| 1. **Read** | Policy, bills (PDF, scans, phone photos), discharge summary, rejection letter → structured data | Muse vision on Baseten + deterministic parsers |
+| 2. **Judge** | A **TPA agent** predicts the insurer's cuts; a **Patient-Advocate agent** challenges each one with tool calls into the policy, the bill and IRDAI rules | Muse API (`muse-spark-1.3`) |
+| 3. **Check** | Three Muse hosts vote independently; a critic audits; Python **recomputes every rupee** and keeps only cited findings | Muse API · Baseten · Fireworks + Python |
+| 4. **Act** | Action plan, highlighted evidence, appeal and hospital letters, escalation deadlines — in 12 languages | Python + Muse |
+
+### What the family gets
+| Output | Example (sample S01, cataract, still admitted) |
+|---|---|
+| **Verdict** | Insurer will pay **₹44,370 of ₹71,350** as the bill stands |
+| **Fixes that add money** | 3 fixes before discharge add **₹14,760**, each with who to ask and what to say |
+| **Evidence** | The exact policy clause and the highlighted bill line for every cut |
+| **What-if** | Payout waterfall that updates as you choose fixes |
+| **Letters** | Appeal to the insurer / bill-correction request to the hospital, PDF in any script |
+| **Escalation** | GRO → Bima Bharosa → Insurance Ombudsman → Consumer Commission, with dates as a calendar file |
+
+### Three claim stages
+| Stage | Example result |
+|---|---|
+| 🏥 **Still in hospital** — fix the bill before discharge | Cataract: ₹44,370 → **₹59,130** |
+| 📄 **About to file** — likely payout and missing documents | Knee surgery: proportionate deduction is *contestable* when fees don't vary by room |
+| ⚖️ **Rejected or short-paid** — find the wrong ground, appeal | Angioplasty rejected for PED after 77 months: **₹2,56,000 recoverable** |
+
+### Why it is different
+| | ClaimShield |
+|---|---|
+| **Prevention first** | Works while the bill can still change, not months after rejection |
+| **Adversarial AI** | Insurer-side and patient-side agents argue every cut, and a 3-host jury decides |
+| **Exact money** | Every rupee from one deterministic engine; no model-invented amounts |
+| **Cited** | Every finding quotes the policy clause or IRDAI rule, verified against the PDF |
+| **Inclusive** | 12 Indian languages, voice and phone photos, works offline, personal data masked |
+| **Open** | MIT licensed, 36 labelled sample claims, 157 automated tests, published evaluation |
+
+---
+
+## Screenshots
+| | |
+|---|---|
+| ![Home](docs/screenshots/01_home.png) **Home** — language, claim stage, samples | ![Progress](docs/screenshots/02_progress.png) **Live analysis** — agents at work |
+| ![Results](docs/screenshots/03_results.png) **Results** — verdict, payout now vs after fixes, risk | ![What to do](docs/screenshots/04_what_to_do.png) **What to do** — fixes that add money, no-cost steps |
+| ![Findings](docs/screenshots/05_findings_evidence.png) **Findings** — clause + highlighted bill line | ![What if](docs/screenshots/06_what_if.png) **What if** — payout waterfall |
+| ![Letters](docs/screenshots/07_appeal_letter.png) **Letters** — appeal + escalation dates | ![Tamil](docs/screenshots/08_tamil_results.png) **12 languages** — translated in place |
+| ![Expert view](docs/screenshots/09_expert_view.png) **Expert view** — every model call per host | ![Evaluation](docs/screenshots/10_evaluation.png) **Evaluation** — 36 labelled claims |
+| ![Knowledge base](docs/screenshots/11_knowledge_base.png) **Knowledge base** — policies, IRDAI rules, sources | |
+
+<sub>**Sources:** IRDAI Annual Report 2023-24 ([Business Standard](https://business-standard.com/industry/news/health-insurers-disallowed-claims-worth-rs-15-100-cr-during-fy24-irdai-124123000562_1.html), [Business Today](https://www.businesstoday.in/personal-finance/insurance/story/health-insurance-claim-rejections-by-insurance-companies-went-up-by-1910-in-fy24-458593-2024-12-26)) · Lok Sabha Unstarred Q. 93, 03.02.2025 ([Sansad](https://eparlib.sansad.in/bitstream/123456789/2989107/1/AU93_3riLi5.pdf), [Moneylife](https://moneylife.in/article/health-insurance-claims-worth-rs2603765-crore-rejected-by-insurers-in-fy2324-govt/76282.html)) · LocalCircles survey, Jun–Dec 2024 ([Moneylife](https://moneylife.in/article/6-in-10-health-insurance-claimants-waited-648-hours-for-claim-approval-and-discharge-from-hospital-localcircles/76013.html), [LocalCircles](https://m-www.localcircles.com/a/press/page/health-insurance-claims-processing)).</sub>
 
 ---
 
 ## Contents
-[Problem](#the-problem) · [What it does](#what-it-does) · [Quick start](#quick-start-4-commands) · [How to use](#how-to-use) · [Features](#features) · [Architecture](#architecture) · [Where Muse runs](#where-muse-runs) · [Samples](#sample-claims-36-with-ground-truth) · [Evaluation & tests](#evaluation--tests) · [Knowledge base](#knowledge-base) · [Repository](#repository)
-
-## The problem
-Indian health-insurance claims are routinely cut or rejected over unread policy clauses, non-payable items, room-rent breaches, waiting periods and missing documents. Families find out **after** the decision, when the bill can no longer be changed. Today's help is either human-led and slow, or AI that acts only after a rejection. Hundreds of millions of insured Indians face the same problem.
-
-## What it does
-Upload your policy and hospital bill. A team of Meta Muse agents audits every line against the policy wording and the IRDAI rules.
-
-| Claim stage | ClaimShield gives you |
-|---|---|
-| 🏥 Still in hospital | The cuts the insurer will make, and what the hospital must correct **before discharge** |
-| 📄 About to file | Payout as-is vs. after fixes, missing documents, a step-by-step action plan |
-| ⚖️ Rejected or short-paid | Each wrong ground, a ready-to-send appeal, escalation deadlines as a calendar file |
-
-| Example | Result |
-|---|---|
-| Cataract, still admitted (S01) | Claimed ₹71,350 → insurer pays ₹44,370 as-is → **₹59,130 after 4 fixes** |
-| Angioplasty rejected for "pre-existing disease" after 77 months (S08) | **₹2,56,000 recoverable** under the moratorium rule |
-| Knee surgery short-paid (S20) | **₹26,769 recoverable**: proportionate deduction illegally applied to medicines and implants |
-
-| | |
-|---|---|
-| ![results](docs/screenshots/03_results.png) | ![what to do](docs/screenshots/04_what_to_do.png) |
-| ![findings](docs/screenshots/05_findings_evidence.png) | ![what if](docs/screenshots/06_what_if.png) |
-| ![letters](docs/screenshots/07_appeal_letter.png) | ![languages](docs/screenshots/08_tamil_results.png) |
-
----
+[Quick start](#quick-start-4-commands) · [How to use](#how-to-use) · [Features](#features) · [Architecture](#architecture) · [Where Muse runs](#where-muse-runs) · [Samples](#sample-claims-36-with-ground-truth) · [Evaluation & tests](#evaluation--tests) · [Knowledge base](#knowledge-base) · [Repository](#repository)
 
 ## Quick start (4 commands)
 ```bash
@@ -64,7 +134,7 @@ To run the AI agents live, put your keys in `.env` (created by `run setup`), the
 |---|---|
 | `setup` | venv + dependencies + `.env` + config check |
 | `app` · `offline` · `demo` | App · without AI · replay from cache only ($0) |
-| `test` | 153 tests, offline |
+| `test` | 157 tests, offline |
 | `doctor` · `check` · `models fireworks` | Config check · live provider probe (~$0.003) · list Muse model ids |
 | `snapshot [--all]` | Record live runs of the verified samples (instant for everyone after you commit them) |
 | `build-kb [--fast] [--discover]` | Fetch + extract the knowledge base from public sources |
@@ -263,14 +333,15 @@ Every result shows its calls per host. **Expert view** lists every model call, a
 ```bash
 python eval/run_eval.py --engines rules lean full single --files --max-usd 10     # single = one Muse pass, no tools (ablation)
 ```
+<!-- paste the table printed by run_eval.py; it also appears in the app under Evaluation -->
 | Engine | Precision | Recall | Status acc. | ₹ error | Citations | Cost |
 |---|---|---|---|---|---|---|
-| full (TPA + Advocate + Jury + Critic) | 0.86 | 1.00 | 0.92 | ₹0 | 100% | $1.47 (36 claims) |
-| lean (Advocate) | 1.00 | 1.00 | 0.88 | ₹0 | 100% | $0.33 (36 claims) |
-| single (one Muse pass, ablation) | 1.00 | 0.01 | 0.00 | ₹0 | 0% | $0.02 (36 claims) |
-| rules (no AI) | 1.00 | 1.00 | 1.00 | ₹0 | 100% | $0.00 (36 claims) |
+| full (TPA + Advocate + Jury + Critic) | | | | | | |
+| lean (Advocate) | | | | | | |
+| single (one Muse pass, ablation) | | | | | | |
+| rules (no AI) | | | | | | |
 
-`run test` runs 153 tests offline in ~2 minutes:
+`run test` runs 157 tests offline in ~2 minutes:
 
 | File | What it proves |
 |---|---|
@@ -309,7 +380,7 @@ kb/           jurisdictions/ · seed/ (shipped rules) · policies/ · doc_checkl
 data/         sources.csv · demo policies · scenarios/ (24 verified + 12 challenge) · snapshots/ · samples/edge_cases/
 scripts/      build_kb.py · make_scenarios.py · doctor.py · demo.py
 eval/         run_eval.py
-tests/        153 tests
+tests/        157 tests
 docs/         TESTING.md · DEMO.md · PUBLISH.md · screenshots/
 ```
 
