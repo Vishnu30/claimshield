@@ -96,7 +96,7 @@ ClaimShield audits a hospital bill **line by line against the patient's own poli
 | ![Home](docs/screenshots/01_home.jpg) **Home** — language, claim stage, samples | ![Progress](docs/screenshots/02_progress.jpg) **Live analysis** — agents at work |
 | ![Results](docs/screenshots/03_results.jpg) **Results** — verdict, payout now vs after fixes, risk | ![What to do](docs/screenshots/04_what_to_do.jpg) **What to do** — fixes that add money, no-cost steps |
 | ![Findings](docs/screenshots/05_findings_evidence.jpg) **Findings** — clause + highlighted bill line | ![What if](docs/screenshots/06_what_if.jpg) **What if** — payout waterfall |
-| ![Letters](docs/screenshots/07_appeal_letter.jpg) **Letters** — appeal + escalation dates | ![Tamil](docs/screenshots/08_tamil_results.jpg) **12 languages** — translated in place |
+| ![Letters](docs/screenshots/07_appeal_letter.jpg) **Letters** — appeal + escalation dates | ![Tamil](docs/screenshots/08_telugu_results.jpg) **12 languages** — translated in place |
 | ![Expert view](docs/screenshots/09_expert_view.jpg) **Expert view** — every model call per host | ![Evaluation](docs/screenshots/10_evaluation.jpg) **Evaluation** — 36 labelled claims |
 | ![Knowledge base](docs/screenshots/11_knowledge_base.jpg) **Knowledge base** — policies, IRDAI rules, sources | |
 
