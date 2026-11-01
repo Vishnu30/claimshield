@@ -1,8 +1,5 @@
 # ClaimShield 🛡️
 
-[![tests](https://github.com/<you>/claimshield/actions/workflows/tests.yml/badge.svg)](https://github.com/<you>/claimshield/actions/workflows/tests.yml)
-![python](https://img.shields.io/badge/python-3.10–3.12-blue) ![license](https://img.shields.io/badge/license-MIT-green) ![Meta Muse Spark](https://img.shields.io/badge/built%20on-Meta%20Muse%20Spark-0F6B5F)
-
 ### Know what your health insurer will cut — before they do.
 **Insurers use AI agents to adjudicate claims. ClaimShield gives patients the same agents, on their side, before the insurer decides.**
 
